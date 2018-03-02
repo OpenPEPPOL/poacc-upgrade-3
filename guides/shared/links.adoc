@@ -1,0 +1,31 @@
+//PEPPOL
+:peppol: https://peppol.eu/?rel=undefined[PEPPOL]
+:common: https://joinup.ec.europa.eu/svn/peppol/PEPPOL%20BIS%20Common%20text%20and%20introduction%20-%20ver%201%202014-04-14.pdf[PEPPOL BIS common text and introduction]
+:openpeppol: https://peppol.eu/about-openpeppol/?rel=tab41[OpenPEPPOL]
+:policy8: https://joinup.ec.europa.eu/svn/peppol/TransportInfrastructure/PEPPOL_Policy%20for%20use%20of%20identifiers-300.pdf[PEPPOL Policy for identifiers, policy 8]
+:migration-policy: https://github.com/OpenPEPPOL/documentation/blob/master/LifecycleManagement/ReleaseManagement/Migration%20Policy%20-%20Common%20Document%202014-02-24%20rev%202014-08-27.pdf[OpenPEPPOL Migration Policy]
+
+
+//CEN
+:CEN: https://www.cen.eu/Pages/default.aspx[CEN]
+:bii3: http://www.cenbii.eu/cen-wsbii-3/[CEN WS/BII 3]
+:bii: http://www.cenbii.eu/[CEN WS/BII]
+
+
+//ISO:
+:ISO15000: https://www.iso.org/standard/61433.html[ISO 15000-5:2014]
+:ISO8601:  https://www.iso.org/standard/40874.html[ISO 8601:2004]
+
+//codelists
+:ISO4217: https://www.iso.org/iso-4217-currency-codes.html[ISO 4217:2015]
+:UNCL2005: http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred2005.htm[Subset of UN/CEFACT code list 2005, D.16B]
+:ISO3166: http://www.iso.org/iso/home/standards/country_codes.htm[ISO 3166-1]
+:UNCL4461: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred4461.htm[UN/CEFACT code list 4461, D.16B]
+:UNCL5305: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred5305.htm[UN/CEFACT code list 5305, D.16B]
+:UNCL5189: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred5189.htm[UN/CEFACT code list 5189, D.16B]
+:UNCL7161: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7161.htm[UN/CEFACT code list 7161, D.16B]
+:IANA: http://www.iana.org/assignments/media-types[IANA]
+:UNRec20: http://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_Rev11e_2015.xls[UN/ECE Recommendation 20, Revision 11 (2015)]
+:UNCL1153: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred1153.htm[UN/CEFACT code list 1153, D.16B]
+:ISO6523: https://www.iso.org/standard/25773.html[ISO/IEC 6523]
+:UNCL7143: http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7143.htm[UN/CEFACT code list 7143, D.16B]
