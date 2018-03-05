@@ -1,0 +1,17 @@
+
+
+= Item classification identifier
+
+An item classification identifier has an optional scheme attribute. The value shall be chosen from {UNCL7143}.
+
+[cols="2,3,3", options="header"]
+|===
+|Business Term
+|Applicable XPath
+|Code list (link or subset values)
+
+| Item Classification identifier
+| cac:CommodityClassification/cbc:ItemClassificationCode/@listID
+| {UNCL7143}
+
+|===

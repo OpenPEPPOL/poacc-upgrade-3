@@ -1,0 +1,21 @@
+[[item-name-and-description]]
+= Item name and description
+
+Description of a product can be sent in Item/Description.
+
+The Product name is sent in the shopping cart from buyer to seller.
+
+Example in an PEPPOL BIS Shopping Cart message:
+
+The Name is preferably short so that it is suitable for use in a order or invoice line or as a heading.
+A description allows for longer text that describes the item in detail.
+
+<cac:Item>
+
+<cbc:Description>One Personal Computer package with a monitor and setup service</cbc:Description>
+
+<cbc:Name>PC omputer package</cbc:Name>
+
+….
+
+</cac:Item>

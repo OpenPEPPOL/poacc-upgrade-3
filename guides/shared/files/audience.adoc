@@ -2,7 +2,8 @@
 [[audience]]
 = Audience
 
-The audience for this document is organizations wishing to be PEPPOL enabled for retrieving item information through a punch out process, and/or their ICT-suppliers.
+The audience for this document is organizations wishing to be {peppol} enabled for retrieving item information through a punch out process, and/or their ICT-suppliers.
+
 These organizations may be:
 
 * Service providers
@@ -16,4 +17,4 @@ More specifically it is addressed towards the following roles:
 * ICT Developers
 * Business Experts
 
-For further information on PEPPOL/OpenPEPPOL please see {common}.
+For further information, please see {common}.

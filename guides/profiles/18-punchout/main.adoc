@@ -1,6 +1,6 @@
 include::../../shared/links.adoc[]
 
-= PEPPOL BIS Punch Out - 18A
+= BIS Punch Out - 18A
 OpenPEPPOL AISBL, Post-Award Coordinating Community
 v3.0.0
 :description: The PEPPOL Business Interoperability Specification, “BIS” from here on after, has been developed by the OpenPEPPOL AISBL Post Award Coordinating Community and is published as part of the PEPPOL specifications.
@@ -13,12 +13,28 @@ v3.0.0
 :source-language: xml
 :sectanchors:
 :sectnums:
-:title-logo-image: ../images/peppol.jpg
+:title-logo-image: ../../shared/images/peppol.png
 
 {description}
 
 :leveloffset: +1
 
 include::introduction/index.adoc[]
+
+include::principles/index.adoc[]
+
+include::requirements/index.adoc[]
+
+include::codelists/index.adoc[]
+
+include::rules/index.adoc[]
+
+include::process/index.adoc[]
+
+include::description/index.adoc[]
+
+include::profile/index.adoc[]
+
+include::transport/index.adoc[]
 
 :leveloffset: -1

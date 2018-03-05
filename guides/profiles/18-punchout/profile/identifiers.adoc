@@ -1,0 +1,14 @@
+[[namespaces]]
+= Namespaces
+
+The shopping cart datamodel is in this PEPPOL BIS bound to the UBL version 2.1 of the Catalogue document type [UBLCatalogue]. The target namespace for the UBL-Catalogue-2.1 is:
+
+`urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2`
+
+[[version-id]]
+= Version ID
+
+This BIS is using the UBL 2.1 syntax [UBLCatalogue]. The namespace of the XML-message does only communicate the major version number.
+Since it is important for the receiver to also know what minor version of the syntax that is used, the element UBLVersionID must be stated with the value *2.1:*
+
+<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
