@@ -1,6 +1,6 @@
 
-[[prof-03]]
-= Profile 03 - Order only
+[[prof-3]]
+= Profile 3 - Order only
 
 In the table below you will find the values to be used as the specification identifier and the business process type for this profile
 
@@ -11,7 +11,7 @@ In the table below you will find the values to be used as the specification iden
 | Element `cbc:ProfileID`
 
 
-| Order (Trdm03)
+| Order (Trdm01)
 | urn:www.cenbii.eu:transaction:biitrns001:ver2.0: +
 extended:urn:www.peppol.eu:bis:peppol3a:ver2.0
 | urn:www.cenbii.eu:profile:bii03:ver2.0
