@@ -9,9 +9,10 @@ This PEPPOL BIS is based on the CEN WS/BII Profile “BII Profile 18 Punch out C
 
 *The purpose* of this document is to describe a common format for the shopping cart in the European market, and to facilitate an efficient implementation and increased use of electronic collaboration regarding the ordering process based on this format.
 
-.Relationship between BII profiles and PEPPOL BIS
-image::../../../shared/images/BII_relationship.png[align="center", width=600]
+//.Relationship between BII profiles and PEPPOL BIS
 
+
+image::../../shared/images/BII_relationship.png[]
 
 
 :leveloffset: +1

@@ -9,8 +9,8 @@ As example, if a cart level contract reference give payment terms and the line l
 
 An example of line level contract reference is as follows. "Contracted item indicator", should be used when shopping from sellers webshop under framework agreements.
 
-<cac:CatalogueLine>
-
-...
-
-<cbc:ContractSubdivision>CRT1387</cbc:ContractSubdivision>
+.Example of line reference to a contract
+[source, xml, indent=0]
+----
+include::../snippets/snippet-18-1.xml[tags=contract]
+----

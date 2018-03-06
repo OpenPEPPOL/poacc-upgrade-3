@@ -29,4 +29,4 @@ The seller is responsible for providing up-to-date information on items and othe
 
 The following diagram links the business processes to the roles performed by the Business Partners.
 
-image::../images/roles-18A.png[align="center", width=600]
+image::images/roles-18A.png[align="center", width=600]

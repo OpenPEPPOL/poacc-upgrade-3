@@ -6,26 +6,19 @@ This is given by an identifier as well as the date and time when the shopping ca
 This would normally be the time when the buyer punches out from the sellers web store.
 
 The identifier is created by the seller and may be of any format.
-The date and time must not be in the future.
+The issue date and time must not be in the future.
 
-<cbc:ID>1387</cbc:ID>
+.Example of cart identifier and issue date and time
+[source, xml, indent=0]
+----
+include::../snippets/snippet-18-1.xml[tags=identifier]
+----
 
-<cbc:IssueDate>2016-08-01</cbc:IssueDate>
-
-<cbc:IssueTime>09:00:00</cbc:IssueTime>
 
 The shopping cart also includes two identifiers that identify the process that the shopping cart is used in.
-The specification that define how the shopping cart message is structured and how its information shall be processed is stated with the customization ID.
-This ID is always the same for all shopping cart messages that comply to this version of PEPPOL BIS 18A.
-Each shopping cart messaga must comply to the specification referenced .
+The specification that define how the shopping cart message is structured and how its information shall be processed is stated with the customization ID. The process it self is the Punch Out process as defined in this BIS specification, and is stated in the Profile ID element.
 
-<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns077:ver2.0**:extended:** www.peppol.eu:bis:peppol18a:ver1.0</cbc:CustomizationID>
+These ID's is always the same for all shopping cart messages that comply to this version of PEPPOL BIS 18A.
+Each shopping cart message must comply to the specification referenced.
 
-
-
-The process it self is the Punch Out process as defined in this BIS specification.
-This given in the message as follows and is always the same for all message instances that comply to this version of PEPPOL BIS 18A.
-
-<cbc:ProfileID>urn:www.cenbii.eu:profile:bii18:ver1.0</cbc:ProfileID>
-
-Rule: ProfileID = urn:www.cenbii.eu:profile:bii18:ver1.0
+Details on valid values for both customization ID and profile ID can be found in <<prof-18>>

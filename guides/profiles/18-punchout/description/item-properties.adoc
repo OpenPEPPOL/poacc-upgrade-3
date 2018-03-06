@@ -1,36 +1,24 @@
 [[item-properties]]
 = Item properties
 
-A shopping cart line may state if the item described in the line is a service by stating the item property ServiceIndicator as true.
-The line may also indentify that the item is not a service with the value false.
+A shopping cart line may state if the item described in the line is a service by stating the item property ServiceIndicator as true. The line may also identify that the item is not a service with the value false.
+
 There is no default value so if the ServiceIndicator is not given the item may be either a service or not.
-An item that is a service is identified as follows:
 
-<cac:AdditionalItemProperty>
 
-<cbc:Name>ServiceIndicator</cbc:Name>
+.Example of indicating that an item is a service
+[source, xml, indent=0]
+----
+include::../snippets/snippet-18-1.xml[tags=service]
+----
 
-<cbc:Value>true</cbc:Value>
 
-</cac:AdditionalItemProperty>
+A shopping cart line may give a list of various attributes of an item such as size, colour. For each property the property name and value must be given.
 
-A shopping cart line may give a list of various attibutes of an item such as size, color and so on for an item.
-For each property the property name and value must be given.
 Additionally the seller may give a property classification code to support automation in comparison of attribute and if the attribute value can be quantified it may be restated with the Unit of measure as an attribute.
-As example an items property may be that it has 16 GB of RAM memory.
 
-<cac:AdditionalItemProperty>
-
-<cbc:Name>RAM memory</cbc:Name>
-
-<cbc:NameCode>Item property classification code</cbc:NameCode>
-
-<cbc:Value>16 GB</cbc:Value>
-
-<cbc:ValueQualifier unitCode="AD">
-
-
-17179869184</cbc:ValueQualifier>
-
-
-</cac:AdditionalItemProperty>
+.Example of item property, indicating 16 GB RAM Memory
+[source, xml, indent=0]
+----
+include::../snippets/snippet-18-1.xml[tags=property]
+----

@@ -21,5 +21,5 @@ The following additional rules apply to the implementation and general use of th
 |RuleID |Rule
 |OP-P18-R001 |Information for configured products supersedes information for its component items.
 |OP-P18-R002 |Cart lines that contain additional item property name as ConfiguredProductIdentifier may not be ordered individually.
-|OPP18-R003 |IssueDate may not backdated.
+|OP-18-R003 |IssueDate may not backdated.
 |====

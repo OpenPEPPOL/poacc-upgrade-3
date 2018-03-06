@@ -1,29 +1,18 @@
 [[tax-information]]
 = Tax information
 
-For correctly handling taxes for the item the line must state the items VAT category and percentage rate as follows where the standard rate of VAT is 18 percent:
+For correctly handling taxes for the item the line must state the items VAT category and percentage rate.
 
-<cac:ClassifiedTaxCategory>
+.Example of VAT information where the standard rate of VAT is 18 percent:
+[source, xml, indent=0]
+----
+include::../snippets/snippet-18-1.xml[tags=vat]
+----
 
-<cbc:ID schemeID="UNCL5305">S</cbc:ID>
+Additionally the item country of origin may be given.
 
-<cbc:Percent>18</cbc:Percent>
-
-<cac:TaxScheme>
-
-<cbc:ID schemeID="UNCL5153">VAT</cbc:ID>
-
-</cac:TaxScheme>
-
-</cac:ClassifiedTaxCategory>
-
-Additionally the item country of origin may be given as follows:
-
-<cac:OriginCountry>
-
-
-<cbc:IdentificationCode listID="ISO3166-1:Alpha2">CH +
-</cbc:IdentificationCode>
-
-
-</cac:OriginCountry>
+.Example of country of origin
+[source, xml, indent=0]
+----
+include::../snippets/snippet-18-1.xml[tags=coo]
+----

@@ -8,31 +8,33 @@ A shopping cart is valid from the time it is issued until the time stated in the
 That time may not be before the time when the cart is issued.
 If only validity end date is given the cart is valid until end of that day in the sellers time zone.
 The seller may also set validity time for individual lines.
-Validity end time is given as follows.
 
-<cac:ValidityPeriod>
 
-<cbc:EndDate>2016-08-31</cbc:EndDate>
+.Example of validity end date and time
+[source, xml, indent=0]
+----
+include::../snippets/snippet-18-1.xml[tags=validity]
+----
 
-<cbc:EndTime>18:00:00</cbc:EndTime>
-
-</cac:ValidityPeriod>
-
-The seller may set the condition that the offer made in the shopping cart is only valid if all item in the cart are ordered.
+The seller may set the condition that the offer made in the shopping cart is only valid if all items in the cart are ordered.
 That is the buyer may not select only certain items or change the quantities of the items listed in the cart.
-This is given by the complete cart indicatior.
+This is given by the complete cart indicator, using the element `cbc:ActionCode`.
 If the value of the indicator is "true" the buyer must either order all or none of the cart.
 The default value of the indicator is "false" meaning that if the element is not included in the message the buyer may order part of the cart.
-Following is an example.
 
-<cbc:ActionCode>true</cbc:ActionCode>
+.Example of complete cart indicator
+[source, xml, indent=0]
+----
+include::../snippets/snippet-18-1.xml[tags=actioncode]
+----
 
 The seller may reference a contract that governs the offer made in the shopping cart.
 The terms and conditions of a referenced contract supersedes the information given in individual shopping carts.
-Following is an example:
 
-<cac:ReferencedContract>
+.Example of a referenced contract
+[source, xml, indent=0]
+----
+include::../snippets/snippet-18-1.xml[tags=ref-contract]
+----
 
-<cbc:ID>CRT1387</cbc:ID>
-
-</cac:ReferencedContract>
+Further information on contracts and reference to contract on line can be found in <<contract-reference>>
