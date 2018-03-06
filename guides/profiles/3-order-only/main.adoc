@@ -1,0 +1,44 @@
+include::../../shared/links.adoc[]
+
+= image:../../shared/images/peppol.png[float="right"]BIS Order only - 3A
+OpenPEPPOL AISBL, Post-Award Coordinating Community
+v3.0.0
+:description: The PEPPOL Business Interoperability Specification, “BIS” from here on after, has been developed by the OpenPEPPOL AISBL Post Award Coordinating Community and is published as part of the PEPPOL specifications.
+:doctype: book
+:icons: font
+:stem:
+:toc: left
+:toclevels: 2
+:source-highlighter: coderay
+:source-language: xml
+:sectanchors:
+:sectnums:
+:title-logo-image: ../../shared/images/peppol.png
+:transaction-path: ../../transactions/01-order
+
+{description}
+
+:leveloffset: +1
+
+include::introduction/index.adoc[]
+
+include::principles/index.adoc[]
+
+include::{transaction-path}/requirements/index.adoc[]
+
+include::{transaction-path}/codelists/index.adoc[]
+
+include::{transaction-path}/rules/index.adoc[]
+
+include::process/index.adoc[]
+
+include::{transaction-path}/description/index.adoc[]
+
+////
+
+include::profile/index.adoc[]
+
+include::transport/index.adoc[]
+////
+
+:leveloffset: -1

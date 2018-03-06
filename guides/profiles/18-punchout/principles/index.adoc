@@ -22,6 +22,7 @@ include::parties.adoc[]
 
 include::benefits.adoc[]
 
-include::interoperability.adoc[]
+include::../../../shared/files/interoperability.adoc[]
+
 
 :leveloffset: -1

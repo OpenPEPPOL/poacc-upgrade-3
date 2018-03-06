@@ -1,0 +1,18 @@
+[[transaction-business-requirements]]
+= Transaction business requirements
+
+:leveloffset: +1
+
+include::general.adoc[]
+
+include::parties.adoc[]
+
+include::delivery.adoc[]
+
+include::line.adoc[]
+
+include::legal.adoc[]
+
+include::peppol.adoc[]
+
+:leveloffset: -1

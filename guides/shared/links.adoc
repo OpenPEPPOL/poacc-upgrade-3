@@ -10,6 +10,7 @@
 :CEN: https://www.cen.eu/Pages/default.aspx[CEN]
 :bii3: http://www.cenbii.eu/cen-wsbii-3/[CEN WS/BII 3]
 :bii: http://www.cenbii.eu/[CEN WS/BII]
+:bii-order: ftp://ftp.cen.eu/public/CWAs/BII2/CWA16562/CWA16562-Annex-A-BII-Profile-03-OrderOnly-V2_0_0.pdf[CEN BII2 Profile 03, Order Only]
 
 //UBL
 :ubl: http://docs.oasis-open.org/ubl/UBL-2.1.html[UBL 2.1]
@@ -22,6 +23,7 @@
 //Others
 :EIF: http://ec.europa.eu/idabc/en/document/2319/5644.html[EIF]
 :schematron: http://schematron.com[Schematron]
+:dir-2009-101: http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2009:258:0011:0019:EN:PDF[Directive 2009/101/EC]
 
 
 //codelists
@@ -37,3 +39,4 @@
 :UNCL1153: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred1153.htm[UN/CEFACT code list 1153, D.16B]
 :ISO6523: https://www.iso.org/standard/25773.html[ISO/IEC 6523]
 :UNCL7143: http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7143.htm[UN/CEFACT code list 7143, D.16B]
+:UNCL1001: https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred1001.htm[UN/CEFACT code list 1001, D.17A]

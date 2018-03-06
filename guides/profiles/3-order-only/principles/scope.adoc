@@ -1,0 +1,23 @@
+[[scope]]
+= Scope
+
+This BIS describes a process comprising a Buyer to issue an electronic order without an order confirmation by the Seller.
+
+The main activities supported by this profile are:
+
+Structured Ordering:: The Order transaction should support the structured ordering of goods or services, using free text or use of identifiers. The information source of the ordered products may be a (paper or electronic) catalogue.
+
+Accounting:: The ordering process must support the allocation of budgets, so the value amounts of the ordered products may be stated. The buyer may provide some information that the seller is required to place on the invoice for aiding and automation of invoice processing.
+
+Invoice Verification:: The buyer may provide some information that the seller is required to place on the invoice for aiding and automation of invoice approval.
+
+VAT reporting:: VAT reporting is not a general requirement on orders.
+The level of support in orders is to
+* Enable VAT reporting in invoices by providing VAT number of buyer in case of reverse charges.
+* VAT can be stated as an estimate to enable buyers to state expected value of order.
+This can be helpful in automated matching of orders and invoices.
+VAT information is informative and does not affect the terms of trade.
+
+Transport and delivery:: Only limited support is in scope for transport related information, but it is recognized that the buyer needs to be able to provide some information about requested delivery location, some basic term, time and contact persons for a delivery of an order.
+
+Inventory:: Supporting inventory management is not in scope, but structured orders based on catalogues can be used to automate picking at supplier warehouses.

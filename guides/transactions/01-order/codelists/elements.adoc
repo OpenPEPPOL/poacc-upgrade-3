@@ -1,0 +1,19 @@
+
+
+= Code lists for coded elements
+
+:leveloffset: +1
+
+include::elements/order-type.adoc[]
+
+include::elements/currency-code.adoc[]
+
+include::elements/media-types.adoc[]
+
+include::elements/country.adoc[]
+
+include::elements/uom.adoc[]
+
+include::elements/vat-category.adoc[]
+
+:leveloffset: -1
