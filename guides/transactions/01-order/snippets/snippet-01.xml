@@ -3,7 +3,9 @@
     xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2"
     xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+  <!-- tag::ubl-version[] -->
    <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+  <!-- end::ubl-version[] -->
   <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns001:ver2.0:extended:urn:www.peppol.eu:bis:peppol03a:ver2.0</cbc:CustomizationID>
   <cbc:ProfileID>urn:www.cenbii.eu:profile:bii03:ver2.0</cbc:ProfileID>
   <cbc:ID>1</cbc:ID>
@@ -14,6 +16,15 @@
   <cac:ValidityPeriod>
     <cbc:EndDate>2013-07-30</cbc:EndDate>
   </cac:ValidityPeriod>
+  <!-- tag::attachment[] -->
+  <cac:AdditionalDocumentReference>
+    <cbc:ID>100</cbc:ID>
+    <cbc:DocumentType>Drawing</cbc:DocumentType><!--1-->
+    <cac:Attachment>
+      <cbc:EmbeddedDocumentBinaryObject filename="blueprint.pdf" mimeCode="application/pdf">Ymx1ZXByaW50</cbc:EmbeddedDocumentBinaryObject><!--2-->
+    </cac:Attachment>
+  </cac:AdditionalDocumentReference>
+  <!-- end::attachment[] -->
   <cac:Contract>
     <cbc:ID>C1</cbc:ID>
     <cbc:ContractType>Framework agreement</cbc:ContractType>
@@ -155,31 +166,61 @@
       </cac:Contact>
     </cac:DeliveryParty>
   </cac:Delivery>
+  <!-- tag::packing[] -->
+  <cac:AllowanceCharge>
+    <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+    <cbc:AllowanceChargeReason>Packing cost</cbc:AllowanceChargeReason>
+    <cbc:Amount currencyID="EUR">100</cbc:Amount>
+  </cac:AllowanceCharge>
+  <!-- end::packing[] -->
+  <!-- tag::discount[] -->
+  <cac:AllowanceCharge>
+    <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+    <cbc:AllowanceChargeReason>Agreed discount</cbc:AllowanceChargeReason>
+    <cbc:Amount currencyID="EUR">100</cbc:Amount>
+  </cac:AllowanceCharge>
+  <!-- end::discount[] -->
+  <!-- tag::tax-total[] -->
   <cac:TaxTotal>
-		<cbc:TaxAmount currencyID="EUR">28.75</cbc:TaxAmount>
+		  <cbc:TaxAmount currencyID="EUR">28.75</cbc:TaxAmount>
   </cac:TaxTotal>
+  <!-- end::tax-total[] -->
   <cac:AnticipatedMonetaryTotal>
-    <cbc:LineExtensionAmount currencyID="EUR">115</cbc:LineExtensionAmount>
-    <cbc:PayableAmount currencyID="EUR">143.75</cbc:PayableAmount>
+    <cbc:LineExtensionAmount currencyID="EUR">475</cbc:LineExtensionAmount>
+    <cbc:PayableAmount currencyID="EUR">503.75</cbc:PayableAmount>
   </cac:AnticipatedMonetaryTotal>
   <cac:OrderLine>
     <cac:LineItem>
       <cbc:ID>1</cbc:ID>
       <cbc:Quantity unitCode="NAR" unitCodeListID="UNECERec20">10</cbc:Quantity>
-      <cbc:LineExtensionAmount currencyID="EUR">40</cbc:LineExtensionAmount>
+      <cbc:LineExtensionAmount currencyID="EUR">400</cbc:LineExtensionAmount>
+      <!-- tag::tax-line[] -->
+      <cbc:TotalTaxAmount currencyID="EUR">8.00</cbc:TotalTaxAmount>
+      <!-- end::tax-line[] -->
       <cbc:AccountingCost>MAFO-1</cbc:AccountingCost>
+      <!-- tag::price-discount[] -->
       <cac:Price>
-        <cbc:PriceAmount currencyID="EUR">4</cbc:PriceAmount>
+        <cbc:PriceAmount currencyID="EUR">40</cbc:PriceAmount>
+        <cac:AllowanceCharge>
+          <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+          <cbc:AllowanceChargeReason>Price discount</cbc:AllowanceChargeReason>
+          <cbc:Amount currencyID="EUR">10</cbc:Amount>
+          <cbc:BaseAmount currencyID="EUR">50</cbc:BaseAmount>
+        </cac:AllowanceCharge>
       </cac:Price>
+      <!-- end::price-discount[] -->
        <cac:Item>
         <cbc:Description>1x12 pack sauce bags</cbc:Description>
         <cbc:Name>Brown sauce</cbc:Name>
+         <!-- tag::prod-id[] -->
         <cac:SellersItemIdentification>
           <cbc:ID>SN-33</cbc:ID>
         </cac:SellersItemIdentification>
+         
         <cac:StandardItemIdentification>
           <cbc:ID schemeID="GTIN">05704066204093</cbc:ID>
         </cac:StandardItemIdentification>
+         <!-- end::prod-id[] -->
         <cac:ClassifiedTaxCategory>
           <cbc:ID schemeID="UNCL5305">S</cbc:ID>
           <cbc:Percent>25</cbc:Percent>
@@ -193,15 +234,26 @@
   <cac:OrderLine>
     <cac:LineItem>
       <cbc:ID>2</cbc:ID>
-      <cbc:Quantity unitCode="NAR" unitCodeListID="UNECERec20">5</cbc:Quantity>
+      <!-- tag::quantity[] -->
+      <cbc:Quantity unitCode="NAR" unitCodeListID="UNECERec20">6</cbc:Quantity>
+      <!-- tag::quantity[] -->
       <cbc:LineExtensionAmount currencyID="EUR">30</cbc:LineExtensionAmount>
       <cbc:AccountingCost>MAFO-1</cbc:AccountingCost>
+      <!-- tag::quantity[] -->
+      
       <cac:Price>
         <cbc:PriceAmount currencyID="EUR">6</cbc:PriceAmount>
+        <cbc:BaseQuantity unitCode="NAR" unitCodeListID="UNECERec20">2</cbc:BaseQuantity>
       </cac:Price>
+      <!-- end::quantity[] -->
+      <!-- tag::name[] -->
        <cac:Item>
         <cbc:Description>1x12 pack sauce bags</cbc:Description>
         <cbc:Name>White sauce</cbc:Name>
+         
+         <!-- Code omitted for clarity -->
+         
+         <!-- end::name[] -->
         <cac:SellersItemIdentification>
           <cbc:ID>SN-34</cbc:ID>
         </cac:SellersItemIdentification>
@@ -224,9 +276,12 @@
       <cbc:Quantity unitCode="NAR" unitCodeListID="UNECERec20">15</cbc:Quantity>
       <cbc:LineExtensionAmount currencyID="EUR">45</cbc:LineExtensionAmount>
       <cbc:AccountingCost>MAFO-1</cbc:AccountingCost>
+      <!-- tag::price[] -->
       <cac:Price>
-        <cbc:PriceAmount currencyID="EUR">3</cbc:PriceAmount>
+        <cbc:PriceAmount currencyID="EUR">30</cbc:PriceAmount>
+        <cbc:BaseQuantity unitCode="NAR" unitCodeListID="UNECERec20">2</cbc:BaseQuantity>
       </cac:Price>
+      <!-- end::price[] -->
        <cac:Item>
         <cbc:Description>1x12 pack sauce bags</cbc:Description>
         <cbc:Name>Pepper sauce</cbc:Name>

@@ -34,11 +34,7 @@ include::process/index.adoc[]
 
 include::{transaction-path}/description/index.adoc[]
 
-////
-
 include::profile/index.adoc[]
 
-include::transport/index.adoc[]
-////
 
 :leveloffset: -1

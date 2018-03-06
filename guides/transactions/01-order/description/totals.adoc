@@ -1,0 +1,131 @@
+[[calculation-of-totals-anticipatedmonetarytotals]]
+= Calculation of totals (AnticipatedMonetaryTotals)
+
+The following elements show the anticipated monetary totals for an order:
+[cols="3,3,5", options="header"]
+|===
+| Element
+|Description
+| Formula
+
+| <cbc:LineExtensionAmount>
+| Sum of line amounts
+| stem:[sum("cac:OrderLine/cac:LineItem/cbc:LineExtensionAmount")]
+
+| <cbc:AllowanceTotalAmount>
+|Allowances on document level
+| stem:[sum("cac:AllowanceCharge[ChargeIndicator='true'$$]$$/cbc:Amount")]
+
+| <cbc:ChargeTotalAmount>
+|Charges on document level
+| stem:[sum("cac:AllowanceCharge[ChargeIndicator='false'$$]$$/cbc:Amount")]
+
+| <cbc:TaxExclusiveAmount>
+| Order total amount without VAT
+| stem:[\ \ \ \ "cac:LegalMonetaryTotal/cbc:LineExtensionAmount"] +
+stem:[– \ "cac:LegalMonetaryTotal/cbc:AllowanceTotalAmount"] +
+stem:[+ \ "cac:LegalMonetaryTotal/cbc:ChargeTotalAmount"]
+
+| <cbc:TaxInclusiveAmount>
+| Order total amount included VAT
+| stem:[\ \ \ \ "cac:LegalMonetaryTotal/cbc:TaxExclusiveAmount"] +
+stem:[+ \ "cac:TaxTotal/cbc:TaxAmount"]
+
+| <cbc:PrepaidAmount>
+|Any amounts that have been paid a-priory
+| _Not applicable_
+
+| <cbc:PayableRoundingAmount>
+| Rounding of Order total
+| _Not applicable_
+
+| <cbc:PayableAmount>
+| The amount that is expected to be paid
+| stem:[\ \ \ \ "cac:LegalMonetaryTotal/cbc:TaxInclusiveAmount"] +
+stem:[- \ "cac:LegalMonetaryTotal/cbc:PrepaidAmount"] +
+stem:[+ \ "cac:LegalMonetaryTotal/cbc:PayableRoundingAmount"]
+|===
+
+
+
+* Amounts MUST be given to a precision of two decimals except for Price where maximum number of decimals are four.
+* Expected total payable amount MUST NOT be negative.
+* Expected total sum of line amounts MUST NOT be negative.
+
+****
+[NOTE]
+Note that the AnticipatedMonetaryTotals class is optional.
+If the class is included in the message, the only mandatory elements are the `cbc:LineExtensionAmount` and the `cbc:PayableAmount` elements.
+All other elements are optional.
+When optional elements are used, the content MUST be according to the formulas in the table above.*
+****
+
+[[element-for-rounding-amount-the-payableroundingamount]]
+== Element for rounding amount, the PayableRoundingAmount
+
+It is possible to round the expected payable amount.
+The rule for this is according to the standard rule regarding rounding, ie.
+greater than or equal to 0.5 is rounded up, all other values are rounded down.
+
+The element `cac:AnticipatedMonetaryTotal/cbc:PayableRoundingAmount` is used for this purpose and is specified on the header level.
+
+This value must be added to the value in `cac:AnticipatedMonetaryTotal/cbc:TaxInclusiveAmount`
+#Error in validation rule?#
+
+Example: Amount 999.81 rounded to 1000.
+PayableRounding Amount = 0.19.
+
+[[example-of-calculations]]
+== Example of calculations:
+
+[cols="2,1,2",options="header"]
+|====
+|Description
+|Element
+|Sample amounts
+
+
+|Sum of line amounts
+|`cbc:LineExtensionAmount`
+|1436.50
+
+|Allowance on document level
+|`cbc:AllowanceTotalAmount`
+|100.00
+
+|Charges on document level
+|`cbc:ChargeTotalAmount`
+|200.00
+
+|Order total amount without VAT
+|`cbc:TaxExclusiveAmount`
+|1536.50
+
+|VAT total amount
+|`cac:TaxTotal/cbc:TaxAmount`
+|384.13
+
+|Rounding of Order total
+|`cbc:PayableRoundingAmount`
+|0.37
+
+|Order total with VAT (value of purchase)
+|`cbc:TaxInclusiveAmount`
+|1921.00
+
+|Paid amounts
+|`cbc:PrepaidAmount`
+| 1000.00
+
+|Amount expected to be paid
+|`cbc:PayableAmount`
+|921.00
+
+|====
+
+
+.The above example is presented in the order in the following way:
+[source, xml, indent=0]
+----
+include::../snippets/snippet-02.xml[tags=totals]
+----

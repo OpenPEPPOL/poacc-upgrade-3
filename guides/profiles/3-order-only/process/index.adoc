@@ -22,7 +22,7 @@ include::../../../shared/bpmn/bpmn-legend.adoc[]
 
 The following diagram shows the choreography of the business process implemented by the BIS.
 
-image::images/bpmn-punchout.png[align="center", width=600]
+image::images/bpmn-order.png[align="center", width=600]
 
 
 :leveloffset: +1

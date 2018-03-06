@@ -1,0 +1,43 @@
+[[allowances-and-charges]]
+= Allowances and charges
+
+[[general-rules]]
+== General rules
+
+Elements for allowance and charges are found on two levels:
+
+1.  The header level applies to the whole order and is included in the calculation of the order total amount.
+2.  The line level Price element.
+Data on this level may be provided to inform the buyer how the price is calculated.
+The price itself is always the net price, i.e. the Price Amount reduced/increased with allowancecharge/amount.
+
+* Several allowances and charges may be supplied on header-level.
+For the Price-element only one occurrence of the Allowance and Charge element can be present.
+The element AllowanceCharge with sub element ChargeIndicator indicates whether the instance is a charge (true) or an allowance (false).
+* The sum of all allowances and charges on the header level must be specified in AllowanceTotalAmount and ChargeTotalAmount respectively.
+* Allowances and charges related to Price is for information only and not part of any other calculations.
+* Allowances and charges related to Price may specify amount (AllowanceCharge/Amount) and base amount
+
+[[allowance-and-charges-on-header-level.]]
+== Allowance and Charges on header level.
+
+.Example showing a charge related to packing costs:
+[source, xml, indent=0]
+----
+include::../snippets/snippet-01.xml[tags=packing]
+----
+
+.Example showing an allowance related to a discount on the order:
+[source, xml, indent=0]
+----
+include::../snippets/snippet-01.xml[tags=discount]
+----
+
+[[allowance-and-charges-related-to-price]]
+== Allowance and Charges related to price
+
+.Example showing a discount on price of EUR 10:
+[source, xml, indent=0]
+----
+include::../snippets/snippet-01.xml[tags=price-discount]
+----

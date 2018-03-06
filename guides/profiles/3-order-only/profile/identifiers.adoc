@@ -1,0 +1,22 @@
+[[namespaces]]
+= Namespaces
+
+The order data model is in this PEPPOL BIS bound to the {ubl} of the order document type {ubl-order}.
+The target namespace for the {ubl} Order is:
+
+`urn:oasis:names:specification:ubl:schema:xsd:Order-2`
+
+
+[[version-id]]
+= Version ID
+
+This BIS is using the {ubl-order}. The namespace of the XML-message does only communicate the major version number.
+
+IMPORTANT: The element `cbc:UBLVersionID` MUST be stated with the value *2.1*:
+
+
+.Example of UBL version identifier
+[source, xml, indent=0]
+----
+include::../../../transactions/01-order/snippets/snippet-01.xml[tags=ubl-version]
+----
