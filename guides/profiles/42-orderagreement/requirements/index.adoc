@@ -1,0 +1,169 @@
+[[transaction-business-requirements]]
+= Transaction business requirements
+
+Based on the goals and scope of the BII profile on which this BIS is based the following set of High level requirements are found. Each requirement is connected to a goal.
+
+[cols="1s,4,1",options="header",]
+|====
+|Req. ID
+|Requirement statement
+|Ref. to goal
+
+|BR-42-001
+|The order agreement transaction should be regarded as the seller's accepted order, and the seller is thereby obligated to supply the items/services according to the terms identified in the order agreement transaction.
+|G-42-004, G-42-005, G-42-008, G-42-012
+
+|BR-42-002
+|The order agreement transaction must contain up to date information.
+|G-42-001
+
+|BR-42-003
+|The order agreement transaction must contain sufficient information to enable the buyer to create a “copy of an order” based on the information. Examples being quantity, price, units, seller’s item identification and references the buyer may need to automatically match the electronic invoice.
+|G-42-004, G-42-005, G-42-008
+
+|BR-42-004
+|The order agreement transaction includes only items purchased by the buyer.
+|G-42-006,G-42-011
+
+|BR-42-005
+|The transaction must contain information to identify configured items.
+|G-42-005
+
+|BR-42-006
+|It must be possible to identify the transaction, and ensure it is authentic.
+|G-42-009
+
+|BR-42-007
+|It should be possible to reference the order agreement transaction to a single framework agreement, DPS agreement or any other contract or agreement.
+|G-42-009, G-42-013
+
+|BR-42-008
+|The parties exchanging the order agreement must be specified.
+|G-42-008
+
+|BR-42-009
+|The buyer should be able to make an order without having the seller’s catalogue present in the purchasing system.
+|G-42-002, G-42-003, G-42-007
+
+|BR-42-010
+|The order agreement transaction must contain information to improve the procurement process.
+|G-42-009
+
+|BR-42-011
+|The order agreement transaction must contain information to assure invoice order matching.
+|G-42-009, G-42-011, G-42-012
+
+|BR-42-012
+|The order agreement transaction should include information about item labels and certificates.
+|G-42-016
+|====
+
+The above business requirements are supported by the following transaction requirements.
+
+[cols=",",options="header",]
+|====
+|ID
+|Requirement
+
+|tbr110-001
+|An order agreement must provide information about its identity and issue date and time.
+
+|tbr110-002
+|The order agreement must provide information to a previous order agreement if it needs to be changed or rejected.
+
+|tbr110-003
+|An order agreement must provide information about the identities, name and address of the seller
+
+|tbr110-004
+|An order agreement must provide information about the identities, name and address of the buyer
+
+|tbr110-005
+|The order agreement should carry information about the identities, name and address and contact details of the delivery party.
+
+|tbr110-006
+|An order agreement must provide for information about the identity and name of the buyer’s accounting party.
+
+|tbr110-007
+|An order agreement must provide for information about the delivery terms and delivery period.
+
+|tbr110-008
+|The lines in an order agreement must carry information that identifies the item.
+
+|tbr110-009
+|The lines in an order agreement must provide for information that describes the item.
+
+|tbr110-010
+|An order agreement must provide for information to refer to a document describing the purchased item/service. The reference may be a ticket or other documents related to the item/service.
+
+|tbr110-011
+|The lines in an order agreement must provide for information to specify a classification to the purchased item/service.
+
+|tbr110-012
+|For additional description to the purchased item/service the lines in an order agreement must provide for adding properties and attributes.
+
+|tbr110-013
+|An item should have information regarding the VAT rate and VAT category.
+
+|tbr110-014
+|An order agreement must provide seller contact information for the buyer to use when resolving issues with the order agreement.
+
+|tbr110-015
+|An order agreement must provide for information that makes it possible for the buyer to direct the order agreement in the buyer procurement system and for accounting purposes.
+
+|tbr110-016
+|It should be possible send other information that is not contained explicitly in another place in the transaction.
+
+|tbr110-017
+|An order agreement must provide for information of contract id and contract type that the order agreement is based on.
+
+|tbr110-018
+|An order agreement must provide for information of the identification and name of the originating party.
+
+|tbr110-019
+|An order agreement must provide for information of tax totals and other monetary totals on header level.
+
+|tbr110-020
+|An order agreement must provide for information of item price and the base quantity of the price.
+
+|tbr110-021
+|An order agreement must have a line number for each order agreement line.
+
+|tbr110-022
+|An order agreement must provide for information of ordered quantity and in if appropriate delivered quantity of the item.
+
+|tbr110-023
+|An order agreement must provide for information about the total amount for each line.
+
+|tbr110-024
+|It should be possible to indicate if an item/service has a contracted price.
+|====
+
+== Transaction information requirements
+
+This chapter describes the transaction information requirements of the Order agreement BIS. Chapter 5.1 gives an overview of the Order agreement transaction and 5.2 shows the requirements.
+[cols=",",]
+|====
+|Categories |Description and Values
+|Identifier |BiiTrns110
+|Description |A transaction containing information about the items/services purchased by the buyer.
+|Partner Types
+|Customer
+
+Supplier
+
+|Authorized Roles
+|Buyer
+
+Seller
+
+|Legal Implications |With providing an Order agreement transaction the Seller documents the agreement entered into with the seller regarding products, quantities, prices and terms, as stated in the Order agreement transaction.
+|Initial Event |Purchase
+|Terminal event |Process information
+|Constraints |non specified
+|====
+
+:leveloffset: +1
+
+include::peppol-requirements.adoc[]
+
+:leveloffset: -1

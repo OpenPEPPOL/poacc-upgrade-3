@@ -1,0 +1,6351 @@
+= Introduction to openPEPPOL and BIS
+
+This BIS is a result of work within openPEPPOL and is published as part of the PEPPOL specifications.
+
+This PEPPOL BIS provides a set of specifications for implementing a PEPPOL business process. The document is concerned with clarifying requirements for ensuring interoperability of pan-European Public eProcurement and provides guidelines for supporting these requirements and how to implement them. This PEPPOL BIS is based on the CEN WS/BII Profile “BII Profile 42 Order Agreement CWA 17029-124” [CENBII].
+
+*The purpose* of this document is to describe a common format for the order agreement in the European market, and to facilitate an efficient implementation and increased use of electronic collaboration regarding the ordering process based on this format.
+
+== Audience
+
+The audience for this document is organizations wishing to be PEPPOL enabled for exchanging electronic orders, and/or their ICT-suppliers. These organizations may be:
+
+image:extracted-media/media/image3.png[image,height=10] Service providers
+
+image:extracted-media/media/image3.png[image,height=10] Contracting Authorities
+
+image:extracted-media/media/image3.png[image,height=10] Economic Operators
+
+image:extracted-media/media/image3.png[image,height=10] Software Developers
+
+More specifically it is addressed towards the following roles:
+
+image:extracted-media/media/image3.png[image,height=10] ICT Architects
+
+image:extracted-media/media/image3.png[image,height=10] ICT Developers
+
+image:extracted-media/media/image3.png[image,height=10] Business Experts
+
+For further information on PEPPOL/OpenPEPPOL please see [PEPPOL].
+
+= References
+
+[PEPPOL] http://www.peppol.eu/, specifically http://www.peppol.eu/ressource-library/technical-specifications/post-award
+
+[PEPPOL_Transp] http://www.peppol.eu/ressource-library/technical-specifications/infrastructure-resources
+
+[CENBII] http://www.cenbii.eu/[http://www.cenbii.eu], specifically http://www.cenbii.eu/
+
+[BII_Order] ftp://ftp.cen.eu/public/CWAs/BII2/CWA16562/CWA16562-Annex-A-BII-Profile-03-OrderOnly-V2_0_0.pdf
+
+[BII_OrderModel] A browsable HTML version: +
+http://spec.cenbii.eu/BII2/fxhtml/Trdm001-Order/g_1.htm?http://spec.cenbii.eu/BII2/fxhtml/Trdm001-Order/g_5.htm
+
+[UBL] http://docs.oasis-open.org/ubl/UBL-2.1.html
+
+[UBL_OrderResponse] http://docs.oasis-open.org/ubl/os-UBL-2.1/UBL-2.1.html#T-ORDER-RESPONSE
+
+[Schematron] http://www.schematron.com/[http://www.schematron.com]
+
+[XSLT] http://www.w3.org/TR/xslt20/
+
+[GS1] http://www.gs1.org/barcodes/technical/id_keys
+
+=  +
+Document history
+
+== Revision history
+
+[cols=",,,,",options="header",]
+|====
+|Version |Date |Author |Organisation |Description
+|1.0 |2017-04-01 |Georg Birgisson |Midran Limited |First version
+|====
+
+== Contributors
+
+The following individuals and their organizations have contributed to the development of this PEPPOL BIS document by participation in team meetings, discussion and by providing expert input and review.
+
+Ahti Allikas, Opuscapita
+
+Chris Heavey, Ghxeurope
+
+I Burdon, Elcom
+
+Jan Andre Maroe, DIFI, NO
+
+Jens Aabol , DIFI, NO
+
+Krist Deveugele, Basware
+
+Martin Forsberg, Ecru, SE
+
+Peter Danko, Edocdelivery
+
+Petteri Zilliacus, Basware
+
+Seija Vallinen, Basware
+
+Soren Pedersen, ESV, SE
+
+Thomas Pettersson, PSK-konsult, SE
+
+Dirk Verreyen, Hewlett Packard, BE
+
+= Principles and prerequisites
+
+This chapter describes the principles and assumptions that underlie the use of PEPPOL Order Agreement. It is based on the CENBII 42 Order Agreement. See [CENBII]
+
+This profile identifies, explains and justifies the business requirements for the Order agreement process. It provides syntax bindings to OASIS UBL 2.1. It also includes a syntax implementation guide.
+
+The order agreement profile describes processes where the buyer, after purchasing items/services, receives a message with information documenting the purchase.
+
+== Prerequisites
+
+The following are prerequisites for this BIS:
+
+1.  A buyer has purchased goods or services from the seller by any means.
+2.  The seller has to be registered in the buyer system with information as contact information and identifiers used for other BIS transaction e.g. BIS order and invoice (GLN, Organization number…)
+
+== Scope
+
+
+
+== Goals and Objectives
+
+
+
+== Parties and roles
+
+The table below gives the definitions of the parties and roles of the ordering process.
+
+[cols=",",]
+|====
+|Business partners |Description
+|Customer a|
+The customer is the legal person or organization who is in demand of a product or service.
+
+Examples of customer roles: buyer, consignee/delivery part, debtor, contracting body.
+
+|Supplier a|
+The supplier is the legal person or organization who provides a product or service.
+
+Examples of supplier roles: seller, consignor, creditor, economic operator.
+
+|Role/actor |Description
+a|
+Buyer
+
+(BuyerCustomerParty)
+
+ |The buyer is the legal person or organization acting on behalf of the customer and who buys or purchases the goods or services.
+a|
+Seller
+
+(SellerSupplierParty)
+
+ |The seller is the legal person or organization acting on behalf of the supplier and who sells goods or services to the customer.
+|====
+
+The following diagram links the business processes to the roles performed by the Business Partners.
+
+image:extracted-media/media/image4.emf[image,width=642,height=117]
+
+== Benefits
+
+== Interoperability
+
+= Transaction business requirements
+
+=== Order agreement information transaction
+
+== Specific OpenPEPPOL requirements
+
+= Code lists
+
+== Code lists for coded elements
+
+Table of the code lists used in the Order agreement transaction:
+
+[cols=",,,",options="header",]
+|====
+|*Business Term* |*Allowed SchemeID* |*Applicable Xpath* |*Note*
+|Currency Code |ISO4217 a|
+//cac:AllowanceCharge/cbc:Amount@currencyID
+
+//cbc:TaxAmount@currencyID
+
+//cbc:TaxableAmount@currencyID
+
+//cbc:LineExtensionAmount@currencyID
+
+//cbc:TaxExclusiveAmount@currencyID
+
+//cbc:TaxInclusiveAmount@currencyID
+
+//cbc:AllowanceTotalAmount@currencyID
+
+//cbc:ChargeTotalAmount@currencyID
+
+//cbc:PayableRoundingAmount@currencyID
+
+//cbc:PayableAmount@currencyID
+
+//cac:LineItem/cbc:LineExtensionAmount@currencyID
+
+//cbc:TotalTaxAmount@currencyID
+
+//cbc:PriceAmount@currencyID
+
+ |See link to codelist below.
+|MIME Media Type Code |MIME |//cbc:EmbeddedDocumentBinaryObject @mimeCode |See link to codelist below.
+|Country code |ISO3166-1:Alpha2 |//cac:Country/cbc:IdentificationCode@ listID |See link to codelist below.
+|Unit Of Measure |UNECERec20 a|
+//cbc:ValueQuantity@unitCode
+
+//cbc:BaseQuantity@unitCode
+
+//cbc:Quantity@unitCode
+
+ |See link to codelist below.
+|Item VAT category code |UNCL5305 SUBSET a|
+//cac:TaxCategory/cbc:ID@schemeID
+
+//cac:ClassifiedTaxCategory/cbc:ID@schemeID
+
+ |Subset values are given below
+|Commodity code |See CENBII COMMODITY_SCHEME_ID |//cbc:CommodityCode/@listID |Note: The CENBII Codelist used for Commodity Scheme Identifier contains commonly used classification systems as listed below. It may be extended with other values.
+|====
+
+=== Links to code lists
+
+UNCL5305 SUBSET - CEN BII3 subsets
+
+Subset values are:
+
+Code Value
+
+AE VAT Reverse Charge
+
+E Exempt from tax
+
+S Standard rate
+
+Z Zero rated goods
+
+H Higher Rate, can be used to identify a rate above the standard rate.
+
+AA Lower Rate, can be used to identify a rate below the standard rate.
+
+ISO 4217
+
+http://www.currency-iso.org/en/home/tables/table-a1.html
+
+IANA
+
+http://www.iana.org/assignments/media-types
+
+ISO 3166-1 alpha2:
+
+http://www.iso.org/iso/home/standards/country_codes.htm
+
+UN/ECE Rec 20:
+
+http://www.unece.org/tradewelcome/un-centre-for-trade-facilitation-and-e-business-uncefact/outputs/cefactrecommendationsrec-index/list-of-trade-facilitation-recommendations-n-16-to-20.html
+
+COMMODITY_SCHEME_ID – CENBII
+
+_____________________________________
+Code Value
+
+CV Customs Article Number
+
+GN National Product Group Code
+
+HS Harmonised System
+
+CPV Common Procurement Vocabulary
+
+UNSPSC UNSPSC
+
+eCLASS eCLASS
+
+GPC GS1 Global Product Classification
+_____________________________________
+
+== Codelists for identifier schemes
+
+Table of the code lists used to constrain the values of schemeID for identifiers in the order agreement transaction:
+
+[cols=",,,",options="header",]
+|====
+|Business Term |Allowed SchemeID |Applicable Xpath |Note
+|Party Identifier |See chapter 11.1 a|
+cbc:EndpointID/@schemeID
+
+cac:PartyIdentification/cbc:ID/@schemeID
+
+ a|
+Mandatory
+
+Mandatory
+
+|Business process type identifier |Set value see chapter 11.3 |cbc:ProfileID |Mandatory
+|Specification identification |Set value see chapter 11.4 |cbc:CustomizationID |Mandatory
+|====
+
+= Business Rules
+
+== Order agreement business rules
+
+BIS business process rules are rules that apply to the business process as a whole. This includes describing requirements or commitments of the actors involved, describing relationships between two or more transactions within the process and/or describing the BIS relationship to factors outside of the BIS.
+
+[cols=",,",options="header",]
+|====
+|*Rule ID* |*Rule* |*Req ID*
+|pbr42-R001 |The order agreement transaction includes only items selected and purchased by the buyer at prices and with allowances or charges presented to him during the purchase. |BR-42-005
+|pbr42-R002 |The method of exchanging the transaction must enable the buyer to ensure it's authentic. |BR-42-007
+|pbr42-R003 |Seller is obligated to supply the items according to the terms and quantity stated in the order agreement transaction. |BR-42-001
+|====
+
+== CENBII transaction business rules
+
+The following rules apply to the order agreement transaction as it is used in the Order agreement BIS
+
+[cols=",,,",options="header",]
+|====
+|*Rule ID* |*Rule* |*Req ID* |*Error level*
+|BII3-T110-R001 |An Order agreement MUST have a customization identifier. |tir110-009 |fatal
+|BII3-T110-R002 |An Order agreement MUST have a BIS identifier. |tir110-008 |fatal
+|BII3-T110-R003 |An Order agreement MUST contain the date of issue. |tir110-002 |fatal
+|BII3-T110-R005 |An Order agreement MUST contain the Order agreement identifier. |tir110-001 |fatal
+|BII3-T110-R006 |An Order agreement MUST specify the buying party. |tir110-010/011 |fatal
+|BII3-T110-R007 |An Order agreement MUST specify the selling party. |tir110-013/014 |fatal
+|BII3-T110-R008 |An Order agreement MUST have at least one Order agreement line. | |fatal
+|BII3-T110-R009 |An Order agreement line MUST contain a unique line identifier. |tir110-022 |fatal
+|BII3-T110-R011 |Prices of items MUST not be negative. |tir110-109 |fatal
+|BII3-T110-R012 |An item in an Order agreement line MUST be identifiable by either “item sellers identifier” or “item standard identifier”. |tir110-033/034 |fatal
+|BII3-T110-R015 |An Order agreement line MUST specify line VAT information. | |fatal
+|BII3-T110-R018 |A seller MUST contain the seller identifier |tir110-014 |fatal
+|BII3-T110-R019a |A seller name MUST be at most one |tir110-013 |fatal
+|BII3-T110-R019b |A seller id MUST be at most one |tir110-014 |fatal
+|BII3-T110-R019c |A buyer name MUST be at most one |tir110-010 |fatal
+|BII3-T110-R019d |A buyer id MUST be at most one |tir110-011 |fatal
+|BII3-T110-R020 |A buyer MUST contain the buyer identifier | |fatal
+|BII3-T110-R021 |An Order agreement line MUST contain a quantity and it should not be 0 |tir110-093 |fatal
+|====
+
+== PEPPOL transaction business rules
+
+Following rules have been defined by OpenPeppol in addition to the rules adopted from the BII specifications. These rules apply in all implementations that follow this PEPPOL BIS.
+
+[cols=",,,",options="header",]
+|====
+|Rule ID |Rule |Req ID |Error level
+|EUGEN-T110-R001 |An endpoint identifier MUST have a scheme identifier attribute |tir110-015 +
+tir110-012 |fatal
+|EUGEN-T110-R002 |A party identifier MUST have a scheme identifier attribute |tir110-014 +
+tir110-013 |fatal
+|EUGEN-T110-R003 |A document currency code MUST have a list identifier attribute “ISO4217” |tir110-007 |fatal
+|EUGEN-T110-R004 |A country identification code MUST have a list identifier attribute “ISO3166-1:Alpha2” |tir110-062 +
+tir110-056 +
+tir110-077 |fatal
+|EUGEN-T110-R005 |A unit code attribute MUST have a unit code list identifier attribute “UNECERec20” |tir110-093 |fatal
+|EUGEN-T110-R006 |A tax category identifier MUST have a scheme identifier attribute “UNCL5305” |OP-110-005 +
+tir110-106 |fatal
+|EUGEN-T110-R007 |CustomizationID must be: urn:www.cenbii.eu:transaction:biitrns110:ver1.0:extended:urn:www.peppol.eu:bis:peppol42a:ver1.0 |tir110-009 |fatal
+|EUGEN-T110-R008 |ProfileID must be: urn:www.cenbii.eu:profile:bii42:ver1.0 |tir110-008 |fatal
+|EUGEN-T110-R009 |Sellers endpoint id must exist |tir110-015 |fatal
+|EUGEN-T110-R010 |Buyers endpoint id must exist |tir110-012 |fatal
+|EUGEN-T110-R011 |All amounts must have same currency code as document currency a|
+tir110-007
+
+tir110-086
+
+tir110-087
+
+tir110-088
+
+tir110-089
+
+tir110-090
+
+tir110-108
+
+tir110-109 +
+tir110-112
+
+OP110-004
+
+OP110-008
+
+OP110-009
+
+OP110-010
+
+ |fatal
+|EUGEN-T110-R013 |Item classification codes must include code list value (listID) |tir110-096 +
+tir110-097 |fatal
+|EUGEN-T110-R015 |Allowances and charges MUST have a reason |OP-110-002 +
+OP-110-012 |fatal
+|EUGEN-T110-R016 |Total amount for payment MUST NOT be negative, if total amount for payment is provided. |tir110-090 |fatal
+|EUGEN-T110-R017 |Total sum of line amounts MUST NOT be negative, if total sum of line amounts is provided. |tir110-086 |fatal
+|EUGEN-T110-R019 |Total sum of line amounts MUST equal the sum of the order line amounts at order line level, if total sum of line amounts is provided. |tir110-086 |fatal
+|EUGEN-T110-R020 |Total sum of charges at document level MUST be equal to the sum of charges at document level, if total sum of charges at document level is provided. |OP-110-008 |fatal
+|EUGEN-T110-R021 |Total sum of allowance at document level MUST be equal to the sum of allowance amounts at document level, if total sum of allowance at document level is provided. |OP-110-009 |fatal
+|EUGEN-T110-R022 |Tax exclusive amount MUST equal the sum of line amount plus total charge amount at document level less total allowance amount at document level if tax exclusive amount is provided. |tir110-087 |fatal
+|EUGEN-T110-R023 |Tax inclusive amount must equal tax exclusive amount plus total tax amount. |tir110-088 |fatal
+|EUGEN-T110-R024 |Total amount for payment MUST be equal to the tax inclusive amount plus rounding amount. |tir110-090 |fatal
+|EUGEN-T110-R025 |UBLVersionID must be 2.1 | |fatal
+|EUGEN-T110-R026 |Each item label must have an item label name. |OP-110-013 |fatal
+|EUGEN-T110-R027 |Each item label must have an item label value. |OP-110-014 |fatal
+|====
+
+== Codelists business rules
+
+[cols=",",options="header",]
+|====
+|Identifier |Business Rule
+|CL-T110-R001 |currencyID for Amounts MUST be coded using ISO code list 4217
+|CL-T110-R002 |Order agreement currency MUST be coded using ISO code list 4217
+|CL-T110-R003 |An Endpoint Identifier Scheme MUST be from the list of PEPPOL Party Identifiers described in the "PEPPOL Policy for using Identifiers".
+|CL-T110-R004 |A Party Identifier Scheme MUST be from the list of PEPPOL Party Identifiers described in the "PEPPOL Policy for using Identifiers".
+|CL-T110-R005 |VAT category code MUST be coded using UNCL 5305 code list BII3 subset
+|CL-T110-R006 |Unit code for quantities MUST be coded according to the UN/ECE Recommendation 20
+|CL-T110-R007 |For Mime code in attribute use MIME Media Types.
+|CL-T110-R009 |Country codes MUST be from ISO 3166-1 alpha2
+|CL-T110-R010 |Commodity code schemes MUST be according to CENBII3 COMMODITY_SCHEME_ID
+|====
+
+= Process and typical use cases
+
+The order agreement BIS includes the sending of information on agreed products/services from a Seller to a Buyer.
+
+== Process flow
+
+The order agreement process flow can be described as follows:
+
+Start position.
+
+1.  A Buyer makes a purchase of goods or services from the Seller.
+2.  A Seller reports one or more accumulated purchases made under a framework agreement to the Buyer.
+
+End positions.
+
+1.  A purchase has been recorded in the Buyer´s purchasing system. The seller proceeds to invoice accordingly.
+
+An Order Agreement may refer to a framework agreement for its terms and conditions; otherwise the Buyer’s terms and conditions apply.
+
+== Business process Diagram
+
+=== Legend for BPMN diagrams
+
+The diagrams are expressed in the BPMN notation. The diagram below serves as an explanation for the diagrams used in the process descriptions.
+
+image:extracted-media/media/image5.emf[image,width=566,height=307]
+
+The following diagram shows the choreography of the business process implemented by the BIS.
+
+image:extracted-media/media/image6.emf[image,width=637,height=497]image:extracted-media/media/image7.emf[image,width=598,height=466]
+
+[cols=",",]
+|====
+|*Categories* |*Description and Values*
+|Description a|
+The buyer doesn’t use the purchasing system to create an order. It’s done outside of this system.
+
+The seller creates an order in his ordering system based on requirements from the buyer and, after agreeing/committing to it, sends a copy of the order as an Order agreement to the buyer.
+
+|Pre-conditions a|
+The seller’s ordering system must be able to send Order agreement transactions.
+
+The buyer’s purchasing system must be able to receive Order agreement transactions.
+
+The content of the order is agreed through use of web shop, phone, email, physical visit to shop or other means.
+
+|Post-conditions |The buyer has received an order agreement that is recorded in the purchasing system.
+|Legal Implications |By providing an Order agreement transaction the Seller commits himself the, quantities, prices and terms stated in the Order agreement transaction.
+|====
+
+== Use case 1 – Web store used for booking tickets
+
+This use case describes the process where a customer/buyer orders tickets.
+
+[cols=",",options="header",]
+|====
+|Use Case number |1
+|Use Case Name |Web store used for booking tickets
+|Use Case Description |The buyer uses a website to buy tickets, such as for airfare or events.
+|Parties involved a|
+Buyer
+
+Seller
+
+|Assumptions |The seller has a website that allows the buyer to select and order tickets. +
+The buyer has an account with the seller with necessary details to send him an order agreement.
+|The flow a|
+The buyer uses the website to book tickets. The buyer receives the tickets in the way as selected in the web shop (e.g. mobile ticket or pdf). The buyer then ends the web shop session. The purchase is recorded in the seller’s system.
+
+An order agreement transaction with all necessary information is sent from the seller’s system to the buyer’s purchasing system. The order agreement is recorded in the buyer’s purchasing system.
+
+An invoice is sent to the buyer, but this is outside of this BIS.
+
+If the buyer wishes to change a ticket in accordance with the its rules then he reenters the web store, changes the ticket and receives a new order agreement. The change procedure is a repetition of the initial one.
+
+|Result |The buyer and the seller have reached an agreement. An order has been placed for tickets and the buyer has received a structured message with its details. If the invoice has an order reference, the invoice can be matched automatically.
+|XML example file |See Appendix A for a sample file illustrating Use Case 1.
+|====
+
+== Use case 2 – Web shop used for ordering items
+
+This use case describes the process where a customer/buyer orders products in a web shop.
+
+[cols=",",options="header",]
+|====
+|Use Case number |2
+|Use Case Name |Web shop used for ordering items
+|Use Case Description |The buyer uses a website to buy items.
+|Parties involved a|
+Buyer
+
+Seller
+
+|Assumptions |The seller has a website that allows the buyer to select and order items. +
+The buyer has an account with the seller with necessary details to send him an order agreement.
+|The flow a|
+The buyer is working in the in-house purchasing system, selects a seller that has a web shop, and clicks to see that seller’s products.
+
+The buyer searches the website for items needed, and choose to add some to the order agreement. It is clearly visible which items are contracted. After selecting all required items, the buyer then chooses to buy the selected items. When the ordering is finalized in the web shop, the buyer ends the web shop session. The purchse is recorded in the seller’s system.
+
+An order agreement transaction with item information of the purchased items is sent from the seller to the. The order agreement is recorded in the buyer’s purchasing system.
+
+After the delivery of the goods the seller sends an invoice which matches the order and the delivery, but this is outside of this BIS.
+
+|Result |The buyer and the seller have reached an agreement. An order has been placed and the buyer has received a structured message with the order details. If the invoice has an order reference, the invoice can be matched automatically.
+|XML example file |See Appendix A for a sample file illustrating Use Case 2.
+|====
+
+== Use case 3 – Telephone and e-mail is used to order items
+
+[cols=",",options="header",]
+|====
+|Use Case number |3
+|Use Case Name |Telephone or e-mail order
+|Use Case Description |Buyer makes a purchase by calling the seller by telephone or by sending an email.
+|Parties involved a|
+Buyer
+
+Seller
+
+|Assumptions |The buyer has an account with the seller with necessary details to send him an order agreement.
+|The flow a|
+The buyer is working in his purchasing system, and need to by printers and selects a seller of printers. The seller’s items are not in the purchasing system and the seller doesn't offer a web shop. The buyer calls the seller on the telephone.
+
+The buyer orders the printer directly during the phone call, and also informs the seller what reference to use.
+
+An order agreement transaction with item information and price of the selected items is sent from the seller to the buyer’s purchasing system. The order agreement is recorded in the buyer’s purchasing system
+
+After the delivery of the goods, the seller sends an invoice which matches the order and the delivery, but this is outside of this BIS.
+
+|Result |The buyer and the seller have reached an agreement. An order has been placed and the buyer has received a structured message with the order details. If the invoice has an order reference, the invoice can be matched automatically.
+|XML example file |See Appendix A for a sample file illustrating Use Case 3.
+|====
+
+== Use case 4 – Buyer visits the seller’s physical store.
+
+This use case describes a process where the buyer physically enteres the sellers store to buy and possibly take delivery of goods.
+
+[cols=",",options="header",]
+|====
+|Use Case number |4
+|Use Case Name |User configures product/services
+|Use Case Description |A buyer physically makes a purchase and takes delivery.
+|Parties involved a|
+Buyer
+
+Seller
+
+|Assumptions |The buyer has an account with the seller with necessary details to send him an order agreement.
+|The flow a|
+The buyer urgently need some items and may wish to discuss this with the seller before buying the items.
+
+After selecting the items he needs the buyer gets a receipt for the selected items. He may bring with him all the items when leaving the store or schedule a later delivery.
+
+The seller registers the order in the ordering system including a reference such as requisition number, person id, project id etc.
+
+An order agreement transaction with item information and price of the selected items is sent from the seller to the buyer’s purchasing system. The order agreement is recorded in the buyer’s purchasing system
+
+The buyer then follows the normal procedure to, if needed, complete the order.
+
+The seller sends an invoice which matches the order and delivery, but this is outside of this BIS.
+
+|Result |The buyer and the seller has reached an agreement. An order has been placed and the buyer has taken delivery of the products. The buyer has received a structured message with the order details. The invoice has a reference, to match the order.
+|XML example file |See Appendix A for a sample file illustrating Use Case 4.
+|====
+
+== Use case 5 – Framework contract
+
+The buyer has made a framework agreement with the seller for services such as maintenance or consulting. The framework agreement sets limits and terms within which the seller may provide services without individual orders from the buyer.
+
+[cols=",",options="header",]
+|====
+|Use Case number |5
+|Use Case Name |Maintainance based on framework contract
+|Use Case Description a|
+A seller who has a framework agreement that contracts him for certain services, items or consulting may react to events as contracted and at the end of a period send an order agreement listing the services that were carried out. +
+ +
+Examples include:
+
+* A maintenance services that monitors a building and, for example, fixes windows, doors and other things that need maintenance as identified.
+* A computer service provider monitors systems and reacts immediately to incidents such as system down time or errors.
+* An accounting services contracted by the buyer handles various filings and reports as required.
+* A seller of supplies has been contracted to monitor the stock levels for certain items and restock as needed to maintain the agreed levels.
+
+In each of these examples the buyer has made a framework contract with the seller allowing the seller to react to defined but not previously known events without receiving an order or request from the buyer for each event.
+
+|Parties involved a|
+Buyer
+
+Seller
+
+|Assumptions |The seller and buyer has a framework contract that define the service to be provided and its limits.
+|The flow a|
+The seller of the services or items reacts to events as defined in the contract and carries out the service or delivers the items as contracted.
+
+Periodically, for example monthly, the seller lists all services and items that have been provided during the period. This is listed with order agreement lines and the total of the order agreement represents the total value of the services and items provided during the period which will be invoice by the seller. The seller sends the order agreement to the buyer who records it in his system.
+
+The seller proceeds to invoice immediately unless otherwise directed by the framework agreement.
+
+The buyer may have internal processes that verify these kind of order agreements differently than those initiated by himself.
+
+|Result |The buyer has registed a purchase order in his systems that allow him to to order to invoice mathings when the invoice is received.
+|XML example file |See Appendix A for a sample file illustrating Use Case 5.
+|====
+
+= Description of selected parts of the order agreement message
+
+Following clauses describe the use of individual sections of the order agreement transaction.
+
+== Parties
+
+The following parties/roles may be specified in the message:
+
+=== SellerSupplierParty (Seller)
+
+The seller is the legal person or organization acting on behalf of the supplier and who sells goods or services to the buyer. The seller is mandatory in the PEPPOL BIS Order Agreement message.
+
+Example:
+
+ <cac:SellerSupplierParty>
+
+<cac:Party>
+
+<cbc:EndpointID schemeID="GLN">5790000436095</cbc:EndpointID>
+
+<cac:PartyIdentification>
+
+<cbc:ID schemeID="BE:ORGNR">5541277711</cbc:ID>
+
+</cac:PartyIdentification>
+
+<cac:PartyName>
+
+<cbc:Name>Information services</cbc:Name>
+
+</cac:PartyName>
+
+<cac:PostalAddress>
+
+<cbc:StreetName>Apt 56B, Whitehaven Mansions</cbc:StreetName>
+
+<cbc:AdditionalStreetName>Sandhurst Sq</cbc:AdditionalStreetName>
+
+<cbc:CityName>Brussels</cbc:CityName>
+
+<cbc:PostalZone>1001</cbc:PostalZone>
+
+<cbc:CountrySubentity>BE</cbc:CountrySubentity>
+
+<cac:Country>
+
+<cbc:IdentificationCode listID="ISO3166-1:Alpha2">BE</cbc:IdentificationCode>
+
+</cac:Country>
+
+</cac:PostalAddress>
+
+<cac:DeliveryContact>
+
+<cbc:Name>Hercule Poirot</cbc:Name>
+
+<cbc:Telephone>123456</cbc:Telephone>
+
+<cbc:Telefax>123456</cbc:Telefax>
+
+<cbc:ElectronicMail>mail@work.be</cbc:ElectronicMail>
+
+</cac:DeliveryContact>
+
+</cac:Party>
+
+</cac:SellerSupplierParty>
+
+=== BuyerCustomerParty (Buyer)
+
+The buyer is the legal person or organization acting on behalf of the customer and who buys or purchases the goods or services. The buyer is mandatory in the PEPPOL BIS Order Agreement message.
+
+Example:
+
+<cac:BuyerCustomerParty>
+
+<cac:Party>
+
+<cbc:EndpointID schemeID="GLN">5790000436095</cbc:EndpointID>
+
+<cac:PartyIdentification>
+
+<cbc:ID schemeID="BE:ORGNR">5541277711</cbc:ID>
+
+</cac:PartyIdentification>
+
+<cac:PartyName>
+
+<cbc:Name>Information services</cbc:Name>
+
+</cac:PartyName>
+
+<cac:PostalAddress>
+
+<cbc:StreetName>Apt 56B, Whitehaven Mansions</cbc:StreetName>
+
+<cbc:AdditionalStreetName>Sandhurst Sq</cbc:AdditionalStreetName>
+
+<cbc:CityName>Brussels</cbc:CityName>
+
+<cbc:PostalZone>1001</cbc:PostalZone>
+
+<cbc:CountrySubentity>BE</cbc:CountrySubentity>
+
+<cac:Country>
+
+<cbc:IdentificationCode listID="ISO3166-1:Alpha2">BE</cbc:IdentificationCode>
+
+</cac:Country>
+
+</cac:PostalAddress>
+
+<cac:DeliveryContact>
+
+<cbc:Name>Hercule Poirot</cbc:Name>
+
+<cbc:Telephone>123456</cbc:Telephone>
+
+<cbc:Telefax>123456</cbc:Telefax>
+
+<cbc:ElectronicMail>mail@work.be</cbc:ElectronicMail>
+
+</cac:DeliveryContact>
+
+</cac:Party>
+
+</cac:BuyerCustomerParty>
+
+=== OriginatorCustomerParty (Originator)
+
+The unit initiating the order. Most often the end user. The originator information is optional in the PEPPOL BIS Order Agreement message.
+
+Example:
+
+ <cac:OriginatorCustomerParty>
+
+<cac:Party>
+
+<cac:PartyIdentification>
+
+<cbc:ID schemeID="SE:ORGNR">5541277711</cbc:ID>
+
+</cac:PartyIdentification>
+
+<cac:PartyName>
+
+<cbc:Name>Information services</cbc:Name>
+
+</cac:PartyName>
+
+</cac:Party>
+
+</cac:OriginatorCustomerParty>
+
+=== AccountingCustomerParty (Invoicee)
+
+The invoicee is the legal person or organization acting on behalf of the customer and who receives the invoice for the order. The invoicee information is optional in the PEPPOL BIS Order Agreement message.
+
+Example:
+
+<cac:AccountingCustomerParty>
+
+<cac:Party>
+
+<cac:PartyIdentification>
+
+<cbc:ID schemeID="SE:ORGNR">5541277711</cbc:ID>
+
+</cac:PartyIdentification>
+
+<cac:PartyName>
+
+<cbc:Name>Information services</cbc:Name>
+
+</cac:PartyName>
+
+</cac:Party>
+
+</cac:AccountingCustomerParty>
+
+== Delivery
+
+Delivery gives information on when and where the goods and services are deleivered.
+
+Delivery special terms may be used to inform how the the goods or service is delivered. E.g.
+
+* A ticket may be delivered as a pdf in mail - “Mail”.
+* Goods may hav been collected at the store – “Customer pick up“
+
+The delivery information is optional in the PEPPOL BIS Order Agreement message.
+
+Example:
+
+<cac:Delivery>
+
+<cac:PromisedDeliveryPeriod>
+
+<cbc:StartDate>2016-08-20</cbc:StartDate>
+
+<cbc:StartTime>12:00:00</cbc:StartTime>
+
+<cbc:EndDate>2016-08-30</cbc:EndDate>
+
+<cbc:EndTime>18:00:00</cbc:EndTime>
+
+</cac:PromisedDeliveryPeriod>
+
+<cac:DeliveryParty>
+
+<cac:PartyIdentification>
+
+<cbc:ID schemeID="idscheme">id</cbc:ID>
+
+</cac:PartyIdentification>
+
+<cac:PartyName>
+
+<cbc:Name>Delivery party name</cbc:Name>
+
+</cac:PartyName>
+
+</cac:DeliveryParty>
+
+<cac:DeliveryTerms>
+
+<cbc:ID>id</cbc:ID>
+
+<cbc:SpecialTerms>special terms</cbc:SpecialTerms>
+
+<cac:DeliveryLocation>
+
+<cbc:ID>id</cbc:ID>
+
+<cac:Address>
+
+<cbc:StreetName>Apt 56B, Whitehaven Mansions</cbc:StreetName>
+
+<cbc:AdditionalStreetName>Sandhurst Sq</cbc:AdditionalStreetName>
+
+<cbc:CityName>Brussels</cbc:CityName>
+
+<cbc:PostalZone>1001</cbc:PostalZone>
+
+<cbc:CountrySubentity>BE</cbc:CountrySubentity>
+
+<cac:Country>
+
+<cbc:IdentificationCode listID="ISO3166-1:Alpha2">BE</cbc:IdentificationCode>
+
+</cac:Country>
+
+</cac:Address>
+
+</cac:DeliveryLocation>
+
+</cac:DeliveryTerms>
+
+</cac:Delivery>
+
+== References
+
+When sending the order agreement transaction the seller may include a reference that the buyers gave to him during the purchase. This reference can be of different nature and since it originates from the buyer it is understood by him.
+
+<cbc:CustomerReference>Buyer reference id tir110-044</cbc:CustomerReference>
+
+The order agreement may refrence a previous order agreement. This may be relevant, as example, when the buyer has changed a previous order.
+
+<cac:OrderReference>
+
+<cbc:ID>Order id tir110-042</cbc:ID>
+
+</cac:OrderReference>
+
+The order agreement may reference a contract that applies to the purchase.
+
+<cac:Contract>
+
+<cbc:ID>contract id tir110-049</cbc:ID>
+
+<cbc:ContractType>Framwork agreement tir110-050</cbc:ContractType>
+
+</cac:Contract>
+
+== Attachments on header level
+
+Non-XML documents can be sent as attachments to the PEPPOL BIS Order Agreement. This could be timesheets or other documents relevant for the order agreement. The attachment can either be sent as a binary object encoded in Base64 embedded in the message or as a URI to an external address as a link.
+
+It is recommended to send attachments as embedded, binary objects and not as external references.
+
+[cols=",",options="header",]
+|====
+|Element |Description
+|Coding |Base64
+|Document format a|
+The following MIME types are recommended:
+
+Pdf – application / pdf
+
+TXT – text / plain
+
+GIF – image / gif
+
+Jpeg –image
+
+PNG -image
+
+Other MIME types may be used, subject to agreement.
+
+|Size |Recommended maximum message size is 100MB including attachments.
+|Description |It is recommended to use element cac:AdditionalDocumentReference/cbc:DocumentType to send a short description of the content of the attachment. +
+NB: Attachments should be used for additional information and not as order copies.
+|====
+
+Example of attachment as an embedded, binary object in an PEPPOL BIS Order Agreement message.
+
+<cac:AdditionalDocumentReference>
+
+<cbc:ID>Document idtir110-045</cbc:ID>
+
+<cbc:DocumentType>Document description</cbc:DocumentType>
+
+<cac:Attachment>
+
+<cbc:EmbeddedDocumentBinaryObject filename="file.pdf" mimeCode="application/pdf">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
+
+<cac:ExternalReference>
+
+<cbc:URI>https://joinup.ec.europa.eu/svn/peppol/PostAward/Ordering28A/20160310%20-%20PEPPOL_BIS_28a-101.pdf</cbc:URI>
+
+</cac:ExternalReference>
+
+</cac:Attachment>
+
+</cac:AdditionalDocumentReference>
+
+== Attachments and document references on line level
+
+Non-XML documents can be sent as attachments to the PEPPOL BIS Order Agreement on line level. This could comprise item specifications, timesheets or other documents relevant for the particluar line in the order agreement. See the above information regarding attachments.
+
+Example:
+
+Attachment as an embedded, binary object in an PEPPOL BIS Order Agreement message on line level.
+
+<cac:ItemSpecificationDocumentReference>
+
+<cbc:ID>doc id</cbc:ID>
+
+<cbc:DocumentType>Item specs</cbc:DocumentType>
+
+<cac:Attachment>
+
+<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="specs.pdf">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
+
+<cac:ExternalReference>
+
+<cbc:URI>https://joinup.ec.europa.eu/svn/peppol/PostAward/Ordering28A/20160310%20-%20PEPPOL_BIS_28a-101.pdf</cbc:URI>
+
+</cac:ExternalReference>
+
+</cac:Attachment>
+
+</cac:ItemSpecificationDocumentReference>
+
+Example:
+
+Link to a downloadable ticket.
+
+<cac:ItemSpecificationDocumentReference>
+
+<cbc:ID>Ticket id</cbc:ID>
+
+<cbc:DocumentType>A ticket for ...</cbc:DocumentType>
+
+<cac:Attachment>
+
+<cac:ExternalReference>
+
+<cbc:URI>https://ticketseller.eu/ticket.pdf</cbc:URI>
+
+</cac:ExternalReference>
+
+</cac:Attachment>
+
+</cac:ItemSpecificationDocumentReference>
+
+== Product identification
+
+Product identification may be done using the identifiers described below:
+
+* Sellers ID
+* Standard ID, e.g. the GS1 Global Trade Item Number (GTIN) [GS1]
+
+The order agreement requires that an item has an identifier. This can be either the sellers idenfier or a standard identifier. Which identifier to use depends on what is known at the time of the purchase or what is commonly used in the relevant business sector.
+
+Example of an PEPPOL BIS Order Agreement item using both Sellers ID and Standard ID (GTIN):
+
+<cac:Item>
+
+<cac:SellersItemIdentification>
+
+<cbc:ID>123</cbc:ID>
+
+</cac:SellersItemIdentification>
+
+<cac:StandardItemIdentification>
+
+<cbc:ID schemeID="GTIN">321</cbc:ID>
+
+</cac:StandardItemIdentification>
+
+== Product name and description
+
+The Product name must be sent in tag Item/Name on line level. Description of a product can be sent in Item/Description.
+
+The Product name is often sent in the order agreement from the buyer to the seller.
+
+Example in an PEPPOL BIS Order Agreement message:
+
+ <cac:Item>
+
+<cbc:Description>Description of the item</cbc:Description>
+
+<cbc:Name>Item name</cbc:Name>
+
+</cac:Item>
+
+== Item labelling
+
+Information about the items environmental, social, ethical and quality type of labelling. The UBL structure used for item labeling requires certain elements in addition to those used by this BIS. To fulfill the UBL requirements these are included with the dummy value NA.
+
+Example:
+
+<cac:Certificate>
+
+<cbc:ID>EU Ecolabel</cbc:ID>
+
+<cbc:CertificateTypeCode>NA</cbc:CertificateTypeCode>
+
+<cbc:CertificateType>Environmental</cbc:CertificateType>
+
+<cbc:Remarks>Item label value</cbc:Remarks>
+
+<cac:IssuerParty>
+
+<cac:PartyName>
+
+<cbc:Name>NA</cbc:Name>
+
+</cac:PartyName>
+
+</cac:IssuerParty>
+
+<cac:DocumentReference>
+
+<cbc:ID>Item label reference</cbc:ID>
+
+</cac:DocumentReference>
+
+</cac:Certificate>
+
+== Contracted item
+
+If the purchased item is offered in accordance to an existing contract, this should be indicated in the order agreement message.
+
+Example:
+
+<cac:TransactionConditions>
+
+<cbc:ActionCode>CT</cbc:ActionCode>
+
+</cac:TransactionConditions>
+
+== Quantities and units
+
+Various Quantities and Units can be stated in the PEPPOL BIS Order Agreement. These are both related to the ordering process and the logistics process.
+
+The table below lists quantities and units in the format. To all quantities there must be a valid Unit of measure according to the Code list.
+
+[cols=",",options="header",]
+|====
+|Element name / (Tag name) |Description
+|Price Quantity / +
+(BaseQuantity) |Quantity related to Price.
+|Order Quantity / +
+(Quantity) |Quantity that is ordered, e.g. number of pieces or volume in litre .
+|====
+
+Example of an order agreement line with a quantity of 120 pieces (cbc:Quantity) and price is given per items. When calculating the line amount the price is applied pr 12 pieces, that is 120/12x50 = €500
+
+<cbc:ID>1</cbc:ID>
+
+<cbc:Note>Line note</cbc:Note>
+
+<cbc:Quantity unitCode="C62">120</cbc:Quantity>
+
+    <cac:Price> +
+<cbc:PriceAmount currencyID="EUR">50</cbc:PriceAmount>
+
+<cbc:BaseQuantity unitCode="C62">12</cbc:BaseQuantity>
+
+    </cac:Price>
+
+== Prices
+
+Prices must be exchanged in the Order Agreement transaction. The price may be 0 (zero)
+
+Price sent is related to the articles or services within this order agreement
+
+Prices includes allowances and/or charges but exclude VAT amounts
+
+Example of price information in an Order Agreement message:
+
+      …
+
+<cac:Price>
+
+<cbc:PriceAmount currencyID="EUR">50</cbc:PriceAmount>
+
+<cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
+
+</cac:Price>
+
+== Allowances and charges
+
+This example shows a charge related to packing costs:
+
+<cac:AllowanceCharge>
+
+<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+
+<cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
+
+<cbc:Amount currencyID="EUR">100</cbc:Amount>
+
+</cac:AllowanceCharge>
+
+This example shows an allowance related to a discount on the order:
+
+<cac:AllowanceCharge>
+
+<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+
+<cbc:AllowanceChargeReason>Packing cost</cbc:AllowanceChargeReason>
+
+<cbc:Amount currencyID="EUR">200</cbc:Amount>
+
+</cac:AllowanceCharge>
+
+== Calculation of totals (LegalMonetaryTotal)
+
+The following elements show the anticipated monetary totals for an order agreement:
+
+[cols=",",options="header",]
+|====
+|Element: |Description:
+|<cbc:LineExtensionAmount> |Sum of line amounts
+|<cbc:AllowanceTotalAmount> |Allowances on document level
+|<cbc:ChargeTotalAmount> |Charges on document level
+|<cbc:TaxExclusiveAmount> |Order total amount without VAT
+|<cbc:TaxInclusiveAmount> |Order total amount included VAT
+|<cbc:PrepaidAmount> |Any amounts that have been paid a-priory
+|<cbc:PayableRoundingAmount> |Rounding of Order total
+|<cbc:PayableAmount> |The amount that is expected to be paid
+|====
+
+Amounts MUST be given to a precision of two decimals except for Price where maximum number of decimals are four.
+
+Expected total payable amount MUST NOT be negative.
+
+Expected total sum of line amounts MUST NOT be negative.
+
+Note that the LegalMonetaryTotals class is optional. The legal monetary total class in the order agreement is equal to the anticipated monetary total in the order transaction. If the class is included in the message, the only mandatory elements are the LineExtensionAmount and the PayableAmount elements. All other elements are optional. When optional elements are used, the content MUST be according to the rules below.
+
+Formulas for the calculations of totals are as follows:
+
+[cols=",",options="header",]
+|====
+|Element: |Formula:
+|<cbc:LineExtensionAmount> |∑ LineExtensionAmount (at line level)
+|<cbc:ChargeTotalAmount> |∑ Charge Amount (where ChargeIndicator = ”true”)
+|<cbc:AllowanceTotalAmount> |∑ Allowance Amount (where ChargeIndicator = ”false”)
+|<cbc:TaxExclusiveAmount> a|
+LineExtensionAmount
+
+– AllowanceTotalAmount
+
++ ChargeTotalAmount
+
+|<cbc:TaxInclusiveAmount> a|
+TaxExclusiveAmount
+
++ TaxTotal /TaxAmount
+
++ PayableRoundingAmount
+
+|<cbc:PayableAmount> |TaxInclusiveAmount – PrepaidAmount
+|====
+
+=== Example of calculations:
+
+[cols=",,,",options="header",]
+|====
+|*Business term* | |*Sample amounts* |*Element*
+|Sum of line amounts |+ |1436.50 |LineExtensionAmount
+|Allowance on document level |- |100.00 |Allowances(Total)
+|Charges on document level |+ |200.00 |Charges(Total)
+|Total amount without VAT |= |1536.50 |TaxExclusiveAmount
+|VAT total amount |+ |384.13 |TaxAmount
+|Rounding of Order total |+ |0.37 |PayableRoundingAmount
+|Total with VAT (value of purchase) |= |1921.00 |TaxInclusiveAmount
+|Paid amounts |- |1000.00 |PrepaidAmount
+|Amount expected to be paid |= |921.00 |Payable amount
+|====
+
+The above example is presented in the order agreement in the following way:
+
+<cac:LegalMonetaryTotal>
+
+<cbc:LineExtensionAmount currencyID="EUR">1436.50</cbc:LineExtensionAmount>
+
+<cbc:TaxExclusiveAmount currencyID="EUR">1536.50</cbc:TaxExclusiveAmount>
+
+<cbc:TaxInclusiveAmount currencyID="EUR">1921</cbc:TaxInclusiveAmount>
+
+<cbc:AllowanceTotalAmount currencyID="EUR">100</cbc:AllowanceTotalAmount>
+
+<cbc:ChargeTotalAmount currencyID="EUR">200</cbc:ChargeTotalAmount>
+
+<cbc:PrepaidAmount currencyID="EUR">1000</cbc:PrepaidAmount>
+
+<cbc:PayableRoundingAmount currencyID="EUR">0.37</cbc:PayableRoundingAmount>
+
+<cbc:PayableAmount currencyID="EUR">921.00</cbc:PayableAmount>
+
+</cac:LegalMonetaryTotal>
+
+=== Element for rounding amount, the PayableRoundingAmount
+
+It is possible to round the expected payable amount. The rule for this is according to the standard rule regarding rounding, i.e. greater than or equal to 0.5 is rounded up, all other values are rounded down.
+
+The element LegalMonetaryTotal/PayableRoundingAmount is used for this purpose and is specified on the header level. This value must be added to the value in LegalMonetaryTotal/TaxInclusiveAmount.
+
+Example: Amount 999.81 rounded to 1000. PayableRounding Amount = 0.19
+
+== Tax amounts
+
+It is possible to state the tax total of the order agreement, on the header level and also on line level.
+
+Header level:
+
+<cac:TaxTotal>
+
+<cbc:TaxAmount currencyID="EUR">1236</cbc:TaxAmount>
+
+<cac:TaxSubtotal>
+
+<cbc:TaxableAmount currencyID="EUR">1000</cbc:TaxableAmount>
+
+<cbc:TaxAmount currencyID="EUR">236</cbc:TaxAmount>
+
+<cac:TaxCategory>
+
+<cbc:ID schemeID="UNCL5305">S</cbc:ID>
+
+<cbc:Percent>23.6</cbc:Percent>
+
+<cac:TaxScheme>
+
+<cbc:ID schemeID="UNCL5153">VAT</cbc:ID>
+
+</cac:TaxScheme>
+
+</cac:TaxCategory>
+
+</cac:TaxSubtotal>
+
+</cac:TaxTotal>
+
+Line level:
+
+<cac:LineItem>
+
+<cbc:ID>1</cbc:ID>
+
+<cbc:Note>Line note</cbc:Note>
+
+<cbc:Quantity unitCode="C62">12</cbc:Quantity>
+
+<cbc:LineExtensionAmount currencyID="EUR">1000</cbc:LineExtensionAmount>
+
+<cbc:TotalTaxAmount currencyID="EUR">236</cbc:TotalTaxAmount>
+
+…
+
+<cac:ClassifiedTaxCategory>
+
+<cbc:ID schemeID="UNCL5305">S</cbc:ID>
+
+<cbc:Percent>23.6</cbc:Percent>
+
+<cac:TaxScheme>
+
+<cbc:ID schemeID="UNCL5153">VAT</cbc:ID>
+
+</cac:TaxScheme>
+
+= PEPPOL Identifiers
+
+PEPPOL has defined a “Policy for Using Identifiers” [PEPPOL_Transp] that specifies how to use identifiers in both its transport infrastructure and within the documents exchanged across that infrastructure. It also introduces principles for any identifiers used in the PEPPOL environment. The policies that apply to this BIS are the following:
+
+== Party Identifiers
+
+The “schemeID” attribute must be populated in all instances of the “ID” element when used within a “PartyIdentification”-container and in all instances of the “EndpointID” element when used within a “Party”-container.
+
+Examples of usage in PartyIdentification:
+
+<cac:PartyIdentification>
+
+<cbc:ID schemeID="GLN">5790000435968</cbc:ID>
+
+</cac:PartyIdentification>
+
+The following examples denote that the Issuing Agency is DK:CVR in the PEPPOL set of Issuing Agency
+
+Codes. This means that the party has the Danish CVR identifier DK87654321.
+
+Examples of usage in PartyIdentification and Endpoint ID:
+
+<cbc:EndpointID schemeID="DK:CVR">DK87654321</cbc:EndpointID>
+
+<cac:PartyIdentification>
+
+<cbc:ID schemeID="DK:CVR">DK87654321</cbc:ID>
+
+</cac:PartyIdentification>
+
+== Version ID
+
+This BIS is using the UBL 2.1 syntax [UBL_OrderResponse]. The namespace of the XML-message does only communicate the major version number. Since it is important for the receiver to also know what minor version of the syntax that is used, the element UBLVersionID must be stated with the value *2.1:*
+
+ <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+
+== Profile ID
+
+The ProfileID identifies the process that the business document is part of. PEPPOL BIS uses the identification system according to BII:
+
+The following process identifier is used for ―BII42 – Order Agreement:
+
+*ProfileID*: urn:www.cenbii.eu:profile:bii42:ver1.0
+
+Example of usage:
+
+<cbc:ProfileID> urn:www.cenbii.eu:profile:bii42:ver1.0</cbc:ProfileID>
+
+== Customization ID
+
+The PEPPOL CustomizationID identifies the specification of content and rules that apply to the transaction.
+
+This BIS has required some minor additions and changes to the CEN BII transaction. Following the CENBII methodology any extension must be communicated by adding an extension ID onto the Customization ID [CENBII]. The full syntax is:
+
+<transactionId>:(restrictive|extended|partly):<extensionId>[(restrictive|extended|partly):<extensionId>].
+
+Where:
+
+* CENBII Transaction ID is: urn:www.cenbii.eu:transaction:biitrns110:ver1.0
+* Peppol extension ID is: urn:www.peppol.eu:bis:peppol42a:ver1.0
+
+By combining these according to the identifier syntax the CustomizationID to use in PEPPOL is:
+
+urn:www.cenbii.eu:transaction:biitrns110:ver1.0:*extended*:urn:www.peppol.eu:bis:peppol42a:ver1.0
+
+Example of usage:
+
+<cbc:CustomizationID> +
+urn:www.cenbii.eu:transaction:biitrns110:ver1.0:extended:urn:www.peppol.eu:bis:peppol42a:ver1.0 +
+</cbc:CustomizationID>
+
+For implementers: Please note that CustomizationID element in the document instance MUST correspond to the Customization ID of the SMP Document Identifier.
+
+== Namespaces
+
+The target namespace for the mapping of Order Agreement onto UBL is UBL 2.1 OrderResponse [UBL_OrderResponse] is:
+
+urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2
+
+= Message transport
+
+The transactions defined in this BIS need to be transferred from the sending party to the receiving party through an agreed transport network and protocol. The PEPPOL BIS is specified indepent of a transport network but it is designed with the requirement of the PEPPOL network in mind and does not specifically support other transport network that may be used.
+
+== The PEPPOL network
+
+The PEPPOL transport network is a four corner transport network that allows senders end receivers to exchange message from one service provider to another by using a single identifier for the parties.
+
+Details about the PEPPOL network can be found at [PEPPOL_Transp]
+
+=
+
+= XML Schema Guideline and information content of the Order Response message for the function of Order Agreement
+
+== Structure
+
+[cols=",,",]
+|====
+|*Occurrence* a|
+_______________________________________________________
+*Element/Attribute* *BII Business Term* *Business req.*
+_______________________________________________________
+
+|
+| a|
+_______________
+*OrderResponse*
+_______________
+
+|1 *..* 1 | a|
+________________
+cbc:UBLVersionID
+________________
+
+|1 *..* 1 | a|
+___________________________________________________________
+cbc:CustomizationID Specification identification tir110-009
+___________________________________________________________
+
+|1 *..* 1 | a|
+_________________________________________________________
+cbc:ProfileID Business process type identifier tir110-008
+_________________________________________________________
+
+|1 *..* 1 | a|
+____________________________________________
+cbc:ID Order agreement identifier tir110-001
+____________________________________________
+
+|1 *..* 1 | a|
+___________________________________________________
+cbc:IssueDate Order agreement issue date tir110-002
+___________________________________________________
+
+|0 *..* 1 | a|
+___________________________________________________
+cbc:IssueTime Order agreement issue time tir110-003
+___________________________________________________
+
+|0 *..* 1 | a|
+________________________________________
+cbc:Note Order agreement note tir110-043
+________________________________________
+
+|0 *..* 1 | a|
+____________________________________________________________
+cbc:DocumentCurrencyCode Order agreement currency tir110-007
+____________________________________________________________
+
+|0 *..* 1 | a|
+___________________________________________________________
+cbc:CustomerReference Buyer reference identifier tir110-044
+___________________________________________________________
+
+|*1* *..* *1* | |*cac:OrderReference*
+|1 *..* 1 | a|
+_____________________________________________________
+cbc:ID Previous order agreement identifier tir110-042
+_____________________________________________________
+
+|*0* *..* *unbounded* | |*cac:AdditionalDocumentReference*
+|1 *..* 1 | a|
+_____________________________________
+cbc:ID Document identifier tir110-045
+_____________________________________
+
+|0 *..* 1 | a|
+________________________________________________
+cbc:DocumentType Document description tir110-046
+________________________________________________
+
+|*0* *..* *1* | |*cac:Attachment*
+|0 *..* 1 | a|
+_____________________________________________________________
+cbc:EmbeddedDocumentBinaryObject Attached document tir110-048
+_____________________________________________________________
+
+|*0* *..* *1* | |*cac:ExternalReference*
+|0 *..* 1 | a|
+________________________________________
+cbc:URI External document URI tir110-047
+________________________________________
+
+|*0* *..* *1* | |*cac:Contract*
+|0 *..* 1 | a|
+_____________________________________
+cbc:ID Contract identifier tir110-049
+_____________________________________
+
+|0 *..* 1 | a|
+_________________________________________
+cbc:ContractType Contract type tir110-050
+_________________________________________
+
+|*1* *..* *1* | |*cac:SellerSupplierParty*
+|*1* *..* *1* | |*cac:Party*
+|1 *..* 1 | a|
+___________________________________________________
+cbc:EndpointID Seller electronic address tir110-015
+___________________________________________________
+
+|*0* *..* *1* | |*cac:PartyIdentification*
+|1 *..* 1 | a|
+_____________________________________________
+cbc:ID Seller party identification tir110-014
+_____________________________________________
+
+|*0* *..* *1* | |*cac:PartyName*
+|1 *..* 1 | a|
+_____________________________________
+cbc:Name Seller party name tir110-013
+_____________________________________
+
+|*0* *..* *1* | |*cac:PostalAddress*
+|0 *..* 1 | a|
+________________________________________
+cbc:StreetName Address line 1 tir110-057
+________________________________________
+
+|0 *..* 1 | a|
+__________________________________________________
+cbc:AdditionalStreetName Address line 2 tir110-058
+__________________________________________________
+
+|0 *..* 1 | a|
+____________________________
+cbc:CityName City tir110-059
+____________________________
+
+|0 *..* 1 | a|
+___________________________________
+cbc:PostalZone Post code tir110-060
+___________________________________
+
+|0 *..* 1 | a|
+___________________________________________________
+cbc:CountrySubentity Country subdivision tir110-061
+___________________________________________________
+
+|*0* *..* *1* | |*cac:Country*
+|0 *..* 1 | a|
+______________________________________________
+cbc:IdentificationCode Country code tir110-062
+______________________________________________
+
+|*0* *..* *1* | |*cac:Contact*
+|0 *..* 1 | a|
+_________________________________
+cbc:Name Contact point tir110-016
+_________________________________
+
+|0 *..* 1 | a|
+_________________________________________________
+cbc:Telephone Contact telephone number tir110-018
+_________________________________________________
+
+|0 *..* 1 | a|
+_________________________________________
+cbc:Telefax Contact fax number tir110-017
+_________________________________________
+
+|0 *..* 1 | a|
+___________________________________________________
+cbc:ElectronicMail Contact email address tir110-019
+___________________________________________________
+
+|*1* *..* *1* | |*cac:BuyerCustomerParty*
+|*1* *..* *1* | |*cac:Party*
+|1 *..* 1 | a|
+__________________________________________________
+cbc:EndpointID Buyer electronic address tir110-012
+__________________________________________________
+
+|*0* *..* *1* | |*cac:PartyIdentification*
+|1 *..* 1 | a|
+___________________________________________________
+cbc:ID Buyer customer account identifier tir110-011
+___________________________________________________
+
+|*0* *..* *1* | |*cac:PartyName*
+|1 *..* 1 | a|
+______________________________
+cbc:Name Buyer name tir110-010
+______________________________
+
+|*0* *..* *1* | |*cac:PostalAddress*
+|0 *..* 1 | a|
+________________________________________
+cbc:StreetName Address line 1 tir110-051
+________________________________________
+
+|0 *..* 1 | a|
+__________________________________________________
+cbc:AdditionalStreetName Address line 2 tir110-052
+__________________________________________________
+
+|0 *..* 1 | a|
+____________________________
+cbc:CityName City tir110-053
+____________________________
+
+|0 *..* 1 | a|
+___________________________________
+cbc:PostalZone Post code tir110-054
+___________________________________
+
+|0 *..* 1 | a|
+___________________________________________________
+cbc:CountrySubentity Country subdivision tir110-055
+___________________________________________________
+
+|*0* *..* *1* | |*cac:Country*
+|1 *..* 1 | a|
+______________________________________________
+cbc:IdentificationCode Country code tir110-056
+______________________________________________
+
+|*0* *..* *1* | |*cac:DeliveryContact*
+|0 *..* 1 | a|
+_________________________________
+cbc:Name Contact point tir110-078
+_________________________________
+
+|0 *..* 1 | a|
+_________________________________________________
+cbc:Telephone Contact telephone number tir110-080
+_________________________________________________
+
+|0 *..* 1 | a|
+_________________________________________
+cbc:Telefax Contact fax number tir110-079
+_________________________________________
+
+|0 *..* 1 | a|
+___________________________________________________
+cbc:ElectronicMail Contact email address tir110-081
+___________________________________________________
+
+|*0* *..* *1* | |*cac:OriginatorCustomerParty*
+|*0* *..* *1* | |*cac:Party*
+|*0* *..* *1* | |*cac:PartyIdentification*
+|1 *..* 1 | a|
+_______________________________________
+cbc:ID Originator identifier tir110-065
+_______________________________________
+
+|*0* *..* *1* | |*cac:PartyName*
+|1 *..* 1 | a|
+___________________________________
+cbc:Name Originator name tir110-066
+___________________________________
+
+|*0* *..* *1* | |*cac:AccountingCustomerParty*
+|*0* *..* *1* | |*cac:Party*
+|*0* *..* *1* | |*cac:PartyIdentification*
+|1 *..* 1 | a|
+________________________________________________
+cbc:ID Accounting customer identifier tir110-064
+________________________________________________
+
+|*0* *..* *1* | |*cac:PartyName*
+|1 *..* 1 | a|
+____________________________________________
+cbc:Name Accounting customer name tir110-063
+____________________________________________
+
+|*0* *..* *1* | |*cac:Delivery*
+|*0* *..* *1* | |*cac:PromisedDeliveryPeriod*
+|1 *..* 1 | a|
+__________________________________________
+cbc:StartDate Period start date tir110-082
+__________________________________________
+
+|0 *..* 1 | a|
+__________________________________________
+cbc:StartTime Period start time tir110-083
+__________________________________________
+
+|0 *..* 1 | a|
+______________________________________
+cbc:EndDate Period end date tir110-084
+______________________________________
+
+|0 *..* 1 | a|
+______________________________________
+cbc:EndTime Period end time tir110-085
+______________________________________
+
+|*0* *..* *1* | |*cac:DeliveryParty*
+|*0* *..* *1* | |*cac:PartyIdentification*
+|1 *..* 1 | a|
+___________________________________________
+cbc:ID Delivery party identifier tir110-068
+___________________________________________
+
+|*0* *..* *1* | |*cac:PartyName*
+|1 *..* 1 | a|
+_______________________________________
+cbc:Name Delivery party name tir110-067
+_______________________________________
+
+|*0* *..* *1* | |*cac:DeliveryTerms*
+|0 *..* 1 | a|
+______________________________________
+cbc:ID Buyer delivery terms tir110-069
+______________________________________
+
+|0 *..* 1 | a|
+__________________________________________________
+cbc:SpecialTerms Delivery special terms tir110-070
+__________________________________________________
+
+|*0* *..* *1* | |*cac:DeliveryLocation*
+|0 *..* 1 | a|
+_________________________________________
+cbc:ID Delivery terms location tir110-071
+_________________________________________
+
+|*0* *..* *1* | |*cac:Address*
+|0 *..* 1 | a|
+________________________________________
+cbc:StreetName Address line 1 tir110-072
+________________________________________
+
+|0 *..* 1 | a|
+__________________________________________________
+cbc:AdditionalStreetName Address line 1 tir110-073
+__________________________________________________
+
+|0 *..* 1 | a|
+____________________________
+cbc:CityName City tir110-074
+____________________________
+
+|0 *..* 1 | a|
+___________________________________
+cbc:PostalZone Post code tir110-075
+___________________________________
+
+|0 *..* 1 | a|
+___________________________________________________
+cbc:CountrySubentity Country subdivision tir110-076
+___________________________________________________
+
+|*0* *..* *1* | |*cac:Country*
+|1 *..* 1 | a|
+______________________________________________
+cbc:IdentificationCode Country code tir110-077
+______________________________________________
+
+|*0* *..* *unbounded* | |*cac:AllowanceCharge*
+|1 *..* 1 | a|
+_______________________________________________
+cbc:ChargeIndicator Allowance amount OP-110-001
+_______________________________________________
+
+|0 *..* unbounded | a|
+_____________________________________________________
+cbc:AllowanceChargeReason Allowance reason OP-110-002
+
+Charge reason OP-110-012
+_____________________________________________________
+
+|1 *..* 1 | a|
+______________________________________
+cbc:Amount Allowance amount OP-110-001
+
+Charge amount OP-110-011
+______________________________________
+
+|*0* *..* *1* | |*cac:TaxTotal*
+|1 *..* 1 | a|
+_________________________________________
+cbc:TaxAmount VAT total amount tir110-112
+_________________________________________
+
+|*0* *..* *unbounded* | |*cac:TaxSubtotal*
+|0 *..* 1 | a|
+________________________________________________________
+cbc:TaxableAmount VAT category taxable amount OP-110-003
+________________________________________________________
+
+|1 *..* 1 | a|
+________________________________________________
+cbc:TaxAmount VAT category tax amount OP-110-004
+________________________________________________
+
+|*1* *..* *1* | |*cac:TaxCategory*
+|0 *..* 1 | a|
+___________________________________
+cbc:ID VAT category code OP-110-005
+___________________________________
+
+|0 *..* 1 | a|
+________________________________________
+cbc:Percent VAT category rate OP-110-006
+________________________________________
+
+|0 *..* 1 | a|
+___________________________________________________________
+cbc:TaxExemptionReason VAT exemption reason text OP-110-007
+___________________________________________________________
+
+|*1* *..* *1* | |*cac:TaxScheme*
+|0 *..* 1 | a|
+___________________________________
+cbc:ID VAT category code OP-110-005
+___________________________________
+
+|*0* *..* *1* | |*cac:LegalMonetaryTotal*
+|1 *..* 1 | a|
+______________________________________________________
+cbc:LineExtensionAmount Sum of line amounts tir110-086
+______________________________________________________
+
+|1 *..* 1 | a|
+__________________________________________________________
+cbc:TaxExclusiveAmount Total amount without VAT tir110-087
+__________________________________________________________
+
+|1 *..* 1 | a|
+_______________________________________________________
+cbc:TaxInclusiveAmount Total amount with VAT tir110-088
+_______________________________________________________
+
+|0 *..* 1 | a|
+_______________________________________________________________________
+cbc:AllowanceTotalAmount Sum of allowances on document level OP-110-009
+_______________________________________________________________________
+
+|0 *..* 1 | a|
+_________________________________________________________________
+cbc:ChargeTotalAmount Sum of charges on document level OP-110-008
+_________________________________________________________________
+
+|0 *..* 1 | a|
+_________________________________________
+cbc:PrepaidAmount Paid amounts tir110-089
+_________________________________________
+
+|0 *..* 1 | a|
+_______________________________________________________________
+cbc:PayableRoundingAmount Rounding of document total OP-110-010
+_______________________________________________________________
+
+|1 *..* 1 | a|
+___________________________________________________
+cbc:PayableAmount Amount due for payment tir110-090
+___________________________________________________
+
+|*1* *..* *unbounded* | |*cac:OrderLine*
+|*1* *..* *1* | |*cac:LineItem*
+|1 *..* 1 | a|
+_________________________________________________
+cbc:ID Order agreement line identifier tir110-022
+_________________________________________________
+
+|0 *..* 1 | a|
+_____________________________________________
+cbc:Note Order agreement line note tir110-091
+_____________________________________________
+
+|1 *..* 1 | a|
+________________________________________
+cbc:Quantity Ordered quantity tir110-093
+________________________________________
+
+|0 *..* 1 | a|
+_______________________________________________________________
+cbc:LineExtensionAmount Order agreeement line amount tir110-092
+_______________________________________________________________
+
+|0 *..* 1 | a|
+_____________________________________________
+cbc:TotalTaxAmount Line VAT amount tir110-108
+_____________________________________________
+
+|*0* *..* *1* | |*cac:Delivery*
+|0 *..* 1 | a|
+_________________________________________
+cbc:Quantity Accepted quantity tir110-028
+_________________________________________
+
+|*0* *..* *1* | |*cac:PromisedDeliveryPeriod*
+|1 *..* 1 | a|
+__________________________________________
+cbc:StartDate Period start date tir110-030
+__________________________________________
+
+|0 *..* 1 | a|
+__________________________________________
+cbc:StartTime Period start time tir110-110
+__________________________________________
+
+|0 *..* 1 | a|
+______________________________________
+cbc:EndDate Period end date tir110-031
+______________________________________
+
+|0 *..* 1 | a|
+______________________________________
+cbc:EndTime Period end time tir110-111
+______________________________________
+
+|*1* *..* *1* | |*cac:Price*
+|1 *..* 1 | a|
+_________________________________________
+cbc:PriceAmount Item net price tir110-109
+_________________________________________
+
+|0 *..* 1 | a|
+____________________________________________________
+cbc:BaseQuantity Item price base quantity tir110-027
+____________________________________________________
+
+|*1* *..* *1* | |*cac:Item*
+|0 *..* 1 | a|
+___________________________________________________
+cbc:Description Item description as text tir110-095
+___________________________________________________
+
+|0 *..* 1 | a|
+_____________________________
+cbc:Name Item name tir110-032
+_____________________________
+
+|*0* *..* *1* | |*cac:SellersItemIdentification*
+|1 *..* 1 | a|
+_________________________________________
+cbc:ID Item sellers identifier tir110-033
+_________________________________________
+
+|*0* *..* *1* | |*cac:StandardItemIdentification*
+|1 *..* 1 | a|
+__________________________________________
+cbc:ID Item standard identifier tir110-034
+__________________________________________
+
+|*0* *..* *1* | a|
+*cac:*
+
+*ItemSpecificationDocumentReference*
+
+|1 *..* 1 | a|
+_____________________________________
+cbc:ID Document identifier tir110-102
+_____________________________________
+
+|0 *..* 1 | a|
+________________________________________________
+cbc:DocumentType Document description tir110-103
+________________________________________________
+
+|*0* *..* *1* | |*cac:Attachment*
+|0 *..* 1 | a|
+_________________________________
+cbc: Attached document tir110-105
+
+EmbeddedDocumentBinaryObject
+_________________________________
+
+|*0* *..* *1* | |*cac:ExternalReference*
+|0 *..* 1 | a|
+________________________________________
+cbc:URI External document URI tir110-104
+________________________________________
+
+|*0* *..* *unbounded* | |*cac:CommodityClassification*
+|0 *..* 1 | a|
+______________________________________________________________
+cbc:ItemClassificationCode Item classification code tir110-096
+
+Item CPV classification code tir110-097
+______________________________________________________________
+
+|*0* *..* *1* | |*cac:TransactionConditions*
+|0 *..* 1 | a|
+___________________________________________
+cbc:ID Contracted item indicator tir110-094
+___________________________________________
+
+|*0* *..* *1* | |*cac:ClassifiedTaxCategory*
+|1 *..* 1 | a|
+________________________________________
+cbc:ID Item VAT category code tir110-106
+________________________________________
+
+|0 *..* 1 | a|
+____________________________________
+cbc:Percent Line VAT rate tir110-107
+____________________________________
+
+|*1* *..* *1* | |*cac:TaxScheme*
+|1 *..* 1 | a|
+________________________________________
+cbc:ID Item VAT category code tir110-106
+________________________________________
+
+|*0* *..* *unbounded* | |*cac:AdditionalItemProperty*
+|1 *..* 1 | a|
+______________________________________
+cbc:Name Item property name tir110-098
+______________________________________
+
+|0 *..* 1 | a|
+_________________________________________________________
+cbc:NameCode Item property classification code tir110-101
+_________________________________________________________
+
+|1 *..* 1 | a|
+________________________________________
+cbc:Value Item property value tir110-099
+________________________________________
+
+|0 *..* 1 | a|
+__________________________________________________________
+cbc:ValueQuantity Item property unit of measure tir110-100
+__________________________________________________________
+
+|*0* *..* *unbounded* | |*cac:Certificate*
+|1 *..* 1 | a|
+_________________________________
+cbc:ID Item label name OP-110-013
+_________________________________
+
+|1 *..* 1 | a|
+_______________________
+cbc:CertificateTypeCode
+_______________________
+
+|1 *..* 1 | a|
+______________________________________________
+cbc:CertificateType Item label type OP-110-015
+______________________________________________
+
+|0 *..* unbounded | a|
+_______________________________________
+cbc:Remarks Item label value OP-110-014
+_______________________________________
+
+|*1* *..* *1* | |*cac:IssuerParty*
+|*0* *..* *unbounded* | |*cac:DocumentReference*
+|1 *..* 1 | a|
+______________________________________
+cbc:ID Item label reference OP-110-016
+______________________________________
+
+|====
+
+==
+
+== Details
+
+[cols=",,,",]
+|====
+|*Element/Attribute* a|
+_____________
+*Description*
+_____________
+
+ a|
+________________________
+*Usage/Rules/Code lists*
+________________________
+
+| | |
+a|
+_______________
+*OrderResponse*
+_______________
+
+ |*Type* OrderResponseType |
+| a|
+__________________
+*cbc:UBLVersionID*
+__________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:UBLVersionIDType
+
+ |*Rules* [EUGEN-T110-R025] — UBLVersionID must be 2.1
+| a|
+_____________________
+*cbc:CustomizationID*
+_____________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:CustomizationIDType
+
+*Info req.ID* tir110-009
+
+ a|
+*Term name* *Specification identification*
+
+*Definition* _An identification of the specification containing the total set of rules regarding semantic_
+
+_______________________________________________________________________________________
+_content, cardinalities and business rules to which the data contained in the instance_
+
+_document conforms._
+_______________________________________________________________________________________
+
+*BII Usage* _The identification may include the version of the specification as well as any_
+
+_________________________
+_customizations applied._
+_________________________
+
+*Rules* [EUGEN-T110-R007] — Customization id must be:  urn:www.cenbii.eu:transaction:
+
+___________________________________________________________________________
+biitrns110:ver1.0:extended:urn:www.peppol.eu:bis:peppol42a:ver1.0
+
+[BII3-T110-R001] — An Order agreement MUST have a customization identifier.
+___________________________________________________________________________
+
+| a|
+_______________
+*cbc:ProfileID*
+_______________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:ProfileIDType
+
+*Info req.ID* tir110-008
+
+ a|
+*Term name* *Business process type identifier*
+
+*Definition* _Identifies the business process context in which the transaction appears. It enables the_
+
+______________________________________________________
+_buyer to process the document in an appropriate way._
+______________________________________________________
+
+*Rules* [EUGEN-T110-R008] — Profile id must be: urn:www.cenbii.eu:profile:bii42:ver1.0
+
+_____________________________________________________________________
+[BII3-T110-R002] — An Order agreement MUST have a profile identifier.
+_____________________________________________________________________
+
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* tir110-001
+
+*Bus req.ID* tbr110-001
+
+ a|
+*Term name* *Order agreement identifier*
+
+*Definition* _A unique identifier for an order agreement._
+
+*BII Usage* _The identifier must be globally unique since the receiver is using it as an order number_
+
+_________________________
+_(issued by the seller)._
+_________________________
+
+*Rules* [BII3-T110-R005] — An Order agreement MUST contain the Order agreement identifier.
+
+| a|
+_______________
+*cbc:IssueDate*
+_______________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:IssueDateType
+
+*Info req.ID* tir110-002
+
+*Bus req.ID* tbr110-001
+
+ a|
+*Term name* *Order agreement issue date*
+
+*Definition* _The date on which an order agreement was issued._
+
+*BII Usage* _The date on which the transaction instance was issued._
+
+*Rules* [BII3-T110-R003] — An Order agreement MUST contain the date of issue.
+
+| a|
+_______________
+*cbc:IssueTime*
+_______________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:IssueTimeType
+
+*Info req.ID* tir110-003
+
+*Bus req.ID* tbr110-001
+
+ a|
+*Term name* *Order agreement issue time*
+
+*Definition* _The time of the day when the order agreement was issued._
+
+*BII Usage* _The time assigned by the buyer on which the transaction was issued._
+
+| a|
+__________
+*cbc:Note*
+__________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:NoteType
+
+*Info req.ID* tir110-043
+
+*Bus req.ID* tbr110-016
+
+ a|
+*Term name* *Order agreement note*
+
+*Definition* _Free-form text applying to the order agreement._
+
+*BII Usage* _Free text applying to the order agreement._
+
+|*Element/Attribute* a|
+_____________
+*Description*
+_____________
+
+ a|
+________________________
+*Usage/Rules/Code lists*
+________________________
+
+| | |
+| a|
+__________________________
+*cbc:DocumentCurrencyCode*
+__________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:DocumentCurrencyCodeType
+
+*Info req.ID* tir110-007
+
+*Bus req.ID* tbr110-008
+
+ a|
+*Term name* *Order agreement currency*
+
+*Definition* _The default currency for the order agreement_
+
+*BII Usage* _The default currency for the order agreement_
+
+*Rules* [EUGEN-T110-R003] — A document currency code MUST have a list identifier attribute
+
+________________________________________________________________________
+“ISO4217”
+
+[EUGEN-T110-R011] — All amounts must have same currency code as document
+
+currency
+________________________________________________________________________
+
+*Rules* [CL-T110-R002] — Order agreement currency MUST be coded using ISO code list
+
+____
+4217
+____
+
+*Code List ID:* ISO4217
+
+| a|
+_______________________
+*cbc:CustomerReference*
+_______________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:CustomerReferenceType
+
+*Info req.ID* tir110-044
+
+*Bus req.ID* tbr110-015
+
+ a|
+*Term name* *Buyer reference identifier*
+
+*Definition* _An identifier assigned by the Buyer used for internal routing purposes._
+
+*BII Usage* _The identifier is defined by the buyer (contact ID, department, office id, project code),_
+
+____________________________________________
+_but provided by the seller in the invoice._
+____________________________________________
+
+| a|
+______________________
+_*cac:OrderReference*_
+______________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cac:OrderReferenceType
+
+ |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* tir110-042
+
+*Bus req.ID* tbr110-002
+
+ a|
+*Term name* *Previous order agreement identifier*
+
+*Remark* Element is mandatory in UBL. If no previousl order use word "NA"
+
+*Definition* _A reference to a previous identifier for an order agreement._
+
+*BII Usage* _Used to indicatete that this agreement is a change to a previous agreement._
+
+| a|
+___________________________________
+_*cac:AdditionalDocumentReference*_
+___________________________________
+
+ a|
+*Occurrence* 0 *..* unbounded
+
+*Type* cac:DocumentReferenceType
+
+ |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* tir110-045
+
+*Bus req.ID* tbr110-010
+
+ a|
+*Term name* *Document identifier*
+
+*Definition* _Identifier of a document_
+
+| a|
+__________________
+*cbc:DocumentType*
+__________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:DocumentTypeType
+
+*Info req.ID* tir110-046
+
+*Bus req.ID* tbr110-010
+
+ a|
+*Term name* *Document description*
+
+*Definition* _Textual description of the document._
+
+| a|
+__________________
+_*cac:Attachment*_
+__________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:AttachmentType
+
+ |
+| a|
+__________________________________
+*cbc:EmbeddedDocumentBinaryObject*
+__________________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:
+
+________________________________
+EmbeddedDocumentBinaryObjectType
+________________________________
+
+*Info req.ID* tir110-048
+
+*Bus req.ID* tbr110-010
+
+ a|
+*Term name* *Attached document*
+
+*Definition* _A Binary Object MIME code attribute MUST be coded using MIME Code Type version_
+
+_________________________________________________
+_2008 code list_
+
+_An attached document embedded as binary object._
+_________________________________________________
+
+| a|
+__________
+_mimeCode_
+__________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _required_
+
+ a|
+_Rules_ _[CL-T110-R007] — For Mime code in attribute use MIME Media Types._
+
+______________________
+_Code List ID:_ _MIME_
+______________________
+
+| a|
+_________________________
+_*cac:ExternalReference*_
+_________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:ExternalReferenceType
+
+ |
+|*Element/Attribute* a|
+_____________
+*Description*
+_____________
+
+ a|
+________________________
+*Usage/Rules/Code lists*
+________________________
+
+| | |
+| a|
+_________
+*cbc:URI*
+_________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:URIType
+
+*Info req.ID* tir110-047
+
+*Bus req.ID* tbr110-010
+
+ a|
+*Term name* *External document URI*
+
+*Definition* _The Uniform Resource Identifier (URI) that identifies where the external document is_
+
+__________
+_located._
+__________
+
+| a|
+________________
+_*cac:Contract*_
+________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:ContractType
+
+ |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* tir110-049
+
+*Bus req.ID* tbr110-017
+
+ a|
+*Term name* *Contract identifier*
+
+*Definition* _The identification of a contract._
+
+| a|
+__________________
+*cbc:ContractType*
+__________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:ContractTypeType
+
+*Info req.ID* tir110-050
+
+*Bus req.ID* tbr110-017
+
+ a|
+*Term name* *Contract type*
+
+*Definition* _The type of a contract that is being referred to (such as framework agreement)_
+
+______________________
+_expressed as a code._
+______________________
+
+| a|
+___________________________
+_*cac:SellerSupplierParty*_
+___________________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cac:SupplierPartyType
+
+ |
+| a|
+_____________
+_*cac:Party*_
+_____________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cac:PartyType
+
+ |
+| a|
+________________
+*cbc:EndpointID*
+________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:EndpointIDType
+
+*Info req.ID* tir110-015
+
+*Bus req.ID* tbr110-003
+
+ a|
+*Term name* *Seller electronic address*
+
+*Definition* _Identifies the seller's electronic address to which a business document may be_
+
+____________
+_delivered._
+____________
+
+*BII Usage* _Identifies the end point of the routing service, e.g., EAN Location Number, GLN._
+
+*Rules* [EUGEN-T110-R001] — An endpoint identifier MUST have a scheme identifier attribute
+
+__________________________________________________
+[EUGEN-T110-R009] — Sellers endpoint id must exist
+__________________________________________________
+
+| a|
+__________
+_schemeID_
+__________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _optional_
+
+ a|
+_Rules_ _[CL-T110-R003] — An Endpoint Identifier Scheme MUST be from the list of PEPPOL_
+
+___________________________________________________________________________
+_Party Identifiers described in the "PEPPOL Policy for using Identifiers"._
+___________________________________________________________________________
+
+| a|
+___________________________
+_*cac:PartyIdentification*_
+___________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:PartyIdentificationType
+
+ |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* tir110-014
+
+*Bus req.ID* tbr110-003
+
+ a|
+*Term name* *Seller party identification*
+
+*Definition* _A identifier for the seller that is issued by the party that sends the document in which_
+
+_________________________
+_the identifier is used._
+_________________________
+
+*BII Usage* _Identifies a party._
+
+*Rules* [BII3-T110-R007] — An Order agreement MUST specify the selling party.
+
+______________________________________________________________________________
+[BII3-T110-R018] — A seller MUST contain the seller identifier
+
+[BII3-T110-R019b] — A seller id MUST be at most one
+
+[EUGEN-T110-R002] — A party identifier MUST have a scheme identifier attribute
+______________________________________________________________________________
+
+| a|
+__________
+_schemeID_
+__________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _optional_
+
+ a|
+_Rules_ _[CL-T110-R004] — A Party Identifier Scheme MUST be from the list of PEPPOL Party_
+
+_____________________________________________________________________
+_Identifiers described in the "PEPPOL Policy for using Identifiers"._
+_____________________________________________________________________
+
+| a|
+_________________
+_*cac:PartyName*_
+_________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:PartyNameType
+
+ |
+|*Element/Attribute* a|
+_____________
+*Description*
+_____________
+
+ a|
+________________________
+*Usage/Rules/Code lists*
+________________________
+
+| | |
+| a|
+__________
+*cbc:Name*
+__________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:NameType
+
+*Info req.ID* tir110-013
+
+*Bus req.ID* tbr110-003
+
+ a|
+*Term name* *Seller party name*
+
+*Definition* _The full (formal) name by which the seller is registered in the national registry of legal_
+
+______________________
+_entities or persons._
+______________________
+
+*BII Usage* _The name of the party._
+
+*Rules* [BII3-T110-R007] — An Order agreement MUST specify the selling party.
+
+_____________________________________________________
+[BII3-T110-R019a] — A seller name MUST be at most one
+_____________________________________________________
+
+| a|
+_____________________
+_*cac:PostalAddress*_
+_____________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:AddressType
+
+ |
+| a|
+________________
+*cbc:StreetName*
+________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:StreetNameType
+
+*Info req.ID* tir110-057
+
+*Bus req.ID* tbr110-003
+
+ a|
+*Term name* *Address line 1*
+
+*Definition* _The main address line in an address._
+
+*BII Usage* _Usually the street name and number or post office box._
+
+| a|
+__________________________
+*cbc:AdditionalStreetName*
+__________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:AdditionalStreetNameType
+
+*Info req.ID* tir110-058
+
+*Bus req.ID* tbr110-003
+
+ a|
+*Term name* *Address line 2*
+
+*Definition* _An additional address line in an address that can be used to give further details_
+
+______________________________
+_supplementing the main line._
+______________________________
+
+| a|
+______________
+*cbc:CityName*
+______________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:CityNameType
+
+*Info req.ID* tir110-059
+
+*Bus req.ID* tbr110-003
+
+ a|
+*Term name* *City*
+
+*Definition* _The common name of a city where the address is located._
+
+| a|
+________________
+*cbc:PostalZone*
+________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:PostalZoneType
+
+*Info req.ID* tir110-060
+
+*Bus req.ID* tbr110-003
+
+ a|
+*Term name* *Post code*
+
+*Definition* _The identifier for an addressable group of properties according to the relevant postal_
+
+___________________________________________
+_service, such as a ZIP code or Post Code._
+___________________________________________
+
+| a|
+______________________
+*cbc:CountrySubentity*
+______________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:CountrySubentityType
+
+*Info req.ID* tir110-061
+
+*Bus req.ID* tbr110-003
+
+ a|
+*Term name* *Country subdivision*
+
+*Definition* _The subdivision of a country such as region, county, state, province etc._
+
+| a|
+_______________
+_*cac:Country*_
+_______________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:CountryType
+
+ |
+| a|
+________________________
+*cbc:IdentificationCode*
+________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:IdentificationCodeType
+
+*Info req.ID* tir110-062
+
+*Bus req.ID* tbr110-003
+
+ a|
+*Term name* *Country code*
+
+*Definition* _A code that identifies the country._
+
+*BII Usage* _The lists of valid countries are registered with the ISO 3166-1 Maintenance agency,_
+
+____________________________________________________________________________________
+_"Codes for the representation of names of countries and their subdivisions". It is_
+
+_recommended to use the alpha-2 representation._
+____________________________________________________________________________________
+
+*Rules* [EUGEN-T110-R004] — A country identification code MUST have a list identifier
+
+____________________________
+attribute “ISO3166-1:Alpha2”
+____________________________
+
+| a|
+________
+_listID_
+________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _optional_
+
+ a|
+_Rules_ _[CL-T110-R009] — Country codes must be from ISO 3166-1 alpha2_
+
+__________________________________
+_Code List ID:_ _ISO3166-1:Alpha2_
+__________________________________
+
+| a|
+_______________
+_*cac:Contact*_
+_______________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:ContactType
+
+ |
+|*Element/Attribute* a|
+_____________
+*Description*
+_____________
+
+ a|
+________________________
+*Usage/Rules/Code lists*
+________________________
+
+| | |
+| a|
+__________
+*cbc:Name*
+__________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:NameType
+
+*Info req.ID* tir110-016
+
+*Bus req.ID* tbr110-014
+
+ a|
+*Term name* *Contact point*
+
+*Definition* _The name of the contact point._
+
+| a|
+_______________
+*cbc:Telephone*
+_______________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:TelephoneType
+
+*Info req.ID* tir110-018
+
+*Bus req.ID* tbr110-014
+
+ a|
+*Term name* *Contact telephone number*
+
+*Definition* _A phone number for the contact point._
+
+| a|
+_____________
+*cbc:Telefax*
+_____________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:TelefaxType
+
+*Info req.ID* tir110-017
+
+*Bus req.ID* tbr110-014
+
+ a|
+*Term name* *Contact fax number*
+
+*Definition* _A fax number for the contact point._
+
+| a|
+____________________
+*cbc:ElectronicMail*
+____________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:ElectronicMailType
+
+*Info req.ID* tir110-019
+
+*Bus req.ID* tbr110-014
+
+ a|
+*Term name* *Contact email address*
+
+*Definition* _An e-mail address for the contact point._
+
+| a|
+__________________________
+_*cac:BuyerCustomerParty*_
+__________________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cac:CustomerPartyType
+
+ |
+| a|
+_____________
+_*cac:Party*_
+_____________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cac:PartyType
+
+ |
+| a|
+________________
+*cbc:EndpointID*
+________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:EndpointIDType
+
+*Info req.ID* tir110-012
+
+*Bus req.ID* tbr110-004
+
+ a|
+*Term name* *Buyer electronic address*
+
+*Definition* _Identifies the buyers electronic address to which the business document should be_
+
+____________
+_delivered._
+____________
+
+*BII Usage* _Identifies the end point of the routing service._
+
+*Rules* [EUGEN-T110-R001] — An endpoint identifier MUST have a scheme identifier attribute
+
+_________________________________________________
+[EUGEN-T110-R010] — Buyers endpoint id must exist
+_________________________________________________
+
+| a|
+__________
+_schemeID_
+__________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _optional_
+
+ a|
+_Rules_ _[CL-T110-R003] — An Endpoint Identifier Scheme MUST be from the list of PEPPOL_
+
+___________________________________________________________________________
+_Party Identifiers described in the "PEPPOL Policy for using Identifiers"._
+___________________________________________________________________________
+
+| a|
+___________________________
+_*cac:PartyIdentification*_
+___________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:PartyIdentificationType
+
+ |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* tir110-011
+
+*Bus req.ID* tbr110-004
+
+ a|
+*Term name* *Buyer customer account identifier*
+
+*Definition* _A identifier for the buyer that is issued by the party that sends the document in which_
+
+_________________________
+_the identifier is used._
+_________________________
+
+*BII Usage* _An identification for the buyer party._
+
+*Rules* [BII3-T110-R006] — An Order agreement MUST specify the buying party.
+
+______________________________________________________________________________
+[BII3-T110-R019d] — A buyer id MUST be at most one
+
+[BII3-T110-R020] — A buyer MUST contain the buyer identifier
+
+[EUGEN-T110-R002] — A party identifier MUST have a scheme identifier attribute
+______________________________________________________________________________
+
+| a|
+__________
+_schemeID_
+__________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _optional_
+
+ a|
+_Rules_ _[CL-T110-R004] — A Party Identifier Scheme MUST be from the list of PEPPOL Party_
+
+_____________________________________________________________________
+_Identifiers described in the "PEPPOL Policy for using Identifiers"._
+_____________________________________________________________________
+
+| a|
+_________________
+_*cac:PartyName*_
+_________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:PartyNameType
+
+ |
+|*Element/Attribute* a|
+_____________
+*Description*
+_____________
+
+ a|
+________________________
+*Usage/Rules/Code lists*
+________________________
+
+| | |
+| a|
+__________
+*cbc:Name*
+__________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:NameType
+
+*Info req.ID* tir110-010
+
+*Bus req.ID* tbr110-004
+
+ a|
+*Term name* *Buyer name*
+
+*Definition* _The full name of the buyer._
+
+*BII Usage* _The name of the party who ordered the items and receives the response._
+
+*Rules* [BII3-T110-R006] — An Order agreement MUST specify the buying party.
+
+____________________________________________________
+[BII3-T110-R019c] — A buyer name MUST be at most one
+____________________________________________________
+
+| a|
+_____________________
+_*cac:PostalAddress*_
+_____________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:AddressType
+
+ |
+| a|
+________________
+*cbc:StreetName*
+________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:StreetNameType
+
+*Info req.ID* tir110-051
+
+*Bus req.ID* tbr110-004
+
+ a|
+*Term name* *Address line 1*
+
+*Definition* _The main address line in an address._
+
+*BII Usage* _Usually the street name and number or post office box._
+
+| a|
+__________________________
+*cbc:AdditionalStreetName*
+__________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:AdditionalStreetNameType
+
+*Info req.ID* tir110-052
+
+*Bus req.ID* tbr110-004
+
+ a|
+*Term name* *Address line 2*
+
+*Definition* _An additional address line in an address that can be used to give further details_
+
+______________________________
+_supplementing the main line._
+______________________________
+
+| a|
+______________
+*cbc:CityName*
+______________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:CityNameType
+
+*Info req.ID* tir110-053
+
+*Bus req.ID* tbr110-004
+
+ a|
+*Term name* *City*
+
+*Definition* _The common name of a city where the address is located._
+
+| a|
+________________
+*cbc:PostalZone*
+________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:PostalZoneType
+
+*Info req.ID* tir110-054
+
+*Bus req.ID* tbr110-004
+
+ a|
+*Term name* *Post code*
+
+*Definition* _The identifier for an addressable group of properties according to the relevant postal_
+
+___________________________________________
+_service, such as a ZIP code or Post Code._
+___________________________________________
+
+| a|
+______________________
+*cbc:CountrySubentity*
+______________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:CountrySubentityType
+
+*Info req.ID* tir110-055
+
+*Bus req.ID* tbr110-004
+
+ a|
+*Term name* *Country subdivision*
+
+*Definition* _The subdivision of a country such as region, county, state, province etc._
+
+| a|
+_______________
+_*cac:Country*_
+_______________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:CountryType
+
+ |
+| a|
+________________________
+*cbc:IdentificationCode*
+________________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:IdentificationCodeType
+
+*Info req.ID* tir110-056
+
+*Bus req.ID* tbr110-004
+
+ a|
+*Term name* *Country code*
+
+*Definition* _A code that identifies the country._
+
+*BII Usage* _The lists of valid countries are registered with the ISO 3166-1 Maintenance agency,_
+
+____________________________________________________________________________________
+_"Codes for the representation of names of countries and their subdivisions". It is_
+
+_recommended to use the alpha-2 representation._
+____________________________________________________________________________________
+
+*Rules* [EUGEN-T110-R004] — A country identification code MUST have a list identifier
+
+____________________________
+attribute “ISO3166-1:Alpha2”
+____________________________
+
+| a|
+________
+_listID_
+________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _optional_
+
+ a|
+_Rules_ _[CL-T110-R009] — Country codes must be from ISO 3166-1 alpha2_
+
+__________________________________
+_Code List ID:_ _ISO3166-1:Alpha2_
+__________________________________
+
+| a|
+_______________________
+_*cac:DeliveryContact*_
+_______________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:ContactType
+
+ |
+| a|
+__________
+*cbc:Name*
+__________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:NameType
+
+*Info req.ID* tir110-078
+
+*Bus req.ID* tbr110-005
+
+ a|
+*Term name* *Contact point*
+
+*Definition* _The name of the contact point._
+
+|*Element/Attribute* a|
+_____________
+*Description*
+_____________
+
+ a|
+________________________
+*Usage/Rules/Code lists*
+________________________
+
+| | |
+| a|
+_______________
+*cbc:Telephone*
+_______________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:TelephoneType
+
+*Info req.ID* tir110-080
+
+*Bus req.ID* tbr110-005
+
+ a|
+*Term name* *Contact telephone number*
+
+*Definition* _A phone number for the contact point._
+
+| a|
+_____________
+*cbc:Telefax*
+_____________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:TelefaxType
+
+*Info req.ID* tir110-079
+
+*Bus req.ID* tbr110-005
+
+ a|
+*Term name* *Contact fax number*
+
+*Definition* _A fax number for the contact point._
+
+| a|
+____________________
+*cbc:ElectronicMail*
+____________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:ElectronicMailType
+
+*Info req.ID* tir110-081
+
+*Bus req.ID* tbr110-005
+
+ a|
+*Term name* *Contact email address*
+
+*Definition* _An e-mail address for the contact point._
+
+| a|
+_______________________________
+_*cac:OriginatorCustomerParty*_
+_______________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:CustomerPartyType
+
+ |
+| a|
+_____________
+_*cac:Party*_
+_____________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:PartyType
+
+ |
+| a|
+___________________________
+_*cac:PartyIdentification*_
+___________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:PartyIdentificationType
+
+ |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* tir110-065
+
+*Bus req.ID* tbr110-018
+
+ a|
+*Term name* *Originator identifier*
+
+*Definition* _An identifier for the party that originally requested the ordered items._
+
+| a|
+__________
+_schemeID_
+__________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _optional_
+
+ a|
+_Rules_ _[CL-T110-R004] — A Party Identifier Scheme MUST  be from the list of PEPPOL Party_
+
+_____________________________________________________________________
+_Identifiers described in the "PEPPOL Policy for using Identifiers"._
+_____________________________________________________________________
+
+| a|
+_________________
+_*cac:PartyName*_
+_________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:PartyNameType
+
+ |
+| a|
+__________
+*cbc:Name*
+__________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:NameType
+
+*Info req.ID* tir110-066
+
+*Bus req.ID* tbr110-018
+
+ a|
+*Term name* *Originator name*
+
+*Definition* _The name of the party that originally requested the ordered items._
+
+| a|
+_______________________________
+_*cac:AccountingCustomerParty*_
+_______________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:CustomerPartyType
+
+ |
+| a|
+_____________
+_*cac:Party*_
+_____________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:PartyType
+
+ |
+| a|
+___________________________
+_*cac:PartyIdentification*_
+___________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:PartyIdentificationType
+
+ |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* tir110-064
+
+*Bus req.ID* tbr110-006
+
+ a|
+*Term name* *Accounting customer identifier*
+
+*Definition* _A unique identifier of the accounting customer_
+
+*BII Usage* _A globally unique identifier of the accounting customer_
+
+| a|
+__________
+_schemeID_
+__________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _optional_
+
+ a|
+_Rules_ _[CL-T110-R004] — A Party Identifier Scheme MUST  be from the list of PEPPOL Party_
+
+_____________________________________________________________________
+_Identifiers described in the "PEPPOL Policy for using Identifiers"._
+_____________________________________________________________________
+
+| a|
+_________________
+_*cac:PartyName*_
+_________________
+
+ |*Occurrence* 0 *..* 1 |
+|*Element/Attribute* a|
+_____________
+*Description*
+_____________
+
+ a|
+________________________
+*Usage/Rules/Code lists*
+________________________
+
+| | |
+| | |*Type* cac:PartyNameType |
+| a|
+__________
+*cbc:Name*
+__________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:NameType
+
+*Info req.ID* tir110-063
+
+*Bus req.ID* tbr110-006
+
+ a|
+*Term name* *Accounting customer name*
+
+*Definition* _Accounting customer name_
+
+*BII Usage* _Accounting customer name_
+
+| a|
+________________
+_*cac:Delivery*_
+________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:DeliveryType
+
+ |
+| a|
+______________________________
+_*cac:PromisedDeliveryPeriod*_
+______________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:PeriodType
+
+ |
+| a|
+_______________
+*cbc:StartDate*
+_______________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:StartDateType
+
+*Info req.ID* tir110-082
+
+*Bus req.ID* tbr110-007
+
+ a|
+*Term name* *Period start date*
+
+*Definition* _The date when the period starts._
+
+*BII Usage* _The date is the first day of the period._
+
+| a|
+_______________
+*cbc:StartTime*
+_______________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:StartTimeType
+
+*Info req.ID* tir110-083
+
+*Bus req.ID* tbr110-007
+
+ a|
+*Term name* *Period start time*
+
+*BII Usage* _The start time of the period._
+
+| a|
+_____________
+*cbc:EndDate*
+_____________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:EndDateType
+
+*Info req.ID* tir110-084
+
+*Bus req.ID* tbr110-007
+
+ a|
+*Term name* *Period end date*
+
+*Definition* _The date on which the period ends._
+
+*BII Usage* _The date is the last day of the period._
+
+| a|
+_____________
+*cbc:EndTime*
+_____________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:EndTimeType
+
+*Info req.ID* tir110-085
+
+*Bus req.ID* tbr110-007
+
+ a|
+*Term name* *Period end time*
+
+*BII Usage* _The end time of the period._
+
+| a|
+_____________________
+_*cac:DeliveryParty*_
+_____________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:PartyType
+
+ |
+| a|
+___________________________
+_*cac:PartyIdentification*_
+___________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:PartyIdentificationType
+
+ |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* tir110-068
+
+*Bus req.ID* tbr110-005
+
+ a|
+*Term name* *Delivery party identifier*
+
+*Definition* _A identifier for the party that carries out the delivery._
+
+| a|
+__________
+_schemeID_
+__________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _optional_
+
+ a|
+_Rules_ _[CL-T110-R004] — A Party Identifier Scheme MUST be from the list of PEPPOL Party_
+
+_____________________________________________________________________
+_Identifiers described in the "PEPPOL Policy for using Identifiers"._
+_____________________________________________________________________
+
+| a|
+_________________
+_*cac:PartyName*_
+_________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:PartyNameType
+
+ |
+| a|
+__________
+*cbc:Name*
+__________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:NameType
+
+*Info req.ID* tir110-067
+
+*Bus req.ID* tbr110-005
+
+ a|
+*Term name* *Delivery party name*
+
+*Definition* _The name of the party to which the goods and services are deliverd._
+
+| a|
+_____________________
+_*cac:DeliveryTerms*_
+_____________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:DeliveryTermsType
+
+ |
+|*Element/Attribute* a|
+_____________
+*Description*
+_____________
+
+ a|
+________________________
+*Usage/Rules/Code lists*
+________________________
+
+| | |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* tir110-069
+
+*Bus req.ID* tbr110-007
+
+ a|
+*Term name* *Buyer delivery terms*
+
+*Definition* _The terms that the buyer applies to the delivery the ordered items._
+
+| a|
+__________________
+*cbc:SpecialTerms*
+__________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:SpecialTermsType
+
+*Info req.ID* tir110-070
+
+*Bus req.ID* tbr110-007
+
+ a|
+*Term name* *Delivery special terms*
+
+*Definition* _A description of special conditions relating to the delivery terms._
+
+| a|
+________________________
+_*cac:DeliveryLocation*_
+________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:LocationType
+
+ |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* tir110-071
+
+*Bus req.ID* tbr110-005
+
+ a|
+*Term name* *Delivery terms location*
+
+*Definition* _The location to which the delivery terms refer._
+
+*BII Usage* _Used to qualify the delivery terms e.g. " Terms of delivery are FOB Rotterdam"_
+
+| a|
+_______________
+_*cac:Address*_
+_______________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:AddressType
+
+ |
+| a|
+________________
+*cbc:StreetName*
+________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:StreetNameType
+
+*Info req.ID* tir110-072
+
+*Bus req.ID* tbr110-005
+
+ a|
+*Term name* *Address line 1*
+
+*Definition* _The main address line in an address._
+
+*BII Usage* _Usually the street name and number or post office box._
+
+| a|
+__________________________
+*cbc:AdditionalStreetName*
+__________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:AdditionalStreetNameType
+
+*Info req.ID* tir110-073
+
+*Bus req.ID* tbr110-005
+
+ a|
+*Term name* *Address line 1*
+
+*Definition* _An additional address line in an address that can be used to give further details_
+
+______________________________
+_supplementing the main line._
+______________________________
+
+| a|
+______________
+*cbc:CityName*
+______________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:CityNameType
+
+*Info req.ID* tir110-074
+
+*Bus req.ID* tbr110-005
+
+ a|
+*Term name* *City*
+
+*Definition* _The common name of a city where the address is located._
+
+| a|
+________________
+*cbc:PostalZone*
+________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:PostalZoneType
+
+*Info req.ID* tir110-075
+
+*Bus req.ID* tbr110-005
+
+ a|
+*Term name* *Post code*
+
+*Definition* _The identifier for an addressable group of properties according to the relevant postal_
+
+___________________________________________
+_service, such as a ZIP code or Post Code._
+___________________________________________
+
+| a|
+______________________
+*cbc:CountrySubentity*
+______________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:CountrySubentityType
+
+*Info req.ID* tir110-076
+
+*Bus req.ID* tbr110-005
+
+ a|
+*Term name* *Country subdivision*
+
+*Definition* _The subdivision of a country such as region, county, state, province etc._
+
+| a|
+_______________
+_*cac:Country*_
+_______________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:CountryType
+
+ |
+|*Element/Attribute* a|
+_____________
+*Description*
+_____________
+
+ a|
+________________________
+*Usage/Rules/Code lists*
+________________________
+
+| | |
+| a|
+________________________
+*cbc:IdentificationCode*
+________________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:IdentificationCodeType
+
+*Info req.ID* tir110-077
+
+*Bus req.ID* tbr110-005
+
+ a|
+*Term name* *Country code*
+
+*Definition* _A code that identifies the country._
+
+*BII Usage* _The lists of valid countries are registered with the ISO 3166-1 Maintenance agency,_
+
+____________________________________________________________________________________
+_"Codes for the representation of names of countries and their subdivisions". It is_
+
+_recommended to use the alpha-2 representation._
+____________________________________________________________________________________
+
+*Rules* [EUGEN-T110-R004] — A country identification code MUST have a list identifier
+
+____________________________
+attribute “ISO3166-1:Alpha2”
+____________________________
+
+| a|
+________
+_listID_
+________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _optional_
+
+ a|
+_Rules_ _[CL-T110-R009] — Country codes must be from ISO 3166-1 alpha2_
+
+__________________________________
+_Code List ID:_ _ISO3166-1:Alpha2_
+__________________________________
+
+| a|
+_______________________
+_*cac:AllowanceCharge*_
+_______________________
+
+ a|
+*Occurrence* 0 *..* unbounded
+
+*Type* cac:AllowanceChargeType
+
+ |
+| a|
+_____________________
+*cbc:ChargeIndicator*
+_____________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:ChargeIndicatorType
+
+*Info req.ID* OP-110-001
+
+ a|
+*Term name* *Allowance amount*
+
+*Remark* ChargeIndicator = true means that AllowanceCharge amount is a Charge,
+
+_________________________________________________________________________
+ChargeIndicator = false means that AllowanceCharge Amount is an Allowance
+_________________________________________________________________________
+
+*Definition* _The net amount of an allowance._
+
+*Rules* [EUGEN-T110-R021] — All amounts must have same currency code as document
+
+________
+currency
+________
+
+| a|
+___________________________
+*cbc:AllowanceChargeReason*
+___________________________
+
+ a|
+*Occurrence* 0 *..* unbounded
+
+*Type* cbc:AllowanceChargeReasonType
+
+*Info req.ID* OP-110-002
+
+__________
+OP-110-012
+__________
+
+ a|
+*Term name* *Allowance reason*
+
+*Definition* _The reason for the allowance, expressed as text._
+
+*BII Usage* _Allowance reason code and allowance reason shall indicate the same type of_
+
+____________
+_allowance._
+____________
+
+*Rules* [EUGEN-T110-R015] — Allowances and charges MUST have a reason
+
+*Term name* *Charge reason*
+
+*Definition* _The reason for the charge, expressed as text._
+
+*Rules* [EUGEN-T110-R015] — Allowances and charges MUST have a reason
+
+| a|
+____________
+*cbc:Amount*
+____________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:AmountType
+
+*Info req.ID* OP-110-001
+
+__________
+OP-110-011
+__________
+
+ a|
+*Term name* *Allowance amount*
+
+*Remark* Value is allowance when ChargeIndicator = false
+
+*Definition* _The net amount of an allowance._
+
+*Rules* [EUGEN-T110-R021] — All amounts must have same currency code as document
+
+________
+currency
+________
+
+*Term name* *Charge amount*
+
+*Remark* Value is charge when ChargeIndicator = true
+
+*Definition* _The amount of a charge without VAT._
+
+*Rules* [EUGEN-T110-R021] — All amounts must have same currency code as document
+
+________
+currency
+________
+
+| a|
+____________
+_currencyID_
+____________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _required_
+
+ a|
+_Rules_ _[CL-T110-R001] — currencyID for Amounts MUST be coded using ISO code list 4217_
+
+_________________________
+_Code List ID:_ _ISO4217_
+_________________________
+
+| a|
+________________
+_*cac:TaxTotal*_
+________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:TaxTotalType
+
+ |
+| a|
+_______________
+*cbc:TaxAmount*
+_______________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:TaxAmountType
+
+*Info req.ID* tir110-112
+
+*Bus req.ID* tbr110-019
+
+ a|
+*Term name* *VAT total amount*
+
+*Definition* _The total VAT amount._
+
+*BII Usage* _The sum of all VAT category tax amounts._
+
+*Rules* [EUGEN-T110-R011] — All amounts must have same currency code as document
+
+________
+currency
+________
+
+|*Element/Attribute* a|
+_____________
+*Description*
+_____________
+
+ a|
+________________________
+*Usage/Rules/Code lists*
+________________________
+
+| | |
+| a|
+____________
+_currencyID_
+____________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _required_
+
+ a|
+_Rules_ _[CL-T110-R001] — currencyID for Amounts MUST be coded using ISO code list 4217_
+
+_________________________
+_Code List ID:_ _ISO4217_
+_________________________
+
+| a|
+___________________
+_*cac:TaxSubtotal*_
+___________________
+
+ a|
+*Occurrence* 0 *..* unbounded
+
+*Type* cac:TaxSubtotalType
+
+ |
+| a|
+___________________
+*cbc:TaxableAmount*
+___________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:TaxableAmountType
+
+*Info req.ID* OP-110-003
+
+ a|
+*Term name* *VAT category taxable amount*
+
+*Definition* _Sum of all taxable amounts subject to a specific VAT category code and VAT category_
+
+_______________________________________________
+_rate (if the VAT category rate is applicable)_
+_______________________________________________
+
+*BII Usage* _The sum of line net amounts minus allowances plus charges on document level which_
+
+______________________________________________________________________
+_are subject to a specific VAT category_
+
+_code and VAT category rate (if the VAT category rate is applicable)._
+______________________________________________________________________
+
+*Rules* [EUGEN-T110-R021] — All amounts must have same currency code as document
+
+________
+currency
+________
+
+| a|
+____________
+_currencyID_
+____________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _required_
+
+ a|
+_Rules_ _[CL-T110-R001] — currencyID for Amounts MUST be coded using ISO code list 4217_
+
+_________________________
+_Code List ID:_ _ISO4217_
+_________________________
+
+| a|
+_______________
+*cbc:TaxAmount*
+_______________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:TaxAmountType
+
+*Info req.ID* OP-110-004
+
+ a|
+*Term name* *VAT category tax amount*
+
+*Definition* _The total VAT amount for a given VAT category._
+
+*BII Usage* _Calculated by multiplying the VAT category taxable amount with the VAT category rate_
+
+________________________________
+_for the relevant VAT category._
+________________________________
+
+*Rules* [EUGEN-T110-R021] — All amounts must have same currency code as document
+
+________
+currency
+________
+
+| a|
+____________
+_currencyID_
+____________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _required_
+
+ a|
+_Rules_ _[CL-T110-R001] — currencyID for Amounts MUST be coded using ISO code list 4217_
+
+_________________________
+_Code List ID:_ _ISO4217_
+_________________________
+
+| a|
+___________________
+_*cac:TaxCategory*_
+___________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cac:TaxCategoryType
+
+ |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* OP-110-005
+
+ a|
+*Term name* *VAT category code*
+
+*Definition* _Coded identification of a VAT category._
+
+*Rules* [EUGEN-T110-R005] — A tax category identifier MUST have a scheme identifier
+
+____________________
+attribute “UNCL5305”
+____________________
+
+*Code List ID:* ISO4217
+
+| a|
+__________
+_schemeID_
+__________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _optional_
+
+ a|
+_Rules_ _[CL-T110-R005] — VAT category code MUST be coded using UNCL 5305 code list BII3_
+
+_________________________________
+_subset_
+
+_Code List ID:_ _UNCL5305 SUBSET_
+_________________________________
+
+| a|
+_____________
+*cbc:Percent*
+_____________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:PercentType
+
+*Info req.ID* OP-110-006
+
+ a|
+*Term name* *VAT category rate*
+
+*Definition* _The VAT rate, represented as percentage that applies for the relevant VAT category._
+
+*BII Usage* _A VAT rate of 0% is applied for calculation purposes, even if the item is outside the_
+
+_______________
+_scope of VAT._
+_______________
+
+| a|
+________________________
+*cbc:TaxExemptionReason*
+________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:TaxExemptionReasonType
+
+*Info req.ID* OP-110-007
+
+ a|
+*Term name* *VAT exemption reason text*
+
+*Definition* _A textual statement of the reason for why the base amount is exempted from VAT._
+
+| a|
+_________________
+_*cac:TaxScheme*_
+_________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cac:TaxSchemeType
+
+ |
+|*Element/Attribute* a|
+_____________
+*Description*
+_____________
+
+ a|
+________________________
+*Usage/Rules/Code lists*
+________________________
+
+| | |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* OP-110-005
+
+ a|
+*Term name* *VAT category code*
+
+*Remark* Value shall be VAT
+
+*Definition* _Coded identification of a VAT category._
+
+*Rules* [EUGEN-T110-R005] — A tax category identifier MUST have a scheme identifier
+
+____________________
+attribute “UNCL5305”
+____________________
+
+| a|
+__________________________
+_*cac:LegalMonetaryTotal*_
+__________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:MonetaryTotalType
+
+ |
+| a|
+_________________________
+*cbc:LineExtensionAmount*
+_________________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:LineExtensionAmountType
+
+*Info req.ID* tir110-086
+
+*Bus req.ID* tbr110-019
+
+ a|
+*Term name* *Sum of line amounts*
+
+*Definition* _Sum of all line amounts in the document._
+
+*Rules* [EUGEN-T110-R011] — All amounts must have same currency code as document
+
+________________________________________________________________________________
+currency
+
+[EUGEN-T110-R017] — Total sum of line amounts MUST NOT be negative, if total sum
+
+of line amounts is provided.
+
+[EUGEN-T110-R019] — Total sum of line amounts MUST equal the sum of the order
+
+line amounts at order line level, if total sum of line amounts is provided.
+
+[EUGEN-T110-R018] — If payable amount is provided then Line Extension Amount and
+
+Tax Exclusive Amount and Tax Inclusive Amount must be provided.
+________________________________________________________________________________
+
+| a|
+____________
+_currencyID_
+____________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _required_
+
+ a|
+_Rules_ _[CL-T110-R001] — currencyID for Amounts MUST be coded using ISO code list 4217_
+
+_________________________
+_Code List ID:_ _ISO4217_
+_________________________
+
+| a|
+________________________
+*cbc:TaxExclusiveAmount*
+________________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:TaxExclusiveAmountType
+
+*Info req.ID* tir110-087
+
+*Bus req.ID* tbr110-019
+
+ a|
+*Term name* *Total amount without VAT*
+
+*Definition* _The total amount of the document without VAT including all line net amounts minus sum_
+
+______________________________________________________________________________
+_of allowance amount on document level plus sum of charges on document level._
+______________________________________________________________________________
+
+*Rules* [EUGEN-T110-R011] — All amounts must have same currency code as document
+
+______________________________________________________________________________________
+currency
+
+[EUGEN-T110-R022] — Tax exclusive amount must equal the sum of line amount plus
+
+total charge amount at document level less total allowance amount at document level if
+
+tax exclusive amount is provided.
+______________________________________________________________________________________
+
+| a|
+____________
+_currencyID_
+____________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _required_
+
+ a|
+_Rules_ _[CL-T110-R001] — currencyID for Amounts MUST be coded using ISO code list 4217_
+
+_________________________
+_Code List ID:_ _ISO4217_
+_________________________
+
+| a|
+________________________
+*cbc:TaxInclusiveAmount*
+________________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:TaxInclusiveAmountType
+
+*Info req.ID* tir110-088
+
+*Bus req.ID* tbr110-019
+
+ a|
+*Term name* *Total amount with VAT*
+
+*Definition* _The total amount of the document with VAT._
+
+*BII Usage* _The total amount with VAT is the _
+
+________________________________________________________________________________________
+_Total amount without VAT plus the Total VAT amount. The Total amount shall be equal_
+
+_or greater than zero._
+
+_The lists of valid currencies are registered with the ISO 4217 Maintenance Agency_
+
+_""Codes for the representation of currencies and funds"". It is recommended to use the_
+
+_alpha-3 representation."_
+________________________________________________________________________________________
+
+*Rules* [EUGEN-T110-R011] — All amounts must have same currency code as document
+
+________________________________________________________________________________
+currency
+
+[EUGEN-T110-R018] — If payable amount is provided then Line Extension Amount and
+
+Tax Exclusive Amount and Tax Inclusive Amount must be provided.
+
+[EUGEN-T110-R023] — Tax inclusive amount must equal tax exclusive amount plus
+
+total tax amount.
+________________________________________________________________________________
+
+|*Element/Attribute* a|
+_____________
+*Description*
+_____________
+
+ a|
+________________________
+*Usage/Rules/Code lists*
+________________________
+
+| | |
+| a|
+____________
+_currencyID_
+____________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _required_
+
+ a|
+_Rules_ _[CL-T110-R001] — currencyID for Amounts MUST be coded using ISO code list 4217_
+
+_________________________
+_Code List ID:_ _ISO4217_
+_________________________
+
+| a|
+__________________________
+*cbc:AllowanceTotalAmount*
+__________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:AllowanceTotalAmountType
+
+*Info req.ID* OP-110-009
+
+ a|
+*Term name* *Sum of allowances on document level*
+
+*Definition* _Sum of all allowances on document level_
+
+*BII Usage* _Allowances on line level are included in the line amount which is summed up into the_
+
+___________________________
+_"sum of line net amount"._
+___________________________
+
+*Rules* [EUGEN-T110-R011] — All amounts must have same currency code as document
+
+_____________________________________________________________________________________
+currency
+
+[EUGEN-T110-R021] —Total sum of allowance at document level MUST be equal to
+
+the sum of allowance amounts at document level, if total sum of allowance at document
+
+level is provided.
+_____________________________________________________________________________________
+
+| a|
+____________
+_currencyID_
+____________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _required_
+
+ a|
+_Rules_ _[CL-T110-R001] — currencyID for Amounts MUST be coded using ISO code list 4217_
+
+_________________________
+_Code List ID:_ _ISO4217_
+_________________________
+
+| a|
+_______________________
+*cbc:ChargeTotalAmount*
+_______________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:ChargeTotalAmountType
+
+*Info req.ID* OP-110-008
+
+ a|
+*Term name* *Sum of charges on document level*
+
+*Definition* _Sum of all charges on document level._
+
+*BII Usage* _Charges on line level are included in the line amount which is summed up into the "sum_
+
+______________________
+_of line net amount"._
+______________________
+
+*Rules* [EUGEN-T110-R011] — All amounts must have same currency code as document
+
+________________________________________________________________________________________
+currency
+
+[EUGEN-T110-R020] — Total sum of charges at document level MUST be equal to the
+
+sum of charges at document level, if total sum of charges at document level is provided.
+________________________________________________________________________________________
+
+| a|
+____________
+_currencyID_
+____________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _required_
+
+ a|
+_Rules_ _[CL-T110-R001] — currencyID for Amounts MUST be coded using ISO code list 4217_
+
+_________________________
+_Code List ID:_ _ISO4217_
+_________________________
+
+| a|
+___________________
+*cbc:PrepaidAmount*
+___________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:PrepaidAmountType
+
+*Info req.ID* tir110-089
+
+*Bus req.ID* tbr110-019
+
+ a|
+*Term name* *Paid amounts*
+
+*Definition* _The sum of amounts which have been paid a-priori._
+
+*Rules* [EUGEN-T110-R011] — All amounts must have same currency code as document
+
+________
+currency
+________
+
+| a|
+____________
+_currencyID_
+____________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _required_
+
+ a|
+_Rules_ _[CL-T110-R001] — currencyID for Amounts MUST be coded using ISO code list 4217_
+
+_________________________
+_Code List ID:_ _ISO4217_
+_________________________
+
+| a|
+___________________________
+*cbc:PayableRoundingAmount*
+___________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:PayableRoundingAmountType
+
+*Info req.ID* OP-110-010
+
+ a|
+*Term name* *Rounding of document total*
+
+*Definition* _Any rounding of the "Document total including VAT"_
+
+*Rules* [EUGEN-T110-R011] — All amounts must have same currency code as document
+
+________
+currency
+________
+
+| a|
+____________
+_currencyID_
+____________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _required_
+
+ a|
+_Rules_ _[CL-T110-R001] — currencyID for Amounts MUST be coded using ISO code list 4217_
+
+_________________________
+_Code List ID:_ _ISO4217_
+_________________________
+
+|*Element/Attribute* a|
+_____________
+*Description*
+_____________
+
+ a|
+________________________
+*Usage/Rules/Code lists*
+________________________
+
+| | |
+| a|
+___________________
+*cbc:PayableAmount*
+___________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:PayableAmountType
+
+*Info req.ID* tir110-090
+
+*Bus req.ID* tbr110-019
+
+ a|
+*Term name* *Amount due for payment*
+
+*Definition* _The outstanding amount that is requested to be paid._
+
+*BII Usage* _This amount is the ""document total amount with VAT"" minus the ""Paid amount"" that_
+
+________________________________________________________________________________________
+_has been paid a-priori. The amount will be zero in case the document total amount with_
+
+_VAT is fully paid ._
+________________________________________________________________________________________
+
+*Rules* [EUGEN-T110-R011] — All amounts must have same currency code as document
+
+_______________________________________________________________________________
+currency
+
+[EUGEN-T110-R016] — Total amount for payment MUST NOT be negative, if total
+
+amount for payment is provided.
+
+[EUGEN-T110-R024] — Total amount for payment MUST be equal to the tax inclusive
+
+amount plus rounding amount.
+_______________________________________________________________________________
+
+| a|
+____________
+_currencyID_
+____________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _required_
+
+ a|
+_Rules_ _[CL-T110-R001] — currencyID for Amounts MUST be coded using ISO code list 4217_
+
+_________________________
+_Code List ID:_ _ISO4217_
+_________________________
+
+| a|
+_________________
+_*cac:OrderLine*_
+_________________
+
+ a|
+*Occurrence* 1 *..* unbounded
+
+*Type* cac:OrderLineType
+
+ |
+| a|
+________________
+_*cac:LineItem*_
+________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cac:LineItemType
+
+ |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* tir110-022
+
+*Bus req.ID* tbr110-021
+
+ a|
+*Term name* *Order agreement line identifier*
+
+*Definition* _An identifier for an individual line that is unique within an order agreement._
+
+*BII Usage* _An identifier for an individual line that is unique within an order agreement._
+
+*Rules* [BII3-T110-R008] — An Order agreement MUST have at least one Order agreement
+
+_________________________________________________________________________________
+line.
+
+[BII3-T110-R009] — An Order agreement line MUST contain a unique line identifier.
+_________________________________________________________________________________
+
+| a|
+__________
+*cbc:Note*
+__________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:NoteType
+
+*Info req.ID* tir110-091
+
+*Bus req.ID* tbr110-016
+
+ a|
+*Term name* *Order agreement line note*
+
+*Definition* _Free-form text applying to the order agreement line._
+
+*BII Usage* _Free text applying to the order agreement line._
+
+| a|
+______________
+*cbc:Quantity*
+______________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:QuantityType
+
+*Info req.ID* tir110-093
+
+*Bus req.ID* tbr110-022
+
+ a|
+*Term name* *Ordered quantity*
+
+*Definition* _The number of item units that are ordered._
+
+*BII Usage* _UOM should be stated  by using recommendation 20 v10_
+
+_______________________________________________________________
+_Restricted to code list "UN/ECE recommendation 20 version 10"_
+_______________________________________________________________
+
+*Rules* [BII3-T110-R021] — An Order agreement line MUST contain a quantity and it should
+
+_______________________________________________________________________________
+not be 0
+
+[EUGEN-T110-R005] — A unit code attribute MUST have a unit code list identifier
+
+attribute “UNECERec20”
+_______________________________________________________________________________
+
+| a|
+__________
+_unitCode_
+__________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _optional_
+
+ a|
+_Rules_ _[CL-T110-R006] — Unit code for quantities MUST be coded according to the UN/ECE_
+
+____________________________
+_Recommendation 20_
+
+_Code List ID:_ _UNECERec20_
+____________________________
+
+| a|
+_________________________
+*cbc:LineExtensionAmount*
+_________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:LineExtensionAmountType
+
+*Info req.ID* tir110-092
+
+*Bus req.ID* tbr110-023
+
+ a|
+*Term name* *Order agreeement line amount*
+
+*Definition* _Order agreeement line amount_
+
+________________________________________________________________________________
+_The total amount for the order agreement line, including all taxes except VAT._
+________________________________________________________________________________
+
+*BII Usage* _Order agreeement line amount_
+
+| a|
+____________
+_currencyID_
+____________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _required_
+
+ a|
+_Rules_ _[CL-T110-R001] — currencyID for Amounts MUST be coded using ISO code list 4217_
+
+_________________________
+_Code List ID:_ _ISO4217_
+_________________________
+
+|*Element/Attribute* a|
+_____________
+*Description*
+_____________
+
+ a|
+________________________
+*Usage/Rules/Code lists*
+________________________
+
+| | |
+| a|
+____________________
+*cbc:TotalTaxAmount*
+____________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:TotalTaxAmountType
+
+*Info req.ID* tir110-108
+
+*Bus req.ID* tbr110-013
+
+ a|
+*Term name* *Line VAT amount*
+
+*Definition* _The total VAT amount that for the invoice line. Calculated as a multiple of line amount_
+
+_______________
+_and VAT rate._
+_______________
+
+*Rules* [EUGEN-T110-R021] — All amounts must have same currency code as document
+
+________________________________________________________________________
+currency
+
+[EUGEN-T110-R011] — All amounts must have same currency code as document
+
+currency
+________________________________________________________________________
+
+| a|
+____________
+_currencyID_
+____________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _required_
+
+ a|
+_Rules_ _[CL-T110-R001] — currencyID for Amounts MUST be coded using ISO code list 4217_
+
+_________________________
+_Code List ID:_ _ISO4217_
+_________________________
+
+| a|
+________________
+_*cac:Delivery*_
+________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:DeliveryType
+
+ |
+| a|
+______________
+*cbc:Quantity*
+______________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:QuantityType
+
+*Info req.ID* tir110-028
+
+*Bus req.ID* tbr110-022
+
+ a|
+*Term name* *Accepted quantity*
+
+*Definition* _The number of item units that are delivered._
+
+*BII Usage* _UOM should be stated  by using recommendation 20 v10_
+
+_______________________________________________
+_The quantity of items that will be delivered._
+_______________________________________________
+
+| a|
+__________
+_unitCode_
+__________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _optional_
+
+ |
+| a|
+______________________________
+_*cac:PromisedDeliveryPeriod*_
+______________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:PeriodType
+
+ |
+| a|
+_______________
+*cbc:StartDate*
+_______________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:StartDateType
+
+*Info req.ID* tir110-030
+
+*Bus req.ID* tbr110-007
+
+ a|
+*Term name* *Period start date*
+
+*Definition* _The date when the period starts._
+
+*BII Usage* _The date is the first day of the period._
+
+| a|
+_______________
+*cbc:StartTime*
+_______________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:StartTimeType
+
+*Info req.ID* tir110-110
+
+*Bus req.ID* tbr110-007
+
+ a|
+*Term name* *Period start time*
+
+*BII Usage* _The start time of the period._
+
+| a|
+_____________
+*cbc:EndDate*
+_____________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:EndDateType
+
+*Info req.ID* tir110-031
+
+*Bus req.ID* tbr110-007
+
+ a|
+*Term name* *Period end date*
+
+*Definition* _The date on which the period ends._
+
+*BII Usage* _The date is the last day of the period._
+
+| a|
+_____________
+*cbc:EndTime*
+_____________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:EndTimeType
+
+*Info req.ID* tir110-111
+
+*Bus req.ID* tbr110-007
+
+ a|
+*Term name* *Period end time*
+
+*BII Usage* _The end time of the period._
+
+| a|
+_____________
+_*cac:Price*_
+_____________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cac:PriceType
+
+ |
+| a|
+_________________
+*cbc:PriceAmount*
+_________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:PriceAmountType
+
+*Info req.ID* tir110-109
+
+*Bus req.ID* tbr110-020
+
+ a|
+*Term name* *Item net price*
+
+*Definition* _The price of an item, exclusive of VAT, after subtracting item price discount._
+
+*BII Usage* _"The net price has to be equal with the gross price less the item price discount._
+
+*Rules* [BII3-T110-R011] — Prices of items MUST not be negative.
+
+________________________________________________________________________
+[EUGEN-T110-R021] — All amounts must have same currency code as document
+
+currency
+________________________________________________________________________
+
+| a|
+____________
+_currencyID_
+____________
+
+ |_Type_ _xs:normalizedString_ |_Rules_ _[CL-T110-R001] — currencyID for Amounts MUST be coded using ISO code list 4217_
+|*Element/Attribute* a|
+_____________
+*Description*
+_____________
+
+ a|
+________________________
+*Usage/Rules/Code lists*
+________________________
+
+| | |
+| | |_Use_ _required_ a|
+_________________________
+_Code List ID:_ _ISO4217_
+_________________________
+
+| a|
+__________________
+*cbc:BaseQuantity*
+__________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:BaseQuantityType
+
+*Info req.ID* tir110-027
+
+*Bus req.ID* tbr110-020
+
+ a|
+*Term name* *Item price base quantity*
+
+*Definition* _The number of item units to which the price applies._
+
+*BII Usage* _UOM should be stated  by using recommendation 20 v10_
+
+_________________________________________________
+_The actual quantity to which the price applies._
+_________________________________________________
+
+*Rules* Default value=1
+
+| a|
+__________
+_unitCode_
+__________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _optional_
+
+ a|
+_Rules_ _[CL-T110-R006] — Unit code for Price/BaseQuantity MUST be coded according to the_
+
+____________________________
+_UN/ECE Recommendation 20_
+
+_Code List ID:_ _UNECERec20_
+____________________________
+
+| a|
+____________
+_*cac:Item*_
+____________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cac:ItemType
+
+ |
+| a|
+_________________
+*cbc:Description*
+_________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:DescriptionType
+
+*Info req.ID* tir110-095
+
+*Bus req.ID* tbr110-009
+
+ a|
+*Term name* *Item description as text*
+
+*Definition* _A free text detailed description of an item._
+
+| a|
+__________
+*cbc:Name*
+__________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:NameType
+
+*Info req.ID* tir110-032
+
+*Bus req.ID* tbr110-009
+
+ a|
+*Term name* *Item name*
+
+*Definition* _A name for an item._
+
+*BII Usage* _One of, Item name, Item identifier or Item description shall be provided._
+
+________________________________________________________________________________________
+_A short name optionally given to an item, such as a name from a Catalogue, as distinct_
+
+_from a description. A short name for the item._
+________________________________________________________________________________________
+
+| a|
+_________________________________
+_*cac:SellersItemIdentification*_
+_________________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:ItemIdentificationType
+
+ |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* tir110-033
+
+*Bus req.ID* tbr110-008
+
+ a|
+*Term name* *Item sellers identifier*
+
+*Definition* _An identifier, assigned by the seller, for the item._
+
+*BII Usage* _Associates the item with its identification according to the seller's system. The sellers ID_
+
+_______________
+_for the item._
+_______________
+
+*Rules* [BII3-T110-R012] — An item in an Order agreement line MUST be identifiable by either
+
+________________________________________________________
+“item sellers identifier” or “item standard identifier”.
+________________________________________________________
+
+| a|
+__________________________________
+_*cac:StandardItemIdentification*_
+__________________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:ItemIdentificationType
+
+ |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* tir110-034
+
+*Bus req.ID* tbr110-008
+
+ a|
+*Term name* *Item standard identifier*
+
+*Definition* _An item identifier based on a registered scheme._
+
+*BII Usage* _Associates the item with its identification according to a standard system. Standarized_
+
+_________________
+_ID for the item_
+_________________
+
+*Rules* [BII3-T110-R012] — An item in an Order agreement line MUST be identifiable by either
+
+________________________________________________________
+“item sellers identifier” or “item standard identifier”.
+________________________________________________________
+
+| a|
+__________
+_schemeID_
+__________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _optional_
+
+ |
+| a|
+_____________________________________
+_*cac:*_
+
+_*ItemSpecificationDocumentReferenc*_
+
+_*e*_
+_____________________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:DocumentReferenceType
+
+ |
+|*Element/Attribute* a|
+_____________
+*Description*
+_____________
+
+ a|
+________________________
+*Usage/Rules/Code lists*
+________________________
+
+| | |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* tir110-102
+
+*Bus req.ID* tbr110-010
+
+ a|
+*Term name* *Document identifier*
+
+*Definition* _Identifier of a document_
+
+| a|
+__________________
+*cbc:DocumentType*
+__________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:DocumentTypeType
+
+*Info req.ID* tir110-103
+
+*Bus req.ID* tbr110-010
+
+ a|
+*Term name* *Document description*
+
+*Definition* _Textual description of the document._
+
+| a|
+__________________
+_*cac:Attachment*_
+__________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:AttachmentType
+
+ |
+| a|
+__________________________
+*cbc:*
+
+*EmbeddedDocumentBinaryOb*
+
+*ject*
+__________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:
+
+________________________________
+EmbeddedDocumentBinaryObjectType
+________________________________
+
+*Info req.ID* tir110-105
+
+*Bus req.ID* tbr110-010
+
+ a|
+*Term name* *Attached document*
+
+*Definition* _A Binary Object MIME code attribute MUST be coded using MIME Code Type version_
+
+_________________________________________________
+_2008 code list_
+
+_An attached document embedded as binary object._
+_________________________________________________
+
+*Rules* [EUGEN-T110-R012] — Attached binary object mime code must be from selected list of
+
+______
+codes.
+______
+
+| a|
+__________
+_mimeCode_
+__________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _required_
+
+ a|
+_Rules_ _[CL-T110-R007] — For Mime code in attribute use MIME Media Types._
+
+______________________
+_Code List ID:_ _MIME_
+______________________
+
+| a|
+_________________________
+_*cac:ExternalReference*_
+_________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:ExternalReferenceType
+
+ |
+| a|
+_________
+*cbc:URI*
+_________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:URIType
+
+*Info req.ID* tir110-104
+
+*Bus req.ID* tbr110-010
+
+ a|
+*Term name* *External document URI*
+
+*Definition* _The Uniform Resource Identifier (URI) that identifies where the external document is_
+
+__________
+_located._
+__________
+
+| a|
+_______________________________
+_*cac:CommodityClassification*_
+_______________________________
+
+ a|
+*Occurrence* 0 *..* unbounded
+
+*Type* cac:CommodityClassificationType
+
+ |
+| a|
+____________________________
+*cbc:ItemClassificationCode*
+____________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:ItemClassificationCodeType
+
+*Info req.ID* tir110-096
+
+__________
+tir110-097
+__________
+
+*Bus req.ID* tbr110-011
+
+__________
+tbr110-011
+__________
+
+ a|
+*Term name* *Item classification code*
+
+*Definition* _A code for classifying the item by its type or nature._
+
+*BII Usage* _Classification codes are used to allow grouping of similar items for a various purposes_
+
+_________________________________________________________
+_e.g. public procurement (CPV), e-Commerce (UNSPSC) etc._
+_________________________________________________________
+
+*Rules* [EUGEN-T110-R013] — Item classification codes must include code list value
+
+*Term name* *Item CPV classification code*
+
+*Remark* ListID = CPV
+
+*Definition* _A code for classifying the item by its type or nature according to the CPV commodity_
+
+________________________
+_classification scheme._
+________________________
+
+*Rules* [EUGEN-T110-R013] — Item classification codes must include code list value
+
+| a|
+________
+_listID_
+________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _optional_
+
+ a|
+_Rules_ _[CL-T110-R010] — Commodity code schemes MUST be according to CENBII3 _
+
+_____________________________________
+_COMMODITY_SCHEME_ID_
+
+_Code List ID:_ _COMMODITY_SCHEME_ID_
+_____________________________________
+
+| a|
+_____________________________
+_*cac:TransactionConditions*_
+_____________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:TransactionConditionsType
+
+ |
+|*Element/Attribute* a|
+_____________
+*Description*
+_____________
+
+ a|
+________________________
+*Usage/Rules/Code lists*
+________________________
+
+| | |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* tir110-094
+
+*Bus req.ID* tbr110-024
+
+ a|
+*Term name* *Contracted item indicator*
+
+*Remark* When ActionCode="CT"
+
+*Definition* _Indicates if the item is offered in accordance to an existing contract._
+
+| a|
+_____________________________
+_*cac:ClassifiedTaxCategory*_
+_____________________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cac:TaxCategoryType
+
+ |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* tir110-106
+
+*Bus req.ID* tbr110-013
+
+ a|
+*Term name* *Item VAT category code*
+
+*Definition* _The VAT category code for the item._
+
+*Rules* [BII3-T110-R015] — An Order agreement line MUST specify line VAT information.
+
+___________________________________________________________________________
+[EUGEN-T110-R106] — A tax category identifier MUST have a scheme identifier
+
+attribute “UNCL5305”
+___________________________________________________________________________
+
+| a|
+__________
+_schemeID_
+__________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _optional_
+
+ a|
+_Rules_ _[CL-T110-R005] — VAT category code MUST be coded using UNCL 5305 code list BII3_
+
+_________________________________
+_subset_
+
+_Code List ID:_ _UNCL5305 SUBSET_
+_________________________________
+
+| a|
+_____________
+*cbc:Percent*
+_____________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:PercentType
+
+*Info req.ID* tir110-107
+
+*Bus req.ID* tbr110-013
+
+ a|
+*Term name* *Line VAT rate*
+
+*Definition* _The VAT percentage rate that applies to the line amount._
+
+| a|
+_________________
+_*cac:TaxScheme*_
+_________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cac:TaxSchemeType
+
+ |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* tir110-106
+
+*Bus req.ID* tbr110-013
+
+ a|
+*Term name* *Item VAT category code*
+
+*Remark* Value shall be VAT
+
+*Definition* _The VAT category code for the item._
+
+*Rules* [BII3-T110-R015] — An Order agreement line MUST specify line VAT information.
+
+___________________________________________________________________________
+[EUGEN-T110-R106] — A tax category identifier MUST have a scheme identifier
+
+attribute “UNCL5305”
+___________________________________________________________________________
+
+| a|
+______________________________
+_*cac:AdditionalItemProperty*_
+______________________________
+
+ a|
+*Occurrence* 0 *..* unbounded
+
+*Type* cac:ItemPropertyType
+
+ |
+| a|
+__________
+*cbc:Name*
+__________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:NameType
+
+*Info req.ID* tir110-098
+
+*Bus req.ID* tbr110-012
+
+ a|
+*Term name* *Item property name*
+
+*Definition* _The name of the property._
+
+*BII Usage* _The name must be sufficiently descriptive to define the value. The definition may be_
+
+_______________________________________________________________
+_supplemented with the property unit of measure when relevant._
+_______________________________________________________________
+
+| a|
+______________
+*cbc:NameCode*
+______________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:NameCodeType
+
+*Info req.ID* tir110-101
+
+*Bus req.ID* tbr110-012
+
+ a|
+*Term name* *Item property classification code*
+
+*Remark* Verify
+
+*Definition* _Code for the item property according to a property code system_
+
+| a|
+___________
+*cbc:Value*
+___________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:ValueType
+
+*Info req.ID* tir110-099
+
+*Bus req.ID* tbr110-012
+
+ a|
+*Term name* *Item property value*
+
+*Definition* _The value of the item property._
+
+|*Element/Attribute* a|
+_____________
+*Description*
+_____________
+
+ a|
+________________________
+*Usage/Rules/Code lists*
+________________________
+
+| | |
+| a|
+___________________
+*cbc:ValueQuantity*
+___________________
+
+ a|
+*Occurrence* 0 *..* 1
+
+*Type* cbc:ValueQuantityType
+
+*Info req.ID* tir110-100
+
+*Bus req.ID* tbr110-012
+
+ a|
+*Term name* *Item property unit of measure*
+
+*Remark* UOM shall be from UnRec20 v6
+
+*Definition* _The unit of measure in which the property value is stated, if relevant._
+
+*BII Usage* _May not be relevant when properties are descriptive._
+
+*Rules* [EUGEN-T110-R014] — Item property unit of measure must be from rec 20 v6
+
+| a|
+__________
+_unitCode_
+__________
+
+ a|
+_Type_ _xs:normalizedString_
+
+_Use_ _optional_
+
+ a|
+_Rules_ _[CL-T110-R006] — Unit code for quantities MUST be coded according to the UN/ECE_
+
+____________________________
+_Recommendation 20_
+
+_Code List ID:_ _UNECERec20_
+____________________________
+
+| a|
+___________________
+_*cac:Certificate*_
+___________________
+
+ a|
+*Occurrence* 0 *..* unbounded
+
+*Type* cac:CertificateType
+
+ |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* OP-110-013
+
+ a|
+*Term name* *Item label name*
+
+*Definition* _The name of the product label._
+
+*Rules* [EUGEN-T110-R026] — Each item label must have an item label name.
+
+| a|
+_________________________
+*cbc:CertificateTypeCode*
+_________________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:CertificateTypeCodeType
+
+ |
+| a|
+_____________________
+*cbc:CertificateType*
+_____________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:CertificateTypeType
+
+*Info req.ID* OP-110-015
+
+ a|
+*Term name* *Item label type*
+
+*Definition* _The label type such environmental, quality, social etc._
+
+| a|
+_____________
+*cbc:Remarks*
+_____________
+
+ a|
+*Occurrence* 0 *..* unbounded
+
+*Type* cbc:RemarksType
+
+*Info req.ID* OP-110-014
+
+ a|
+*Term name* *Item label value*
+
+*Definition* _The label value that applies to the item._
+
+*Rules* [EUGEN-T110-R027] — Each item label must have an item label value.
+
+| a|
+___________________
+_*cac:IssuerParty*_
+___________________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cac:PartyType
+
+ |
+| a|
+_________________________
+_*cac:DocumentReference*_
+_________________________
+
+ a|
+*Occurrence* 0 *..* unbounded
+
+*Type* cac:DocumentReferenceType
+
+ |
+| a|
+________
+*cbc:ID*
+________
+
+ a|
+*Occurrence* 1 *..* 1
+
+*Type* cbc:IDType
+
+*Info req.ID* OP-110-016
+
+ a|
+*Term name* *Item label reference*
+
+*Definition* _A reference to where the label specification can be found, e.g. a URI._
+
+|====
+
+=
