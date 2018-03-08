@@ -1,0 +1,20 @@
+= Codelists for identifier schemes
+
+Table of the code lists used to constrain the values of schemeID for identifiers in the order agreement transaction:
+
+[cols=",,,",options="header",]
+|====
+|Business Term |Allowed SchemeID |Applicable Xpath |Note
+|Party Identifier |See chapter 11.1 a|
+cbc:EndpointID/@schemeID
+
+cac:PartyIdentification/cbc:ID/@schemeID
+
+ a|
+Mandatory
+
+Mandatory
+
+|Business process type identifier |Set value see chapter 11.3 |cbc:ProfileID |Mandatory
+|Specification identification |Set value see chapter 11.4 |cbc:CustomizationID |Mandatory
+|====
