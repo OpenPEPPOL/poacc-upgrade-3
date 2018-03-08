@@ -32,6 +32,6 @@ The seller receives the order.
 |The buyer and the seller has reached an agreement. +
 If the invoice has an order reference, the invoice can be matched automatically.
 
-|XML example file 
-|See Appendix A for a sample file illustrating Use Case 4.
+|XML example file
+|{order-UC}
 |====

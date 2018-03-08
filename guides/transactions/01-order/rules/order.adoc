@@ -1,5 +1,5 @@
 [[order-business-rules]]
-= Order business rules
+= Order rules
 
 [cols="1s,4,1",options="header"]
 |====

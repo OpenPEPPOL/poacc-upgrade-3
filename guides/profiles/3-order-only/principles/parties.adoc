@@ -31,7 +31,7 @@ s|Description
 |The seller is the legal person or organization acting on behalf of the supplier and who sells goods or services to the customer.
 
 |Originator +
-´cac:OriginatorCustomerParty`
+`cac:OriginatorCustomerParty`
 |A person or unit that initiates an order.
 
 |Invoicee +
@@ -42,4 +42,4 @@ s|Description
 
 The following diagram links the business processes to the roles performed by the Business Partners.
 
-image::../../shared/images/ordering.png[Roles in ordering]
+image::images/order-roles.png[Roles in order process]

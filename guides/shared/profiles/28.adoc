@@ -1,0 +1,23 @@
+
+[[prof-28]]
+= Profile 28 - Ordering
+
+In the table below you will find the values to be used as the specification identifier and the business process type for this profile
+
+[cols="2s,5a,5a", options="header"]
+|===
+| Type
+| Element `cbc:CustomizationID`
+| Element `cbc:ProfileID`
+
+
+| Order (Trdm01)
+| urn:www.cenbii.eu:transaction:biitrns001:ver2.0: +
+extended:urn:www.peppol.eu:bis:peppol3a:ver2.0
+.2+.^| urn:www.cenbii.eu:profile:bii28:ver2.0
+
+| Order response (Trdm76)
+| urn:www.cenbii.eu:transaction:biitrns076:ver2.0: +
+extended:urn:www.peppol.eu:bis:peppol28a:ver1.0
+|
+|===

@@ -1,0 +1,68 @@
+[[response-code]]
+= Response code
+
+The Response code states the Sellers ability to fulfil the order and must be sent on both header level and line level if lines are sent.
+
+
+[IMPORTANT]
+====
+* Response code *_must_* be sent on header level.
+* Response code *_must_* be sent on line level if lines are sent.
+* Response code may have 3 values: 27, 29 and 30.
+====
+
+
+== Response code on Header level
+
+[cols="1,11",options="header"]
+|====
+|Response code
+|Action
+
+|27
+a|
+* The Order is rejected.
+* No lines should be sent.
+
+|29
+a|
+* The Order is accepted wihout amendment.
+* No lines should be sent.
+
+|30
+a|
+* The Order is accepted with amendment on line level.
+* All lines must be sent.
+|====
+
+
+.Example of Response code on Header level in an Order Response message
+[source, xml, indent=0]
+----
+include::../snippets/snippet-1.xml[tags=response-header]
+----
+
+
+== Response code on Line level
+
+
+[cols="1,11",options="header"]
+|====
+|Response code
+|Action
+|27
+|The Order line is rejected.
+
+|29
+|The Order line is accepted without changes.
+
+|30
+|The Order line is accepted with change.
+|====
+
+
+.Example of Response code on Line level in an Order Response message:
+[source, xml, indent=0]
+----
+include::../snippets/snippet-1.xml[tags=response-line]
+----
