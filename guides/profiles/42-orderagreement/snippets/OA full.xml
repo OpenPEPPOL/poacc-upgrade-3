@@ -26,6 +26,7 @@
 		<cbc:ID>contract id tir110-049</cbc:ID>
 		<cbc:ContractType>Framwork agreement tir110-050</cbc:ContractType>
 	</cac:Contract>
+
 	<!-- tag::seller[] -->
 	<cac:SellerSupplierParty>
 		<cac:Party>
@@ -54,8 +55,9 @@
 			</cac:Contact>
 		</cac:Party>
 	</cac:SellerSupplierParty>
-		<!-- end::seller[] -->
-		<!-- start::buyer[] -->
+	<!-- end::seller[] -->
+
+	<!-- start::buyer[] -->
 	<cac:BuyerCustomerParty>
 		<cac:Party>
 			<cbc:EndpointID schemeID="GLN">5790000436095</cbc:EndpointID>
@@ -84,6 +86,7 @@
 		</cac:Party>
 	</cac:BuyerCustomerParty>
 	<!-- end::buyer[] -->
+
 	<!-- start::originator[] -->
 	<cac:OriginatorCustomerParty>
 		<cac:Party>
