@@ -285,7 +285,7 @@
 				<cac:TransactionConditions>
 					<cbc:ActionCode>Action code</cbc:ActionCode>
 				</cac:TransactionConditions>
-				<!-- tag::TransactionConditions[] -->
+				<!-- end::TransactionConditions[] -->
 
 				<!-- tag::ClassifiedTaxCategory[] -->
 				<cac:ClassifiedTaxCategory>

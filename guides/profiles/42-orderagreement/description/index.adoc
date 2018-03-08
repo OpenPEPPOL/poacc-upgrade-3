@@ -73,7 +73,6 @@ When sending the order agreement transaction the seller may include a reference 
 ----
 include::../snippets/OA full.xml[tags=CustomerReference]
 ----
-<cbc:CustomerReference>Buyer reference id tir110-044</cbc:CustomerReference>
 
 The order agreement may refrence a previous order agreement. This may be relevant, as example, when the buyer has changed a previous order.
 
@@ -82,11 +81,6 @@ The order agreement may refrence a previous order agreement. This may be relevan
 ----
 include::../snippets/OA full.xml[tags=OrderReference]
 ----
-<cac:OrderReference>
-
-<cbc:ID>Order id tir110-042</cbc:ID>
-
-</cac:OrderReference>
 
 The order agreement may reference a contract that applies to the purchase.
 
@@ -95,14 +89,6 @@ The order agreement may reference a contract that applies to the purchase.
 ----
 include::../snippets/OA full.xml[tags=Contract]
 ----
-
-<cac:Contract>
-
-<cbc:ID>contract id tir110-049</cbc:ID>
-
-<cbc:ContractType>Framwork agreement tir110-050</cbc:ContractType>
-
-</cac:Contract>
 
 == Attachments on header level
 
@@ -142,31 +128,9 @@ Example of attachment as an embedded, binary object in an PEPPOL BIS Order Agree
 include::../snippets/OA full.xml[tags=AdditionalDocumentReference]
 ----
 
-<cac:AdditionalDocumentReference>
-
-<cbc:ID>Document idtir110-045</cbc:ID>
-
-<cbc:DocumentType>Document description</cbc:DocumentType>
-
-<cac:Attachment>
-
-<cbc:EmbeddedDocumentBinaryObject filename="file.pdf" mimeCode="application/pdf">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
-
-<cac:ExternalReference>
-
-<cbc:URI>https://joinup.ec.europa.eu/svn/peppol/PostAward/Ordering28A/20160310%20-%20PEPPOL_BIS_28a-101.pdf</cbc:URI>
-
-</cac:ExternalReference>
-
-</cac:Attachment>
-
-</cac:AdditionalDocumentReference>
-
 == Attachments and document references on line level
 
 Non-XML documents can be sent as attachments to the PEPPOL BIS Order Agreement on line level. This could comprise item specifications, timesheets or other documents relevant for the particluar line in the order agreement. See the above information regarding attachments.
-
-Example:
 
 Attachment as an embedded, binary object in an PEPPOL BIS Order Agreement message on line level.
 
@@ -176,28 +140,6 @@ Attachment as an embedded, binary object in an PEPPOL BIS Order Agreement messag
 include::../snippets/OA full.xml[tags=ItemSpecificationDocumentReference]
 ----
 
-<cac:ItemSpecificationDocumentReference>
-
-<cbc:ID>doc id</cbc:ID>
-
-<cbc:DocumentType>Item specs</cbc:DocumentType>
-
-<cac:Attachment>
-
-<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="specs.pdf">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
-
-<cac:ExternalReference>
-
-<cbc:URI>https://joinup.ec.europa.eu/svn/peppol/PostAward/Ordering28A/20160310%20-%20PEPPOL_BIS_28a-101.pdf</cbc:URI>
-
-</cac:ExternalReference>
-
-</cac:Attachment>
-
-</cac:ItemSpecificationDocumentReference>
-
-Example:
-
 Link to a downloadable ticket.
 
 .Example
@@ -205,24 +147,6 @@ Link to a downloadable ticket.
 ----
 include::../snippets/OA full.xml[tags=ItemSpecificationDocumentReference2]
 ----
-
-<cac:ItemSpecificationDocumentReference>
-
-<cbc:ID>Ticket id</cbc:ID>
-
-<cbc:DocumentType>A ticket for ...</cbc:DocumentType>
-
-<cac:Attachment>
-
-<cac:ExternalReference>
-
-<cbc:URI>https://ticketseller.eu/ticket.pdf</cbc:URI>
-
-</cac:ExternalReference>
-
-</cac:Attachment>
-
-</cac:ItemSpecificationDocumentReference>
 
 == Product identification
 
@@ -241,20 +165,6 @@ Example of an PEPPOL BIS Order Agreement item using both Sellers ID and Standard
 include::../snippets/OA full.xml[tags=ItemIdentifiers]
 ----
 
-<cac:Item>
-
-<cac:SellersItemIdentification>
-
-<cbc:ID>123</cbc:ID>
-
-</cac:SellersItemIdentification>
-
-<cac:StandardItemIdentification>
-
-<cbc:ID schemeID="GTIN">321</cbc:ID>
-
-</cac:StandardItemIdentification>
-
 == Product name and description
 
 The Product name must be sent in tag Item/Name on line level. Description of a product can be sent in Item/Description.
@@ -269,14 +179,6 @@ Example in an PEPPOL BIS Order Agreement message:
 include::../snippets/OA full.xml[tags=ItemDescription]
 ----
 
- <cac:Item>
-
-<cbc:Description>Description of the item</cbc:Description>
-
-<cbc:Name>Item name</cbc:Name>
-
-</cac:Item>
-
 == Item labelling
 
 Information about the items environmental, social, ethical and quality type of labelling. The UBL structure used for item labeling requires certain elements in addition to those used by this BIS. To fulfill the UBL requirements these are included with the dummy value NA.
@@ -286,34 +188,6 @@ Information about the items environmental, social, ethical and quality type of l
 ----
 include::../snippets/OA full.xml[tags=Certificate]
 ----
-
-<cac:Certificate>
-
-<cbc:ID>EU Ecolabel</cbc:ID>
-
-<cbc:CertificateTypeCode>NA</cbc:CertificateTypeCode>
-
-<cbc:CertificateType>Environmental</cbc:CertificateType>
-
-<cbc:Remarks>Item label value</cbc:Remarks>
-
-<cac:IssuerParty>
-
-<cac:PartyName>
-
-<cbc:Name>NA</cbc:Name>
-
-</cac:PartyName>
-
-</cac:IssuerParty>
-
-<cac:DocumentReference>
-
-<cbc:ID>Item label reference</cbc:ID>
-
-</cac:DocumentReference>
-
-</cac:Certificate>
 
 == Contracted item
 
