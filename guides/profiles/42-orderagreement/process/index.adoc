@@ -2,8 +2,6 @@
 [[process-and-typical-use-cases]]
 = Process and typical use cases
 
-= Process and typical use cases
-
 The order agreement BIS includes the sending of information on agreed products/services from a Seller to a Buyer.
 
 == Process flow

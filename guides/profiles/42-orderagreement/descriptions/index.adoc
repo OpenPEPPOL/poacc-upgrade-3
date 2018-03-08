@@ -13,6 +13,12 @@ The seller is the legal person or organization acting on behalf of the supplier 
 
 Example:
 
+.Example of cart identifier and issue date and time
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=seller]
+----
+
  <cac:SellerSupplierParty>
 
 <cac:Party>
