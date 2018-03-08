@@ -199,15 +199,6 @@ If the purchased item is offered in accordance to an existing contract, this sho
 include::../snippets/OA full.xml[tags=TransactionConditions]
 ----
 
-
-Example:
-
-<cac:TransactionConditions>
-
-<cbc:ActionCode>CT</cbc:ActionCode>
-
-</cac:TransactionConditions>
-
 == Quantities and units
 
 Various Quantities and Units can be stated in the PEPPOL BIS Order Agreement. These are both related to the ordering process and the logistics process.
@@ -231,16 +222,10 @@ Example of an order agreement line with a quantity of 120 pieces (cbc:Quantity) 
 include::../snippets/OA full.xml[tags=quantity]
 ----
 
-<cbc:ID>1</cbc:ID>
-
-<cbc:Note>Line note</cbc:Note>
-
-<cbc:Quantity unitCode="C62">120</cbc:Quantity>
-
 .Example
 [source, xml, indent=0]
 ----
-include::../snippets/OA full.xml[tags=Price]
+include::../snippets/OA full.xml[tags=Price12]
 ----
 
 
@@ -266,7 +251,7 @@ Example of price information in an Order Agreement message:
 .Example
 [source, xml, indent=0]
 ----
-include::../snippets/OA full.xml[tags=Price2]
+include::../snippets/OA full.xml[tags=price]
 ----
 
 
