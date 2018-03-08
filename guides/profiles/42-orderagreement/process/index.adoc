@@ -1,0 +1,80 @@
+
+[[process-and-typical-use-cases]]
+= Process and typical use cases
+
+= Process and typical use cases
+
+The order agreement BIS includes the sending of information on agreed products/services from a Seller to a Buyer.
+
+== Process flow
+
+The order agreement process flow can be described as follows:
+
+Start position.
+
+1.  A Buyer makes a purchase of goods or services from the Seller.
+2.  A Seller reports one or more accumulated purchases made under a framework agreement to the Buyer.
+
+End positions.
+
+1.  A purchase has been recorded in the Buyer´s purchasing system. The seller proceeds to invoice accordingly.
+
+An Order Agreement may refer to a framework agreement for its terms and conditions; otherwise the Buyer’s terms and conditions apply.
+
+== Business process Diagram
+
+=== Legend for BPMN diagrams
+
+The diagrams are expressed in the BPMN notation. The diagram below serves as an explanation for the diagrams used in the process descriptions.
+
+image:extracted-media/media/image5.emf[image,width=566,height=307]
+
+The following diagram shows the choreography of the business process implemented by the BIS.
+
+image:extracted-media/media/image6.emf[image,width=637,height=497]image:extracted-media/media/image7.emf[image,width=598,height=466]
+
+[cols=",",]
+|====
+|*Categories* |*Description and Values*
+|Description a|
+The buyer doesn’t use the purchasing system to create an order. It’s done outside of this system.
+
+The seller creates an order in his ordering system based on requirements from the buyer and, after agreeing/committing to it, sends a copy of the order as an Order agreement to the buyer.
+
+|Pre-conditions a|
+The seller’s ordering system must be able to send Order agreement transactions.
+
+The buyer’s purchasing system must be able to receive Order agreement transactions.
+
+The content of the order is agreed through use of web shop, phone, email, physical visit to shop or other means.
+
+|Post-conditions |The buyer has received an order agreement that is recorded in the purchasing system.
+|Legal Implications |By providing an Order agreement transaction the Seller commits himself the, quantities, prices and terms stated in the Order agreement transaction.
+|====
+
+:leveloffset: +1
+
+include::../../../shared/bpmn/bpmn-legend.adoc[]
+
+:leveloffset: -1
+
+
+The following diagram shows the choreography of the business process implemented by the BIS.
+
+image::images/bpmn-orderagreement1.emf[align="center", width=600]
+
+image::images/bpmn-orderagreement2.emf[align="center", width=600]
+
+:leveloffset: +1
+
+include::use-case1.adoc[]
+
+include::use-case2.adoc[]
+
+include::use-case3.adoc[]
+
+include::use-case4.adoc[]
+
+include::use-case5.adoc[]
+
+:leveloffset: -1
