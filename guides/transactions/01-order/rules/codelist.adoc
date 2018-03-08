@@ -1,5 +1,5 @@
 [[codelists-business-rules]]
-= Codelists business rules
+= Order codelists rules
 
 [cols="1s,5",options="header"]
 |====

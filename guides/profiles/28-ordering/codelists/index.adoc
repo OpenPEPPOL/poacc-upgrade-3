@@ -1,0 +1,32 @@
+[[codelist]]
+= Code lists
+
+The following chapters give an overview of the codes that is used in this PEPPOL BIS.
+
+== Code lists for coded elements
+
+:leveloffset: +2
+
+include::../{order}/codelists/elements/order-type.adoc[]
+
+include::../{order}/codelists/elements/currency-code.adoc[]
+
+include::../{order}/codelists/elements/media-types.adoc[]
+
+include::../{order}/codelists/elements/country.adoc[]
+
+include::../{order}/codelists/elements/uom.adoc[]
+
+include::../{order}/codelists/elements/vat-category.adoc[]
+
+include::../{order-resp}/codelists/elements/status.adoc[]
+
+:leveloffset: -2
+
+== Code lists for identifier schemes
+
+:leveloffset: +2
+
+include::../{order}/codelists/id_schemes.adoc[]
+
+:leveloffset: -2

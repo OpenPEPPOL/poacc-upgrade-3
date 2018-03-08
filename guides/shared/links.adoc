@@ -11,11 +11,13 @@
 :bii3: http://www.cenbii.eu/cen-wsbii-3/[CEN WS/BII 3]
 :bii: http://www.cenbii.eu/[CEN WS/BII]
 :bii-order: ftp://ftp.cen.eu/public/CWAs/BII2/CWA16562/CWA16562-Annex-A-BII-Profile-03-OrderOnly-V2_0_0.pdf[CEN BII2 Profile 03, Order Only]
+:bii-ordering: ftp://ftp.cen.eu/public/CWAs/BII2/CWA16562/CWA16562-Annex-G-BII-Profile-28-Ordering-V1_0_0.pdf[CEN BII2 Profile 28, Ordering]
 
 //UBL
 :ubl: http://docs.oasis-open.org/ubl/UBL-2.1.html[UBL 2.1]
 :ubl-catalogue: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Catalogue-2.1.xsd[UBL Catalogue 2.1]
 :ubl-order: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Order-2.1.xsd[UBL Order 2.1]
+:ubl-order-response: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-OrderResponse-2.1.xsd[UBL Order Response 2.1]
 
 //ISO:
 :ISO15000: https://www.iso.org/standard/61433.html[ISO 15000-5:2014]
@@ -41,3 +43,7 @@
 :ISO6523: https://www.iso.org/standard/25773.html[ISO/IEC 6523]
 :UNCL7143: http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7143.htm[UN/CEFACT code list 7143, D.16B]
 :UNCL1001: https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred1001.htm[UN/CEFACT code list 1001, D.17A]
+
+//examples
+:order-UC: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/master/guides/rules/order/examples[Use case example files]
+:order-response-UC: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/master/guides/rules/order-response/examples[Use case example files]

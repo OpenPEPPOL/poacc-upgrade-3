@@ -24,11 +24,11 @@ include::introduction/index.adoc[]
 
 include::principles/index.adoc[]
 
-include::{transaction-path}/requirements/index.adoc[]
+include::requirements/index.adoc[]
 
-include::{transaction-path}/codelists/index.adoc[]
+include::codelists/index.adoc[]
 
-include::{transaction-path}/rules/index.adoc[]
+include::rules/index.adoc[]
 
 include::process/index.adoc[]
 

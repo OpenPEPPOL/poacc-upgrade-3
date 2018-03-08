@@ -1,5 +1,5 @@
-[[transaction-business-requirements]]
-= Transaction business requirements
+[[order-transaction-business-requirements]]
+= Order transaction
 
 :leveloffset: +1
 
