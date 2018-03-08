@@ -55,6 +55,7 @@
 		</cac:Party>
 	</cac:SellerSupplierParty>
 		<!-- end::seller[] -->
+		<!-- start::buyer[] -->
 	<cac:BuyerCustomerParty>
 		<cac:Party>
 			<cbc:EndpointID schemeID="GLN">5790000436095</cbc:EndpointID>
@@ -82,6 +83,8 @@
 			</cac:Contact>
 		</cac:Party>
 	</cac:BuyerCustomerParty>
+	<!-- end::buyer[] -->
+	<!-- start::originator[] -->
 	<cac:OriginatorCustomerParty>
 		<cac:Party>
 			<cac:PartyIdentification>
@@ -92,6 +95,8 @@
 			</cac:PartyName>
 		</cac:Party>
 	</cac:OriginatorCustomerParty>
+	<!-- end::originator[] -->
+	<!-- start::customer[] -->
 	<cac:AccountingCustomerParty>
 		<cac:Party>
 			<cac:PartyIdentification>
@@ -102,6 +107,8 @@
 			</cac:PartyName>
 		</cac:Party>
 	</cac:AccountingCustomerParty>
+	<!-- end::customer[] -->
+	<!-- start::delivery[] -->
 	<cac:Delivery>
 		<cac:PromisedDeliveryPeriod>
 			<cbc:StartDate>2016-08-20</cbc:StartDate>
@@ -135,6 +142,8 @@
 			</cac:DeliveryLocation>
 		</cac:DeliveryTerms>
 	</cac:Delivery>
+	<!-- end::delivery[] -->
+	<!-- start::allowance[] -->
 	<cac:AllowanceCharge>
 		<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
 		<cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
@@ -145,6 +154,8 @@
 		<cbc:AllowanceChargeReason>Packing cost</cbc:AllowanceChargeReason>
 		<cbc:Amount currencyID="EUR">200</cbc:Amount>
 	</cac:AllowanceCharge>
+	<!-- end::allowance[] -->
+	<!-- start::taxtotal[] -->
 	<cac:TaxTotal>
 		<cbc:TaxAmount currencyID="EUR">1236</cbc:TaxAmount>
 		<cac:TaxSubtotal>
@@ -160,6 +171,8 @@
 			</cac:TaxCategory>
 		</cac:TaxSubtotal>
 	</cac:TaxTotal>
+	<!-- end::taxtotal[] -->
+	<!-- start::LegalMonetaryTotal[] -->
 	<cac:LegalMonetaryTotal>
 		<cbc:LineExtensionAmount currencyID="EUR">1000</cbc:LineExtensionAmount>
 		<cbc:TaxExclusiveAmount currencyID="EUR">1000</cbc:TaxExclusiveAmount>
@@ -169,6 +182,7 @@
 		<cbc:PayableRoundingAmount currencyID="EUR">0</cbc:PayableRoundingAmount>
 		<cbc:PayableAmount currencyID="EUR">1236</cbc:PayableAmount>
 	</cac:LegalMonetaryTotal>
+	<!-- end::LegalMonetaryTotal[] -->
 	<cac:OrderLine>
 		<cac:LineItem>
 			<cbc:ID>1</cbc:ID>

@@ -11,9 +11,7 @@ The following parties/roles may be specified in the message:
 
 The seller is the legal person or organization acting on behalf of the supplier and who sells goods or services to the buyer. The seller is mandatory in the PEPPOL BIS Order Agreement message.
 
-Example:
-
-.Example of cart identifier and issue date and time
+.Example
 [source, xml, indent=0]
 ----
 include::../snippets/OA full.xml[tags=seller]
@@ -77,7 +75,11 @@ include::../snippets/OA full.xml[tags=seller]
 
 The buyer is the legal person or organization acting on behalf of the customer and who buys or purchases the goods or services. The buyer is mandatory in the PEPPOL BIS Order Agreement message.
 
-Example:
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=buyer]
+----Example:
 
 <cac:BuyerCustomerParty>
 
@@ -137,7 +139,11 @@ Example:
 
 The unit initiating the order. Most often the end user. The originator information is optional in the PEPPOL BIS Order Agreement message.
 
-Example:
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=originator]
+----
 
  <cac:OriginatorCustomerParty>
 
@@ -163,7 +169,11 @@ Example:
 
 The invoicee is the legal person or organization acting on behalf of the customer and who receives the invoice for the order. The invoicee information is optional in the PEPPOL BIS Order Agreement message.
 
-Example:
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=customer]
+----
 
 <cac:AccountingCustomerParty>
 
@@ -196,6 +206,11 @@ Delivery special terms may be used to inform how the the goods or service is del
 
 The delivery information is optional in the PEPPOL BIS Order Agreement message.
 
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=delivery]
+----
 Example:
 
 <cac:Delivery>
