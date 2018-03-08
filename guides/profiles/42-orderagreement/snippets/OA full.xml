@@ -57,7 +57,7 @@
 	</cac:SellerSupplierParty>
 	<!-- end::seller[] -->
 
-	<!-- start::buyer[] -->
+	<!-- tag::buyer[] -->
 	<cac:BuyerCustomerParty>
 		<cac:Party>
 			<cbc:EndpointID schemeID="GLN">5790000436095</cbc:EndpointID>
@@ -87,7 +87,7 @@
 	</cac:BuyerCustomerParty>
 	<!-- end::buyer[] -->
 
-	<!-- start::originator[] -->
+	<!-- tag::originator[] -->
 	<cac:OriginatorCustomerParty>
 		<cac:Party>
 			<cac:PartyIdentification>
@@ -99,7 +99,8 @@
 		</cac:Party>
 	</cac:OriginatorCustomerParty>
 	<!-- end::originator[] -->
-	<!-- start::customer[] -->
+	
+	<!-- tag::customer[] -->
 	<cac:AccountingCustomerParty>
 		<cac:Party>
 			<cac:PartyIdentification>
@@ -111,7 +112,8 @@
 		</cac:Party>
 	</cac:AccountingCustomerParty>
 	<!-- end::customer[] -->
-	<!-- start::delivery[] -->
+
+	<!-- tag::delivery[] -->
 	<cac:Delivery>
 		<cac:PromisedDeliveryPeriod>
 			<cbc:StartDate>2016-08-20</cbc:StartDate>
@@ -146,7 +148,8 @@
 		</cac:DeliveryTerms>
 	</cac:Delivery>
 	<!-- end::delivery[] -->
-	<!-- start::allowance[] -->
+
+	<!-- tag::allowance[] -->
 	<cac:AllowanceCharge>
 		<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
 		<cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
@@ -158,7 +161,8 @@
 		<cbc:Amount currencyID="EUR">200</cbc:Amount>
 	</cac:AllowanceCharge>
 	<!-- end::allowance[] -->
-	<!-- start::taxtotal[] -->
+
+	<!-- tag::taxtotal[] -->
 	<cac:TaxTotal>
 		<cbc:TaxAmount currencyID="EUR">1236</cbc:TaxAmount>
 		<cac:TaxSubtotal>
@@ -175,7 +179,8 @@
 		</cac:TaxSubtotal>
 	</cac:TaxTotal>
 	<!-- end::taxtotal[] -->
-	<!-- start::LegalMonetaryTotal[] -->
+
+	<!-- tag::LegalMonetaryTotal[] -->
 	<cac:LegalMonetaryTotal>
 		<cbc:LineExtensionAmount currencyID="EUR">1000</cbc:LineExtensionAmount>
 		<cbc:TaxExclusiveAmount currencyID="EUR">1000</cbc:TaxExclusiveAmount>
