@@ -47,26 +47,6 @@ The invoicee is the legal person or organization acting on behalf of the custome
 include::../snippets/OA full.xml[tags=customer]
 ----
 
-<cac:AccountingCustomerParty>
-
-<cac:Party>
-
-<cac:PartyIdentification>
-
-<cbc:ID schemeID="SE:ORGNR">5541277711</cbc:ID>
-
-</cac:PartyIdentification>
-
-<cac:PartyName>
-
-<cbc:Name>Information services</cbc:Name>
-
-</cac:PartyName>
-
-</cac:Party>
-
-</cac:AccountingCustomerParty>
-
 == Delivery
 
 Delivery gives information on when and where the goods and services are deleivered.
@@ -83,82 +63,25 @@ The delivery information is optional in the PEPPOL BIS Order Agreement message.
 ----
 include::../snippets/OA full.xml[tags=delivery]
 ----
-Example:
-
-<cac:Delivery>
-
-<cac:PromisedDeliveryPeriod>
-
-<cbc:StartDate>2016-08-20</cbc:StartDate>
-
-<cbc:StartTime>12:00:00</cbc:StartTime>
-
-<cbc:EndDate>2016-08-30</cbc:EndDate>
-
-<cbc:EndTime>18:00:00</cbc:EndTime>
-
-</cac:PromisedDeliveryPeriod>
-
-<cac:DeliveryParty>
-
-<cac:PartyIdentification>
-
-<cbc:ID schemeID="idscheme">id</cbc:ID>
-
-</cac:PartyIdentification>
-
-<cac:PartyName>
-
-<cbc:Name>Delivery party name</cbc:Name>
-
-</cac:PartyName>
-
-</cac:DeliveryParty>
-
-<cac:DeliveryTerms>
-
-<cbc:ID>id</cbc:ID>
-
-<cbc:SpecialTerms>special terms</cbc:SpecialTerms>
-
-<cac:DeliveryLocation>
-
-<cbc:ID>id</cbc:ID>
-
-<cac:Address>
-
-<cbc:StreetName>Apt 56B, Whitehaven Mansions</cbc:StreetName>
-
-<cbc:AdditionalStreetName>Sandhurst Sq</cbc:AdditionalStreetName>
-
-<cbc:CityName>Brussels</cbc:CityName>
-
-<cbc:PostalZone>1001</cbc:PostalZone>
-
-<cbc:CountrySubentity>BE</cbc:CountrySubentity>
-
-<cac:Country>
-
-<cbc:IdentificationCode listID="ISO3166-1:Alpha2">BE</cbc:IdentificationCode>
-
-</cac:Country>
-
-</cac:Address>
-
-</cac:DeliveryLocation>
-
-</cac:DeliveryTerms>
-
-</cac:Delivery>
 
 == References
 
 When sending the order agreement transaction the seller may include a reference that the buyers gave to him during the purchase. This reference can be of different nature and since it originates from the buyer it is understood by him.
 
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=CustomerReference]
+----
 <cbc:CustomerReference>Buyer reference id tir110-044</cbc:CustomerReference>
 
 The order agreement may refrence a previous order agreement. This may be relevant, as example, when the buyer has changed a previous order.
 
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=OrderReference]
+----
 <cac:OrderReference>
 
 <cbc:ID>Order id tir110-042</cbc:ID>
@@ -166,6 +89,12 @@ The order agreement may refrence a previous order agreement. This may be relevan
 </cac:OrderReference>
 
 The order agreement may reference a contract that applies to the purchase.
+
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=Contract]
+----
 
 <cac:Contract>
 
@@ -207,6 +136,12 @@ NB: Attachments should be used for additional information and not as order copie
 
 Example of attachment as an embedded, binary object in an PEPPOL BIS Order Agreement message.
 
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=AdditionalDocumentReference]
+----
+
 <cac:AdditionalDocumentReference>
 
 <cbc:ID>Document idtir110-045</cbc:ID>
@@ -235,6 +170,12 @@ Example:
 
 Attachment as an embedded, binary object in an PEPPOL BIS Order Agreement message on line level.
 
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=ItemSpecificationDocumentReference]
+----
+
 <cac:ItemSpecificationDocumentReference>
 
 <cbc:ID>doc id</cbc:ID>
@@ -258,6 +199,12 @@ Attachment as an embedded, binary object in an PEPPOL BIS Order Agreement messag
 Example:
 
 Link to a downloadable ticket.
+
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=ItemSpecificationDocumentReference2]
+----
 
 <cac:ItemSpecificationDocumentReference>
 
@@ -288,6 +235,12 @@ The order agreement requires that an item has an identifier. This can be either 
 
 Example of an PEPPOL BIS Order Agreement item using both Sellers ID and Standard ID (GTIN):
 
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=ItemIdentifiers]
+----
+
 <cac:Item>
 
 <cac:SellersItemIdentification>
@@ -310,6 +263,12 @@ The Product name is often sent in the order agreement from the buyer to the sell
 
 Example in an PEPPOL BIS Order Agreement message:
 
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=ItemDescription]
+----
+
  <cac:Item>
 
 <cbc:Description>Description of the item</cbc:Description>
@@ -322,7 +281,11 @@ Example in an PEPPOL BIS Order Agreement message:
 
 Information about the items environmental, social, ethical and quality type of labelling. The UBL structure used for item labeling requires certain elements in addition to those used by this BIS. To fulfill the UBL requirements these are included with the dummy value NA.
 
-Example:
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=Certificate]
+----
 
 <cac:Certificate>
 
@@ -356,6 +319,13 @@ Example:
 
 If the purchased item is offered in accordance to an existing contract, this should be indicated in the order agreement message.
 
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=TransactionConditions]
+----
+
+
 Example:
 
 <cac:TransactionConditions>
@@ -381,11 +351,24 @@ The table below lists quantities and units in the format. To all quantities ther
 
 Example of an order agreement line with a quantity of 120 pieces (cbc:Quantity) and price is given per items. When calculating the line amount the price is applied pr 12 pieces, that is 120/12x50 = €500
 
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=quantity]
+----
+
 <cbc:ID>1</cbc:ID>
 
 <cbc:Note>Line note</cbc:Note>
 
 <cbc:Quantity unitCode="C62">120</cbc:Quantity>
+
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=Price]
+----
+
 
     <cac:Price> +
 <cbc:PriceAmount currencyID="EUR">50</cbc:PriceAmount>
@@ -406,6 +389,13 @@ Example of price information in an Order Agreement message:
 
       …
 
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=Price2]
+----
+
+
 <cac:Price>
 
 <cbc:PriceAmount currencyID="EUR">50</cbc:PriceAmount>
@@ -418,6 +408,13 @@ Example of price information in an Order Agreement message:
 
 This example shows a charge related to packing costs:
 
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=AllowanceCharge]
+----
+
+
 <cac:AllowanceCharge>
 
 <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
@@ -429,6 +426,13 @@ This example shows a charge related to packing costs:
 </cac:AllowanceCharge>
 
 This example shows an allowance related to a discount on the order:
+
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=AllowanceCharge2]
+----
+
 
 <cac:AllowanceCharge>
 
@@ -508,6 +512,13 @@ TaxExclusiveAmount
 
 The above example is presented in the order agreement in the following way:
 
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=LegalMonetaryTotal]
+----
+
+
 <cac:LegalMonetaryTotal>
 
 <cbc:LineExtensionAmount currencyID="EUR">1436.50</cbc:LineExtensionAmount>
@@ -542,6 +553,13 @@ It is possible to state the tax total of the order agreement, on the header leve
 
 Header level:
 
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=TaxTotal]
+----
+
+
 <cac:TaxTotal>
 
 <cbc:TaxAmount currencyID="EUR">1236</cbc:TaxAmount>
@@ -572,6 +590,13 @@ Header level:
 
 Line level:
 
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=LineItem]
+----
+
+
 <cac:LineItem>
 
 <cbc:ID>1</cbc:ID>
@@ -585,6 +610,13 @@ Line level:
 <cbc:TotalTaxAmount currencyID="EUR">236</cbc:TotalTaxAmount>
 
 …
+
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=ClassifiedTaxCategory]
+----
+
 
 <cac:ClassifiedTaxCategory>
 

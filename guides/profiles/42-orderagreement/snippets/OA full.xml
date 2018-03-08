@@ -8,10 +8,18 @@
 	<cbc:IssueTime>12:00:00</cbc:IssueTime>
 	<cbc:Note>Textual note with the order agreement tir110-043</cbc:Note>
 	<cbc:DocumentCurrencyCode listID="'ISO3166-1:Alpha2">EUR</cbc:DocumentCurrencyCode>
+
+	<!-- tag::CustomerReference[] -->
 	<cbc:CustomerReference>Buyer reference id tir110-044</cbc:CustomerReference>
+	<!-- end::CustomerReference[] -->
+
+	<!-- tag::OrderReference[] -->
 	<cac:OrderReference>
 		<cbc:ID>Order id tir110-042</cbc:ID>
 	</cac:OrderReference>
+	<!-- end::OrderReference[] -->
+
+	<!-- tag::AdditionalDocumentReference[] -->
 	<cac:AdditionalDocumentReference>
 		<cbc:ID>Document idtir110-045</cbc:ID>
 		<cbc:DocumentType>Document description</cbc:DocumentType>
@@ -22,10 +30,14 @@
 			</cac:ExternalReference>
 		</cac:Attachment>
 	</cac:AdditionalDocumentReference>
+	<!-- end::AdditionalDocumentReference[] -->
+
+	<!-- tag::contact[] -->
 	<cac:Contract>
 		<cbc:ID>contract id tir110-049</cbc:ID>
 		<cbc:ContractType>Framwork agreement tir110-050</cbc:ContractType>
 	</cac:Contract>
+	<!-- end::contact[] -->
 
 	<!-- tag::seller[] -->
 	<cac:SellerSupplierParty>
@@ -99,7 +111,7 @@
 		</cac:Party>
 	</cac:OriginatorCustomerParty>
 	<!-- end::originator[] -->
-	
+
 	<!-- tag::customer[] -->
 	<cac:AccountingCustomerParty>
 		<cac:Party>
@@ -191,13 +203,19 @@
 		<cbc:PayableAmount currencyID="EUR">1236</cbc:PayableAmount>
 	</cac:LegalMonetaryTotal>
 	<!-- end::LegalMonetaryTotal[] -->
+
 	<cac:OrderLine>
 		<cac:LineItem>
+
+			<!-- tag::quantity[] -->
 			<cbc:ID>1</cbc:ID>
 			<cbc:Note>Line note</cbc:Note>
 			<cbc:Quantity unitCode="C62">12</cbc:Quantity>
-			<cbc:LineExtensionAmount currencyID="EUR">1000</cbc:LineExtensionAmount>
+			<!-- end::quantity[] -->
+
 			<cbc:TotalTaxAmount currencyID="EUR">236</cbc:TotalTaxAmount>
+
+			<!-- tag::DeliveryLine[] -->
 			<cac:Delivery>
 				<cbc:Quantity unitCode="EUR">12</cbc:Quantity>
 				<cac:PromisedDeliveryPeriod>
@@ -207,19 +225,31 @@
 					<cbc:EndTime>18:00:00</cbc:EndTime>
 				</cac:PromisedDeliveryPeriod>
 			</cac:Delivery>
+			<!-- end::DeliveryLine[] -->
+
+			<!-- tag::price[] -->
 			<cac:Price>
 				<cbc:PriceAmount currencyID="EUR">50</cbc:PriceAmount>
 				<cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
 			</cac:Price>
+			<!-- end::price[] -->
+
+			<!-- tag::ItemDescription[] -->
 			<cac:Item>
 				<cbc:Description>Description of the item</cbc:Description>
 				<cbc:Name>Item name</cbc:Name>
+				<!-- end::ItemDescription[] -->
+
+				<!-- tag::ItemIdentifiers[] -->
 				<cac:SellersItemIdentification>
 					<cbc:ID>123</cbc:ID>
 				</cac:SellersItemIdentification>
 				<cac:StandardItemIdentification>
 					<cbc:ID schemeID="GTIN">321</cbc:ID>
 				</cac:StandardItemIdentification>
+				<!-- end::ItemIdentifiers[] -->
+
+				<!-- tag::ItemSpecificationDocumentReference[] -->
 				<cac:ItemSpecificationDocumentReference>
 					<cbc:ID>doc id</cbc:ID>
 					<cbc:DocumentType>Item specs</cbc:DocumentType>
@@ -230,12 +260,34 @@
 						</cac:ExternalReference>
 					</cac:Attachment>
 				</cac:ItemSpecificationDocumentReference>
+				<!-- end::ItemSpecificationDocumentReference[] -->
+
+				<!-- tag::ItemSpecificationDocumentReference2[] -->
+				<cac:ItemSpecificationDocumentReference>
+					<cbc:ID>doc id</cbc:ID>
+					<cbc:DocumentType>Item specs</cbc:DocumentType>
+					<cac:Attachment>
+						<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="specs.pdf">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
+						<cac:ExternalReference>
+							<cbc:URI>https://joinup.ec.europa.eu/svn/peppol/PostAward/Ordering28A/20160310%20-%20PEPPOL_BIS_28a-101.pdf</cbc:URI>
+						</cac:ExternalReference>
+					</cac:Attachment>
+				</cac:ItemSpecificationDocumentReference>
+				<!-- end::ItemSpecificationDocumentReference2[] -->
+
+				<!-- tag::CommodityClassification[] -->
 				<cac:CommodityClassification>
 					<cbc:ItemClassificationCode>3156</cbc:ItemClassificationCode>
 				</cac:CommodityClassification>
+				<!-- end::CommodityClassification[] -->
+
+				<!-- tag::TransactionConditions[] -->
 				<cac:TransactionConditions>
 					<cbc:ActionCode>Action code</cbc:ActionCode>
 				</cac:TransactionConditions>
+				<!-- tag::TransactionConditions[] -->
+
+				<!-- tag::ClassifiedTaxCategory[] -->
 				<cac:ClassifiedTaxCategory>
 					<cbc:ID schemeID="BII2">S</cbc:ID>
 					<cbc:Percent>23.6</cbc:Percent>
@@ -243,12 +295,34 @@
 						<cbc:ID schemeID="UNCL5305">S</cbc:ID>
 					</cac:TaxScheme>
 				</cac:ClassifiedTaxCategory>
+				<!-- tag::ClassifiedTaxCategory[] -->
+
+				<!-- tag::AdditionalItemProperty[] -->
 				<cac:AdditionalItemProperty>
 					<cbc:Name>Property name</cbc:Name>
 					<cbc:NameCode>NameCode</cbc:NameCode>
 					<cbc:Value>Property value</cbc:Value>
 					<cbc:ValueQuantity unitCode="C62">1</cbc:ValueQuantity>
 				</cac:AdditionalItemProperty>
+				<!-- tag::AdditionalItemProperty[] -->
+
+				<!-- tag::Certificate[] -->
+				<cac:Certificate>
+					<cbc:ID>EU Ecolabel</cbc:ID>
+					<cbc:CertificateTypeCode>NA</cbc:CertificateTypeCode>
+					<cbc:CertificateType>Environmental</cbc:CertificateType>
+					<cbc:Remarks>Item label value</cbc:Remarks>
+					<cac:IssuerParty>
+						<cac:PartyName>
+							<cbc:Name>NA</cbc:Name>
+						</cac:PartyName>
+					</cac:IssuerParty>
+					<cac:DocumentReference>
+						<cbc:ID>Item label reference</cbc:ID>
+					</cac:DocumentReference>
+				</cac:Certificate>
+				<!-- end::Certificate[] -->
+
 			</cac:Item>
 		</cac:LineItem>
 	</cac:OrderLine>
