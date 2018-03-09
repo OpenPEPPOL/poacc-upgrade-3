@@ -37,7 +37,6 @@ This BIS is using the UBL 2.1 syntax [UBL_OrderResponse]. The namespace of the X
 ----
 include::../snippets/OA full.xml[tags=ublversionid]
 ----
- <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
 
 == Profile ID
 
@@ -54,7 +53,6 @@ Example of usage:
 ----
 include::../snippets/OA full.xml[tags=profileid]
 ----
-<cbc:ProfileID> urn:www.cenbii.eu:profile:bii42:ver1.0</cbc:ProfileID>
 
 == Customization ID
 
@@ -78,11 +76,6 @@ urn:www.cenbii.eu:transaction:biitrns110:ver1.0:*extended*:urn:www.peppol.eu:bis
 ----
 include::../snippets/OA full.xml[tags=customizationid]
 ----
-Example of usage:
-
-<cbc:CustomizationID> +
-urn:www.cenbii.eu:transaction:biitrns110:ver1.0:extended:urn:www.peppol.eu:bis:peppol42a:ver1.0 +
-</cbc:CustomizationID>
 
 For implementers: Please note that CustomizationID element in the document instance MUST correspond to the Customization ID of the SMP Document Identifier.
 
