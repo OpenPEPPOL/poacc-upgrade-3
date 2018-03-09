@@ -3,11 +3,11 @@
 
 The buyer has made a framework agreement with the seller for services such as maintenance or consulting. The framework agreement sets limits and terms within which the seller may provide services without individual orders from the buyer.
 
-[cols=",",options="header",]
+[cols="2,4",]
 |====
 |Use Case number |5
 |Use Case Name |Maintainance based on framework contract
-|Use Case Description a|
+|Use Case Description|
 A seller who has a framework agreement that contracts him for certain services, items or consulting may react to events as contracted and at the end of a period send an order agreement listing the services that were carried out. +
  +
 Examples include:
@@ -21,9 +21,7 @@ In each of these examples the buyer has made a framework contract with the selle
 
 |Parties involved a|
 Buyer
-
 Seller
-
 |Assumptions |The seller and buyer has a framework contract that define the service to be provided and its limits.
 |The flow a|
 The seller of the services or items reacts to events as defined in the contract and carries out the service or delivers the items as contracted.

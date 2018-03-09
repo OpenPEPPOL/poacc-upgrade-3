@@ -3,19 +3,17 @@
 
 This use case describes the process where a customer/buyer orders tickets.
 
-[cols=",",options="header",]
+[cols="2,4",]
 |====
 |Use Case number |1
 |Use Case Name |Web store used for booking tickets
 |Use Case Description |The buyer uses a website to buy tickets, such as for airfare or events.
-|Parties involved a|
+|Parties involved|
 Buyer
-
 Seller
-
 |Assumptions |The seller has a website that allows the buyer to select and order tickets. +
 The buyer has an account with the seller with necessary details to send him an order agreement.
-|The flow a|
+|The flow|
 The buyer uses the website to book tickets. The buyer receives the tickets in the way as selected in the web shop (e.g. mobile ticket or pdf). The buyer then ends the web shop session. The purchase is recorded in the seller’s system.
 
 An order agreement transaction with all necessary information is sent from the seller’s system to the buyer’s purchasing system. The order agreement is recorded in the buyer’s purchasing system.

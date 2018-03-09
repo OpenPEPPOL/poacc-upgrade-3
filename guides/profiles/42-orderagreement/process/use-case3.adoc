@@ -1,16 +1,14 @@
 [[use-case-3-telephone-and-e-mail-is-used-to-order-items]]
 == Use case 3 – Telephone and e-mail is used to order items
 
-[cols=",",options="header",]
+[cols="2,4",]
 |====
 |Use Case number |3
 |Use Case Name |Telephone or e-mail order
 |Use Case Description |Buyer makes a purchase by calling the seller by telephone or by sending an email.
-|Parties involved a|
+|Parties involved|
 Buyer
-
 Seller
-
 |Assumptions |The buyer has an account with the seller with necessary details to send him an order agreement.
 |The flow a|
 The buyer is working in his purchasing system, and need to by printers and selects a seller of printers. The seller’s items are not in the purchasing system and the seller doesn't offer a web shop. The buyer calls the seller on the telephone.

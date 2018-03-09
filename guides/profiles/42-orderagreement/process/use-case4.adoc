@@ -3,16 +3,14 @@
 
 This use case describes a process where the buyer physically enteres the sellers store to buy and possibly take delivery of goods.
 
-[cols=",",options="header",]
+[cols="2,4",]
 |====
 |Use Case number |4
 |Use Case Name |User configures product/services
 |Use Case Description |A buyer physically makes a purchase and takes delivery.
-|Parties involved a|
+|Parties involved|
 Buyer
-
 Seller
-
 |Assumptions |The buyer has an account with the seller with necessary details to send him an order agreement.
 |The flow a|
 The buyer urgently need some items and may wish to discuss this with the seller before buying the items.

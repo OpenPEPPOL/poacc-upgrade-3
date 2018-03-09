@@ -10,12 +10,12 @@ The order agreement process flow can be described as follows:
 
 Start position.
 
-1.  A Buyer makes a purchase of goods or services from the Seller.
-2.  A Seller reports one or more accumulated purchases made under a framework agreement to the Buyer.
+.A Buyer makes a purchase of goods or services from the Seller.
+.A Seller reports one or more accumulated purchases made under a framework agreement to the Buyer.
 
 End positions.
 
-1.  A purchase has been recorded in the Buyer´s purchasing system. The seller proceeds to invoice accordingly.
+.A purchase has been recorded in the Buyer´s purchasing system. The seller proceeds to invoice accordingly.
 
 An Order Agreement may refer to a framework agreement for its terms and conditions; otherwise the Buyer’s terms and conditions apply.
 
@@ -25,11 +25,17 @@ An Order Agreement may refer to a framework agreement for its terms and conditio
 
 The diagrams are expressed in the BPMN notation. The diagram below serves as an explanation for the diagrams used in the process descriptions.
 
-image:extracted-media/media/image5.emf[image,width=566,height=307]
+:leveloffset: +1
+
+include::../../../shared/bpmn/bpmn-legend.adoc[align = "center", width=600]
+
+:leveloffset: -1
 
 The following diagram shows the choreography of the business process implemented by the BIS.
 
-image:extracted-media/media/image6.emf[image,width=637,height=497]image:extracted-media/media/image7.emf[image,width=598,height=466]
+image:../images/bpmn-orderagreement1.jpg[align = "center", width=600]
+
+image:../images/bpmn-orderagreement2.jpg[align = "center", width=600]
 
 [cols=",",]
 |====
@@ -49,19 +55,6 @@ The content of the order is agreed through use of web shop, phone, email, physic
 |Post-conditions |The buyer has received an order agreement that is recorded in the purchasing system.
 |Legal Implications |By providing an Order agreement transaction the Seller commits himself the, quantities, prices and terms stated in the Order agreement transaction.
 |====
-
-:leveloffset: +1
-
-include::../../../shared/bpmn/bpmn-legend.adoc[]
-
-:leveloffset: -1
-
-
-The following diagram shows the choreography of the business process implemented by the BIS.
-
-image::images/bpmn-orderagreement1.emf[align="center", width=600]
-
-image::images/bpmn-orderagreement2.emf[align="center", width=600]
 
 :leveloffset: +1
 

@@ -6,19 +6,19 @@ Table of the code lists used in the Order agreement transaction:
 |====
 |Business Term|Allowed SchemeID|Applicable Xpath|Note
 |Currency Code |ISO4217|
-'//cac:AllowanceCharge/cbc:Amount@currencyID +
-'//cbc:TaxAmount@currencyID +
-'//cbc:TaxableAmount@currencyID +
-'//cbc:LineExtensionAmount@currencyID +
-'//cbc:TaxExclusiveAmount@currencyID +
-'//cbc:TaxInclusiveAmount@currencyID +
-'//cbc:AllowanceTotalAmount@currencyID +
-'//cbc:ChargeTotalAmount@currencyID +
-'//cbc:PayableRoundingAmount@currencyID +
-'//cbc:PayableAmount@currencyID +
-'//cac:LineItem/cbc:LineExtensionAmount@currencyID +
-'//cbc:TotalTaxAmount@currencyID +
-'//cbc:PriceAmount@currencyID
+//cac:AllowanceCharge/cbc:Amount@currencyID
+//cbc:TaxAmount@currencyID
+//cbc:TaxableAmount@currencyID
+//cbc:LineExtensionAmount@currencyID
+//cbc:TaxExclusiveAmount@currencyID
+//cbc:TaxInclusiveAmount@currencyID
+//cbc:AllowanceTotalAmount@currencyID
+//cbc:ChargeTotalAmount@currencyID
+//cbc:PayableRoundingAmount@currencyID
+//cbc:PayableAmount@currencyID
+//cac:LineItem/cbc:LineExtensionAmount@currencyID
+//cbc:TotalTaxAmount@currencyID
+//cbc:PriceAmount@currencyID
 |See link to codelist below.
 
 |MIME Media Type Code
@@ -33,14 +33,14 @@ Table of the code lists used in the Order agreement transaction:
 
 |Unit Of Measure
 |UNECERec20
-|//cbc:ValueQuantity@unitCode +
-//cbc:BaseQuantity@unitCode +
+|//cbc:ValueQuantity@unitCode
+//cbc:BaseQuantity@unitCode
 //cbc:Quantity@unitCode
 |See link to codelist below.
 
 |Item VAT category code
 |UNCL5305 SUBSET
-|//cac:TaxCategory/cbc:ID@schemeID +
+|//cac:TaxCategory/cbc:ID@schemeID
 //cac:ClassifiedTaxCategory/cbc:ID@schemeID
 |Subset values are given below
 
@@ -61,7 +61,7 @@ Subset values are:
 |AE|VAT Reverse Charge
 |E|Exempt from tax
 |S|Standard rate
-|Z| rated goods
+|Z|Zero rated goods
 |H|Higher Rate, can be used to identify a rate above the standard rate.
 |AA|Lower Rate, can be used to identify a rate below the standard rate.
 |====

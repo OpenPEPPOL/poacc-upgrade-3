@@ -30,7 +30,7 @@ The following rules apply to the order agreement transaction as it is used in th
 
 Following rules have been defined by OpenPeppol in addition to the rules adopted from the BII specifications. These rules apply in all implementations that follow this PEPPOL BIS.
 
-[cols="1,2,2,1",options="header",]
+[cols="1s,2,2,1",options="header",]
 |====
 |Rule ID|Rule|Req ID|Error level
 |EUGEN-T110-R001|An endpoint identifier MUST have a scheme identifier attribute|tir110-015 +

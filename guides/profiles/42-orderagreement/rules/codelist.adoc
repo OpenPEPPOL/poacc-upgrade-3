@@ -1,7 +1,7 @@
 [[codelists-business-rules]]
 = Codelists business rules
 
-[cols=",",options="header",]
+[cols="2,4",options="header",]
 |====
 |Identifier |Business Rule
 |CL-T110-R001 |currencyID for Amounts MUST be coded using ISO code list 4217
