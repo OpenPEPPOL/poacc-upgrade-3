@@ -2,7 +2,7 @@
 
 The following elements show the anticipated monetary totals for an order agreement:
 
-[cols=",",options="header",]
+[cols="2,4",options="header",]
 |====
 |Element: |Description:
 |<cbc:LineExtensionAmount> |Sum of line amounts
@@ -25,7 +25,7 @@ Note that the LegalMonetaryTotals class is optional. The legal monetary total cl
 
 Formulas for the calculations of totals are as follows:
 
-[cols=",",options="header",]
+[cols="2,4",options="header",]
 |====
 |Element: |Formula:
 |<cbc:LineExtensionAmount> |∑ LineExtensionAmount (at line level)
@@ -33,24 +33,18 @@ Formulas for the calculations of totals are as follows:
 |<cbc:AllowanceTotalAmount> |∑ Allowance Amount (where ChargeIndicator = ”false”)
 |<cbc:TaxExclusiveAmount> a|
 LineExtensionAmount
-
 – AllowanceTotalAmount
-
 + ChargeTotalAmount
-
 |<cbc:TaxInclusiveAmount> a|
 TaxExclusiveAmount
-
 + TaxTotal /TaxAmount
-
 + PayableRoundingAmount
-
 |<cbc:PayableAmount> |TaxInclusiveAmount – PrepaidAmount
 |====
 
 == Example of calculations:
 
-[cols=",,,",options="header",]
+[cols="4,1,4,4",options="header",]
 |====
 |*Business term* | |*Sample amounts* |*Element*
 |Sum of line amounts |+ |1436.50 |LineExtensionAmount

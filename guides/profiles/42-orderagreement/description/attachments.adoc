@@ -10,19 +10,12 @@ It is recommended to send attachments as embedded, binary objects and not as ext
 |Coding |Base64
 |Document format a|
 The following MIME types are recommended:
-
 Pdf – application / pdf
-
 TXT – text / plain
-
 GIF – image / gif
-
 Jpeg –image
-
 PNG -image
-
 Other MIME types may be used, subject to agreement.
-
 |Size |Recommended maximum message size is 100MB including attachments.
 |Description |It is recommended to use element cac:AdditionalDocumentReference/cbc:DocumentType to send a short description of the content of the attachment. +
 NB: Attachments should be used for additional information and not as order copies.

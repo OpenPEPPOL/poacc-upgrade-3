@@ -3,7 +3,7 @@
 
 This use case describes the process where a customer/buyer orders products in a web shop.
 
-[cols="2,4",]
+[cols="1,5",]
 |====
 |Use Case number |2
 |Use Case Name |Web shop used for ordering items

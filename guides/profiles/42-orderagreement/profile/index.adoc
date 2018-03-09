@@ -32,6 +32,11 @@ Examples of usage in PartyIdentification and Endpoint ID:
 
 This BIS is using the UBL 2.1 syntax [UBL_OrderResponse]. The namespace of the XML-message does only communicate the major version number. Since it is important for the receiver to also know what minor version of the syntax that is used, the element UBLVersionID must be stated with the value *2.1:*
 
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=ublversionid]
+----
  <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
 
 == Profile ID
@@ -44,6 +49,11 @@ The following process identifier is used for ―BII42 – Order Agreement:
 
 Example of usage:
 
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=profileid]
+----
 <cbc:ProfileID> urn:www.cenbii.eu:profile:bii42:ver1.0</cbc:ProfileID>
 
 == Customization ID
@@ -63,6 +73,11 @@ By combining these according to the identifier syntax the CustomizationID to use
 
 urn:www.cenbii.eu:transaction:biitrns110:ver1.0:*extended*:urn:www.peppol.eu:bis:peppol42a:ver1.0
 
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=customizationid]
+----
 Example of usage:
 
 <cbc:CustomizationID> +

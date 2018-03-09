@@ -1,4 +1,4 @@
-== Prices
+= Prices
 
 Prices must be exchanged in the Order Agreement transaction. The price may be 0 (zero)
 
@@ -16,7 +16,7 @@ Example of price information in an Order Agreement message:
 include::../snippets/OA full.xml[tags=price]
 ----
 
-== Allowances and charges
+= Allowances and charges
 
 This example shows a charge related to packing costs:
 
@@ -25,16 +25,6 @@ This example shows a charge related to packing costs:
 ----
 include::../snippets/OA full.xml[tags=allowance]
 ----
-
-<cac:AllowanceCharge>
-
-<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-
-<cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
-
-<cbc:Amount currencyID="EUR">100</cbc:Amount>
-
-</cac:AllowanceCharge>
 
 This example shows an allowance related to a discount on the order:
 

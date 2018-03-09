@@ -1,9 +1,9 @@
 [[use-case-3-buyer-visits-the-sellers-physical-store]]
 = Use case 4 – Buyer visits the seller’s physical store.
 
-This use case describes a process where the buyer physically enteres the sellers store to buy and possibly take delivery of goods.
+This use case describes a process where the buyer physically enters the sellers store to buy and possibly take delivery of goods.
 
-[cols="2,4",]
+[cols="1,5",]
 |====
 |Use Case number |4
 |Use Case Name |User configures product/services

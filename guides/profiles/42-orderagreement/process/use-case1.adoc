@@ -3,7 +3,7 @@
 
 This use case describes the process where a customer/buyer orders tickets.
 
-[cols="2,4",]
+[cols="1,5",]
 |====
 |Use Case number |1
 |Use Case Name |Web store used for booking tickets
