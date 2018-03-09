@@ -219,7 +219,7 @@ Example of an order agreement line with a quantity of 120 pieces (cbc:Quantity) 
 .Example
 [source, xml, indent=0]
 ----
-include::../snippets/OA full.xml[tags=quantity]
+include::../snippets/OA full.xml[tags=LineItem]
 ----
 
 .Example
@@ -388,35 +388,6 @@ Header level:
 include::../snippets/OA full.xml[tags=taxtotal]
 ----
 
-
-<cac:TaxTotal>
-
-<cbc:TaxAmount currencyID="EUR">1236</cbc:TaxAmount>
-
-<cac:TaxSubtotal>
-
-<cbc:TaxableAmount currencyID="EUR">1000</cbc:TaxableAmount>
-
-<cbc:TaxAmount currencyID="EUR">236</cbc:TaxAmount>
-
-<cac:TaxCategory>
-
-<cbc:ID schemeID="UNCL5305">S</cbc:ID>
-
-<cbc:Percent>23.6</cbc:Percent>
-
-<cac:TaxScheme>
-
-<cbc:ID schemeID="UNCL5153">VAT</cbc:ID>
-
-</cac:TaxScheme>
-
-</cac:TaxCategory>
-
-</cac:TaxSubtotal>
-
-</cac:TaxTotal>
-
 Line level:
 
 .Example
@@ -424,7 +395,6 @@ Line level:
 ----
 include::../snippets/OA full.xml[tags=LineItem]
 ----
-
 
 <cac:LineItem>
 
@@ -445,16 +415,3 @@ include::../snippets/OA full.xml[tags=LineItem]
 ----
 include::../snippets/OA full.xml[tags=ClassifiedTaxCategory]
 ----
-
-
-<cac:ClassifiedTaxCategory>
-
-<cbc:ID schemeID="UNCL5305">S</cbc:ID>
-
-<cbc:Percent>23.6</cbc:Percent>
-
-<cac:TaxScheme>
-
-<cbc:ID schemeID="UNCL5153">VAT</cbc:ID>
-
-</cac:TaxScheme>

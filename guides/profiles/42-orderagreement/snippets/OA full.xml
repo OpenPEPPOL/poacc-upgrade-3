@@ -167,12 +167,14 @@
 		<cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
 		<cbc:Amount currencyID="EUR">100</cbc:Amount>
 	</cac:AllowanceCharge>
-	<cac:AllowanceCharge>
+	<!-- end::allowance[] -->
+
+	<!-- tag::allowance2[] -->	<cac:AllowanceCharge>
 		<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 		<cbc:AllowanceChargeReason>Packing cost</cbc:AllowanceChargeReason>
 		<cbc:Amount currencyID="EUR">200</cbc:Amount>
 	</cac:AllowanceCharge>
-	<!-- end::allowance[] -->
+	<!-- end::allowance2[] -->
 
 	<!-- tag::taxtotal[] -->
 	<cac:TaxTotal>
