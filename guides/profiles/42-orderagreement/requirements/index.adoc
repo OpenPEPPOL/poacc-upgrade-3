@@ -23,7 +23,7 @@ Based on the goals and scope of the BII profile on which this BIS is based the f
 
 |BR-42-004
 |The order agreement transaction includes only items purchased by the buyer.
-|G-42-006,G-42-011
+|G-42-006, G-42-011
 
 |BR-42-005
 |The transaction must contain information to identify configured items.
@@ -60,7 +60,7 @@ Based on the goals and scope of the BII profile on which this BIS is based the f
 
 The above business requirements are supported by the following transaction requirements.
 
-[cols=",",options="header",]
+[cols="1s,5",options="header",]
 |====
 |ID
 |Requirement
