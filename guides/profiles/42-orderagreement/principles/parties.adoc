@@ -31,4 +31,6 @@ s|Description
 
 The following diagram links the business processes to the roles performed by the Business Partners.
 
-include::images/image4.emf[image,width=642,height=117]
+image::images/image4.emf[image,width=642,height=117]
+
+image::images/42Aparties.png[align="center", width=600]
