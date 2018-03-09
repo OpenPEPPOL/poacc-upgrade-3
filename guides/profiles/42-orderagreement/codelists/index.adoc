@@ -1,7 +1,6 @@
 [[codelist]]
 = Code lists
 
-
 :leveloffset: +1
 
 include::elements.adoc[]

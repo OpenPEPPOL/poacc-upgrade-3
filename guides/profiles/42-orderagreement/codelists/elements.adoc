@@ -89,4 +89,4 @@ COMMODITY_SCHEME_ID – CENBII
 |UNSPSC|UNSPSC
 |eCLASS|eCLASS
 |GPC|GS1 Global Product Classification
-_____________________________________
+|====
