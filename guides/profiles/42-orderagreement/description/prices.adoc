@@ -33,14 +33,3 @@ This example shows an allowance related to a discount on the order:
 ----
 include::../snippets/OA full.xml[tags=allowance2]
 ----
-
-
-<cac:AllowanceCharge>
-
-<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
-
-<cbc:AllowanceChargeReason>Packing cost</cbc:AllowanceChargeReason>
-
-<cbc:Amount currencyID="EUR">200</cbc:Amount>
-
-</cac:AllowanceCharge>
