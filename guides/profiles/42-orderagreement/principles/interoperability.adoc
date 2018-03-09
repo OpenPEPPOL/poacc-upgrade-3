@@ -38,7 +38,7 @@ These choices are intended to lower the implementation threshold by limiting opt
 * Technical Interaction (Process and semantic implementation):
 ** Binding to OASIS UBL 2.1, see {ubl}
 ** ISO/IEC 19757-3 Schematron, for automation of document validation, see {schematron}
-** #XSLT Stylesheet for presentation of content, see [XSLT]#
+** XSLT Stylesheet for presentation of content, see [XSLT]
 
 * Technical Interaction (eSignature Validation):
 ** Not mandatory in this PEPPOL BIS. Not supported.
