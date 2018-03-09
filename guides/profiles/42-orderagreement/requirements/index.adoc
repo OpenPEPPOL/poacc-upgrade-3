@@ -141,25 +141,21 @@ The above business requirements are supported by the following transaction requi
 == Transaction information requirements
 
 This chapter describes the transaction information requirements of the Order agreement BIS. Chapter 5.1 gives an overview of the Order agreement transaction and 5.2 shows the requirements.
-[cols=",",]
+[cols="2,4",options="header",]
 |====
-|Categories |Description and Values
-|Identifier |BiiTrns110
-|Description |A transaction containing information about the items/services purchased by the buyer.
+|Categories|Description and Values
+|Identifier|BiiTrns110
+|Description|A transaction containing information about the items/services purchased by the buyer.
 |Partner Types
 |Customer
-
 Supplier
-
 |Authorized Roles
 |Buyer
-
 Seller
-
-|Legal Implications |With providing an Order agreement transaction the Seller documents the agreement entered into with the seller regarding products, quantities, prices and terms, as stated in the Order agreement transaction.
-|Initial Event |Purchase
-|Terminal event |Process information
-|Constraints |non specified
+|Legal Implications|With providing an Order agreement transaction the Seller documents the agreement entered into with the seller regarding products, quantities, prices and terms, as stated in the Order agreement transaction.
+|Initial Event|Purchase
+|Terminal event|Process information
+|Constraints|non specified
 |====
 
 :leveloffset: +1

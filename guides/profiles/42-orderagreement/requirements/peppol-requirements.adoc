@@ -6,7 +6,7 @@ An order agreement should support the calculation of expected totals structured 
 [cols="1,2,3",options="header",]
 |====
 |ID: |Business term: |Description:
-| |HEADER LEVEL: |
+| |*HEADER LEVEL:*|
 |OP-110-001
 |Allowance amount
 |An order agreement may have allowance amount on document level.
@@ -55,7 +55,7 @@ An order agreement should support the calculation of expected totals structured 
 |Charge reason
 |An order agreement must give an charge reason for each allowance amount on document level.
 
-| |LINE LEVEL: |
+| |*LINE LEVEL:* |
 |OP-110-013
 |Item label name
 |An order agreement may provide information about the name of an item label.
