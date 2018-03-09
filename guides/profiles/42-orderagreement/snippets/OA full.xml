@@ -206,13 +206,12 @@
 	<!-- end::LegalMonetaryTotal[] -->
 
 	<cac:OrderLine>
+			<!-- tag::LineItem[] -->
 		<cac:LineItem>
-
-			<!-- tag::quantity[] -->
 			<cbc:ID>1</cbc:ID>
 			<cbc:Note>Line note</cbc:Note>
 			<cbc:Quantity unitCode="C62">12</cbc:Quantity>
-			<!-- end::quantity[] -->
+			<!-- end::LineItem[] -->
 
 			<cbc:TotalTaxAmount currencyID="EUR">236</cbc:TotalTaxAmount>
 
@@ -296,7 +295,7 @@
 						<cbc:ID schemeID="UNCL5305">S</cbc:ID>
 					</cac:TaxScheme>
 				</cac:ClassifiedTaxCategory>
-				<!-- tag::ClassifiedTaxCategory[] -->
+				<!-- end::ClassifiedTaxCategory[] -->
 
 				<!-- tag::AdditionalItemProperty[] -->
 				<cac:AdditionalItemProperty>
