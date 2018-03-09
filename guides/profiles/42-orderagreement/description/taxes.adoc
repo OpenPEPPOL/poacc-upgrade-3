@@ -1,0 +1,39 @@
+= Tax amounts
+
+It is possible to state the tax total of the order agreement, on the header level and also on line level.
+
+Header level:
+
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=taxtotal]
+----
+
+Line level:
+
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=LineItem]
+----
+
+<cac:LineItem>
+
+<cbc:ID>1</cbc:ID>
+
+<cbc:Note>Line note</cbc:Note>
+
+<cbc:Quantity unitCode="C62">12</cbc:Quantity>
+
+<cbc:LineExtensionAmount currencyID="EUR">1000</cbc:LineExtensionAmount>
+
+<cbc:TotalTaxAmount currencyID="EUR">236</cbc:TotalTaxAmount>
+
+…
+
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/OA full.xml[tags=ClassifiedTaxCategory]
+----

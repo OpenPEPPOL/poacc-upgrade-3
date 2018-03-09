@@ -12,6 +12,8 @@ The order agreement profile describes processes where the buyer, after purchasin
 
 :leveloffset: +1
 
+include::prerequisite.adoc[]
+
 include::scope.adoc[]
 
 include::goals.adoc[]
