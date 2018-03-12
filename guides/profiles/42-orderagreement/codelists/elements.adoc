@@ -6,7 +6,7 @@ Table of the code lists used in the Order agreement transaction:
 |====
 |Business Term|Allowed SchemeID|Applicable Xpath|Note
 |Currency Code |ISO4217|
-+++//cac:AllowanceCharge/cbc:Amount@currencyID
+\\//cac:AllowanceCharge/cbc:Amount@currencyID
 //cbc:TaxAmount@currencyID
 //cbc:TaxableAmount@currencyID
 //cbc:LineExtensionAmount@currencyID
@@ -18,7 +18,7 @@ Table of the code lists used in the Order agreement transaction:
 //cbc:PayableAmount@currencyID
 //cac:LineItem/cbc:LineExtensionAmount@currencyID
 //cbc:TotalTaxAmount@currencyID
-//cbc:PriceAmount@currencyID+++
+//cbc:PriceAmount@currencyID+
 |See link to codelist below.
 
 |MIME Media Type Code
@@ -40,8 +40,8 @@ Table of the code lists used in the Order agreement transaction:
 
 |Item VAT category code
 |UNCL5305 SUBSET
-|//cac:TaxCategory/cbc:ID@schemeID
-//cac:ClassifiedTaxCategory/cbc:ID@schemeID
+|\\//cac:TaxCategory/cbc:ID@schemeID
+\\//cac:ClassifiedTaxCategory/cbc:ID@schemeID
 |Subset values are given below
 
 |Commodity code
