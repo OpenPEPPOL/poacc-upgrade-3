@@ -1,0 +1,10 @@
+[[namespaces]]
+= Namespaces
+
+The target namespace for the UBL2.1 Catalogue is:
+
+*urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2*
+
+The target namespace for the UBL2.1 Catalogue response is:
+
+*urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2*

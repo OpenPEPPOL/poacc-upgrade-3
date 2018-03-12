@@ -1,0 +1,19 @@
+[[code-lists-for-identifier-schemes]]
+= Code lists for identifier schemes
+
+The table of the code lists below describes constrains for the values of schemeID for identifiers in the Catalogue transaction.
+schemeID indicates what type of identifier is used (for example the type of numbering system) *(Mandatory)*
+
+[cols=",,,",options="header",]
+|====
+|*Business Term* |*Allowed SchemeID* |*Applicable Xpath* |*Note*
+|Party Identifier |See “PEPPOL Policy for using Identifiers” a|
+cbc:EndpointID/@schemeID
+
+cac:PartyIdentification/cbc:ID/@schemeID
+
+ |Check allowed scheme identifiers
+|Attribute Identifier |http://www.unece.org/fileadmin/DAM/trade/edifact/code/6313cl.htm[UNCL6313] |cbc:AttibuteID |Check the scheme identifier is UNCL6313 and the attribute identifiers belong to the list.
+|Tax Category Identifier |Use ftp://ftp.cen.eu/public/CWAs/BII2/CWA16558/CWA16558-Annex-G-BII-CodeLists-V2_0_4.pdf[UNECE5305 CEN BII2] subset. |cac:ClassifiedTaxCategory/cbc:ID |Note: Validate the ID with the code list provided by CEN BII2.
+SchemeID attribute must be UNCL5305
+|====

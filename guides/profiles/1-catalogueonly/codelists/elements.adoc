@@ -1,0 +1,63 @@
+[[code-lists-for-coded-elements]]
+= Code lists for coded elements
+
+Table of the code lists used in the Catalogue transaction:
+
+[cols=",,,,",options="header",]
+|====
+|*Business Term* |*Source* |*Subset* |*Xpath* |*listID*
+|Action Code on Line level |ftp://ftp.cen.eu/public/CWAs/BII2/CWA16558/CWA16558-Annex-G-BII-CodeLists-V2_0_4.pdf%20%20[CEN BII2] | |cac:CatalogueLine/cbc:ActionCode |ACTIONCODE:BII2
+|Action Code on Header Level |PEPPOL | |/Catalogue/cbc:ActionCode a|
+ACTIONCODE:PEPPOL
+
+*Values*
+
+*Add* – Used when a catalogue is sent for the first time to the Catalogue Receiver.
+
+*Replace* – Replaces the entire catalogue referring to the contract.
+
+*Update* – Updates a current catalogue.
+
+*Delete* – Deletes a current catalogue.
+
+|Country Code |http://www.iso.org/iso/home/standards/country_codes.htm[ISO 3166-1 alpha2] | |cac:Country/cbc:Identificationcode |ISO3166-1:Alpha2
+|Unit Of Measure |http://www.unece.org/cefact/recommendations/rec20/Rec20_Rev6e_2009.xls[UN/ECE Rec 20] | a|
+@unitCode
+
+cbc:OrderableUnit
+
+ a|
+UNECERec20
+
+Note: Use this list identifier in the attribute unitCodelistID
+
+|Package Level Code |GS1 7009 |PEPPOL |cbc:PackageLevelCode a|
+GS17009:PEPPOL
+
+*Values*
+
+*CU* – Base Unit level
+
+*DU* – Pallet level
+
+*TU* – Case level
+
+*HN* – Handling Unit
+
+|UNDG Code |http://www.unece.org/trade/untdid/d08a/tred/tred8273.htm[UN EDIFACT 8273] | |cbc:UNDGCode |UNCL8273
+|Transport Handling Unit Type Code |https://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0CCoQFjAA&url=http%3A%2F%2Fwww.unece.org%2Fcefact%2Frecommendations%2Frec21%2Frec21rev4_ecetrd309.pdf&ei=w9HCUfyPKoTy7AbN9IHwAQ&usg=AFQjCNFXX6pWyox7k5GMYz2_xQbTgjwhoQ&sig2=e[UN/ECE Rec 21] | |cbc:TransportHandlingUnitTypeCode |UNECERec21
+|Currency Code |http://www.currency-iso.org/dam/downloads/dl_iso_table_a1.xml[ISO 4217] | |@currencyID a|
+ISO4217
+
+Note: Do not validate list identifier.
+
+|Response code |http://www.unece.org/fileadmin/DAM/trade/edifact/code/4343cl.htm[UN CEFACT 4343] |PEPPOL |cbc:ResponseCode a|
+UNCL4343
+
+Values
+
+AP - Accepted
+
+RE - Rejected
+
+|====

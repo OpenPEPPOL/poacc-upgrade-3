@@ -1,0 +1,13 @@
+[[profile-id]]
+= Profile ID
+
+The ProfileID identifies the process that the business document is part of.
+PEPPOL BIS uses the identification system according to BII:
+
+The following process identifier is used for the transactions of this BIS:
+
+**ProfileID**: urn:www.cenbii.eu:profile:bii01:ver2.0
+
+For implementers: Please note that process identifiers in the document instance MUST correspond to the
+
+SMP process identifier.

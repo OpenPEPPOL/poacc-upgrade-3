@@ -1,0 +1,21 @@
+[[additional-properties]]
+== Additional properties
+
+Additional properties are meant for product properties that cannot be sent in any of the defined elements in this PEPPOL BIS.
+Additional properties consist of the Name of the property and the actual Value. +
+Example of additional properties:
+
+* Color
+* Allergens. +
+Legal values: YES, NO, UNKNOWN, FREE.
+* Nutrition. +
+Stated with amount per 100 g/ml.
+* Genetically modified. +
+Legal values: True, False
+
+
+.Example:
+[source, xml, indent=0]
+----
+include::../snippets/snippet-1-1.xml[tags=color]
+----
