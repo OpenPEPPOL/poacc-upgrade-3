@@ -22,5 +22,5 @@ extended:urn:www.peppol.eu:bis:peppol36a:ver2.0
 .UBL example of profile identifier
 [source, xml, indent=0]
 ----
-include::../../profiles/36-mlr/snippets/Snippet-1.xml[tags=profile]
+include::../../profiles/36-mlr/snippets/snippet-1.xml[tags=profile]
 ----
