@@ -1,0 +1,26 @@
+
+[[prof-36]]
+= Profile 36 - Message level response
+
+In the table below you will find the values to be used as the specification identifier and the business process type for this profile
+
+
+[cols="2s,5a,5a", options="header"]
+|===
+| Type
+| Element `cbc:CustomizationID`
+| Element `cbc:ProfileID`
+
+
+| Message level response (Trdm071)
+| urn:www.cenbii.eu:transaction:biitrns071:ver2.0: +
+extended:urn:www.peppol.eu:bis:peppol36a:ver2.0
+| urn:www.cenbii.eu:profile:bii36a:ver2.0.
+|===
+
+
+.UBL example of profile identifier
+[source, xml, indent=0]
+----
+include::../../profiles/36-mlr/snippets/Snippet-1.xml[tags=profile]
+----
