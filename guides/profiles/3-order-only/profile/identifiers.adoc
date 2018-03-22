@@ -1,7 +1,7 @@
 [[namespaces]]
 = Namespaces
 
-include::../{order}/technical/namespace.adoc[]
+include::../{transaction-path}/technical/namespace.adoc[]
 
 
 :leveloffset: +1
