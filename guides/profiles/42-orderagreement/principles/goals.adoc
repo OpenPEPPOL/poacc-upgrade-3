@@ -33,7 +33,7 @@ The following main business goals to be gained by implementing a BII Order agree
 |The profile enables the buyer to receive the order information back in the purchasing system of the buyer also in the cases where the order is sent via e-mail, made in a telephone call or on a visit to the seller’s store.
 
 |G-42-009
-|The profile enables the buyer to instruct the seller to send a reference chosen  by the buyer in the Order Agreement transaction.
+|The profile enables the buyer to instruct the seller to send a reference chosen by the buyer in the Order Agreement transaction.
 
 |G-42-010
 |The buyer wants precise order to invoice matching.
