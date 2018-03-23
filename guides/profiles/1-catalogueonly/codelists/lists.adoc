@@ -1,0 +1,30 @@
+[[code-lists-1]]
+== Code lists
+
+*CEN BII2 subsets*
+
+ftp://ftp.cen.eu/public/CWAs/BII2/CWA16558/CWA16558-Annex-G-BII-CodeLists-V2_0_4.pdf
+
+*ISO 3166-1 alpha2:*
+
+http://www.iso.org/iso/home/standards/country_codes.htm
+
+*UN/ECE Rec 20:*
+
+http://www.unece.org/cefact/recommendations/rec20/rec20_rev4E_2006.xls
+
+*UNEDIFACT 8273*
+
+http://www.unece.org/trade/untdid/d08a/tred/tred8273.htm
+
+*ISO 4217*
+
+http://www.currency-iso.org/dam/downloads/dl_iso_table_a1.xml
+
+*UN/EDIFACT 6313*
+
+http://www.unece.org/fileadmin/DAM/trade/edifact/code/6313cl.htm
+
+*UNEDIFACT 4343*
+
+http://www.unece.org/fileadmin/DAM/trade/edifact/code/4343cl.htm

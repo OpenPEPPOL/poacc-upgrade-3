@@ -1,0 +1,30 @@
+[[customization-id]]
+= Customization ID
+
+The PEPPOL Customization ID identifies the specification of content and rules that apply to the transaction.
+
+This BIS has required some minor additions and changes to the CEN BII transaction.
+Following the CENBII methodology any extension must be communicated by adding an extension ID onto the Customization ID.
+The full syntax is: <transactionId>:(restrictive|extended|partly):<extensionId>[(restrictive|extended|partly):<extensionId>].
+
+Where:
+
+* Transaction ID: urn:www.cenbii.eu:transaction:biitrns019:ver2.0
+* Extension ID: urn:www.peppol.eu:bis:peppol1a:ver4.0
+
+*CustomizationID to use for cataglogue transaction:*
+
+urn:www.cenbii.eu:transaction:biitrns019:ver2.0:extended:urn:www.peppol.eu:bis:peppol1a:ver4.0
+
+*CustomizationID to use for cataglogue response transaction:*
+
+urn:www.cenbii.eu:transaction:biitrns058:ver2.0:extended:urn:www.peppol.eu:bis:peppol1a:ver4.0
+
+
+.Example of usage:
+[source, xml, indent=0]
+----
+include::../snippets/snippet-1-1.xml[tags=classification]
+----
+
+For implementers: Please note that CustomizationID element in the document instance MUST correspond to the Customization ID of the SMP Document Identifier.

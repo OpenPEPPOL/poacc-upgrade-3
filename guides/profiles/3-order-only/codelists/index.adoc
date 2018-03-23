@@ -5,7 +5,7 @@ The following chapters give an overview of the codes that is used in this PEPPOL
 
 :leveloffset: +1
 
-include::../{order}/codelists/elements.adoc[]
-include::../{order}/codelists/id_schemes.adoc[]
+include::../{transaction-path}/codelists/elements.adoc[]
+include::../{transaction-path}/codelists/id_schemes.adoc[]
 
 :leveloffset: -1

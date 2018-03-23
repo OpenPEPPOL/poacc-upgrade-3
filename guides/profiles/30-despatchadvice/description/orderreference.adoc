@@ -1,0 +1,30 @@
+[[order-reference]]
+= Order reference
+
+Used to provide a reference to the purchase order on which the Despatch Advice is based.
+There may be multiple Despatch Advices to cover one purchase order.
+Each Despatch Advice relates to one purchase order.
+The reference to Order Line-ID is required in the UBL syntax.
+To cater for scenarios where no order line reference exist a dummy value must be applied.
+The dummy value must consist of the characters **NA**.
+
+Example header level:
+
+[source, xml, indent=0]
+----
+include::../snippets/snippet-30-2.xml[tags=ref-order]
+----
+
+Example Line level:
+
+[source, xml, indent=0]
+----
+include::../snippets/snippet-30-2.xml[tags=ref-orderline]
+----
+
+Or
+
+[source, xml, indent=0]
+----
+include::../snippets/snippet-30-2.xml[tags=ref-orderlinena]
+----

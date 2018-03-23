@@ -1,0 +1,8 @@
+[[message-structure-and-information-content]]
+= Message structure and information content
+
+:leveloffset: +1
+
+include::messagestructure.adoc[]
+
+:leveloffset: -1

@@ -2,13 +2,13 @@
 
 :leveloffset: +1
 
-include::../{order}/rules/order.adoc[]
+include::../{transaction-path}/rules/order.adoc[]
 
 
 = Codelist rules
 
 :leveloffset: +1
 
-include::../{order}/rules/codelist.adoc[]
+include::../{transaction-path}/rules/codelist.adoc[]
 
 :leveloffset: -2
