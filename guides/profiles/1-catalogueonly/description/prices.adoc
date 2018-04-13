@@ -11,7 +11,7 @@ Used for comparing prices for different articles with various quantities.
 * Approximate price.
 The current price will be set on the order date.
 Commonly used for fruit, vegetables, fresh fish etc.
-+
+
 
 .Example:
 [source, xml, indent=0]
