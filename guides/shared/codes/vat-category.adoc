@@ -6,9 +6,11 @@ A subset of values from {UNCL5305} shall be used.
 [cols="1,4"]
 .Vat category codes
 |===
+h| Qualifier
+| UNCL5305 (schemeID)
 h| Document location
 | `cac:ClassifiedTaxCategory/cbc:ID` +
-`cac:TaxCategory/cbc:ID`
+`cac:TaxCategory/cbc:ID` (OrderAgreement only)
 h| Source codelist
 | Subset of {UNCL5305}
 |===

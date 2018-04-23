@@ -1,0 +1,3 @@
+= Assembling the document
+
+In the main folder of the BIS document, a file named `main.adoc` is used to set document title, description, attributes and to assemble the document using the include directive.

@@ -38,11 +38,15 @@ Table of the code lists used in the Order agreement transaction:
 //cbc:Quantity@unitCode
 |See link to codelist below.
 
+<<<<<<< Updated upstream
 |Item VAT category code
 |UNCL5305 SUBSET
 |//cac:TaxCategory/cbc:ID@schemeID
 //cac:ClassifiedTaxCategory/cbc:ID@schemeID
 |Subset values are given below
+=======
+
+>>>>>>> Stashed changes
 
 |Commodity code
 |See CENBII COMMODITY_SCHEME_ID
@@ -50,21 +54,15 @@ Table of the code lists used in the Order agreement transaction:
 |Note: The CENBII Codelist used for Commodity Scheme Identifier contains commonly used classification systems as listed below. It may be extended with other values.
 |====
 
+:leveloffset: +1
+
+include::../../../shared/codes/vat-category.adoc[]
+
+:leveloffset: -1
+
 === Links to code lists
 
-UNCL5305 SUBSET - CEN BII3 subsets
 
-Subset values are:
-[cols="1,3",options="header",]
-|====
-|Code|Value
-|AE|VAT Reverse Charge
-|E|Exempt from tax
-|S|Standard rate
-|Z|Zero rated goods
-|H|Higher Rate, can be used to identify a rate above the standard rate.
-|AA|Lower Rate, can be used to identify a rate below the standard rate.
-|====
 
 ISO 4217
 

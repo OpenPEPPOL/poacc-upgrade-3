@@ -13,7 +13,7 @@ include::elements/country.adoc[]
 
 include::elements/uom.adoc[]
 
-include::elements/vat-category.adoc[]
+include::../../../shared/codes/vat-category.adoc[]
 
 include::elements/item-classification.adoc[]
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
+
+    <Name>PEPPOL BIS Catalogue 3.0</Name>
+
+    <Documentation path="profiles/1-catalogueonly/"> Catalogue only BIS (Business Interoperability Specifications)</Documentation>
+    
+
+    <!-- Syntax -->
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-catalogue.xml</Path>
+        <Title>UBL Catalogue</Title>
+    </Resource>
+   
+
+</Project>

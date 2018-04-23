@@ -17,7 +17,7 @@ include::../{order}/codelists/elements/country.adoc[]
 
 include::../{order}/codelists/elements/uom.adoc[]
 
-include::../{order}/codelists/elements/vat-category.adoc[]
+include::../../../shared/codes/vat-category.adoc[]
 
 include::../{order-resp}/codelists/elements/status.adoc[]
 

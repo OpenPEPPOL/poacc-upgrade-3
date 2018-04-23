@@ -25,6 +25,4 @@ include::asciidoc/index.adoc[]
 
 include::structure/index.adoc[]
 
-
-
 :leveloffset: -1

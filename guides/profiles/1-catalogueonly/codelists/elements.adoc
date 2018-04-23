@@ -61,3 +61,9 @@ AP - Accepted
 RE - Rejected
 
 |====
+
+:leveloffset: +1
+
+include::../../../shared/codes/vat-category.adoc[]
+
+:leveloffset: -1
