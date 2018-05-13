@@ -1,4 +1,5 @@
 #!/bin/sh
 
-mv /target/guides /target/site
+mv /target/guides/* /target/site/
+rm -r /target/guides
 

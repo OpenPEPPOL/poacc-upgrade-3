@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
     <Term>ApplicationResponse</Term>
     <Namespace prefix="ubl"
         >urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2</Namespace>
@@ -11,13 +11,13 @@
         <Term>ubl:ApplicationResponse</Term>
         <Element cardinality="0..1">
             <Term>cbc:UBLVersionID</Term>
-            <Name> </Name>
-            <Description> </Description>
+            <Name></Name>
+            <Description></Description>
         </Element>
         <Element cardinality="0..1">
             <Term>cbc:CustomizationID</Term>
-            <Name> Customization identifier</Name>
-            <Description> Identifies the specification of content and rules that apply to the
+            <Name>Customization identifier</Name>
+            <Description>Identifies the specification of content and rules that apply to the
                 transaction.</Description>
             <Reference type="BUSINESS_TERM">tir58-006</Reference>
             <Value type="EXAMPLE"
@@ -25,178 +25,178 @@
         </Element>
         <Element cardinality="0..1">
             <Term>cbc:ProfileID</Term>
-            <Name> Profile identifier</Name>
-            <Description> Identifies the BII profile or business process context in which the
+            <Name>Profile identifier</Name>
+            <Description>Identifies the BII profile or business process context in which the
                 transaction appears.</Description>
             <Reference type="BUSINESS_TERM">tir58-005</Reference>
             <Value type="EXAMPLE">urn:www.cenbii.eu:profile:bii01:ver2.0</Value>
         </Element>
         <Element>
             <Term>cbc:ID</Term>
-            <Name> Response identifier</Name>
-            <Description> An transaction instance must contain an identifier. The identifier enables
+            <Name>Response identifier</Name>
+            <Description>An transaction instance must contain an identifier. The identifier enables
                 positive referencing the document instance for various purposes including
                 referencing between transactions that are part of the same process.</Description>
             <Reference type="BUSINESS_TERM">tir58-001</Reference>
         </Element>
         <Element>
             <Term>cbc:IssueDate</Term>
-            <Name> Response issue date</Name>
-            <Description> The date on which the transaction instance was issued.</Description>
+            <Name>Response issue date</Name>
+            <Description>The date on which the transaction instance was issued.</Description>
             <Reference type="BUSINESS_TERM">tir58-002</Reference>
         </Element>
         <Element cardinality="0..1">
             <Term>cbc:IssueTime</Term>
-            <Name> Response issue time</Name>
-            <Description> The time at which the transaction instance was issued.</Description>
+            <Name>Response issue time</Name>
+            <Description>The time at which the transaction instance was issued.</Description>
             <Reference type="BUSINESS_TERM">tir58-003</Reference>
         </Element>
-        <Element cardinality="0..unbounded">
+        <Element cardinality="0..n">
             <Term>cbc:Note</Term>
-            <Name> Response textual notes</Name>
-            <Description> Used to make any comments or instructions relevant to the response,
+            <Name>Response textual notes</Name>
+            <Description>Used to make any comments or instructions relevant to the response,
                 including the date that the reported decision becomes effective.</Description>
             <Reference type="BUSINESS_TERM">tir58-004</Reference>
         </Element>
         <Element>
             <Term>cac:SenderParty</Term>
-            <Name> </Name>
-            <Description> </Description>
+            <Name></Name>
+            <Description></Description>
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
-                <Name> Electronic address</Name>
-                <Description> A response may contain the party electronic address. The address can
+                <Name>Electronic address</Name>
+                <Description>A response may contain the party electronic address. The address can
                     be of any format and the format should be identified in the
                     message.</Description>
                 <Reference type="BUSINESS_TERM">tir58-009</Reference>
                 <Reference type="RULE">EUGEN-T58-R001</Reference>
-                <Attribute usage="optional">
+                <Attribute usage="Optional">
                     <Term>schemeID</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Name></Name>
+                    <Description></Description>
                 </Attribute>
             </Element>
-            <Element cardinality="0..unbounded">
+            <Element cardinality="0..n">
                 <Term>cac:PartyIdentification</Term>
-                <Name> </Name>
-                <Description> </Description>
+                <Name></Name>
+                <Description></Description>
                 <Element>
                     <Term>cbc:ID</Term>
-                    <Name> Party identifier</Name>
-                    <Description> It should be possible to specify the identifier or identifiers for
+                    <Name>Party identifier</Name>
+                    <Description>It should be possible to specify the identifier or identifiers for
                         the party.</Description>
                     <Reference type="BUSINESS_TERM">tir58-008</Reference>
                     <Reference type="RULE">EUGEN-T58-R002</Reference>
-                    <Attribute usage="optional">
+                    <Attribute usage="Optional">
                         <Term>schemeID</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                        <Name></Name>
+                        <Description></Description>
                     </Attribute>
                 </Element>
             </Element>
-            <Element cardinality="0..unbounded">
+            <Element cardinality="0..n">
                 <Term>cac:PartyName</Term>
-                <Name> </Name>
-                <Description> </Description>
+                <Name></Name>
+                <Description></Description>
                 <Element>
                     <Term>cbc:Name</Term>
-                    <Name> Party name</Name>
-                    <Description> The name of the party sending the response.</Description>
+                    <Name>Party name</Name>
+                    <Description>The name of the party sending the response.</Description>
                     <Reference type="BUSINESS_TERM">tir58-007</Reference>
                 </Element>
             </Element>
         </Element>
         <Element>
             <Term>cac:ReceiverParty</Term>
-            <Name> </Name>
-            <Description> </Description>
+            <Name></Name>
+            <Description></Description>
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
-                <Name> Electronic address</Name>
-                <Description> A response may contain the party electronic address. The address can
+                <Name>Electronic address</Name>
+                <Description>A response may contain the party electronic address. The address can
                     be of any format and the format should be identified in the
                     message.</Description>
                 <Reference type="BUSINESS_TERM">tir58-012</Reference>
                 <Reference type="RULE">EUGEN-T58-R001</Reference>
-                <Attribute usage="optional">
+                <Attribute usage="Optional">
                     <Term>schemeID</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Name></Name>
+                    <Description></Description>
                 </Attribute>
             </Element>
-            <Element cardinality="0..unbounded">
+            <Element cardinality="0..n">
                 <Term>cac:PartyIdentification</Term>
-                <Name> </Name>
-                <Description> </Description>
+                <Name></Name>
+                <Description></Description>
                 <Element>
                     <Term>cbc:ID</Term>
-                    <Name> Party identifier</Name>
-                    <Description> It should be possible to specify the identifier or identifiers for
+                    <Name>Party identifier</Name>
+                    <Description>It should be possible to specify the identifier or identifiers for
                         the party.</Description>
                     <Reference type="BUSINESS_TERM">tir58-011</Reference>
                     <Reference type="RULE"/>
-                    <Attribute usage="optional">
+                    <Attribute usage="Optional">
                         <Term>schemeID</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                        <Name></Name>
+                        <Description></Description>
                     </Attribute>
                 </Element>
             </Element>
-            <Element cardinality="0..unbounded">
+            <Element cardinality="0..n">
                 <Term>cac:PartyName</Term>
-                <Name> </Name>
-                <Description> </Description>
+                <Name></Name>
+                <Description></Description>
                 <Element>
                     <Term>cbc:Name</Term>
-                    <Name> Party name</Name>
-                    <Description> The name of the party receiving the response.</Description>
+                    <Name>Party name</Name>
+                    <Description>The name of the party receiving the response.</Description>
                     <Reference type="BUSINESS_TERM">tir58-010</Reference>
                 </Element>
             </Element>
         </Element>
-        <Element cardinality="0..unbounded">
+        <Element cardinality="0..n">
             <Term>cac:DocumentResponse</Term>
-            <Name> </Name>
-            <Description> </Description>
+            <Name></Name>
+            <Description></Description>
             <Element>
                 <Term>cac:Response</Term>
-                <Name> </Name>
-                <Description> </Description>
+                <Name></Name>
+                <Description></Description>
                 <Element cardinality="0..1">
                     <Term>cbc:ResponseCode</Term>
-                    <Name> Coded decision</Name>
-                    <Description> A code for the description of the response to the transaction
+                    <Name>Coded decision</Name>
+                    <Description>A code for the description of the response to the transaction
                         document.AP= Accepted, RE = Rejected, UN/Cefact 4343 Response type
                         code</Description>
                     <Reference type="BUSINESS_TERM">tir58-014</Reference>
                     <Reference type="RULE">EUGEN-T58-R003</Reference>
-                    <Attribute usage="optional">
+                    <Attribute usage="Optional">
                         <Term>listID</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                        <Name></Name>
+                        <Description></Description>
                     </Attribute>
                 </Element>
             </Element>
-            <Element cardinality="1..unbounded">
+            <Element cardinality="1..n">
                 <Term>cac:DocumentReference</Term>
-                <Name> </Name>
-                <Description> </Description>
+                <Name></Name>
+                <Description></Description>
                 <Element>
                     <Term>cbc:ID</Term>
-                    <Name> Document identifier</Name>
-                    <Description> Identifies the document being referred to.</Description>
+                    <Name>Document identifier</Name>
+                    <Description>Identifies the document being referred to.</Description>
                     <Reference type="BUSINESS_TERM">tir58-016</Reference>
                     <Reference type="RULE">BII2-T58-R010</Reference>
-                    <Attribute usage="optional">
+                    <Attribute usage="Optional">
                         <Term>schemeID</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                        <Name></Name>
+                        <Description></Description>
                     </Attribute>
                 </Element>
                 <Element cardinality="0..1">
                     <Term>cbc:VersionID</Term>
-                    <Name> Document version</Name>
-                    <Description> The version of the document that has been identified with the
+                    <Name>Document version</Name>
+                    <Description>The version of the document that has been identified with the
                         document identifier.</Description>
                     <Reference type="BUSINESS_TERM">tir58-017</Reference>
                 </Element>

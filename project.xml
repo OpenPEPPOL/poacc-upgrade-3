@@ -3,7 +3,7 @@
 
     <Name>PEPPOL BIS Catalogue 3.0</Name>
 
-    <Documentation path="profiles/1-catalogueonly/"> Catalogue only BIS (Business Interoperability Specifications)</Documentation>
+    <Documentation path="profiles/1-catalogueonly/">Catalogue only BIS (Business Interoperability Specifications)</Documentation>
     
 
     <!-- Syntax -->
@@ -12,6 +12,26 @@
         <Path>structure/syntax/ubl-catalogue.xml</Path>
         <Title>UBL Catalogue</Title>
     </Resource>
-   
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-catalogue-response.xml</Path>
+        <Title>UBL Catalogue Response</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-despatch-advice.xml</Path>
+        <Title>UBL Despatch Advice</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-order.xml</Path>
+        <Title>UBL Order</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-order-response.xml</Path>
+        <Title>UBL Order Response</Title>
+    </Resource>
+
 
 </Project>
