@@ -18,7 +18,7 @@
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
-        <Path>structure/syntax/ubl-order-respnse.xml</Path>
+        <Path>structure/syntax/ubl-order-response.xml</Path>
         <Title>UBL Order Response</Title>
     </Resource>
     <Resource>
