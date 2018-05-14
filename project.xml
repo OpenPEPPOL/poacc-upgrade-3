@@ -5,10 +5,10 @@
 
 
     <!-- BIS documents --> 
-    <Documentation path="profiles/3-order-only/"> Order only BIS (Business Interoperability Specifications)</Documentation>
-    <Documentation path="profiles/28-ordering/"> Ordering BIS (Business Interoperability Specifications)</Documentation>
-    <Documentation path="profiles/1-catalogueonly/"> Catalogue only BIS (Business Interoperability Specifications)</Documentation>
-    <Documentation path="profiles/30-despatchadvice/"> Despatch Advice BIS (Business Interoperability Specifications)</Documentation>
+    <Documentation path="profiles/3-order-only/">Order only BIS (Business Interoperability Specifications)</Documentation>
+    <Documentation path="profiles/28-ordering/">Ordering BIS (Business Interoperability Specifications)</Documentation>
+    <Documentation path="profiles/1-catalogueonly/">Catalogue only BIS (Business Interoperability Specifications)</Documentation>
+    <Documentation path="profiles/30-despatchadvice/">Despatch Advice BIS (Business Interoperability Specifications)</Documentation>
 
     <!-- Syntax -->
     <Resource>
