@@ -22,11 +22,15 @@ If the Quantity increment is 6 the article must be ordered in a quantity of 6, 1
 E.g. number of bottles on a Pallet.
 |====
 
-image:images/image6.png[image,width=55,height=117]image:images/image8.png[image,width=121,height=78]image:images/image7.png[image,width=146,height=127]
 
 [cols=",,,",options="header",]
 |====
-|* * |*1 bottle* |*Case of 6 bottles* |*Pallet of 18 cases*
+|* * |*1 bottle* +
+image:images/image6.png[image,width=55,height=117]
+|*Case of 6 bottles* +
+image:images/image8.png[image,width=121,height=78]
+|*Pallet of 18 cases* +
+image:images/image7.png[image,width=146,height=127]
 |*Line identifier* |4 |5 |6
 |*Supplier Item identifier* |1111 |111 |11
 |*Item Name* |Shampoo 250 ml |6x250 ml Shampoo |Shampoo

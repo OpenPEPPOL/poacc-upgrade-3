@@ -1,0 +1,19 @@
+[[allowance]]
+= Allowances and Charges
+
+_Information on allowance and/or charges applies to the whole order agreement and is included in the calculation of the order agreement total amount._
+
+The element `cac:AllowanceCharge` with sub element `cbc:ChargeIndicator` indicates whether the instance is a charge (true) or an allowance (false).
+
+* Several allowances and charges may be supplied
+* Specification of VAT for allowances and charges, `cac:TaxCategory` with sub elements, shall be supplied. See <<vat-allowance>> for further details.
+* The sum of all allowances and charges on the header level shall be specified in `cbc:AllowanceTotalAmount` and `cbc:ChargeTotalAmount` respectively. See <<totals>> for further details.
+
+.UBL Example of an allowance
+[source, xml, indent=0]
+----
+include::../snippets/snippet-oa.xml[tags=allowance]
+----
+<1> Value false means this is an allowance
+<2> Allowance reason in free text
+<3> Allowance amount

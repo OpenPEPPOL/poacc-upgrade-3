@@ -33,6 +33,8 @@ include::process/index.adoc[]
 
 include::description/index.adoc[]
 
+include::calculation/index.adoc[]
+
 include::profile/index.adoc[]
 
 include::transport/index.adoc[]

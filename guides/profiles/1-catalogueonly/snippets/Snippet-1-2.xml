@@ -115,13 +115,15 @@
             <cac:CommodityClassification>
                 <cbc:ItemClassificationCode listID="UNSPSC">43211508</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
+            <!-- tag::vat-line[] -->
             <cac:ClassifiedTaxCategory>
-                <cbc:ID schemeID="UNCL5305 SUBSET">S</cbc:ID>
-                <cbc:Percent>18</cbc:Percent>
+                <cbc:ID schemeID="UNCL5103">S</cbc:ID> <!--1-->
+                <cbc:Percent>18</cbc:Percent><!--2-->
                 <cac:TaxScheme>
-                    <cbc:ID schemeID="UNCL5103">VAT</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID><!-- 3-->
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
+            <!-- end::vat-line[] -->
             <cac:AdditionalItemProperty>
                 <cbc:Name>ServiceIndicator</cbc:Name>
                 <cbc:Value>false</cbc:Value>

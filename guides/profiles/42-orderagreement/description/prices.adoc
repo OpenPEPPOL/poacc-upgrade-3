@@ -8,28 +8,8 @@ Prices includes allowances and/or charges but exclude VAT amounts
 
 Example of price information in an Order Agreement message:
 
-      …
-
 .Example
 [source, xml, indent=0]
 ----
 include::../snippets/OA full.xml[tags=price]
-----
-
-= Allowances and charges
-
-This example shows a charge related to packing costs:
-
-.Example
-[source, xml, indent=0]
-----
-include::../snippets/OA full.xml[tags=allowance]
-----
-
-This example shows an allowance related to a discount on the order:
-
-.Example
-[source, xml, indent=0]
-----
-include::../snippets/OA full.xml[tags=allowance2]
 ----

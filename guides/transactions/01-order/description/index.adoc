@@ -21,4 +21,6 @@ include::totals.adoc[]
 
 include::tax-total.adoc[]
 
+include::../../../shared/files/vat-cat-line.adoc[]
+
 :leveloffset: -1

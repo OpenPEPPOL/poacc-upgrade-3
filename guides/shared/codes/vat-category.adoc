@@ -1,4 +1,4 @@
-
+[[vat-codes]]
 = VAT category codes
 
 A subset of values from {UNCL5305} shall be used.

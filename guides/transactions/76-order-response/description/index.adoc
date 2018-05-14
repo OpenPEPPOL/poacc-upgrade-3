@@ -26,4 +26,6 @@ include::order-ref.adoc[]
 
 include::change.adoc[]
 
+include::../../../shared/files/vat-cat-line.adoc[]
+
 :leveloffset: -1

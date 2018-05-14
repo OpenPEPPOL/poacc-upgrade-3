@@ -1,4 +1,4 @@
-== Prerequisites
+= Prerequisites
 
 The following are prerequisites for this BIS:
 

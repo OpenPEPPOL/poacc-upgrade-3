@@ -22,13 +22,5 @@ include::../snippets/OA full.xml[tags=LineItem]
 .Example
 [source, xml, indent=0]
 ----
-include::../snippets/OA full.xml[tags=Price12]
+include::../snippets/OA full.xml[tags=price]
 ----
-
-
-    <cac:Price> +
-<cbc:PriceAmount currencyID="EUR">50</cbc:PriceAmount>
-
-<cbc:BaseQuantity unitCode="C62">12</cbc:BaseQuantity>
-
-    </cac:Price>

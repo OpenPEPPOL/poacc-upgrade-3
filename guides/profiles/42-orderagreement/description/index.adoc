@@ -21,8 +21,8 @@ include::quantity.adoc[]
 
 include::prices.adoc[]
 
-include::totals.adoc[]
+include::allowance.adoc[]
 
-include::taxes.adoc[]
+include::../../../shared/files/vat-info.adoc[]
 
 :leveloffset: -1
