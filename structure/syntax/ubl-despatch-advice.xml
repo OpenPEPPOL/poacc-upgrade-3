@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
     <Term>DespatchAdvice</Term>
     <Namespace prefix="ubl"
         >urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2</Namespace>
@@ -10,158 +10,130 @@
     <Document>
         <Term>ubl:DespatchAdvice</Term>
         <Element>
-            <Term>cbc:UBLVersionID</Term>
-            <Name> </Name>
-            <Description> </Description>
+            <Term>cbc:UBLVersionID</Term>            
         </Element>
         <Element>
             <Term>cbc:CustomizationID</Term>
-            <Name> Customization identifier</Name>
-            <Description> Identifies the specification of content and rules that apply to the
+            <Name>Customization identifier</Name>
+            <Description>Identifies the specification of content and rules that apply to the
                 transaction.</Description>
             <Reference type="BUSINESS_TERM">tir16-002</Reference>
         </Element>
         <Element>
             <Term>cbc:ProfileID</Term>
-            <Name> Profile identifier</Name>
-            <Description> Identifies the BII profile or business process context in which the
+            <Name>Profile identifier</Name>
+            <Description>Identifies the BII profile or business process context in which the
                 transaction appears.</Description>
             <Reference type="BUSINESS_TERM">tir16-001</Reference>
         </Element>
         <Element>
             <Term>cbc:ID</Term>
-            <Name> Document identifier</Name>
-            <Description> An transaction instance must contain an identifier. The identifier enables
+            <Name>Document identifier</Name>
+            <Description>An transaction instance must contain an identifier. The identifier enables
                 positive referencing the document instance for various purposes including
                 referencing between transactions that are part of the same process.</Description>
             <Reference type="BUSINESS_TERM">tir16-003</Reference>
         </Element>
         <Element>
             <Term>cbc:IssueDate</Term>
-            <Name> Dispatch advice issue date</Name>
-            <Description> The date when the despatch advice is issued.</Description>
+            <Name>Dispatch advice issue date</Name>
+            <Description>The date when the despatch advice is issued.</Description>
             <Reference type="BUSINESS_TERM">tir16-004</Reference>
         </Element>
         <Element cardinality="0..1">
             <Term>cbc:IssueTime</Term>
-            <Name> Dispatch advice issue time</Name>
-            <Description> The time when the despatch advice is issued.</Description>
+            <Name>Dispatch advice issue time</Name>
+            <Description>The time when the despatch advice is issued.</Description>
             <Reference type="BUSINESS_TERM">tir16-005</Reference>
         </Element>
         <Element cardinality="0..1">
             <Term>cbc:Note</Term>
-            <Name> Dispatch note</Name>
-            <Description> A textual note for the dispatch as whole.</Description>
+            <Name>Dispatch note</Name>
+            <Description>A textual note for the dispatch as whole.</Description>
             <Reference type="BUSINESS_TERM">tir16-088</Reference>
         </Element>
         <Element cardinality="0..1">
-            <Term>cac:OrderReference</Term>
-            <Name> </Name>
-            <Description> </Description>
+            <Term>cac:OrderReference</Term>            
             <Element>
                 <Term>cbc:ID</Term>
-                <Name> Order reference</Name>
-                <Description> Used to provide a reference to the order on which the despatch is
+                <Name>Order reference</Name>
+                <Description>Used to provide a reference to the order on which the despatch is
                     based.</Description>
                 <Reference type="BUSINESS_TERM">tir16-006</Reference>
             </Element>
         </Element>
         <Element>
-            <Term>cac:DespatchSupplierParty</Term>
-            <Name> </Name>
-            <Description> </Description>
+            <Term>cac:DespatchSupplierParty</Term>            
             <Element>
                 <Term>cac:Party</Term>
-                <Name> </Name>
-                <Description> </Description>
                 <Element cardinality="0..1">
                     <Term>cbc:EndpointID</Term>
-                    <Name> Electronic address</Name>
-                    <Description> A dispatch adivce may contain the dispatchin party electronic
+                    <Name>Electronic address</Name>
+                    <Description>A dispatch adivce may contain the dispatchin party electronic
                         address. The address can be of any format and the format should be
                         identified in the message.</Description>
                     <Reference type="BUSINESS_TERM">tir16-071</Reference>
                     <Attribute>
-                        <Term>schemeID</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                        <Term>schemeID</Term>                        
                     </Attribute>
-                    <Attribute usage="optional">
-                        <Term>schemeAgencyID</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                    <Attribute usage="Optional">
+                        <Term>schemeAgencyID</Term>                        
                     </Attribute>
-                    <Attribute usage="optional">
-                        <Term>schemeAgencyName</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                    <Attribute usage="Optional">
+                        <Term>schemeAgencyName</Term>                        
                     </Attribute>
                 </Element>
                 <Element cardinality="0..1">
-                    <Term>cac:PartyIdentification</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Term>cac:PartyIdentification</Term>                    
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name> Despatching party identifier</Name>
-                        <Description> </Description>
-                        <Reference type="BUSINESS_TERM">op-tir16-001</Reference>
+                        <Name>Despatching party identifier</Name>                        <Reference type="BUSINESS_TERM">op-tir16-001</Reference>
                         <Reference type="RULE">OP-T16-R006</Reference>
                         <Attribute>
-                            <Term>schemeID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                            <Term>schemeID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyName</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyName</Term>                            
                         </Attribute>
                     </Element>
                 </Element>
                 <Element cardinality="0..1">
-                    <Term>cac:PartyName</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Term>cac:PartyName</Term>                    
                     <Element>
                         <Term>cbc:Name</Term>
-                        <Name> Dispatching party name</Name>
-                        <Description> The name of the dispatching party</Description>
+                        <Name>Dispatching party name</Name>
+                        <Description>The name of the dispatching party</Description>
                         <Reference type="BUSINESS_TERM">tir16-007</Reference>
                     </Element>
                 </Element>
                 <Element cardinality="0..1">
                     <Term>cac:Contact</Term>
-                    <Name> </Name>
-                    <Description> </Description>
                     <Element cardinality="0..1">
                         <Term>cbc:Name</Term>
-                        <Name> Contact person name</Name>
-                        <Description> The name of the contact person.</Description>
+                        <Name>Contact person name</Name>
+                        <Description>The name of the contact person.</Description>
                         <Reference type="BUSINESS_TERM">tir16-008</Reference>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:Telephone</Term>
-                        <Name> Contact telephone number</Name>
-                        <Description> A phone number for the contact person. If the person has a
+                        <Name>Contact telephone number</Name>
+                        <Description>A phone number for the contact person. If the person has a
                             direct number, this is that number.</Description>
                         <Reference type="BUSINESS_TERM">tir16-012</Reference>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:Telefax</Term>
-                        <Name> Contact fax number</Name>
-                        <Description> A fax number for the contact persons.</Description>
+                        <Name>Contact fax number</Name>
+                        <Description>A fax number for the contact persons.</Description>
                         <Reference type="BUSINESS_TERM">tir16-010</Reference>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:ElectronicMail</Term>
-                        <Name> Contact email address</Name>
-                        <Description> The e-mail address for the contact person. If the person has a
+                        <Name>Contact email address</Name>
+                        <Description>The e-mail address for the contact person. If the person has a
                             direct e-mail this is that email.</Description>
                         <Reference type="BUSINESS_TERM">tir16-013</Reference>
                     </Element>
@@ -170,150 +142,118 @@
         </Element>
         <Element>
             <Term>cac:DeliveryCustomerParty</Term>
-            <Name> </Name>
-            <Description> </Description>
             <Element>
                 <Term>cac:Party</Term>
-                <Name> </Name>
-                <Description> </Description>
                 <Element cardinality="0..1">
                     <Term>cbc:EndpointID</Term>
-                    <Name> Electronic address</Name>
-                    <Description> A dispatch adivce may contain the dispatchin party electronic
+                    <Name>Electronic address</Name>
+                    <Description>A dispatch adivce may contain the dispatchin party electronic
                         address. The address can be of any format and the format should be
                         identified in the message.</Description>
                     <Reference type="BUSINESS_TERM">tir16-016</Reference>
                     <Attribute>
-                        <Term>schemeID</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                        <Term>schemeID</Term>                        
                     </Attribute>
-                    <Attribute usage="optional">
-                        <Term>schemeAgencyID</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                    <Attribute usage="Optional">
+                        <Term>schemeAgencyID</Term>                        
                     </Attribute>
-                    <Attribute usage="optional">
-                        <Term>schemeAgencyName</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                    <Attribute usage="Optional">
+                        <Term>schemeAgencyName</Term>                        
                     </Attribute>
                 </Element>
                 <Element cardinality="0..1">
-                    <Term>cac:PartyIdentification</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Term>cac:PartyIdentification</Term>                    
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name> Consignee party identifier</Name>
-                        <Description> The receiving party identifier.</Description>
+                        <Name>Consignee party identifier</Name>
+                        <Description>The receiving party identifier.</Description>
                         <Reference type="BUSINESS_TERM">tir16-015</Reference>
                         <Attribute>
-                            <Term>schemeID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                            <Term>schemeID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyName</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyName</Term>                            
                         </Attribute>
                     </Element>
                 </Element>
                 <Element cardinality="0..1">
-                    <Term>cac:PartyName</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Term>cac:PartyName</Term>                    
                     <Element>
                         <Term>cbc:Name</Term>
-                        <Name> Consignee party name</Name>
-                        <Description> The name of the receiving party.</Description>
+                        <Name>Consignee party name</Name>
+                        <Description>The name of the receiving party.</Description>
                         <Reference type="BUSINESS_TERM">tir16-014</Reference>
                     </Element>
                 </Element>
                 <Element cardinality="0..1">
-                    <Term>cac:PostalAddress</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Term>cac:PostalAddress</Term>                    
                     <Element cardinality="0..1">
                         <Term>cbc:ID</Term>
-                        <Name> Consignee party address identifier</Name>
-                        <Description> An identifier for a specific address within a scheme of
+                        <Name>Consignee party address identifier</Name>
+                        <Description>An identifier for a specific address within a scheme of
                             registered addresses. Identifying the addess to where the items have
                             been dispatched.</Description>
                         <Reference type="BUSINESS_TERM">tir16-017</Reference>
-                        <Attribute usage="optional">
-                            <Term>schemeID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyName</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyName</Term>                            
                         </Attribute>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:StreetName</Term>
-                        <Name> Address line 1</Name>
-                        <Description> The main address line in a postal address usually the street
+                        <Name>Address line 1</Name>
+                        <Description>The main address line in a postal address usually the street
                             name and number.</Description>
                         <Reference type="BUSINESS_TERM">tir16-018</Reference>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:AdditionalStreetName</Term>
-                        <Name> Address line 2</Name>
-                        <Description> An additional address line in a postal address that can be
+                        <Name>Address line 2</Name>
+                        <Description>An additional address line in a postal address that can be
                             used to give further details supplementing the main line. Common use are
                             secondary house number in a complex or in a building.</Description>
                         <Reference type="BUSINESS_TERM">tir16-019</Reference>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:CityName</Term>
-                        <Name> City</Name>
-                        <Description> The common name of the city where the postal address is. The
+                        <Name>City</Name>
+                        <Description>The common name of the city where the postal address is. The
                             name is written in full rather than as a code.</Description>
                         <Reference type="BUSINESS_TERM">tir16-020</Reference>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:PostalZone</Term>
-                        <Name> Post code</Name>
-                        <Description> The identifier for an addressable group of properties
+                        <Name>Post code</Name>
+                        <Description>The identifier for an addressable group of properties
                             according to the relevant national postal service, such as a ZIP code or
                             Post Code.</Description>
                         <Reference type="BUSINESS_TERM">tir16-021</Reference>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:CountrySubentity</Term>
-                        <Name> Country subdivision</Name>
-                        <Description> For specifying a region, county, state, province etc. within a
+                        <Name>Country subdivision</Name>
+                        <Description>For specifying a region, county, state, province etc. within a
                             country by using text.</Description>
                         <Reference type="BUSINESS_TERM">tir16-022</Reference>
                     </Element>
                     <Element cardinality="0..1">
-                        <Term>cac:Country</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                        <Term>cac:Country</Term>                        
                         <Element>
                             <Term>cbc:IdentificationCode</Term>
-                            <Name> Country code</Name>
-                            <Description> The country where the address is. The country should
+                            <Name>Country code</Name>
+                            <Description>The country where the address is. The country should
                                 always be given by using ISO code 3166 alpha 2</Description>
                             <Reference type="BUSINESS_TERM">tir16-023</Reference>
-                            <Attribute usage="optional">
-                                <Term>listID</Term>
-                                <Name> </Name>
-                                <Description> </Description>
+                            <Attribute usage="Optional">
+                                <Term>listID</Term>                                
                             </Attribute>
                         </Element>
                     </Element>
@@ -321,156 +261,124 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>cac:DeliveryContact</Term>
-                <Name> </Name>
-                <Description> </Description>
                 <Element cardinality="0..1">
                     <Term>cbc:Name</Term>
-                    <Name> Contact person name</Name>
-                    <Description> The name of the contact person.</Description>
+                    <Name>Contact person name</Name>
+                    <Description>The name of the contact person.</Description>
                     <Reference type="BUSINESS_TERM">tir16-024</Reference>
                 </Element>
                 <Element cardinality="0..1">
                     <Term>cbc:Telephone</Term>
-                    <Name> Contact telephone number</Name>
-                    <Description> A phone number for the contact person. If the person has a direct
+                    <Name>Contact telephone number</Name>
+                    <Description>A phone number for the contact person. If the person has a direct
                         number, this is that number.</Description>
                     <Reference type="BUSINESS_TERM">tir16-027</Reference>
                 </Element>
                 <Element cardinality="0..1">
                     <Term>cbc:Telefax</Term>
-                    <Name> Contact fax number</Name>
-                    <Description> A fax number for the contact persons.</Description>
+                    <Name>Contact fax number</Name>
+                    <Description>A fax number for the contact persons.</Description>
                     <Reference type="BUSINESS_TERM">tir16-026</Reference>
                 </Element>
                 <Element cardinality="0..1">
                     <Term>cbc:ElectronicMail</Term>
-                    <Name> Contact email address</Name>
-                    <Description> The e-mail address for the contact person. If the person has a
+                    <Name>Contact email address</Name>
+                    <Description>The e-mail address for the contact person. If the person has a
                         direct e-mail this is that email.</Description>
                     <Reference type="BUSINESS_TERM">tir16-028</Reference>
                 </Element>
             </Element>
         </Element>
         <Element cardinality="0..1">
-            <Term>cac:BuyerCustomerParty</Term>
-            <Name> </Name>
-            <Description> </Description>
+            <Term>cac:BuyerCustomerParty</Term>            
             <Element>
                 <Term>cac:Party</Term>
-                <Name> </Name>
-                <Description> </Description>
                 <Element cardinality="0..1">
-                    <Term>cac:PartyIdentification</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Term>cac:PartyIdentification</Term>                    
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name> Buying party identifier</Name>
-                        <Description> The buying party identifier</Description>
+                        <Name>Buying party identifier</Name>
+                        <Description>The buying party identifier</Description>
                         <Reference type="BUSINESS_TERM">tir16-030</Reference>
                         <Attribute>
-                            <Term>schemeID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                            <Term>schemeID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyName</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyName</Term>                            
                         </Attribute>
                     </Element>
                 </Element>
                 <Element cardinality="0..1">
-                    <Term>cac:PartyName</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Term>cac:PartyName</Term>                    
                     <Element>
                         <Term>cbc:Name</Term>
-                        <Name> Buying party name</Name>
-                        <Description> The name of the buying party</Description>
+                        <Name>Buying party name</Name>
+                        <Description>The name of the buying party</Description>
                         <Reference type="BUSINESS_TERM">tir16-029</Reference>
                     </Element>
                 </Element>
             </Element>
         </Element>
         <Element cardinality="0..1">
-            <Term>cac:SellerSupplierParty</Term>
-            <Name> </Name>
-            <Description> </Description>
+            <Term>cac:SellerSupplierParty</Term>            
             <Element>
                 <Term>cac:Party</Term>
-                <Name> </Name>
-                <Description> </Description>
                 <Element cardinality="0..1">
-                    <Term>cac:PartyIdentification</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Term>cac:PartyIdentification</Term>                    
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name> Selling party identifier</Name>
-                        <Description> An identifier for the seller party.</Description>
+                        <Name>Selling party identifier</Name>
+                        <Description>An identifier for the seller party.</Description>
                         <Reference type="BUSINESS_TERM">tir16-066</Reference>
                         <Attribute>
-                            <Term>schemeID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                            <Term>schemeID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyName</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyName</Term>                            
                         </Attribute>
                     </Element>
                 </Element>
                 <Element cardinality="0..1">
-                    <Term>cac:PartyName</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Term>cac:PartyName</Term>                    
                     <Element>
                         <Term>cbc:Name</Term>
-                        <Name> Selling party name</Name>
-                        <Description> The seller party name.</Description>
+                        <Name>Selling party name</Name>
+                        <Description>The seller party name.</Description>
                         <Reference type="BUSINESS_TERM">tir16-065</Reference>
                     </Element>
                 </Element>
                 <Element cardinality="0..1">
-                    <Term>cac:Contact</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Term>cac:Contact</Term>                    
                     <Element cardinality="0..1">
                         <Term>cbc:Name</Term>
-                        <Name> Contact person name</Name>
-                        <Description> The name of the contact person.Provides means to specify how
+                        <Name>Contact person name</Name>
+                        <Description>The name of the contact person.Provides means to specify how
                             delivery of the ordered items should be done.</Description>
                         <Reference type="BUSINESS_TERM">tir16-067</Reference>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:Telephone</Term>
-                        <Name> Contact telephone number</Name>
-                        <Description> A phone number for the contact person. If the person has a
+                        <Name>Contact telephone number</Name>
+                        <Description>A phone number for the contact person. If the person has a
                             direct number, this is that number.</Description>
                         <Reference type="BUSINESS_TERM">tir16-069</Reference>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:Telefax</Term>
-                        <Name> Contact fax number</Name>
-                        <Description> A fax number for the contact persons.</Description>
+                        <Name>Contact fax number</Name>
+                        <Description>A fax number for the contact persons.</Description>
                         <Reference type="BUSINESS_TERM">tir16-068</Reference>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:ElectronicMail</Term>
-                        <Name> Contact email address</Name>
-                        <Description> The e-mail address for the contact person. If the person has a
+                        <Name>Contact email address</Name>
+                        <Description>The e-mail address for the contact person. If the person has a
                             direct e-mail this is that email.</Description>
                         <Reference type="BUSINESS_TERM">tir16-070</Reference>
                     </Element>
@@ -478,180 +386,130 @@
             </Element>
         </Element>
         <Element cardinality="0..1">
-            <Term>cac:OriginatorCustomerParty</Term>
-            <Name> </Name>
-            <Description> </Description>
+            <Term>cac:OriginatorCustomerParty</Term>            
             <Element>
                 <Term>cac:Party</Term>
-                <Name> </Name>
-                <Description> </Description>
                 <Element cardinality="0..1">
-                    <Term>cac:PartyIdentification</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Term>cac:PartyIdentification</Term>                    
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name> Originating party identifier</Name>
-                        <Description> The originator party identifier.</Description>
+                        <Name>Originating party identifier</Name>
+                        <Description>The originator party identifier.</Description>
                         <Reference type="BUSINESS_TERM">tir16-032</Reference>
-                        <Attribute usage="optional">
-                            <Term>schemeID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyName</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyName</Term>                            
                         </Attribute>
                     </Element>
                 </Element>
                 <Element cardinality="0..1">
-                    <Term>cac:PartyName</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Term>cac:PartyName</Term>                    
                     <Element>
                         <Term>cbc:Name</Term>
-                        <Name> Originating party name</Name>
-                        <Description> The originator party name.</Description>
+                        <Name>Originating party name</Name>
+                        <Description>The originator party name.</Description>
                         <Reference type="BUSINESS_TERM">tir16-031</Reference>
                     </Element>
                 </Element>
             </Element>
         </Element>
         <Element cardinality="0..1">
-            <Term>cac:Shipment</Term>
-            <Name> </Name>
-            <Description> </Description>
+            <Term>cac:Shipment</Term>            
             <Element>
                 <Term>cbc:ID</Term>
-                <Name> Shipment identifier</Name>
-                <Description> Identifies a shipment.</Description>
+                <Name>Shipment identifier</Name>
+                <Description>Identifies a shipment.</Description>
                 <Reference type="BUSINESS_TERM">tir16-038</Reference>
-                <Attribute usage="optional">
-                    <Term>schemeID</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                <Attribute usage="Optional">
+                    <Term>schemeID</Term>                    
                 </Attribute>
-                <Attribute usage="optional">
-                    <Term>schemeAgencyID</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                <Attribute usage="Optional">
+                    <Term>schemeAgencyID</Term>                    
                 </Attribute>
-                <Attribute usage="optional">
-                    <Term>schemeAgencyName</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                <Attribute usage="Optional">
+                    <Term>schemeAgencyName</Term>                    
                 </Attribute>
             </Element>
-            <Element cardinality="0..unbounded">
+            <Element cardinality="0..n">
                 <Term>cbc:Information</Term>
-                <Name> Shipment description</Name>
-                <Description> Free-form text applying to a shipment. This element may contain notes
+                <Name>Shipment description</Name>
+                <Description>Free-form text applying to a shipment. This element may contain notes
                     or any other similar information that is not contained explicitly in another
                     structure.</Description>
                 <Reference type="BUSINESS_TERM">tir16-039</Reference>
             </Element>
             <Element cardinality="0..1">
                 <Term>cbc:GrossWeightMeasure</Term>
-                <Name> Shipment gross weight</Name>
-                <Description> The total weight of the shipment including packaging, as dispatched
+                <Name>Shipment gross weight</Name>
+                <Description>The total weight of the shipment including packaging, as dispatched
                     from the dispatching party.</Description>
                 <Reference type="BUSINESS_TERM">tir16-074</Reference>
                 <Attribute>
-                    <Term>unitCode</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Term>unitCode</Term>                    
                 </Attribute>
             </Element>
             <Element cardinality="0..1">
                 <Term>cbc:GrossVolumeMeasure</Term>
-                <Name> Shipment gross volume</Name>
-                <Description> The total volume of the shipment including packaging, as dispatched
+                <Name>Shipment gross volume</Name>
+                <Description>The total volume of the shipment including packaging, as dispatched
                     from the dispatching party.</Description>
                 <Reference type="BUSINESS_TERM">tir16-075</Reference>
                 <Attribute>
-                    <Term>unitCode</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Term>unitCode</Term>                    
                 </Attribute>
             </Element>
             <Element cardinality="0..1">
                 <Term>cbc:TotalTransportHandlingUnitQuantity</Term>
-                <Name> Total number of transport handling units</Name>
-                <Description> </Description>
-                <Reference type="BUSINESS_TERM">op-tir16-002</Reference>
+                <Name>Total number of transport handling units</Name>                <Reference type="BUSINESS_TERM">op-tir16-002</Reference>
             </Element>
             <Element cardinality="0..1">
                 <Term>cac:Consignment</Term>
-                <Name> </Name>
-                <Description> </Description>
                 <Element>
                     <Term>cbc:ID</Term>
-                    <Name> Consignment identifier</Name>
-                    <Description> An association to Consignment covering the shipment. Unique number
+                    <Name>Consignment identifier</Name>
+                    <Description>An association to Consignment covering the shipment. Unique number
                         assigned to goods, both for import and export.</Description>
                     <Reference type="BUSINESS_TERM">tir16-040</Reference>
-                    <Attribute usage="optional">
-                        <Term>schemeID</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                    <Attribute usage="Optional">
+                        <Term>schemeID</Term>                        
                     </Attribute>
-                    <Attribute usage="optional">
-                        <Term>schemeAgencyID</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                    <Attribute usage="Optional">
+                        <Term>schemeAgencyID</Term>                        
                     </Attribute>
-                    <Attribute usage="optional">
-                        <Term>schemeAgencyName</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                    <Attribute usage="Optional">
+                        <Term>schemeAgencyName</Term>                        
                     </Attribute>
                 </Element>
-                <Element cardinality="0..unbounded">
-                    <Term>cbc:Information</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                <Element cardinality="0..n">
+                    <Term>cbc:Information</Term>                    
                 </Element>
                 <Element cardinality="0..1">
-                    <Term>cac:CarrierParty</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Term>cac:CarrierParty</Term>                    
                     <Element cardinality="0..1">
-                        <Term>cac:PartyName</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                        <Term>cac:PartyName</Term>                        
                         <Element>
                             <Term>cbc:Name</Term>
-                            <Name> Carrier name</Name>
-                            <Description> The name of the carrier that handles the delivery of the
+                            <Name>Carrier name</Name>
+                            <Description>The name of the carrier that handles the delivery of the
                                 dispatched shipment.</Description>
                             <Reference type="BUSINESS_TERM">tir16-076</Reference>
                         </Element>
                     </Element>
                     <Element cardinality="0..1">
-                        <Term>cac:Person</Term>
-                        <Name> </Name>
-                        <Description> </Description>
-                        <Element cardinality="1..unbounded">
-                            <Term>cac:IdentityDocumentReference</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Term>cac:Person</Term>                        
+                        <Element cardinality="1..n">
+                            <Term>cac:IdentityDocumentReference</Term>                            
                             <Element>
-                                <Term>cbc:ID</Term>
-                                <Name> </Name>
-                                <Description> </Description>
+                                <Term>cbc:ID</Term>                                
                             </Element>
                             <Element cardinality="0..1">
                                 <Term>cbc:DocumentType</Term>
-                                <Name> Driver identification document type</Name>
-                                <Description> </Description>
-                                <Reference type="BUSINESS_TERM">op-tir16-009</Reference>
+                                <Name>Driver identification document type</Name>                                <Reference type="BUSINESS_TERM">op-tir16-009</Reference>
                             </Element>
                         </Element>
                     </Element>
@@ -659,115 +517,89 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>cac:Delivery</Term>
-                <Name> </Name>
-                <Description> </Description>
                 <Element cardinality="0..1">
                     <Term>cbc:TrackingID</Term>
-                    <Name> Delivery tracking identifier</Name>
-                    <Description> Used to provide a tracking id for delvivery e.g. UPS or
+                    <Name>Delivery tracking identifier</Name>
+                    <Description>Used to provide a tracking id for delvivery e.g. UPS or
                         postal.</Description>
                     <Reference type="BUSINESS_TERM">tir16-041</Reference>
                 </Element>
                 <Element cardinality="0..1">
-                    <Term>cac:EstimatedDeliveryPeriod</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Term>cac:EstimatedDeliveryPeriod</Term>                    
                     <Element cardinality="0..1">
                         <Term>cbc:StartDate</Term>
-                        <Name> Period start date</Name>
-                        <Description> The start date of the period</Description>
+                        <Name>Period start date</Name>
+                        <Description>The start date of the period</Description>
                         <Reference type="BUSINESS_TERM">tir16-042</Reference>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:StartTime</Term>
-                        <Name> Period start time</Name>
-                        <Description> The start time of the period.</Description>
+                        <Name>Period start time</Name>
+                        <Description>The start time of the period.</Description>
                         <Reference type="BUSINESS_TERM">tir16-043</Reference>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:EndDate</Term>
-                        <Name> Period end date</Name>
-                        <Description> The end date of the period.</Description>
+                        <Name>Period end date</Name>
+                        <Description>The end date of the period.</Description>
                         <Reference type="BUSINESS_TERM">tir16-044</Reference>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:EndTime</Term>
-                        <Name> Period end time</Name>
-                        <Description> The end time of the period.</Description>
+                        <Name>Period end time</Name>
+                        <Description>The end time of the period.</Description>
                         <Reference type="BUSINESS_TERM">tir16-045</Reference>
                     </Element>
                 </Element>
                 <Element cardinality="0..1">
-                    <Term>cac:Despatch</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Term>cac:Despatch</Term>                    
                     <Element cardinality="0..1">
                         <Term>cbc:ActualDespatchDate</Term>
-                        <Name> Shipment dispatch date</Name>
-                        <Description> The actual or expected date when the shipment was dispatched
+                        <Name>Shipment dispatch date</Name>
+                        <Description>The actual or expected date when the shipment was dispatched
                             from the dispatching party.</Description>
                         <Reference type="BUSINESS_TERM">tir16-072</Reference>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:ActualDespatchTime</Term>
-                        <Name> Shipment dispatch time</Name>
-                        <Description> The actual or expected time when the shipment was dispatched
+                        <Name>Shipment dispatch time</Name>
+                        <Description>The actual or expected time when the shipment was dispatched
                             from the dispatching party.</Description>
                         <Reference type="BUSINESS_TERM">tir16-073</Reference>
                     </Element>
                     <Element cardinality="0..1">
-                        <Term>cac:DespatchAddress</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                        <Term>cac:DespatchAddress</Term>                        
                         <Element cardinality="0..1">
-                            <Term>cbc:ID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                            <Term>cbc:ID</Term>                            
                         </Element>
                         <Element cardinality="0..1">
                             <Term>cbc:StreetName</Term>
-                            <Name> Address line 1</Name>
-                            <Description> </Description>
-                            <Reference type="BUSINESS_TERM">op-tir16-003</Reference>
+                            <Name>Address line 1</Name>                            <Reference type="BUSINESS_TERM">op-tir16-003</Reference>
                         </Element>
                         <Element cardinality="0..1">
                             <Term>cbc:AdditionalStreetName</Term>
-                            <Name> Address line 2</Name>
-                            <Description> </Description>
-                            <Reference type="BUSINESS_TERM">op-tir16-004</Reference>
+                            <Name>Address line 2</Name>                            <Reference type="BUSINESS_TERM">op-tir16-004</Reference>
                         </Element>
                         <Element cardinality="0..1">
                             <Term>cbc:CityName</Term>
-                            <Name> City</Name>
-                            <Description> </Description>
-                            <Reference type="BUSINESS_TERM">op-tir16-005</Reference>
+                            <Name>City</Name>                            <Reference type="BUSINESS_TERM">op-tir16-005</Reference>
                         </Element>
                         <Element cardinality="0..1">
                             <Term>cbc:PostalZone</Term>
-                            <Name> Post code</Name>
-                            <Description> </Description>
-                            <Reference type="BUSINESS_TERM">op-tir16-006</Reference>
+                            <Name>Post code</Name>                            <Reference type="BUSINESS_TERM">op-tir16-006</Reference>
                         </Element>
                         <Element cardinality="0..1">
                             <Term>cbc:CountrySubentity</Term>
-                            <Name> Country subdivision</Name>
-                            <Description> </Description>
-                            <Reference type="BUSINESS_TERM">op-tir16-007</Reference>
+                            <Name>Country subdivision</Name>                            <Reference type="BUSINESS_TERM">op-tir16-007</Reference>
                         </Element>
                         <Element cardinality="0..1">
-                            <Term>cac:Country</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                            <Term>cac:Country</Term>                            
                             <Element>
                                 <Term>cbc:IdentificationCode</Term>
-                                <Name> Country code</Name>
-                                <Description> </Description>
-                                <Reference type="BUSINESS_TERM">op-tir16-008</Reference>
+                                <Name>Country code</Name>                                <Reference type="BUSINESS_TERM">op-tir16-008</Reference>
                                 <Reference type="RULE"/>
-                                <Attribute usage="optional">
-                                    <Term>listID</Term>
-                                    <Name> </Name>
-                                    <Description> </Description>
+                                <Attribute usage="Optional">
+                                    <Term>listID</Term>                                    
                                 </Attribute>
                             </Element>
                         </Element>
@@ -775,21 +607,19 @@
                 </Element>
             </Element>
         </Element>
-        <Element cardinality="1..unbounded">
-            <Term>cac:DespatchLine</Term>
-            <Name> </Name>
-            <Description> </Description>
+        <Element cardinality="1..n">
+            <Term>cac:DespatchLine</Term>            
             <Element>
                 <Term>cbc:ID</Term>
-                <Name> Dispatch line identifier</Name>
-                <Description> A indentifier for the individual line in the despatch
+                <Name>Dispatch line identifier</Name>
+                <Description>A indentifier for the individual line in the despatch
                     advice.</Description>
                 <Reference type="BUSINESS_TERM">tir16-046</Reference>
             </Element>
             <Element cardinality="0..1">
                 <Term>cbc:Note</Term>
-                <Name> Dispatch line note</Name>
-                <Description> General note regarding the despach advice line. Free-form text
+                <Name>Dispatch line note</Name>
+                <Description>General note regarding the despach advice line. Free-form text
                     applying to the Despatch Line. This element may contain notes or any other
                     similar information that is not contained explicitly in another
                     structure.</Description>
@@ -797,406 +627,308 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>cbc:DeliveredQuantity</Term>
-                <Name> Delivererd quantity</Name>
-                <Description> The quantity that is despatched in the line.</Description>
+                <Name>Delivererd quantity</Name>
+                <Description>The quantity that is despatched in the line.</Description>
                 <Reference type="BUSINESS_TERM">tir16-048</Reference>
-                <Attribute usage="optional">
-                    <Term>unitCode</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                <Attribute usage="Optional">
+                    <Term>unitCode</Term>                    
                 </Attribute>
-                <Attribute usage="optional">
-                    <Term>unitCodeListID</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                <Attribute usage="Optional">
+                    <Term>unitCodeListID</Term>                    
                 </Attribute>
-                <Attribute usage="optional">
-                    <Term>unitCodeListAgencyID</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                <Attribute usage="Optional">
+                    <Term>unitCodeListAgencyID</Term>                    
                 </Attribute>
-                <Attribute usage="optional">
-                    <Term>unitCodeListAgencyName</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                <Attribute usage="Optional">
+                    <Term>unitCodeListAgencyName</Term>                    
                 </Attribute>
             </Element>
             <Element cardinality="0..1">
                 <Term>cbc:OutstandingQuantity</Term>
-                <Name> Outstanding quantity</Name>
-                <Description> The quantity outstanding (which will follow in a later
+                <Name>Outstanding quantity</Name>
+                <Description>The quantity outstanding (which will follow in a later
                     shipment).</Description>
                 <Reference type="BUSINESS_TERM">tir16-049</Reference>
-                <Attribute usage="optional">
-                    <Term>unitCode</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                <Attribute usage="Optional">
+                    <Term>unitCode</Term>                    
                 </Attribute>
-                <Attribute usage="optional">
-                    <Term>unitCodeListID</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                <Attribute usage="Optional">
+                    <Term>unitCodeListID</Term>                    
                 </Attribute>
-                <Attribute usage="optional">
-                    <Term>unitCodeListAgencyID</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                <Attribute usage="Optional">
+                    <Term>unitCodeListAgencyID</Term>                    
                 </Attribute>
-                <Attribute usage="optional">
-                    <Term>unitCodeListAgencyName</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                <Attribute usage="Optional">
+                    <Term>unitCodeListAgencyName</Term>                    
                 </Attribute>
             </Element>
-            <Element cardinality="0..unbounded">
+            <Element cardinality="0..n">
                 <Term>cbc:OutstandingReason</Term>
-                <Name> Outstanding quantity reason</Name>
-                <Description> The reason for the outstanding quantity.</Description>
+                <Name>Outstanding quantity reason</Name>
+                <Description>The reason for the outstanding quantity.</Description>
                 <Reference type="BUSINESS_TERM">tir16-050</Reference>
             </Element>
             <Element>
                 <Term>cac:OrderLineReference</Term>
-                <Name> </Name>
-                <Description> </Description>
                 <Element>
                     <Term>cbc:LineID</Term>
-                    <Name> Orde line reference</Name>
-                    <Description> To uniquely identify the line of the order that is being
+                    <Name>Orde line reference</Name>
+                    <Description>To uniquely identify the line of the order that is being
                         despatched.</Description>
                     <Reference type="BUSINESS_TERM">tir16-051</Reference>
                 </Element>
             </Element>
             <Element>
                 <Term>cac:Item</Term>
-                <Name> </Name>
-                <Description> </Description>
                 <Element cardinality="0..1">
                     <Term>cbc:Name</Term>
-                    <Name> Item name</Name>
-                    <Description> A short name for an item.</Description>
+                    <Name>Item name</Name>
+                    <Description>A short name for an item.</Description>
                     <Reference type="BUSINESS_TERM">tir16-052</Reference>
                 </Element>
                 <Element cardinality="0..1">
-                    <Term>cac:SellersItemIdentification</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Term>cac:SellersItemIdentification</Term>                    
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name> Item sellers identifier</Name>
-                        <Description> The sellers identifier for the item.</Description>
+                        <Name>Item sellers identifier</Name>
+                        <Description>The sellers identifier for the item.</Description>
                         <Reference type="BUSINESS_TERM">tir16-053</Reference>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:ExtendedID</Term>
-                        <Name> Item sellers extended identifier</Name>
-                        <Description> An extended identifier for the item that identifies the item
+                        <Name>Item sellers extended identifier</Name>
+                        <Description>An extended identifier for the item that identifies the item
                             with specific properties, e.g., Item 123 = Chair / Item 123 Ext 45 =
                             brown chair.</Description>
                         <Reference type="BUSINESS_TERM">tir16-054</Reference>
                     </Element>
                 </Element>
                 <Element cardinality="0..1">
-                    <Term>cac:StandardItemIdentification</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Term>cac:StandardItemIdentification</Term>                    
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name> Item standard identifier</Name>
-                        <Description> A item identifier based on a registered schema.</Description>
+                        <Name>Item standard identifier</Name>
+                        <Description>A item identifier based on a registered schema.</Description>
                         <Reference type="BUSINESS_TERM">tir16-055</Reference>
-                        <Attribute usage="optional">
-                            <Term>schemeID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyName</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyName</Term>                            
                         </Attribute>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:ExtendedID</Term>
-                        <Name> Item standard extended identifier</Name>
-                        <Description> with specific properties, e.g., Item 123 = Chair / Item 123
+                        <Name>Item standard extended identifier</Name>
+                        <Description>with specific properties, e.g., Item 123 = Chair / Item 123
                             Ext 45 = brown chair.</Description>
                         <Reference type="BUSINESS_TERM">tir16-056</Reference>
                     </Element>
                 </Element>
-                <Element cardinality="0..unbounded">
-                    <Term>cac:HazardousItem</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                <Element cardinality="0..n">
+                    <Term>cac:HazardousItem</Term>                    
                     <Element cardinality="0..1">
                         <Term>cbc:UNDGCode</Term>
-                        <Name> Haszardous item UNDG code</Name>
-                        <Description> The identifier assigned to transportable hazardous goods by
+                        <Name>Haszardous item UNDG code</Name>
+                        <Description>The identifier assigned to transportable hazardous goods by
                             the United Nations, expressed as a code.</Description>
                         <Reference type="BUSINESS_TERM">tir16-057</Reference>
-                        <Attribute usage="optional">
-                            <Term>listID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>listID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>listAgencyID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>listAgencyID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>listAgencyName</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>listAgencyName</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>listVersionID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>listVersionID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>name</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>name</Term>                            
                         </Attribute>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:HazardClassID</Term>
-                        <Name> Haszardous hazard class Identifier</Name>
-                        <Description> Identifies a hazard class applicable to dangerous goods as
+                        <Name>Haszardous hazard class Identifier</Name>
+                        <Description>Identifies a hazard class applicable to dangerous goods as
                             defined by the relevant regulation authority, such as the IMDG Class
                             Number of the SOLAS Convention ofIMO and the ADR/RID Class Number for
                             the road/rail environment.</Description>
                         <Reference type="BUSINESS_TERM">tir16-058</Reference>
-                        <Attribute usage="optional">
-                            <Term>schemeID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyName</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyName</Term>                            
                         </Attribute>
                     </Element>
                 </Element>
-                <Element cardinality="0..unbounded">
-                    <Term>cac:ItemInstance</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                <Element cardinality="0..n">
+                    <Term>cac:ItemInstance</Term>                    
                     <Element cardinality="0..1">
                         <Term>cbc:ManufactureDate</Term>
-                        <Name> Item manufactured date</Name>
-                        <Description> The manufacturing date of all items listed in this dispatch
+                        <Name>Item manufactured date</Name>
+                        <Description>The manufacturing date of all items listed in this dispatch
                             line.</Description>
                         <Reference type="BUSINESS_TERM">tir16-079</Reference>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:BestBeforeDate</Term>
-                        <Name> Item best before date</Name>
-                        <Description> The best before date of all items listed in this dispatch
+                        <Name>Item best before date</Name>
+                        <Description>The best before date of all items listed in this dispatch
                             line.</Description>
                         <Reference type="BUSINESS_TERM">tir16-080</Reference>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:SerialID</Term>
-                        <Name> Item serial numbers</Name>
-                        <Description> Serial numbers for items listed in the dispatch
+                        <Name>Item serial numbers</Name>
+                        <Description>Serial numbers for items listed in the dispatch
                             line.</Description>
                         <Reference type="BUSINESS_TERM">tir16-083</Reference>
-                        <Attribute usage="optional">
-                            <Term>schemeID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyName</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyName</Term>                            
                         </Attribute>
                     </Element>
                     <Element cardinality="0..1">
+                        <Term>Unknown</Term>
                         <Element cardinality="0..1">
                             <Term>cac:LotIdentification</Term>
-                            <Name> </Name>
-                            <Description> </Description>
                             <Element cardinality="0..1">
                                 <Term>cbc:LotNumberID</Term>
-                                <Name> Item batch number</Name>
-                                <Description> The batch number that applies to all items in the dispatch
+                                <Name>Item batch number</Name>
+                                <Description>The batch number that applies to all items in the dispatch
                                     line.</Description>
                                 <Reference type="BUSINESS_TERM">tir16-082</Reference>
-                                <Attribute usage="optional">
-                                    <Term>schemeID</Term>
-                                    <Name> </Name>
-                                    <Description> </Description>
+                                <Attribute usage="Optional">
+                                    <Term>schemeID</Term>                                    
                                 </Attribute>
-                                <Attribute usage="optional">
-                                    <Term>schemeAgencyID</Term>
-                                    <Name> </Name>
-                                    <Description> </Description>
+                                <Attribute usage="Optional">
+                                    <Term>schemeAgencyID</Term>                                    
                                 </Attribute>
-                                <Attribute usage="optional">
-                                    <Term>schemeAgencyName</Term>
-                                    <Name> </Name>
-                                    <Description> </Description>
+                                <Attribute usage="Optional">
+                                    <Term>schemeAgencyName</Term>                                    
                                 </Attribute>
                             </Element>
                             <Element cardinality="0..1">
                                 <Term>cbc:ExpiryDate</Term>
-                                <Name> Item expiry date</Name>
-                                <Description> The expiry date of all items listed in this dispatch
+                                <Name>Item expiry date</Name>
+                                <Description>The expiry date of all items listed in this dispatch
                                     line.</Description>
                                 <Reference type="BUSINESS_TERM">tir16-081</Reference>
                             </Element>
                     </Element>
                 </Element>
             </Element>
+            </Element>
             <Element cardinality="0..1">
                 <Term>cac:Shipment</Term>
-                <Name> </Name>
-                <Description> </Description>
                 <Element>
-                    <Term>cbc:ID</Term>
-                    <Name> </Name>
-                    <Description> </Description>
-                    <Attribute usage="optional">
-                        <Term>schemeID</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                    <Term>cbc:ID</Term>                    
+                    <Attribute usage="Optional">
+                        <Term>schemeID</Term>                        
                     </Attribute>
-                    <Attribute usage="optional">
-                        <Term>schemeAgencyID</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                    <Attribute usage="Optional">
+                        <Term>schemeAgencyID</Term>                        
                     </Attribute>
-                    <Attribute usage="optional">
-                        <Term>schemeAgencyName</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                    <Attribute usage="Optional">
+                        <Term>schemeAgencyName</Term>                        
                     </Attribute>
                 </Element>
-                <Element cardinality="0..unbounded">
-                    <Term>cac:TransportHandlingUnit</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                <Element cardinality="0..n">
+                    <Term>cac:TransportHandlingUnit</Term>                    
                     <Element cardinality="0..1">
                         <Term>cbc:ID</Term>
-                        <Name> Handling unit identifier</Name>
-                        <Description> Identifies the transport handling unit.</Description>
+                        <Name>Handling unit identifier</Name>
+                        <Description>Identifies the transport handling unit.</Description>
                         <Reference type="BUSINESS_TERM">tir16-061</Reference>
-                        <Attribute usage="optional">
-                            <Term>schemeID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>schemeAgencyName</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>schemeAgencyName</Term>                            
                         </Attribute>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:TransportHandlingUnitTypeCode</Term>
-                        <Name> Handling unit type</Name>
-                        <Description> The type of packaging that represent the handling unit, such
+                        <Name>Handling unit type</Name>
+                        <Description>The type of packaging that represent the handling unit, such
                             as box, pallet, container etx.</Description>
                         <Reference type="BUSINESS_TERM">tir16-085</Reference>
-                        <Attribute usage="optional">
-                            <Term>listID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>listID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>listAgencyID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>listAgencyID</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>listAgencyName</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>listAgencyName</Term>                            
                         </Attribute>
-                        <Attribute usage="optional">
-                            <Term>listVersionID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                        <Attribute usage="Optional">
+                            <Term>listVersionID</Term>                            
                         </Attribute>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:HazardousRiskIndicator</Term>
-                        <Name> Handling unit hazardous indicator</Name>
-                        <Description> Indicates whether the shipment contains hazardous
+                        <Name>Handling unit hazardous indicator</Name>
+                        <Description>Indicates whether the shipment contains hazardous
                             materials.</Description>
                         <Reference type="BUSINESS_TERM">tir16-062</Reference>
                     </Element>
-                    <Element cardinality="0..unbounded">
+                    <Element cardinality="0..n">
                         <Term>cbc:ShippingMarks</Term>
-                        <Name> Handing unit shipping marks</Name>
-                        <Description> Free-form description of the marks and numbers on a transport
+                        <Name>Handing unit shipping marks</Name>
+                        <Description>Free-form description of the marks and numbers on a transport
                             unit or package.</Description>
                         <Reference type="BUSINESS_TERM">tir16-064</Reference>
                     </Element>
-                    <Element cardinality="0..unbounded">
-                        <Term>cac:MeasurementDimension</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                    <Element cardinality="0..n">
+                        <Term>cac:MeasurementDimension</Term>                        
                         <Element>
-                            <Term>cbc:AttributeID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
-                            <Attribute usage="optional">
-                                <Term>schemeID</Term>
-                                <Name> </Name>
-                                <Description> </Description>
+                            <Term>cbc:AttributeID</Term>                            
+                            <Attribute usage="Optional">
+                                <Term>schemeID</Term>                                
                             </Attribute>
-                            <Attribute usage="optional">
-                                <Term>schemeAgencyID</Term>
-                                <Name> </Name>
-                                <Description> </Description>
+                            <Attribute usage="Optional">
+                                <Term>schemeAgencyID</Term>                                
                             </Attribute>
-                            <Attribute usage="optional">
-                                <Term>schemeAgencyName</Term>
-                                <Name> </Name>
-                                <Description> </Description>
+                            <Attribute usage="Optional">
+                                <Term>schemeAgencyName</Term>                                
                             </Attribute>
                         </Element>
                         <Element cardinality="0..1">
+                            <Term>UNKNOWN</Term>
                             <Element cardinality="0..1">
                                 <Term>cbc:Measure</Term>
-                                <Name> Handling unit gross weightHandling unit gross volume</Name>
-                                <Description> Handling gross weight, including packaging as dispatched
+                                <Name>Handling unit gross weightHandling unit gross volume</Name>
+                                <Description>Handling gross weight, including packaging as dispatched
                                     by dispatching party.Handling gross volume, including packaging as
                                     dispatched by dispatching party.</Description>
                                 <Reference type="BUSINESS_TERM">tir16-086tir16-087</Reference>
                             <Attribute>
-                                <Term>unitCode</Term>
-                                <Name> </Name>
-                                <Description> </Description>
+                                <Term>unitCode</Term>                                
                             </Attribute>
                         </Element>
                     </Element>
                 </Element>
             </Element>
+        </Element>
         </Element>
     </Document>
 </Structure>
