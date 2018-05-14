@@ -9,7 +9,10 @@
     <Documentation path="profiles/28-ordering/">Ordering BIS (Business Interoperability Specifications)</Documentation>
     <Documentation path="profiles/1-catalogueonly/">Catalogue only BIS (Business Interoperability Specifications)</Documentation>
     <Documentation path="profiles/30-despatchadvice/">Despatch Advice BIS (Business Interoperability Specifications)</Documentation>
-
+    <Documentation path="profiles/18-punchout/">Punch Out BIS (Business Interoperability Specifications)</Documentation>
+    <Documentation path="profiles/42-orderagreement/">Order Agreement BIS (Business Interoperability Specifications)</Documentation>
+    <Documentation path="profiles/36-mlr/">Message Level Response BIS (Business Interoperability Specifications)</Documentation>
+    
     <!-- Syntax -->
     <Resource>
         <Type>Structure-1</Type>
