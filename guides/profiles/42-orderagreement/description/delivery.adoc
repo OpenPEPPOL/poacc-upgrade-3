@@ -1,5 +1,7 @@
 = Delivery
 
+#What is the difference between originator party and delivery party?#
+
 Delivery gives information on when and where the goods and services are deleivered.
 
 Delivery special terms may be used to inform how the the goods or service is delivered. E.g.

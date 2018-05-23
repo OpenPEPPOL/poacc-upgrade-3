@@ -19,11 +19,17 @@ v3.0.0
 :leveloffset: +1
 
 include::introduction/index.adoc[]
+
 include::principles/index.adoc[]
+
 include::process/index.adoc[]
+
 include::codelists/index.adoc[]
+
 include::description/index.adoc[]
+
 include::rules/index.adoc[]
-include::structure/index.adoc[]
+
+include::profile/index.adoc[]
 
 :leveloffset: -1

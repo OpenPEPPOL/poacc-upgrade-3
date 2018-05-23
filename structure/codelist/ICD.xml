@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>ISO 6523 International Code Designator (ICD)</Title>
+    <Identifier>ICD</Identifier>
+    <Version>4.0 DRAFT</Version>
+    <Agency>OpenPEPPOL</Agency>
+    <Subset>Participant Identifier Issuing Agencies in OpenPEPPOL</Subset>
+
+    <Code>
+        <Id>GLN</Id>
+        <Name>GS1 GLN</Name>
+    </Code>
+    <Code>
+        <Id>DK:P</Id>
+        <Name>Danish Chamber of Commerce</Name>
+    </Code>
+    <Code>
+        <Id>IT:FTI</Id>
+        <Name>FTI - Ediforum Italia</Name>
+    </Code>
+    <Code>
+        <Id>NL:KVK</Id>
+        <Name>Vereniging van Kamers van Koophandel en Fabrieken in Nederland, Scheme</Name>
+    </Code>
+    <Code>
+        <Id>IT:SIA</Id>
+        <Name>SIA-Società Interbancaria per l'Automazione S.p.A.</Name>
+    </Code>
+    <Code>
+        <Id>IT:SECETI</Id>
+        <Name>Servizi Centralizzati SECETI S.p.A.</Name>
+    </Code>
+    <Code>
+        <Id>DIGST</Id>
+        <Name>DIGSTORG</Name>
+    </Code>
+    <Code>
+        <Id>DK:CPR</Id>
+        <Name>Danish Ministry of the Interior and Health</Name>
+    </Code>
+    <Code>
+        <Id>DK:CVR</Id>
+        <Name>The Danish Commerce and Companies Agency</Name>
+    </Code>
+    <Code>
+        <Id>DK:SE</Id>
+        <Name>Danish Ministry of Taxation, Central Customs and Tax Administration</Name>
+    </Code>
+    <Code>
+        <Id>DK:VANS</Id>
+        <Name>Danish VANS providers</Name>
+    </Code>
+    <Code>
+        <Id>IT:VAT</Id>
+        <Name>Ufficio responsabile gestione partite IVA</Name>
+    </Code>
+    <Code>
+        <Id>IT:CF</Id>
+        <Name>TAX Authority</Name>
+    </Code>
+    <Code>
+        <Id>NO:ORGNR</Id>
+        <Name>Enhetsregisteret ved Bronnoysundregisterne</Name>
+    </Code>
+    <Code>
+        <Id>NO:VAT</Id>
+        <Name>Enhetsregisteret ved Bronnoysundregisterne</Name>
+    </Code>
+    <Code>
+        <Id>HU:VAT</Id>
+        <Name>[Not set]</Name>
+    </Code>
+    <Code>
+        <Id>EU:VAT</Id>
+        <Name>National ministries of Economy</Name>
+    </Code>
+    <Code>
+        <Id>EU:REID</Id>
+        <Name>Business Registers Network</Name>
+    </Code>
+    <Code>
+        <Id>AT:VAT</Id>
+        <Name>Österreichische Umsatzsteuer-Identifikationsnummer</Name>
+    </Code>
+    <Code>
+        <Id>AT:GOV</Id>
+        <Name>Österreichisches Verwaltungs bzw. Organisationskennzeichen</Name>
+    </Code>
+    <Code>
+        <Id>AT:CID</Id>
+        <Name>Firmenidentifikationsnummer der Statistik Austria</Name>
+    </Code>
+    <Code>
+        <Id>IS:KT</Id>
+        <Name>Icelandic National Registry</Name>
+    </Code>
+    <Code>
+        <Id>IBAN</Id>
+        <Name>SOCIETY FOR WORLDWIDE INTERBANK FINANCIAL, TELECOMMUNICATION S.W.I.F.T</Name>
+    </Code>
+    <Code>
+        <Id>AT:KUR</Id>
+        <Name>Kennziffer des Unternehmensregisters</Name>
+    </Code>
+    <Code>
+        <Id>ES:VAT</Id>
+        <Name>Agencia Española de Administración Tributaria</Name>
+    </Code>
+    <Code>
+        <Id>IT:IPA</Id>
+        <Name>Indice delle Pubbliche Amministrazioni</Name>
+    </Code>
+    <Code>
+        <Id>AD:VAT</Id>
+        <Name>Andorra VAT number</Name>
+    </Code>
+    <Code>
+        <Id>AL:VAT</Id>
+        <Name>Albania VAT number</Name>
+    </Code>
+    <Code>
+        <Id>BA:VAT</Id>
+        <Name>Bosnia and Herzegovina VAT number</Name>
+    </Code>
+    <Code>
+        <Id>BE:VAT</Id>
+        <Name>Belgium VAT number</Name>
+    </Code>
+    <Code>
+        <Id>BG:VAT</Id>
+        <Name>Bulgaria VAT number</Name>
+    </Code>
+    <Code>
+        <Id>CH:VAT</Id>
+        <Name>Switzerland VAT number</Name>
+    </Code>
+    <Code>
+        <Id>CY:VAT</Id>
+        <Name>Cyprus VAT number</Name>
+    </Code>
+    <Code>
+        <Id>CZ:VAT</Id>
+        <Name>Czech Republic VAT number</Name>
+    </Code>
+    <Code>
+        <Id>DE:VAT</Id>
+        <Name>Germany VAT number</Name>
+    </Code>
+    <Code>
+        <Id>EE:VAT</Id>
+        <Name>Estonia VAT number</Name>
+    </Code>
+    <Code>
+        <Id>GB:VAT</Id>
+        <Name>United Kingdom VAT number</Name>
+    </Code>
+    <Code>
+        <Id>GR:VAT</Id>
+        <Name>Greece VAT number</Name>
+    </Code>
+    <Code>
+        <Id>HR:VAT</Id>
+        <Name>Croatia VAT number</Name>
+    </Code>
+    <Code>
+        <Id>IE:VAT</Id>
+        <Name>Ireland VAT number</Name>
+    </Code>
+    <Code>
+        <Id>LI:VAT</Id>
+        <Name>Liechtenstein VAT number</Name>
+    </Code>
+    <Code>
+        <Id>LT:VAT</Id>
+        <Name>Lithuania VAT number</Name>
+    </Code>
+    <Code>
+        <Id>LU:VAT</Id>
+        <Name>Luxemburg VAT number</Name>
+    </Code>
+    <Code>
+        <Id>LV:VAT</Id>
+        <Name>Latvia VAT number</Name>
+    </Code>
+    <Code>
+        <Id>MC:VAT</Id>
+        <Name>Monaco VAT number</Name>
+    </Code>
+    <Code>
+        <Id>ME:VAT</Id>
+        <Name>Montenegro VAT number</Name>
+    </Code>
+    <Code>
+        <Id>MK:VAT</Id>
+        <Name>Macedonia, the former Yugoslav Republic of VAT number</Name>
+    </Code>
+    <Code>
+        <Id>MT:VAT</Id>
+        <Name>Malta VAT number</Name>
+    </Code>
+    <Code>
+        <Id>NL:VAT</Id>
+        <Name>Netherlands VAT number</Name>
+    </Code>
+    <Code>
+        <Id>PL:VAT</Id>
+        <Name>Poland VAT number</Name>
+    </Code>
+    <Code>
+        <Id>PT:VAT</Id>
+        <Name>Portugal VAT number</Name>
+    </Code>
+    <Code>
+        <Id>RO:VAT</Id>
+        <Name>Romania VAT number</Name>
+    </Code>
+    <Code>
+        <Id>RS:VAT</Id>
+        <Name>Serbia VAT number</Name>
+    </Code>
+    <Code>
+        <Id>SI:VAT</Id>
+        <Name>Slovenia VAT number</Name>
+    </Code>
+    <Code>
+        <Id>SK:VAT</Id>
+        <Name>Slovakia VAT number</Name>
+    </Code>
+    <Code>
+        <Id>SM:VAT</Id>
+        <Name>San Marino VAT number</Name>
+    </Code>
+    <Code>
+        <Id>TR:VAT</Id>
+        <Name>Turkey VAT number</Name>
+    </Code>
+    <Code>
+        <Id>VA:VAT</Id>
+        <Name>Holy See (Vatican City State) VAT number</Name>
+    </Code>
+    <Code>
+        <Id>NL:OIN</Id>
+        <Name>Dutch Originator's Identification Number</Name>
+    </Code>
+    <Code>
+        <Id>SE:VAT</Id>
+        <Name>Swedish VAT number</Name>
+    </Code>
+    <Code>
+        <Id>BE:CBE</Id>
+        <Name>Belgian Crossroad Bank of Enterprises</Name>
+    </Code>
+    <Code>
+        <Id>FR:VAT</Id>
+        <Name>French VAT number</Name>
+    </Code>
+
+</CodeList>

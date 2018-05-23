@@ -1,0 +1,18 @@
+
+[[prof-1]]
+= Profile 1 - Catalogue only
+
+In the table below you will find the values to be used as the specification identifier and the business process type for this profile
+
+[cols="2s,5a,5a", options="header"]
+|===
+| Type
+| Element `cbc:CustomizationID`
+| Element `cbc:ProfileID`
+
+
+| Catalogue (Trdm19)
+| urn:www.cenbii.eu:transaction:biitrns019:ver2.0: +
+extended:urn:www.peppol.eu:bis:peppol1a:ver4.0
+| urn:www.cenbii.eu:profile:bii01:ver2.0
+|===

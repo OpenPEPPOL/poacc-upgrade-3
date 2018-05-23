@@ -1,0 +1,18 @@
+
+[[prof-30]]
+= Profile 30 - Despatch Advice
+
+In the table below you will find the values to be used as the specification identifier and the business process type for this profile
+
+[cols="2s,5a,5a", options="header"]
+|===
+| Type
+| Element `cbc:CustomizationID`
+| Element `cbc:ProfileID`
+
+
+| Despatch Advice (Trdm16)
+| urn:www.cenbii.eu:transaction:biitrns016:ver1.0: +
+extended:urn:www.peppol.eu:bis:peppol30a:ver1.0
+| urn:www.cenbii.eu:profile:bii30:ver2.0
+|===

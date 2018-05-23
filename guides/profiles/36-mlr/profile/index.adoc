@@ -1,12 +1,12 @@
 
 
-
-
 include::../../../shared/profiles/info.adoc[]
 
 :leveloffset: +1
 
 include::../../../shared/profiles/36.adoc[]
+
+include::../../../shared/files/party-identifiers.adoc[]
 
 include::identifiers.adoc[]
 
