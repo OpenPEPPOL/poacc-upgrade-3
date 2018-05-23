@@ -6,616 +6,648 @@
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
     <Document>
         <Term>ubl:Catalogue</Term>
-        <Element>
-            <Term>cbc:UBLVersionID</Term>
-            <Name> </Name>
-            <Description> </Description>
-        </Element>
+
         <Element>
             <Term>cbc:CustomizationID</Term>
-            <Name> Specification identification</Name>
-            <Description> The identification may include the version of the specification as well as
-                any customizations applied. An identification of the specification containing the
-                total set of rules regarding semantic content, cardinalities and business rules to
+            <Name>Specification identification</Name>
+            <Description>An identification of the specification containing the
+                    total set of rules regarding semantic content, cardinalities and business rules to
                 which the data contained in the instance document conforms.</Description>
             <Reference type="BUSINESS_TERM">tir77-007</Reference>
             <Reference type="RULE">BII3-T77-R001</Reference>
+            <Value type="FIXED">urn:www.cenbii.eu:transaction:biitrns077:ver2.0:extended:www.peppol.eu:bis:peppol18a:ver1.0</Value>
         </Element>
         <Element>
             <Term>cbc:ProfileID</Term>
-            <Name> Business process type identifier</Name>
-            <Description> Identifies the business process context in which the transaction appears.
+            <Name>Business process type identifier</Name>
+            <Description>Identifies the business process context in which the transaction appears.
                 It enables the buyer to process the document in an appropriate way.</Description>
             <Reference type="BUSINESS_TERM">tir77-006</Reference>
             <Reference type="RULE">BII3-T77-R002</Reference>
+            <Value type="FIXED">urn:www.cenbii.eu:profile:bii18:ver1.0</Value>
         </Element>
         <Element>
             <Term>cbc:ID</Term>
-            <Name> Shopping cart identifier</Name>
-            <Description> An identifier for the shopping cart.</Description>
+            <Name>Shopping cart identifier</Name>
+            <Description>An identifier for the shopping cart.</Description>
             <Reference type="BUSINESS_TERM">tir77-001</Reference>
             <Reference type="RULE">BII3-T77-R005</Reference>
+            <Value type="EXAMPLE">8675</Value>
         </Element>
         <Element cardinality="0..1">
             <Term>cbc:ActionCode</Term>
-            <Name> Complete cart indicator</Name>
-            <Description> Indicate if only a complete shopping cart can be ordered. That is, that
+            <Name>Complete cart indicator</Name>
+            <Description>Indicate if only a complete shopping cart can be ordered ("true"). That is, that
                 the information and prices in the shopping cart is only valid if the complete cart
                 is ordered.</Description>
             <Reference type="BUSINESS_TERM">tir77-005</Reference>
             <Reference type="RULE">EUGEN-T77-R004</Reference>
+            <Value type="EXAMPLE">true</Value>
         </Element>
         <Element>
             <Term>cbc:IssueDate</Term>
-            <Name> Shopping cart issue date</Name>
-            <Description> The date when the shopping cart was issued.</Description>
+            <Name>Shopping cart issue date</Name>
+            <Description>The date when the shopping cart was issued.</Description>
             <Reference type="BUSINESS_TERM">tir77-002</Reference>
             <Reference type="RULE">BII3-T77-R003</Reference>
+            <Value type="EXAMPLE">2018-05-15</Value>
         </Element>
         <Element>
             <Term>cbc:IssueTime</Term>
-            <Name> Shopping cart issue time</Name>
-            <Description> The time of day when shopping cart was issued.</Description>
+            <Name>Shopping cart issue time</Name>
+            <Description>The time of day when shopping cart was issued.</Description>
             <Reference type="BUSINESS_TERM">tir77-003</Reference>
             <Reference type="RULE">BII3-T77-R004</Reference>
+            <Value type="EXAMPLE">13:48:12</Value>
         </Element>
         <Element cardinality="0..1">
             <Term>cac:ValidityPeriod</Term>
-            <Name> </Name>
-            <Description> </Description>
+            <Name>Validity period</Name>
+
             <Element>
                 <Term>cbc:EndDate</Term>
-                <Name> Period end date</Name>
-                <Description> The date is the last day of the period.Date until which information
+                <Name>Period end date</Name>
+                <Description>The date is the last day of the period.Date until which information
                     and prices stated in the shopping cart are valid. The date on which the period
                     ends.</Description>
                 <Reference type="BUSINESS_TERM">tir77-008</Reference>
                 <Reference type="RULE">EUGEN-T77-R003</Reference>
+                <Value type="EXAMPLE">2018-05-31</Value>
             </Element>
             <Element cardinality="0..1">
                 <Term>cbc:EndTime</Term>
-                <Name> Period end time</Name>
-                <Description> The end time of the period.Date until which information and prices
-                    stated in the shopping cart are valid. </Description>
+                <Name>Period end time</Name>
+                <Description>The end time of the period.Date until which information and prices
+                    stated in the shopping cart are valid.</Description>
                 <Reference type="BUSINESS_TERM">tir77-009</Reference>
+                <Value type="EXAMPLE">12:00:00</Value>
             </Element>
         </Element>
         <Element cardinality="0..1">
             <Term>cac:ReferencedContract</Term>
-            <Name> </Name>
-            <Description> </Description>
+            <Name>Referenced contract</Name>
+
             <Element cardinality="0..1">
                 <Term>cbc:ID</Term>
-                <Name> Contract identifier</Name>
-                <Description> The identification of a contract.</Description>
+                <Name>Contract identifier</Name>
+                <Description>The identification of a contract.</Description>
                 <Reference type="BUSINESS_TERM">tir77-020</Reference>
+                <Value type="EXAMPLE">frame123</Value>
             </Element>
         </Element>
         <Element>
             <Term>cac:ProviderParty</Term>
-            <Name> </Name>
-            <Description> </Description>
+            <Name>Seller party information</Name>
+
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
-                <Name> Seller electronic address</Name>
-                <Description> Identifies the seller's electronic address to which a business
+                <Name>Seller electronic address</Name>
+                <Description>Identifies the seller's electronic address to which a business
                     document may be delivered.</Description>
                 <Reference type="BUSINESS_TERM">OP-T77-001</Reference>
                 <Reference type="RULE">EUGEN-T77-R006</Reference>
-                <Attribute usage="optional">
+                <Attribute>
                     <Term>schemeID</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Name>Scheme identifier</Name>
+                    <Description>Scheme identifier for electronic address</Description>
+                    <Value type="EXAMPLE">0088</Value>
                 </Attribute>
+                <Value type="EXAMPLE">7300010000001</Value>
             </Element>
             <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
-                <Name> </Name>
-                <Description> </Description>
+                <Name>Party identification</Name>
+
                 <Element>
                     <Term>cbc:ID</Term>
-                    <Name> Seller standard identifier</Name>
-                    <Description> An identification of the seller.</Description>
+                    <Name>Seller standard identifier</Name>
+                    <Description>An identification of the seller.</Description>
                     <Reference type="BUSINESS_TERM">tir77-014</Reference>
                     <Reference type="RULE">BII3-T77-R019</Reference>
                     <Attribute usage="optional">
                         <Term>schemeID</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                        <Name>Scheme identifier</Name>
+                        <Description>Scheme identifier for party identification</Description>
+                        <Reference type="CODE_LIST">ISO6523</Reference>
+                        <Value type="EXAMPLE">0184</Value>
                     </Attribute>
+                    <Value type="EXAMPLE">DK12345678</Value>
                 </Element>
             </Element>
             <Element>
                 <Term>cac:PartyName</Term>
-                <Name> </Name>
-                <Description> </Description>
+                <Name>Party name</Name>
+
                 <Element>
                     <Term>cbc:Name</Term>
-                    <Name> Seller name</Name>
-                    <Description> The full (formal) name by which the seller is registered in the
+                    <Name>Seller name</Name>
+                    <Description>The full (formal) name by which the seller is registered in the
                         national registry of legal entities or persons.</Description>
                     <Reference type="BUSINESS_TERM">tir77-013</Reference>
                     <Reference type="RULE">BII3-T77-R007</Reference>
+                    <Value type="EXAMPLE">Seller name</Value>
                 </Element>
             </Element>
         </Element>
         <Element>
             <Term>cac:ReceiverParty</Term>
-            <Name> </Name>
-            <Description> </Description>
+            <Name>Buyer party</Name>
+           
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
-                <Name> Buyer electronic address</Name>
-                <Description> Identifies the buyers electronic address to which the business
+                <Name>Buyer electronic address</Name>
+                <Description>Identifies the buyers electronic address to which the business
                     document should be delivered.</Description>
                 <Reference type="BUSINESS_TERM">OP-T77-002</Reference>
                 <Reference type="RULE">EUGEN-T77-R007</Reference>
-                <Attribute usage="optional">
+                <Attribute>
                     <Term>schemeID</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Name>Scheme identifier</Name>
+                    <Description>Scheme identifier for electronic address</Description>
+                    <Value type="EXAMPLE">0088</Value>
                 </Attribute>
+                <Value type="EXAMPLE">7300010000001</Value>
             </Element>
+            
             <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
-                <Name> </Name>
-                <Description> </Description>
+                <Name>Party identification</Name>
+                
                 <Element>
                     <Term>cbc:ID</Term>
-                    <Name> Buyer customer account identifierBuyer standard identifier</Name>
-                    <Description> A identifier for the buyer that is issued by the party that sends
+                    <Name>Buyer customer account identifierBuyer standard identifier</Name>
+                    <Description>A identifier for the buyer that is issued by the party that sends
                         the document in which the identifier is used.An identifier for the
                         buyer.</Description>
                     <Reference type="BUSINESS_TERM">tir77-011tir77-012</Reference>
                     <Attribute usage="optional">
                         <Term>schemeID</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                        <Name>Scheme identifier</Name>
+                        <Description>Scheme identifier for party identification</Description>
+                        <Reference type="CODE_LIST">ISO6523</Reference>
+                        <Value type="EXAMPLE">0192</Value>
                     </Attribute>
+                    <Value type="EXAMPLE">987654321</Value>
                 </Element>
             </Element>
             <Element>
                 <Term>cac:PartyName</Term>
-                <Name> </Name>
-                <Description> </Description>
+                <Name>Party name</Name>
+              
                 <Element>
                     <Term>cbc:Name</Term>
-                    <Name> Buyer name</Name>
-                    <Description> The full name of the buyer.</Description>
+                    <Name>Buyer name</Name>
+                    <Description>The full name of the buyer.</Description>
                     <Reference type="BUSINESS_TERM">tir77-010</Reference>
                     <Reference type="RULE">BII3-T77-R006</Reference>
+                    <Value type="EXAMPLE">Buyer name</Value>
                 </Element>
             </Element>
             <Element cardinality="0..1">
                 <Term>cac:Contact</Term>
-                <Name> </Name>
-                <Description> </Description>
+                <Name>Contact information</Name>
+                
                 <Element cardinality="0..1">
                     <Term>cbc:ID</Term>
-                    <Name> Buyer reference identifier</Name>
-                    <Description> The identifier is defined by the buyer (contact ID, department,
-                        office id, project code), but provided by the seller in the invoice. An
-                        identifier assigned by the Buyer used for internal routing
-                        purposes.</Description>
+                    <Name>Buyer reference identifier</Name>
+                    <Description> An identifier assigned by the Buyer used for internal routing
+                        purposes.The identifier is defined by the buyer (contact ID, department,
+                        office id, project code), but provided by the seller in the invoice.</Description>
                     <Reference type="BUSINESS_TERM">tir77-045</Reference>
+                    <Value type="EXAMPLE">abc234</Value>
                 </Element>
             </Element>
         </Element>
         <Element cardinality="1..n">
             <Term>cac:CatalogueLine</Term>
-            <Name> </Name>
-            <Description> </Description>
+            <Name>Shopping cart line</Name>
+            
             <Element>
                 <Term>cbc:ID</Term>
-                <Name> Shopping cart line identifier</Name>
-                <Description> An identifier for an individual line that is unique within a shopping
+                <Name>Shopping cart line identifier</Name>
+                <Description>An identifier for an individual line that is unique within a shopping
                     cart.</Description>
                 <Reference type="BUSINESS_TERM">tir77-015</Reference>
                 <Reference type="RULE">BII3-T77-R008</Reference>
+                <Value type="EXAMPLE">1</Value>
             </Element>
             <Element cardinality="0..1">
                 <Term>cbc:ContractSubdivision</Term>
-                <Name> Contracted item indicator</Name>
-                <Description> Indicates if the item is offered in accordance to an existing
-                    contract.</Description>
+                <Name>Contracted item indicator</Name>
+                <Description>Indicates if the item is offered in accordance to an existing
+                    contract. Different lines may reference different contracts. If a contract is referenced on the cart level that contract applies to all items in the shopping cart,
+                    and is only superseeded by the line reference where there is a conflict.</Description>
                 <Reference type="BUSINESS_TERM">tir77-019</Reference>
+                <Value type="EXAMPLE">CRT1387</Value>
             </Element>
             <Element cardinality="0..1">
                 <Term>cac:LineValidityPeriod</Term>
-                <Name> </Name>
-                <Description> </Description>
+                <Name>Availability date information</Name>
+                <Description>A shopping cart line may state the item availability date, which is first day before the end of which the particular item 
+                    can and will be shipped from the seller. If availability date is before the cart issue date then the item is immediately available. 
+                    The availability of all items in the cart ends when the validity period of the cart ends.</Description>
                 <Element cardinality="0..1">
                     <Term>cbc:StartDate</Term>
-                    <Name> Item availability date</Name>
-                    <Description> The date when the item will be available for
+                    <Name>Item availability date</Name>
+                    <Description>The date when the item will be available for
                         ordering</Description>
                     <Reference type="BUSINESS_TERM">tir77-027</Reference>
+                    <Value type="EXAMPLE">2018-05-01</Value>
                 </Element>
             </Element>
             <Element>
                 <Term>cac:RequiredItemLocationQuantity</Term>
-                <Name> </Name>
-                <Description> </Description>
+                <Name>Item location quantity information</Name>
+                <Description>Properties of the item in this shopping cart line that are dependent on location and quantity.</Description>
                 <Element cardinality="0..1">
                     <Term>cbc:LeadTimeMeasure</Term>
-                    <Name> Shopping cart line delivery lead days</Name>
-                    <Description> Number of days from order to delivery.</Description>
+                    <Name>Shopping cart line delivery lead days</Name>
+                    <Description>This is the maximum number of working days that may pass from the day the seller receives an order until the day the item is
+                        shipped from the seller. The seller may ship earlier. A lead day of one (1) means that an item will be shipped no later than the 
+                        end of next working day according to the sellers regional calendar.</Description>
                     <Reference type="BUSINESS_TERM">tir77-016</Reference>
                     <Attribute>
                         <Term>unitCode</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                        <Name>Lead time unit of measure</Name>
+                        <Description>The unit of measure that applies to the lead time</Description>
+                        <DataType>Code</DataType>        
+                        <Reference type="CODE_LIST">UNECERec20</Reference>
+                        <Value type="EXAMPLE">DAY</Value>
                     </Attribute>
+                    <Value type="EXAMPLE">10</Value>
                 </Element>
                 <Element>
                     <Term>cac:Price</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Name>Price information</Name>
+                    
                     <Element>
                         <Term>cbc:PriceAmount</Term>
-                        <Name> Item price</Name>
-                        <Description> "The net price has to be equal with the gross price less the
+                        <Name>Item price</Name>
+                        <Description>The net price has to be equal with the gross price less the
                             item price discount. The price of an item, exclusive of VAT, after
                             subtracting item price discount.</Description>
                         <Reference type="BUSINESS_TERM">tir77-032</Reference>
                         <Reference type="RULE">BII3-T77-R011</Reference>
                         <Attribute>
                             <Term>currencyID</Term>
-                            <Name> Shopping cart currency</Name>
-                            <Description> A code that identifies the currency in which the amounts
-                                in a shopping cart are given.</Description>
-                            <Reference type="BUSINESS_TERM">tir77-004</Reference>
+                            <Description>Currency identifier</Description>
+                            <Reference type="CODE_LIST">CurrencyCode</Reference>
+                            <Value type="EXAMPLE">EUR</Value>  
                         </Attribute>
+                        <Value type="EXAMPLE">12.13</Value>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:BaseQuantity</Term>
-                        <Name> Item price base quantity</Name>
-                        <Description> UOM should be stated by using recommendation 20 v10 The number
-                            of item units to which the price applies.</Description>
+                        <Name>Item price base quantity</Name>
+                        <Description>The number of item units to which the price applies. UOM should be stated by using recommendation 20</Description>
                         <Reference type="BUSINESS_TERM">tir77-033</Reference>
                         <Reference type="RULE">EUGEN-T77-R008</Reference>
-                        <Attribute usage="optional">
+                        <Attribute>
                             <Term>unitCode</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                            <Name>Base quantity unit of measure</Name>
+                            <Description>The unit of measure that applies to the base quantity.</Description>
+                            <DataType>Code</DataType>        
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
+                            <Value type="EXAMPLE">C62</Value>
                         </Attribute>
+                        <Value type="EXAMPLE">1</Value>
                     </Element>
                 </Element>
                 <Element>
                     <Term>cac:DeliveryUnit</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Name>Quantity</Name>
+                  
                     <Element>
                         <Term>cbc:BatchQuantity</Term>
-                        <Name> Shopping cart line quantity</Name>
-                        <Description> UOM should be stated by using recommendation 20 v10 The number
-                            of item units requested by the buyer.</Description>
+                        <Name>Shopping cart line quantity</Name>
+                        <Description>The number of item units requested by the buyer. UOM should be stated by using recommendation 20</Description>
                         <Reference type="BUSINESS_TERM">tir77-017</Reference>
                         <Reference type="RULE">BII3-T77-R010</Reference>
-                        <Attribute usage="optional">
+                        <Attribute>
                             <Term>unitCode</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                            <Name>Batch quantity unit of measure</Name>
+                            <Description>The unit of measure that applies to the batch quantity.</Description>
+                            <DataType>Code</DataType>        
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
+                            <Value type="EXAMPLE">C62</Value>
                         </Attribute>
+                        <Value type="EXAMPLE">100</Value>
                     </Element>
                 </Element>
             </Element>
             <Element>
                 <Term>cac:Item</Term>
-                <Name> </Name>
-                <Description> </Description>
+                <Name>Shopping cart item information</Name>
+                
                 <Element cardinality="0..1">
                     <Term>cbc:Description</Term>
-                    <Name> Item description as text</Name>
-                    <Description> A free text detailed description of an item.</Description>
+                    <Name>Item description as text</Name>
+                    <Description>A free text detailed description of an item.</Description>
                     <Reference type="BUSINESS_TERM">tir77-039</Reference>
                     <Reference type="RULE">BII3-T77-R023</Reference>
+                    <Value type="EXAMPLE">Tissue paper, white, pack of 100</Value>
                 </Element>
                 <Element>
                     <Term>cbc:Name</Term>
-                    <Name> Item name</Name>
-                    <Description> One of, Item name, Item identifier or Item description shall be
-                        provided. A name for an item.</Description>
+                    <Name>Item name</Name>
+                    <Description>A name for an item. One of, Item name, Item identifier or Item description shall be
+                        provided.</Description>
                     <Reference type="BUSINESS_TERM">tir77-021</Reference>
                     <Reference type="RULE">BII3-T77-R013</Reference>
+                    <Value type="EXAMPLE">100 tissue paper, white</Value>
                 </Element>
                 <Element cardinality="0..1">
                     <Term>cac:SellersItemIdentification</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Name>Sellers item identification</Name>
+                    
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name> Item sellers identifier</Name>
-                        <Description> An identifier, assigned by the seller, for the
+                        <Name>Item sellers identifier</Name>
+                        <Description>An identifier, assigned by the seller, for the
                             item.</Description>
                         <Reference type="BUSINESS_TERM">tir77-022</Reference>
                         <Reference type="RULE">BII3-T77-R012</Reference>
-                        <Attribute usage="optional">
-                            <Term>schemeID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
-                        </Attribute>
+                        <Value type="EXAMPLE">3249834</Value>
                     </Element>
                 </Element>
                 <Element cardinality="0..1">
                     <Term>cac:ManufacturersItemIdentification</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Name>Manufacturers item identification</Name>
+                    
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name> Manufacturers item identifier</Name>
-                        <Description> The manufacturer's identifier for the item.</Description>
+                        <Name>Manufacturers item identifier</Name>
+                        <Description>The manufacturer's identifier for the item.</Description>
                         <Reference type="BUSINESS_TERM">tir77-024</Reference>
                         <Reference type="RULE">BII3-T77-R024</Reference>
-                        <Attribute usage="optional">
-                            <Term>schemeID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
-                        </Attribute>
+                        <Value type="EXAMPLE">m97965</Value>
                     </Element>
                 </Element>
                 <Element cardinality="0..1">
                     <Term>cac:StandardItemIdentification</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Name>Standard item identification</Name>
+               
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name> Item standard identifier</Name>
-                        <Description> An item identifier based on a registered scheme.</Description>
+                        <Name>Item standard identifier</Name>
+                        <Description>An item identifier based on a registered scheme. Associates
+                            the item with its identification according to a standard system.</Description>
                         <Reference type="BUSINESS_TERM">tir77-023</Reference>
                         <Reference type="RULE">BII3-T77-R012</Reference>
-                        <Attribute usage="optional">
+                        <Attribute>
                             <Term>schemeID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                            <Name>Item standard identifier identification scheme identifier</Name>
+                            <Description>The identification scheme identifier of the Item standard identifier</Description>
+                            <Reference type="CODE_LIST">ISO6523 ? </Reference>
+                            <Value type="EXAMPLE">0088</Value>
+                            
                         </Attribute>
                     </Element>
                 </Element>
                 <Element cardinality="0..n">
                     <Term>cac:ItemSpecificationDocumentReference</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Name>Item document references</Name>
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name> Attachment identifierAttached image identifier</Name>
-                        <Description> An identifier that can be used to reference the attached
-                            document, such as an unique identifier.An identifier that can be used to
-                            reference the attached document, such as an unique
-                            identifier.</Description>
-                        <Reference type="BUSINESS_TERM">tir77-036OP-T77-003</Reference>
+                        <Name>Attachment/image identifier</Name>
+                        <Description>An identifier that can be used to reference the attached
+                            document, such as an unique identifier.</Description>
+                        <Reference type="BUSINESS_TERM">tir77-036</Reference>
+                        <Reference type="BUSINESS_TERM">OP-T77-003</Reference>
                         <Reference type="RULE">BII3-T77-R025</Reference>
-                        <Attribute usage="optional">
-                            <Term>schemeID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
-                        </Attribute>
+                        <Value type="EXAMPLE">23423</Value>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:DocumentTypeCode</Term>
-                        <Name> Attachment description codeAttached image description code</Name>
-                        <Description> A functional description of the attachment expressed as code.A
-                            functional description of the attachment expressed as
-                            code.</Description>
-                        <Reference type="BUSINESS_TERM">tir77-044OP-T77-005</Reference>
+                        <Name>Attachment/image description code</Name>
+                        <Description>A functional description of the attachment/image expressed as code</Description>
+                        <Reference type="BUSINESS_TERM">tir77-044</Reference>
+                        <Reference type="BUSINESS_TERM">OP-T77-005</Reference>
                         <Reference type="RULE">EUGEN-T77-R012</Reference>
-                        <Attribute usage="optional">
-                            <Term>listID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
-                        </Attribute>
+                       <Value type="EXAMPLE">858</Value>
+                       
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:DocumentDescription</Term>
-                        <Name> Attachment descriptionAttached image description</Name>
-                        <Description> A short description of the attached documentA short
+                        <Name>Attachment descriptionAttached image description</Name>
+                        <Description>A short description of the attached documentA short
                             description of the attached document</Description>
-                        <Reference type="BUSINESS_TERM">tir77-037OP-T77-004</Reference>
+                        <Reference type="BUSINESS_TERM">tir77-037</Reference>
+                        <Reference type="BUSINESS_TERM">OP-T77-004</Reference>
                         <Reference type="RULE">BII3-T77-R026</Reference>
+                        <Value type="EXAMPLE">Product image</Value>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cac:Attachment</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                        <Name>Attachment information</Name>
+                        
                         <Element cardinality="0..1">
                             <Term>cbc:EmbeddedDocumentBinaryObject</Term>
-                            <Name> Attached documentAttached image document</Name>
-                            <Description> A Binary Object MIME code attribute MUST be coded using
-                                MIME Code Type version 2008 code listAn attached document embedded
-                                as binary object.A Binary Object MIME code attribute MUST be coded
-                                using MIME Code Type version 2008 code listAn attached document
-                                embedded as binary object.</Description>
-                            <Reference type="BUSINESS_TERM">tir77-038OP-T77-006</Reference>
+                            <Name>Attached document/image</Name>
+                            <Description>An attached document/image embedded
+                                as binary object.</Description>
+                            <Reference type="BUSINESS_TERM">tir77-038</Reference>
+                            <Reference type="BUSINESS_TERM">OP-T77-006</Reference>
                             <Attribute>
                                 <Term>mimeCode</Term>
-                                <Name> </Name>
-                                <Description> </Description>
+                                <Name>Attached document Mime code</Name>
+                                <Description>The mime code of the attached document.</Description>
+                                <Value type="EXAMPLE">image/png</Value>
                             </Attribute>
                         </Element>
                     </Element>
                 </Element>
                 <Element cardinality="0..1">
                     <Term>cac:OriginCountry</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Name>Country of origin</Name>
+                    
                     <Element cardinality="0..1">
                         <Term>cbc:IdentificationCode</Term>
-                        <Name> Item country of origin</Name>
-                        <Description> The lists of valid countries are registered with the ISO
-                            3166-1 Maintenance agency, "Codes for the representation of names of
-                            countries and their subdivisions". It is recommended to use the alpha-2
-                            representation. The code identifying the country from which the item
-                            originates.</Description>
+                        <Name>Item country of origin</Name>
+                        <Description> The code identifying the country from which the item
+                            originates. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency,
+                            "Codes for the representation of names of countries and their
+                            subdivisions". Codes must be according to the alpha-2
+                            representation.</Description>
                         <Reference type="BUSINESS_TERM">tir77-029</Reference>
-                        <Attribute usage="optional">
-                            <Term>listID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
-                        </Attribute>
+                      
                     </Element>
                 </Element>
                 <Element cardinality="0..n">
                     <Term>cac:CommodityClassification</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Name>Commodity classification information</Name>
                     <Element>
                         <Term>cbc:ItemClassificationCode</Term>
-                        <Name> Item commodity classification</Name>
-                        <Description> Classification codes are used to allow grouping of similar
-                            items for a various purposes e.g. public procurement (CPV), e-Commerce
-                            (UNSPSC) etc. A code for classifying the item by its type or
-                            nature.</Description>
+                        <Name>Item commodity classification</Name>
+                        <Description>A code for classifying the item by its type or nature. Classification codes are used to
+                            allow grouping of similar items for a various purposes e.g. public
+                            procurement (CPV), e-Commerce (UNSPSC) etc.</Description>
                         <Reference type="BUSINESS_TERM">tir77-028</Reference>
                         <Reference type="RULE">BII3-T77-R030</Reference>
-                        <Attribute usage="optional">
+                        <Attribute>
                             <Term>listID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                            <Name>Item classification identifier identification scheme identifier</Name>
+                            <Description>The identification scheme identifier of the Item classification identifier</Description>
+                            
+                            <Value type="EXAMPLE">CPV</Value>
                         </Attribute>
                     </Element>
                 </Element>
                 <Element>
                     <Term>cac:ClassifiedTaxCategory</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Name>Line VAT information</Name>
+                   
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name> Item VAT category code</Name>
-                        <Description> The VAT category code for the item.</Description>
+                        <Name>Item VAT category code</Name>
+                        <Description>The VAT category code for the item.</Description>
                         <Reference type="BUSINESS_TERM">tir77-034</Reference>
                         <Reference type="RULE">BII3-T77-R015</Reference>
-                        <Attribute usage="optional">
-                            <Term>schemeID</Term>
-                            <Name> </Name>
-                            <Description> </Description>
-                        </Attribute>
+                        <Value type="EXAMPLE">Z</Value>
                     </Element>
                     <Element>
                         <Term>cbc:Percent</Term>
-                        <Name> Item VAT rate</Name>
-                        <Description> A VAT rate of zero percent is applied for calculation purposes
+                        <Name>Item VAT rate</Name>
+                        <Description>A VAT rate of zero percent is applied for calculation purposes
                             even if the item is outside the scope of VAT. The VAT rate, represented
                             as percentage that applies to the item.</Description>
                         <Reference type="BUSINESS_TERM">tir77-035</Reference>
                         <Reference type="RULE">BII3-T77-R015</Reference>
+                        <Value type="EXAMPLE">0</Value>
                     </Element>
                     <Element>
                         <Term>cac:TaxScheme</Term>
-                        <Name> </Name>
-                        <Description> </Description>
-                        <Element cardinality="0..1">
+                        <Name>Tax scheme information</Name>
+                        
+                        <Element>
                             <Term>cbc:ID</Term>
-                            <Name> Item VAT category code</Name>
-                            <Description> The VAT category code for the item.</Description>
-                            <Reference type="BUSINESS_TERM">tir77-034</Reference>
-                            <Reference type="RULE">BII3-T77-R015</Reference>
+                            <Description>Tax scheme. Use “VAT”</Description>
+                            <Value type="DEFAULT">VAT</Value>
                         </Element>
                     </Element>
                 </Element>
                 <Element cardinality="0..n">
                     <Term>cac:AdditionalItemProperty</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Name>Additional item property information</Name>
+                    <Description>Used to for item properties and also configured product identifier and item is service indicator</Description>
+                    
                     <Element>
                         <Term>cbc:Name</Term>
-                        <Name> Configured product identifierItem is service indicatorItem property
+                        <Name>Item property
                             name</Name>
-                        <Description> OP � May be used to identify if item is nonphysical such as
+                        <Description>The name of the property, can also be used (by repeating the group) to state an identifier for a
+                            configured product that the relevant item is a part of. Indicates if the
+                            item is a service. May be used to identify if item is nonphysical such as
                             subscritions, cleaning services etc.The name must be sufficiently
                             descriptive to define the value. The definition may be supplemented with
-                            the property unit of measure when relevant. An identifier for a
-                            configured product that the relevant item is a part of.Indicates if the
-                            item is a service.The name of the property.</Description>
-                        <Reference type="BUSINESS_TERM">tir77-018tir77-026tir77-043</Reference>
+                            the property unit of measure when relevant. </Description>
+                        <Reference type="BUSINESS_TERM">tir77-0186</Reference>
+                        <Reference type="BUSINESS_TERM">tir77-02</Reference>
+                        <Reference type="BUSINESS_TERM">tir77-043</Reference>
                         <Reference type="RULE">BII3-T77-R022</Reference>
+                        <Value type="EXAMPLE">Color</Value>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:NameCode</Term>
-                        <Name> Item property classification code</Name>
-                        <Description> Code for the item property according to a property code
+                        <Name>Item property classification code</Name>
+                        <Description>Code for the item property according to a property code
                             system</Description>
                         <Reference type="BUSINESS_TERM">tir77-040</Reference>
                     </Element>
                     <Element>
                         <Term>cbc:Value</Term>
-                        <Name> Item property value</Name>
-                        <Description> The value of the item property.</Description>
+                        <Name>Item property value</Name>
+                        <Description>The value of the item property.</Description>
                         <Reference type="BUSINESS_TERM">tir77-042</Reference>
+                        <Value type="EXAMPLE">White</Value>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:ValueQuantity</Term>
-                        <Name> Item property unit of measure</Name>
-                        <Description> May not be relevant when properties are descriptive. The unit
+                        <Name>Item property unit of measure</Name>
+                        <Description>May not be relevant when properties are descriptive. The unit
                             of measure in which the property value is stated, if
                             relevant.</Description>
                         <Reference type="BUSINESS_TERM">tir77-041</Reference>
                         <Attribute usage="optional">
                             <Term>unitCode</Term>
-                            <Name> Item property unit of measure</Name>
-                            <Description> May not be relevant when properties are descriptive. The
+                            <Name>Item property unit of measure</Name>
+                            <Description>May not be relevant when properties are descriptive. The
                                 unit of measure in which the property value is stated, if
                                 relevant.</Description>
                             <Reference type="BUSINESS_TERM">tir77-041</Reference>
+                            <Value type="EXAMPLE">KWH</Value>
                         </Attribute>
+                        <Value type="EXAMPLE">120</Value>
                     </Element>
                 </Element>
                 <Element cardinality="0..1">
                     <Term>cac:ManufacturerParty</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Name>Manufacturer party</Name>
+                    
                     <Element>
                         <Term>cac:PartyName</Term>
-                        <Name> </Name>
-                        <Description> </Description>
+                        <Name>Party name</Name>
+                        
                         <Element>
                             <Term>cbc:Name</Term>
-                            <Name> Manufacturers name</Name>
-                            <Description> The name of the manufacturer of the item.</Description>
+                            <Name>Manufacturers name</Name>
+                            <Description>The name of the manufacturer of the item.</Description>
                             <Reference type="BUSINESS_TERM">tir77-025</Reference>
                             <Reference type="RULE">BII3-T77-R027</Reference>
+                            <Value type="EXAMPLE">Manufacturer</Value>
                         </Element>
                     </Element>
                 </Element>
                 <Element cardinality="0..n">
                     <Term>cac:Certificate</Term>
-                    <Name> </Name>
-                    <Description> </Description>
+                    <Name>Item label information</Name>
+                    <Description>Information about the items environmental, social, ethical and quality type of labelling.</Description>
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name> Item label name</Name>
-                        <Description> The name of the product label.</Description>
+                        <Name>Item label name</Name>
+                        <Description>The name of the product label.</Description>
                         <Reference type="BUSINESS_TERM">tir77-030</Reference>
                         <Reference type="RULE">BII3-T77-R014</Reference>
+                        <Value type="EXAMPLE">Blue Angel</Value>
                     </Element>
                     <Element>
                         <Term>cbc:CertificateTypeCode</Term>
-                        <Name> Item label type</Name>
-                        <Description> The label type such environmental, quality, social
-                            etc.</Description>
-                        <Reference type="BUSINESS_TERM">tir77-031</Reference>
-                        <Reference type="RULE">BII3-T77-R014</Reference>
+                        <Name>Certificate type code</Name>
+                        <Description>The UBL structure used for item labeling requires this elements, 
+                            use the value NA.</Description>
+                        <Value type="FIXED">NA</Value>
                     </Element>
                     <Element>
                         <Term>cbc:CertificateType</Term>
-                        <Name> Item label type</Name>
-                        <Description> The label type such environmental, quality, social
+                        <Name>Item label type</Name>
+                        <Description>The label type such environmental, quality, social
                             etc.</Description>
                         <Reference type="BUSINESS_TERM">tir77-031</Reference>
                         <Reference type="RULE">BII3-T77-R014</Reference>
+                        <Value type="EXAMPLE">Environmental</Value>
                     </Element>
+                    <Element cardinality="0..n">
+                        <Term>cbc:Remarks</Term>
+                        <Name>Item label value</Name>
+                        <Description>The label value that applies to the item.</Description>
+                        
+                        <Value type="EXAMPLE">Item label value</Value>
+                    </Element>
+                    
                     <Element>
                         <Term>cac:IssuerParty</Term>
-                        <Name> </Name>
-                        <Description> </Description>
-                        <Element cardinality="0..1">
+                        <Name>Issuer party information</Name>
+                        <Element>
                             <Term>cac:PartyName</Term>
-                            <Name> </Name>
-                            <Description> </Description>
+                            <Name/>
+                            <Description/>
                             <Element>
-                                <Term>cbc:Name</Term>
-                                <Name> Item label name</Name>
-                                <Description> The name of the product label.</Description>
+                                <Term>cbc:Name</Term> <Name>Issuer name</Name>
+                                <Description>The UBL structure used for item labeling requires this elements, 
+                                    use the value NA.</Description>
                                 <Reference type="BUSINESS_TERM">tir77-030</Reference>
                                 <Reference type="RULE">BII3-T77-R014</Reference>
+                                <Value type="EXAMPLE">NA</Value>
                             </Element>
                         </Element>
                     </Element>

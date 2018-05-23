@@ -4,7 +4,7 @@
     <Title>ISO 3166 Alpha-2 Country codes</Title>
     <Identifier>CountryCodeIdentifier</Identifier>
     <Version>1.0.2</Version>
-    <Agency>DG GROW (European Commission)</Agency>
+    <Agency>ISO</Agency>
 
     <Code>
         <Id>AD</Id>

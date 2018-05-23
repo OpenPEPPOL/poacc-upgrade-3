@@ -3,8 +3,8 @@
 
     <Title>ISO 4217 Currency Codes</Title>
     <Identifier>CurrencyCode</Identifier>
-    <Version>1.0.2</Version>
-    <Agency>DG GROW (European Commission)</Agency>
+  <!--  <Version>1.0.2</Version>-->
+    <Agency>ISO</Agency>
 
     <Code>
         <Id>AED</Id>
