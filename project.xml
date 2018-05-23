@@ -26,6 +26,11 @@
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-orderagreement.xml</Path>
+        <Title>UBL Order Agreement</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-catalogue.xml</Path>
         <Title>UBL Catalogue</Title>
     </Resource>
@@ -40,5 +45,9 @@
         <Path>structure/syntax/ubl-despatch-advice.xml</Path>
         <Title>UBL Despatch Advice</Title>
     </Resource>
-
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-punchout.xml</Path>
+        <Title>UBL Punchout</Title>
+    </Resource>
 </Project>
