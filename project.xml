@@ -50,4 +50,23 @@
         <Path>structure/syntax/ubl-punchout.xml</Path>
         <Title>UBL Punchout</Title>
     </Resource>
+    
+    <!-- Code lists -->
+    
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/CountryCodeIdentifier.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/CurrencyCode.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ICD.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNECERec20-11e.xml</Path>
+    </Resource>
 </Project>
