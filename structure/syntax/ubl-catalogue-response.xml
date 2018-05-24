@@ -10,9 +10,10 @@
     <Document>
         <Term>ubl:ApplicationResponse</Term>
         <Element cardinality="0..1">
-            <Term>cbc:UBLVersionID</Term>
-            <Name></Name>
-            <Description></Description>
+			<Term>cbc:UBLVersionID</Term>
+			<Name>UBL Version Id</Name>
+			<Description>Reference to the UBL syntax version 2.1</Description>
+			<Value type="EXAMPLE">2.1</Value>
         </Element>
         <Element cardinality="0..1">
             <Term>cbc:CustomizationID</Term>
@@ -44,6 +45,7 @@
             <Name>Response issue date</Name>
             <Description>The date on which the transaction instance was issued.</Description>
             <Reference type="BUSINESS_TERM">tir58-002</Reference>
+			<Value type="EXAMPLE">2018-05-31</Value>
         </Element>
         <Element cardinality="0..1">
             <Term>cbc:IssueTime</Term>
@@ -60,7 +62,7 @@
         </Element>
         <Element>
             <Term>cac:SenderParty</Term>
-            <Name></Name>
+            <Name>Sender party</Name>
             <Description></Description>
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
@@ -72,13 +74,13 @@
                 <Reference type="RULE">EUGEN-T58-R001</Reference>
                 <Attribute usage="Optional">
                     <Term>schemeID</Term>
-                    <Name></Name>
-                    <Description></Description>
+					<Name>Electronic address identifier identification scheme identifier</Name>
+					<Description>The identification scheme identifier of the Electronic address identifier</Description>
                 </Attribute>
             </Element>
             <Element cardinality="0..n">
                 <Term>cac:PartyIdentification</Term>
-                <Name></Name>
+				<Name>Party Identification</Name>
                 <Description></Description>
                 <Element>
                     <Term>cbc:ID</Term>
@@ -89,14 +91,14 @@
                     <Reference type="RULE">EUGEN-T58-R002</Reference>
                     <Attribute usage="Optional">
                         <Term>schemeID</Term>
-                        <Name></Name>
-                        <Description></Description>
+						<Name>Sender identifier identification scheme identifier</Name>
+						<Description>The identification scheme identifier of the Sender identifier</Description>
                     </Attribute>
                 </Element>
             </Element>
             <Element cardinality="0..n">
                 <Term>cac:PartyName</Term>
-                <Name></Name>
+				<Name>Party name</Name>
                 <Description></Description>
                 <Element>
                     <Term>cbc:Name</Term>
@@ -108,7 +110,7 @@
         </Element>
         <Element>
             <Term>cac:ReceiverParty</Term>
-            <Name></Name>
+            <Name>Receiver party</Name>
             <Description></Description>
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
@@ -120,13 +122,13 @@
                 <Reference type="RULE">EUGEN-T58-R001</Reference>
                 <Attribute usage="Optional">
                     <Term>schemeID</Term>
-                    <Name></Name>
-                    <Description></Description>
+					<Name>Electronic address identifier identification scheme identifier</Name>
+					<Description>The identification scheme identifier of the Electronic address identifier</Description>
                 </Attribute>
             </Element>
             <Element cardinality="0..n">
                 <Term>cac:PartyIdentification</Term>
-                <Name></Name>
+                <Name>Party Identification</Name>
                 <Description></Description>
                 <Element>
                     <Term>cbc:ID</Term>
@@ -137,14 +139,14 @@
                     <Reference type="RULE"/>
                     <Attribute usage="Optional">
                         <Term>schemeID</Term>
-                        <Name></Name>
-                        <Description></Description>
+						<Name>Receiver identifier identification scheme identifier</Name>
+						<Description>The identification scheme identifier of the Receiver identifier</Description>
                     </Attribute>
                 </Element>
             </Element>
             <Element cardinality="0..n">
                 <Term>cac:PartyName</Term>
-                <Name></Name>
+                <Name>Party name</Name>
                 <Description></Description>
                 <Element>
                     <Term>cbc:Name</Term>
@@ -156,30 +158,30 @@
         </Element>
         <Element cardinality="0..n">
             <Term>cac:DocumentResponse</Term>
-            <Name></Name>
+            <Name>Document response</Name>
             <Description></Description>
             <Element>
                 <Term>cac:Response</Term>
-                <Name></Name>
+                <Name>Response</Name>
                 <Description></Description>
                 <Element cardinality="0..1">
                     <Term>cbc:ResponseCode</Term>
                     <Name>Coded decision</Name>
                     <Description>A code for the description of the response to the transaction
-                        document.AP= Accepted, RE = Rejected, UN/Cefact 4343 Response type
+                        document. AP= Accepted, RE = Rejected, UN/Cefact 4343 Response type
                         code</Description>
                     <Reference type="BUSINESS_TERM">tir58-014</Reference>
                     <Reference type="RULE">EUGEN-T58-R003</Reference>
                     <Attribute usage="Optional">
                         <Term>listID</Term>
-                        <Name></Name>
-                        <Description></Description>
+						<Name>Response code identifier identification scheme identifier</Name>
+						<Description>The identification scheme identifier of the Response code identifier.</Description>
                     </Attribute>
                 </Element>
             </Element>
             <Element cardinality="1..n">
                 <Term>cac:DocumentReference</Term>
-                <Name></Name>
+                <Name>Document reference</Name>
                 <Description></Description>
                 <Element>
                     <Term>cbc:ID</Term>
@@ -189,8 +191,8 @@
                     <Reference type="RULE">BII2-T58-R010</Reference>
                     <Attribute usage="Optional">
                         <Term>schemeID</Term>
-                        <Name></Name>
-                        <Description></Description>
+						<Name>Document identifier identification scheme identifier</Name>
+						<Description>The identification scheme identifier of the document identifier</Description>
                     </Attribute>
                 </Element>
                 <Element cardinality="0..1">
