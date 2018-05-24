@@ -2,10 +2,3 @@
 = Namespaces
 
 include::../{transaction-path}/technical/namespace.adoc[]
-
-
-:leveloffset: +1
-
-include::../../../shared/files/ubl-version.adoc[]
-
-:leveloffset: -1

@@ -34,6 +34,6 @@ include::process/index.adoc[]
 
 include::description/index.adoc[]
 
-include::identifiers/index.adoc[]
+include::profile/index.adoc[]
 
 :leveloffset: -1

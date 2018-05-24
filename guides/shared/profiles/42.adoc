@@ -1,9 +1,8 @@
 
-[[prof-18]]
-= Profile 18 - Punch out
+[[prof-42]]
+= Profile 42 - Order Agreement
 
 In the table below you will find the values to be used as the specification identifier and the business process type for this profile
-
 
 [cols="2s,5a,5a", options="header"]
 |===
@@ -12,8 +11,8 @@ In the table below you will find the values to be used as the specification iden
 | Element `cbc:ProfileID`
 
 
-| Shopping Cart (Trdm077)
-| urn:www.cenbii.eu:transaction:biitrns077:ver2.0: +
-extended:www.peppol.eu:bis:peppol18a:ver1.0
-| urn:www.cenbii.eu:profile:bii18:ver1.0
+| Order Agreement (Trdm110)
+| urn:www.cenbii.eu:transaction:biitrns110:ver1.0: +
+*extended*:urn:www.peppol.eu:bis:peppol42a:ver1.0
+| urn:www.cenbii.eu:profile:bii42:ver1.0
 |===

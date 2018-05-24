@@ -3,6 +3,7 @@
 
     <Name>PEPPOL BIS Upgrade 3.0</Name>
 
+    <Documentation path="changes/">Overview and remarks on alignment work</Documentation>
 
     <!-- BIS documents --> 
     <Documentation path="profiles/3-order-only/">Order only BIS (Business Interoperability Specifications)</Documentation>
@@ -26,6 +27,11 @@
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-orderagreement.xml</Path>
+        <Title>UBL Order Agreement</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-catalogue.xml</Path>
         <Title>UBL Catalogue</Title>
     </Resource>
@@ -40,5 +46,28 @@
         <Path>structure/syntax/ubl-despatch-advice.xml</Path>
         <Title>UBL Despatch Advice</Title>
     </Resource>
-
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-punchout.xml</Path>
+        <Title>UBL Punchout</Title>
+    </Resource>
+    
+    <!-- Code lists -->
+    
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/CountryCodeIdentifier.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/CurrencyCode.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ICD.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNECERec20-11e.xml</Path>
+    </Resource>
 </Project>
