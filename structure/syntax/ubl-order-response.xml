@@ -513,11 +513,8 @@
                                 item.</Description>
                             <Reference type="BUSINESS_TERM">tir76-150</Reference>
                             <Reference type="RULE">OP-T76-008</Reference>
-                            <Attribute>
-                                <Term>schemeID</Term>
-                                <Name></Name>
-                                <Description></Description>
-                            </Attribute>
+                            <Reference type="CODE_LIST">UNCL5305</Reference>
+                      
                         </Element>
                         <Element cardinality="0..1">
                             <Term>cbc:Percent</Term>
@@ -528,8 +525,12 @@
                         </Element>
                         <Element>
                             <Term>cac:TaxScheme</Term>
+                            <Name>Tax scheme information</Name>
+                            
                             <Element>
                                 <Term>cbc:ID</Term>
+                                <Description>Tax scheme. Use “VAT”</Description>
+                                <Value type="DEFAULT">VAT</Value>
                             </Element>
                         </Element>
                     </Element>

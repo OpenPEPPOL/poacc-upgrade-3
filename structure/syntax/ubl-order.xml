@@ -179,12 +179,20 @@
                     <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                     <Name>Attached binary object</Name>
                     <Description>The attached document embeded as binary object.</Description>
+                    <DataType>Binary object</DataType>
                     <Reference type="BUSINESS_TERM">tir01-017</Reference>
                     <Attribute>
                         <Term>mimeCode</Term>
                         <Name></Name>
                         <Description></Description>
                         <Reference type="RULE">OP-T01-003</Reference>
+                    </Attribute>
+                    
+                    <Attribute>
+                        <Term>filename</Term>
+                        <Name>Attached document Filename</Name>
+                        <Description>The file name of the attached document</Description>
+                        <Value type="EXAMPLE">Hours-spent.csv</Value>
                     </Attribute>
                 </Element>
                 <Element cardinality="0..1">
@@ -1334,20 +1342,7 @@
                         <Reference type="RULE">OP-T01-007</Reference>
                     </Attribute>
                 </Element>
-                <Element cardinality="0..1">
-                    <Term>cbc:TotalTaxAmount</Term>
-                    <Name>Order line tax amount</Name>
-                    <Description>The total tax amount for the Line Item. The total amounts of taxes
-                        on the line.</Description>
-                    <Reference type="BUSINESS_TERM">tir01-129</Reference>
-                    <Attribute>
-                        <Term>currencyID</Term>
-                        <Name>CurrencyID</Name>
-                        <Description></Description>
-                        <Reference type="BUSINESS_TERM">8</Reference>
-                        <Reference type="RULE">OP-T01-007</Reference>
-                    </Attribute>
-                </Element>
+               
                 <Element cardinality="0..1">
                     <Term>cbc:PartialDeliveryIndicator</Term>
                     <Name>Partial Delivery Allowed Indicator</Name>
@@ -1595,12 +1590,8 @@
                                 item.</Description>
                             <Reference type="BUSINESS_TERM">tir01-150</Reference>
                             <Reference type="RULE">EUGEN-T01-R017</Reference>
-                            <Attribute>
-                                <Term>schemeID</Term>
-                                <Name></Name>
-                                <Description></Description>
-                                <Reference type="RULE">OP-T01-008</Reference>
-                            </Attribute>
+                            <Reference type="CODE_LIST">UNCL5305</Reference>
+                           
                         </Element>
                         <Element cardinality="0..1">
                             <Term>cbc:Percent</Term>
@@ -1611,16 +1602,14 @@
                         </Element>
                         <Element>
                             <Term>cac:TaxScheme</Term>
-                            <Name></Name>
-                            <Description>Taxscheme (VAT) </Description>
+                            <Name>Tax scheme information</Name>
+                            
                             <Element>
                                 <Term>cbc:ID</Term>
-                                <Name>Identifier</Name>
-                                <Description>Code for TaxScheme. VAT is the only allowed
-                                    value</Description>
-                                <Reference type="BUSINESS_TERM">3</Reference>
-                                <Value type="EXAMPLE">VAT</Value>
+                                <Description>Tax scheme. Use “VAT”</Description>
+                                <Value type="DEFAULT">VAT</Value>
                             </Element>
+                            
                         </Element>
                     </Element>
                     <Element cardinality="0..n">

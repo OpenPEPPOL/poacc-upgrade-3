@@ -6,7 +6,7 @@
 * VAT identifier rules
 
 
-DespatchAdvice (16) and catalogue response (58) does not have any VAT information
+DespatchAdvice (16), MLR (36) and catalogue response (58) does not have any VAT information
 
 .VAT information in different transactions
 [cols="2,^1,^1,^1,^1,^1", options="header"]

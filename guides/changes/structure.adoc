@@ -4,6 +4,12 @@
 * Remove attributes
 * Align label elements in Order Agreement and Punchout
 * Vat category in allowance/charge on header level in Order Agreement
+* Add filename to attachments
+
+= Changes to BIS documents
+
+* Add information on semantic datatypes
+* Chapters on code lists and rules referring to main site only.
 
 
 = Remarks/question
@@ -15,3 +21,6 @@
 * OA: Item property classification code - codelist?
 * Remove chapter on codelists and rules?
 * Datatypes in shared, then reused?
+* Party identification/EndpointID?
+** Shared chapter on identifier must be updated
+** Snippets/examples must be corrected

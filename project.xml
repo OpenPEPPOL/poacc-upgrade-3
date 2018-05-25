@@ -78,7 +78,7 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/ICD.xml</Path>
+        <Path>structure/codelist/PartyID.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>

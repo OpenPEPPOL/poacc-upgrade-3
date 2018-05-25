@@ -11,7 +11,7 @@
   <cbc:ID>1</cbc:ID>
   <cbc:IssueDate>2013-07-01</cbc:IssueDate>
   <cbc:IssueTime>05:10:10</cbc:IssueTime>
-   <cbc:DocumentCurrencyCode listID="ISO4217">EUR</cbc:DocumentCurrencyCode>
+   <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
   <cbc:AccountingCost>MAFO</cbc:AccountingCost>
   <cac:ValidityPeriod>
     <cbc:EndDate>2013-07-30</cbc:EndDate>
@@ -21,7 +21,7 @@
     <cbc:ID>100</cbc:ID>
     <cbc:DocumentType>Drawing</cbc:DocumentType><!--1-->
     <cac:Attachment>
-      <cbc:EmbeddedDocumentBinaryObject filename="blueprint.pdf" mimeCode="application/pdf">Ymx1ZXByaW50</cbc:EmbeddedDocumentBinaryObject><!--2-->
+      <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="blueprint.pdf" >Ymx1ZXByaW50</cbc:EmbeddedDocumentBinaryObject><!--2-->
     </cac:Attachment>
   </cac:AdditionalDocumentReference>
   <!-- end::attachment[] -->
@@ -44,7 +44,7 @@
         <cac:RegistrationAddress>
           <cbc:CityName>Eurocity</cbc:CityName>
           <cac:Country>
-            <cbc:IdentificationCode listID="ISO3166-1:Alpha2">SE</cbc:IdentificationCode>
+            <cbc:IdentificationCode>SE</cbc:IdentificationCode>
           </cac:Country>
         </cac:RegistrationAddress>
       </cac:PartyLegalEntity>
@@ -75,7 +75,7 @@
         <cbc:PostalZone>5005</cbc:PostalZone>
         <cbc:CountrySubentity>Region West</cbc:CountrySubentity>
         <cac:Country>
-          <cbc:IdentificationCode listID="ISO3166-1:Alpha2">NO</cbc:IdentificationCode>
+          <cbc:IdentificationCode>NO</cbc:IdentificationCode>
         </cac:Country>
       </cac:PostalAddress>
       <cac:Contact>
@@ -122,7 +122,7 @@
         <cbc:PostalZone>7005</cbc:PostalZone>
         <cbc:CountrySubentity>Region M</cbc:CountrySubentity>
         <cac:Country>
-          <cbc:IdentificationCode listID="ISO3166-1:Alpha2">NO</cbc:IdentificationCode>
+          <cbc:IdentificationCode>NO</cbc:IdentificationCode>
         </cac:Country>
       </cac:PostalAddress>
       <cac:PartyLegalEntity>
@@ -131,7 +131,7 @@
         <cac:RegistrationAddress>
           <cbc:CityName>Stockholm</cbc:CityName>
           <cac:Country>
-            <cbc:IdentificationCode listID="ISO3166-1:Alpha2">SE</cbc:IdentificationCode>
+            <cbc:IdentificationCode>SE</cbc:IdentificationCode>
           </cac:Country>
         </cac:RegistrationAddress>
       </cac:PartyLegalEntity>
@@ -146,7 +146,7 @@
         <cbc:CityName>Stockholm</cbc:CityName>
         <cbc:PostalZone>11120</cbc:PostalZone>
         <cac:Country>
-          <cbc:IdentificationCode listID="ISO3166-1:Alpha2">SE</cbc:IdentificationCode>
+          <cbc:IdentificationCode>SE</cbc:IdentificationCode>
         </cac:Country>
       </cac:Address>
     </cac:DeliveryLocation>
@@ -171,6 +171,13 @@
     <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
     <cbc:AllowanceChargeReason>Packing cost</cbc:AllowanceChargeReason>
     <cbc:Amount currencyID="EUR">100</cbc:Amount>
+    <cac:TaxCategory>
+      <cbc:ID>S</cbc:ID>
+      <cbc:Percent>25</cbc:Percent>
+      <cac:TaxScheme>
+        <cbc:ID>VAT</cbc:ID>
+      </cac:TaxScheme>
+    </cac:TaxCategory>
   </cac:AllowanceCharge>
   <!-- end::packing[] -->
   <!-- tag::discount[] -->
@@ -178,6 +185,13 @@
     <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
     <cbc:AllowanceChargeReason>Agreed discount</cbc:AllowanceChargeReason>
     <cbc:Amount currencyID="EUR">100</cbc:Amount>
+    <cac:TaxCategory>
+      <cbc:ID>S</cbc:ID>
+      <cbc:Percent>25</cbc:Percent>
+      <cac:TaxScheme>
+        <cbc:ID>VAT</cbc:ID>
+      </cac:TaxScheme>
+    </cac:TaxCategory>
   </cac:AllowanceCharge>
   <!-- end::discount[] -->
   <!-- tag::tax-total[] -->
@@ -192,7 +206,7 @@
   <cac:OrderLine>
     <cac:LineItem>
       <cbc:ID>1</cbc:ID>
-      <cbc:Quantity unitCode="NAR" unitCodeListID="UNECERec20">10</cbc:Quantity>
+      <cbc:Quantity unitCode="NAR">10</cbc:Quantity>
       <cbc:LineExtensionAmount currencyID="EUR">400</cbc:LineExtensionAmount>
       <!-- tag::tax-line[] -->
       <cbc:TotalTaxAmount currencyID="EUR">8.00</cbc:TotalTaxAmount>
@@ -222,7 +236,7 @@
         </cac:StandardItemIdentification>
          <!-- end::prod-id[] -->
         <cac:ClassifiedTaxCategory>
-          <cbc:ID schemeID="UNCL5305">S</cbc:ID>
+          <cbc:ID>S</cbc:ID>
           <cbc:Percent>25</cbc:Percent>
           <cac:TaxScheme>
             <cbc:ID>VAT</cbc:ID>
@@ -235,7 +249,7 @@
     <cac:LineItem>
       <cbc:ID>2</cbc:ID>
       <!-- tag::quantity[] -->
-      <cbc:Quantity unitCode="NAR" unitCodeListID="UNECERec20">6</cbc:Quantity>
+      <cbc:Quantity unitCode="NAR">6</cbc:Quantity>
       <!-- tag::quantity[] -->
       <cbc:LineExtensionAmount currencyID="EUR">30</cbc:LineExtensionAmount>
       <cbc:AccountingCost>MAFO-1</cbc:AccountingCost>
@@ -243,7 +257,7 @@
       
       <cac:Price>
         <cbc:PriceAmount currencyID="EUR">6</cbc:PriceAmount>
-        <cbc:BaseQuantity unitCode="NAR" unitCodeListID="UNECERec20">2</cbc:BaseQuantity>
+        <cbc:BaseQuantity unitCode="NAR">2</cbc:BaseQuantity>
       </cac:Price>
       <!-- end::quantity[] -->
       <!-- tag::name[] -->
@@ -261,7 +275,7 @@
           <cbc:ID schemeID="GTIN">08722700575887</cbc:ID>
         </cac:StandardItemIdentification>
         <cac:ClassifiedTaxCategory>
-          <cbc:ID schemeID="UNCL5305">S</cbc:ID>
+          <cbc:ID>S</cbc:ID>
           <cbc:Percent>25</cbc:Percent>
           <cac:TaxScheme>
             <cbc:ID>VAT</cbc:ID>
@@ -273,13 +287,13 @@
   <cac:OrderLine>
     <cac:LineItem>
       <cbc:ID>3</cbc:ID>
-      <cbc:Quantity unitCode="NAR" unitCodeListID="UNECERec20">15</cbc:Quantity>
+      <cbc:Quantity unitCode="NAR">15</cbc:Quantity>
       <cbc:LineExtensionAmount currencyID="EUR">45</cbc:LineExtensionAmount>
       <cbc:AccountingCost>MAFO-1</cbc:AccountingCost>
       <!-- tag::price[] -->
       <cac:Price>
         <cbc:PriceAmount currencyID="EUR">30</cbc:PriceAmount>
-        <cbc:BaseQuantity unitCode="NAR" unitCodeListID="UNECERec20">2</cbc:BaseQuantity>
+        <cbc:BaseQuantity unitCode="NAR">2</cbc:BaseQuantity>
       </cac:Price>
       <!-- end::price[] -->
        <cac:Item>
@@ -292,7 +306,7 @@
           <cbc:ID schemeID="GTIN">08722700577584</cbc:ID>
         </cac:StandardItemIdentification>
         <cac:ClassifiedTaxCategory>
-          <cbc:ID schemeID="UNCL5305">S</cbc:ID>
+          <cbc:ID>S</cbc:ID>
           <cbc:Percent>25</cbc:Percent>
           <cac:TaxScheme>
             <cbc:ID>VAT</cbc:ID>

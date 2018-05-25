@@ -116,6 +116,7 @@
                     <Name>Attached document</Name>
                     <Description>An attached document embedded as binary
                         object, coded using Base64.</Description>
+                    <DataType>Binary objects</DataType>
                     <Reference type="BUSINESS_TERM">tir110-048</Reference>
                     <Attribute>
                         <Term>mimeCode</Term>
@@ -123,6 +124,13 @@
                         <Description>The mime code of the attached document.</Description>
                         <Reference type="CODE_LIST">MimeCode</Reference>
                         <Value type="EXAMPLE">text/csv</Value>
+                    </Attribute>
+                    
+                    <Attribute>
+                        <Term>filename</Term>
+                        <Name>Attached document Filename</Name>
+                        <Description>The file name of the attached document</Description>
+                        <Value type="EXAMPLE">Hours-spent.csv</Value>
                     </Attribute>
                     <Value type="EXAMPLE">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</Value>
                 </Element>
@@ -1281,6 +1289,7 @@
                                 <Name>Attached document</Name>
                                 <Description>An attached document
                                     embedded as binary object.</Description>
+                                <DataType>Binary objects</DataType>
                                 <Reference type="BUSINESS_TERM">tir110-105</Reference>
                                 <Reference type="RULE">EUGEN-T110-R012</Reference>
                                 <Attribute>
@@ -1290,6 +1299,14 @@
                                     <Reference type="CODE_LIST">MimeCode</Reference>
                                     <Value type="EXAMPLE">text/csv</Value>
                                 </Attribute>
+                                
+                                <Attribute>
+                                    <Term>filename</Term>
+                                    <Name>Attached document Filename</Name>
+                                    <Description>The file name of the attached document</Description>
+                                    <Value type="EXAMPLE">Hours-spent.csv</Value>
+                                </Attribute>
+                                
                             </Element>
                             <Element cardinality="0..1">
                                 <Term>cac:ExternalReference</Term>

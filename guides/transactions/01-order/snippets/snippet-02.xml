@@ -9,7 +9,7 @@
   <cbc:ID>1</cbc:ID>
   <cbc:IssueDate>2013-07-01</cbc:IssueDate>
   <cbc:IssueTime>14:15:20</cbc:IssueTime>
-   <cbc:DocumentCurrencyCode listID="ISO4217">EUR</cbc:DocumentCurrencyCode>
+   <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
   <cbc:AccountingCost>MAFO</cbc:AccountingCost>
   <cac:ValidityPeriod>
     <cbc:EndDate>2013-07-30</cbc:EndDate>
@@ -32,7 +32,7 @@
         <cac:RegistrationAddress>
           <cbc:CityName>Eurocity</cbc:CityName>
           <cac:Country>
-            <cbc:IdentificationCode listID="ISO3166-1:Alpha2">SE</cbc:IdentificationCode>
+            <cbc:IdentificationCode>SE</cbc:IdentificationCode>
           </cac:Country>
         </cac:RegistrationAddress>
       </cac:PartyLegalEntity>
@@ -63,7 +63,7 @@
         <cbc:CityName>Stockholm</cbc:CityName>
         <cbc:PostalZone>11120</cbc:PostalZone>
         <cac:Country>
-          <cbc:IdentificationCode listID="ISO3166-1:Alpha2">SE</cbc:IdentificationCode>
+          <cbc:IdentificationCode>SE</cbc:IdentificationCode>
         </cac:Country>
       </cac:Address>
     </cac:DeliveryLocation>
@@ -112,7 +112,7 @@
   <cac:OrderLine>
     <cac:LineItem>
       <cbc:ID>1</cbc:ID>
-      <cbc:Quantity unitCode="NAR" unitCodeListID="UNECERec20">10</cbc:Quantity>
+      <cbc:Quantity unitCode="NAR">10</cbc:Quantity>
       <cbc:LineExtensionAmount currencyID="EUR">1136.50</cbc:LineExtensionAmount>
       <cbc:AccountingCost>MAFO-1</cbc:AccountingCost>
       <cac:Price>
@@ -122,7 +122,7 @@
         <cbc:Description>Free text description of item 1</cbc:Description>
         <cbc:Name>Item 1</cbc:Name>
         <cac:ClassifiedTaxCategory>
-          <cbc:ID schemeID="UNCL5305">S</cbc:ID>
+          <cbc:ID>S</cbc:ID>
           <cbc:Percent>25</cbc:Percent>
           <cac:TaxScheme>
             <cbc:ID>VAT</cbc:ID>
@@ -142,7 +142,7 @@
   <cac:OrderLine>
     <cac:LineItem>
       <cbc:ID>2</cbc:ID>
-      <cbc:Quantity unitCode="NAR" unitCodeListID="UNECERec20">50</cbc:Quantity>
+      <cbc:Quantity unitCode="NAR">50</cbc:Quantity>
       <cbc:LineExtensionAmount currencyID="EUR">300</cbc:LineExtensionAmount>
       <cbc:AccountingCost>MAFO-1</cbc:AccountingCost>
       <cac:Price>
@@ -152,7 +152,7 @@
         <cbc:Description>Free text description of item 2</cbc:Description>
         <cbc:Name>Item 2</cbc:Name>
         <cac:ClassifiedTaxCategory>
-          <cbc:ID schemeID="UNCL5305">S</cbc:ID>
+          <cbc:ID>S</cbc:ID>
           <cbc:Percent>25</cbc:Percent>
           <cac:TaxScheme>
             <cbc:ID>VAT</cbc:ID>

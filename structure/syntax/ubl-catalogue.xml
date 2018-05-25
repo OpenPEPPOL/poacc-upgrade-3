@@ -713,7 +713,7 @@
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
 						<Description>The identification scheme identifier of the Electronic address identifier</Description>
-						<Description/>
+						
 						<Reference type="RULE">OP-T19-005</Reference>
 					</Attribute>
 				</Element>
@@ -1510,7 +1510,10 @@
 							<Term>cbc:EmbeddedDocumentBinaryObject</Term>
 							<Name>Attached object</Name>
 							<Description>The attached document embedded as binary object.</Description>
+							<DataType>Binary objects</DataType>
 							<Reference type="BUSINESS_TERM">tir19-107</Reference>
+
+							
 							<Attribute>
 								<Term>mimeCode</Term>
 								<Name>Attached object Mime code</Name>
@@ -1518,6 +1521,14 @@
 								<Reference type="RULE">CL-T19-002</Reference>
 								<Value type="EXAMPLE">text/csv</Value>
 							</Attribute>
+							
+							<Attribute>
+								<Term>filename</Term>
+								<Name>Attached document Filename</Name>
+								<Description>The file name of the attached document</Description>
+								<Value type="EXAMPLE">Hours-spent.csv</Value>
+							</Attribute>
+							
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cac:ExternalReference</Term>
@@ -1638,12 +1649,8 @@
                             item.</Description>
 						<Reference type="BUSINESS_TERM">tir19-094</Reference>
 						<Reference type="RULE">CL-T19-004</Reference>
-						<Attribute>
-							<Term>schemeID</Term>
-							<Name>Item VAT category code identifier identification scheme identifier</Name>
-							<Description>The identification scheme identifier of the Item VAT category code identifier</Description>
-							<Reference type="RULE">EUGEN-T19-R049</Reference>
-						</Attribute>
+						<Reference type="CODE_LIST">UNCL5305</Reference>
+						
 						<Value type="EXAMPLE">S</Value>
 					</Element>
 					<Element cardinality="0..1">
@@ -1656,15 +1663,14 @@
 					</Element>
 					<Element>
 						<Term>cac:TaxScheme</Term>
-						<Name>Tax scheme</Name>
-						<Description/>
-						<Element cardinality="0..1">
+						<Name>Tax scheme information</Name>
+						
+						<Element>
 							<Term>cbc:ID</Term>
-							<Name>Tax scheme Id</Name>
-							<Description>VAT registration identifier</Description>
-							<Reference type="BUSINESS_TERM">1</Reference>
-							<Value type="EXAMPLE">VAT</Value>
+							<Description>Tax scheme. Use “VAT”</Description>
+							<Value type="DEFAULT">VAT</Value>
 						</Element>
+						
 					</Element>
 				</Element>
 				<Element cardinality="0..n">

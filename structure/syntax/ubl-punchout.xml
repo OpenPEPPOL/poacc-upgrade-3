@@ -446,6 +446,7 @@
                             <Name>Attached document/image</Name>
                             <Description>An attached document/image embedded
                                 as binary object.</Description>
+                            <DataType>Binary object</DataType>
                             <Reference type="BUSINESS_TERM">tir77-038</Reference>
                             <Reference type="BUSINESS_TERM">OP-T77-006</Reference>
                             <Attribute>
@@ -453,6 +454,13 @@
                                 <Name>Attached document Mime code</Name>
                                 <Description>The mime code of the attached document.</Description>
                                 <Value type="EXAMPLE">image/png</Value>
+                            </Attribute>
+                            
+                            <Attribute>
+                                <Term>filename</Term>
+                                <Name>Attached document Filename</Name>
+                                <Description>The file name of the attached document</Description>
+                                <Value type="EXAMPLE">Hours-spent.csv</Value>
                             </Attribute>
                         </Element>
                     </Element>
@@ -503,6 +511,7 @@
                         <Description>The VAT category code for the item.</Description>
                         <Reference type="BUSINESS_TERM">tir77-034</Reference>
                         <Reference type="RULE">BII3-T77-R015</Reference>
+                        <Reference type="CODE_LIST">UNCL5305</Reference>
                         <Value type="EXAMPLE">Z</Value>
                     </Element>
                     <Element>
