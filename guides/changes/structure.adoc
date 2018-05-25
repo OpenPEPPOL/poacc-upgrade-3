@@ -3,7 +3,7 @@
 * Remove UBL version ID - also removed from guides.
 * Remove attributes
 * Align label elements in Order Agreement and Punchout
-* Vat category in allowance/charge on header level in Order Agreement
+* Vat category in allowance/charge on header level in Order and Order Agreement
 * Add filename to attachments
 
 = Changes to BIS documents

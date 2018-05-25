@@ -12,6 +12,7 @@
                 regarding semantic content, cardinalities and business rules to which the data
                 contained in the instance document conforms.The identification may include the
                 version of the specification as well as any customizations applied.</Description>
+            <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">tir110-009</Reference>
             <Reference type="RULE">EUGEN-T110-R007</Reference>
             <Value type="FIXED">urn:www.cenbii.eu:transaction:biitrns110:ver1.0:extended:urn:www.peppol.eu:bis:peppol42a:ver1.0</Value>
@@ -21,6 +22,7 @@
             <Name>Business process type identifier</Name>
             <Description>Identifies the business process context in which the transaction appears.
                 It enables the buyer to process the document in an appropriate way.</Description>
+            <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">tir110-008</Reference>
             <Reference type="RULE">EUGEN-T110-R008</Reference>
             <Value type="FIXED">urn:www.cenbii.eu:profile:bii42:ver1.0</Value>
@@ -31,6 +33,7 @@
             <Description>A unique identifier for an order agreement. The identifier must be globally
                 unique since the receiver is using it as an order number (issued by the
                 seller).</Description>
+            <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">tir110-001</Reference>
             <Reference type="RULE">BII3-T110-R005</Reference>
             <Value type="EXAMPLE">0263bf48-9a55-4d15-adf5-2c2921036d1c</Value>
@@ -39,6 +42,7 @@
             <Term>cbc:IssueDate</Term>
             <Name>Order agreement issue date</Name>
             <Description>The date on which an order agreement was issued. Must be formatted YYYY-MM-DD</Description>
+            <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">tir110-002</Reference>
             <Reference type="RULE">BII3-T110-R003</Reference>
             <Value type="EXAMPLE">2018-05-18</Value>
@@ -48,6 +52,7 @@
             <Name>Order agreement issue time</Name>
             <Description>The time of the day when the order agreement was issued.The time assigned
                 by the buyer on which the transaction was issued.</Description>
+            <DataType>Time</DataType>
             <Reference type="BUSINESS_TERM">tir110-003</Reference>
             <Value type="EXAMPLE">12:10:35</Value>
         </Element>
@@ -56,6 +61,7 @@
             <Name>Order agreement note</Name>
             <Description>Free-form text applying to the order agreement.Free text applying to the
                 order agreement.</Description>
+            <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">tir110-043</Reference>
             <Value type="EXAMPLE">We have a new phone number 33 44 55</Value>
         </Element>
@@ -63,6 +69,7 @@
             <Term>cbc:DocumentCurrencyCode</Term>
             <Name>Order agreement currency</Name>
             <Description>The default currency for the order agreement</Description>
+            <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">tir110-007</Reference>
             <Reference type="RULE">EUGEN-T110-R003</Reference>
             <Reference type="CODE_LIST">ISO4217</Reference>
@@ -74,6 +81,7 @@
             <Description>An identifier assigned by the Buyer used for internal routing purposes.The
                 identifier is defined by the buyer (contact ID, department, office id, project
                 code), but provided by the seller in the invoice.</Description>
+            <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">tir110-044</Reference>
             <Value type="EXAMPLE">abc123</Value>
         </Element>
@@ -86,6 +94,7 @@
                 <Description>A reference to a previous identifier for an order agreement. Used to
                     indicatete that this agreement is a change to a previous
                     agreement.</Description>
+                <DataType>Document reference</DataType>
                 <Reference type="BUSINESS_TERM">tir110-042</Reference>
                 <Value type="EXAMPLE">O-1234</Value>
             </Element>
@@ -97,6 +106,7 @@
                 <Term>cbc:ID</Term>
                 <Name>Document identifier</Name>
                 <Description>Identifier of a document</Description>
+                <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">tir110-045</Reference>
                 <Value type="EXAMPLE">doc-34</Value>
             </Element>
@@ -104,6 +114,7 @@
                 <Term>cbc:DocumentType</Term>
                 <Name>Document description</Name>
                 <Description>Textual description of the document.</Description>
+                <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">tir110-046</Reference>
                 <Value type="EXAMPLE">Timesheet</Value>
             </Element>
@@ -144,6 +155,7 @@
                         <Name>External document URI</Name>
                         <Description>The Uniform Resource Identifier (URI) that identifies where the
                             external document is located.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir110-047</Reference>
                         <Value type="EXAMPLE">http://www.example.com/index.html</Value>
                     </Element>
@@ -158,6 +170,7 @@
                 <Term>cbc:ID</Term>
                 <Name>Contract identifier</Name>
                 <Description>The identification of a contract.</Description>
+                <DataType>Document reference</DataType>
                 <Reference type="BUSINESS_TERM">tir110-049</Reference>
                 <Value type="EXAMPLE">C-97324</Value>
             </Element>
@@ -166,6 +179,7 @@
                 <Name>Contract type</Name>
                 <Description>The type of a contract that is being referred to (such as framework
                     agreement) expressed as a code.</Description>
+                <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">tir110-050</Reference>
                 <Value type="EXAMPLE">Framework agreement</Value>
             </Element>
@@ -184,6 +198,7 @@
                     <Description>Identifies the seller's electronic address to which a business
                         document may be delivered.Identifies the end point of the routing service,
                         e.g., EAN Location Number, GLN.</Description>
+                    <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">tir110-015</Reference>
                     <Reference type="RULE">EUGEN-T110-R001</Reference>
                     <Attribute>
@@ -207,6 +222,7 @@
                         <Description>A identifier for the seller that is issued by the party that
                             sends the document in which the identifier is used.Identifies a
                             party.</Description>
+                        <DataType>Identifier</DataType>
                         <Reference type="BUSINESS_TERM">tir110-014</Reference>
                         <Reference type="RULE">BII3-T110-R007</Reference>
                         
@@ -233,6 +249,7 @@
                         <Description>The full (formal) name by which the seller is registered in the
                             national registry of legal entities or persons.The name of the
                             party.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir110-013</Reference>
                         <Reference type="RULE">BII3-T110-R007</Reference>
                         <Value type="EXAMPLE">Seller company Ltd.</Value>
@@ -247,6 +264,7 @@
                         <Name>Address line 1</Name>
                         <Description>The main address line in an address. Usually the street name and
                             number or post office box.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir110-057</Reference>
                         <Value type="EXAMPLE">Main Street 23</Value>
                     </Element>
@@ -255,6 +273,7 @@
                         <Name>Address line 2</Name>
                         <Description>An additional address line in an address that can be used to
                             give further details supplementing the main line.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir110-058</Reference>
                         <Value type="EXAMPLE">3rd Floor</Value>
                     </Element>
@@ -263,6 +282,7 @@
                         <Name>City</Name>
                         <Description>The common name of a city where the address is
                             located.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir110-059</Reference>
                         <Value type="EXAMPLE">København V</Value>
                     </Element>
@@ -272,6 +292,7 @@
                         <Description>The identifier for an addressable group of properties according
                             to the relevant postal service, such as a ZIP code or Post
                             Code.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir110-060</Reference>
                         <Value type="EXAMPLE">1550</Value>
                     </Element>
@@ -280,6 +301,7 @@
                         <Name>Country subdivision</Name>
                         <Description>The subdivision of a country such as region, county, state,
                             province etc.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir110-061</Reference>
                         
                     </Element>
@@ -294,6 +316,7 @@
                                 "Codes for the representation of names of countries and their
                                 subdivisions". Codes must be according to the alpha-2
                                 representation.</Description>
+                            <DataType>Code</DataType>
                             <Reference type="BUSINESS_TERM">tir110-062</Reference>
                             <Reference type="RULE">EUGEN-T110-R004</Reference>
                             <Reference type="CODE_LIST">ISO3166</Reference> 
@@ -309,6 +332,7 @@
                         <Term>cbc:Name</Term>
                         <Name>Contact point</Name>
                         <Description>The name of the contact point.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir110-016</Reference>
                         <Value type="EXAMPLE">Ole Olsen</Value>
                     </Element>
@@ -316,6 +340,7 @@
                         <Term>cbc:Telephone</Term>
                         <Name>Contact telephone number</Name>
                         <Description>A phone number for the contact point.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir110-018</Reference>
                         <Value type="EXAMPLE">+45 33 12 12 21</Value>
                     </Element>
@@ -324,7 +349,9 @@
                         <Term>cbc:ElectronicMail</Term>
                         <Name>Contact email address</Name>
                         <Description>An e-mail address for the contact point.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir110-019</Reference>
+                      
                         <Value type="EXAMPLE">test.name@foo.bar</Value>
                     </Element>
                 </Element>
@@ -344,8 +371,10 @@
                     <Description>Identifies the buyers electronic address to which the business
                         document should be delivered.Identifies the end point of the routing
                         service.</Description>
+                    <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">tir110-012</Reference>
                     <Reference type="RULE">EUGEN-T110-R001</Reference>
+                    
                     <Attribute>
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
@@ -364,6 +393,7 @@
                         <Description>A identifier for the buyer that is issued by the party that
                             sends the document in which the identifier is used.An identification for
                             the buyer party.</Description>
+                        <DataType>Identifier</DataType>
                         <Reference type="BUSINESS_TERM">tir110-011</Reference>
                         <Reference type="RULE">BII3-T110-R006</Reference>
                         
@@ -385,6 +415,7 @@
                         <Name>Buyer name</Name>
                         <Description>The full name of the buyer.The name of the party who ordered
                             the items and receives the response.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir110-010</Reference>
                         <Reference type="RULE">BII3-T110-R006</Reference>
                         <Value type="EXAMPLE">Customer AS</Value>
@@ -399,6 +430,7 @@
                         <Name>Address line 1</Name>
                         <Description>The main address line in an address.Usually the street name and
                             number or post office box.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir110-051</Reference>
                         <Value type="EXAMPLE">P.O. Box 19999</Value>
                     </Element>
@@ -407,6 +439,7 @@
                         <Name>Address line 2</Name>
                         <Description>An additional address line in an address that can be used to
                             give further details supplementing the main line.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir110-052</Reference>
                     </Element>
                     <Element cardinality="0..1">
@@ -414,6 +447,7 @@
                         <Name>City</Name>
                         <Description>The common name of a city where the address is
                             located.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir110-053</Reference>
                         <Value type="EXAMPLE">Amsterdam</Value>
                     </Element>
@@ -423,6 +457,7 @@
                         <Description>The identifier for an addressable group of properties according
                             to the relevant postal service, such as a ZIP code or Post
                             Code.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir110-054</Reference>
                         <Value type="EXAMPLE">1000 GG</Value>
                     </Element>
@@ -431,6 +466,7 @@
                         <Name>Country subdivision</Name>
                         <Description>The subdivision of a country such as region, county, state,
                             province etc.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir110-055</Reference>
                     </Element>
                     <Element cardinality="0..1">
@@ -445,6 +481,7 @@
                                 "Codes for the representation of names of countries and their
                                 subdivisions". Codes must be according to the alpha-2
                                 representation.</Description>
+                            <DataType>Code</DataType>
                             <Reference type="BUSINESS_TERM">tir110-056</Reference>
                             <Reference type="RULE">EUGEN-T110-R004</Reference>
                             <Reference type="CODE_LIST">ISO3166</Reference> 
@@ -462,6 +499,7 @@
                     <Term>cbc:Name</Term>
                     <Name>Contact point</Name>
                     <Description>The name of the contact point.</Description>
+                    <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">tir110-078</Reference>
                     <Value type="EXAMPLE">May Jones</Value>
                 </Element>
@@ -469,6 +507,7 @@
                     <Term>cbc:Telephone</Term>
                     <Name>Contact telephone number</Name>
                     <Description>A phone number for the contact point.</Description>
+                    <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">tir110-080</Reference>
                     <Value type="EXAMPLE">+31 (0) 20 525 1111</Value>
                 </Element>
@@ -477,6 +516,7 @@
                     <Term>cbc:ElectronicMail</Term>
                     <Name>Contact email address</Name>
                     <Description>An e-mail address for the contact point.</Description>
+                    <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">tir110-081</Reference>
                     <Value type="EXAMPLE">maj.jones@test.nl</Value>
                 </Element>
@@ -499,8 +539,8 @@
                         <Name>Originator identifier</Name>
                         <Description>An identifier for the party that originally requested the
                             ordered items.</Description>
-                        <Reference type="BUSINESS_TERM">tir110-065</Reference>
-                        
+                        <DataType>Identifier</DataType> 
+                        <Reference type="BUSINESS_TERM">tir110-065</Reference>    
                         <Attribute usage="optional">
                             <Term>schemeID</Term>
                             <Name>Scheme identifier</Name>
@@ -520,6 +560,7 @@
                         <Name>Originator name</Name>
                         <Description>The name of the party that originally requested the ordered
                             items.</Description>
+                        <DataType>Text</DataType> 
                         <Reference type="BUSINESS_TERM">tir110-066</Reference>
                         <Value type="EXAMPLE">Originator name</Value>
                     </Element>
@@ -541,6 +582,7 @@
                         <Term>cbc:ID</Term>
                         <Name>Accounting customer identifier</Name>
                         <Description>A unique identifier of the accounting customer</Description>
+                        <DataType>Identifier</DataType> 
                         <Reference type="BUSINESS_TERM">tir110-064</Reference>
                         
                         <Attribute usage="optional">
@@ -561,6 +603,7 @@
                         <Term>cbc:Name</Term>
                         <Name>Accounting customer name</Name>
                         <Description>Accounting customer name</Description>
+                        <DataType>Text</DataType> 
                         <Reference type="BUSINESS_TERM">tir110-063</Reference>
                         <Value type="EXAMPLE">Information services</Value>
                     </Element>
@@ -581,6 +624,7 @@
                     <Name>Period start date</Name>
                     <Description>The date when the period starts.The date is the first day of the
                         period.</Description>
+                    <DataType>Date</DataType> 
                     <Reference type="BUSINESS_TERM">tir110-082</Reference>
                     <Value type="EXAMPLE">2018-05-15</Value>
                 </Element>
@@ -588,6 +632,7 @@
                     <Term>cbc:StartTime</Term>
                     <Name>Period start time</Name>
                     <Description>The start time of the period.</Description>
+                    <DataType>Time</DataType> 
                     <Reference type="BUSINESS_TERM">tir110-083</Reference>
                     <Value type="EXAMPLE">10:00:00</Value>
                 </Element>
@@ -596,6 +641,7 @@
                     <Name>Period end date</Name>
                     <Description>The date on which the period ends.The date is the last day of the
                         period.</Description>
+                    <DataType>Date</DataType> 
                     <Reference type="BUSINESS_TERM">tir110-084</Reference>
                     <Value type="EXAMPLE">2018-05-15</Value>
                 </Element>
@@ -603,7 +649,9 @@
                     <Term>cbc:EndTime</Term>
                     <Name>Period end time</Name>
                     <Description>The end time of the period.</Description>
+                    <DataType>Time</DataType> 
                     <Reference type="BUSINESS_TERM">tir110-085</Reference>
+                  
                     <Value type="EXAMPLE">12:30:00</Value>
                 </Element>
             </Element>
@@ -620,6 +668,7 @@
                         <Name>Delivery party identifier</Name>
                         <Description>A identifier for the party that carries out the
                             delivery.</Description>
+                        <DataType>Identifier</DataType> 
                         <Reference type="BUSINESS_TERM">tir110-068</Reference>
                         
                         <Attribute usage="optional">
@@ -640,6 +689,7 @@
                         <Name>Delivery party name</Name>
                         <Description>The name of the party to which the goods and services are
                             deliverd.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir110-067</Reference>
                         <Value type="EXAMPLE">Delivery party name</Value>
                     </Element>
@@ -656,6 +706,7 @@
                 <Name>Buyer delivery terms</Name>
                 <Description>The terms that the buyer applies to the delivery the ordered
                     items.</Description>
+                <DataType>Identifier</DataType> 
                 <Reference type="BUSINESS_TERM">tir110-069</Reference>
                 <Value type="EXAMPLE">EXW</Value>
             </Element>
@@ -664,6 +715,7 @@
                 <Name>Delivery special terms</Name>
                 <Description>A description of special conditions relating to the delivery
                     terms.</Description>
+                <DataType>Text</DataType> 
                 <Reference type="BUSINESS_TERM">tir110-070</Reference>
                 <Value type="EXAMPLE">Customer pick up</Value>
             </Element>
@@ -676,6 +728,7 @@
                     <Name>Delivery terms location</Name>
                     <Description>The location to which the delivery terms refer. Used to qualify the
                         delivery terms e.g. " Terms of delivery are FOB Rotterdam"</Description>
+                    <DataType>Text</DataType> 
                     <Reference type="BUSINESS_TERM">tir110-071</Reference>
                     <Value type="EXAMPLE">København</Value>
                 </Element>
@@ -688,6 +741,7 @@
                         <Name>Address line 1</Name>
                         <Description>The main address line in an address.Usually the street name and
                             number or post office box.</Description>
+                        <DataType>Text</DataType> 
                         <Reference type="BUSINESS_TERM">tir110-072</Reference>
                         <Value type="EXAMPLE">Hovedgade 1</Value>
                     </Element>
@@ -696,6 +750,7 @@
                         <Name>Address line 1</Name>
                         <Description>An additional address line in an address that can be used to
                             give further details supplementing the main line.</Description>
+                        <DataType>Text</DataType> 
                         <Reference type="BUSINESS_TERM">tir110-073</Reference>
                     </Element>
                     <Element cardinality="0..1">
@@ -703,6 +758,7 @@
                         <Name>City</Name>
                         <Description>The common name of a city where the address is
                             located.</Description>
+                        <DataType>Text</DataType> 
                         <Reference type="BUSINESS_TERM">tir110-074</Reference>
                         <Value type="EXAMPLE">København</Value>
                     </Element>
@@ -712,6 +768,7 @@
                         <Description>The identifier for an addressable group of properties according
                             to the relevant postal service, such as a ZIP code or Post
                             Code.</Description>
+                        <DataType>Text</DataType> 
                         <Reference type="BUSINESS_TERM">tir110-075</Reference>
                         <Value type="EXAMPLE">1550</Value>
                     </Element>
@@ -720,6 +777,7 @@
                         <Name>Country subdivision</Name>
                         <Description>The subdivision of a country such as region, county, state,
                             province etc.</Description>
+                        <DataType>Text</DataType> 
                         <Reference type="BUSINESS_TERM">tir110-076</Reference>
                     </Element>
                     <Element cardinality="0..1">
@@ -734,6 +792,7 @@
                                 "Codes for the representation of names of countries and their
                                 subdivisions". Codes must be according to the alpha-2
                                 representation.</Description>
+                            <DataType>Code</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-077</Reference>
                             <Reference type="RULE">EUGEN-T110-R004</Reference>
                             <Reference type="CODE_LIST">ISO3166</Reference> 
@@ -762,6 +821,7 @@
                 <Term>cbc:AllowanceChargeReason</Term>
                 <Name>Allowance or charge reason</Name>
                 <Description>The reason for the allowance or charge, expressed as text.</Description>
+                <DataType>Text</DataType> 
                 <Reference type="BUSINESS_TERM">OP-110-012OP-110-002</Reference>
                 <Reference type="RULE">EUGEN-T110-R015</Reference>
                 <Value type="EXAMPLE">Discount</Value>
@@ -770,6 +830,7 @@
                 <Term>cbc:Amount</Term>
                 <Name>Allowance or charge amount</Name>
                 <Description>The allowance or charge amount (net amount).</Description>
+                <DataType>Amount</DataType> 
                 <Reference type="BUSINESS_TERM">OP-110-011OP-110-001</Reference>
                 <Reference type="RULE">EUGEN-T110-R021</Reference>
                 <Attribute>
@@ -789,8 +850,7 @@
                     <Name>Document level allowance or charge VAT category code</Name>
                     <Description>A coded identification of what VAT category applies to the document level allowance or charge.</Description>
                     <DataType>Code</DataType>
-                    <Reference type="CODE_LIST">UNCL5305</Reference>
-                  
+                    <Reference type="CODE_LIST">UNCL5305</Reference>           
                     <Value type="EXAMPLE">S</Value>  
                     
                     
@@ -800,8 +860,7 @@
                     <Term>cbc:Percent</Term>
                     <Name>Document level allowance or charge VAT rate</Name>
                     <Description>The VAT rate, represented as percentage that applies to the document level allowance or charge.</Description>
-                    <DataType>Percentage</DataType>
-                    
+                    <DataType>Percentage</DataType> 
                     <Value type="EXAMPLE">25.00</Value>  
                     
                 </Element>
@@ -813,6 +872,7 @@
                     <Element>
                         <Term>cbc:ID</Term>
                         <Description>Tax scheme. Use “VAT”</Description>
+                        <DataType>Identifier</DataType> 
                         <Value type="DEFAULT">VAT</Value>
                     </Element>
                 </Element>
@@ -828,6 +888,7 @@
                 <Name>VAT total amount</Name>
                 <Description>The total VAT amount.The sum of all VAT category tax
                     amounts.</Description>
+                <DataType>Amount</DataType> 
                 <Reference type="BUSINESS_TERM">tir110-112</Reference>
                 <Reference type="RULE">EUGEN-T110-R011</Reference>
                 
@@ -855,6 +916,7 @@
                         line net amounts minus allowances plus charges on document level which are
                         subject to a specific VAT categorycode and VAT category rate (if the VAT
                         category rate is applicable).</Description>
+                    <DataType>Amount</DataType> 
                     <Reference type="BUSINESS_TERM">OP-110-003</Reference>
                     <Reference type="RULE">EUGEN-T110-R021</Reference>
                     
@@ -872,6 +934,7 @@
                     <Description>The total VAT amount for a given VAT category.Calculated by
                         multiplying the VAT category taxable amount with the VAT category rate for
                         the relevant VAT category.</Description>
+                    <DataType>Amount</DataType> 
                     <Reference type="BUSINESS_TERM">OP-110-004</Reference>
                     <Reference type="RULE">EUGEN-T110-R021</Reference>
                     <Attribute>
@@ -890,6 +953,7 @@
                         <Term>cbc:ID</Term>
                         <Name>VAT category code</Name>
                         <Description>Coded identification of a VAT category.</Description>
+                        <DataType>Code</DataType> 
                         <Reference type="BUSINESS_TERM">OP-110-005</Reference>
                         <Reference type="RULE">EUGEN-T110-R005</Reference>
                         <Reference type="CODE_LIST">UNCL5305</Reference>
@@ -901,6 +965,7 @@
                         <Description>The VAT rate, represented as percentage that applies for the
                             relevant VAT category.A VAT rate of 0% is applied for calculation
                             purposes, even if the item is outside the scope of VAT.</Description>
+                        <DataType>Percentage</DataType> 
                         <Reference type="BUSINESS_TERM">OP-110-006</Reference>
                         <Value type="EXAMPLE">25</Value>
                     </Element>
@@ -909,6 +974,7 @@
                         <Name>VAT exemption reason text</Name>
                         <Description>A textual statement of the reason for why the base amount is
                             exempted from VAT.</Description>
+                        <DataType>Text</DataType> 
                         <Reference type="BUSINESS_TERM">OP-110-007</Reference>
                         <Value type="EXAMPLE">Exempt</Value>
                     </Element>
@@ -920,6 +986,7 @@
                         <Element>
                             <Term>cbc:ID</Term>
                             <Description>Tax scheme. Use “VAT”</Description>
+                            <DataType>Identifier</DataType>
                             <Value type="DEFAULT">VAT</Value>
                         </Element>
                         
@@ -935,6 +1002,7 @@
                 <Term>cbc:LineExtensionAmount</Term>
                 <Name>Sum of line amounts</Name>
                 <Description>Sum of all line amounts in the document.</Description>
+                <DataType>Amount</DataType> 
                 <Reference type="BUSINESS_TERM">tir110-086</Reference>
                 <Reference type="RULE">EUGEN-T110-R011</Reference>
                 
@@ -952,6 +1020,7 @@
                 <Description>The total amount of the document without VAT including all line net
                     amounts minus sum of allowance amount on document level plus sum of charges on
                     document level.</Description>
+                <DataType>Amount</DataType> 
                 <Reference type="BUSINESS_TERM">tir110-087</Reference>
                 <Reference type="RULE">EUGEN-T110-R011</Reference>
                 <Attribute>
@@ -968,6 +1037,7 @@
                 <Description>The total amount of the document with VAT. The total amount with VAT is
                     the Total amount without VAT plus the Total VAT amount. The Total amount shall
                     be equal or greater than zero.</Description>
+                <DataType>Amount</DataType> 
                 <Reference type="BUSINESS_TERM">tir110-088</Reference>
                 <Reference type="RULE">EUGEN-T110-R011</Reference>
                 <Attribute>
@@ -984,6 +1054,7 @@
                 <Description>Sum of all allowances on document levelAllowances on line level are
                     included in the line amount which is summed up into the "sum of line net
                     amount".</Description>
+                <DataType>Amount</DataType> 
                 <Reference type="BUSINESS_TERM">OP-110-009</Reference>
                 <Reference type="RULE">EUGEN-T110-R011</Reference>
                 <Attribute>
@@ -1000,6 +1071,7 @@
                 <Description>Sum of all charges on document level.Charges on line level are included
                     in the line amount which is summed up into the "sum of line net
                     amount".</Description>
+                <DataType>Amount</DataType> 
                 <Reference type="BUSINESS_TERM">OP-110-008</Reference>
                 <Reference type="RULE">EUGEN-T110-R011</Reference>
                 <Attribute>
@@ -1014,6 +1086,7 @@
                 <Term>cbc:PrepaidAmount</Term>
                 <Name>Paid amounts</Name>
                 <Description>The sum of amounts which have been paid a-priori.</Description>
+                <DataType>Amount</DataType> 
                 <Reference type="BUSINESS_TERM">tir110-089</Reference>
                 <Reference type="RULE">EUGEN-T110-R011</Reference>
                 <Attribute>
@@ -1028,6 +1101,7 @@
                 <Term>cbc:PayableRoundingAmount</Term>
                 <Name>Rounding of document total</Name>
                 <Description>Any rounding of the "Document total including VAT"</Description>
+                <DataType>Amount</DataType> 
                 <Reference type="BUSINESS_TERM">OP-110-010</Reference>
                 <Reference type="RULE">EUGEN-T110-R011</Reference>
                 <Attribute>
@@ -1045,6 +1119,7 @@
                     "document total amount with VAT" minus the "Paid amount" that has been paid
                     a-priori. The amount will be zero in case the document total amount with VAT is
                     fully paid .</Description>
+                <DataType>Amount</DataType> 
                 <Reference type="BUSINESS_TERM">tir110-090</Reference>
                 <Reference type="RULE">EUGEN-T110-R011</Reference>
                 <Attribute>
@@ -1069,6 +1144,7 @@
                     <Name>Order agreement line identifier</Name>
                     <Description>An identifier for an individual line that is unique within an order
                         agreement.</Description>
+                    <DataType>Identifier</DataType> 
                     <Reference type="BUSINESS_TERM">tir110-022</Reference>
                     <Reference type="RULE">BII3-T110-R008</Reference>
                     <Value type="EXAMPLE">1</Value>
@@ -1077,6 +1153,7 @@
                     <Term>cbc:Note</Term>
                     <Name>Order agreement line note</Name>
                     <Description>Free-form text applying to the order agreement line.</Description>
+                    <DataType>Text</DataType> 
                     <Reference type="BUSINESS_TERM">tir110-091</Reference>
                     <Value type="EXAMPLE">Example text of this order agreement line</Value>
                 </Element>
@@ -1085,6 +1162,7 @@
                     <Name>Ordered quantity</Name>
                     <Description>The number of item units that are ordered. UOM should be stated by
                         using recommendation 20"</Description>
+                    <DataType>Quantity</DataType> 
                     <Reference type="BUSINESS_TERM">tir110-093</Reference>
                     <Reference type="RULE">BII3-T110-R021</Reference>
                     <Attribute>
@@ -1102,6 +1180,7 @@
                     <Name>Order agreeement line amount</Name>
                     <Description>Order agreeement line amountThe total amount for the order
                         agreement line, including all taxes except VAT.</Description>
+                    <DataType>Amount</DataType> 
                     <Reference type="BUSINESS_TERM">tir110-092</Reference>
                     <Attribute>
                         <Term>currencyID</Term>
@@ -1121,6 +1200,7 @@
                         <Name>Accepted quantity</Name>
                         <Description>The number of item units that are delivered. UOM should be
                             stated by using recommendation 20.</Description>
+                        <DataType>Quantity</DataType> 
                         <Reference type="BUSINESS_TERM">tir110-028</Reference>
                         <Attribute>
                             <Term>unitCode</Term>
@@ -1140,6 +1220,7 @@
                             <Term>cbc:StartDate</Term>
                             <Name>Period start date</Name>
                             <Description>The date when the period starts.</Description>
+                            <DataType>Date</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-030</Reference>
                             <Value type="EXAMPLE">2018-05-15</Value>
                         </Element>
@@ -1147,6 +1228,7 @@
                             <Term>cbc:StartTime</Term>
                             <Name>Period start time</Name>
                             <Description>The start time of the period.</Description>
+                            <DataType>Time</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-110</Reference>
                             <Value type="EXAMPLE">11:00:00</Value>
                         </Element>
@@ -1155,6 +1237,7 @@
                             <Name>Period end date</Name>
                             <Description>The date on which the period ends.The date is the last day
                                 of the period.</Description>
+                            <DataType>Date</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-031</Reference>
                             <Value type="EXAMPLE">2018-05-15</Value>
                         </Element>
@@ -1162,6 +1245,7 @@
                             <Term>cbc:EndTime</Term>
                             <Name>Period end time</Name>
                             <Description>The end time of the period.</Description>
+                            <DataType>Time</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-111</Reference>
                             <Value type="EXAMPLE">12:00:00</Value>
                         </Element>
@@ -1177,6 +1261,7 @@
                         <Description>The price of an item, exclusive of VAT, after subtracting item
                             price discount."The net price has to be equal with the gross price less
                             the item price discount.</Description>
+                        <DataType>Price Amount</DataType> 
                         <Reference type="BUSINESS_TERM">tir110-109</Reference>
                         <Reference type="RULE">BII3-T110-R011</Reference>
                         <Attribute>
@@ -1192,6 +1277,7 @@
                         <Name>Item price base quantity</Name>
                         <Description>The number of item units to which the price applies. UOM should
                             be stated by using recommendation 20.</Description>
+                        <DataType>Quantity</DataType> 
                         <Reference type="BUSINESS_TERM">tir110-027</Reference>
                        
                         <Attribute usage="Optional">
@@ -1213,6 +1299,7 @@
                         <Term>cbc:Description</Term>
                         <Name>Item description as text</Name>
                         <Description>A free text detailed description of an item.</Description>
+                        <DataType>Text</DataType> 
                         <Reference type="BUSINESS_TERM">tir110-095</Reference>
                         <Value type="EXAMPLE">Window 23", double glass</Value>
                     </Element>
@@ -1221,19 +1308,21 @@
                         <Name>Item name</Name>
                         <Description>A name for an item. One of, Item name, Item identifier or Item
                             description shall be provided.</Description>
+                        <DataType>Text</DataType> 
                         <Reference type="BUSINESS_TERM">tir110-032</Reference>
                         <Value type="EXAMPLE">Window</Value>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cac:SellersItemIdentification</Term>
                         <Name>Sellers item identification</Name>
-                        <Description/>
+                 
                         <Element>
                             <Term>cbc:ID</Term>
                             <Name>Sellers item identifier</Name>
                             <Description>An identifier, assigned by the seller, for the
                                 item. Associates the item with its identification according to the
                                 seller's system. </Description>
+                            <DataType>Identifier</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-033</Reference>
                             <Reference type="RULE">BII3-T110-R012</Reference>
                             <Value type="EXAMPLE">3249834</Value>
@@ -1248,6 +1337,7 @@
                             <Name>Item standard identifier</Name>
                             <Description>An item identifier based on a registered scheme. Associates
                                 the item with its identification according to a standard system.</Description>
+                            <DataType>Identifier</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-034</Reference>
                             <Reference type="RULE">BII3-T110-R012</Reference>
                             
@@ -1270,6 +1360,7 @@
                             <Term>cbc:ID</Term>
                             <Name>Document identifier</Name>
                             <Description>Identifier of a document</Description>
+                            <DataType>Identifier</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-102</Reference>
                             <Value type="EXAMPLE">docid7687</Value>
                         </Element>
@@ -1277,6 +1368,7 @@
                             <Term>cbc:DocumentType</Term>
                             <Name>Document description</Name>
                             <Description>Textual description of the document.</Description>
+                            <DataType>Text</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-103</Reference>
                             <Value type="EXAMPLE">Picture of window</Value>
                         </Element>
@@ -1318,6 +1410,7 @@
                                     <Description>The Uniform Resource Identifier (URI) that
                                         identifies where the external document is
                                         located.</Description>
+                                    <DataType>Text</DataType> 
                                     <Reference type="BUSINESS_TERM">tir110-104</Reference>
                                     <Value type="EXAMPLE">http://www.example.com/index.html</Value>
                                 </Element>
@@ -1334,6 +1427,7 @@
                             <Description>A code for classifying the item by its type or nature. Classification codes are used to
                                 allow grouping of similar items for a various purposes e.g. public
                                 procurement (CPV), e-Commerce (UNSPSC) etc.</Description>
+                            <DataType>Code</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-096</Reference>
                             <Reference type="BUSINESS_TERM">tir110-097</Reference>
                             <Reference type="RULE">EUGEN-T110-R013</Reference>
@@ -1363,6 +1457,7 @@
                             <Name>Contracted item indicator</Name>
                             <Description>Indicates if the item is offered in accordance to an
                                 existing contract.</Description>
+                            <DataType>Code</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-094</Reference>
                             <Value type="EXAMPLE">CT</Value>
                         </Element>
@@ -1376,6 +1471,7 @@
                             <Term>cbc:ID</Term>
                             <Name>Item VAT category code</Name>
                             <Description>The VAT category code for the item.</Description>
+                            <DataType>Code</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-106</Reference>
                             <Reference type="RULE">BII3-T110-R015</Reference>
                             <Reference type="CODE_LIST">UNCL5305</Reference>
@@ -1386,6 +1482,7 @@
                             <Name>Line VAT rate</Name>
                             <Description>The VAT percentage rate that applies to the line
                                 amount.</Description>
+                            <DataType>Percentage</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-107</Reference>
                             <Value type="EXAMPLE">25</Value>
                         </Element>
@@ -1396,6 +1493,7 @@
                             <Element>
                                 <Term>cbc:ID</Term>
                                 <Description>Tax scheme. Use “VAT”</Description>
+                                <DataType>Identifier</DataType> 
                                 <Value type="DEFAULT">VAT</Value>
                             </Element>
                         </Element>
@@ -1410,6 +1508,7 @@
                             <Description>The name of the property.The name must be sufficiently
                                 descriptive to define the value. The definition may be supplemented
                                 with the property unit of measure when relevant.</Description>
+                            <DataType>Text</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-098</Reference>
                             <Value type="EXAMPLE">Color</Value>
                         </Element>
@@ -1418,12 +1517,14 @@
                             <Name>Item property classification code</Name>
                             <Description>Code for the item property according to a property code
                                 system</Description>
+                            <DataType>Code</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-101</Reference>
                         </Element>
                         <Element>
                             <Term>cbc:Value</Term>
                             <Name>Item property value</Name>
                             <Description>The value of the item property.</Description>
+                            <DataType>Text</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-099</Reference>
                             <Value type="EXAMPLE">Red</Value>
                         </Element>
@@ -1433,6 +1534,7 @@
                             <Description>The unit of measure in which the property value is stated,
                                 if relevant. May not be relevant when properties are
                                 descriptive.</Description>
+                            <DataType>Quantity</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-100</Reference>
                             <Reference type="RULE">EUGEN-T110-R014</Reference>
                             <Attribute usage="Optional">
@@ -1453,6 +1555,7 @@
                             <Term>cbc:ID</Term>
                             <Name>Item label name</Name>
                             <Description>The name of the product label.</Description>
+                            <DataType>Identifier</DataType> 
                             <Reference type="BUSINESS_TERM">OP-110-013</Reference>
                             <Reference type="RULE">EUGEN-T110-R026</Reference>
                             <Value type="EXAMPLE">EU EcoLabel</Value>
@@ -1462,6 +1565,7 @@
                             <Name>Certificate type code</Name>
                             <Description>The UBL structure used for item labeling requires this elements, 
                                 use the value NA.</Description>
+                            <DataType>Code</DataType>
                             <Value type="FIXED">NA</Value>
                         </Element>
                         <Element>
@@ -1469,6 +1573,7 @@
                             <Name>Item label type</Name>
                             <Description>The label type such environmental, quality, social
                                 etc.</Description>
+                            <DataType>Text</DataType>
                             <Reference type="BUSINESS_TERM">OP-110-015</Reference>
                             <Value type="EXAMPLE">Environmental</Value>
                         </Element>
@@ -1476,6 +1581,7 @@
                             <Term>cbc:Remarks</Term>
                             <Name>Item label value</Name>
                             <Description>The label value that applies to the item.</Description>
+                            <DataType>Text</DataType>
                             <Reference type="BUSINESS_TERM">OP-110-014</Reference>
                             <Reference type="RULE">EUGEN-T110-R027</Reference>
                             <Value type="EXAMPLE">Item label value</Value>
@@ -1493,6 +1599,7 @@
                                     <Name>Issuer name</Name>
                                     <Description>The UBL structure used for item labeling requires this elements, 
                                         use the value NA.</Description>
+                                    <DataType>Text</DataType>
                                     <Value type="EXAMPLE">NA</Value>
                                 </Element>
                                 
@@ -1508,6 +1615,7 @@
                                 <Name>Item label reference</Name>
                                 <Description>A reference to where the label specification can be
                                     found, e.g. a URI.</Description>
+                                <DataType>Document reference</DataType>
                                 <Reference type="BUSINESS_TERM">OP-110-016</Reference>
                                 <Value type="EXAMPLE">http://www.label.eu/test/</Value>
                                 
