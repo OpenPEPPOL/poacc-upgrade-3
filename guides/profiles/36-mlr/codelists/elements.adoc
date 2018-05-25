@@ -1,6 +1,6 @@
 
 
-= Code lists used in order transaction
+= Code lists for coded elements
 
 :leveloffset: +1
 

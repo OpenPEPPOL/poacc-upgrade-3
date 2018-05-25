@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Allowance charge indicator</Title>
+    <Identifier>AllowanceCharge</Identifier>
+    <Subset>OpenPEPPOL</Subset>
+
+    <Code>
+        <Id>true</Id>
+        <Name>True</Name>
+        <Description>True, indicating a charge</Description>
+    </Code>
+
+    <Code>
+        <Id>false</Id>
+        <Name>False</Name>
+        <Description>False, indicating an allowance</Description>
+    </Code>
+
+</CodeList>

@@ -65,7 +65,7 @@
             <Description>The default currency for the order agreement</Description>
             <Reference type="BUSINESS_TERM">tir110-007</Reference>
             <Reference type="RULE">EUGEN-T110-R003</Reference>
-            <Reference type="CODE_LIST">CurrencyCode</Reference>
+            <Reference type="CODE_LIST">ISO4217</Reference>
             <Value type="EXAMPLE">EUR</Value>
         </Element>
         <Element cardinality="0..1">
@@ -115,12 +115,13 @@
                     <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                     <Name>Attached document</Name>
                     <Description>An attached document embedded as binary
-                        object.</Description>
+                        object, coded using Base64.</Description>
                     <Reference type="BUSINESS_TERM">tir110-048</Reference>
                     <Attribute>
                         <Term>mimeCode</Term>
                         <Name>Attached document Mime code</Name>
                         <Description>The mime code of the attached document.</Description>
+                        <Reference type="CODE_LIST">MimeCode</Reference>
                         <Value type="EXAMPLE">text/csv</Value>
                     </Attribute>
                     <Value type="EXAMPLE">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</Value>
@@ -181,10 +182,13 @@
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
                         <Description>Scheme identifier for electronic address</Description>
+                        <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">0088</Value>
+                        
                     </Attribute>
                     <Value type="EXAMPLE">7300010000001</Value>
                 </Element>
+                
                 <Element cardinality="0..1">
                     <Term>cac:PartyIdentification</Term>
                     <Name>Party identification</Name>
@@ -284,7 +288,7 @@
                                 representation.</Description>
                             <Reference type="BUSINESS_TERM">tir110-062</Reference>
                             <Reference type="RULE">EUGEN-T110-R004</Reference>
-                            <Reference type="CODE_LIST">CountryCodeIdentifier</Reference> 
+                            <Reference type="CODE_LIST">ISO3166</Reference> 
                             <Value type="EXAMPLE">DK</Value>
                         </Element>
                     </Element>
@@ -435,7 +439,7 @@
                                 representation.</Description>
                             <Reference type="BUSINESS_TERM">tir110-056</Reference>
                             <Reference type="RULE">EUGEN-T110-R004</Reference>
-                            <Reference type="CODE_LIST">CountryCodeIdentifier</Reference> 
+                            <Reference type="CODE_LIST">ISO3166</Reference> 
                             <Value type="EXAMPLE">NL</Value>
 
                         </Element>
@@ -517,7 +521,7 @@
         <Element cardinality="0..1">
             <Term>cac:AccountingCustomerParty</Term>
             <Name>Accounting customer party/Invoicee</Name>
-            <Description>The invoicee is the legal person or organization acting on behalf of the customer and who receives the invoice for the order. </Description>
+            <Description>The invoicee is the legal person or organization acting on behalf of the customer and who receives the invoice for the order.</Description>
             <Element cardinality="0..1">
                 <Term>cac:Party</Term>
                 <Name>Party information</Name>
@@ -724,7 +728,7 @@
                                 representation.</Description>
                             <Reference type="BUSINESS_TERM">tir110-077</Reference>
                             <Reference type="RULE">EUGEN-T110-R004</Reference>
-                            <Reference type="CODE_LIST">CountryCodeIdentifier</Reference> 
+                            <Reference type="CODE_LIST">ISO3166</Reference> 
                             <Value type="EXAMPLE">NL</Value>
                             
                         </Element>
@@ -743,6 +747,7 @@
                 <Description>Boolean indicator, charge ='true', allowance = 'false'</Description>
                 <Reference type="BUSINESS_TERM">OP-110-001</Reference>
                 <Reference type="RULE">EUGEN-T110-R021</Reference>
+                <Reference type="CODE_LIST">AllowanceCharge</Reference>
                 <Value type="EXAMPLE">false</Value>
             </Element>
             <Element cardinality="0..n">
@@ -762,7 +767,7 @@
                 <Attribute>
                     <Term>currencyID</Term>
                     <Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
-                    <Reference type="CODE_LIST">CurrencyCode</Reference>
+                    <Reference type="CODE_LIST">ISO4217</Reference>
                     <Value type="EXAMPLE">EUR</Value>  
                 </Attribute>
                 <Value type="EXAMPLE">200</Value>  
@@ -776,6 +781,7 @@
                     <Name>Document level allowance or charge VAT category code</Name>
                     <Description>A coded identification of what VAT category applies to the document level allowance or charge.</Description>
                     <DataType>Code</DataType>
+                    <Reference type="CODE_LIST">UNCL5305</Reference>
                   
                     <Value type="EXAMPLE">S</Value>  
                     
@@ -788,7 +794,7 @@
                     <Description>The VAT rate, represented as percentage that applies to the document level allowance or charge.</Description>
                     <DataType>Percentage</DataType>
                     
-                    <Value type="EXAMPLE">25</Value>  
+                    <Value type="EXAMPLE">25.00</Value>  
                     
                 </Element>
                 
@@ -804,6 +810,7 @@
                 </Element>
             </Element>
         </Element>
+        
         <Element cardinality="0..1">
             <Term>cac:TaxTotal</Term>
             <Name>Tax total information</Name>
@@ -815,14 +822,17 @@
                     amounts.</Description>
                 <Reference type="BUSINESS_TERM">tir110-112</Reference>
                 <Reference type="RULE">EUGEN-T110-R011</Reference>
+                
                 <Attribute>
                     <Term>currencyID</Term>
                     <Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
                     <Reference type="CODE_LIST">CurrencyCode</Reference>
                     <Value type="EXAMPLE">EUR</Value>  
                 </Attribute>
+                
                 <Value type="EXAMPLE">250</Value>
             </Element>
+            
             <Element cardinality="0..n">
                 <Term>cac:TaxSubtotal</Term>
                 <Name>VAT breakdown</Name>
@@ -843,7 +853,7 @@
                     <Attribute>
                         <Term>currencyID</Term>
                         <Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
-                        <Reference type="CODE_LIST">CurrencyCode</Reference>
+                        <Reference type="CODE_LIST">ISO4217</Reference>
                         <Value type="EXAMPLE">EUR</Value>  
                     </Attribute>
                     <Value type="EXAMPLE">1000</Value>
@@ -859,7 +869,7 @@
                     <Attribute>
                         <Term>currencyID</Term>
                         <Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
-                        <Reference type="CODE_LIST">CurrencyCode</Reference>
+                        <Reference type="CODE_LIST">ISO4217</Reference>
                         <Value type="EXAMPLE">EUR</Value>  
                     </Attribute>
                     <Value type="EXAMPLE">1000</Value>
@@ -874,6 +884,7 @@
                         <Description>Coded identification of a VAT category.</Description>
                         <Reference type="BUSINESS_TERM">OP-110-005</Reference>
                         <Reference type="RULE">EUGEN-T110-R005</Reference>
+                        <Reference type="CODE_LIST">UNCL5305</Reference>
                        <Value type="EXAMPLE">S</Value>
                     </Element>
                     <Element cardinality="0..1">
@@ -922,7 +933,7 @@
                 <Attribute>
                     <Term>currencyID</Term>
                     <Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
-                    <Reference type="CODE_LIST">CurrencyCode</Reference>
+                    <Reference type="CODE_LIST">ISO4217</Reference>
                     <Value type="EXAMPLE">EUR</Value>  
                 </Attribute>
                 <Value type="EXAMPLE">1200</Value>
@@ -938,7 +949,7 @@
                 <Attribute>
                     <Term>currencyID</Term>
                     <Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
-                    <Reference type="CODE_LIST">CurrencyCode</Reference>
+                    <Reference type="CODE_LIST">ISO4217</Reference>
                     <Value type="EXAMPLE">EUR</Value>  
                 </Attribute>
                 <Value type="EXAMPLE">1000</Value>
@@ -954,7 +965,7 @@
                 <Attribute>
                     <Term>currencyID</Term>
                     <Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
-                    <Reference type="CODE_LIST">CurrencyCode</Reference>
+                    <Reference type="CODE_LIST">ISO4217</Reference>
                     <Value type="EXAMPLE">EUR</Value>  
                 </Attribute>
                 <Value type="EXAMPLE">1250</Value>
@@ -970,7 +981,7 @@
                 <Attribute>
                     <Term>currencyID</Term>
                     <Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
-                    <Reference type="CODE_LIST">CurrencyCode</Reference>
+                    <Reference type="CODE_LIST">ISO4217</Reference>
                     <Value type="EXAMPLE">EUR</Value>  
                 </Attribute>
                 <Value type="EXAMPLE">200</Value>
@@ -986,7 +997,7 @@
                 <Attribute>
                     <Term>currencyID</Term>
                     <Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
-                    <Reference type="CODE_LIST">CurrencyCode</Reference>
+                    <Reference type="CODE_LIST">ISO4217</Reference>
                     <Value type="EXAMPLE">EUR</Value>  
                 </Attribute>
                 <Value type="EXAMPLE">0</Value>
@@ -1000,7 +1011,7 @@
                 <Attribute>
                     <Term>currencyID</Term>
                     <Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
-                    <Reference type="CODE_LIST">CurrencyCode</Reference>
+                    <Reference type="CODE_LIST">ISO4217</Reference>
                     <Value type="EXAMPLE">EUR</Value>  
                 </Attribute>
                 <Value type="EXAMPLE">500</Value>
@@ -1014,7 +1025,7 @@
                 <Attribute>
                     <Term>currencyID</Term>
                     <Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
-                    <Reference type="CODE_LIST">CurrencyCode</Reference>
+                    <Reference type="CODE_LIST">ISO4217</Reference>
                     <Value type="EXAMPLE">EUR</Value>  
                 </Attribute>
                 <Value type="EXAMPLE">0.13</Value>
@@ -1031,7 +1042,7 @@
                 <Attribute>
                     <Term>currencyID</Term>
                     <Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
-                    <Reference type="CODE_LIST">CurrencyCode</Reference>
+                    <Reference type="CODE_LIST">ISO4217</Reference>
                     <Value type="EXAMPLE">EUR</Value>  
                 </Attribute>
                 <Value type="EXAMPLE">750</Value>
@@ -1087,7 +1098,7 @@
                     <Attribute>
                         <Term>currencyID</Term>
                         <Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
-                        <Reference type="CODE_LIST">CurrencyCode</Reference>
+                        <Reference type="CODE_LIST">ISO4217</Reference>
                         <Value type="EXAMPLE">EUR</Value>  
                     </Attribute>
                     <Value type="EXAMPLE">1000</Value>
@@ -1163,7 +1174,7 @@
                         <Attribute>
                             <Term>currencyID</Term>
                             <Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
-                            <Reference type="CODE_LIST">CurrencyCode</Reference>
+                            <Reference type="CODE_LIST">ISO4217</Reference>
                             <Value type="EXAMPLE">EUR</Value>  
                         </Attribute>
                         <Value type="EXAMPLE">100</Value>
@@ -1276,6 +1287,7 @@
                                     <Term>mimeCode</Term>
                                     <Name>Attached document Mime code</Name>
                                     <Description>The mime code of the attached document.</Description>
+                                    <Reference type="CODE_LIST">MimeCode</Reference>
                                     <Value type="EXAMPLE">text/csv</Value>
                                 </Attribute>
                             </Element>
@@ -1312,7 +1324,7 @@
                                 <Term>listID</Term>
                                 <Name>Item classification identifier identification scheme identifier</Name>
                                 <Description>The identification scheme identifier of the Item classification identifier</Description>
-                                
+                                <Reference type="CODE_LIST">UNCL7143</Reference>
                                 <Value type="EXAMPLE">CPV</Value>
                             </Attribute>
                             
@@ -1349,6 +1361,7 @@
                             <Description>The VAT category code for the item.</Description>
                             <Reference type="BUSINESS_TERM">tir110-106</Reference>
                             <Reference type="RULE">BII3-T110-R015</Reference>
+                            <Reference type="CODE_LIST">UNCL5305</Reference>
                             <Value type="EXAMPLE">S</Value>
                         </Element>
                         <Element cardinality="0..1">

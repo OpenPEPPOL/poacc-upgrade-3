@@ -1,6 +1,6 @@
 
 [[prof-42]]
-= Profile 42 - Order Agreement
+= Customization and Profile identifiers
 
 In the table below you will find the values to be used as the specification identifier and the business process type for this profile
 

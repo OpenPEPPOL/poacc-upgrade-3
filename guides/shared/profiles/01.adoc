@@ -1,6 +1,6 @@
 
 [[prof-1]]
-= Profile 1 - Catalogue only
+= Customization and Profile identifiers
 
 In the table below you will find the values to be used as the specification identifier and the business process type for this profile
 

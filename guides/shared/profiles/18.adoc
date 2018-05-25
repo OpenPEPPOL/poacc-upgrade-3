@@ -1,6 +1,6 @@
 
 [[prof-18]]
-= Profile 18 - Punch out
+= Customization and Profile identifiers
 
 In the table below you will find the values to be used as the specification identifier and the business process type for this profile
 

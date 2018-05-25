@@ -4,3 +4,12 @@
 * Remove attributes
 * Align label elements in Order Agreement and Punchout
 * Vat category in allowance/charge on header level in Order Agreement
+
+
+= Remarks/question
+
+* Align full allowance charge class?
+** Validate chargeindicator to be true or false?
+* Scheme id for Item Standard identifier? (ICD list)?
+* OA: Contracted item indicator - codelist?
+* OA: Item property classification code - codelist?

@@ -56,11 +56,11 @@
     
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/CountryCodeIdentifier.xml</Path>
+        <Path>structure/codelist/ISO3166-1_Alpha2.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/CurrencyCode.xml</Path>
+        <Path>structure/codelist/ISO4217_2015.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
@@ -69,5 +69,26 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNECERec20-11e.xml</Path>
+    </Resource>
+    
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/AllowanceCharge.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL5305.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/StatusReason.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL4343.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL7143.xml</Path>
     </Resource>
 </Project>

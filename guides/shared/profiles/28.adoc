@@ -1,6 +1,6 @@
 
 [[prof-28]]
-= Profile 28 - Ordering
+= Customization and Profile identifiers
 
 In the table below you will find the values to be used as the specification identifier and the business process type for this profile
 
