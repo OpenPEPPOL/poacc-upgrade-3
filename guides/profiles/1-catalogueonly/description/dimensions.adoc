@@ -19,5 +19,5 @@ The following values can be stated:
 .Example:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-1-1.xml[tags=dimension]
+include::../snippets/Snippet-1-1.xml[tags=dimension]
 ----

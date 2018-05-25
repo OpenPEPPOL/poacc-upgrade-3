@@ -14,12 +14,12 @@ Which identifier to use depends on what is known at the time of catalogue exchan
 .Example 1, Seller item identification
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-1-1.xml[tags=selleritemid]
+include::../snippets/Snippet-1-1.xml[tags=selleritemid]
 ----
 
 
 .Example 2, Standard item identification
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-1-1.xml[tags=standarditemid]
+include::../snippets/Snippet-1-1.xml[tags=standarditemid]
 ----

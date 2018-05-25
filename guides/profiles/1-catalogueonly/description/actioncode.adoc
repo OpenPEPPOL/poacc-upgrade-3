@@ -17,7 +17,7 @@ This is the default action.
 .Example:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-1-2.xml[tags=actioncode]
+include::../snippets/Snippet-1-2.xml[tags=actioncode]
 ----
 
 Legal codes on Catalogue Line level:
@@ -37,5 +37,5 @@ If CatalogueLineReference is used in the corresponding order message (outside sc
 .Example:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-1-1.xml[tags=actioncode]
+include::../snippets/Snippet-1-1.xml[tags=actioncode]
 ----

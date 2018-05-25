@@ -8,5 +8,5 @@ The type of classification shall be stated in the attribute “listID”. In som
 .Example:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-1-1.xml[tags=classification]
+include::../snippets/Snippet-1-1.xml[tags=classification]
 ----

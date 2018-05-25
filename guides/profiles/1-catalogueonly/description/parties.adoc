@@ -12,7 +12,7 @@ Can be the Supplier itself or a third party providing this service.
 .Example:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-1-1.xml[tags=seller]
+include::../snippets/Snippet-1-1.xml[tags=seller]
 ----
 
 
@@ -25,7 +25,7 @@ Can be the Customer itself or a third party providing this service to the Custom
 .Example:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-1-1.xml[tags=buyer]
+include::../snippets/Snippet-1-1.xml[tags=buyer]
 ----
 
 
@@ -37,7 +37,7 @@ The party that is responsible for the delivery of products or services specified
 .Example:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-1-1.xml[tags=supplier]
+include::../snippets/Snippet-1-1.xml[tags=supplier]
 ----
 
 [[buyer-contractorcustomerparty]]
@@ -48,7 +48,7 @@ The party buying products or services from the Catalogue.
 .Example:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-1-1.xml[tags=contractor]
+include::../snippets/Snippet-1-1.xml[tags=contractor]
 ----
 
 [[manufacturer-manufacturerparty]]
@@ -59,5 +59,5 @@ The name of the Manufacturer.
 .Example:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-1-1.xml[tags=manufacturer]
+include::../snippets/Snippet-1-1.xml[tags=manufacturer]
 ----
