@@ -51,6 +51,20 @@
         <Path>structure/syntax/ubl-punchout.xml</Path>
         <Title>UBL Punchout</Title>
     </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-mlr.xml</Path>
+        <Title>UBL Message Level Response</Title>
+    </Resource>
+    
+    <!-- Rules -->
+    
+    <Resource>
+        <Identifier>common</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/parts/common.sch</Path>
+        <Title>Common rules</Title>
+    </Resource>
     
     <!-- Code lists -->
     
@@ -90,5 +104,9 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL7143.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/MimeCode.xml</Path>
     </Resource>
 </Project>

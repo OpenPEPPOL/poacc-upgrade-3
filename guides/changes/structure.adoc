@@ -13,3 +13,5 @@
 * Scheme id for Item Standard identifier? (ICD list)?
 * OA: Contracted item indicator - codelist?
 * OA: Item property classification code - codelist?
+* Remove chapter on codelists and rules?
+* Datatypes in shared, then reused?
