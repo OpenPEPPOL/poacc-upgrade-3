@@ -2,14 +2,14 @@
 <OrderResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2"
 	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-	<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+
 	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns110:ver1.0:extended:urn:www.peppol.eu:bis:peppol42a:ver1.0</cbc:CustomizationID>
 	<cbc:ProfileID>urn:www.cenbii.eu:profile:bii42:ver1.0</cbc:ProfileID>
 	<cbc:ID>id123 tir110-001</cbc:ID>
 	<cbc:IssueDate>2016-08-16</cbc:IssueDate>
 	<cbc:IssueTime>12:00:00</cbc:IssueTime>
 	<cbc:Note>Textual note with the order agreement tir110-043</cbc:Note>
-	<cbc:DocumentCurrencyCode listID="ISO4217">EUR</cbc:DocumentCurrencyCode>
+	<cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
 	<cbc:CustomerReference>Buyer reference id tir110-044</cbc:CustomerReference>
 	<cac:OrderReference>
 		<cbc:ID>Order id tir110-042</cbc:ID>
@@ -18,7 +18,7 @@
 		<cbc:ID>Document idtir110-045</cbc:ID>
 		<cbc:DocumentType>Document description</cbc:DocumentType>
 		<cac:Attachment>
-			<cbc:EmbeddedDocumentBinaryObject filename="file.pdf" mimeCode="application/pdf"
+			<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf"  filename="file.pdf"
 				>UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
 			<cac:ExternalReference>
 				<cbc:URI>https://joinup.ec.europa.eu/svn/peppol/PostAward/Ordering28A/20160310%20-%20PEPPOL_BIS_28a-101.pdf</cbc:URI>
@@ -45,7 +45,7 @@
 				<cbc:PostalZone>1001</cbc:PostalZone>
 				<cbc:CountrySubentity>BE</cbc:CountrySubentity>
 				<cac:Country>
-					<cbc:IdentificationCode listID="ISO3166-1:Alpha2">SE</cbc:IdentificationCode>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
 			<cac:Contact>
@@ -72,7 +72,7 @@
 				<cbc:PostalZone>1001</cbc:PostalZone>
 				<cbc:CountrySubentity>BE</cbc:CountrySubentity>
 				<cac:Country>
-					<cbc:IdentificationCode listID="ISO3166-1:Alpha2">SE</cbc:IdentificationCode>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
 		</cac:Party>
@@ -130,8 +130,7 @@
 					<cbc:PostalZone>1001</cbc:PostalZone>
 					<cbc:CountrySubentity>BE</cbc:CountrySubentity>
 					<cac:Country>
-						<cbc:IdentificationCode listID="ISO3166-1:Alpha2"
-							>SE</cbc:IdentificationCode>
+						<cbc:IdentificationCode>SE</cbc:IdentificationCode>
 					</cac:Country>
 				</cac:Address>
 			</cac:DeliveryLocation>
@@ -143,7 +142,7 @@
 		<cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason><!--2-->
 		<cbc:Amount currencyID="EUR">200</cbc:Amount><!--3-->
 		<cac:TaxCategory>
-			<cbc:ID schemeID="UNCL5305">S</cbc:ID>
+			<cbc:ID>S</cbc:ID>
 			<cbc:Percent>23.6</cbc:Percent>
 			<cac:TaxScheme>
 				<cbc:ID>VAT</cbc:ID>
@@ -157,7 +156,7 @@
 		<cbc:AllowanceChargeReason>Packing cost</cbc:AllowanceChargeReason>
 		<cbc:Amount currencyID="EUR">200</cbc:Amount>
 		<cac:TaxCategory><!--1-->
-			<cbc:ID schemeID="UNCL5305">S</cbc:ID><!--2-->
+			<cbc:ID>S</cbc:ID><!--2-->
 			<cbc:Percent>23.6</cbc:Percent><!--3-->
 			<cac:TaxScheme>
 				<cbc:ID>VAT</cbc:ID>
@@ -172,7 +171,7 @@
 			<cbc:TaxableAmount currencyID="EUR">1200</cbc:TaxableAmount><!--1-->
 			<cbc:TaxAmount currencyID="EUR">283.20</cbc:TaxAmount><!--2-->
 			<cac:TaxCategory>
-				<cbc:ID schemeID="UNCL5305">S</cbc:ID>
+				<cbc:ID>S</cbc:ID>
 				<cbc:Percent>23.6</cbc:Percent><!--3-->
 				<cac:TaxScheme>
 					<cbc:ID>VAT</cbc:ID>
@@ -194,10 +193,10 @@
 		<cac:LineItem>
 			<cbc:ID>1</cbc:ID>
 			<cbc:Note>Line note</cbc:Note>
-			<cbc:Quantity unitCode="C62" unitCodeListID="UNECERec20">24</cbc:Quantity>
+			<cbc:Quantity unitCode="C62">24</cbc:Quantity>
 			<cbc:LineExtensionAmount currencyID="EUR">1200</cbc:LineExtensionAmount>
 			<cac:Delivery>
-				<cbc:Quantity unitCode="C62" unitCodeListID="UNECERec20">24</cbc:Quantity>
+				<cbc:Quantity unitCode="C62">24</cbc:Quantity>
 				<cac:PromisedDeliveryPeriod>
 					<cbc:StartDate>2016-08-20</cbc:StartDate>
 					<cbc:StartTime>12:00:00</cbc:StartTime>
@@ -207,7 +206,7 @@
 			</cac:Delivery>
 			<cac:Price>
 				<cbc:PriceAmount currencyID="EUR">50</cbc:PriceAmount>
-				<cbc:BaseQuantity unitCode="C62" unitCodeListID="UNECERec20">1</cbc:BaseQuantity>
+				<cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
 			</cac:Price>
 			<cac:Item>
 				<cbc:Description>Description of the item</cbc:Description>
@@ -237,17 +236,17 @@
 					<cbc:ActionCode>Action code</cbc:ActionCode>
 				</cac:TransactionConditions>
 				<cac:ClassifiedTaxCategory>
-					<cbc:ID schemeID="UNCL5305 SUBSET">S</cbc:ID>
+					<cbc:ID>S</cbc:ID>
 					<cbc:Percent>23.6</cbc:Percent>
 					<cac:TaxScheme>
-						<cbc:ID schemeID="UNCL5153">VAT</cbc:ID>
+						<cbc:ID>VAT</cbc:ID>
 					</cac:TaxScheme>
 				</cac:ClassifiedTaxCategory>
 				<cac:AdditionalItemProperty>
 					<cbc:Name>Property name</cbc:Name>
 					<cbc:NameCode>NameCode</cbc:NameCode>
 					<cbc:Value>Property value</cbc:Value>
-					<cbc:ValueQuantity unitCode="C62" unitCodeListID="UNECERec20">1</cbc:ValueQuantity>
+					<cbc:ValueQuantity unitCode="C62">1</cbc:ValueQuantity>
 				</cac:AdditionalItemProperty>
 				<cac:Certificate>
 					<cbc:ID>EU Ecolabel</cbc:ID>

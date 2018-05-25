@@ -9,17 +9,7 @@
 	<cbc:Note>Ticket is non-refundable</cbc:Note>
 	<cbc:DocumentCurrencyCode listID="'ISO3166-1:Alpha2">EUR</cbc:DocumentCurrencyCode>
 	<cbc:CustomerReference>BRU0916</cbc:CustomerReference>
-<!--	<cac:AdditionalDocumentReference>
-		<cbc:ID>XSDRDW</cbc:ID>
-		<cbc:DocumentType>Electronic ticket</cbc:DocumentType>
-		<cac:Attachment>
-			<cbc:EmbeddedDocumentBinaryObject filename="file.pdf" mimeCode="application/pdf">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
-		</cac:Attachment>
-	</cac:AdditionalDocumentReference>
-	<cac:Contract>
-		<cbc:ID>TravelContract9</cbc:ID>
-		<cbc:ContractType>Framwork agreement for travel</cbc:ContractType>
-	</cac:Contract>-->
+
 	<cac:SellerSupplierParty>
 		<cac:Party>
 			<cbc:EndpointID schemeID="GLN">5790000436095</cbc:EndpointID>

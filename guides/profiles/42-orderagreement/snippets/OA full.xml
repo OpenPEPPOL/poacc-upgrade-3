@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OrderResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2 C:\Users\Notandi\Documents\Upplýsingar\Standards\UBL\UBL-2.1\xsdrt\maindoc\UBL-OrderResponse-2.1.xsd">
 
-	<!-- tag::ublversionid[] -->
-	<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
-	<!-- end::ublversionid[] -->
 
 	<!-- tag::customizationid[] -->
 	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns110:ver1.0:extended:urn:www.peppol.eu:bis:peppol42a:ver1.0</cbc:CustomizationID>
@@ -34,7 +31,7 @@
 		<cbc:ID>Document idtir110-045</cbc:ID>
 		<cbc:DocumentType>Document description</cbc:DocumentType>
 		<cac:Attachment>
-			<cbc:EmbeddedDocumentBinaryObject filename="file.pdf" mimeCode="application/pdf">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
+			<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="file.pdf">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
 			<cac:ExternalReference>
 				<cbc:URI>https://joinup.ec.europa.eu/svn/peppol/PostAward/Ordering28A/20160310%20-%20PEPPOL_BIS_28a-101.pdf</cbc:URI>
 			</cac:ExternalReference>
@@ -66,7 +63,7 @@
 				<cbc:PostalZone>1001</cbc:PostalZone>
 				<cbc:CountrySubentity>BE</cbc:CountrySubentity>
 				<cac:Country>
-					<cbc:IdentificationCode listID="ISO3166-1:Alpha2">SE</cbc:IdentificationCode>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
 			<cac:Contact>
@@ -96,7 +93,7 @@
 				<cbc:PostalZone>1001</cbc:PostalZone>
 				<cbc:CountrySubentity>BE</cbc:CountrySubentity>
 				<cac:Country>
-					<cbc:IdentificationCode listID="ISO3166-1:Alpha2">SE</cbc:IdentificationCode>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
 			<cac:Contact>
@@ -194,11 +191,11 @@
 			<cbc:TaxableAmount currencyID="EUR">1000</cbc:TaxableAmount>
 			<cbc:TaxAmount currencyID="EUR">236</cbc:TaxAmount>
 			<cac:TaxCategory>
-				<cbc:ID schemeID="UNCL5305">S</cbc:ID>
+				<cbc:ID>S</cbc:ID>
 				<cbc:Percent>23.6</cbc:Percent>
 				<cbc:TaxExemptionReason>No reason</cbc:TaxExemptionReason>
 				<cac:TaxScheme>
-					<cbc:ID schemeID="5305">VAT</cbc:ID>
+					<cbc:ID>VAT</cbc:ID>
 				</cac:TaxScheme>
 			</cac:TaxCategory>
 		</cac:TaxSubtotal>
@@ -302,10 +299,10 @@
 
 				<!-- tag::ClassifiedTaxCategory[] -->
 				<cac:ClassifiedTaxCategory>
-					<cbc:ID schemeID="BII2">S</cbc:ID>
+					<cbc:ID>S</cbc:ID>
 					<cbc:Percent>23.6</cbc:Percent>
 					<cac:TaxScheme>
-						<cbc:ID schemeID="UNCL5305">S</cbc:ID>
+						<cbc:ID>S</cbc:ID>
 					</cac:TaxScheme>
 				</cac:ClassifiedTaxCategory>
 				<!-- end::ClassifiedTaxCategory[] -->

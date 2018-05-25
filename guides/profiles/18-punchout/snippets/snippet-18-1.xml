@@ -2,9 +2,7 @@
 <Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 	xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
-	<!-- tag::ubl-version[] -->
-	<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
-	<!-- end::ubl-version[] -->
+
 	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns077:ver2.0:extended:www.peppol.eu:bis:peppol18a:ver1.0</cbc:CustomizationID>
 	<!-- tag::profile[] -->
 	<cbc:ProfileID>urn:www.cenbii.eu:profile:bii18:ver1.0</cbc:ProfileID>
@@ -79,10 +77,10 @@
 			<!-- end::leadtime[] -->
 			<cac:Price>
 				<cbc:PriceAmount currencyID="EUR">1000.00</cbc:PriceAmount>
-				<cbc:BaseQuantity unitCode="C62" unitCodeListID="UNECERec20">1</cbc:BaseQuantity>
+				<cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
 			</cac:Price>
 			<cac:DeliveryUnit>
-				<cbc:BatchQuantity unitCode="C62" unitCodeListID="UNECERec20">1</cbc:BatchQuantity>
+				<cbc:BatchQuantity unitCode="C62">1</cbc:BatchQuantity>
 			</cac:DeliveryUnit>
 		</cac:RequiredItemLocationQuantity>
 		<cac:Item>
@@ -105,7 +103,7 @@
 				<cbc:DocumentTypeCode>MAINIMAGE</cbc:DocumentTypeCode><!--1-->
 				<cbc:DocumentType>Picture of the computer</cbc:DocumentType>
 				<cac:Attachment>
-					<cbc:EmbeddedDocumentBinaryObject mimeCode="image/jpeg"
+					<cbc:EmbeddedDocumentBinaryObject mimeCode="image/jpeg" filename="computer-image.jpg"
 						>UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
 				</cac:Attachment>
 			</cac:ItemSpecificationDocumentReference>
@@ -116,14 +114,14 @@
 				<cbc:ID>PC01specs.pdf</cbc:ID>
 				<cbc:DocumentType>PC detailed specification</cbc:DocumentType>
 				<cac:Attachment>
-					<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf"
+					<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="specification.pdf"
 						>UGVyc29uYWwgY29tcHV0ZXIgcHJvZHVjdCBpbmZvcm1hdGlvbg==</cbc:EmbeddedDocumentBinaryObject>
 				</cac:Attachment>
 			</cac:ItemSpecificationDocumentReference>
 			<!-- end::attachment-pdf[] -->
 			<!-- tag::coo[] -->
 			<cac:OriginCountry>
-				<cbc:IdentificationCode listID="ISO3166-1:Alpha2">CH</cbc:IdentificationCode>
+				<cbc:IdentificationCode>CH</cbc:IdentificationCode>
 			</cac:OriginCountry>
 			<!-- end::coo[] -->
 			<!-- tag::classification[] -->
@@ -133,7 +131,7 @@
 			<!-- end::classification[] -->
 			<!-- tag::vat[] -->
 			<cac:ClassifiedTaxCategory>
-				<cbc:ID schemeID="UNCL5305">S</cbc:ID>
+				<cbc:ID>S</cbc:ID>
 				<cbc:Percent>18</cbc:Percent>
 				<cac:TaxScheme>
 					<cbc:ID>VAT</cbc:ID>
@@ -149,8 +147,7 @@
 				<cbc:Name>RAM memory</cbc:Name>
 				<cbc:NameCode>Item property classification code</cbc:NameCode>
 				<cbc:Value>16 GB</cbc:Value>
-				<cbc:ValueQuantity unitCode="AD" unitCodeListID="UNECERec20"
-					>16000000</cbc:ValueQuantity>
+				<cbc:ValueQuantity unitCode="AD">16000000</cbc:ValueQuantity>
 			</cac:AdditionalItemProperty>
 			<!-- end::property[] -->
 			<!-- tag::product-id[] -->
@@ -188,10 +185,10 @@
 		<cac:RequiredItemLocationQuantity>
 			<cac:Price>
 				<cbc:PriceAmount currencyID="EUR">24.00</cbc:PriceAmount>
-				<cbc:BaseQuantity unitCode="C62" unitCodeListID="UNECERec20">12</cbc:BaseQuantity>
+				<cbc:BaseQuantity unitCode="C62">12</cbc:BaseQuantity>
 			</cac:Price>
 			<cac:DeliveryUnit>
-				<cbc:BatchQuantity unitCode="C62" unitCodeListID="UNECERec20">360</cbc:BatchQuantity>
+				<cbc:BatchQuantity unitCode="C62">360</cbc:BatchQuantity>
 			</cac:DeliveryUnit>
 		</cac:RequiredItemLocationQuantity>
 		<!-- end::price[] -->
@@ -213,10 +210,10 @@
 				<cbc:ItemClassificationCode listID="UNSPSC">20101601</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
 			<cac:ClassifiedTaxCategory>
-				<cbc:ID schemeID="UNCL5305 SUBSET">S</cbc:ID>
+				<cbc:ID>S</cbc:ID>
 				<cbc:Percent>18</cbc:Percent>
 				<cac:TaxScheme>
-					<cbc:ID schemeID="UNCL5103">VAT</cbc:ID>
+					<cbc:ID>VAT</cbc:ID>
 				</cac:TaxScheme>
 			</cac:ClassifiedTaxCategory>
 			<cac:AdditionalItemProperty>
@@ -233,7 +230,7 @@
 				<cbc:PriceAmount currencyID="EUR">20.00</cbc:PriceAmount>
 			</cac:Price>
 			<cac:DeliveryUnit>
-				<cbc:BatchQuantity unitCode="HUR" unitCodeListID="UNECERec20">2</cbc:BatchQuantity>
+				<cbc:BatchQuantity unitCode="HUR">2</cbc:BatchQuantity>
 			</cac:DeliveryUnit>
 		</cac:RequiredItemLocationQuantity>
 		<cac:Item>
@@ -243,10 +240,10 @@
 				<cbc:ID>INST01</cbc:ID>
 			</cac:SellersItemIdentification>
 			<cac:ClassifiedTaxCategory>
-				<cbc:ID schemeID="UNCL5305 SUBSET">AA</cbc:ID>
+				<cbc:ID>S</cbc:ID>
 				<cbc:Percent>8</cbc:Percent>
 				<cac:TaxScheme>
-					<cbc:ID schemeID="UNCL5103">VAT</cbc:ID>
+					<cbc:ID>VAT</cbc:ID>
 				</cac:TaxScheme>
 			</cac:ClassifiedTaxCategory>
 			<cac:AdditionalItemProperty>

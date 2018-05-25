@@ -15,7 +15,7 @@
 	<cbc:ID>1387</cbc:ID>
 	<!-- end::identifier[] -->
 	<!-- tag::actioncode[] -->
-	<cbc:ActionCode listID="ACTIONCODE:BII2">Update</cbc:ActionCode>
+	<cbc:ActionCode>Update</cbc:ActionCode>
 	<!-- end::actioncode[] -->
 	<!-- tag::identifier[] -->
 	<cbc:IssueDate>2016-08-01</cbc:IssueDate>
@@ -72,7 +72,7 @@
 				<cbc:PostalZone>1163</cbc:PostalZone>
 				<cbc:CountrySubentity>Oslo</cbc:CountrySubentity>
 				<cac:Country>
-					<cbc:IdentificationCode listID="ISO3166-1:Alpha2">NO</cbc:IdentificationCode>
+					<cbc:IdentificationCode>NO</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
 			<cac:Contact>
@@ -114,15 +114,15 @@
 			<!-- end::leadtime[] -->
 			<cac:Price>
 				<cbc:PriceAmount currencyID="EUR">1000.00</cbc:PriceAmount>
-				<cbc:BaseQuantity unitCode="C62" unitCodeListID="UNECERec20">1</cbc:BaseQuantity>
+				<cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
 			</cac:Price>
 			<cac:DeliveryUnit>
-				<cbc:BatchQuantity unitCode="C62" unitCodeListID="UNECERec20">1</cbc:BatchQuantity>
+				<cbc:BatchQuantity unitCode="C62">1</cbc:BatchQuantity>
 			</cac:DeliveryUnit>
 		</cac:RequiredItemLocationQuantity>
 		<cac:Item>
 			<cbc:Description> Ballpoint pen, comes in different colours and tip sizes</cbc:Description>
-			<cbc:PackQuantity unitCode="CT" unitCodeListID="UNECERec20">10</cbc:PackQuantity>
+			<cbc:PackQuantity unitCode="CT">10</cbc:PackQuantity>
 			<cbc:Name> Ballpoint pen. Blue colour 0.7 mm</cbc:Name>
 			<!-- tag::product-id[] -->
 			<cac:SellersItemIdentification>
@@ -142,7 +142,7 @@
 				<!--1-->
 				<cbc:DocumentType>Picture of the computer</cbc:DocumentType>
 				<cac:Attachment>
-					<cbc:EmbeddedDocumentBinaryObject mimeCode="image/jpeg">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
+					<cbc:EmbeddedDocumentBinaryObject mimeCode="image/jpeg" filename="mainimage.jpg">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
 				</cac:Attachment>
 			</cac:ItemSpecificationDocumentReference>
 			<!-- end::main-image[] -->
@@ -151,13 +151,13 @@
 				<cbc:ID>PC01specs.pdf</cbc:ID>
 				<cbc:DocumentType>PC detailed specification</cbc:DocumentType>
 				<cac:Attachment>
-					<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf">UGVyc29uYWwgY29tcHV0ZXIgcHJvZHVjdCBpbmZvcm1hdGlvbg==</cbc:EmbeddedDocumentBinaryObject>
+					<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="specification.pdf">UGVyc29uYWwgY29tcHV0ZXIgcHJvZHVjdCBpbmZvcm1hdGlvbg==</cbc:EmbeddedDocumentBinaryObject>
 				</cac:Attachment>
 			</cac:ItemSpecificationDocumentReference>
 			<!-- end::attachment-pdf[] -->
 			<!-- tag::coo[] -->
 			<cac:OriginCountry>
-				<cbc:IdentificationCode listID="ISO3166-1:Alpha2">CH</cbc:IdentificationCode>
+				<cbc:IdentificationCode>CH</cbc:IdentificationCode>
 			</cac:OriginCountry>
 			<!-- end::coo[] -->
 			<!-- tag::classification[] -->
@@ -167,12 +167,12 @@
 			<!-- end::classification[] -->
 			<!-- tag::hazardous[] -->
 			<cac:HazardousItem>
-				<cbc:UNDGCode listID="UNCL8273">3265</cbc:UNDGCode>
+				<cbc:UNDGCode>3265</cbc:UNDGCode>
 			</cac:HazardousItem>
 			<!-- end::hazardous[] -->
 			<!-- tag::vat[] -->
 			<cac:ClassifiedTaxCategory>
-				<cbc:ID schemeID="UNCL5305">S</cbc:ID>
+				<cbc:ID>S</cbc:ID>
 				<cbc:Percent>18</cbc:Percent>
 				<cac:TaxScheme>
 					<cbc:ID>VAT</cbc:ID>
@@ -188,7 +188,7 @@
 				<cbc:Name>RAM memory</cbc:Name>
 				<cbc:NameCode>Item property classification code</cbc:NameCode>
 				<cbc:Value>16 GB</cbc:Value>
-				<cbc:ValueQuantity unitCode="AD" unitCodeListID="UNECERec20">16000000</cbc:ValueQuantity>
+				<cbc:ValueQuantity unitCode="AD">16000000</cbc:ValueQuantity>
 			</cac:AdditionalItemProperty>
 			<!-- end::property[] -->
 			<!-- tag::color[] -->
@@ -220,11 +220,11 @@
 			<!-- end::label[] -->
 			<!-- tag::dimension[] -->
 			<cac:Dimension>
-				<cbc:AttributeID schemeID="UNCL6313">HT</cbc:AttributeID>
+				<cbc:AttributeID>HT</cbc:AttributeID>
 				<cbc:Measure unitCode="MMT">270</cbc:Measure>
 			</cac:Dimension>
 			<cac:Dimension>
-				<cbc:AttributeID schemeID="UNCL6313">LN</cbc:AttributeID>
+				<cbc:AttributeID>LN</cbc:AttributeID>
 				<cbc:Measure unitCode="MMT">300</cbc:Measure>
 			</cac:Dimension>
 			<!-- end::dimension[] -->
@@ -239,10 +239,10 @@
 		<cac:RequiredItemLocationQuantity>
 			<cac:Price>
 				<cbc:PriceAmount currencyID="EUR">24.00</cbc:PriceAmount>
-				<cbc:BaseQuantity unitCode="C62" unitCodeListID="UNECERec20">12</cbc:BaseQuantity>
+				<cbc:BaseQuantity unitCode="C62">12</cbc:BaseQuantity>
 			</cac:Price>
 			<cac:DeliveryUnit>
-				<cbc:BatchQuantity unitCode="C62" unitCodeListID="UNECERec20">360</cbc:BatchQuantity>
+				<cbc:BatchQuantity unitCode="C62">360</cbc:BatchQuantity>
 			</cac:DeliveryUnit>
 		</cac:RequiredItemLocationQuantity>
 		<!-- end::price[] -->
@@ -268,10 +268,10 @@
 				<cbc:ItemClassificationCode listID="UNSPSC">20101601</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
 			<cac:ClassifiedTaxCategory>
-				<cbc:ID schemeID="UNCL5305 SUBSET">S</cbc:ID>
+				<cbc:ID>S</cbc:ID>
 				<cbc:Percent>18</cbc:Percent>
 				<cac:TaxScheme>
-					<cbc:ID schemeID="UNCL5103">VAT</cbc:ID>
+					<cbc:ID>VAT</cbc:ID>
 				</cac:TaxScheme>
 			</cac:ClassifiedTaxCategory>
 			<cac:AdditionalItemProperty>
@@ -295,7 +295,7 @@
 				<cbc:PriceAmount currencyID="EUR">20.00</cbc:PriceAmount>
 			</cac:Price>
 			<cac:DeliveryUnit>
-				<cbc:BatchQuantity unitCode="HUR" unitCodeListID="UNECERec20">2</cbc:BatchQuantity>
+				<cbc:BatchQuantity unitCode="HUR">2</cbc:BatchQuantity>
 			</cac:DeliveryUnit>
 		</cac:RequiredItemLocationQuantity>
 		<cac:Item>
@@ -305,10 +305,10 @@
 				<cbc:ID>INST01</cbc:ID>
 			</cac:SellersItemIdentification>
 			<cac:ClassifiedTaxCategory>
-				<cbc:ID schemeID="UNCL5305 SUBSET">AA</cbc:ID>
+				<cbc:ID>AA</cbc:ID>
 				<cbc:Percent>8</cbc:Percent>
 				<cac:TaxScheme>
-					<cbc:ID schemeID="UNCL5103">VAT</cbc:ID>
+					<cbc:ID>VAT</cbc:ID>
 				</cac:TaxScheme>
 			</cac:ClassifiedTaxCategory>
 			<cac:AdditionalItemProperty>
@@ -331,13 +331,13 @@
 				<cbc:PriceAmount currencyID="EUR">20.00</cbc:PriceAmount>
 			</cac:Price>
 			<cac:DeliveryUnit>
-				<cbc:BatchQuantity unitCode="HUR" unitCodeListID="UNECERec20">2</cbc:BatchQuantity>
+				<cbc:BatchQuantity unitCode="HUR">2</cbc:BatchQuantity>
 			</cac:DeliveryUnit>
 		</cac:RequiredItemLocationQuantity>
 		<!-- tag::itemnamedesc[] -->
 		<cac:Item>
 			<cbc:Description> Ballpoint pen, comes in different colours and tip sizes</cbc:Description>
-			<cbc:PackQuantity unitCode="CT" unitCodeListID="UNECERec20">10</cbc:PackQuantity>
+			<cbc:PackQuantity unitCode="CT">10</cbc:PackQuantity>
 			<cbc:Name> Ballpoint pen. Blue colour 0.7 mm</cbc:Name>
 		</cac:Item>
 		<!-- end::itemnamedesc[] -->
@@ -350,7 +350,7 @@
 				<cbc:PriceAmount currencyID="EUR">20.00</cbc:PriceAmount>
 			</cac:Price>
 			<cac:DeliveryUnit>
-				<cbc:BatchQuantity unitCode="CT" unitCodeListID="UNECERec20">2</cbc:BatchQuantity>
+				<cbc:BatchQuantity unitCode="CT">2</cbc:BatchQuantity>
 			</cac:DeliveryUnit>
 		</cac:RequiredItemLocationQuantity>
 		<!-- tag::keywords[] -->
@@ -371,7 +371,7 @@
 		<cbc:ID>6</cbc:ID>
 		<cbc:ContractSubdivision>CRT1387</cbc:ContractSubdivision>
 		<!-- tag::packlevel[] -->
-		<cbc:PackLevelCode listID="GS17009:PEPPOL">TU</cbc:PackLevelCode>
+		<cbc:PackLevelCode>TU</cbc:PackLevelCode>
 		<!-- end::packlevel[] -->
 		<!-- tag::relateditem[] -->
 		<cac:ComponentRelatedItem>
@@ -386,7 +386,7 @@
 		<!-- tag::replaceitem[] -->
 		<cac:ReplacedRelatedItem>
 			<cbc:ID>12345</cbc:ID>
-			<cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">5</cbc:Quantity>
+			<cbc:Quantity unitCode="EA">5</cbc:Quantity>
 		</cac:ReplacedRelatedItem>
 		<!-- end::replaceitem[] -->
 		<!-- tag::prices[] -->
@@ -397,13 +397,13 @@
 			</cac:Price>
 			<cac:DeliveryUnit>
 				<cbc:BatchQuantity>1</cbc:BatchQuantity>
-				<cbc:ConsumerUnitQuantity unitCode="EA" unitCodeListID="UNECERec20">1</cbc:ConsumerUnitQuantity>
+				<cbc:ConsumerUnitQuantity unitCode="EA">1</cbc:ConsumerUnitQuantity>
 			</cac:DeliveryUnit>
 		</cac:RequiredItemLocationQuantity>
 		<!-- end::prices[] -->
 		<cac:Item>
 			<cbc:Description> Ballpoint pen, comes in different colours and tip sizes</cbc:Description>
-			<cbc:PackQuantity unitCode="CT" unitCodeListID="UNECERec20">10</cbc:PackQuantity>
+			<cbc:PackQuantity unitCode="CT">10</cbc:PackQuantity>
 			<cbc:Name> Ballpoint pen. Blue colour 0.7 mm</cbc:Name>
 			<!-- tag::keyword[] -->
 			<cbc:Keyword>write equipment%felt pen</cbc:Keyword>
