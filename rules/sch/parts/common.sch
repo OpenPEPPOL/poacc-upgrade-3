@@ -40,9 +40,7 @@
       <assert id="PEPPOL-COMMON-R003"
               test="not(@*:schemaLocation)"
               flag="warning">Document SHOULD not contain schema location.</assert>
-      <assert id="PEPPOL-COMMON-R004"
-              test="cbc:UBLVersionID"
-              flag="fatal">Document MUST have a syntax identifier.</assert>
+
     </rule>
 
     <rule context="cbc:IssueDate | cbc:DueDate | cbc:TaxPointDate | cbc:StartDate | cbc:EndDate | cbc:ActualDeliveryDate">
@@ -77,13 +75,13 @@
     <rule context="cac:AllowanceCharge[cbc:ChargeIndicator='false']/cbc:AllowanceChargeReasonCode">
       <assert id="PEPPOL-COMMON-CL002"
         test="some $code in $UNCL5189 satisfies normalize-space(text()) = $code"
-        flag="fatal">Reason code MUST be according to subset of UNCL 5189 D.16B.</assert>
+        flag="fatal">Allowance reason code MUST be according to subset of UNCL 5189 D.16B.</assert>
     </rule>
     
     <rule context="cac:AllowanceCharge[cbc:ChargeIndicator='true']/cbc:AllowanceChargeReasonCode">
       <assert id="PEPPOL-COMMON-CL003"
         test="some $code in $UNCL7161 satisfies normalize-space(text()) = $code"
-        flag="fatal">Reason code MUST be according to UNCL 7161 D.16B.</assert>
+        flag="fatal">Charge reason code MUST be according to UNCL 7161 D.16B.</assert>
     </rule>
     
     <rule context="cac:ClassifiedTaxCategory/cbc:ID | cac:TaxCategory/cbc:ID">
