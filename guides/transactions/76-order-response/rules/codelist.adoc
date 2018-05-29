@@ -1,4 +1,4 @@
-[[codelists-business-rules]]
+
 = Order response codelists rules
 
 [cols="1s,5",options="header"]

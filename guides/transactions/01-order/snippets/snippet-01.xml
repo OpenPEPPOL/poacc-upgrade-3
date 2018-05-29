@@ -250,7 +250,7 @@
       <cbc:ID>2</cbc:ID>
       <!-- tag::quantity[] -->
       <cbc:Quantity unitCode="NAR">6</cbc:Quantity>
-      <!-- tag::quantity[] -->
+      <!-- end::quantity[] -->
       <cbc:LineExtensionAmount currencyID="EUR">30</cbc:LineExtensionAmount>
       <cbc:AccountingCost>MAFO-1</cbc:AccountingCost>
       <!-- tag::quantity[] -->

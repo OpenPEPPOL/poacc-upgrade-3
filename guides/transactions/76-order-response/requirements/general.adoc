@@ -1,4 +1,4 @@
-[[general-requirements]]
+[[response-requirements]]
 = General requirements
 
 [cols="1,5",options="header"]
