@@ -64,12 +64,8 @@
                 Rejected or, alternatively, Accepted with change.If response code is Accept or
                 Reject there may not be any response lines.</Description>
             <Reference type="BUSINESS_TERM">tir76-200</Reference>
+						<Reference type="CODE_LIST">UNCL1225-T76</Reference>
             <Reference type="RULE">BII2-T76-R033</Reference>
-            <Attribute>
-                <Term>listID</Term>
-                <Name></Name>
-                <Description></Description>
-            </Attribute>
         </Element>
         <Element cardinality="0..1">
             <Term>cbc:Note</Term>
@@ -304,12 +300,8 @@
                         is Accepted or Rejected or, alternatively, Accepted with
                         change.</Description>
                     <Reference type="BUSINESS_TERM">tir76-202</Reference>
+        						<Reference type="CODE_LIST">UNCL1229-T76</Reference>
                     <Reference type="RULE">EUGEN-T76-R004</Reference>
-                    <Attribute>
-                        <Term>listID</Term>
-                        <Name></Name>
-                        <Description></Description>
-                    </Attribute>
                 </Element>
                 <Element cardinality="0..1">
                     <Term>cbc:Quantity</Term>
@@ -514,7 +506,7 @@
                             <Reference type="BUSINESS_TERM">tir76-150</Reference>
                             <Reference type="RULE">OP-T76-008</Reference>
                             <Reference type="CODE_LIST">UNCL5305</Reference>
-                      
+
                         </Element>
                         <Element cardinality="0..1">
                             <Term>cbc:Percent</Term>
@@ -526,7 +518,7 @@
                         <Element>
                             <Term>cac:TaxScheme</Term>
                             <Name>Tax scheme information</Name>
-                            
+
                             <Element>
                                 <Term>cbc:ID</Term>
                                 <Description>Tax scheme. Use “VAT”</Description>
