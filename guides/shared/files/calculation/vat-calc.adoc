@@ -41,5 +41,5 @@ This should result in only one VAT Breakdown.
 include::../../snippets/snippet-oa-vat.xml[tags=taxtotal]
 ----
 <1> The class `cac:TaxCategory` is used for tax category information
-<2> VAT category according to codelist <<vat-codes>>
+<2> VAT category according to codelist {vat-codes}
 <3> VAT rate

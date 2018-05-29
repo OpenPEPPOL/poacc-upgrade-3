@@ -51,7 +51,7 @@
             <Term>cbc:IssueTime</Term>
             <Name>Order agreement issue time</Name>
             <Description>The time of the day when the order agreement was issued.The time assigned
-                by the buyer on which the transaction was issued.</Description>
+                by the buyer on which the transaction was issued. Format = "hh:mm:ss"</Description>
             <DataType>Time</DataType>
             <Reference type="BUSINESS_TERM">tir110-003</Reference>
             <Value type="EXAMPLE">12:10:35</Value>
@@ -626,7 +626,7 @@
                     <Term>cbc:StartDate</Term>
                     <Name>Period start date</Name>
                     <Description>The date when the period starts.The date is the first day of the
-                        period.</Description>
+                        period. Must be formatted YYYY-MM-DD</Description>
                     <DataType>Date</DataType> 
                     <Reference type="BUSINESS_TERM">tir110-082</Reference>
                     <Value type="EXAMPLE">2018-05-15</Value>
@@ -634,7 +634,7 @@
                 <Element cardinality="0..1">
                     <Term>cbc:StartTime</Term>
                     <Name>Period start time</Name>
-                    <Description>The start time of the period.</Description>
+                    <Description>The start time of the period. Format = "hh:mm:ss"</Description>
                     <DataType>Time</DataType> 
                     <Reference type="BUSINESS_TERM">tir110-083</Reference>
                     <Value type="EXAMPLE">10:00:00</Value>
@@ -643,7 +643,7 @@
                     <Term>cbc:EndDate</Term>
                     <Name>Period end date</Name>
                     <Description>The date on which the period ends.The date is the last day of the
-                        period.</Description>
+                        period. Must be formatted YYYY-MM-DD</Description>
                     <DataType>Date</DataType> 
                     <Reference type="BUSINESS_TERM">tir110-084</Reference>
                     <Value type="EXAMPLE">2018-05-15</Value>
@@ -651,7 +651,7 @@
                 <Element cardinality="0..1">
                     <Term>cbc:EndTime</Term>
                     <Name>Period end time</Name>
-                    <Description>The end time of the period.</Description>
+                    <Description>The end time of the period.Format = "hh:mm:ss"</Description>
                     <DataType>Time</DataType> 
                     <Reference type="BUSINESS_TERM">tir110-085</Reference>
                   
@@ -1222,7 +1222,7 @@
                         <Element>
                             <Term>cbc:StartDate</Term>
                             <Name>Period start date</Name>
-                            <Description>The date when the period starts.</Description>
+                            <Description>The date when the period starts. Must be formatted YYYY-MM-DD</Description>
                             <DataType>Date</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-030</Reference>
                             <Value type="EXAMPLE">2018-05-15</Value>
@@ -1230,7 +1230,7 @@
                         <Element cardinality="0..1">
                             <Term>cbc:StartTime</Term>
                             <Name>Period start time</Name>
-                            <Description>The start time of the period.</Description>
+                            <Description>The start time of the period. Format = "hh:mm:ss"</Description>
                             <DataType>Time</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-110</Reference>
                             <Value type="EXAMPLE">11:00:00</Value>
@@ -1239,7 +1239,7 @@
                             <Term>cbc:EndDate</Term>
                             <Name>Period end date</Name>
                             <Description>The date on which the period ends.The date is the last day
-                                of the period.</Description>
+                                of the period. Must be formatted YYYY-MM-DD</Description>
                             <DataType>Date</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-031</Reference>
                             <Value type="EXAMPLE">2018-05-15</Value>
@@ -1247,7 +1247,7 @@
                         <Element cardinality="0..1">
                             <Term>cbc:EndTime</Term>
                             <Name>Period end time</Name>
-                            <Description>The end time of the period.</Description>
+                            <Description>The end time of the period. Format = "hh:mm:ss"</Description>
                             <DataType>Time</DataType> 
                             <Reference type="BUSINESS_TERM">tir110-111</Reference>
                             <Value type="EXAMPLE">12:00:00</Value>

@@ -6,6 +6,6 @@ include::structure.adoc[]
 
 include::vat-alignment.adoc[]
 
-include::codelist.adoc[]
+include::codelists.adoc[]
 
 :leveloffset: -1

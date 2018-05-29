@@ -10,7 +10,7 @@ Identifying it specifically allows automated retrieval of the image into the ima
 
 It is recommended to send attachments as embedded, binary objects and not as external references.
 
-Valid codes can be found in <<media-type>>.
+Valid codes can be found in {mime-codes}.
 
 
 .Example of attachment as an embedded, binary object in an PEPPOL BIS Shopping Cart.
