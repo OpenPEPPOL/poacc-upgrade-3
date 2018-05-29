@@ -187,7 +187,7 @@
                         <Description></Description>
                         <Reference type="RULE">OP-T01-003</Reference>
                     </Attribute>
-                    
+
                     <Attribute>
                         <Term>filename</Term>
                         <Name>Attached document Filename</Name>
@@ -1342,7 +1342,7 @@
                         <Reference type="RULE">OP-T01-007</Reference>
                     </Attribute>
                 </Element>
-               
+
                 <Element cardinality="0..1">
                     <Term>cbc:PartialDeliveryIndicator</Term>
                     <Name>Partial Delivery Allowed Indicator</Name>
@@ -1591,7 +1591,7 @@
                             <Reference type="BUSINESS_TERM">tir01-150</Reference>
                             <Reference type="RULE">EUGEN-T01-R017</Reference>
                             <Reference type="CODE_LIST">UNCL5305</Reference>
-                           
+
                         </Element>
                         <Element cardinality="0..1">
                             <Term>cbc:Percent</Term>
@@ -1603,13 +1603,13 @@
                         <Element>
                             <Term>cac:TaxScheme</Term>
                             <Name>Tax scheme information</Name>
-                            
+
                             <Element>
                                 <Term>cbc:ID</Term>
                                 <Description>Tax scheme. Use “VAT”</Description>
                                 <Value type="DEFAULT">VAT</Value>
                             </Element>
-                            
+
                         </Element>
                     </Element>
                     <Element cardinality="0..n">
@@ -1654,6 +1654,28 @@
                             <Reference type="BUSINESS_TERM">21</Reference>
                         </Element>
                     </Element>
+                    <Element cardinality="0..n">
+                        <Term>cac:ItemInstance</Term>
+                        <Name>Item instance information</Name>
+                        <Description>Information relevant to an item instance or shared by the items in the order line.</Description>
+                        <Element cardinality="0..1">
+                            <Term>cbc:SerialID</Term>
+                            <Name>Item serial identification</Name>
+                            <Description>An identifier that is specific to the items in the order line.</Description>
+                            <Reference type="BUSINESS_TERM">ptir01-??1</Reference>
+                        </Element>
+                        <Element cardinality="0..1">
+                            <Term>cac:LotIdentification</Term>
+                            <Name>Item lot information</Name>
+                            <Description>Information about the production lot which the order line items come from.</Description>
+                            <Element cardinality="0..1">
+                                <Term>cbc:LotNumberID</Term>
+                                <Name>Item lot identifier</Name>
+                                <Description>An identifier for the production lot which the order line items come from.</Description>
+                                <Reference type="BUSINESS_TERM">ptir01-??2</Reference>
+                            </Element>
+                        </Element>
+                </Element>
                 </Element>
             </Element>
         </Element>
