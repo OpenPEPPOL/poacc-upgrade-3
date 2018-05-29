@@ -311,7 +311,7 @@
                     <Element cardinality="0..1">
                         <Term>cac:Country</Term>
                         <Name>Country</Name>
-                        <Element cardinality="0..1">
+                        <Element>
                             <Term>cbc:IdentificationCode</Term>
                             <Name>Country code</Name>
                             <Description>A code that identifies the country.The lists of valid

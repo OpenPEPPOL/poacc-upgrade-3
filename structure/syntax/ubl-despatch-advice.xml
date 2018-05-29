@@ -1,111 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
     <Term>DespatchAdvice</Term>
-    <Namespace prefix="ubl"
-        >urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2</Namespace>
-    <Namespace prefix="cac"
-        >urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
-    <Namespace prefix="cbc"
-        >urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+    <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2</Namespace>
+    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
+    <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
     <Document>
         <Term>ubl:DespatchAdvice</Term>
-        <Element>
-            <Term>cbc:UBLVersionID</Term>            
-        </Element>
+
         <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Customization identifier</Name>
             <Description>Identifies the specification of content and rules that apply to the
                 transaction.</Description>
+            <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">tir16-002</Reference>
+            <Value type="FIXED">urn:www.cenbii.eu:transaction:biitrns016:ver1.0:extended:urn:www.peppol.eu:bis:peppol30a:ver1.0</Value>
         </Element>
         <Element>
             <Term>cbc:ProfileID</Term>
             <Name>Profile identifier</Name>
             <Description>Identifies the BII profile or business process context in which the
-                transaction appears.</Description>
+                transaction appears.</Description>      
+            <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">tir16-001</Reference>
+            <Value type="FIXED">urn:www.cenbii.eu:profile:bii30:ver2.0</Value>
         </Element>
         <Element>
             <Term>cbc:ID</Term>
             <Name>Document identifier</Name>
             <Description>An transaction instance must contain an identifier. The identifier enables
                 positive referencing the document instance for various purposes including
-                referencing between transactions that are part of the same process.</Description>
+                referencing between transactions that are part of the same process.</Description>    
+            <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">tir16-003</Reference>
+            <Value type="EXAMPLE">123</Value>
         </Element>
         <Element>
             <Term>cbc:IssueDate</Term>
             <Name>Dispatch advice issue date</Name>
-            <Description>The date when the despatch advice is issued.</Description>
+            <Description>The date when the despatch advice is issued. Format = "YYYY-MM-DD"</Description>
+            <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">tir16-004</Reference>
+            <Value type="EXAMPLE">2018-05-25</Value>
         </Element>
         <Element cardinality="0..1">
             <Term>cbc:IssueTime</Term>
             <Name>Dispatch advice issue time</Name>
-            <Description>The time when the despatch advice is issued.</Description>
+            <Description>The time when the despatch advice is issued. Format = "hh:mm:ss"</Description>
+            <DataType>Time</DataType>
             <Reference type="BUSINESS_TERM">tir16-005</Reference>
+            <Value type="EXAMPLE">11:34:56</Value>
         </Element>
         <Element cardinality="0..1">
             <Term>cbc:Note</Term>
             <Name>Dispatch note</Name>
             <Description>A textual note for the dispatch as whole.</Description>
+            <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">tir16-088</Reference>
         </Element>
         <Element cardinality="0..1">
-            <Term>cac:OrderReference</Term>            
+            <Term>cac:OrderReference</Term>   
+            <Name>Order reference information</Name>
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Order reference</Name>
                 <Description>Used to provide a reference to the order on which the despatch is
                     based.</Description>
+                <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">tir16-006</Reference>
             </Element>
         </Element>
         <Element>
-            <Term>cac:DespatchSupplierParty</Term>            
+            <Term>cac:DespatchSupplierParty</Term>     
+            <Name>Despatching party information</Name>
+            <Description>The Despatch Party is the person or organization who provides (despatch) the goods or services. The role is carried out by the supplier or on behalf of the supplier. (Despatch Party is sometimes known as the Consignor).</Description>
+            
             <Element>
                 <Term>cac:Party</Term>
-                <Element cardinality="0..1">
+                <Name>Party information</Name>
+                <Element>
                     <Term>cbc:EndpointID</Term>
                     <Name>Electronic address</Name>
                     <Description>A dispatch adivce may contain the dispatchin party electronic
                         address. The address can be of any format and the format should be
                         identified in the message.</Description>
+                    <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">tir16-071</Reference>
+                    
                     <Attribute>
-                        <Term>schemeID</Term>                        
+                        <Term>schemeID</Term>
+                        <Name>Scheme identifier</Name>
+                        <Description>Scheme identifier for electronic address</Description>
+                        <Reference type="CODE_LIST">Not available</Reference>
+                        <Value type="EXAMPLE">0088</Value>
+                        
                     </Attribute>
-                    <Attribute usage="Optional">
-                        <Term>schemeAgencyID</Term>                        
-                    </Attribute>
-                    <Attribute usage="Optional">
-                        <Term>schemeAgencyName</Term>                        
-                    </Attribute>
+                    <Value type="EXAMPLE">7300010000001</Value>
+            
                 </Element>
                 <Element cardinality="0..1">
-                    <Term>cac:PartyIdentification</Term>                    
+                    <Term>cac:PartyIdentification</Term> 
+                    <Name>Party identification</Name>
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name>Despatching party identifier</Name>                        <Reference type="BUSINESS_TERM">op-tir16-001</Reference>
+                        <Name>Despatching party identifier</Name>  
+                        <Description>The identifier of the despatching party</Description>
+                        <DataType>Identifier</DataType>
+                        <Reference type="BUSINESS_TERM">op-tir16-001</Reference>
                         <Reference type="RULE">OP-T16-R006</Reference>
-                        <Attribute>
-                            <Term>schemeID</Term>                            
+                        
+                        <Attribute usage="optional">
+                            <Term>schemeID</Term>
+                            <Name>Scheme identifier</Name>
+                            <Description>Scheme identifier for party identification</Description>
+                            <Reference type="CODE_LIST">ICD</Reference>
+                            <Value type="EXAMPLE">0184</Value>
                         </Attribute>
-                        <Attribute usage="Optional">
-                            <Term>schemeAgencyID</Term>                            
-                        </Attribute>
-                        <Attribute usage="Optional">
-                            <Term>schemeAgencyName</Term>                            
-                        </Attribute>
+                        <Value type="EXAMPLE">DK88777654</Value>
+                
                     </Element>
                 </Element>
                 <Element cardinality="0..1">
-                    <Term>cac:PartyName</Term>                    
+                    <Term>cac:PartyName</Term>        
+                    <Name>Party Name</Name>
                     <Element>
                         <Term>cbc:Name</Term>
                         <Name>Dispatching party name</Name>
                         <Description>The name of the dispatching party</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir16-007</Reference>
                     </Element>
                 </Element>
@@ -115,6 +137,7 @@
                         <Term>cbc:Name</Term>
                         <Name>Contact person name</Name>
                         <Description>The name of the contact person.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir16-008</Reference>
                     </Element>
                     <Element cardinality="0..1">
@@ -122,19 +145,15 @@
                         <Name>Contact telephone number</Name>
                         <Description>A phone number for the contact person. If the person has a
                             direct number, this is that number.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir16-012</Reference>
-                    </Element>
-                    <Element cardinality="0..1">
-                        <Term>cbc:Telefax</Term>
-                        <Name>Contact fax number</Name>
-                        <Description>A fax number for the contact persons.</Description>
-                        <Reference type="BUSINESS_TERM">tir16-010</Reference>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:ElectronicMail</Term>
                         <Name>Contact email address</Name>
                         <Description>The e-mail address for the contact person. If the person has a
                             direct e-mail this is that email.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir16-013</Reference>
                     </Element>
                 </Element>
@@ -142,76 +161,72 @@
         </Element>
         <Element>
             <Term>cac:DeliveryCustomerParty</Term>
+            <Name>Consignee information</Name>
+            <Description>The Consignee is the person or organization to which the products will be shipped and who is taking possession. The role is carried out by the customer or on behalf of the customer. </Description>
+           
             <Element>
                 <Term>cac:Party</Term>
+                <Name>Party name</Name>
+                
                 <Element cardinality="0..1">
                     <Term>cbc:EndpointID</Term>
                     <Name>Electronic address</Name>
                     <Description>A dispatch adivce may contain the dispatchin party electronic
                         address. The address can be of any format and the format should be
                         identified in the message.</Description>
+                    <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">tir16-016</Reference>
                     <Attribute>
-                        <Term>schemeID</Term>                        
+                        <Term>schemeID</Term>
+                        <Name>Scheme identifier</Name>
+                        <Description>Scheme identifier for electronic address</Description>
+                        <Reference type="CODE_LIST">Not available</Reference>
+                        <Value type="EXAMPLE">0088</Value>
+                        
                     </Attribute>
-                    <Attribute usage="Optional">
-                        <Term>schemeAgencyID</Term>                        
-                    </Attribute>
-                    <Attribute usage="Optional">
-                        <Term>schemeAgencyName</Term>                        
-                    </Attribute>
+                    <Value type="EXAMPLE">7300010000001</Value>
                 </Element>
                 <Element cardinality="0..1">
-                    <Term>cac:PartyIdentification</Term>                    
+                    <Term>cac:PartyIdentification</Term>    
+                    <Name>Party identification</Name>
+                    
                     <Element>
                         <Term>cbc:ID</Term>
                         <Name>Consignee party identifier</Name>
                         <Description>The receiving party identifier.</Description>
+                        <DataType>Identifier</DataType>
                         <Reference type="BUSINESS_TERM">tir16-015</Reference>
-                        <Attribute>
-                            <Term>schemeID</Term>                            
+                        
+                        <Attribute usage="optional">
+                            <Term>schemeID</Term>
+                            <Name>Scheme identifier</Name>
+                            <Description>Scheme identifier for party identification</Description>
+                            <Reference type="CODE_LIST">ICD</Reference>
+                            <Value type="EXAMPLE">0184</Value>
                         </Attribute>
-                        <Attribute usage="Optional">
-                            <Term>schemeAgencyID</Term>                            
-                        </Attribute>
-                        <Attribute usage="Optional">
-                            <Term>schemeAgencyName</Term>                            
-                        </Attribute>
+                        <Value type="EXAMPLE">DK88777654</Value>
                     </Element>
                 </Element>
                 <Element cardinality="0..1">
-                    <Term>cac:PartyName</Term>                    
+                    <Term>cac:PartyName</Term>    
+                    <Name>Party name</Name>
                     <Element>
                         <Term>cbc:Name</Term>
                         <Name>Consignee party name</Name>
                         <Description>The name of the receiving party.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir16-014</Reference>
                     </Element>
                 </Element>
                 <Element cardinality="0..1">
                     <Term>cac:PostalAddress</Term>                    
-                    <Element cardinality="0..1">
-                        <Term>cbc:ID</Term>
-                        <Name>Consignee party address identifier</Name>
-                        <Description>An identifier for a specific address within a scheme of
-                            registered addresses. Identifying the addess to where the items have
-                            been dispatched.</Description>
-                        <Reference type="BUSINESS_TERM">tir16-017</Reference>
-                        <Attribute usage="Optional">
-                            <Term>schemeID</Term>                            
-                        </Attribute>
-                        <Attribute usage="Optional">
-                            <Term>schemeAgencyID</Term>                            
-                        </Attribute>
-                        <Attribute usage="Optional">
-                            <Term>schemeAgencyName</Term>                            
-                        </Attribute>
-                    </Element>
+                   <Name>Postal address</Name>
                     <Element cardinality="0..1">
                         <Term>cbc:StreetName</Term>
                         <Name>Address line 1</Name>
                         <Description>The main address line in a postal address usually the street
                             name and number.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir16-018</Reference>
                     </Element>
                     <Element cardinality="0..1">
@@ -220,6 +235,7 @@
                         <Description>An additional address line in a postal address that can be
                             used to give further details supplementing the main line. Common use are
                             secondary house number in a complex or in a building.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir16-019</Reference>
                     </Element>
                     <Element cardinality="0..1">
@@ -227,6 +243,7 @@
                         <Name>City</Name>
                         <Description>The common name of the city where the postal address is. The
                             name is written in full rather than as a code.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir16-020</Reference>
                     </Element>
                     <Element cardinality="0..1">
@@ -235,6 +252,7 @@
                         <Description>The identifier for an addressable group of properties
                             according to the relevant national postal service, such as a ZIP code or
                             Post Code.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir16-021</Reference>
                     </Element>
                     <Element cardinality="0..1">
@@ -242,50 +260,58 @@
                         <Name>Country subdivision</Name>
                         <Description>For specifying a region, county, state, province etc. within a
                             country by using text.</Description>
+                        <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir16-022</Reference>
                     </Element>
                     <Element cardinality="0..1">
-                        <Term>cac:Country</Term>                        
+                        <Term>cac:Country</Term>
+                        <Name>Country</Name>
                         <Element>
                             <Term>cbc:IdentificationCode</Term>
                             <Name>Country code</Name>
-                            <Description>The country where the address is. The country should
-                                always be given by using ISO code 3166 alpha 2</Description>
+                            <Description>A code that identifies the country.The lists of valid
+                                countries are registered with the ISO 3166-1 Maintenance agency,
+                                "Codes for the representation of names of countries and their
+                                subdivisions". Codes must be according to the alpha-2
+                                representation.</Description>
+                            <DataType>Code</DataType>
                             <Reference type="BUSINESS_TERM">tir16-023</Reference>
-                            <Attribute usage="Optional">
-                                <Term>listID</Term>                                
-                            </Attribute>
+                            <Reference type="RULE">EUGEN-T110-R004</Reference>
+                            <Reference type="CODE_LIST">ISO3166</Reference> 
+                            <Value type="EXAMPLE">DK</Value>
                         </Element>
                     </Element>
                 </Element>
             </Element>
             <Element cardinality="0..1">
                 <Term>cac:DeliveryContact</Term>
+                <Name>Contact information</Name>
+                
                 <Element cardinality="0..1">
                     <Term>cbc:Name</Term>
                     <Name>Contact person name</Name>
                     <Description>The name of the contact person.</Description>
+                    <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">tir16-024</Reference>
+                    <Value type="EXAMPLE">Ole Olsen</Value>
                 </Element>
                 <Element cardinality="0..1">
                     <Term>cbc:Telephone</Term>
                     <Name>Contact telephone number</Name>
                     <Description>A phone number for the contact person. If the person has a direct
                         number, this is that number.</Description>
+                    <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">tir16-027</Reference>
-                </Element>
-                <Element cardinality="0..1">
-                    <Term>cbc:Telefax</Term>
-                    <Name>Contact fax number</Name>
-                    <Description>A fax number for the contact persons.</Description>
-                    <Reference type="BUSINESS_TERM">tir16-026</Reference>
+                    <Value type="EXAMPLE">983724934</Value>
                 </Element>
                 <Element cardinality="0..1">
                     <Term>cbc:ElectronicMail</Term>
                     <Name>Contact email address</Name>
                     <Description>The e-mail address for the contact person. If the person has a
                         direct e-mail this is that email.</Description>
+                    <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">tir16-028</Reference>
+                    <Value type="EXAMPLE">foo@bar.com</Value>
                 </Element>
             </Element>
         </Element>
