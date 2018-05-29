@@ -3,7 +3,7 @@
 
 The chapters below describe the different VAT informations that can be provided in this BIS.
 
-Please also see <<vat-codes>> for details on the VAT category code list, and <<vat-calc>> for detailed explanation and example on how to perform the calculations for VAT Breakdown.
+Please also see {vat-codes} for details on the VAT category code list, and <<vat-calc>> for detailed explanation and example on how to perform the calculations for VAT Breakdown.
 
 :leveloffset: +1
 
@@ -24,5 +24,5 @@ Each document level charge or allowance must have the Document level allowance o
 include::../snippets/snippet-oa-vat.xml[tags=vat-allowance]
 ----
 <1> The class `cac:TaxCategory` is used for tax category information
-<2> VAT category according to codelist <<vat-codes>>
+<2> VAT category according to codelist {vat-codes}
 <3> VAT rate

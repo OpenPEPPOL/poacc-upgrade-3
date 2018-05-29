@@ -99,6 +99,18 @@
                 <Value type="EXAMPLE">O-1234</Value>
             </Element>
         </Element>
+        <Element cardinality="0..1">
+            <Term>cac:OriginatorDocumentReference</Term>
+            <Name>TENDER OR LOT REFERENCE</Name>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Tender or lot reference</Name>
+                <Description>The identification of the call for tender or lot the order agreement relates to.</Description>
+                <DataType>Document Reference</DataType>
+                <Value type="EXAMPLE">PPID-123</Value>
+            </Element>
+        </Element>
         <Element cardinality="0..n">
             <Term>cac:AdditionalDocumentReference</Term>
             <Name>Additional document reference</Name>
@@ -174,15 +186,6 @@
                 <Reference type="BUSINESS_TERM">tir110-049</Reference>
                 <Value type="EXAMPLE">C-97324</Value>
             </Element>
-            <Element cardinality="0..1">
-                <Term>cbc:ContractType</Term>
-                <Name>Contract type</Name>
-                <Description>The type of a contract that is being referred to (such as framework
-                    agreement) expressed as a code.</Description>
-                <DataType>Text</DataType>
-                <Reference type="BUSINESS_TERM">tir110-050</Reference>
-                <Value type="EXAMPLE">Framework agreement</Value>
-            </Element>
         </Element>
         <Element>
             <Term>cac:SellerSupplierParty</Term>
@@ -205,7 +208,7 @@
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
                         <Description>Scheme identifier for electronic address</Description>
-                        <Reference type="CODE_LIST">ICD</Reference>
+                        <Reference type="CODE_LIST">Not available</Reference>
                         <Value type="EXAMPLE">0088</Value>
                         
                     </Attribute>
@@ -230,7 +233,7 @@
                             <Term>schemeID</Term>
                             <Name>Scheme identifier</Name>
                             <Description>Scheme identifier for party identification</Description>
-                            <Reference type="CODE_LIST">ISO6523</Reference>
+                            <Reference type="CODE_LIST">ICD</Reference>
                             <Value type="EXAMPLE">0184</Value>
                         </Attribute>
                         <Value type="EXAMPLE">DK88777654</Value>
@@ -401,7 +404,7 @@
                             <Term>schemeID</Term>
                             <Name>Scheme identifier</Name>
                             <Description>Scheme identifier for party identification</Description>
-                            <Reference type="CODE_LIST">ISO6523</Reference>
+                            <Reference type="CODE_LIST">ICD</Reference>
                             <Value type="EXAMPLE">0088</Value>
                         </Attribute>
                         <Value type="EXAMPLE">7300010000001</Value>
@@ -545,7 +548,7 @@
                             <Term>schemeID</Term>
                             <Name>Scheme identifier</Name>
                             <Description>Scheme identifier for party identification</Description>
-                            <Reference type="CODE_LIST">ISO6523</Reference>
+                            <Reference type="CODE_LIST">ICD</Reference>
                             <Value type="EXAMPLE">0088</Value>
                         </Attribute>
                         
@@ -589,7 +592,7 @@
                             <Term>schemeID</Term>
                             <Name>Scheme identifier</Name>
                             <Description>Scheme identifier for party identification</Description>
-                            <Reference type="CODE_LIST">ISO6523</Reference>
+                            <Reference type="CODE_LIST">ICD</Reference>
                             <Value type="EXAMPLE">0088</Value>
                         </Attribute>
                         <Value type="EXAMPLE">7300010000001</Value>
@@ -675,7 +678,7 @@
                             <Term>schemeID</Term>
                             <Name>Scheme identifier</Name>
                             <Description>Scheme identifier for party identification</Description>
-                            <Reference type="CODE_LIST">ISO6523</Reference>
+                            <Reference type="CODE_LIST">ICD</Reference>
                             <Value type="EXAMPLE">0088</Value>
                         </Attribute>
                         <Value type="EXAMPLE">7300010000001</Value>
@@ -727,7 +730,7 @@
                     <Term>cbc:ID</Term>
                     <Name>Delivery terms location</Name>
                     <Description>The location to which the delivery terms refer. Used to qualify the
-                        delivery terms e.g. " Terms of delivery are FOB Rotterdam"</Description>
+                        delivery terms e.g. "Terms of delivery are FOB Rotterdam"</Description>
                     <DataType>Text</DataType> 
                     <Reference type="BUSINESS_TERM">tir110-071</Reference>
                     <Value type="EXAMPLE">København</Value>
@@ -1345,7 +1348,7 @@
                                 <Term>schemeID</Term>
                                 <Name>Item standard identifier identification scheme identifier</Name>
                                 <Description>The identification scheme identifier of the Item standard identifier</Description>
-                                <Reference type="CODE_LIST">ISO6523 ? </Reference>
+                                <Reference type="CODE_LIST">ICD</Reference>
                                 <Value type="EXAMPLE">0088</Value>
                                 
                             </Attribute>
@@ -1436,7 +1439,7 @@
                                 <Name>Item classification identifier identification scheme identifier</Name>
                                 <Description>The identification scheme identifier of the Item classification identifier</Description>
                                 <Reference type="CODE_LIST">UNCL7143</Reference>
-                                <Value type="EXAMPLE">CPV</Value>
+                                <Value type="EXAMPLE">STI</Value>
                             </Attribute>
                             
                             <Attribute usage="Optional">

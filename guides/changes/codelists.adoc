@@ -5,3 +5,11 @@
 ** Code 0092 and 0103 removed, as they are marked unused
 ** Report mismatches to TC434?
 * Allowance and charge split in different types (5189 and 7161)
+** Code not used in other transactions - add elements?
+* Item Classification code = UNCL7143 - UNSPSC not in the list
+* Standard item identifier -ICD list -> full list allowed?
+* Mimecode is now a "merge" between TC434 and codes used in catalogue.
+
+* Order agreement:
+** NameCode?
+** Contracted item - which element to use, ID or ActionCode? Code list?

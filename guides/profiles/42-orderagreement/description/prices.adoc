@@ -6,10 +6,9 @@ Price sent is related to the articles or services within this order agreement
 
 Prices includes allowances and/or charges but exclude VAT amounts
 
-Example of price information in an Order Agreement message:
 
-.Example
+.Example of price information in an Order Agreement message
 [source, xml, indent=0]
 ----
-include::../snippets/OA full.xml[tags=price]
+include::../snippets/snippet-oa.xml[tags=price]
 ----

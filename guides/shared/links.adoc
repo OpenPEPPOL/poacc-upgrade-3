@@ -54,4 +54,5 @@
 
 //internal
 :link-codelist: http://test-docs.peppol.eu/poacc/upgrade-3/codelist/[Code list section]
-:codelist-ICD: http://test-docs.peppol.eu/poacc/upgrade-3/codelist/ICD/
+:codelist-ICD: http://test-docs.peppol.eu/poacc/upgrade-3/codelist/ICD/[ICD codes]
+:vat-codes: http://test-docs.peppol.eu/poacc/upgrade-3/codelist/UNCL5305/[Code list UNCL5305]

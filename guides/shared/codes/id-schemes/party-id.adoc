@@ -2,7 +2,7 @@
 
 = Party identifiers and party legal registration identifier scheme
 
-All party identifiers (`cac:PartyIdentification/cbc:ID`) and party legal registration identifier (`cac:PartyLegalEntity/cbc:CompanyID`) has an optional scheme identifier attribute (`@schemeID`). If used, the value shall be chosen from the ICD list from {codelist-ICD}
+All party identifiers (`cac:PartyIdentification/cbc:ID`) and party legal registration identifier (`cac:PartyLegalEntity/cbc:CompanyID`) has an optional scheme identifier attribute (`@schemeID`). If used, the value shall be chosen from the code list  {codelist-ICD}
 
 
 .Examples of usage in `cac:PartyIdentification`:

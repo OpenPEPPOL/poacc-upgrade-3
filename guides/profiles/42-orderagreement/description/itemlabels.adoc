@@ -11,7 +11,7 @@ include::../snippets/OA full.xml[tags=Certificate]
 = Contracted item
 
 If the purchased item is offered in accordance to an existing contract, this should be indicated in the order agreement message.
-
+#Use cbc:ID or cbc:ActionCode? syntaxmapping and examples does not show the same element#
 .Example
 [source, xml, indent=0]
 ----

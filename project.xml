@@ -78,11 +78,11 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/PartyID.xml</Path>
+        <Path>structure/codelist/UNECERec20-11e.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNECERec20-11e.xml</Path>
+        <Path>structure/codelist/UNCL5305.xml</Path>
     </Resource>
     
     <Resource>
@@ -104,6 +104,7 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL7143.xml</Path>
+        <Title>Item classification code</Title>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>

@@ -23,22 +23,20 @@ include::introduction/index.adoc[]
 
 include::principles/index.adoc[]
 
+include::process/index.adoc[]
+
 include::requirements/index.adoc[]
 
 include::../../shared/datatypes/index.adoc[]
+
+include::calculation/index.adoc[]
+
+include::description/index.adoc[]
 
 include::../../shared/codes/index.adoc[]
 
 include::rules/index.adoc[]
 
-include::process/index.adoc[]
-
-include::description/index.adoc[]
-
-include::calculation/index.adoc[]
-
 include::profile/index.adoc[]
-
-include::transport/index.adoc[]
 
 :leveloffset: -1
