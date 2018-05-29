@@ -26,7 +26,7 @@ include::requirements/index.adoc[]
 
 include::../../shared/datatypes/index.adoc[]
 
-include::codelists/index.adoc[]
+include::../../shared/codes/index.adoc[]
 
 include::rules/index.adoc[]
 

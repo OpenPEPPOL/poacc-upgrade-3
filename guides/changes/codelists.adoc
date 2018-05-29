@@ -1,0 +1,7 @@
+= Code list changes
+
+* All party identifiers from ISO 6523 ICD list.
+** ICD list to 0189 + 0192, this is not matching TC434 validation
+** Code 0092 and 0103 removed, as they are marked unused
+** Report mismatches to TC434?
+* Allowance and charge split in different types (5189 and 7161)

@@ -109,4 +109,8 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/MimeCode.xml</Path>
     </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ICD.xml</Path>
+    </Resource>
 </Project>

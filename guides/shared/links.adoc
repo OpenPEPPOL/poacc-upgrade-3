@@ -51,3 +51,7 @@
 //examples
 :order-UC: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/master/guides/rules/order/examples[Use case example files]
 :order-response-UC: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/master/guides/rules/order-response/examples[Use case example files]
+
+//internal
+:link-codelist: http://test-docs.peppol.eu/poacc/upgrade-3/codelist/[Code list section]
+:codelist-ICD: http://test-docs.peppol.eu/poacc/upgrade-3/codelist/ICD/
