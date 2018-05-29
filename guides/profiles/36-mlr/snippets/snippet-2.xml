@@ -2,8 +2,7 @@
 <ApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
     xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-    <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
-    <cbc:CustomizationID schemeID="PEPPOL"
+    <cbc:CustomizationID
         >urn:www.cenbii.eu:transaction:biitrns071:ver2.0:extended:urn:www.peppol.eu:bis:peppol36a:ver2.0</cbc:CustomizationID>
     <cbc:ProfileID>urn:www.cenbii.eu:profile:bii36a:ver2.0</cbc:ProfileID>
     <cbc:ID>TheMLR-ID123</cbc:ID>
@@ -18,7 +17,7 @@
     <cac:DocumentResponse>
         <!-- tag::accept[] -->
         <cac:Response>
-            <cbc:ResponseCode listID="UNCL4343">AP</cbc:ResponseCode>
+            <cbc:ResponseCode>AP</cbc:ResponseCode>
         </cac:Response>
         <!-- end::accept[] -->
         <!-- tag::reference[] -->

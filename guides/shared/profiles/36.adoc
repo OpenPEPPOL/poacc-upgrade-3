@@ -17,10 +17,3 @@ In the table below you will find the values to be used as the specification iden
 extended:urn:www.peppol.eu:bis:peppol36a:ver2.0
 | urn:www.cenbii.eu:profile:bii36a:ver2.0.
 |===
-
-
-.UBL example of profile identifier
-[source, xml, indent=0]
-----
-include::../../profiles/36-mlr/snippets/snippet-1.xml[tags=profile]
-----

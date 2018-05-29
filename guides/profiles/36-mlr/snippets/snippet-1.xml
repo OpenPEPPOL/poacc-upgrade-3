@@ -2,9 +2,6 @@
 <ApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
                      xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
                      xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-    <!-- tag::ubl-version[] -->
-    <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
-    <!-- end::ubl-version[] -->
     <cbc:CustomizationID schemeID="PEPPOL">urn:www.cenbii.eu:transaction:biitrns071:ver2.0:extended:urn:www.peppol.eu:bis:peppol36a:ver2.0</cbc:CustomizationID>
     <!-- tag::profile[] -->
     <cbc:ProfileID>urn:www.cenbii.eu:profile:bii36a:ver2.0</cbc:ProfileID>
@@ -25,8 +22,8 @@
     <cac:DocumentResponse>
         <!-- tag::ack[] -->
         <cac:Response>
-            <cbc:ResponseCode listID="UNCL4343">AB</cbc:ResponseCode>
-            <cbc:Description languageID="en">The document was accepted without any validations being performed.</cbc:Description>
+            <cbc:ResponseCode>AB</cbc:ResponseCode>
+            <cbc:Description>The document was accepted without any validations being performed.</cbc:Description>
         </cac:Response>
         <!-- end::ack[] -->
         <cac:DocumentReference>

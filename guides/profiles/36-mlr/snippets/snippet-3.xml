@@ -16,8 +16,8 @@
     <cac:DocumentResponse>
         <!-- tag::reject[] -->
         <cac:Response>
-            <cbc:ResponseCode listID="UNCL4343">RE</cbc:ResponseCode>
-            <cbc:Description languageID="en">The document was rejected because it failed validation</cbc:Description>
+            <cbc:ResponseCode>RE</cbc:ResponseCode>
+            <cbc:Description>The document was rejected because it failed validation</cbc:Description>
         </cac:Response>
         <!-- end::reject[] -->
         <cac:DocumentReference>
@@ -37,7 +37,7 @@
                 <cbc:ReferenceID>BIIRULE-T10-R012</cbc:ReferenceID>
                 <cbc:Description>Invoice tax exclusive amount MUST equal the sum of lines plus allowances and charges on header level</cbc:Description>
                 <cac:Status>
-                    <cbc:StatusReasonCode listID="PEPPOLSTATUS">RVF</cbc:StatusReasonCode>
+                    <cbc:StatusReasonCode>BV</cbc:StatusReasonCode>
                 </cac:Status>
             </cac:Response>
         </cac:LineResponse>
@@ -64,7 +64,7 @@
                     <!-- Must be one of "SV" (syntax violation), 
                          "RVF" (rule violation fatal) or 
                          "RVW" (rule violation warning) -->
-                    <cbc:StatusReasonCode listID="PEPPOLSTATUS">RVF</cbc:StatusReasonCode>
+                    <cbc:StatusReasonCode>BV</cbc:StatusReasonCode>
                 </cac:Status>
             </cac:Response>
         </cac:LineResponse>
