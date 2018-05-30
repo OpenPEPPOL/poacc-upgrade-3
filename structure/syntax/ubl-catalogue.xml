@@ -1897,7 +1897,7 @@
 				<Element cardinality="0..n">
 					<Term>cac:Dimension</Term>
 					<Name>Dimension</Name>
-					
+
 					<Element>
 						<Term>cbc:AttributeID</Term>
 						<Name>Attribute Id</Name>
@@ -1907,7 +1907,7 @@
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-104</Reference>
 						<Reference type="RULE">OP-T19-009</Reference>
-						
+
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:Measure</Term>
@@ -1929,7 +1929,7 @@
 						<Reference type="BUSINESS_TERM">OP-T19-017</Reference>
 						<Reference type="BUSINESS_TERM">OP-T19-016</Reference>
 						<Reference type="CODE_LIST">UNCL6313</Reference>
-						
+
 					</Element>
 					<Element cardinality="0..n">
 						<Term>cbc:Description</Term>
@@ -1946,7 +1946,7 @@
                             for the item.</Description>
 						<Reference type="BUSINESS_TERM">tir19-115OP-T19-015</Reference>
 						<Reference type="CODE_LIST">UNCL6313</Reference>
-						
+
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:MaximumMeasure</Term>

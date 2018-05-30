@@ -1456,7 +1456,7 @@
                         <Term>cac:TransactionConditions</Term>
                         <Name>Transaction conditions</Name>
                         
-                        <Element cardinality="0..1">
+                        <Element>
                             <Term>cbc:ID</Term>
                             <Name>Contracted item indicator</Name>
                             <Description>Indicates if the item is offered in accordance to an
