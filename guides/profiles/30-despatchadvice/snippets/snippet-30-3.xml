@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2 file:///F:/temp/CDS/DIGST/UBL-2.1/UBL-2.1/xsd/maindoc/UBL-DespatchAdvice-2.1.xsd">
-	<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns016:ver1.0:extended:urn:www.peppol.eu:bis:peppol30a:ver1.0</cbc:CustomizationID>
 	<cbc:ProfileID>urn:www.cenbii.eu:profile:bii30:ver2.0</cbc:ProfileID>
 	<cbc:ID>1234</cbc:ID>
@@ -15,31 +16,16 @@
 			<cbc:EndpointID schemeID="DK:CVR">DK87654321</cbc:EndpointID>
 			<!-- tag::partyid-se[] -->
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="SE:ORGNR">5541277711</cbc:ID>
+				<cbc:ID schemeID="0007">5541277711</cbc:ID>
 			</cac:PartyIdentification>
 			<!-- end::partyid-se[] -->
-			<!-- tag::partyid-no[] -->
-			<cac:PartyIdentification>
-				<cbc:ID schemeID="NO:ORGNR">987654321</cbc:ID>
-			</cac:PartyIdentification>
-			<!-- end::partyid-no[] -->
-			<!-- tag::partyid-dk[] -->
-			<cac:PartyIdentification>
-				<cbc:ID schemeID="DK:CVR">DK16356706</cbc:ID>
-			</cac:PartyIdentification>
-			<!-- end::partyid-dk[] -->
-			<!-- tag::partyid-it[] -->
-			<cac:PartyIdentification>
-				<cbc:ID schemeID="IT:VAT">IT01234567890</cbc:ID>
-			</cac:PartyIdentification>
-			<!-- end::partyid-it[] -->
+			
 			<cac:PartyName>
 				<cbc:Name>Sender Company</cbc:Name>
 			</cac:PartyName>
 			<cac:Contact>
 				<cbc:Name>John</cbc:Name>
 				<cbc:Telephone>123456789</cbc:Telephone>
-				<cbc:Telefax>8273741728</cbc:Telefax>
 				<cbc:ElectronicMail>John@SenderCompany.dk</cbc:ElectronicMail>
 			</cac:Contact>
 		</cac:Party>
@@ -49,7 +35,7 @@
 		<cac:Party>
 			<cbc:EndpointID schemeID="DK:CVR">DK12345678</cbc:EndpointID>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="GLN" schemeAgencyID="9">0123456789123</cbc:ID>
+				<cbc:ID schemeID="0088">0123456789123</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
 				<cbc:Name>Reciever Company</cbc:Name>
@@ -62,7 +48,7 @@
 				<cbc:PostalZone>9000</cbc:PostalZone>
 				<cbc:CountrySubentity>Region A</cbc:CountrySubentity>
 				<cac:Country>
-					<cbc:IdentificationCode listID="ISO3166-1:Alpha2">DK</cbc:IdentificationCode>
+					<cbc:IdentificationCode>DK</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
 		</cac:Party>
@@ -78,7 +64,7 @@
 	<cac:BuyerCustomerParty>
 		<cac:Party>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="GLN" schemeAgencyID="9">1251513513245</cbc:ID>
+				<cbc:ID schemeID="0088">1251513513245</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
 				<cbc:Name>Buyer Company</cbc:Name>
@@ -90,7 +76,7 @@
 	<cac:SellerSupplierParty>
 		<cac:Party>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="GLN" schemeAgencyID="9">1231612366324</cbc:ID>
+				<cbc:ID schemeID="0088">1231612366324</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
 				<cbc:Name>Seller Company</cbc:Name>
@@ -108,7 +94,7 @@
 	<cac:OriginatorCustomerParty>
 		<cac:Party>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="GLN" schemeAgencyID="9">1234415341925</cbc:ID>
+				<cbc:ID schemeID="0088">1234415341925</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
 				<cbc:Name>Originator</cbc:Name>
@@ -143,11 +129,12 @@
 		</cac:Delivery>
 		<!-- tag::transporthandling[] -->
 		<cac:TransportHandlingUnit>
-			<cbc:ID schemeID="SSCC" schemeAgencyName="GS1">123456789012345675</cbc:ID>
-			<cbc:TransportHandlingUnitTypeCode listID="UNECERec21">CT </cbc:TransportHandlingUnitTypeCode>
-			<cbc:ShippingMarks>Free text information that is written/printed on to the transport handling unit </cbc:ShippingMarks>
+			<cbc:ID>123456789012345675</cbc:ID>
+			<cbc:TransportHandlingUnitTypeCode>CT </cbc:TransportHandlingUnitTypeCode>
+			<cbc:ShippingMarks>Free text information that is written/printed on to the transport
+				handling unit </cbc:ShippingMarks>
 			<cac:MeasurementDimension>
-				<cbc:AttributeID schemeID="UNCL6313">AAB</cbc:AttributeID>
+				<cbc:AttributeID>AAB</cbc:AttributeID>
 				<cbc:Measure unitCode="KGM">23.00</cbc:Measure>
 			</cac:MeasurementDimension>
 		</cac:TransportHandlingUnit>
@@ -155,7 +142,7 @@
 	</cac:Shipment>
 	<cac:DespatchLine>
 		<cbc:ID>1</cbc:ID>
-		<cbc:DeliveredQuantity unitCode="EA" unitCodeListID="UNECERec20">10</cbc:DeliveredQuantity>
+		<cbc:DeliveredQuantity unitCode="EA">10</cbc:DeliveredQuantity>
 		<cac:OrderLineReference>
 			<cbc:LineID>1</cbc:LineID>
 		</cac:OrderLineReference>
@@ -165,7 +152,8 @@
 				<cbc:ID>010120401</cbc:ID>
 			</cac:SellersItemIdentification>
 			<cac:StandardItemIdentification>
-				<cbc:ID schemeID="GTIN" schemeAgencyID="9" schemeAgencyName="GS1">7611104117056</cbc:ID>
+				<cbc:ID schemeID="0160"
+					>7611104117056</cbc:ID>
 			</cac:StandardItemIdentification>
 			<!-- tag::bestbefore[] -->
 			<cac:ItemInstance>
@@ -177,7 +165,7 @@
 	</cac:DespatchLine>
 	<cac:DespatchLine>
 		<cbc:ID>2</cbc:ID>
-		<cbc:DeliveredQuantity unitCode="EA" unitCodeListID="UNECERec20">10</cbc:DeliveredQuantity>
+		<cbc:DeliveredQuantity unitCode="EA">10</cbc:DeliveredQuantity>
 		<cac:OrderLineReference>
 			<cbc:LineID>2</cbc:LineID>
 		</cac:OrderLineReference>
@@ -187,7 +175,8 @@
 				<cbc:ID>010140403</cbc:ID>
 			</cac:SellersItemIdentification>
 			<cac:StandardItemIdentification>
-				<cbc:ID schemeID="GTIN" schemeAgencyID="9" schemeAgencyName="GS1">7622204117051</cbc:ID>
+				<cbc:ID schemeID="0160"
+					>7622204117051</cbc:ID>
 			</cac:StandardItemIdentification>
 		</cac:Item>
 	</cac:DespatchLine>
