@@ -10,12 +10,15 @@
     <Code>
         <Id>Add</Id>
         <Name>Addition</Name>
-        <Description>Used on catalogue level when a catalogue is sent for the first time to the Catalogue Receiver referring to the contract in the header of the catalogue. On line level this is used to indicate added items in the catalogue.</Description>
+        <Description>Used on catalogue level when a catalogue is sent for the first time to the
+            Catalogue Receiver referring to the contract in the header of the catalogue. On line
+            level this is used to indicate added items in the catalogue.</Description>
     </Code>
     <Code>
         <Id>Replace</Id>
         <Name>Replacement</Name>
-        <Description>Replaces the entire catalogue referring to the contract. This is the default action on header level, and is not valid on line level.</Description>
+        <Description>Replaces the entire catalogue referring to the contract. This is the default
+            action on header level, and is not valid on line level.</Description>
     </Code>
     <Code>
         <Id>Update</Id>
@@ -29,5 +32,3 @@
     </Code>
 
 </CodeList>
-
-
