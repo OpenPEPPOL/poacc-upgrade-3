@@ -16,11 +16,6 @@
 
 * Align full allowance charge class?
 ** Validate chargeindicator to be true or false?
-* Scheme id for Item Standard identifier? (ICD list)?
-* OA: Contracted item indicator - codelist?
-* OA: Item property classification code - codelist?
-* Remove chapter on codelists and rules?
-* Datatypes in shared, then reused?
 * Party identification/EndpointID?
 ** Shared chapter on identifier must be updated
 ** Snippets/examples must be corrected
