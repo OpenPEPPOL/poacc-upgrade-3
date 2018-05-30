@@ -11,6 +11,7 @@
 			<Name>Customization identifier</Name>
 			<Description>Identifies the specification of content and rules that apply to the
                 transaction.</Description>
+			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir19-002</Reference>
 			<Reference type="RULE">BII2-T19-R001</Reference>
 			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrns019:ver2.0:extended:urn:www.peppol.eu:bis:peppol1a:ver2.0</Value>
@@ -20,6 +21,7 @@
 			<Name>Profile identifier</Name>
 			<Description>Identifies the BII profile or business process context in which the
                 transaction appears.</Description>
+			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir19-001</Reference>
 			<Reference type="RULE">BII2-T19-R002</Reference>
 			<Value type="FIXED">urn:www.cenbii.eu:profile:bii01:ver2.0</Value>
@@ -30,6 +32,7 @@
 			<Description>An catalogue instance must contain an identifier. The identifier enables
                 positive referencing the document instance for various purposes including
                 referencing between transactions that are part of the same process.</Description>
+			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir19-003</Reference>
 			<Reference type="RULE">BII2-T19-R004</Reference>
 			<Value type="EXAMPLE">Cat-02</Value>
@@ -42,15 +45,11 @@
                 the suppliers and customers information. Describes how to treat existing items, not
                 part of the received catalogue and those that are included (unchanged, changed or
                 deleted). Default action is to fully replace the source catalogue.</Description>
+			<DataType>Code</DataType>
 			<Reference type="BUSINESS_TERM">tir19-047</Reference>
 			<Reference type="RULE">OP-T19-007</Reference>
-			<Attribute>
-				<Term>listID</Term>
-				<Name>Catalogue action code identification scheme identifier</Name>
-				<Description>The identification scheme identifier of the Catalogue action code</Description>
-				<Reference type="RULE">EUGEN-T19-R046</Reference>
-				<Reference type="CODE_LIST">ACTIONCODE:PEPPOL</Reference>
-			</Attribute>
+			<Reference type="CODE_LIST">ActionCode</Reference>
+
 			<Value type="EXAMPLE">Add</Value>
 		</Element>
 		<Element cardinality="0..1">
@@ -58,13 +57,15 @@
 			<Name>Catalogue name</Name>
 			<Description>A name of the catalogue for general reference. E.g. "Christmas
                 catalogue"</Description>
+			<DataType>Text</DataType>
 			<Reference type="BUSINESS_TERM">tir19-005</Reference>
 			<Value type="EXAMPLE">Spring Catalogue</Value>
 		</Element>
 		<Element>
 			<Term>cbc:IssueDate</Term>
 			<Name>Catalogue issue date</Name>
-			<Description>The date on which the catalogue instance was issued.</Description>
+			<Description>The date on which the catalogue instance was issued. Format = "YYYY-MM-DD"</Description>
+			<DataType>Date</DataType>
 			<Reference type="BUSINESS_TERM">tir19-006</Reference>
 			<Reference type="RULE">BII2-T19-R003</Reference>
 			<Value type="EXAMPLE">2018-05-31</Value>
@@ -78,6 +79,7 @@
                 'Replace' then action codes on the line have no relevance. All existing lines are
                 deleted and the ones stated in the Catalogue transaction added. If Catalogue
                 transaction is 'Update' then action codes on lines controll each line.</Description>
+			<DataType>Text</DataType>
 			<Reference type="BUSINESS_TERM">tir19-004</Reference>
 			<Value type="EXAMPLE">v2</Value>
 		</Element>
@@ -93,6 +95,7 @@
 				<Name>Period start date</Name>
 				<Description>The date on which the period starts. The start dates counts as part of
                     the period.</Description>
+				<DataType>Date</DataType>
 				<Reference type="BUSINESS_TERM">tir19-007</Reference>
 				<Value type="EXAMPLE">2018-05-31</Value>
 			</Element>
@@ -101,6 +104,7 @@
 				<Name>Period end date</Name>
 				<Description>The date on which the period ends. The end date counts as part of the
                     period.</Description>
+				<DataType>Date</DataType>
 				<Reference type="BUSINESS_TERM">tir19-008</Reference>
 				<Reference type="RULE"/>
 				<Value type="EXAMPLE">2019-05-31</Value>
@@ -115,23 +119,11 @@
 				<Name>Reference identifier</Name>
 				<Description>Positive identification of the reference such as a unique
                     identifier.</Description>
+				<DataType>Document reference</DataType>
 				<Reference type="BUSINESS_TERM">tir19-028</Reference>
 				<Value type="EXAMPLE">Contract-01</Value>
 			</Element>
-			<Element cardinality="0..1">
-				<Term>cbc:IssueDate</Term>
-				<Name>Contract Issue date</Name>
-				<Description>Issue date for referenced contract</Description>
-				<Reference type="BUSINESS_TERM">OP-T19-032</Reference>
-			</Element>
-			<Element cardinality="0..1">
-				<Term>cbc:ContractType</Term>
-				<Name>Reference type</Name>
-				<Description>The short description of what is reference such as contract type,
-                    document type, meter etc.</Description>
-				<Reference type="BUSINESS_TERM">tir19-052</Reference>
-				<Value type="EXAMPLE">Frame agreement</Value>
-			</Element>
+
 		</Element>
 		<Element cardinality="0..1">
 			<Term>cac:SourceCatalogueReference</Term>
@@ -143,6 +135,7 @@
 				<Description>Identifies the existing, already received catalogue that this message
                     should be acted upon, so that no discrepancies occur between the suppliers and
                     customers information.</Description>
+				<DataType>Document reference</DataType>
 				<Reference type="BUSINESS_TERM">tir19-019</Reference>
 				<Value type="EXAMPLE">Cat-01</Value>
 			</Element>
@@ -154,12 +147,14 @@
                 repository.</Description>
 			<Reference type="BUSINESS_TERM">3</Reference>
 			<Reference type="RULE">BII2-T19-R007</Reference>
-			<Element cardinality="0..1">
+
+			<Element>
 				<Term>cbc:EndpointID</Term>
 				<Name>Electronic address ID</Name>
 				<Description>A catalogue may contain the providing party electronic address. The
                     address can be of any format and the format should be identified in the
                     message.</Description>
+				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">tir19-009</Reference>
 				<Reference type="RULE">EUGEN-T19-R043</Reference>
 				<Attribute>
@@ -167,9 +162,9 @@
 					<Name>Scheme identifier</Name>
 					<Description>Scheme identifier for Electronic address</Description>
 					<Reference type="RULE">OP-T19-005</Reference>
-                    <Value type="EXAMPLE">0088</Value>
+					<Value type="EXAMPLE">0088</Value>
 				</Attribute>
-                <Value type="EXAMPLE">7300010000001</Value>
+				<Value type="EXAMPLE">7300010000001</Value>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:PartyIdentification</Term>
@@ -180,15 +175,17 @@
 					<Name>Catalogue Provider identifier</Name>
 					<Description>Use in the absence of or in addition to Party Name. Use an
                         identifier known to the document recipient.</Description>
+					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-010</Reference>
 					<Reference type="RULE">BII2-T19-R010</Reference>
-					<Attribute>
+
+					<Attribute usage="Optional">
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
 						<Description>Scheme identifier of the Provider identification</Description>
 						<Reference type="RULE">OP-T19-006</Reference>
-                        <Reference type="CODE_LIST">ISO6523</Reference>
-                        <Value type="EXAMPLE">0184</Value>
+						<Reference type="CODE_LIST">ICD</Reference>
+						<Value type="EXAMPLE">0184</Value>
 					</Attribute>
 					<Value type="EXAMPLE">12345678</Value>
 				</Element>
@@ -202,6 +199,7 @@
 					<Name>Provider trading name</Name>
 					<Description>Use in the absence of or in addition to Party
                         Identifier.</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-011</Reference>
 					<Reference type="RULE">BII2-T19-R010</Reference>
 					<Value type="EXAMPLE">Provider</Value>
@@ -217,6 +215,7 @@
 					<Name>Address line 1</Name>
 					<Description>The main address line in a postal address usually the street name
                         and number.</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-029a</Reference>
 				</Element>
 				<Element cardinality="0..1">
@@ -225,6 +224,7 @@
 					<Description>An additional address line in a postal address that can be used to
                         give further details supplementing the main line. Common use are secondary
                         house number in a complex or in a building.</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-029b</Reference>
 				</Element>
 				<Element cardinality="0..1">
@@ -232,6 +232,7 @@
 					<Name>City</Name>
 					<Description>The common name of the city where the postal address is. The name
                         is written in full rather than as a code.</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-029c</Reference>
 				</Element>
 				<Element cardinality="0..1">
@@ -240,6 +241,7 @@
 					<Description>The identifier for an addressable group of properties according to
                         the relevant national postal service, such as a ZIP code or Post
                         Code.</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-029d</Reference>
 				</Element>
 				<Element cardinality="0..1">
@@ -247,18 +249,19 @@
 					<Name>Country Subdivision</Name>
 					<Description>For specifying a region, county, state, province etc. within a
                         country by using text.</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-029e</Reference>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:AddressLine</Term>
 					<Name>Address Line</Name>
-					<Description/>
+
 					<Element cardinality="0..1">
 						<Term>cbc:Line</Term>
 						<Name>Catalogue Provider address line 3</Name>
 						<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
-						<Reference type="BUSINESS_TERM"></Reference>
-						<Reference type="RULE"></Reference>
+						<DataType>Text</DataType>
+
 					</Element>
 				</Element>
 
@@ -266,25 +269,32 @@
 					<Term>cac:Country</Term>
 					<Name>Country</Name>
 					<Description/>
-					<Element cardinality="0..1">
+					<Element>
 						<Term>cbc:IdentificationCode</Term>
 						<Name>Catalogue Provider Country code</Name>
-						<Description>The country where the address is. The country should always be
-                            given by using ISO code 3166 alpha 2</Description>
+						<Description>A code that identifies the country.The lists of valid
+							countries are registered with the ISO 3166-1 Maintenance agency,
+							"Codes for the representation of names of countries and their
+							subdivisions". Codes must be according to the alpha-2
+							representation.</Description>
+						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">OP-T19-029f</Reference>
 						<Reference type="RULE">OP-T19-001</Reference>
+						<Reference type="CODE_LIST">ISO3166</Reference>
+						<Value type="EXAMPLE">DK</Value>
 					</Element>
 				</Element>
 			</Element>
 			<Element>
 				<Term>cac:PartyLegalEntity</Term>
 				<Name>Party Legal Entity</Name>
-				<Description/>
+
 				<Element>
 					<Term>cbc:RegistrationName</Term>
 					<Name>Provider legal registration name</Name>
 					<Description>The name under which the provider is legally
                         registered.</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-028b</Reference>
 				</Element>
 				<Element cardinality="0..1">
@@ -292,14 +302,18 @@
 					<Name>Provider legal registration identifier</Name>
 					<Description>A catalogue may contain the identifier assigned to the party by
                         the national company registrar.</Description>
+					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-028a</Reference>
-					<Attribute>
+
+					<Attribute usage="Optional">
 						<Term>schemeID</Term>
-						<Name>Scheme identifier</Name>
-						<Description>Scheme identifier for Provider legal registration</Description>
-						<Reference type="RULE">OP-T19-013</Reference>
+						<Name>Provider legal registration identifier identification scheme identifier</Name>
+						<Description>The identification scheme identifier of the provider legal registration identifier.</Description>
+						<Reference type="CODE_LIST">ICD</Reference>
+						<Value type="EXAMPLE">0002</Value>
 					</Attribute>
 				</Element>
+
 				<Element cardinality="0..1">
 					<Term>cac:RegistrationAddress</Term>
 					<Name>Registration Address</Name>
@@ -309,20 +323,28 @@
 						<Name>Provider legal registration city</Name>
 						<Description>The name of the city where the provider is legally
                             registered.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">OP-T19-028c</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:Country</Term>
 						<Name>Country</Name>
-						<Description/>
-						<Element cardinality="0..1">
+
+						<Element>
 							<Term>cbc:IdentificationCode</Term>
-							<Name>Provider legal registration country</Name>
-							<Description>The country in which the provider is legally
-                                registered.</Description>
+							<Name>Catalogue Provider Country code</Name>
+							<Description>A code that identifies the country.The lists of valid
+								countries are registered with the ISO 3166-1 Maintenance agency,
+								"Codes for the representation of names of countries and their
+								subdivisions". Codes must be according to the alpha-2
+								representation.</Description>
+							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">OP-T19-028d</Reference>
 							<Reference type="RULE">OP-T19-001</Reference>
+							<Reference type="CODE_LIST">ISO3166</Reference>
+							<Value type="EXAMPLE">DK</Value>
 						</Element>
+
 					</Element>
 				</Element>
 			</Element>
@@ -334,12 +356,14 @@
                 on his behalf.</Description>
 			<Reference type="BUSINESS_TERM">4</Reference>
 			<Reference type="RULE">BII2-T19-R008</Reference>
+
 			<Element cardinality="0..1">
 				<Term>cbc:EndpointID</Term>
 				<Name>Electronic address ID</Name>
 				<Description>A catalogue may contain the receiving party electronic address. The
                     address can be of any format and the format should be identified in the
                     message.</Description>
+				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">tir19-012</Reference>
 				<Reference type="RULE">EUGEN-T19-R043</Reference>
 				<Attribute>
@@ -347,28 +371,30 @@
 					<Name>Scheme identifier</Name>
 					<Description>Scheme identifier for Electronic address</Description>
 					<Reference type="RULE">OP-T19-005</Reference>
-                    <Value type="EXAMPLE">0088</Value>
+					<Value type="EXAMPLE">0088</Value>
 				</Attribute>
 				<Value type="EXAMPLE">923654321</Value>
 			</Element>
+
 			<Element cardinality="0..1">
 				<Term>cac:PartyIdentification</Term>
 				<Name>Party Identification</Name>
-				<Description/>
+
 				<Element>
 					<Term>cbc:ID</Term>
 					<Name>Catalogue receiver identifier</Name>
 					<Description>Use in the absence of or in addition to Party Name. Use an
                         identifier known to the document recipient.</Description>
+					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-013</Reference>
 					<Reference type="RULE">BII2-T19-R011</Reference>
-					<Attribute>
+					<Attribute usage="Optional">
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
 						<Description>Scheme identifier for Receiver identifier</Description>
 						<Reference type="RULE">OP-T19-006</Reference>
-                        <Reference type="CODE_LIST">ISO6523</Reference>
-                        <Value type="EXAMPLE">0184</Value>
+						<Reference type="CODE_LIST">ICD</Reference>
+						<Value type="EXAMPLE">0184</Value>
 					</Attribute>
 					<Value type="EXAMPLE">45645678</Value>
 				</Element>
@@ -382,6 +408,7 @@
 					<Name>Receiver trading name</Name>
 					<Description>Use in the absence of or in addition to Party
                         Identifier.</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-014</Reference>
 					<Reference type="RULE">BII2-T19-R011</Reference>
 					<Value type="EXAMPLE">Receiver</Value>
@@ -389,14 +416,14 @@
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:PostalAddress</Term>
-				<Name/>
-				<Description/>
+				<Name>Postal address</Name>
 				<Reference type="BUSINESS_TERM">OP-T19-029</Reference>
 				<Element cardinality="0..1">
 					<Term>cbc:StreetName</Term>
 					<Name>Address line 1</Name>
 					<Description>The main address line in a postal address usually the street name
                         and number.</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-031a</Reference>
 				</Element>
 				<Element cardinality="0..1">
@@ -405,6 +432,7 @@
 					<Description>An additional address line in a postal address that can be used to
                         give further details supplementing the main line. Common use are secondary
                         house number in a complex or in a building.</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-031b</Reference>
 				</Element>
 				<Element cardinality="0..1">
@@ -412,6 +440,7 @@
 					<Name>City</Name>
 					<Description>The common name of the city where the postal address is. The name
                         is written in full rather than as a code.</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-031c</Reference>
 				</Element>
 				<Element cardinality="0..1">
@@ -420,6 +449,7 @@
 					<Description>The identifier for an addressable group of properties according to
                         the relevant national postal service, such as a ZIP code or Post
                         Code.</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-031d</Reference>
 				</Element>
 				<Element cardinality="0..1">
@@ -427,43 +457,53 @@
 					<Name>Country subdivision</Name>
 					<Description>For specifying a region, county, state, province etc. within a
                         country by using text.</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-031e</Reference>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:AddressLine</Term>
 					<Name>Address line</Name>
-					<Description/>
+
 					<Element cardinality="0..1">
 						<Term>cbc:Line</Term>
 						<Name>Catalogue receiver address line 3</Name>
 						<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
-						<Reference type="BUSINESS_TERM"></Reference>
-						<Reference type="RULE"></Reference>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM"/>
+						<Reference type="RULE"/>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:Country</Term>
 					<Name>Country</Name>
-					<Description/>
-					<Element cardinality="0..1">
+
+					<Element>
 						<Term>cbc:IdentificationCode</Term>
 						<Name>Country code</Name>
-						<Description>The country where the address is. The country should always be
-                            given by using ISO code 3166 alpha 2</Description>
+						<Description>A code that identifies the country.The lists of valid
+							countries are registered with the ISO 3166-1 Maintenance agency,
+							"Codes for the representation of names of countries and their
+							subdivisions". Codes must be according to the alpha-2
+							representation.</Description>
+						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">OP-T19-031f</Reference>
 						<Reference type="RULE">OP-T19-001</Reference>
+						<Reference type="CODE_LIST">ISO3166</Reference>
+						<Value type="EXAMPLE">DK</Value>
+
 					</Element>
 				</Element>
 			</Element>
 			<Element>
 				<Term>cac:PartyLegalEntity</Term>
 				<Name>Party legal entity</Name>
-				<Description/>
+
 				<Element>
 					<Term>cbc:RegistrationName</Term>
 					<Name>Receiver legal registration name</Name>
 					<Description>The name under which the receiver is legally
                         registered.</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-030b</Reference>
 				</Element>
 				<Element cardinality="0..1">
@@ -471,23 +511,28 @@
 					<Name>Receiver legal registration identifier</Name>
 					<Description>A catalogue may contain the identifier assigned to the party by
                         the national company registrar.</Description>
+					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-030a</Reference>
-					<Attribute>
+
+					<Attribute usage="Optional">
 						<Term>schemeID</Term>
-						<Name>Scheme identifier</Name>
-						<Description>Scheme identifier for Receiver legal registration identifier.</Description>
-						<Reference type="RULE">OP-T19-013</Reference>
+						<Name>Provider legal registration identifier identification scheme identifier</Name>
+						<Description>The identification scheme identifier of the provider legal registration identifier.</Description>
+						<Reference type="CODE_LIST">ICD</Reference>
+						<Value type="EXAMPLE">0002</Value>
 					</Attribute>
+
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:RegistrationAddress</Term>
 					<Name>Registration address</Name>
-					<Description/>
+
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
 						<Name>Receiver legal registration city</Name>
 						<Description>The name of the city where the receiver is legally
                             registered.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">OP-T19-030c</Reference>
 					</Element>
 					<Element cardinality="0..1">
@@ -497,10 +542,16 @@
 						<Element cardinality="0..1">
 							<Term>cbc:IdentificationCode</Term>
 							<Name>Receiver legal registration country</Name>
-							<Description>The country in which the receiver is legally
-                                registered.</Description>
+							<Description>A code that identifies the country.The lists of valid
+								countries are registered with the ISO 3166-1 Maintenance agency,
+								"Codes for the representation of names of countries and their
+								subdivisions". Codes must be according to the alpha-2
+								representation.</Description>
+							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">OP-T19-030d</Reference>
 							<Reference type="RULE">OP-T19-001</Reference>
+							<Reference type="CODE_LIST">ISO3166</Reference>
+							<Value type="EXAMPLE">SE</Value>
 						</Element>
 					</Element>
 				</Element>
@@ -513,16 +564,18 @@
                 catalogue.</Description>
 			<Reference type="BUSINESS_TERM">5</Reference>
 			<Reference type="RULE">BII2-T19-R009</Reference>
-			<Element cardinality="0..1">
+
+			<Element>
 				<Term>cac:Party</Term>
 				<Name>Party</Name>
-				<Description/>
+
 				<Element cardinality="0..1">
 					<Term>cbc:EndpointID</Term>
 					<Name>Electronic address ID</Name>
 					<Description>A catalogue may contain the receiving party electronic address.
                         The address can be of any format and the format should be identified in the
                         message.</Description>
+					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-015</Reference>
 					<Reference type="RULE">EUGEN-T19-R043</Reference>
 					<Attribute>
@@ -537,20 +590,21 @@
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
 					<Name>Party identification</Name>
-					<Description/>
+
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Catalogue supplier identifier</Name>
 						<Description>Use in the absence of or in addition to Party Name. Use an
                             identifier known to the document recipient.</Description>
+						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-016</Reference>
 						<Reference type="RULE">BII2-T19-R012</Reference>
-						<Attribute>
+						<Attribute usage="Optional">
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
 							<Description>Scheme identifier for Catalogue supplier identifier</Description>
 							<Reference type="RULE">OP-T19-006</Reference>
-							<Reference type="CODE_LIST">ISO6523</Reference>
+							<Reference type="CODE_LIST">ICD</Reference>
 							<Value type="EXAMPLE">0184</Value>
 						</Attribute>
 						<Value type="EXAMPLE">11223344</Value>
@@ -559,12 +613,13 @@
 				<Element cardinality="0..1">
 					<Term>cac:PartyName</Term>
 					<Name>Party name</Name>
-					<Description/>
+
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Catalogue supplier trading name</Name>
 						<Description>Use in the absence of or in addition to Party
                             Identifier.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-017</Reference>
 						<Reference type="RULE">BII2-T19-R012</Reference>
 						<Value type="EXAMPLE">Supplier</Value>
@@ -579,6 +634,7 @@
 						<Name>Address line 1</Name>
 						<Description>The main address line in a postal address usually the street
                             name and number.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-021</Reference>
 						<Value type="EXAMPLE">Storgata 1</Value>
 					</Element>
@@ -588,6 +644,7 @@
 						<Description>An additional address line in a postal address that can be
                             used to give further details supplementing the main line. Common use are
                             secondary house number in a complex or in a building.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-022</Reference>
 					</Element>
 					<Element cardinality="0..1">
@@ -595,6 +652,7 @@
 						<Name>City</Name>
 						<Description>The common name of the city where the postal address is. The
                             name is written in full rather than as a code.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-023</Reference>
 						<Value type="EXAMPLE">Oslo</Value>
 					</Element>
@@ -604,6 +662,7 @@
 						<Description>The identifier for an addressable group of properties
                             according to the relevant national postal service, such as a ZIP code or
                             Post Code.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-024</Reference>
 						<Value type="EXAMPLE">0612</Value>
 					</Element>
@@ -612,6 +671,7 @@
 						<Name>Country subdivision</Name>
 						<Description>For specifying a region, county, state, province etc. within a
                             country by using text.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-025</Reference>
 					</Element>
 					<Element cardinality="0..1">
@@ -622,21 +682,25 @@
 							<Term>cbc:Line</Term>
 							<Name>Catalogue supplier address line 3</Name>
 							<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
-							<Reference type="BUSINESS_TERM"></Reference>
-							<Reference type="RULE"></Reference>
+							<DataType>Text</DataType>
 						</Element>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:Country</Term>
 						<Name>Country</Name>
-						<Description/>
-						<Element cardinality="0..1">
+
+						<Element>
 							<Term>cbc:IdentificationCode</Term>
 							<Name>Country code</Name>
-							<Description>The country where the address is. The country should
-                                always be given by using ISO code 3166 alpha 2</Description>
+							<Description>A code that identifies the country.The lists of valid
+								countries are registered with the ISO 3166-1 Maintenance agency,
+								"Codes for the representation of names of countries and their
+								subdivisions". Codes must be according to the alpha-2
+								representation.</Description>
+							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir19-026</Reference>
 							<Reference type="RULE">OP-T19-001</Reference>
+							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">NO</Value>
 						</Element>
 					</Element>
@@ -649,6 +713,7 @@
 						<Term>cbc:Name</Term>
 						<Name>Contact person name</Name>
 						<Description>The name of the contact person.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-027</Reference>
 						<Value type="EXAMPLE">Ole Olsen</Value>
 					</Element>
@@ -657,20 +722,17 @@
 						<Name>Contact telephone number</Name>
 						<Description>A phone number for the contact person. If the person has a
                             direct number, this is that number.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-030</Reference>
 						<Value type="EXAMPLE">90123456</Value>
 					</Element>
-					<Element cardinality="0..1">
-						<Term>cbc:Telefax</Term>
-						<Name>Contact fax number</Name>
-						<Description>A fax number for the contact persons.</Description>
-						<Reference type="BUSINESS_TERM">tir19-029</Reference>
-					</Element>
+
 					<Element cardinality="0..1">
 						<Term>cbc:ElectronicMail</Term>
 						<Name>Contact email address</Name>
 						<Description>The e-mail address for the contact person. If the person has a
                             direct e-mail this is that email.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-031</Reference>
 						<Value type="EXAMPLE">ole.olsen@supplier.no</Value>
 					</Element>
@@ -685,13 +747,14 @@
 			<Element cardinality="0..1">
 				<Term>cac:Party</Term>
 				<Name>Party</Name>
-				<Description/>
+
 				<Element cardinality="0..1">
 					<Term>cbc:EndpointID</Term>
 					<Name>Electronic address ID</Name>
 					<Description>A catalogue may contain the catalogue customer electronic address.
                         The address can be of any format and the format should be identified in the
                         message.</Description>
+					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-054</Reference>
 					<Reference type="RULE">EUGEN-T19-R043</Reference>
 					<Attribute>
@@ -704,21 +767,22 @@
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
-					<Name>Paty identification</Name>
-					<Description/>
+					<Name>Party identification</Name>
+
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Catalogue customer identifier</Name>
 						<Description>Use in the absence of or in addition to Party Name. Use an
                             identifier known to the document recipient.</Description>
+						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-055</Reference>
 						<Reference type="RULE">BII2-T19-R013</Reference>
-						<Attribute>
+						<Attribute usage="Optional">
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
 							<Description>Scheme identifier for Catalogue customer identifier</Description>
 							<Reference type="RULE">OP-T19-006</Reference>
-							<Reference type="CODE_LIST">ISO6523</Reference>
+							<Reference type="CODE_LIST">ICD</Reference>
 							<Value type="EXAMPLE">0184</Value>
 						</Attribute>
 					</Element>
@@ -726,12 +790,13 @@
 				<Element cardinality="0..1">
 					<Term>cac:PartyName</Term>
 					<Name>Party name</Name>
-					<Description/>
+
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Catalogue customer trading name</Name>
 						<Description>Use in the absence of or in addition to Party
                             Identifier.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-079</Reference>
 						<Reference type="RULE">BII2-T19-R013</Reference>
 					</Element>
@@ -739,17 +804,12 @@
 				<Element cardinality="0..1">
 					<Term>cac:Contact</Term>
 					<Name>Contact</Name>
-					<Description/>
-					<Element cardinality="0..1">
-						<Term>cbc:ID</Term>
-						<Name>Contact ID</Name>
-						<Description>Identification of the contact</Description>
-						<Reference type="BUSINESS_TERM">OP-T19-021</Reference>
-					</Element>
+
 					<Element cardinality="0..1">
 						<Term>cbc:Name</Term>
 						<Name>Contact person name</Name>
 						<Description>The name of the contact person.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-080</Reference>
 					</Element>
 					<Element cardinality="0..1">
@@ -757,19 +817,16 @@
 						<Name>Contact telephone number</Name>
 						<Description>A phone number for the contact person. If the person has a
                             direct number, this is that number.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-082</Reference>
 					</Element>
-					<Element cardinality="0..1">
-						<Term>cbc:Telefax</Term>
-						<Name>Contact fax number</Name>
-						<Description>A fax number for the contact persons.</Description>
-						<Reference type="BUSINESS_TERM">tir19-081</Reference>
-					</Element>
+
 					<Element cardinality="0..1">
 						<Term>cbc:ElectronicMail</Term>
 						<Name>Contact email address</Name>
 						<Description>The e-mail address for the contact person. If the person has a
                             direct e-mail this is that email.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-083</Reference>
 					</Element>
 				</Element>
@@ -778,11 +835,12 @@
 		<Element cardinality="0..n">
 			<Term>cac:TradingTerms</Term>
 			<Name>Trading terms</Name>
-			<Description/>
+
 			<Element cardinality="0..n">
 				<Term>cbc:Information</Term>
 				<Name>General payment conditions</Name>
 				<Description>Information about the general payment conditions</Description>
+				<DataType>Text</DataType>
 				<Reference type="BUSINESS_TERM">OP-T19-019</Reference>
 			</Element>
 		</Element>
@@ -798,6 +856,7 @@
 				<Description>Each line must have an identifier that is unique within the document
                     to make it possible to positively reference the line. For example, from other
                     documents.</Description>
+				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">tir19-032</Reference>
 				<Reference type="RULE">BII2-T19-R024</Reference>
 				<Value type="EXAMPLE">1</Value>
@@ -809,15 +868,10 @@
                     on the identified line when revising a catalogue. See rule on catalogue version
                     ID. When using Update or Delete codes, the entire Catalogue Line is updated or
                     deleted.</Description>
+				<DataType>Code</DataType>
 				<Reference type="BUSINESS_TERM">tir19-033</Reference>
 				<Reference type="RULE">CL-T19-001</Reference>
-				<Attribute>
-					<Term>listID</Term>
-					<Name>Line action code identifier identification scheme identifier</Name>
-					<Description>The identification scheme identifier of the line action code identifier</Description>
-					<Reference type="RULE">EUGEN-T19-R045</Reference>
-					<Reference type="CODE_LIST">ACTONCODE:PEPPOL</Reference>
-				</Attribute>
+				<Reference type="CODE_LIST">ActionCode</Reference>
 				<Value type="EXAMPLE">Update</Value>
 			</Element>
 			<Element cardinality="0..1">
@@ -825,6 +879,7 @@
 				<Name>Contract Subdivision</Name>
 				<Description>Used to reference a subsection of the contract referenced on header
                     level but not recognized as a BII requirement. Removed.</Description>
+				<DataType>Text</DataType>
 				<Reference type="BUSINESS_TERM">OP-T19-036</Reference>
 			</Element>
 			<Element cardinality="0..1">
@@ -833,6 +888,8 @@
 				<Description>Default value is True i.e. Item on the Catalogue Line can be ordered.
                     Can be used to indicate if an Item is temporarily out of stock (via a Catalogue
                     Update).</Description>
+				<DataType>Boolean</DataType>
+				<Reference type="CODE_LIST">TrueFalse</Reference>
 				<Reference type="BUSINESS_TERM">tir19-034</Reference>
 				<Value type="EXAMPLE">true</Value>
 			</Element>
@@ -844,9 +901,10 @@
                     different orderble units. E.g. catalogue line 1 describes item X that can be
                     ordered in boxes at a given price. Line 2 may describe the same item X as
                     orderable in pallets where the price is lower.</Description>
+				<DataType>Code</DataType>
 				<Reference type="BUSINESS_TERM">tir19-035</Reference>
 				<Reference type="RULE">OP-T19-010</Reference>
-                <Reference type="CODE_LIST">UNECERec20</Reference>
+				<Reference type="CODE_LIST">UNECERec20</Reference>
 				<Value type="EXAMPLE">EA</Value>
 			</Element>
 			<Element cardinality="0..1">
@@ -854,14 +912,16 @@
 				<Name>Item net quantity</Name>
 				<Description>The net quantity of the item that is contained in each consumable
                     unit, excluding any packaging materials.</Description>
+				<DataType>Quantity</DataType>
 				<Reference type="BUSINESS_TERM">tir19-061</Reference>
 				<Attribute>
 					<Term>unitCode</Term>
 					<Name>Item net quantity unit of measure</Name>
 					<Description>The unit of measure that applies to the item net quantity</Description>
+					<DataType>Code</DataType>
 					<Reference type="BUSINESS_TERM">20</Reference>
 					<Reference type="RULE">OP-T19-002</Reference>
-                    <Reference type="CODE_LIST">UNECERec20</Reference>
+					<Reference type="CODE_LIST">UNECERec20</Reference>
 					<Value type="EXAMPLE">C62</Value>
 				</Attribute>
 				<Value type="EXAMPLE">10</Value>
@@ -878,15 +938,17 @@
 				<Name>Minimum order quantity</Name>
 				<Description>The minimum number of orderable units that can be ordered according to
                     details provided in the catalogue line, such as price.</Description>
+				<DataType>Quantity</DataType>
 				<Reference type="BUSINESS_TERM">tir19-038</Reference>
 				<Reference type="RULE">BII2-T19-R030</Reference>
 				<Attribute>
 					<Term>unitCode</Term>
 					<Name>Minimum order quantity unit of measure</Name>
 					<Description>The unit of measure that applies to the minimum order quantity</Description>
+					<DataType>code</DataType>
 					<Reference type="BUSINESS_TERM">20</Reference>
 					<Reference type="RULE">OP-T19-002</Reference>
-                    <Reference type="CODE_LIST">UNECERec20</Reference>
+					<Reference type="CODE_LIST">UNECERec20</Reference>
 					<Value type="EXAMPLE">C62</Value>
 				</Attribute>
 				<Value type="EXAMPLE">1</Value>
@@ -896,15 +958,17 @@
 				<Name>Maximum order quantity</Name>
 				<Description>The maximum number of orderable units that can be ordered according to
                     details provided in the catalogue line, such as price.</Description>
+				<DataType>Quantity</DataType>
 				<Reference type="BUSINESS_TERM">tir19-039</Reference>
 				<Reference type="RULE">BII2-T19-R029</Reference>
 				<Attribute>
 					<Term>unitCode</Term>
 					<Name>Maximum order quantity unit of measure</Name>
 					<Description>The unit of measure that applies to the maximum order quantity</Description>
+					<DataType>Code</DataType>
 					<Reference type="BUSINESS_TERM">20</Reference>
 					<Reference type="RULE">OP-T19-002</Reference>
-                    <Reference type="CODE_LIST">UNECERec20</Reference>
+					<Reference type="CODE_LIST">UNECERec20</Reference>
 					<Value type="EXAMPLE">C62</Value>
 				</Attribute>
 				<Value type="EXAMPLE">100</Value>
@@ -914,21 +978,18 @@
 				<Name>Line warranty information</Name>
 				<Description>Warranty information that applies to the catalogue line
                     item.</Description>
+				<DataType>Text</DataType>
 				<Reference type="BUSINESS_TERM">tir19-040</Reference>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cbc:PackLevelCode</Term>
 				<Name>Packaging level</Name>
 				<Description>The packing level of the catalogue line.</Description>
+				<DataType>Code</DataType>
 				<Reference type="BUSINESS_TERM">tir19-102</Reference>
 				<Reference type="RULE">OP-T19-008</Reference>
-				<Attribute>
-					<Term>listID</Term>
-					<Name>Scheme identifier</Name>
-					<Description>Scheme identifier for packaging level code identifier</Description>
-                    <Reference type="CODE_LIST">UNECERec20</Reference>
-					<Reference type="RULE">EUGEN-T19-R050</Reference>
-				</Attribute>
+				<Reference type="CODE_LIST">GS17009</Reference>
+
 				<Value type="EXAMPLE">TU</Value>
 			</Element>
 			<Element cardinality="0..1">
@@ -944,6 +1005,7 @@
 					<Name>Period start date</Name>
 					<Description>The date on which the period starts. The start dates counts as
                         part of the period.</Description>
+					<DataType>Date</DataType>
 					<Reference type="BUSINESS_TERM">tir19-041</Reference>
 					<Value type="EXAMPLE">2018-05-31</Value>
 				</Element>
@@ -952,6 +1014,7 @@
 					<Name>Period end date</Name>
 					<Description>The date on which the period ends. The end date counts as part of
                         the period.</Description>
+					<DataType>Date</DataType>
 					<Reference type="BUSINESS_TERM">tir19-042</Reference>
 					<Value type="EXAMPLE">2019-05-31</Value>
 				</Element>
@@ -965,13 +1028,14 @@
 					<Name>Standardized unit price</Name>
 					<Description>The item price based on a standarized unit. E.g. Price of each
                         liter.See guideline on Items and packing units in a catalogue.</Description>
+					<DataType>Price Amount</DataType>
 					<Reference type="BUSINESS_TERM">tir19-043</Reference>
 					<Attribute>
 						<Term>currencyID</Term>
-						<Name/>
+						<Name>Currency identifier</Name>
 						<Description>Mandatory attribute</Description>
 						<Reference type="RULE">OP-T19-011</Reference>
-                        <Reference type="CODE_LIST">CurrencyCode</Reference>
+						<Reference type="CODE_LIST">ISO4217</Reference>
 						<Value type="EXAMPLE">EUR</Value>
 					</Attribute>
 				</Element>
@@ -982,6 +1046,7 @@
                         E.g. if consumable units are bottles and each bottle contains 0,333 liters
                         the standard unit quantity is 0,333See guideline on Items and packing units
                         in a catalogue.</Description>
+					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir19-044</Reference>
 					<Attribute>
 						<Term>unitCode</Term>
@@ -1003,12 +1068,14 @@
 					<Term>cbc:ID</Term>
 					<Name>Item identifier</Name>
 					<Description>The sellers identifier for the related item.</Description>
+					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-045</Reference>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:Quantity</Term>
 					<Name>Item quantity</Name>
 					<Description>The quantity that applies to the relationship.</Description>
+					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir19-046</Reference>
 					<Attribute>
 						<Term>unitCode</Term>
@@ -1017,6 +1084,7 @@
                             orderable unit (next lower level packing), and which contains the number
                             of unit described in PackSizeNumeric. Unit desciption to PackQuantity.
                             The value shoud be a valid UOM code like CS for case.</Description>
+						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-065</Reference>
 						<Reference type="RULE">OP-T19-002</Reference>
 						<Reference type="CODE_LIST">UNECERec20</Reference>
@@ -1027,22 +1095,25 @@
 			<Element cardinality="0..n">
 				<Term>cac:AccessoryRelatedItem</Term>
 				<Name>Accessory related item</Name>
-				<Description/>
+
 				<Element cardinality="0..1">
 					<Term>cbc:ID</Term>
 					<Name>Item identifier</Name>
 					<Description>The sellers identifier for the related item.</Description>
+					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-118</Reference>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:Quantity</Term>
 					<Name>Item quantity</Name>
 					<Description>The quantity that applies to the relationship.</Description>
+					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir19-119</Reference>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Related item unit</Name>
 						<Description>The packaging unit for related items. The value shoud be a valid UOM code like CS for case.</Description>
+						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">20</Reference>
 						<Reference type="RULE">OP-T19-002</Reference>
 						<Reference type="CODE_LIST">UNECERec20</Reference>
@@ -1053,22 +1124,25 @@
 			<Element cardinality="0..n">
 				<Term>cac:RequiredRelatedItem</Term>
 				<Name>Required related item</Name>
-				<Description/>
+
 				<Element cardinality="0..1">
 					<Term>cbc:ID</Term>
 					<Name>Item identifier</Name>
 					<Description>The sellers identifier for the related item.</Description>
+					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-048</Reference>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:Quantity</Term>
 					<Name>Item quantity</Name>
 					<Description>The quantity that applies to the relationship.</Description>
+					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir19-049</Reference>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Required item units</Name>
 						<Description>The packaging unit for required related items. The value shoud be a valid UOM code like CS for case.</Description>
+						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">20</Reference>
 						<Reference type="RULE">OP-T19-002</Reference>
 						<Reference type="CODE_LIST">UNECERec20</Reference>
@@ -1078,23 +1152,26 @@
 			</Element>
 			<Element cardinality="0..n">
 				<Term>cac:ReplacedRelatedItem</Term>
-				<Name/>
-				<Description/>
+				<Name>Replaced related item</Name>
+
 				<Element cardinality="0..1">
 					<Term>cbc:ID</Term>
 					<Name>Item identifier</Name>
 					<Description>The sellers identifier for the related item.</Description>
+					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-120</Reference>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:Quantity</Term>
 					<Name>Item quantity</Name>
 					<Description>The quantity that applies to the relationship.</Description>
+					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir19-121</Reference>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Replaced item units</Name>
 						<Description>The packaging unit for replaced items. The value shoud be a valid UOM code like CS for case.</Description>
+						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">20</Reference>
 						<Reference type="RULE">OP-T19-002</Reference>
 						<Reference type="CODE_LIST">UNECERec20</Reference>
@@ -1105,16 +1182,18 @@
 			<Element cardinality="0..n">
 				<Term>cac:RequiredItemLocationQuantity</Term>
 				<Name>Required Item Location Quantity</Name>
-				<Description/>
+
 				<Element cardinality="0..1">
 					<Term>cbc:LeadTimeMeasure</Term>
 					<Name>Price lead time</Name>
 					<Description>The order lead time for the particular location.</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-053</Reference>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Lead time units</Name>
 						<Description>The lead time units for price lead time. The value shoud be a valid UOM code like DAY for days.</Description>
+						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">20</Reference>
 						<Reference type="RULE">OP-T19-002</Reference>
 						<Reference type="CODE_LIST">UNECERec20</Reference>
@@ -1124,12 +1203,14 @@
 				<Element cardinality="0..1">
 					<Term>cbc:MinimumQuantity</Term>
 					<Name>Quantity threshold</Name>
-					<Description/>
+					<Description>Used to indicate the threshold quantity for the given price</Description>
+					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-025</Reference>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Quantity threshold units</Name>
 						<Description>The quantity units for minimum quantity. The value shoud be a valid UOM code like CS for case.</Description>
+						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">20</Reference>
 						<Reference type="RULE">OP-T19-002</Reference>
 						<Reference type="CODE_LIST">UNECERec20</Reference>
@@ -1139,12 +1220,14 @@
 				<Element cardinality="0..1">
 					<Term>cbc:MaximumQuantity</Term>
 					<Name>Quantity ceiling</Name>
-					<Description/>
+					<Description>Used to indicate maximum quantity for given price.</Description>
+					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-026</Reference>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Quantity ceiling units</Name>
 						<Description>The quantity units for ceiling quantity. The value shoud be a valid UOM code like CS for case.</Description>
+						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">20</Reference>
 						<Reference type="RULE">OP-T19-002</Reference>
 						<Reference type="CODE_LIST">UNECERec20</Reference>
@@ -1154,12 +1237,14 @@
 				<Element cardinality="0..n">
 					<Term>cac:ApplicableTerritoryAddress</Term>
 					<Name>Applicable terriroty address</Name>
-					<Description/>
+					<Description>Used to give location information related to the price</Description>
+
 					<Element cardinality="0..1">
 						<Term>cbc:StreetName</Term>
 						<Name>Address line 1</Name>
 						<Description>The main address line in a postal address usually the street
                             name and number.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-108</Reference>
 					</Element>
 					<Element cardinality="0..1">
@@ -1168,6 +1253,7 @@
 						<Description>An additional address line in a postal address that can be
                             used to give further details supplementing the main line. Common use are
                             secondary house number in a complex or in a building.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-109</Reference>
 					</Element>
 					<Element cardinality="0..1">
@@ -1177,6 +1263,7 @@
                             name is written in full rather than as a code.The common name of the
                             city where the postal address is. The name is written in full rather
                             than as a code.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-060tir19-110</Reference>
 					</Element>
 					<Element cardinality="0..1">
@@ -1185,6 +1272,7 @@
 						<Description>The identifier for an addressable group of properties
                             according to the relevant national postal service, such as a ZIP code or
                             Post Code.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-111</Reference>
 					</Element>
 					<Element cardinality="0..1">
@@ -1193,6 +1281,7 @@
 						<Description>For specifying a region, county, state, province etc. within a
                             country by using text.For specifying a region, county, state, province
                             etc. within a country by using text.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-062tir19-112</Reference>
 					</Element>
 					<Element cardinality="0..1">
@@ -1203,43 +1292,49 @@
 							<Term>cbc:Line</Term>
 							<Name>Applicable territory address line 3</Name>
 							<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
-							<Reference type="BUSINESS_TERM"></Reference>
-							<Reference type="RULE"></Reference>
+							<DataType>Text</DataType>
+
 						</Element>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:Country</Term>
 						<Name>Country</Name>
-						<Description/>
-						<Element cardinality="0..1">
+
+						<Element>
 							<Term>cbc:IdentificationCode</Term>
 							<Name>Country code</Name>
-							<Description>The country where the address is. The country should
-                                always be given by using ISO code 3166 alpha 2The country where the
-                                address is. The country should always be given by using ISO code
-                                3166 alpha 2</Description>
-							<Reference type="BUSINESS_TERM">tir19-063tir19-113</Reference>
+							<Description>A code that identifies the country.The lists of valid
+								countries are registered with the ISO 3166-1 Maintenance agency,
+								"Codes for the representation of names of countries and their
+								subdivisions". Codes must be according to the alpha-2
+								representation.</Description>
+							<DataType>Code</DataType>
+							<Reference type="BUSINESS_TERM">tir19-063</Reference>
+							<Reference type="BUSINESS_TERM">tir19-113</Reference>
 							<Reference type="RULE">OP-T19-001</Reference>
-							<Value type="EXAMPLE">NO</Value>
+							<Reference type="CODE_LIST">ISO3166</Reference>
+							<Value type="EXAMPLE">DK</Value>
+
 						</Element>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:Price</Term>
 					<Name>Price</Name>
-					<Description/>
+
 					<Element>
 						<Term>cbc:PriceAmount</Term>
 						<Name>Item price</Name>
 						<Description>The price for the item at the specified locations.The price is
                             given for each orderable unit.</Description>
+						<DataType>Price amount</DataType>
 						<Reference type="BUSINESS_TERM">tir19-051</Reference>
 						<Reference type="RULE">BII2-T19-R015</Reference>
 						<Attribute>
 							<Term>currencyID</Term>
 							<Description>Mandatory attribute</Description>
 							<Reference type="RULE">OP-T19-011</Reference>
-                            <Reference type="CODE_LIST">CurrencyCode</Reference>
+							<Reference type="CODE_LIST">ISO4217</Reference>
 							<Value type="EXAMPLE">EUR</Value>
 						</Attribute>
 					</Element>
@@ -1247,11 +1342,13 @@
 						<Term>cbc:BaseQuantity</Term>
 						<Name>Item price base quantity</Name>
 						<Description>The number of item units to which the price applies</Description>
+						<DataType>Quantity</DataType>
 						<Reference type="BUSINESS_TERM">OP-T19-024</Reference>
 						<Attribute>
 							<Term>unitCode</Term>
 							<Name>Item price base quantity unit of measure code</Name>
 							<Description>The unit of measure that applies to the Item price base quantity.</Description>
+							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">20</Reference>
 							<Reference type="RULE">OP-T19-002</Reference>
 							<Reference type="CODE_LIST">UNECERec20</Reference>
@@ -1266,6 +1363,7 @@
                             may be changed, is indicative. When prices are temporary the validity
                             period for the price should be defined by stating the price validity
                             period.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-093</Reference>
 					</Element>
 					<Element cardinality="0..1">
@@ -1274,17 +1372,19 @@
 						<Description>The factor used to convert the Base Quantity to an Orderable
                             Unit. Must be specified if the Orderable Unit differs from the Base
                             Quantity. If not present, assumed value is 1</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">OP-T19-035</Reference>
 					</Element>
 					<Element cardinality="0..n">
 						<Term>cac:ValidityPeriod</Term>
 						<Name>Price validity period</Name>
-						<Description/>
+
 						<Element cardinality="0..1">
 							<Term>cbc:StartDate</Term>
 							<Name>Period start date</Name>
 							<Description>The date on which the period starts. The start dates
                                 counts as part of the period.</Description>
+							<DataType>Date</DataType>
 							<Reference type="BUSINESS_TERM">tir19-056</Reference>
 							<Value type="EXAMPLE">2018-05-31</Value>
 						</Element>
@@ -1293,6 +1393,7 @@
 							<Name>Period end date</Name>
 							<Description>The date on which the period ends. The end date counts as
                                 part of the period.</Description>
+							<DataType>Date</DataType>
 							<Reference type="BUSINESS_TERM">tir19-057</Reference>
 							<Value type="EXAMPLE">2019-05-31</Value>
 						</Element>
@@ -1302,12 +1403,13 @@
 			<Element>
 				<Term>cac:Item</Term>
 				<Name>Item</Name>
-				<Description/>
+
 				<Element cardinality="0..n">
 					<Term>cbc:Description</Term>
 					<Name>Item description</Name>
 					<Description>A detailed description of the item. Use one description pr.
                         language</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-067</Reference>
 					<Value type="EXAMPLE">Office chair by John Doe.</Value>
 				</Element>
@@ -1317,6 +1419,7 @@
 					<Description>The number of packed units that are in the orderable unit. E.g. if
                         the orderable unit is a pallet that contains 30 boxes then the packed units
                         are BOX and the packed quantity is 30.</Description>
+					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir19-066tir19-066</Reference>
 					<Attribute>
 						<Term>unitCode</Term>
@@ -1333,14 +1436,15 @@
 					<Term>cbc:PackSizeNumeric</Term>
 					<Name>Consumable unit quantity</Name>
 					<Description>Specifies the number of consumable units that are in each
-                        orderable unit.See guideline on Items and packing units in a
-                        catalogue.</Description>
+                        orderable unit.</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-036</Reference>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:Name</Term>
 					<Name>Item name</Name>
 					<Description>A short name for an item.</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-078</Reference>
 					<Reference type="RULE">BII2-T19-R019</Reference>
 					<Value type="EXAMPLE">Office chair</Value>
@@ -1350,6 +1454,7 @@
 					<Name>Item key words</Name>
 					<Description>Used to specify searchable keywords and/or synonyms for the Item.
                         E.g. Item Name = Colgate or Total / Keyword =Toothpaste</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-064</Reference>
 					<Value type="EXAMPLE">Toothpaste</Value>
 				</Element>
@@ -1357,16 +1462,18 @@
 					<Term>cbc:BrandName</Term>
 					<Name>Brand name</Name>
 					<Description>A Brand name for the item</Description>
+					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-018</Reference>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:SellersItemIdentification</Term>
 					<Name>Seller item identification</Name>
-					<Description/>
+
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Sellers item identifier</Name>
 						<Description>The sellers identifier for the item.</Description>
+						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-091</Reference>
 						<Value type="EXAMPLE">222222</Value>
 					</Element>
@@ -1374,11 +1481,12 @@
 				<Element cardinality="0..1">
 					<Term>cac:ManufacturersItemIdentification</Term>
 					<Name>Manufacturer item identification</Name>
-					<Description/>
+
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Manufacturers item identifer</Name>
 						<Description>The manufacturers identifier for the item.</Description>
+						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-114</Reference>
 						<Value type="EXAMPLE">Prod-01</Value>
 					</Element>
@@ -1386,19 +1494,22 @@
 				<Element cardinality="0..1">
 					<Term>cac:StandardItemIdentification</Term>
 					<Name>Standard item identification</Name>
-					<Description/>
+
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Items standard identifier</Name>
 						<Description>A item identifier based on a registered schema.</Description>
+						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-092</Reference>
 						<Reference type="RULE">BII2-T19-R020</Reference>
-						<Attribute usage="Optional">
+
+						<Attribute>
 							<Term>schemeID</Term>
-							<Name>Scheme identifier</Name>
-							<Description>Scheme identifier of the item standard identifier</Description>
-							<Reference type="RULE">BII2-T19-R021</Reference>
-							<Value type="EXAMPLE">0088</Value>
+							<Name>Item standard identifier identification scheme identifier</Name>
+							<Description>The identification scheme identifier of the Item standard identifier</Description>
+							<Reference type="CODE_LIST">ICD</Reference>
+							<Value type="EXAMPLE">0160</Value>
+
 						</Attribute>
 						<Value type="EXAMPLE">7330869106661</Value>
 					</Element>
@@ -1406,35 +1517,35 @@
 				<Element cardinality="0..n">
 					<Term>cac:ItemSpecificationDocumentReference</Term>
 					<Name>Item specification document reference</Name>
-					<Description/>
+
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Attachment ID</Name>
 						<Description>A positive identification of the relevant document, such as an
                             unique identifier.</Description>
+						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-105</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:DocumentTypeCode</Term>
 						<Name>External Item Specifications Type</Name>
-						<Description/>
+						<Description>A functional description of the attachment/image expressed as code</Description>
+						<DataType>Code</DataType>
+						<Reference type="CODE_LIST">UNCL1001</Reference>
 						<Reference type="BUSINESS_TERM">tir19-086a</Reference>
-						<Attribute usage="Optional">
-							<Term>listID</Term>
-							<Name>Scheme identifier</Name>
-							<Description>Scheme identifier of the document type code identifier. Optional, may be used in national extensions.</Description>
-						</Attribute>
+
 					</Element>
 					<Element cardinality="0..n">
 						<Term>cbc:DocumentDescription</Term>
 						<Name>Attached item description</Name>
 						<Description>A short description of the document type.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-106</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:Attachment</Term>
 						<Name>Attachment</Name>
-						<Description/>
+
 						<Element cardinality="0..1">
 							<Term>cbc:EmbeddedDocumentBinaryObject</Term>
 							<Name>Attached object</Name>
@@ -1442,29 +1553,30 @@
 							<DataType>Binary objects</DataType>
 							<Reference type="BUSINESS_TERM">tir19-107</Reference>
 
-							
+
 							<Attribute>
 								<Term>mimeCode</Term>
 								<Name>Attached object Mime code</Name>
 								<Description>The mime code of the attached document</Description>
+								<DataType>Code</DataType>
 								<Reference type="RULE">CL-T19-002</Reference>
 								<Reference type="CODE_LIST">MimeCode</Reference>
 								<Value type="EXAMPLE">text/csv</Value>
 							</Attribute>
-							
+
 							<Attribute>
 								<Term>filename</Term>
 								<Name>Attached document Filename</Name>
 								<Description>The file name of the attached document</Description>
 								<Value type="EXAMPLE">Hours-spent.csv</Value>
 							</Attribute>
-							
+
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cac:ExternalReference</Term>
 							<Name>External reference</Name>
-							<Description/>
-							<Element cardinality="0..1">
+
+							<Element>
 								<Term>cbc:URI</Term>
 								<Name>External item specifications</Name>
 								<Description>URI reference to external item information or
@@ -1478,22 +1590,26 @@
 					<Term>cac:OriginCountry</Term>
 					<Name>Origin country</Name>
 					<Description/>
-					<Element cardinality="0..1">
+					<Element>
 						<Term>cbc:IdentificationCode</Term>
 						<Name>Item origin country</Name>
-						<Description>Used to provide the country from which the item has it's
-                            origin. Commonly used in cross border trade for statistical and customs
-                            purposes.</Description>
+						<Description>A code that identifies the country.The lists of valid
+							countries are registered with the ISO 3166-1 Maintenance agency,
+							"Codes for the representation of names of countries and their
+							subdivisions". Codes must be according to the alpha-2
+							representation.</Description>
+						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-071</Reference>
 						<Reference type="RULE">OP-T19-001</Reference>
-						<Value type="EXAMPLE">NO</Value>
+						<Reference type="CODE_LIST">ISO3166</Reference>
+						<Value type="EXAMPLE">DK</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..n">
 					<Term>cac:CommodityClassification</Term>
 					<Name>Commodity classification</Name>
 					<Description/>
-					<Element cardinality="0..1">
+					<Element>
 						<Term>cbc:ItemClassificationCode</Term>
 						<Name>Item classification code</Name>
 						<Description>A classification code used to classify the type or nature of
@@ -1503,78 +1619,83 @@
 						<Reference type="RULE">BII2-T19-R022</Reference>
 						<Attribute>
 							<Term>listID</Term>
-							<Name>Scheme identifier</Name>
-							<Description>Scheme identifier of the item classification code</Description>
+							<Name>Item classification identifier identification scheme identifier</Name>
+							<Description>The identification scheme identifier of the Item classification identifier</Description>
+							<Reference type="CODE_LIST">UNCL7143</Reference>
+							<Value type="EXAMPLE">STI</Value>
 						</Attribute>
+
 						<Attribute usage="Optional">
-							<Term>schemeVersionID</Term>
-							<Name>scheme version identifier</Name>
-							<Description>scheme version of the item classification code</Description>
+							<Term>listVersionID</Term>
+							<Name>Item classification identifier version identification scheme identifier</Name>
+							<Description>The identification scheme version identifier of the Item classification identifier</Description>
 						</Attribute>
+
 						<Value type="EXAMPLE">123456</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..n">
 					<Term>cac:TransactionConditions</Term>
 					<Name>Transaction conditions</Name>
-					<Description/>
-					<Element cardinality="0..1">
+
+					<Element>
 						<Term>cbc:ID</Term>
-						<Name>Transaction conditions id</Name>
-						<Description>Identifier for transaction conditions</Description>
+						<Name>Contracted item indicator</Name>
+						<Description>Indicates if the item is offered in accordance to an
+							existing contract.</Description>
+						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">OP-T19-027</Reference>
+						<Value type="EXAMPLE">CT</Value>
 					</Element>
-					<Element cardinality="0..1">
-						<Term>cbc:ActionCode</Term>
-						<Name>Action code</Name>
-						<Description/>
-						<Attribute usage="Optional">
-							<Term>listID</Term>
-							<Name>Scheme identifier</Name>
-							<Description>Scheme identifier of the transaction condition action code identifier. Optional, may be used in national extensions.</Description>
-						</Attribute>
-					</Element>
+
 				</Element>
+
+
+
 				<Element cardinality="0..n">
 					<Term>cac:HazardousItem</Term>
 					<Name>Hazardous Item</Name>
-					<Description/>
+
 					<Element cardinality="0..1">
 						<Term>cbc:UNDGCode</Term>
-						<Name>Hazardous UNDG code</Name>
-						<Description>Provides detail of the classification and nature of a
-                            hazardous item.</Description>
+						<Name>Hazardous item UNDG code</Name>
+						<Description>The identifier assigned to transportable hazardous goods by
+								the United Nations, expressed as a code.</Description>
+						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-072</Reference>
 						<Reference type="RULE">EUGEN-T19-R051</Reference>
 						<Reference type="RULE">OP-T19-003</Reference>
-						<Attribute>
-							<Term>listID</Term>
-							<Name>Scheme identifier</Name>
-							<Description>Scheme identifier of the harzadous item UNDG code identifier.</Description>
-							<Reference type="RULE">EUGEN-T19-R051</Reference>
-						</Attribute>
+						<Reference type="CODE_LIST">UNCL8273</Reference>
+
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:HazardClassID</Term>
-						<Name>Hazard class identifier</Name>
-						<Description>Provides detail of the classification and nature of a
-                            hazardous item.</Description>
+						<Name>Haszardous hazard class Identifier</Name>
+						<Description>Identifies a hazard class applicable to dangerous goods as
+								defined by the relevant regulation authority, such as the IMDG Class
+								Number of the SOLAS Convention ofIMO and the ADR/RID Class Number for
+								the road/rail environment.</Description>
+						<Reference>Identifier</Reference>
 						<Reference type="BUSINESS_TERM">tir19-073</Reference>
+
 					</Element>
 				</Element>
+
+
 				<Element cardinality="0..1">
 					<Term>cac:ClassifiedTaxCategory</Term>
 					<Name>Classified tax category</Name>
-					<Description/>
-					<Element cardinality="0..1">
+
+					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Item VAT category code</Name>
 						<Description>The VAT code that indicates what VAT details apply to the
                             item.</Description>
+						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-094</Reference>
 						<Reference type="RULE">CL-T19-004</Reference>
 						<Reference type="CODE_LIST">UNCL5305</Reference>
-						
+
 						<Value type="EXAMPLE">S</Value>
 					</Element>
 					<Element cardinality="0..1">
@@ -1582,19 +1703,19 @@
 						<Name>Item VAT precentage</Name>
 						<Description>The VAT percentage rate that applies to the item unless
                             specific trade reasons apply such as exemptions.</Description>
+						<DataType>Percentage</DataType>
 						<Reference type="BUSINESS_TERM">tir19-050</Reference>
 						<Value type="EXAMPLE">25</Value>
 					</Element>
 					<Element>
 						<Term>cac:TaxScheme</Term>
 						<Name>Tax scheme information</Name>
-						
 						<Element>
 							<Term>cbc:ID</Term>
 							<Description>Tax scheme. Use “VAT”</Description>
 							<Value type="DEFAULT">VAT</Value>
 						</Element>
-						
+
 					</Element>
 				</Element>
 				<Element cardinality="0..n">
@@ -1607,6 +1728,7 @@
 						<Description>The definition may be supplemented with
                             the property unit of measure when relevant.E.g. Size, Color,
                             Year.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-074</Reference>
 						<Value type="EXAMPLE">Size</Value>
 					</Element>
@@ -1615,6 +1737,7 @@
 						<Name>Item property value</Name>
 						<Description>The value of the item property.E.g. XXL, Blue,
                             2007.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-077</Reference>
 						<Reference type="RULE">BII2-T19-R027</Reference>
 						<Value type="EXAMPLE">XXL</Value>
@@ -1625,11 +1748,13 @@
 						<Description>The unit of measure in which the property value is stated, if
                             relevant. May not be relevant when properties are
                             descriptive.</Description>
+						<DataType>Quantity</DataType>
 						<Reference type="BUSINESS_TERM">tir19-070</Reference>
 						<Attribute>
 							<Term>unitCode</Term>
 							<Name>Value quantity units</Name>
 							<Description>The quantity units for value quantity. The value shoud be a valid UOM code like CS for case.</Description>
+							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">20</Reference>
 							<Reference type="RULE">OP-T19-002</Reference>
 							<Reference type="CODE_LIST">UNECERec20</Reference>
@@ -1642,6 +1767,7 @@
 						<Name>Property classification</Name>
 						<Description>Standardized and predefined classification of items
                             properties.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-103</Reference>
 						<Value type="EXAMPLE">Allergen</Value>
 					</Element>
@@ -1649,8 +1775,8 @@
 				<Element cardinality="0..1">
 					<Term>cac:ManufacturerParty</Term>
 					<Name>Manufacturer party</Name>
-					<Description/>
-					<Element cardinality="0..1">
+
+					<Element>
 						<Term>cac:PartyName</Term>
 						<Name>Party name</Name>
 						<Description/>
@@ -1658,6 +1784,7 @@
 							<Term>cbc:Name</Term>
 							<Name>Manufacturer party name</Name>
 							<Description>The name of the manufacturer of the item</Description>
+							<DataType>Text</DataType>
 							<Reference type="BUSINESS_TERM">tir19-075</Reference>
 							<Value type="EXAMPLE">Manufacturer</Value>
 						</Element>
@@ -1666,24 +1793,26 @@
 				<Element cardinality="0..n">
 					<Term>cac:ItemInstance</Term>
 					<Name>Item instance</Name>
-					<Description/>
+
 					<Element cardinality="0..1">
 						<Term>cbc:BestBeforeDate</Term>
 						<Name>Item best before date</Name>
 						<Description>Used to express the best before date of the item or items in
                             the line instance.</Description>
+						<DataType>Date</DataType>
 						<Reference type="BUSINESS_TERM">tir19-058</Reference>
 						<Value type="EXAMPLE">2018-08-01</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:LotIdentification</Term>
 						<Name>Lot identification</Name>
-						<Description/>
+
 						<Element cardinality="0..1">
 							<Term>cbc:LotNumberID</Term>
 							<Name>Item batch identifier</Name>
 							<Description>Identifies the production batch that the item(s) listed in
                                 the catalogue line were part of.</Description>
+							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir19-059</Reference>
 							<Value type="EXAMPLE">B-10</Value>
 						</Element>
@@ -1691,86 +1820,94 @@
 				</Element>
 				<Element cardinality="0..n">
 					<Term>cac:Certificate</Term>
-					<Name>Certificate</Name>
-					<Description/>
+					<Name>Item label information</Name>
+					<Description>Information about the items environmental, social, ethical and quality type of labelling.</Description>
+
+
 					<Element>
 						<Term>cbc:ID</Term>
-						<Name>Label name</Name>
+						<Name>Item label name</Name>
 						<Description>The name of the product label.</Description>
+						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-087</Reference>
-						<Attribute usage="Optional">
-							<Term>schemeID</Term>
-							<Name>Label name identifier identification scheme identifier</Name>
-							<Description>The identification scheme identifier of the Label name identifier. Optional, may be used in national extensions.</Description>
-						</Attribute>
-						<Value type="EXAMPLE">NEO</Value>
+						<Value type="EXAMPLE">EU EcoLabel</Value>
 					</Element>
 					<Element>
 						<Term>cbc:CertificateTypeCode</Term>
 						<Name>Certificate type code</Name>
-						<Description/>
+						<Description>The UBL structure used for item labeling requires this elements, 
+							use the value NA.</Description>
+						<DataType>Code</DataType>
+						<Value type="FIXED">NA</Value>
 					</Element>
 					<Element>
 						<Term>cbc:CertificateType</Term>
-						<Name>Label type</Name>
+						<Name>Item label type</Name>
 						<Description>The label type such environmental, quality, social
-                            etc.</Description>
+							etc.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-089</Reference>
-						<Value type="EXAMPLE">EcoLabel</Value>
+						<Value type="EXAMPLE">Environmental</Value>
 					</Element>
-					<Element cardinality="0..1">
+					<Element cardinality="0..n">
 						<Term>cbc:Remarks</Term>
-						<Name>Label value</Name>
-						<Description>The lable value that applies to the item.</Description>
+						<Name>Item label value</Name>
+						<Description>The label value that applies to the item.</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-088</Reference>
 						<Value type="EXAMPLE">Svanemerket</Value>
 					</Element>
 					<Element>
 						<Term>cac:IssuerParty</Term>
-						<Name>Issuer party</Name>
-						<Description/>
-						<Element cardinality="0..n">
+						<Name>Issuer party information</Name>
+
+						<Element>
 							<Term>cac:PartyName</Term>
 							<Name>Party name</Name>
-							<Description/>
+
 							<Element>
 								<Term>cbc:Name</Term>
-								<Name>Issuer party name</Name>
-								<Description>Value NA should be stated </Description>
+								<Name>Issuer name</Name>
+								<Description>The UBL structure used for item labeling requires this elements, 
+									use the value NA.</Description>
+								<DataType>Text</DataType>
+								<Value type="EXAMPLE">NA</Value>
 							</Element>
+
 						</Element>
 					</Element>
+
 					<Element cardinality="0..n">
 						<Term>cac:DocumentReference</Term>
-						<Name>Document reference</Name>
-						<Description/>
+						<Name>Label document</Name>
+
 						<Element>
 							<Term>cbc:ID</Term>
-							<Name>Label reference</Name>
-							<Description>A reference to where the label specification can be found,
-                                e.g. a URI.</Description>
+							<Name>Item label reference</Name>
+							<Description>A reference to where the label specification can be
+								found, e.g. a URI.</Description>
+							<DataType>Document reference</DataType>
 							<Reference type="BUSINESS_TERM">tir19-090</Reference>
+							<Value type="EXAMPLE">http://www.label.eu/test/</Value>
 						</Element>
 					</Element>
 				</Element>
+
+
 				<Element cardinality="0..n">
 					<Term>cac:Dimension</Term>
 					<Name>Dimension</Name>
-					<Description/>
+					
 					<Element>
 						<Term>cbc:AttributeID</Term>
 						<Name>Attribute Id</Name>
 						<Description>Description of requirments that relate to the transport of the
                             item itself or the orderable unit in which it is
                             contained.</Description>
+						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-104</Reference>
 						<Reference type="RULE">OP-T19-009</Reference>
-						<Attribute>
-							<Term>schemeID</Term>
-							<Name>Dimension attribute identifier identification scheme identifier</Name>
-							<Description>The identification scheme identifier of the dimension attribute identifier</Description>
-							<Reference type="RULE">EUGEN-T19-R053</Reference>
-						</Attribute>
+						
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:Measure</Term>
@@ -1791,54 +1928,33 @@
 						<Reference type="BUSINESS_TERM">OP-T19-037</Reference>
 						<Reference type="BUSINESS_TERM">OP-T19-017</Reference>
 						<Reference type="BUSINESS_TERM">OP-T19-016</Reference>
-						<Attribute>
-							<Term>unitCode</Term>
-							<Name>Measurement unit code list identifier</Name>
-							<Description>The unit of measure code list identifier that applies to the measurement</Description>
-							<Reference type="BUSINESS_TERM">20</Reference>
-							<Reference type="RULE">OP-T19-002</Reference>
-							<Reference type="CODE_LIST">UNECERec20</Reference>
-							<Value type="EXAMPLE">CMT</Value>
-						</Attribute>
+						<Reference type="CODE_LIST">UNCL6313</Reference>
+						
 					</Element>
 					<Element cardinality="0..n">
 						<Term>cbc:Description</Term>
 						<Name>Dimension description</Name>
 						<Description>Used for differentiating between measures with same
                             attributeID</Description>
+						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">OP-T19-038</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:MinimumMeasure</Term>
-						<Name>Minimum storage temperatureMinimum Storage Humidity</Name>
+						<Name>Minimum storage temperature or minimum Storage Humidity</Name>
 						<Description>The lower margin of the recommended storage temerature range
                             for the item.</Description>
 						<Reference type="BUSINESS_TERM">tir19-115OP-T19-015</Reference>
-						<Attribute>
-							<Term>unitCode</Term>
-							<Name>Minimum measurement unit code list identifier</Name>
-							<Description>The unit of measure code list identifier that applies to the minimum measurement</Description>
-							<Reference type="BUSINESS_TERM">20</Reference>
-							<Reference type="RULE">OP-T19-002</Reference>
-							<Reference type="CODE_LIST">UNECERec20</Reference>
-							<Value type="EXAMPLE">CMT</Value>
-						</Attribute>
+						<Reference type="CODE_LIST">UNCL6313</Reference>
+						
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:MaximumMeasure</Term>
-						<Name>Maximum storage temperatureMaximum Storage Humidity</Name>
+						<Name>Maximum storage temperature or maximum Storage Humidity</Name>
 						<Description>The upper margin of the recommended storage temerature range
                             for the item.</Description>
 						<Reference type="BUSINESS_TERM">tir19-116OP-T19-014</Reference>
-						<Attribute>
-							<Term>unitCode</Term>
-							<Name>Maximum measurement unit code list identifier</Name>
-							<Description>The unit of measure code list identifier that applies to the maximum measurement</Description>
-							<Reference type="BUSINESS_TERM">20</Reference>
-							<Reference type="RULE">OP-T19-002</Reference>
-							<Reference type="CODE_LIST">UNECERec20</Reference>
-							<Value type="EXAMPLE">CMT</Value>
-						</Attribute>
+						<Reference type="CODE_LIST">UNCL6313</Reference>
 					</Element>
 				</Element>
 			</Element>

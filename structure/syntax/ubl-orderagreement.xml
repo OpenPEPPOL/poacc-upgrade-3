@@ -815,9 +815,10 @@
                 <Term>cbc:ChargeIndicator</Term>
                 <Name>Charge indicator</Name>
                 <Description>Boolean indicator, charge ='true', allowance = 'false'</Description>
+                <DataType>Boolean</DataType>
                 <Reference type="BUSINESS_TERM">OP-110-001</Reference>
                 <Reference type="RULE">EUGEN-T110-R021</Reference>
-                <Reference type="CODE_LIST">AllowanceCharge</Reference>
+                <Reference type="CODE_LIST">TrueFalse</Reference>
                 <Value type="EXAMPLE">false</Value>
             </Element>
             <Element cardinality="0..n">
@@ -1349,7 +1350,7 @@
                                 <Name>Item standard identifier identification scheme identifier</Name>
                                 <Description>The identification scheme identifier of the Item standard identifier</Description>
                                 <Reference type="CODE_LIST">ICD</Reference>
-                                <Value type="EXAMPLE">0088</Value>
+                                <Value type="EXAMPLE">0160</Value>
                                 
                             </Attribute>
                             

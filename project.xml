@@ -93,7 +93,7 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/AllowanceCharge.xml</Path>
+        <Path>structure/codelist/TrueFalse.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
@@ -128,6 +128,13 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNECERec21-9e.xml</Path>
     </Resource>
-
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ActionCode.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/GS17009.xml</Path>
+    </Resource>
 
 </Project>

@@ -30,4 +30,6 @@ include::text.adoc[]
 
 include::binary.adoc[]
 
+include::boolean.adoc[]
+
 :leveloffset: -1
