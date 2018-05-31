@@ -106,7 +106,6 @@
                     period.</Description>
 				<DataType>Date</DataType>
 				<Reference type="BUSINESS_TERM">tir19-008</Reference>
-				<Reference type="RULE"/>
 				<Value type="EXAMPLE">2019-05-31</Value>
 			</Element>
 		</Element>
@@ -169,7 +168,6 @@
 			<Element cardinality="0..1">
 				<Term>cac:PartyIdentification</Term>
 				<Name>Party Identification</Name>
-				<Description/>
 				<Element>
 					<Term>cbc:ID</Term>
 					<Name>Catalogue Provider identifier</Name>
@@ -193,7 +191,7 @@
 			<Element cardinality="0..1">
 				<Term>cac:PartyName</Term>
 				<Name>Party name</Name>
-				<Description/>
+				
 				<Element>
 					<Term>cbc:Name</Term>
 					<Name>Provider trading name</Name>
@@ -217,6 +215,7 @@
                         and number.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-029a</Reference>
+					<Value type="EXAMPLE">Main street 1</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:AdditionalStreetName</Term>
@@ -226,6 +225,7 @@
                         house number in a complex or in a building.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-029b</Reference>
+					<Value type="EXAMPLE">Building 23</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:CityName</Term>
@@ -234,6 +234,7 @@
                         is written in full rather than as a code.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-029c</Reference>
+					<Value type="EXAMPLE">London</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:PostalZone</Term>
@@ -243,6 +244,7 @@
                         Code.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-029d</Reference>
+					<Value type="EXAMPLE">N12 W34</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:CountrySubentity</Term>
@@ -261,14 +263,14 @@
 						<Name>Catalogue Provider address line 3</Name>
 						<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
 						<DataType>Text</DataType>
-
+						<Value type="EXAMPLE">Use gate 34</Value>
 					</Element>
 				</Element>
 
 				<Element cardinality="0..1">
 					<Term>cac:Country</Term>
 					<Name>Country</Name>
-					<Description/>
+			
 					<Element>
 						<Term>cbc:IdentificationCode</Term>
 						<Name>Catalogue Provider Country code</Name>
@@ -296,6 +298,7 @@
                         registered.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-028b</Reference>
+					<Value type="EXAMPLE">Povider legal entity</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:CompanyID</Term>
@@ -304,6 +307,7 @@
                         the national company registrar.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-028a</Reference>
+					<Value type="EXAMPLE">8346294</Value>
 
 					<Attribute usage="Optional">
 						<Term>schemeID</Term>
@@ -312,12 +316,13 @@
 						<Reference type="CODE_LIST">ICD</Reference>
 						<Value type="EXAMPLE">0002</Value>
 					</Attribute>
+					<Value type="EXAMPLE">8346294</Value>
 				</Element>
 
 				<Element cardinality="0..1">
 					<Term>cac:RegistrationAddress</Term>
 					<Name>Registration Address</Name>
-					<Description/>
+				
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
 						<Name>Provider legal registration city</Name>
@@ -325,6 +330,7 @@
                             registered.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">OP-T19-028c</Reference>
+						<Value type="EXAMPLE">London</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:Country</Term>
@@ -342,7 +348,7 @@
 							<Reference type="BUSINESS_TERM">OP-T19-028d</Reference>
 							<Reference type="RULE">OP-T19-001</Reference>
 							<Reference type="CODE_LIST">ISO3166</Reference>
-							<Value type="EXAMPLE">DK</Value>
+							<Value type="EXAMPLE">UK</Value>
 						</Element>
 
 					</Element>
@@ -402,7 +408,7 @@
 			<Element cardinality="0..1">
 				<Term>cac:PartyName</Term>
 				<Name>Party name</Name>
-				<Description/>
+				
 				<Element>
 					<Term>cbc:Name</Term>
 					<Name>Receiver trading name</Name>
@@ -425,6 +431,7 @@
                         and number.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-031a</Reference>
+					<Value type="EXAMPLE">Hovedgaten 12</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:AdditionalStreetName</Term>
@@ -434,6 +441,7 @@
                         house number in a complex or in a building.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-031b</Reference>
+					<Value type="EXAMPLE">3rd floor</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:CityName</Term>
@@ -442,6 +450,7 @@
                         is written in full rather than as a code.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-031c</Reference>
+					<Value type="EXAMPLE">Copenhagen</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:PostalZone</Term>
@@ -451,6 +460,7 @@
                         Code.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-031d</Reference>
+					<Value type="EXAMPLE">98798</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:CountrySubentity</Term>
@@ -459,6 +469,7 @@
                         country by using text.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-031e</Reference>
+					<Value type="EXAMPLE">Jylland</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:AddressLine</Term>
@@ -469,8 +480,7 @@
 						<Name>Catalogue receiver address line 3</Name>
 						<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM"/>
-						<Reference type="RULE"/>
+						<Value type="EXAMPLE">Building 1</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
@@ -505,6 +515,7 @@
                         registered.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-030b</Reference>
+					<Value type="EXAMPLE">Registration name</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:CompanyID</Term>
@@ -521,6 +532,7 @@
 						<Reference type="CODE_LIST">ICD</Reference>
 						<Value type="EXAMPLE">0002</Value>
 					</Attribute>
+					<Value type="EXAMPLE">239478234</Value>
 
 				</Element>
 				<Element cardinality="0..1">
@@ -534,11 +546,12 @@
                             registered.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">OP-T19-030c</Reference>
+						<Value type="EXAMPLE">Stockholm</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:Country</Term>
 						<Name>Country</Name>
-						<Description/>
+						
 						<Element cardinality="0..1">
 							<Term>cbc:IdentificationCode</Term>
 							<Name>Receiver legal registration country</Name>
@@ -628,7 +641,7 @@
 				<Element cardinality="0..1">
 					<Term>cac:PostalAddress</Term>
 					<Name>Postal address</Name>
-					<Description/>
+					
 					<Element cardinality="0..1">
 						<Term>cbc:StreetName</Term>
 						<Name>Address line 1</Name>
@@ -677,12 +690,13 @@
 					<Element cardinality="0..1">
 						<Term>cac:AddressLine</Term>
 						<Name>Address Line</Name>
-						<Description/>
+				
 						<Element cardinality="0..1">
 							<Term>cbc:Line</Term>
 							<Name>Catalogue supplier address line 3</Name>
 							<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
 							<DataType>Text</DataType>
+							<Value type="EXAMPLE">3rd line</Value>
 						</Element>
 					</Element>
 					<Element cardinality="0..1">
@@ -708,7 +722,7 @@
 				<Element cardinality="0..1">
 					<Term>cac:Contact</Term>
 					<Name>Catalogue supplier contact</Name>
-					<Description/>
+					
 					<Element cardinality="0..1">
 						<Term>cbc:Name</Term>
 						<Name>Contact person name</Name>
@@ -764,6 +778,7 @@
 						<Reference type="RULE">OP-T19-005</Reference>
 						<Value type="EXAMPLE">0184</Value>
 					</Attribute>
+					<Value type="EXAMPLE">DK9234873</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
@@ -785,6 +800,7 @@
 							<Reference type="CODE_LIST">ICD</Reference>
 							<Value type="EXAMPLE">0184</Value>
 						</Attribute>
+						<Value type="EXAMPLE">DK93287241</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
@@ -799,6 +815,7 @@
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-079</Reference>
 						<Reference type="RULE">BII2-T19-R013</Reference>
+						<Value type="EXAMPLE">Customer</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
@@ -811,6 +828,7 @@
 						<Description>The name of the contact person.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-080</Reference>
+						<Value type="EXAMPLE">Jens Olesen</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:Telephone</Term>
@@ -819,6 +837,7 @@
                             direct number, this is that number.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-082</Reference>
+						<Value type="EXAMPLE">29347213412</Value>
 					</Element>
 
 					<Element cardinality="0..1">
@@ -828,6 +847,7 @@
                             direct e-mail this is that email.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-083</Reference>
+						<Value type="EXAMPLE">jens.olesen@test.dk</Value>
 					</Element>
 				</Element>
 			</Element>
@@ -842,6 +862,7 @@
 				<Description>Information about the general payment conditions</Description>
 				<DataType>Text</DataType>
 				<Reference type="BUSINESS_TERM">OP-T19-019</Reference>
+				<Value type="EXAMPLE">Net within 30 days</Value>
 			</Element>
 		</Element>
 		<Element cardinality="1..n">
@@ -1022,7 +1043,7 @@
 			<Element cardinality="0..n">
 				<Term>cac:ItemComparison</Term>
 				<Name>Item comparison</Name>
-				<Description/>
+			
 				<Element cardinality="0..1">
 					<Term>cbc:PriceAmount</Term>
 					<Name>Standardized unit price</Name>
@@ -1063,7 +1084,7 @@
 			<Element cardinality="0..n">
 				<Term>cac:ComponentRelatedItem</Term>
 				<Name>Component related item</Name>
-				<Description/>
+			
 				<Element cardinality="0..1">
 					<Term>cbc:ID</Term>
 					<Name>Item identifier</Name>
@@ -1287,7 +1308,7 @@
 					<Element cardinality="0..1">
 						<Term>cac:AddressLine</Term>
 						<Name>Address Line</Name>
-						<Description/>
+						
 						<Element cardinality="0..1">
 							<Term>cbc:Line</Term>
 							<Name>Applicable territory address line 3</Name>
@@ -1589,7 +1610,7 @@
 				<Element cardinality="0..1">
 					<Term>cac:OriginCountry</Term>
 					<Name>Origin country</Name>
-					<Description/>
+				
 					<Element>
 						<Term>cbc:IdentificationCode</Term>
 						<Name>Item origin country</Name>
@@ -1608,7 +1629,7 @@
 				<Element cardinality="0..n">
 					<Term>cac:CommodityClassification</Term>
 					<Name>Commodity classification</Name>
-					<Description/>
+					
 					<Element>
 						<Term>cbc:ItemClassificationCode</Term>
 						<Name>Item classification code</Name>
@@ -1779,7 +1800,7 @@
 					<Element>
 						<Term>cac:PartyName</Term>
 						<Name>Party name</Name>
-						<Description/>
+						
 						<Element>
 							<Term>cbc:Name</Term>
 							<Name>Manufacturer party name</Name>
