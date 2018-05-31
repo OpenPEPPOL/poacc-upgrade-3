@@ -3,7 +3,10 @@
 
     <Title>Boolean indicator</Title>
     <Identifier>TrueFalse</Identifier>
+    <Version>1.0</Version>
+    <Agency>OpenPEPPOL</Agency>
     <Subset>OpenPEPPOL</Subset>
+    
 
     <Code>
         <Id>true</Id>
