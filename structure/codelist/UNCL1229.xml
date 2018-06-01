@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>UNCL1229 Action code</Title>
-    <Identifier>UNCL1229-T76</Identifier>
+    <Identifier>UNCL1229</Identifier>
     <Version>D.17A</Version>
     <Agency>UN/CEFACT</Agency>
     <Subset>openPEPPOL</Subset>
@@ -16,10 +16,11 @@
         <Id>5</Id>
         <Name>Accepted without amendment.</Name>
         <Description>The Order line is accepted without changes.</Description>
+    </Code>
     <Code>
         <Id>7</Id>
         <Name>Not accepted</Name>
-        <Description>The Order line is rejected.<Description>
+        <Description>The Order line is rejected.</Description>
     </Code>
 
 </CodeList>

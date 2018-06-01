@@ -2,10 +2,10 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>UNCL1225 Message function code</Title>
-    <Identifier>UNCL1225-T76</Identifier>
+    <Identifier>UNCL1225</Identifier>
     <Version>D.17A</Version>
     <Agency>UN/CEFACT</Agency>
-    <Subset>openPEPPOL-T76</Subset>
+    <Subset>openPEPPOL</Subset>
 
     <Code>
         <Id>27</Id>

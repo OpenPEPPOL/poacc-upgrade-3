@@ -43,6 +43,13 @@
             <Reference type="BUSINESS_TERM">tir01-003</Reference>
             <Reference type="RULE">BII2-T01-R006</Reference>
         </Element>
+        <Element cardinality="0..1">
+            <Term>cbc:SalesOrderID</Term>
+            <Name>Sales order reference</Name>
+            <Description>An identifier of a referenced sales order, issued by the Seller.</Description>
+            <DataType>Document Reference</DataType>
+            <Value type="EXAMPLE">112233</Value>
+        </Element>
         <Element>
             <Term>cbc:IssueDate</Term>
             <Name>Order issue date</Name>
@@ -219,13 +226,6 @@
                 <Description>Positive identification of the reference such as a unique
                     identifier.</Description>
                 <Reference type="BUSINESS_TERM">tir01-019</Reference>
-            </Element>
-            <Element cardinality="0..1">
-                <Term>cbc:ContractType</Term>
-                <Name>Reference type</Name>
-                <Description>The short description of what is reference such as contract type,
-                    document type , meter etc.The type of Contract, expressed as text.</Description>
-                <Reference type="BUSINESS_TERM">tir01-020</Reference>
             </Element>
         </Element>
         <Element>

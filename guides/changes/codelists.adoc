@@ -20,5 +20,8 @@ MLR::
 * The type of the document being referred to, expressed as a code. This refers to UNCL1001, but I assume we here want to reflect which document type the answer applies to? Should we apply a subset?
 * Subset of UNCL4343? Only AP and RE?
 
+Catalogue::
+* Why not use UNCL1225 for ActionCode?
+
 Catalogue reponse::
 * Subset of UNCL4343? Only AP and RE?

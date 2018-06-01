@@ -39,6 +39,13 @@
             <Reference type="RULE">BII3-T110-R005</Reference>
             <Value type="EXAMPLE">0263bf48-9a55-4d15-adf5-2c2921036d1c</Value>
         </Element>
+        <Element cardinality="0..1">
+            <Term>cbc:SalesOrderID</Term>
+            <Name>Sales order reference</Name>
+            <Description>An identifier of a referenced sales order, issued by the Seller.</Description>
+            <DataType>Document Reference</DataType>
+            <Value type="EXAMPLE">112233</Value>
+        </Element>
         <Element>
             <Term>cbc:IssueDate</Term>
             <Name>Order agreement issue date</Name>

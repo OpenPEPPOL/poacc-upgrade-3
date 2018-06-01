@@ -6,6 +6,11 @@
 * Vat category in allowance/charge on header level in Order and Order Agreement
 * Add filename to attachments
 
+Order/order response::
+* Your ref into cbc:CustomerReference, instead of Buyer/Contact/ID.
+** Order agreement uses CustomerReference
+
+
 = Changes to BIS documents
 
 * Add information on semantic datatypes
@@ -16,6 +21,7 @@
 
 * Align full allowance charge class?
 ** Validate chargeindicator to be true or false?
+* Align cac:AdditionalItemProperty?
 * Party identification/EndpointID?
 ** Shared chapter on identifier must be updated
 ** Snippets/examples must be corrected
