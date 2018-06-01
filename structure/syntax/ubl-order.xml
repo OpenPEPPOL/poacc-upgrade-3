@@ -2,27 +2,20 @@
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
     <Term>Order</Term>
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Order-2</Namespace>
-    <Namespace prefix="cac"
-        >urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
-    <Namespace prefix="cbc"
-        >urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
+    <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
     <Document>
         <Term>ubl:Order</Term>
-        <Element>
-            <Term>cbc:UBLVersionID</Term>
-            <Name>UBL Version</Name>
-            <Description>The version of UBL the message is based on (2.1)</Description>
-            <Reference type="BUSINESS_TERM">2</Reference>
-            <Value type="EXAMPLE">2.1</Value>
-        </Element>
+
         <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Customization identifier</Name>
             <Description>Identifies the specification of content and rules that apply to the
                 transaction.</Description>
+            <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">tir01-001</Reference>
             <Reference type="RULE">BII2-T01-R001</Reference>
-            <Value type="EXAMPLE"
+            <Value type="FIXED"
                 >urn:www.cenbii.eu:transaction:biitrns001:ver2.0:extended:urn:www.peppol.eu:bis:peppol28a:ver1.0</Value>
         </Element>
         <Element>
@@ -30,6 +23,7 @@
             <Name>Profile identifier</Name>
             <Description>Identifies the BII profile or business process context in which the
                 transaction appears.</Description>
+            <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">tir01-002</Reference>
             <Reference type="RULE">BII2-T01-R002</Reference>
             <Value type="EXAMPLE">urn:www.cenbii.eu:profile:bii28:ver2.0</Value>
@@ -40,8 +34,10 @@
             <Description>A transaction instance must have an identifier. The identifier enables
                 referencing the transaction for various purposes such as from other transactions
                 that are part of the same process.</Description>
+            <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">tir01-003</Reference>
             <Reference type="RULE">BII2-T01-R006</Reference>
+            <Value type="EXAMPLE">0-123</Value>
         </Element>
         <Element cardinality="0..1">
             <Term>cbc:SalesOrderID</Term>
@@ -54,49 +50,50 @@
             <Term>cbc:IssueDate</Term>
             <Name>Order issue date</Name>
             <Description>The date on which the transaction instance was issued.</Description>
+            <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">tir01-004</Reference>
             <Reference type="RULE">BII2-T01-R004</Reference>
+            <Value type="EXAMPLE">2018-06-01</Value>
         </Element>
         <Element cardinality="0..1">
             <Term>cbc:IssueTime</Term>
             <Name>Order issue time</Name>
             <Description>The time assigned by the buyer on which the order was
                 issued.</Description>
+            <DataType>Time</DataType>
             <Reference type="BUSINESS_TERM">tir01-005</Reference>
+            <Value type="EXAMPLE">14:12:32</Value>
         </Element>
+        
         <Element cardinality="0..1">
             <Term>cbc:OrderTypeCode</Term>
             <Name>Consignment order indication</Name>
             <Description>"Indicates wether the order is a purchase order or consignement order.
                 Default is purchase order.</Description>
             <Reference type="BUSINESS_TERM">tir01-153</Reference>
-            <Reference type="RULE"/>
-            <Attribute>
-                <Term>listID</Term>
-                <Name></Name>
-                <Description></Description>
-            </Attribute>
+            <Reference type="CODE_LIST">UNCL1001-T01</Reference>
+            <Value type="EXAMPLE">105</Value>        
         </Element>
+        
         <Element cardinality="0..1">
             <Term>cbc:Note</Term>
             <Name>Document level textual note</Name>
             <Description>Free form text applying to the Order. This element may contain notes or
                 any other similar information that is not contained explicitly in another
                 structure.</Description>
+            <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">tir01-006</Reference>
+            <Value type="EXAMPLE">Packages of other sizes are OK</Value>
         </Element>
         <Element>
             <Term>cbc:DocumentCurrencyCode</Term>
             <Name>Currency</Name>
             <Description>The default currency for the order.</Description>
+            <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">tir01-007</Reference>
             <Reference type="RULE">OP-T01-002</Reference>
-            <Attribute>
-                <Term>listID</Term>
-                <Name></Name>
-                <Description></Description>
-                <Reference type="RULE">OP-T01-002</Reference>
-            </Attribute>
+            <Reference type="CODE_LIST">ISO4217</Reference>
+            <Value type="EXAMPLE">NOK</Value>
         </Element>
         <Element cardinality="0..1">
             <Term>cbc:AccountingCost</Term>
@@ -104,63 +101,64 @@
             <Description>Used by the buyer to specify a reference that should be repeated in e.g.
                 invoice to enable the buyer to automatically book e.g. to the right project, or
                 account.</Description>
+          <DataType>text</DataType>
             <Reference type="BUSINESS_TERM">tir01-008</Reference>
+            <Value type="EXAMPLE">1234:45435:243234</Value>
         </Element>
         <Element cardinality="0..1">
             <Term>cac:ValidityPeriod</Term>
-            <Name></Name>
-            <Description>Period the order is valid </Description>
+            <Name>Period the order is valid </Name>
+            
             <Element cardinality="0..1">
                 <Term>cbc:EndDate</Term>
                 <Name>Order validity end date</Name>
                 <Description>The end date for when the order is valid. The end date for the time
                     period within which the seller must respond.</Description>
+                <DataType>Date</DataType>
                 <Reference type="BUSINESS_TERM">tir01-009</Reference>
                 <Reference type="RULE">BII2-T01-R005</Reference>
+                <Value type="EXAMPLE">2018-06-02</Value>
             </Element>
         </Element>
+        
         <Element cardinality="0..1">
             <Term>cac:QuotationDocumentReference</Term>
-            <Name></Name>
             <Description>Reference to quotation which is basis for the order </Description>
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Quotation document reference</Name>
                 <Description>A requirement to give a unique reference to the quotation that is the
                     base for the order.</Description>
+                <DataType>Document reference</DataType>
                 <Reference type="BUSINESS_TERM">tir01-010</Reference>
             </Element>
         </Element>
         <Element cardinality="0..1">
             <Term>cac:OrderDocumentReference</Term>
-            <Name></Name>
             <Description>Order reference </Description>
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Order document reference</Name>
                 <Description>Used to reference the initial order that was rejected and a new order
                     is issued.</Description>
+                <DataType>Document reference</DataType>
                 <Reference type="BUSINESS_TERM">tir01-011</Reference>
             </Element>
         </Element>
         <Element cardinality="0..1">
             <Term>cac:OriginatorDocumentReference</Term>
-            <Name></Name>
             <Description>Reference to originator document </Description>
+           
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Originator document reference</Name>
                 <Description>A reference to Originator Document. To be able to give a reference to
                     the internal requesition on the buyer site on which the order is
                     based.</Description>
-                <Reference type="BUSINESS_TERM">tir01-012</Reference>
+                <DataType>Document reference</DataType>
+                <Reference type="BUSINESS_TERM">tir01-012</Reference>        
             </Element>
-            <Element cardinality="0..1">
-                <Term>cbc:DocumentType</Term>
-                <Name>Originator document description</Name>
-                <Description>Originator document description.</Description>
-                <Reference type="BUSINESS_TERM">tir01-013</Reference>
-            </Element>
+            
         </Element>
         <Element cardinality="0..n">
             <Term>cac:AdditionalDocumentReference</Term>
@@ -1134,6 +1132,44 @@
                     <Reference type="RULE">OP-T01-007</Reference>
                 </Attribute>
             </Element>
+            
+            <Element>
+                <Term>cac:TaxCategory</Term>
+                <Name>TAX CATEGORY</Name>
+                
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Document level allowance or charge VAT category code</Name>
+                    <Description>A coded identification of what VAT category applies to the document level allowance or charge.</Description>
+                    <DataType>Code</DataType>
+                    <Reference type="CODE_LIST">UNCL5305</Reference>
+                    <Value type="EXAMPLE">S</Value>
+                    
+                    
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:Percent</Term>
+                    <Name>Document level allowance or charge VAT rate</Name>
+                    <Description>The VAT rate, represented as percentage that applies to the document level allowance or charge.</Description>
+                    <DataType>Percentage</DataType>
+                    <Value type="EXAMPLE">25.00</Value>
+                    
+                </Element>
+                
+                <Element>
+                    <Term>cac:TaxScheme</Term>
+                    <Name>Tax scheme information</Name>
+                    
+                    <Element>
+                        <Term>cbc:ID</Term>
+                        <Description>Tax scheme. Use “VAT”</Description>
+                        <DataType>Identifier</DataType>
+                        <Value type="DEFAULT">VAT</Value>
+                    </Element>
+                </Element>
+            </Element>
+            
         </Element>
         <Element cardinality="0..1">
             <Term>cac:TaxTotal</Term>

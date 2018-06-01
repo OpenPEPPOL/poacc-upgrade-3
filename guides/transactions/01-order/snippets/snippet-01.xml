@@ -3,9 +3,6 @@
     xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2"
     xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-  <!-- tag::ubl-version[] -->
-   <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
-  <!-- end::ubl-version[] -->
   <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns001:ver2.0:extended:urn:www.peppol.eu:bis:peppol03a:ver2.0</cbc:CustomizationID>
   <cbc:ProfileID>urn:www.cenbii.eu:profile:bii03:ver2.0</cbc:ProfileID>
   <cbc:ID>1</cbc:ID>
@@ -27,20 +24,20 @@
   <!-- end::attachment[] -->
   <cac:Contract>
     <cbc:ID>C1</cbc:ID>
-    <cbc:ContractType>Framework agreement</cbc:ContractType>
   </cac:Contract>
   <!-- tag::buyer[] -->
   <cac:BuyerCustomerParty>
     <cac:Party>
+      <cbc:EndpointID schemeID="SE:ORGNR">5541277711</cbc:EndpointID>
       <cac:PartyIdentification>
-        <cbc:ID schemeID="SE:ORGNR">5541277711</cbc:ID>
+        <cbc:ID schemeID="0007">5541277711</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyName>
         <cbc:Name>City Hospital</cbc:Name>
       </cac:PartyName>
       <cac:PartyLegalEntity>
         <cbc:RegistrationName>City Hospital 345433</cbc:RegistrationName>
-        <cbc:CompanyID schemeID="SE:ORGNR">5541277711</cbc:CompanyID>
+        <cbc:CompanyID schemeID="0007">5541277711</cbc:CompanyID>
         <cac:RegistrationAddress>
           <cbc:CityName>Eurocity</cbc:CityName>
           <cac:Country>
@@ -63,7 +60,7 @@
     <cac:Party>
       <cbc:EndpointID schemeID="NO:ORGNR">222333222</cbc:EndpointID>
       <cac:PartyIdentification>
-        <cbc:ID schemeID="NO:ORGNR">NO222333222</cbc:ID>
+        <cbc:ID schemeID="0192">NO222333222</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyName>
         <cbc:Name>Cod Liver Oil Limited</cbc:Name>
@@ -81,7 +78,6 @@
       <cac:Contact>
         <cbc:Name>Öystein</cbc:Name>
         <cbc:Telephone>+47555444333</cbc:Telephone>
-        <cbc:Telefax>+47555444322</cbc:Telefax>
         <cbc:ElectronicMail>oystein@codliveroil.no</cbc:ElectronicMail>
       </cac:Contact>
     </cac:Party>
@@ -91,7 +87,7 @@
   <cac:OriginatorCustomerParty>
     <cac:Party>
       <cac:PartyIdentification>
-        <cbc:ID schemeID="GLN">1234567809876</cbc:ID>
+        <cbc:ID schemeID="0088">1234567809876</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyName>
         <cbc:Name>Surgery Department</cbc:Name>
@@ -110,7 +106,7 @@
     <cac:Party>
       <cbc:EndpointID schemeID="SE:ORGNR">5544332211</cbc:EndpointID>
       <cac:PartyIdentification>
-        <cbc:ID schemeID="SE:ORGNR">5544332211</cbc:ID>
+        <cbc:ID schemeID="0007">5544332211</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyName>
         <cbc:Name>Swedish Hospitals</cbc:Name>
@@ -232,7 +228,7 @@
         </cac:SellersItemIdentification>
          
         <cac:StandardItemIdentification>
-          <cbc:ID schemeID="GTIN">05704066204093</cbc:ID>
+          <cbc:ID schemeID="0160">05704066204093</cbc:ID>
         </cac:StandardItemIdentification>
          <!-- end::prod-id[] -->
         <cac:ClassifiedTaxCategory>
@@ -272,7 +268,7 @@
           <cbc:ID>SN-34</cbc:ID>
         </cac:SellersItemIdentification>
         <cac:StandardItemIdentification>
-          <cbc:ID schemeID="GTIN">08722700575887</cbc:ID>
+          <cbc:ID schemeID="0160">08722700575887</cbc:ID>
         </cac:StandardItemIdentification>
         <cac:ClassifiedTaxCategory>
           <cbc:ID>S</cbc:ID>
@@ -303,7 +299,7 @@
           <cbc:ID>SN-35</cbc:ID>
         </cac:SellersItemIdentification>
         <cac:StandardItemIdentification>
-          <cbc:ID schemeID="GTIN">08722700577584</cbc:ID>
+          <cbc:ID schemeID="0160">08722700577584</cbc:ID>
         </cac:StandardItemIdentification>
         <cac:ClassifiedTaxCategory>
           <cbc:ID>S</cbc:ID>
