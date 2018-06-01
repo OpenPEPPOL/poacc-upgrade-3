@@ -19,3 +19,6 @@
 * Party identification/EndpointID?
 ** Shared chapter on identifier must be updated
 ** Snippets/examples must be corrected
+
+Catalogue response::
+* Document response is set to optional, is this correct?
