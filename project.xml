@@ -112,10 +112,10 @@
         <Path>structure/codelist/UNCL7143.xml</Path>
         <Title>Item classification code</Title>
     </Resource>
-    <Resource>
+    <!-- <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL1001-full.xml</Path>
-    </Resource>
+    </Resource> -->
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL8273.xml</Path>

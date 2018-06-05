@@ -307,7 +307,6 @@
                         the national company registrar.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-028a</Reference>
-					<Value type="EXAMPLE">8346294</Value>
 
 					<Attribute usage="Optional">
 						<Term>schemeID</Term>
@@ -1696,7 +1695,7 @@
 								defined by the relevant regulation authority, such as the IMDG Class
 								Number of the SOLAS Convention ofIMO and the ADR/RID Class Number for
 								the road/rail environment.</Description>
-						<Reference>Identifier</Reference>
+						<!-- <Reference>Identifier</Reference> -->
 						<Reference type="BUSINESS_TERM">tir19-073</Reference>
 
 					</Element>
