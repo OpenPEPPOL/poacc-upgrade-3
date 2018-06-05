@@ -1,0 +1,130 @@
+
+= Allowance charge in different BIS documents
+
+Transactions with no AllowanceCharge information:
+
+* Catalogue
+* Catalogue response
+* Order response
+* Punch out
+* Despatch DespatchAdvice
+* MLR
+
+
+== To be decided
+. Include reason code, base amount and multiplier for order and order agreement?
+. Allowance/charge on line level for order and order agreement?
+. Allowance on price for order agreement?
+. Only allow allowance on price for order?
+
+
+.Document level
+[cols="2h,^2,^2, 2", options="header"]
+|===
+
+|
+| Billing 3.0
+| Order (01)
+| Order Agreement (110)
+
+| Allowance reason text
+a| icon:check [role="green"]
+a| icon:check [role="green"]
+a| icon:check [role="green"]
+
+
+
+
+| Allowance reason code
+a| icon:check [role="green"]
+|
+|
+
+
+| Multiplier(percentage)
+a| icon:check [role="green"]
+|
+|
+
+
+| Base amount
+a| icon:check [role="green"]
+|
+|
+
+| Amount
+a| icon:check [role="green"]
+a| icon:check [role="green"]
+a| icon:check [role="green"]
+
+| VAT Category
+a| icon:check [role="green"]
+| Agreed to add
+| Agreed to add
+
+|===
+
+
+.Line level
+[cols="2h,^2,^2, 2", options="header"]
+|===
+
+|
+| Billing 3.0
+| Order (01)
+| Order Agreement (110)
+
+| Allowance reason text
+a| icon:check [role="green"]
+|
+|
+
+
+| Allowance reason code
+a| icon:check [role="green"]
+|
+|
+
+
+| Multiplier(percentage)
+a| icon:check [role="green"]
+|
+|
+
+
+| Base amount
+a| icon:check [role="green"]
+|
+|
+
+| Amount
+a| icon:check [role="green"]
+|
+|
+
+|===
+
+.Price level
+[cols="2h,^2,^2, 2", options="header"]
+|===
+
+|
+| Billing 3.0
+| Order (01)
+| Order Agreement (110)
+
+
+| Base amount
+a| icon:check [role="green"]
+a| icon:check [role="green"]
+|
+
+
+| Amount
+a| icon:check [role="green"]
+a| icon:check [role="green"]
+|
+
+|===
+
+IMPORTANT: In the Billing BIS, only allowance is allowed at price level. In the order, both allowance and charge is allowed
