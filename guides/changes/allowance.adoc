@@ -28,37 +28,37 @@ Transactions with no AllowanceCharge information:
 | Order Agreement (110)
 
 | Allowance reason text
-a| icon:check [role="green"]
-a| icon:check [role="green"]
-a| icon:check [role="green"]
+a| X
+a| X
+a| X
 
 
 
 
 | Allowance reason code
-a| icon:check [role="green"]
+a| X
 |
 |
 
 
 | Multiplier(percentage)
-a| icon:check [role="green"]
+a| X
 |
 |
 
 
 | Base amount
-a| icon:check [role="green"]
+a| X
 |
 |
 
 | Amount
-a| icon:check [role="green"]
-a| icon:check [role="green"]
-a| icon:check [role="green"]
+a| X
+a| X
+a| X
 
 | VAT Category
-a| icon:check [role="green"]
+a| X
 | Agreed to add
 | Agreed to add
 
@@ -75,30 +75,30 @@ a| icon:check [role="green"]
 | Order Agreement (110)
 
 | Allowance reason text
-a| icon:check [role="green"]
+a| X
 |
 |
 
 
 | Allowance reason code
-a| icon:check [role="green"]
+a| X
 |
 |
 
 
 | Multiplier(percentage)
-a| icon:check [role="green"]
+a| X
 |
 |
 
 
 | Base amount
-a| icon:check [role="green"]
+a| X
 |
 |
 
 | Amount
-a| icon:check [role="green"]
+a| X
 |
 |
 
@@ -115,14 +115,14 @@ a| icon:check [role="green"]
 
 
 | Base amount
-a| icon:check [role="green"]
-a| icon:check [role="green"]
+a| X
+a| X
 |
 
 
 | Amount
-a| icon:check [role="green"]
-a| icon:check [role="green"]
+a| X
+a| X
 |
 
 |===
