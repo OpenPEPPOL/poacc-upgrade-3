@@ -1,4 +1,13 @@
 = Overview of changes/remarks of alignment
+:doctype: book
+:icons: font
+:stem:
+:toc: left
+:toclevels: 2
+:source-highlighter: coderay
+:source-language: xml
+:sectanchors:
+:sectnums:
 
 :leveloffset: +1
 
