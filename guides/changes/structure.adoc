@@ -5,10 +5,12 @@
 * Align label elements in Order Agreement and Punchout
 * Vat category in allowance/charge on header level in Order and Order Agreement
 * Add filename to attachments
+* Align contact classes, use name, telephone and email.
 
 Order/order response::
 * Your ref into cbc:CustomerReference, instead of Buyer/Contact/ID.
 ** Order agreement uses CustomerReference
+* AccountingCustomerParty, use Contact ID or Name?
 
 
 = Changes to BIS documents
@@ -25,6 +27,8 @@ Order/order response::
 * Party identification/EndpointID?
 ** Shared chapter on identifier must be updated
 ** Snippets/examples must be corrected
+* Attachments on header and line level. Align?
+
 
 Catalogue response::
 * Document response is set to optional, is this correct?
