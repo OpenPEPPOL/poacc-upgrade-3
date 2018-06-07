@@ -42,7 +42,7 @@ the response is authentic.
 [[header-1]]
 === Header
 
-[cols=",",options="header",]
+[cols="1,5",options="header",]
 |====
 |*ID* a|
 
