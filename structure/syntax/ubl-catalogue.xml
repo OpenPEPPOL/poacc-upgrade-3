@@ -260,7 +260,7 @@
 
 					<Element cardinality="0..1">
 						<Term>cbc:Line</Term>
-						<Name>Catalogue Provider address line 3</Name>
+						<Name>Address line 3</Name>
 						<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
 						<DataType>Text</DataType>
 						<Value type="EXAMPLE">Use gate 34</Value>
@@ -476,7 +476,7 @@
 
 					<Element cardinality="0..1">
 						<Term>cbc:Line</Term>
-						<Name>Catalogue receiver address line 3</Name>
+						<Name>Address line 3</Name>
 						<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
 						<DataType>Text</DataType>
 						<Value type="EXAMPLE">Building 1</Value>
@@ -692,7 +692,7 @@
 				
 						<Element cardinality="0..1">
 							<Term>cbc:Line</Term>
-							<Name>Catalogue supplier address line 3</Name>
+							<Name>Address line 3</Name>
 							<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
 							<DataType>Text</DataType>
 							<Value type="EXAMPLE">3rd line</Value>
@@ -1310,7 +1310,7 @@
 						
 						<Element cardinality="0..1">
 							<Term>cbc:Line</Term>
-							<Name>Applicable territory address line 3</Name>
+							<Name>Address line 3</Name>
 							<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
 							<DataType>Text</DataType>
 
