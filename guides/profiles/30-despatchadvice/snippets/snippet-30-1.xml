@@ -50,6 +50,9 @@
 				<cbc:CityName>Reciever City</cbc:CityName>
 				<cbc:PostalZone>9000</cbc:PostalZone>
 				<cbc:CountrySubentity>Region A</cbc:CountrySubentity>
+				<cac:AddressLine>
+					<cbc:Line>Gate 34</cbc:Line>
+				</cac:AddressLine>
 				<cac:Country>
 					<cbc:IdentificationCode>DK</cbc:IdentificationCode>
 				</cac:Country>
