@@ -28,6 +28,9 @@ Order/order response::
 ** Shared chapter on identifier must be updated
 ** Snippets/examples must be corrected
 * Attachments on header and line level. Align?
+* BIS Common text and introduction
+** Convert to AsciiDoc
+** Review chapters 3.1, 3.6 and 3.8 specifically
 
 
 Catalogue response::
