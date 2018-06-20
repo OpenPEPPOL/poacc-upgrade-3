@@ -4,6 +4,7 @@
     <Name>PEPPOL BIS Upgrade 3.0</Name>
 
     <Documentation path="changes/">Overview and remarks on alignment work</Documentation>
+    <Documentation path="review/">Review of alignments</Documentation>
 
     <!-- BIS documents --> 
     <Documentation path="profiles/3-order-only/">Order only BIS (Business Interoperability Specifications)</Documentation>
