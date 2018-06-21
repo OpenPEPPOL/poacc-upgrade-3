@@ -1,13 +1,13 @@
-= Status code
+= Line status code
 
 [cols="1,4"]
 |===
 h| Qualifier
-| `UNCL1225` (listID)
+| `UNCL1229` (listID)
 h| Document location
-| `cbc:OrderResponseCode`
+| `cbc:LineStatusCode`
 h| Source codelist
-a| Subset of {UNCL1225}.
+a| Subset of {UNCL1229}.
 |===
 
 Valid values are listed in the table below:

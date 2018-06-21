@@ -58,7 +58,7 @@
 |fatal
 
 |EUGEN-T76-R004
-|A response line status code MUST have a list identifier attribute “UNCL1225”
+|A line response status code MUST have a list identifier attribute “UNCL1229”
 |fatal
 
 |====

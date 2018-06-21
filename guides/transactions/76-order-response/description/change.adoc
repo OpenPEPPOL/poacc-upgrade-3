@@ -3,9 +3,9 @@
 
 * When Seller accepts an order with changes, the response code «30» must be sent on header level.
 * On line level there may be a mix of different response codes.
-* Some lines may have been accepted (response code 29), some rejected (response code 27) and some changed (response code 30).
+* Some lines may have been accepted without amendments (line response code 5), some not accepted (line response code 7) and some changed (line response code 3).
 
-* If line response code = 30, the elements to be changed must be sent with new values.
+* If line response code = 3, the elements to be changed must be sent with new values.
 
 ** The following elements can be changed:
 
