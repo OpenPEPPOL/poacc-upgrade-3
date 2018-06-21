@@ -5,7 +5,7 @@
 |====
 |Identifier |Business Rule
 |OP-T76-001 |An order response code MUST be coded according to the code list UNCL1225.
-|OP-T76-002 |An order response line status code MUST be coded according to the code list UNCL1225.
+|OP-T76-002 |An order response line status code MUST be coded according to the code list UNCL1229.
 |OP-T76-003 |DocumentCurrencyCode MUST be coded using ISO code list 4217
 |OP-T76-004 |An Enpoint Identifier Scheme identifier MUST be from the code list PEPPOL Party Identifier
 |OP-T76-005 |An Party Identifier Scheme identifier MUST be from the code list PEPPOL Party Identifier

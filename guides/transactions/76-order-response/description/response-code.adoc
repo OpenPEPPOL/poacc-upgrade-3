@@ -51,14 +51,22 @@ include::../snippets/snippet-1.xml[tags=response-header]
 |====
 |Response line code
 |Action
+
+|1
+|The Order line is Added.
+
 |3
-|Th Order line is Changed.
+|The Order line is Changed.
 
 |5
 |The Order line is Accepted without amendment.
 
 |7
 |The Order line is Not accepted.
+
+|42
+|The Order line is Already delivered.
+
 |====
 
 

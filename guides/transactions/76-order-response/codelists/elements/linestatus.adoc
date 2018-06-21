@@ -18,13 +18,19 @@ Valid values are listed in the table below:
 | Code
 | Description
 
-| 27
-| Not accepted
+| 1
+| Order line is Added.
 
-| 29
-| Accepted
+| 3
+| Order line is Changed.
 
-| 30
-| Accepted with amendment in detail section
+| 5
+|Order line is Accepted without amendments.
+
+| 7
+|Order line is Not accepted.
+
+| 42
+|Order line is Already delivered.
 
 |===
