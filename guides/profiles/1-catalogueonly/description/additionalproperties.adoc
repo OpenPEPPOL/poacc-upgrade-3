@@ -14,8 +14,13 @@ Stated with amount per 100 g/ml.
 Legal values: True, False
 
 
-.Example:
+.Example simple:
 [source, xml, indent=0]
 ----
 include::../snippets/Snippet-1-1.xml[tags=color]
+
+.Example showing code properties:
+[source, xml, indent=0]
+----
+include::../snippets/Snippet-1-1.xml[tags=allergen]
 ----

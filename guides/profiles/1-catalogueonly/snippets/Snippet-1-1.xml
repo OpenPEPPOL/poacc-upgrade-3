@@ -195,6 +195,15 @@
 				<cbc:ValueQualifier>Color</cbc:ValueQualifier>
 			</cac:AdditionalItemProperty>
 			<!-- end::color[] -->
+			<!-- tag::allergen[] -->
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Allergens</cbc:Name>
+				<cbc:NameCode listID="CodeListID">Allergens</cbc:NameCode>
+				<cbc:Value>Item contains 5% hazelnuts by volume.</cbc:Value>
+				<cbc:ValueQuantity unit="60">5</cbc:ValueQuantity>
+				<cbc:ValueQualifier>HAZELNUTS</cbc:ValueQualifier>
+			</cac:AdditionalItemProperty>
+			<!-- end::allergen[] -->
 			<!-- tag::product-id[] -->
 			<!-- Code omitted for clarity -->
 			<cac:ManufacturerParty>
