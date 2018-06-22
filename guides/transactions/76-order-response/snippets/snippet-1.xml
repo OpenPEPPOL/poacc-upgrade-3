@@ -181,4 +181,78 @@
     </cac:OrderLineReference>
   </cac:OrderLine>
   <!-- end::line-change4[] -->
+  <!-- tag::line-change5[] -->
+  <cac:OrderLine>
+    <cac:LineItem>
+      <cbc:ID>1</cbc:ID>
+      <cbc:LineStatusCode>5</cbc:LineStatusCode>
+      <cac:Item>
+        <cbc:Name>Product A</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>Pr00A</cbc:ID>
+        </cac:SellersItemIdentification>
+      </cac:Item>
+    </cac:LineItem>
+    <cac:OrderLineReference>
+      <cbc:LineID>1</cbc:LineID>
+    </cac:OrderLineReference>
+  </cac:OrderLine>
+  <cac:OrderLine>
+    <cac:LineItem>
+      <cbc:ID>2</cbc:ID>
+      <cbc:LineStatusCode>1</cbc:LineStatusCode>
+      <cbc:Quantity unit="C62">2</cbc:Quantity>
+      <cac:Delivery>
+        <cac:PromisedDeliveryPeriod>
+          <cbc:StartDate>2018-07-01</cbc:StartDate>
+        </cac:PromisedDeliveryPeriod>
+      </cac:Delivery>
+      <cac:Item>
+        <cbc:Name>Product B</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>Pr00B</cbc:ID>
+        </cac:SellersItemIdentification>
+      </cac:Item>
+    </cac:LineItem>
+    <cac:OrderLineReference>
+      <cbc:LineID>2</cbc:LineID>
+    </cac:OrderLineReference>
+  </cac:OrderLine>
+  <cac:OrderLine>
+    <cac:LineItem>
+      <cbc:ID>3</cbc:ID>
+      <cbc:LineStatusCode>1</cbc:LineStatusCode>
+      <cbc:Quantity unit="C62">1</cbc:Quantity>
+      <cac:Delivery>
+        <cac:PromisedDeliveryPeriod>
+          <cbc:StartDate>2018-07-05</cbc:StartDate>
+        </cac:PromisedDeliveryPeriod>
+      </cac:Delivery>
+      <cac:Item>
+        <cbc:Name>Product B</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>Pr00B</cbc:ID>
+        </cac:SellersItemIdentification>
+      </cac:Item>
+    </cac:LineItem>
+    <cac:OrderLineReference>
+      <cbc:LineID>2</cbc:LineID>
+    </cac:OrderLineReference>
+  </cac:OrderLine>
+  <cac:OrderLine>
+    <cac:LineItem>
+      <cbc:ID>4</cbc:ID>
+      <cbc:LineStatusCode>42</cbc:LineStatusCode>
+      <cac:Item>
+        <cbc:Name>Product C</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>Pr00C</cbc:ID>
+        </cac:SellersItemIdentification>
+      </cac:Item>
+    </cac:LineItem>
+    <cac:OrderLineReference>
+      <cbc:LineID>3</cbc:LineID>
+    </cac:OrderLineReference>
+  </cac:OrderLine>
+  <!-- end::line-change5[] -->
 </OrderResponse>
