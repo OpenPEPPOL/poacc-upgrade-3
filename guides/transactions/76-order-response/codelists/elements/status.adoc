@@ -18,6 +18,9 @@ Valid values are listed in the table below:
 | Code
 | Description
 
+| 12
+| Not processed
+
 | 27
 | Not accepted
 
