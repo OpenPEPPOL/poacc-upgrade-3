@@ -346,20 +346,12 @@
 					<Value type="EXAMPLE">10</Value>
 				</Element>
 				<Element cardinality="0..1">
-					<Term>cbc:Quantity</Term>
-					<Name>Quantity</Name>
-					<Description>The quantity of items that will be delivered.</Description>
+					<Term>cbc:MaximumBackorderQuantity</Term>
+					<Name>Maximum backorder quantity</Name>
+					<Description>The quantity of items that will be delivered at a later time. A unit for the backordered quantity is the same as for the Quantity. If all quantity is backordered the Quantity for the response line should be provided as 0 "zero".</Description>
 					<DataType>Quantity</DataType>
-					<Reference type="BUSINESS_TERM">tir76-132</Reference>
-					<Attribute>
-						<Term>unitCode</Term>
-						<Name>Ordered quantity unit of measure</Name>
-						<Description>The unit of measure that applies to the ordered quantity.</Description>
-						<DataType>Code</DataType>
-						<Reference type="CODE_LIST">UNECERec20</Reference>
-						<Value type="EXAMPLE">C62</Value>
-					</Attribute>
-					<Value type="EXAMPLE">10</Value>
+					<Reference type="BUSINESS_TERM">OP-T76-005</Reference>
+					<Value type="EXAMPLE">3</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:Delivery</Term>
@@ -415,7 +407,7 @@
 						<Name>Item price base quantity</Name>
 						<Description>The actual quantity to which the price applies.</Description>
 						<DataType>Quantity</DataType>
-						<Reference type="BUSINESS_TERM">tir04-131</Reference>
+						<Reference type="BUSINESS_TERM">tir76-131</Reference>
 						<Attribute>
 							<Term>unitCode</Term>
 							<Name>Base quantity unit of measure</Name>

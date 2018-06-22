@@ -255,4 +255,28 @@
     </cac:OrderLineReference>
   </cac:OrderLine>
   <!-- end::line-change5[] -->
+  <!-- tag::line-backorder[] -->
+  <cac:OrderLine>
+    <cac:LineItem>
+      <cbc:ID>1</cbc:ID>
+      <cbc:LineStatusCode>3</cbc:LineStatusCode>
+      <cbc:Quantity unit="C62">2</cbc:Quantity>
+      <cbc:MaximumBackorderQuantity>3</cbc:MaximumBackorderQuantity>
+      <cac:Delivery>
+        <cac:PromisedDeliveryPeriod>
+          <cbc:StartDate>2018-07-05</cbc:StartDate>
+        </cac:PromisedDeliveryPeriod>
+      </cac:Delivery>
+      <cac:Item>
+        <cbc:Name>Product D</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>Pr00D</cbc:ID>
+        </cac:SellersItemIdentification>
+      </cac:Item>
+    </cac:LineItem>
+    <cac:OrderLineReference>
+      <cbc:LineID>1</cbc:LineID>
+    </cac:OrderLineReference>
+  </cac:OrderLine>
+  <!-- end::line-backorder[] -->
 </OrderResponse>
