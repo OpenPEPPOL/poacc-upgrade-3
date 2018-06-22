@@ -1469,13 +1469,20 @@
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cbc:NameCode</Term>
-							<Name>Item property classification code</Name>
+							<Name>Item property code</Name>
 							<Description>Code for the item property according to a property code
                                 system</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir110-101</Reference>
+							<Attribute>
+								<Term>listID</Term>
+								<Name>Name code list id.</Name>
+								<Description>An identifier for the code list used for the Name code.</Description>
+								<Reference type="CODE_LIST">Bilaterally agreed</Reference>
+								<!-- <Value type="EXAMPLE">0160</Value> -->
+							</Attribute>
 						</Element>
-						<Element>
+						<Element cardinality="0..1">
 							<Term>cbc:Value</Term>
 							<Name>Item property value</Name>
 							<Description>The value of the item property.</Description>
@@ -1517,7 +1524,7 @@
 						<Element>
 							<Term>cbc:CertificateTypeCode</Term>
 							<Name>Certificate type code</Name>
-							<Description>The UBL structure used for item labeling requires this elements, 
+							<Description>The UBL structure used for item labeling requires this elements,
                                 use the value NA.</Description>
 							<DataType>Code</DataType>
 							<Value type="FIXED">NA</Value>
@@ -1549,7 +1556,7 @@
 								<Element>
 									<Term>cbc:Name</Term>
 									<Name>Issuer name</Name>
-									<Description>The UBL structure used for item labeling requires this elements, 
+									<Description>The UBL structure used for item labeling requires this elements,
                                         use the value NA.</Description>
 									<DataType>Text</DataType>
 									<Value type="EXAMPLE">NA</Value>

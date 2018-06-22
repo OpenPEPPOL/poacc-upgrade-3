@@ -203,8 +203,8 @@
 					<cbc:EndTime>18:00:00</cbc:EndTime>
 				</cac:PromisedDeliveryPeriod>
 			</cac:Delivery>
-			
-			
+
+
 			<!-- tag::price[] -->
 			<cac:Price>
 				<cbc:PriceAmount currencyID="EUR">50</cbc:PriceAmount>
@@ -247,7 +247,7 @@
 				</cac:ClassifiedTaxCategory>
 				<cac:AdditionalItemProperty>
 					<cbc:Name>Property name</cbc:Name>
-					<cbc:NameCode>NameCode</cbc:NameCode>
+					<cbc:NameCode listID="PropertyCodeList">NameCode</cbc:NameCode>
 					<cbc:Value>Property value</cbc:Value>
 					<cbc:ValueQuantity unitCode="C62">1</cbc:ValueQuantity>
 				</cac:AdditionalItemProperty>
