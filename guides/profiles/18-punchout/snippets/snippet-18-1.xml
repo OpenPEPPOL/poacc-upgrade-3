@@ -14,10 +14,10 @@
 	<cbc:ActionCode>true</cbc:ActionCode>
 	<!-- end::actioncode[] -->
 	<!-- tag::identifier[] -->
-	
+
 	<cbc:IssueDate>2016-08-01</cbc:IssueDate>
 	<cbc:IssueTime>09:00:00</cbc:IssueTime>
-	
+
 	<!-- end::identifier[] -->
 	<!-- tag::validity[] -->
 	<cac:ValidityPeriod>
@@ -65,11 +65,11 @@
 			<cbc:StartDate>2014-12-31</cbc:StartDate>
 		</cac:LineValidityPeriod>
 		<!-- end::availability[] -->
-		
+
 		<!-- tag::leadtime[] -->
 		<cac:RequiredItemLocationQuantity>
 			<cbc:LeadTimeMeasure unitCode="DAY">10</cbc:LeadTimeMeasure>
-			
+
 			<!-- code omitted for clairty -->
 			<!-- end::leadtime[] -->
 			<cac:Price>
@@ -105,7 +105,7 @@
 				</cac:Attachment>
 			</cac:ItemSpecificationDocumentReference>
 			<!-- end::main-image[] -->
-			
+
 			<!-- tag::attachment-pdf[] -->
 			<cac:ItemSpecificationDocumentReference>
 				<cbc:ID>PC01specs.pdf</cbc:ID>
@@ -142,15 +142,15 @@
 			<!-- tag::property[] -->
 			<cac:AdditionalItemProperty>
 				<cbc:Name>RAM memory</cbc:Name>
-				<cbc:NameCode>Item property classification code</cbc:NameCode>
+				<cbc:NameCode listID="PropertyCodeList">Item property code</cbc:NameCode>
 				<cbc:Value>16 GB</cbc:Value>
 				<cbc:ValueQuantity unitCode="AD">16000000</cbc:ValueQuantity>
 			</cac:AdditionalItemProperty>
 			<!-- end::property[] -->
 			<!-- tag::product-id[] -->
-			
+
 			<!-- Code omitted for clarity -->
-			
+
 			<cac:ManufacturerParty>
 				<cac:PartyName>
 					<cbc:Name>The PC Manufacturing Party</cbc:Name>
@@ -174,9 +174,9 @@
 	<!-- tag::line[] -->
 	<cac:CatalogueLine>
 		<cbc:ID>2</cbc:ID>
-		
+
 		<!-- Code omitted -->
-		
+
 		<!-- end::line[] -->
 		<!-- tag::price[] -->
 		<cac:RequiredItemLocationQuantity>

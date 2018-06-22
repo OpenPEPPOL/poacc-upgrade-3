@@ -643,21 +643,28 @@
                             descriptive to define the value. The definition may be supplemented with
                             the property unit of measure when relevant. </Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir77-0186</Reference>
-						<Reference type="BUSINESS_TERM">tir77-02</Reference>
+						<Reference type="BUSINESS_TERM">tir77-018</Reference>
+						<Reference type="BUSINESS_TERM">tir77-026</Reference>
 						<Reference type="BUSINESS_TERM">tir77-043</Reference>
 						<Reference type="RULE">BII3-T77-R022</Reference>
 						<Value type="EXAMPLE">Color</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:NameCode</Term>
-						<Name>Item property classification code</Name>
+						<Name>Item property code</Name>
 						<Description>Code for the item property according to a property code
                             system</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir77-040</Reference>
+						<Attribute>
+							<Term>listID</Term>
+							<Name>Name code list id.</Name>
+							<Description>An identifier for the code list used for the Name code.</Description>
+							<Reference type="CODE_LIST">Bilaterally agreed</Reference>
+							<!-- <Value type="EXAMPLE">0160</Value> -->
+						</Attribute>
 					</Element>
-					<Element>
+					<Element cardinality="0..1">
 						<Term>cbc:Value</Term>
 						<Name>Item property value</Name>
 						<Description>The value of the item property.</Description>

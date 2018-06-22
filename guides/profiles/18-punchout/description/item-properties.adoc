@@ -15,7 +15,7 @@ include::../snippets/snippet-18-1.xml[tags=service]
 
 A shopping cart line may give a list of various attributes of an item such as size, colour. For each property the property name and value must be given.
 
-Additionally the seller may give a property classification code to support automation in comparison of attribute and if the attribute value can be quantified it may be restated with the Unit of measure as an attribute.
+Additionally the seller may give a property code, using an identified code list, to support automation in comparison of attribute and if the attribute value can be quantified it may be restated with the Unit of measure as an attribute.
 
 .Example of item property, indicating 16 GB RAM Memory
 [source, xml, indent=0]
