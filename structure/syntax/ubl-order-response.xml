@@ -268,7 +268,19 @@
                         <Value type="EXAMPLE">Buyer name</Value>
                     </Element>
                 </Element>
-    
+                <Element cardinality="0..1">
+                    <Term>cac:Contact</Term>
+                    <Name>Contact information</Name>
+
+                    <Element>
+                        <Term>cbc:Name</Term>
+                        <Name>Contact identifier</Name>
+                        <Description>An identifier for the buyers contsct</Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">OP-T76-001</Reference>
+                        <Value type="EXAMPLE">123</Value>
+                    </Element>
+                </Element>
             </Element>
         </Element>
         <Element cardinality="0..1">
@@ -277,7 +289,7 @@
             <Element>
                 <Term>cac:PromisedDeliveryPeriod</Term>
                 <Name>Promised delivery period</Name>
-              
+
                 <Element cardinality="0..1">
                     <Term>cbc:StartDate</Term>
                     <Name>Period start date</Name>
@@ -301,11 +313,11 @@
         <Element cardinality="0..n">
             <Term>cac:OrderLine</Term>
             <Name>Specification of order lines</Name>
-          
+
             <Element>
                 <Term>cac:LineItem</Term>
                 <Name>Description of line item</Name>
-              
+
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Document line identifier</Name>
@@ -352,13 +364,29 @@
                     <Value type="EXAMPLE">10</Value>
                 </Element>
                 <Element cardinality="0..1">
+                    <Term>cbc:Quantity</Term>
+                    <Name>Quantity</Name>
+                    <Description>The quantity of items that will be delivered.</Description>
+                    <DataType>Quantity</DataType>
+                    <Reference type="BUSINESS_TERM">tir76-132</Reference>
+                    <Attribute>
+                        <Term>unitCode</Term>
+                        <Name>Ordered quantity unit of measure</Name>
+                        <Description>The unit of measure that applies to the ordered quantity.</Description>
+                        <DataType>Code</DataType>
+                        <Reference type="CODE_LIST">UNECERec20</Reference>
+                        <Value type="EXAMPLE">C62</Value>
+                    </Attribute>
+                    <Value type="EXAMPLE">10</Value>
+                </Element>
+                <Element cardinality="0..1">
                     <Term>cac:Delivery</Term>
                     <Name>Delivery information</Name>
-                    
+
                     <Element>
                         <Term>cac:PromisedDeliveryPeriod</Term>
                         <Name>Delivery period</Name>
-                
+
                         <Element cardinality="0..1">
                             <Term>cbc:StartDate</Term>
                             <Name>Period start date</Name>
@@ -382,7 +410,7 @@
                 <Element cardinality="0..1">
                     <Term>cac:Price</Term>
                     <Name>Price information</Name>
-                   
+
                     <Element>
                         <Term>cbc:PriceAmount</Term>
                         <Name>Item price</Name>
@@ -403,14 +431,14 @@
                         </Attribute>
                         <Value type="EXAMPLE">1000.00</Value>
                     </Element>
-                    
+
                     <Element cardinality="0..1">
                         <Term>cbc:BaseQuantity</Term>
                         <Name>Item price base quantity</Name>
                         <Description>The actual quantity to which the price applies.</Description>
                         <DataType>Quantity</DataType>
                         <Reference type="BUSINESS_TERM">tir04-131</Reference>
-                        
+
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Base quantity unit of measure</Name>
@@ -425,7 +453,7 @@
                 <Element>
                     <Term>cac:Item</Term>
                     <Name>Item information </Name>
-                   
+
                     <Element cardinality="0..1">
                         <Term>cbc:Name</Term>
                         <Name>Item name</Name>
@@ -436,11 +464,11 @@
                         <Reference type="BUSINESS_TERM">tir76-205</Reference>
                         <Value type="EXAMPLE">Copy paper, 500 sheets</Value>
                     </Element>
-                    
+
                     <Element cardinality="0..1">
                         <Term>cac:SellersItemIdentification</Term>
                         <Name>Sellers item identification</Name>
-                        
+
                         <Element>
                             <Term>cbc:ID</Term>
                             <Name>Sellers item identifier</Name>
@@ -455,7 +483,7 @@
                     <Element cardinality="0..1">
                         <Term>cac:StandardItemIdentification</Term>
                         <Name>Standard item identification</Name>
-                        
+
                         <Element>
                             <Term>cbc:ID</Term>
                             <Name>Item standard identifier</Name>
@@ -469,18 +497,18 @@
                                 <Description>The identification scheme identifier of the Item standard identifier</Description>
                                 <Reference type="CODE_LIST">ICD</Reference>
                                 <Value type="EXAMPLE">0160</Value>
-                                
+
                             </Attribute>
-                            
+
                         </Element>
                     </Element>
-                 
+
                 </Element>
             </Element>
             <Element cardinality="0..1">
                 <Term>cac:SellerSubstitutedLineItem</Term>
                 <Name>Substituted line item by the seller</Name>
-               
+
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Substituted Line Item Identifier </Name>
@@ -490,7 +518,7 @@
                 <Element>
                     <Term>cac:Item</Term>
                     <Name>Item information</Name>
-                  
+
                     <Element cardinality="0..1">
                         <Term>cbc:Name</Term>
                         <Name>Item name</Name>
@@ -501,11 +529,11 @@
                         <Reference type="BUSINESS_TERM">tir76-134</Reference>
                         <Value type="EXAMPLE">Copy paper, 1000 sheets</Value>
                     </Element>
-                    
+
                     <Element cardinality="0..1">
                         <Term>cac:SellersItemIdentification</Term>
                         <Name>Sellers item identification</Name>
-                        
+
                         <Element>
                             <Term>cbc:ID</Term>
                             <Name>Sellers item identifier</Name>
@@ -520,7 +548,7 @@
                     <Element cardinality="0..1">
                         <Term>cac:StandardItemIdentification</Term>
                         <Name>Standard item identification</Name>
-                        
+
                         <Element>
                             <Term>cbc:ID</Term>
                             <Name>Item standard identifier</Name>
@@ -534,17 +562,17 @@
                                 <Description>The identification scheme identifier of the Item standard identifier</Description>
                                 <Reference type="CODE_LIST">ICD</Reference>
                                 <Value type="EXAMPLE">0160</Value>
-                                
+
                             </Attribute>
                             <Value type="EXAMPLE">87463294723134124</Value>
-                            
+
                         </Element>
                     </Element>
-                    
+
                     <Element cardinality="0..n">
                         <Term>cac:CommodityClassification</Term>
                         <Name>Commodity classification information</Name>
-                        
+
                         <Element cardinality="0..1">
                             <Term>cbc:ItemClassificationCode</Term>
                             <Name>Item classification code</Name>
@@ -553,7 +581,7 @@
                                 procurement (CPV), e-Commerce (UNSPSC) etc.</Description>
                             <DataType>Code</DataType>
                             <Reference type="BUSINESS_TERM">tir76-149</Reference>
-                            
+
                             <Attribute>
                                 <Term>listID</Term>
                                 <Name>Item classification identifier identification scheme identifier</Name>
@@ -561,21 +589,21 @@
                                 <Reference type="CODE_LIST">UNCL7143</Reference>
                                 <Value type="EXAMPLE">STI</Value>
                             </Attribute>
-                            
+
                             <Attribute usage="Optional">
                                 <Term>listVersionID</Term>
                                 <Name>Item classification identifier version identification scheme identifier</Name>
                                 <Description>The identification scheme version identifier of the Item classification identifier</Description>
                             </Attribute>
-                            
+
                             <Value type="EXAMPLE">9873242</Value>
                         </Element>
                     </Element>
-                    
+
                     <Element cardinality="0..1">
                         <Term>cac:ClassifiedTaxCategory</Term>
                         <Name>Line VAT information</Name>
-                        
+
                         <Element>
                             <Term>cbc:ID</Term>
                             <Name>Item VAT category code</Name>
@@ -598,7 +626,7 @@
                         <Element>
                             <Term>cac:TaxScheme</Term>
                             <Name>Tax scheme information</Name>
-                            
+
                             <Element>
                                 <Term>cbc:ID</Term>
                                 <Description>Tax scheme. Use “VAT”</Description>
@@ -607,14 +635,14 @@
                             </Element>
                         </Element>
                     </Element>
-                    
-                   
-                   
+
+
+
                     <Element cardinality="0..n">
                         <Term>cac:AdditionalItemProperty</Term>
                         <Name>Additional item property information</Name>
-                        
-                        
+
+
                         <Element>
                             <Term>cbc:Name</Term>
                             <Name>Item property name</Name>
@@ -625,7 +653,7 @@
                             <Reference type="BUSINESS_TERM">tir76-138</Reference>
                             <Value type="EXAMPLE">Color</Value>
                         </Element>
-                       
+
                         <Element>
                             <Term>cbc:Value</Term>
                             <Name>Item property value</Name>
@@ -634,7 +662,7 @@
                             <Reference type="BUSINESS_TERM">tir76-139</Reference>
                             <Value type="EXAMPLE">Red</Value>
                         </Element>
-                        
+
                         <Element cardinality="0..1">
                             <Term>cbc:ValueQuantity</Term>
                             <Name>Item property unit of measure</Name>
@@ -642,7 +670,7 @@
                                 if relevant. May not be relevant when properties are
                                 descriptive.</Description>
                             <DataType>Quantity</DataType>
-                            <Reference type="BUSINESS_TERM">tir110-100</Reference>
+                            <Reference type="BUSINESS_TERM">OP-T76-002</Reference>
                             <Reference type="RULE">EUGEN-T110-R014</Reference>
                             <Attribute usage="Optional">
                                 <Term>unitCode</Term>
@@ -654,25 +682,25 @@
                             </Attribute>
                             <Value type="EXAMPLE">2</Value>
                         </Element>
-                        
+
                         <Element>
                         <Term>cbc:ValueQualifier</Term>
                         <Name>Qualification of qty</Name>
                         <Description>Description of the quantity</Description>
-                        <Reference type="BUSINESS_TERM">5</Reference>
+                        <Reference type="BUSINESS_TERM">OP-T76-003</Reference>
                     </Element>
-                        
-                      
-                      
-                  
-                  
+
+
+
+
+
                     </Element>
                 </Element>
             </Element>
             <Element>
                 <Term>cac:OrderLineReference</Term>
                 <Name>Reference to order line</Name>
-                
+
                 <Element>
                     <Term>cbc:LineID</Term>
                     <Name>Order line reference</Name>
@@ -682,7 +710,7 @@
                     <Reference type="BUSINESS_TERM">tir76-201</Reference>
                     <Reference type="RULE">BII2-T76-R034</Reference>
                     <Value type="EXAMPLE">34</Value>
-                    
+
                 </Element>
             </Element>
         </Element>
