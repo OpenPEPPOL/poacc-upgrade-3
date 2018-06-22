@@ -49,7 +49,6 @@
 			<Reference type="BUSINESS_TERM">tir19-047</Reference>
 			<Reference type="RULE">OP-T19-007</Reference>
 			<Reference type="CODE_LIST">ActionCode</Reference>
-
 			<Value type="EXAMPLE">Add</Value>
 		</Element>
 		<Element cardinality="0..1">
@@ -122,7 +121,6 @@
 				<Reference type="BUSINESS_TERM">tir19-028</Reference>
 				<Value type="EXAMPLE">Contract-01</Value>
 			</Element>
-
 		</Element>
 		<Element cardinality="0..1">
 			<Term>cac:SourceCatalogueReference</Term>
@@ -146,7 +144,6 @@
                 repository.</Description>
 			<Reference type="BUSINESS_TERM">3</Reference>
 			<Reference type="RULE">BII2-T19-R007</Reference>
-
 			<Element>
 				<Term>cbc:EndpointID</Term>
 				<Name>Electronic address ID</Name>
@@ -176,7 +173,6 @@
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-010</Reference>
 					<Reference type="RULE">BII2-T19-R010</Reference>
-
 					<Attribute usage="Optional">
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
@@ -191,7 +187,6 @@
 			<Element cardinality="0..1">
 				<Term>cac:PartyName</Term>
 				<Name>Party name</Name>
-
 				<Element>
 					<Term>cbc:Name</Term>
 					<Name>Provider trading name</Name>
@@ -257,7 +252,6 @@
 				<Element cardinality="0..1">
 					<Term>cac:AddressLine</Term>
 					<Name>Address Line</Name>
-
 					<Element cardinality="0..1">
 						<Term>cbc:Line</Term>
 						<Name>Address line 3</Name>
@@ -266,11 +260,9 @@
 						<Value type="EXAMPLE">Use gate 34</Value>
 					</Element>
 				</Element>
-
 				<Element cardinality="0..1">
 					<Term>cac:Country</Term>
 					<Name>Country</Name>
-
 					<Element>
 						<Term>cbc:IdentificationCode</Term>
 						<Name>Catalogue Provider Country code</Name>
@@ -290,7 +282,6 @@
 			<Element>
 				<Term>cac:PartyLegalEntity</Term>
 				<Name>Party Legal Entity</Name>
-
 				<Element>
 					<Term>cbc:RegistrationName</Term>
 					<Name>Provider legal registration name</Name>
@@ -307,7 +298,6 @@
                         the national company registrar.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-028a</Reference>
-
 					<Attribute usage="Optional">
 						<Term>schemeID</Term>
 						<Name>Provider legal registration identifier identification scheme identifier</Name>
@@ -317,11 +307,9 @@
 					</Attribute>
 					<Value type="EXAMPLE">8346294</Value>
 				</Element>
-
 				<Element cardinality="0..1">
 					<Term>cac:RegistrationAddress</Term>
 					<Name>Registration Address</Name>
-
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
 						<Name>Provider legal registration city</Name>
@@ -334,7 +322,6 @@
 					<Element cardinality="0..1">
 						<Term>cac:Country</Term>
 						<Name>Country</Name>
-
 						<Element>
 							<Term>cbc:IdentificationCode</Term>
 							<Name>Catalogue Provider Country code</Name>
@@ -349,7 +336,6 @@
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">UK</Value>
 						</Element>
-
 					</Element>
 				</Element>
 			</Element>
@@ -361,7 +347,6 @@
                 on his behalf.</Description>
 			<Reference type="BUSINESS_TERM">4</Reference>
 			<Reference type="RULE">BII2-T19-R008</Reference>
-
 			<Element cardinality="0..1">
 				<Term>cbc:EndpointID</Term>
 				<Name>Electronic address ID</Name>
@@ -380,11 +365,9 @@
 				</Attribute>
 				<Value type="EXAMPLE">923654321</Value>
 			</Element>
-
 			<Element cardinality="0..1">
 				<Term>cac:PartyIdentification</Term>
 				<Name>Party Identification</Name>
-
 				<Element>
 					<Term>cbc:ID</Term>
 					<Name>Catalogue receiver identifier</Name>
@@ -407,7 +390,6 @@
 			<Element cardinality="0..1">
 				<Term>cac:PartyName</Term>
 				<Name>Party name</Name>
-
 				<Element>
 					<Term>cbc:Name</Term>
 					<Name>Receiver trading name</Name>
@@ -473,7 +455,6 @@
 				<Element cardinality="0..1">
 					<Term>cac:AddressLine</Term>
 					<Name>Address line</Name>
-
 					<Element cardinality="0..1">
 						<Term>cbc:Line</Term>
 						<Name>Address line 3</Name>
@@ -485,7 +466,6 @@
 				<Element cardinality="0..1">
 					<Term>cac:Country</Term>
 					<Name>Country</Name>
-
 					<Element>
 						<Term>cbc:IdentificationCode</Term>
 						<Name>Country code</Name>
@@ -499,14 +479,12 @@
 						<Reference type="RULE">OP-T19-001</Reference>
 						<Reference type="CODE_LIST">ISO3166</Reference>
 						<Value type="EXAMPLE">DK</Value>
-
 					</Element>
 				</Element>
 			</Element>
 			<Element>
 				<Term>cac:PartyLegalEntity</Term>
 				<Name>Party legal entity</Name>
-
 				<Element>
 					<Term>cbc:RegistrationName</Term>
 					<Name>Receiver legal registration name</Name>
@@ -523,7 +501,6 @@
                         the national company registrar.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">OP-T19-030a</Reference>
-
 					<Attribute usage="Optional">
 						<Term>schemeID</Term>
 						<Name>Provider legal registration identifier identification scheme identifier</Name>
@@ -532,12 +509,10 @@
 						<Value type="EXAMPLE">0002</Value>
 					</Attribute>
 					<Value type="EXAMPLE">239478234</Value>
-
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:RegistrationAddress</Term>
 					<Name>Registration address</Name>
-
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
 						<Name>Receiver legal registration city</Name>
@@ -550,7 +525,6 @@
 					<Element cardinality="0..1">
 						<Term>cac:Country</Term>
 						<Name>Country</Name>
-
 						<Element cardinality="0..1">
 							<Term>cbc:IdentificationCode</Term>
 							<Name>Receiver legal registration country</Name>
@@ -576,11 +550,9 @@
                 catalogue.</Description>
 			<Reference type="BUSINESS_TERM">5</Reference>
 			<Reference type="RULE">BII2-T19-R009</Reference>
-
 			<Element>
 				<Term>cac:Party</Term>
 				<Name>Party</Name>
-
 				<Element cardinality="0..1">
 					<Term>cbc:EndpointID</Term>
 					<Name>Electronic address ID</Name>
@@ -602,7 +574,6 @@
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
 					<Name>Party identification</Name>
-
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Catalogue supplier identifier</Name>
@@ -625,7 +596,6 @@
 				<Element cardinality="0..1">
 					<Term>cac:PartyName</Term>
 					<Name>Party name</Name>
-
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Catalogue supplier trading name</Name>
@@ -640,7 +610,6 @@
 				<Element cardinality="0..1">
 					<Term>cac:PostalAddress</Term>
 					<Name>Postal address</Name>
-
 					<Element cardinality="0..1">
 						<Term>cbc:StreetName</Term>
 						<Name>Address line 1</Name>
@@ -689,7 +658,6 @@
 					<Element cardinality="0..1">
 						<Term>cac:AddressLine</Term>
 						<Name>Address Line</Name>
-
 						<Element cardinality="0..1">
 							<Term>cbc:Line</Term>
 							<Name>Address line 3</Name>
@@ -701,7 +669,6 @@
 					<Element cardinality="0..1">
 						<Term>cac:Country</Term>
 						<Name>Country</Name>
-
 						<Element>
 							<Term>cbc:IdentificationCode</Term>
 							<Name>Country code</Name>
@@ -721,7 +688,6 @@
 				<Element cardinality="0..1">
 					<Term>cac:Contact</Term>
 					<Name>Catalogue supplier contact</Name>
-
 					<Element cardinality="0..1">
 						<Term>cbc:Name</Term>
 						<Name>Contact person name</Name>
@@ -739,7 +705,6 @@
 						<Reference type="BUSINESS_TERM">tir19-030</Reference>
 						<Value type="EXAMPLE">90123456</Value>
 					</Element>
-
 					<Element cardinality="0..1">
 						<Term>cbc:ElectronicMail</Term>
 						<Name>Contact email address</Name>
@@ -760,7 +725,6 @@
 			<Element cardinality="0..1">
 				<Term>cac:Party</Term>
 				<Name>Party</Name>
-
 				<Element cardinality="0..1">
 					<Term>cbc:EndpointID</Term>
 					<Name>Electronic address ID</Name>
@@ -782,7 +746,6 @@
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
 					<Name>Party identification</Name>
-
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Catalogue customer identifier</Name>
@@ -805,7 +768,6 @@
 				<Element cardinality="0..1">
 					<Term>cac:PartyName</Term>
 					<Name>Party name</Name>
-
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Catalogue customer trading name</Name>
@@ -820,7 +782,6 @@
 				<Element cardinality="0..1">
 					<Term>cac:Contact</Term>
 					<Name>Contact</Name>
-
 					<Element cardinality="0..1">
 						<Term>cbc:Name</Term>
 						<Name>Contact person name</Name>
@@ -838,7 +799,6 @@
 						<Reference type="BUSINESS_TERM">tir19-082</Reference>
 						<Value type="EXAMPLE">29347213412</Value>
 					</Element>
-
 					<Element cardinality="0..1">
 						<Term>cbc:ElectronicMail</Term>
 						<Name>Contact email address</Name>
@@ -854,7 +814,6 @@
 		<Element cardinality="0..n">
 			<Term>cac:TradingTerms</Term>
 			<Name>Trading terms</Name>
-
 			<Element cardinality="0..n">
 				<Term>cbc:Information</Term>
 				<Name>General payment conditions</Name>
@@ -1009,7 +968,6 @@
 				<Reference type="BUSINESS_TERM">tir19-102</Reference>
 				<Reference type="RULE">OP-T19-008</Reference>
 				<Reference type="CODE_LIST">GS17009</Reference>
-
 				<Value type="EXAMPLE">TU</Value>
 			</Element>
 			<Element cardinality="0..1">
@@ -1042,7 +1000,6 @@
 			<Element cardinality="0..n">
 				<Term>cac:ItemComparison</Term>
 				<Name>Item comparison</Name>
-
 				<Element cardinality="0..1">
 					<Term>cbc:PriceAmount</Term>
 					<Name>Standardized unit price</Name>
@@ -1083,7 +1040,6 @@
 			<Element cardinality="0..n">
 				<Term>cac:ComponentRelatedItem</Term>
 				<Name>Component related item</Name>
-
 				<Element cardinality="0..1">
 					<Term>cbc:ID</Term>
 					<Name>Item identifier</Name>
@@ -1115,7 +1071,6 @@
 			<Element cardinality="0..n">
 				<Term>cac:AccessoryRelatedItem</Term>
 				<Name>Accessory related item</Name>
-
 				<Element cardinality="0..1">
 					<Term>cbc:ID</Term>
 					<Name>Item identifier</Name>
@@ -1144,7 +1099,6 @@
 			<Element cardinality="0..n">
 				<Term>cac:RequiredRelatedItem</Term>
 				<Name>Required related item</Name>
-
 				<Element cardinality="0..1">
 					<Term>cbc:ID</Term>
 					<Name>Item identifier</Name>
@@ -1173,7 +1127,6 @@
 			<Element cardinality="0..n">
 				<Term>cac:ReplacedRelatedItem</Term>
 				<Name>Replaced related item</Name>
-
 				<Element cardinality="0..1">
 					<Term>cbc:ID</Term>
 					<Name>Item identifier</Name>
@@ -1202,7 +1155,6 @@
 			<Element cardinality="0..n">
 				<Term>cac:RequiredItemLocationQuantity</Term>
 				<Name>Required Item Location Quantity</Name>
-
 				<Element cardinality="0..1">
 					<Term>cbc:LeadTimeMeasure</Term>
 					<Name>Price lead time</Name>
@@ -1258,7 +1210,6 @@
 					<Term>cac:ApplicableTerritoryAddress</Term>
 					<Name>Applicable terriroty address</Name>
 					<Description>Used to give location information related to the price</Description>
-
 					<Element cardinality="0..1">
 						<Term>cbc:StreetName</Term>
 						<Name>Address line 1</Name>
@@ -1307,19 +1258,16 @@
 					<Element cardinality="0..1">
 						<Term>cac:AddressLine</Term>
 						<Name>Address Line</Name>
-
 						<Element cardinality="0..1">
 							<Term>cbc:Line</Term>
 							<Name>Address line 3</Name>
 							<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
 							<DataType>Text</DataType>
-
 						</Element>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:Country</Term>
 						<Name>Country</Name>
-
 						<Element>
 							<Term>cbc:IdentificationCode</Term>
 							<Name>Country code</Name>
@@ -1334,14 +1282,12 @@
 							<Reference type="RULE">OP-T19-001</Reference>
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">DK</Value>
-
 						</Element>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:Price</Term>
 					<Name>Price</Name>
-
 					<Element>
 						<Term>cbc:PriceAmount</Term>
 						<Name>Item price</Name>
@@ -1398,7 +1344,6 @@
 					<Element cardinality="0..n">
 						<Term>cac:ValidityPeriod</Term>
 						<Name>Price validity period</Name>
-
 						<Element cardinality="0..1">
 							<Term>cbc:StartDate</Term>
 							<Name>Period start date</Name>
@@ -1423,7 +1368,6 @@
 			<Element>
 				<Term>cac:Item</Term>
 				<Name>Item</Name>
-
 				<Element cardinality="0..n">
 					<Term>cbc:Description</Term>
 					<Name>Item description</Name>
@@ -1488,7 +1432,6 @@
 				<Element cardinality="0..1">
 					<Term>cac:SellersItemIdentification</Term>
 					<Name>Seller item identification</Name>
-
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Sellers item identifier</Name>
@@ -1501,7 +1444,6 @@
 				<Element cardinality="0..1">
 					<Term>cac:ManufacturersItemIdentification</Term>
 					<Name>Manufacturer item identification</Name>
-
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Manufacturers item identifer</Name>
@@ -1514,7 +1456,6 @@
 				<Element cardinality="0..1">
 					<Term>cac:StandardItemIdentification</Term>
 					<Name>Standard item identification</Name>
-
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Items standard identifier</Name>
@@ -1522,14 +1463,12 @@
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-092</Reference>
 						<Reference type="RULE">BII2-T19-R020</Reference>
-
 						<Attribute>
 							<Term>schemeID</Term>
 							<Name>Item standard identifier identification scheme identifier</Name>
 							<Description>The identification scheme identifier of the Item standard identifier</Description>
 							<Reference type="CODE_LIST">ICD</Reference>
 							<Value type="EXAMPLE">0160</Value>
-
 						</Attribute>
 						<Value type="EXAMPLE">7330869106661</Value>
 					</Element>
@@ -1537,7 +1476,6 @@
 				<Element cardinality="0..n">
 					<Term>cac:ItemSpecificationDocumentReference</Term>
 					<Name>Item specification document reference</Name>
-
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Attachment ID</Name>
@@ -1553,7 +1491,6 @@
 						<DataType>Code</DataType>
 						<Reference type="CODE_LIST">UNCL1001</Reference>
 						<Reference type="BUSINESS_TERM">tir19-086a</Reference>
-
 					</Element>
 					<Element cardinality="0..n">
 						<Term>cbc:DocumentDescription</Term>
@@ -1565,15 +1502,12 @@
 					<Element cardinality="0..1">
 						<Term>cac:Attachment</Term>
 						<Name>Attachment</Name>
-
 						<Element cardinality="0..1">
 							<Term>cbc:EmbeddedDocumentBinaryObject</Term>
 							<Name>Attached object</Name>
 							<Description>The attached document embedded as binary object.</Description>
 							<DataType>Binary objects</DataType>
 							<Reference type="BUSINESS_TERM">tir19-107</Reference>
-
-
 							<Attribute>
 								<Term>mimeCode</Term>
 								<Name>Attached object Mime code</Name>
@@ -1583,19 +1517,16 @@
 								<Reference type="CODE_LIST">MimeCode</Reference>
 								<Value type="EXAMPLE">text/csv</Value>
 							</Attribute>
-
 							<Attribute>
 								<Term>filename</Term>
 								<Name>Attached document Filename</Name>
 								<Description>The file name of the attached document</Description>
 								<Value type="EXAMPLE">Hours-spent.csv</Value>
 							</Attribute>
-
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cac:ExternalReference</Term>
 							<Name>External reference</Name>
-
 							<Element>
 								<Term>cbc:URI</Term>
 								<Name>External item specifications</Name>
@@ -1609,7 +1540,6 @@
 				<Element cardinality="0..1">
 					<Term>cac:OriginCountry</Term>
 					<Name>Origin country</Name>
-
 					<Element>
 						<Term>cbc:IdentificationCode</Term>
 						<Name>Item origin country</Name>
@@ -1628,7 +1558,6 @@
 				<Element cardinality="0..n">
 					<Term>cac:CommodityClassification</Term>
 					<Name>Commodity classification</Name>
-
 					<Element>
 						<Term>cbc:ItemClassificationCode</Term>
 						<Name>Item classification code</Name>
@@ -1644,20 +1573,17 @@
 							<Reference type="CODE_LIST">UNCL7143</Reference>
 							<Value type="EXAMPLE">STI</Value>
 						</Attribute>
-
 						<Attribute usage="Optional">
 							<Term>listVersionID</Term>
 							<Name>Item classification identifier version identification scheme identifier</Name>
 							<Description>The identification scheme version identifier of the Item classification identifier</Description>
 						</Attribute>
-
 						<Value type="EXAMPLE">123456</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..n">
 					<Term>cac:TransactionConditions</Term>
 					<Name>Transaction conditions</Name>
-
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Contracted item indicator</Name>
@@ -1667,15 +1593,10 @@
 						<Reference type="BUSINESS_TERM">OP-T19-027</Reference>
 						<Value type="EXAMPLE">CT</Value>
 					</Element>
-
 				</Element>
-
-
-
 				<Element cardinality="0..n">
 					<Term>cac:HazardousItem</Term>
 					<Name>Hazardous Item</Name>
-
 					<Element cardinality="0..1">
 						<Term>cbc:UNDGCode</Term>
 						<Name>Hazardous item UNDG code</Name>
@@ -1686,7 +1607,6 @@
 						<Reference type="RULE">EUGEN-T19-R051</Reference>
 						<Reference type="RULE">OP-T19-003</Reference>
 						<Reference type="CODE_LIST">UNCL8273</Reference>
-
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:HazardClassID</Term>
@@ -1697,15 +1617,11 @@
 								the road/rail environment.</Description>
 						<!-- <Reference>Identifier</Reference> -->
 						<Reference type="BUSINESS_TERM">tir19-073</Reference>
-
 					</Element>
 				</Element>
-
-
 				<Element cardinality="0..1">
 					<Term>cac:ClassifiedTaxCategory</Term>
 					<Name>Classified tax category</Name>
-
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Item VAT category code</Name>
@@ -1715,7 +1631,6 @@
 						<Reference type="BUSINESS_TERM">tir19-094</Reference>
 						<Reference type="RULE">CL-T19-004</Reference>
 						<Reference type="CODE_LIST">UNCL5305</Reference>
-
 						<Value type="EXAMPLE">S</Value>
 					</Element>
 					<Element cardinality="0..1">
@@ -1735,7 +1650,6 @@
 							<Description>Tax scheme. Use “VAT”</Description>
 							<Value type="DEFAULT">VAT</Value>
 						</Element>
-
 					</Element>
 				</Element>
 				<Element cardinality="0..n">
@@ -1810,11 +1724,9 @@
 				<Element cardinality="0..1">
 					<Term>cac:ManufacturerParty</Term>
 					<Name>Manufacturer party</Name>
-
 					<Element>
 						<Term>cac:PartyName</Term>
 						<Name>Party name</Name>
-
 						<Element>
 							<Term>cbc:Name</Term>
 							<Name>Manufacturer party name</Name>
@@ -1828,7 +1740,6 @@
 				<Element cardinality="0..n">
 					<Term>cac:ItemInstance</Term>
 					<Name>Item instance</Name>
-
 					<Element cardinality="0..1">
 						<Term>cbc:BestBeforeDate</Term>
 						<Name>Item best before date</Name>
@@ -1841,7 +1752,6 @@
 					<Element cardinality="0..1">
 						<Term>cac:LotIdentification</Term>
 						<Name>Lot identification</Name>
-
 						<Element cardinality="0..1">
 							<Term>cbc:LotNumberID</Term>
 							<Name>Item batch identifier</Name>
@@ -1857,8 +1767,6 @@
 					<Term>cac:Certificate</Term>
 					<Name>Item label information</Name>
 					<Description>Information about the items environmental, social, ethical and quality type of labelling.</Description>
-
-
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Item label name</Name>
@@ -1895,11 +1803,9 @@
 					<Element>
 						<Term>cac:IssuerParty</Term>
 						<Name>Issuer party information</Name>
-
 						<Element>
 							<Term>cac:PartyName</Term>
 							<Name>Party name</Name>
-
 							<Element>
 								<Term>cbc:Name</Term>
 								<Name>Issuer name</Name>
@@ -1908,14 +1814,11 @@
 								<DataType>Text</DataType>
 								<Value type="EXAMPLE">NA</Value>
 							</Element>
-
 						</Element>
 					</Element>
-
 					<Element cardinality="0..n">
 						<Term>cac:DocumentReference</Term>
 						<Name>Label document</Name>
-
 						<Element>
 							<Term>cbc:ID</Term>
 							<Name>Item label reference</Name>
@@ -1927,12 +1830,9 @@
 						</Element>
 					</Element>
 				</Element>
-
-
 				<Element cardinality="0..n">
 					<Term>cac:Dimension</Term>
 					<Name>Dimension</Name>
-
 					<Element>
 						<Term>cbc:AttributeID</Term>
 						<Name>Attribute Id</Name>
@@ -1942,7 +1842,6 @@
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-104</Reference>
 						<Reference type="RULE">OP-T19-009</Reference>
-
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:Measure</Term>
@@ -1964,7 +1863,6 @@
 						<Reference type="BUSINESS_TERM">OP-T19-017</Reference>
 						<Reference type="BUSINESS_TERM">OP-T19-016</Reference>
 						<Reference type="CODE_LIST">UNCL6313</Reference>
-
 					</Element>
 					<Element cardinality="0..n">
 						<Term>cbc:Description</Term>
@@ -1981,7 +1879,6 @@
                             for the item.</Description>
 						<Reference type="BUSINESS_TERM">tir19-115OP-T19-015</Reference>
 						<Reference type="CODE_LIST">UNCL6313</Reference>
-
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:MaximumMeasure</Term>
