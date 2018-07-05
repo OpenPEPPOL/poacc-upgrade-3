@@ -433,6 +433,15 @@
 						<Value type="EXAMPLE">Copy paper, 500 sheets</Value>
 					</Element>
 					<Element cardinality="0..1">
+						<Term>cac:BuyersItemIdentification</Term>
+						<Element>
+							<Term>cbc:ID</Term>
+							<Name>Buyers item identifier</Name>
+							<Description>The BuyerCustomerParty identifier for the item.</Description>
+							<Reference type="BUSINESS_TERM">OP-T76-006</Reference>
+						</Element>
+					</Element>
+					<Element cardinality="0..1">
 						<Term>cac:SellersItemIdentification</Term>
 						<Name>Sellers item identification</Name>
 						<Element>
