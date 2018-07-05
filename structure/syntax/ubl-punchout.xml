@@ -259,6 +259,22 @@
 					<Reference type="BUSINESS_TERM">tir77-027</Reference>
 					<Value type="EXAMPLE">2018-05-01</Value>
 				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:EndDate</Term>
+					<Name>Cart line validity date</Name>
+					<Description>Date until which information and prices stated in the shopping cart line are valid.</Description>
+					<DataType>Date</DataType>
+					<Reference type="BUSINESS_TERM">OP-T77-013</Reference>
+					<Value type="EXAMPLE">2018-05-31</Value>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:EndTime</Term>
+					<Name>Cart line validity time</Name>
+					<Description>The time of the end date until which information and prices stated in the shopping cart line are valid.</Description>
+					<DataType>Time</DataType>
+					<Reference type="BUSINESS_TERM">OP-T77-014</Reference>
+					<Value type="EXAMPLE">23:59:59</Value>
+				</Element>
 			</Element>
 			<Element>
 				<Term>cac:RequiredItemLocationQuantity</Term>
