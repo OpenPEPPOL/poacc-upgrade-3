@@ -19,6 +19,7 @@ Description of items that are being despatched.
 include::itemdescription.adoc[]
 include::outstandingquantity.adoc[]
 include::hazardous.adoc[]
+include::itemproperties.adoc[]
 include::serialnumber.adoc[]
 include::batchnumber.adoc[]
 include::transporthandlingunit.adoc[]

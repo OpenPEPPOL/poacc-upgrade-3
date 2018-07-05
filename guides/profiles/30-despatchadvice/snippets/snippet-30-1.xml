@@ -222,5 +222,11 @@
 			</cac:ItemInstance>
 			<!-- end::lotid[] -->
 		</cac:Item>
+		<!-- tag::itemproperty[] -->
+		<cac:cac:AdditionalItemProperty>
+			<cbc:Name>NPLId</cbc:Name>
+			<cbc:Value>20300709400050</cbc:Value>
+		</cac:cac:AdditionalItemProperty>
+		<!-- end::itemproperty[] -->
 	</cac:DespatchLine>
 </DespatchAdvice>
