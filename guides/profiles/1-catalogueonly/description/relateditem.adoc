@@ -3,7 +3,7 @@
 
 Items can be related to each other for ordering or logistic purposes.
 All related items must also be sent as separate Catalogue lines.
-Sellers article number is the only permitted type of article number. +
+Sellers article number is the only permitted type of article number and there for it is important that the Sellers article numbers is provided in catalogue line with the related item. +
 Types of relations:
 
 * Products that are bundled and ordered/invoiced together, e.g. bottles and deposits.
