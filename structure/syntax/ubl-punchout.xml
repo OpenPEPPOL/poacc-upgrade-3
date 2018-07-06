@@ -89,11 +89,12 @@
 		</Element>
 		<Element cardinality="0..1">
 			<Term>cac:ReferencedContract</Term>
-			<Name>Referenced contract</Name>
+			<Name>Contract reference</Name>
+			<Description>The identification of a contract.</Description>
 			<Element cardinality="0..1">
 				<Term>cbc:ID</Term>
 				<Name>Contract identifier</Name>
-				<Description>The identification of a contract.</Description>
+				<Description>A reference that uniquely identifies a contract that relates to this transaction.</Description>
 				<DataType>Document reference</DataType>
 				<Reference type="BUSINESS_TERM">tir77-020</Reference>
 				<Value type="EXAMPLE">frame123</Value>
@@ -233,16 +234,6 @@
 				<Reference type="BUSINESS_TERM">tir77-015</Reference>
 				<Reference type="RULE">BII3-T77-R008</Reference>
 				<Value type="EXAMPLE">1</Value>
-			</Element>
-			<Element cardinality="0..1">
-				<Term>cbc:ContractSubdivision</Term>
-				<Name>Contracted item indicator</Name>
-				<Description>Indicates if the item is offered in accordance to an existing
-                    contract. Different lines may reference different contracts. If a contract is referenced on the cart level that contract applies to all items in the shopping cart,
-                    and is only superseeded by the line reference where there is a conflict.</Description>
-				<DataType>Text</DataType>
-				<Reference type="BUSINESS_TERM">tir77-019</Reference>
-				<Value type="EXAMPLE">CRT1387</Value>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:LineValidityPeriod</Term>
@@ -609,6 +600,18 @@
 							<Description>The identification scheme version identifier of the Item classification identifier</Description>
 							<Value type="EXAMPLE">12</Value>
 						</Attribute>
+					</Element>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:TransactionConditions</Term>
+					<Name>Contracted item</Name>
+					<Element>
+						<Term>cbc:ActionCode</Term>
+						<Name>Contracted item indicator</Name>
+						<Description>The code CT indicates that the item is offered in accordance to the referenced contract.</Description>
+						<DataType>Code</DataType>
+						<Reference type="BUSINESS_TERM">tir77-019</Reference>
+						<Value type="EXAMPLE">CT</Value>
 					</Element>
 				</Element>
 				<Element>

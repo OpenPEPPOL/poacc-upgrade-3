@@ -179,11 +179,12 @@
 		</Element>
 		<Element cardinality="0..1">
 			<Term>cac:Contract</Term>
-			<Name>Contract information</Name>
+			<Name>Contract reference</Name>
+			<Description>The identification of a contract.</Description>
 			<Element>
 				<Term>cbc:ID</Term>
 				<Name>Contract identifier</Name>
-				<Description>The identification of a contract.</Description>
+				<Description>A reference that uniquely identifies a contract that relates to this transaction.</Description>
 				<DataType>Document reference</DataType>
 				<Reference type="BUSINESS_TERM">tir110-049</Reference>
 				<Value type="EXAMPLE">C-97324</Value>
@@ -1410,12 +1411,11 @@
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:TransactionConditions</Term>
-						<Name>Transaction conditions</Name>
+						<Name>Contracted item</Name>
 						<Element>
-							<Term>cbc:ID</Term>
+							<Term>cbc:ActionCode</Term>
 							<Name>Contracted item indicator</Name>
-							<Description>Indicates if the item is offered in accordance to an
-                                existing contract.</Description>
+							<Description>The code CT indicates that the item is offered in accordance to the referenced contract.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir110-094</Reference>
 							<Value type="EXAMPLE">CT</Value>

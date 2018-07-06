@@ -114,9 +114,8 @@
 			<Description>The identification of a contract.</Description>
 			<Element>
 				<Term>cbc:ID</Term>
-				<Name>Reference identifier</Name>
-				<Description>Positive identification of the reference such as a unique
-                    identifier.</Description>
+				<Name>Contract identifier</Name>
+				<Description>A reference that uniquely identifies a contract that relates to this transaction.</Description>
 				<DataType>Document reference</DataType>
 				<Reference type="BUSINESS_TERM">tir19-028</Reference>
 				<Value type="EXAMPLE">Contract-01</Value>
@@ -854,14 +853,6 @@
 				<Value type="EXAMPLE">Update</Value>
 			</Element>
 			<Element cardinality="0..1">
-				<Term>cbc:ContractSubdivision</Term>
-				<Name>Contract Subdivision</Name>
-				<Description>Used to reference a subsection of the contract referenced on header
-                    level but not recognized as a BII requirement. Removed.</Description>
-				<DataType>Text</DataType>
-				<Reference type="BUSINESS_TERM">OP-T19-036</Reference>
-			</Element>
-			<Element cardinality="0..1">
 				<Term>cbc:OrderableIndicator</Term>
 				<Name>Orderable indicator</Name>
 				<Description>Default value is True i.e. Item on the Catalogue Line can be ordered.
@@ -1581,14 +1572,13 @@
 						<Value type="EXAMPLE">123456</Value>
 					</Element>
 				</Element>
-				<Element cardinality="0..n">
+				<Element cardinality="0..1">
 					<Term>cac:TransactionConditions</Term>
-					<Name>Transaction conditions</Name>
+					<Name>Contracted item</Name>
 					<Element>
-						<Term>cbc:ID</Term>
+						<Term>cbc:ActionCode</Term>
 						<Name>Contracted item indicator</Name>
-						<Description>Indicates if the item is offered in accordance to an
-							existing contract.</Description>
+						<Description>The code CT indicates that the item is offered in accordance to the referenced contract.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">OP-T19-027</Reference>
 						<Value type="EXAMPLE">CT</Value>
