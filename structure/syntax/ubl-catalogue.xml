@@ -1316,10 +1316,7 @@
 					<Element cardinality="0..1">
 						<Term>cbc:PriceType</Term>
 						<Name>Price type</Name>
-						<Description>The type of the price so that the receiver knows if the price
-                            may be changed, is indicative. When prices are temporary the validity
-                            period for the price should be defined by stating the price validity
-                            period.</Description>
+						<Description>The type of the item price. The type may be given by using codes from UN/CEFACT code list 5387. When prices are temporary the validity period for the price should be defined by stating the price validity period.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-093</Reference>
 					</Element>
@@ -1338,8 +1335,7 @@
 						<Element cardinality="0..1">
 							<Term>cbc:StartDate</Term>
 							<Name>Period start date</Name>
-							<Description>The date on which the period starts. The start dates
-                                counts as part of the period.</Description>
+							<Description>The date on which the period starts. The start dates counts as part of the period.</Description>
 							<DataType>Date</DataType>
 							<Reference type="BUSINESS_TERM">tir19-056</Reference>
 							<Value type="EXAMPLE">2018-05-31</Value>
