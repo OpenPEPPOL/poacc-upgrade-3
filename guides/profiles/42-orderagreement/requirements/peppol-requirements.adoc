@@ -3,7 +3,7 @@
 
 An order agreement should support the calculation of expected totals structured in an identical way to the order and the invoice message. To enable this the following needs to be added to the CENBII Order Agreement transaction.
 
-[cols="1,2,3",options="header",]
+[cols="1h,2,3",options="header",]
 |====
 |ID: |Business term: |Description:
 | |*HEADER LEVEL:*|

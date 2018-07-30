@@ -39,7 +39,7 @@
 	
 	<!-- tag::contract[] -->
 	<cac:Contract>
-		<cbc:ID>contract id tir110-049</cbc:ID>
+		<cbc:ID>contract id</cbc:ID>
 	</cac:Contract>
 	<!-- end::contract[] -->
 
