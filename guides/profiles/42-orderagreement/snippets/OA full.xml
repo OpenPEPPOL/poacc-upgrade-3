@@ -13,22 +13,22 @@
 	<cbc:ID>id123 tir110-001</cbc:ID>
 	<cbc:IssueDate>2016-08-16</cbc:IssueDate>
 	<cbc:IssueTime>12:00:00</cbc:IssueTime>
-	<cbc:Note>Textual note with the order agreement tir110-043</cbc:Note>
+	<cbc:Note>Textual note with the order agreement</cbc:Note>
 	<cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
 
 	<!-- tag::CustomerReference[] -->
-	<cbc:CustomerReference>Buyer reference id tir110-044</cbc:CustomerReference>
+	<cbc:CustomerReference>Buyer reference id</cbc:CustomerReference>
 	<!-- end::CustomerReference[] -->
 
 	<!-- tag::OrderReference[] -->
 	<cac:OrderReference>
-		<cbc:ID>Order id tir110-042</cbc:ID>
+		<cbc:ID>Order id</cbc:ID>
 	</cac:OrderReference>
 	<!-- end::OrderReference[] -->
 
 	<!-- tag::AdditionalDocumentReference[] -->
 	<cac:AdditionalDocumentReference>
-		<cbc:ID>Document idtir110-045</cbc:ID>
+		<cbc:ID>Document id</cbc:ID>
 		<cbc:DocumentType>Document description</cbc:DocumentType>
 		<cac:Attachment>
 			<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="file.pdf">
@@ -252,7 +252,7 @@
 					<cbc:ID>123</cbc:ID>
 				</cac:SellersItemIdentification>
 				<cac:StandardItemIdentification>
-					<cbc:ID schemeID="0160">321</cbc:ID>
+					<cbc:ID schemeID="0160">73123456001233</cbc:ID>
 				</cac:StandardItemIdentification>
 				<!-- end::ItemIdentifiers[] -->
 

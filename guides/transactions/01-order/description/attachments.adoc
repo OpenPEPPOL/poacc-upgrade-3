@@ -7,7 +7,7 @@ The attachment can either be sent as a binary object encoded in Base64 embedded 
 
 NOTE: It is recommended to send attachments as embedded, binary objects and not as external references.
 
-Valid codes can be found in <<media-type>>.
+Valid codes can be found in {link-codelist}.
 
 
 .Example of attachment as an embedded, binary object

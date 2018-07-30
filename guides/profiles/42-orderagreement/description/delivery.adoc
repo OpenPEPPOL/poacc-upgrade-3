@@ -1,13 +1,15 @@
 = Delivery
 
-#What is the difference between originator party and delivery party?#
 
-Delivery gives information on when and where the goods and services are deleivered.
+Delivery gives information on when and where the goods and services are delivered.
+
+* Delivery location (`cac:Delivery/cac:DeliveryTerms/cac:DeliveryLocation`) is where the supplier leaves the packages.
+* Delivery party (`cac:Delivery/cac:DeliveryParty`) is the party who will get the ordered items.
 
 Delivery special terms may be used to inform how the the goods or service is delivered. E.g.
 
 * A ticket may be delivered as a pdf in mail - “Mail”.
-* Goods may hav been collected at the store – “Customer pick up“
+* Goods may have been collected at the store – “Customer pick up“
 
 The delivery information is optional in the PEPPOL BIS Order Agreement message.
 

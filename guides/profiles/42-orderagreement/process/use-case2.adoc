@@ -3,16 +3,24 @@
 
 This use case describes the process where a customer/buyer orders products in a web shop.
 
-[cols="1,5",]
+[cols="1h,5",]
 |====
-|Use Case number |2
-|Use Case Name |Web shop used for ordering items
-|Use Case Description |The buyer uses a website to buy items.
-|Parties involved|
-Buyer
-Seller
-|Assumptions |The seller has a website that allows the buyer to select and order items. +
+|Use Case number
+|2
+|Use Case Name
+|Web shop used for ordering items
+
+|Use Case Description
+|The buyer uses a website to buy items.
+
+|Parties involved
+a| * Buyer
+* Seller
+
+|Assumptions
+|The seller has a website that allows the buyer to select and order items. +
 The buyer has an account with the seller with necessary details to send him an order agreement.
+
 |The flow a|
 The buyer is working in the in-house purchasing system, selects a seller that has a web shop, and clicks to see that seller’s products.
 

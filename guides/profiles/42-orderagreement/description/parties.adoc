@@ -24,7 +24,7 @@ include::../snippets/OA full.xml[tags=buyer]
 
 == OriginatorCustomerParty (Originator)
 
-The unit initiating the order. Most often the end user. The originator information is optional in the PEPPOL BIS Order Agreement message.
+The unit initiating or requesting the ordered items. Most often the end user. The originator information is optional in the PEPPOL BIS Order Agreement message.
 
 .Example
 [source, xml, indent=0]

@@ -11,7 +11,7 @@ The following elements show the legal monetary totals
 
 | `cbc:LineExtensionAmount`
 | Sum of line net amounts
-| stem:[sum("cac:OrderResponse/cbc:LineExtensionAmount")]
+| stem:[sum("cac:OrderLine/LineItem/cbc:LineExtensionAmount")]
 
 | `cbc:AllowanceTotalAmount`
 | Sum of allowances on document level

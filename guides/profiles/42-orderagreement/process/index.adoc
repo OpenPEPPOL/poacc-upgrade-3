@@ -8,14 +8,12 @@ The order agreement BIS includes the sending of information on agreed products/s
 
 The order agreement process flow can be described as follows:
 
-Start position.
+.Possible start positions:
+. A Buyer makes a purchase of goods or services from the Seller.
+. A Seller reports one or more accumulated purchases made under a framework agreement to the Buyer.
 
-.A Buyer makes a purchase of goods or services from the Seller.
-.A Seller reports one or more accumulated purchases made under a framework agreement to the Buyer.
-
-End positions.
-
-.A purchase has been recorded in the Buyer´s purchasing system. The seller proceeds to invoice accordingly.
+.End positions:
+. A purchase has been recorded in the Buyer´s purchasing system. The seller proceeds to invoice accordingly.
 
 An Order Agreement may refer to a framework agreement for its terms and conditions; otherwise the Buyer’s terms and conditions apply.
 
@@ -27,15 +25,16 @@ The diagrams are expressed in the BPMN notation. The diagram below serves as an 
 
 :leveloffset: +1
 
-include::../../../shared/bpmn/bpmn-legend.adoc[align = "center", width=600]
+include::../../../shared/bpmn/bpmn-legend.adoc[]
 
 :leveloffset: -1
 
 The following diagram shows the choreography of the business process implemented by the BIS.
 
-image:../images/bpmn-orderagreement1.jpg[align = "center", width=600]
+image::images/bpmn-orderagreement1.jpg[align = "center", width=600]
 
-image:../images/bpmn-orderagreement2.jpg[align = "center", width=600]
+image::images/bpmn-orderagreement2.jpg[align = "center", width=600]
+
 
 [cols=",",]
 |====

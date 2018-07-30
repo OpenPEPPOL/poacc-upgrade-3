@@ -3,14 +3,14 @@
 
 This use case describes the process where a customer/buyer orders tickets.
 
-[cols="1,5",]
+[cols="1h,5",]
 |====
 |Use Case number |1
 |Use Case Name |Web store used for booking tickets
 |Use Case Description |The buyer uses a website to buy tickets, such as for airfare or events.
-|Parties involved|
-Buyer
-Seller
+|Parties involved
+a| * Buyer
+* Seller
 |Assumptions |The seller has a website that allows the buyer to select and order tickets. +
 The buyer has an account with the seller with necessary details to send him an order agreement.
 |The flow|

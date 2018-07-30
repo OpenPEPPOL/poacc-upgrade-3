@@ -31,7 +31,7 @@ The set of information elements is assumed to be sufficient to support organizat
 *** Data model, a set of elements that the receiver MUST be able to process.
 *** Business rules, a set of business rules that ensure a common way of processing the information elements.
 The rules are stated in a way that allows for automated validation of document instances.
-Issuers and receivers can verify that the exchanged document conformes to the rules of this BIS. +
+Issuers and receivers can verify that the exchanged document conforms to the rules of this BIS. +
 PEPPOL adds business rules on top of the data model to clarify certain design choices left open by the {cenbii}.
 These choices are intended to lower the implementation threshold by limiting options for implementers and thereby increase interoperability of PEPPOL punch out transactions.
 
