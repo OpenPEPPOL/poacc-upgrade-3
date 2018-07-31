@@ -9,6 +9,5 @@ All electronic address identifiers (`cbc:EndpointID/@schemeID`) use of a code li
 [source,xml, indent="0"]
 ----
 <cbc:EndpointID schemeID="DK:CVR">DK87654321</cbc:EndpointID> <1>
-
 ----
 <1> schemeID is mandatory
