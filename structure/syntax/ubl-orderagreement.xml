@@ -690,12 +690,10 @@
 						<Reference type="BUSINESS_TERM">tir110-067</Reference>
 						<Value type="EXAMPLE">Delivery party name</Value>
 					</Element>
-				</Element>
-				
+				</Element>		
 				<Element cardinality="0..1">
 					<Term>cac:PostalAddress</Term>
-					<Name>Postal Address</Name>
-					
+					<Name>Delivery party address</Name>				
 					<Element cardinality="0..1">
 						<Term>cbc:StreetName</Term>
 						<Name>Address line 1</Name>
@@ -770,8 +768,7 @@
 							<Value type="EXAMPLE">DK</Value>
 						</Element>
 					</Element>
-				</Element>
-				
+				</Element>		
 			</Element>
 		</Element>
 		<Element cardinality="0..1">
