@@ -68,7 +68,7 @@
 			<Description>"Indicates wether the order is a purchase order or consignement order.
                 Default is purchase order.</Description>
 			<Reference type="BUSINESS_TERM">tir01-153</Reference>
-			<Reference type="CODE_LIST">T01UNCL1001</Reference>
+			<Reference type="CODE_LIST">UNCL1001_T01</Reference>
 			<Value type="EXAMPLE">105</Value>
 		</Element>
 		<Element cardinality="0..1">

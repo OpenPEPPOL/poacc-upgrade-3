@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>UNCL1001 Document name code, full list</Title>
+    <Identifier>UNCL1001_T01</Identifier>
+    <Version>D.17A</Version>
+    <Agency>UN/CEFACT</Agency>
+    <Subset>openPEPPOL</Subset>
+
+ 
+    <Code>
+        <Id>105</Id>
+        <Name>Purchase order</Name>
+        <Description>Document/message issued within an enterprise to initiate
+            the purchase of articles, materials or services required
+            for the production or manufacture of goods to be offered
+            for sale or otherwise supplied to customers.
+        </Description>
+    </Code>
+  
+    <Code>
+        <Id>227</Id>
+        <Name>Consignment order</Name>
+        <Description>Order to deliver goods into stock with agreement on
+            payment when goods are sold out of this stock.
+        </Description>
+    </Code>
+   
+</CodeList>
