@@ -3,7 +3,6 @@
 
 A message level response document should support the following requirements:
 
-* A message level response document should support the following requirements:
 * The message and its use should not be linked to any specific infrastructure implementation.
 * At most one message level response can be sent per received message.
 * The response message should convey either an “accept”, “reject” or “acknowledge” of the
@@ -14,7 +13,7 @@ the business document.
 * An acceptance or acknowledge implies that the received message will be further processed
 * The specification assumes that any service provider acts on behalf of either the sender or the
 receiver.
-*The response message should provide for coded responses in order to facilitate automation
+* The response message should provide for coded responses in order to facilitate automation
 in processing the message response.
 * MLRs may be sent to different endpoints, for a single participant, depending on the used
 process.

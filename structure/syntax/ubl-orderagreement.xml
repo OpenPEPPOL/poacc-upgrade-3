@@ -660,7 +660,7 @@
 				
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
-					<Name>Party identification - test</Name>
+					<Name>Party identification</Name>
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Delivery party identifier</Name>
