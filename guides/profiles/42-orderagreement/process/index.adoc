@@ -31,9 +31,8 @@ include::../../../shared/bpmn/bpmn-legend.adoc[]
 
 The following diagram shows the choreography of the business process implemented by the BIS.
 
-image::images/bpmn-orderagreement1.jpg[align = "center", width=600]
+image::images/oa-bpmn-1.jpg[align = "center", width=600]
 
-image::images/bpmn-orderagreement2.jpg[align = "center", width=600]
 
 
 [cols=",",]
