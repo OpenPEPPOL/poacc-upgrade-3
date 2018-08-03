@@ -168,11 +168,13 @@
                     <Description>Then email for the sending party´s contact point for communication
                         regarding this message.</Description>
                     <Reference type="BUSINESS_TERM">tir111-027</Reference>
+                    
                     <Attribute usage="optional">
                         <Term>languageID</Term>
                         <Name>Language identifier</Name>
                         <Value type="EXAMPLE">en</Value>
                     </Attribute>
+                    
                     <Attribute usage="optional">
                         <Term>languageLocaleID</Term>
                         <Name>Language locale identifier</Name>
@@ -214,6 +216,7 @@
                     <Description>It should be possible to specify the identifier or identifiers for
                         the party.</Description>
                     <Reference type="BUSINESS_TERM">tir111-011</Reference>
+                    
                     <Attribute usage="optional">
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
@@ -281,11 +284,11 @@
                         <Reference type="BUSINESS_TERM">tir111-015</Reference>
                         <Reference type="CODE_LIST">OPStatusReason</Reference>    
                         <Reference type="CODE_LIST">OPStatusAction</Reference>
-                        <Attribute usage="optional">
+                        <Attribute>
                             <Term>listID</Term>
                             <Name>List identifier</Name>
                             <Description>List identifier for clarification</Description>
-                            <Reference type="CODE_LIST">Clarification</Reference>
+                            <Reference type="CODE_LIST">ClarificationListID</Reference>
                             <Value type="EXAMPLE">OPStatusAction</Value>
                         </Attribute>
                     </Element>
