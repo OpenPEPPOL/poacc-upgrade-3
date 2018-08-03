@@ -14,6 +14,7 @@
     <Documentation path="profiles/18-punchout/">Punch Out BIS (Business Interoperability Specifications)</Documentation>
     <Documentation path="profiles/42-orderagreement/">Order Agreement BIS (Business Interoperability Specifications)</Documentation>
     <Documentation path="profiles/36-mlr/">Message Level Response BIS (Business Interoperability Specifications)</Documentation>
+    <Documentation path="profiles/62-invoiceresponse/">Invoice Response BIS (Business Interoperability Specifications)</Documentation>
     
     <!-- Syntax -->
     <Resource>
