@@ -1,0 +1,16 @@
+[[use-case-8-invoice-is-accepted-by-a-third-party-acting-on-behalf-of-the-buyer.]]
+= Use case 8 — Invoice is accepted by a third party acting on behalf of the Buyer.
+
+[cols="1h,5",options="header"]
+|====
+|Use Case number |8
+|Use Case Name |Invoice is accepted by third party who acts on behalf of Buyer.
+|Assumption and description |The Buyer has contracted a service provider to handle Invoice to Order matching on his behalf.
+|The flow |Invoice Response with 'Accepted' status and mandatory Invoice Response data indicating that an Invoice is accepted.
+Sending Party differs from Buyer party details.
+|Parties involved |Buyer +
+Service provider +
+Seller
+|Result |Seller is notified that an Invoice has been accepted and will be paid on due date.
+|XML example |T111-uc008-Invoice is accepted by third party.xml #Add link#
+|====

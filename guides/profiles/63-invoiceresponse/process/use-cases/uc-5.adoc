@@ -1,0 +1,21 @@
+
+[[use-case-5-invoice-is-conditionally-accepted]]
+= Use case 5 — Invoice is conditionally accepted
+
+[cols="1h,5",options="header"]
+|====
+|Use Case number |5
+|Use Case Name |Invoice is conditionally accepted
+|Assumption and description a|
+The Invoice is conditionally accepted and will be paid on a date different from the Invoice due date.
+
+The Buyer has accepted the invoice and intends to pay it according to agreement which gives a due date different from what is stated in the invoice.
+
+|The flow |Invoice Response with 'Conditionally accepted' status and explanatory clarification code for changed payment terms.
+The clarification includes information on what date the Invoice will be paid.
+|Parties involved |Buyer +
+Seller
+|Result |Seller is notified that Invoice has been conditionally accepted but will be paid on a date that is different from what was stated in the invoice.
+If the Seller accepts the change, he doesn't need to react, otherwise he must contact the Buyer (externally).
+|XML example |T111-uc005-Invoice is conditionally accepted.xml #Add link#
+|====

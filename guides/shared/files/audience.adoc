@@ -2,7 +2,7 @@
 [[audience]]
 = Audience
 
-The audience for this document is organizations wishing to be {peppol} enabled for their procurement process, and/or their ICT-suppliers.
+The audience for this document is organizations wishing to be {peppol} enabled for exchanging electronic business documents, and/or their ICT-suppliers.
 
 These organizations may be:
 

@@ -1,0 +1,25 @@
+
+[[use-case-4c-invoice-is-rejected-requesting-replacement]]
+= Use case 4c — Invoice is rejected requesting replacement
+
+[cols="1h,5",options="header"]
+|====
+|Use Case number |4c
+|Use Case Name |Invoice is rejected requesting replacement.
+|Assumption and description a|
+The Invoice is rejected, Credit Note requested, and a new Invoice is requested.
+
+The Buyer doesn’t accept the invoice content and rejects it.
+Buyer needs a Credit Note to cancel the original invoice and a new correct Invoice to continue with processing.
+The Buyer provides contact data and textual reasoning.
+
+|The flow |Invoice Response with 'Rejected' status with reasoning text why Invoice is rejected.
+Clarification codes for requesting a Credit Note and reissuing of a new Invoice.
+Buyer provides contact information to the Seller.
+|Parties involved |Buyer +
+Seller
+|Result |The Seller has been informed that the Invoice has been rejected.
+The Seller will proceed to issue a Credit Note for the referenced Invoice and a new Invoice to replace it. +
+The Seller can contact the Buyer using contact details provided in the Invoice Response.
+|XML example |T111-uc004c-Rejected requesting replacement.xml #Add link#
+|====

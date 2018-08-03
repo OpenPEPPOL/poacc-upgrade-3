@@ -1,0 +1,14 @@
+[[use-case-6b-invoice-is-under-query-because-of-missing-po-reference.]]
+= Use case 6b — Invoice is under query because of missing PO reference.
+
+[cols=",",options="header",]
+|====
+|Use Case number |6b
+|Use Case Name |Invoice is under query because for example of missing PO reference.
+|Assumption and description |The Buyer cannot process the invoice because he requires a PO reference.
+|The flow |An Invoice Response is sent with 'Under query status, explanatory clarification code for missing PO reference and instructive clarification code for providing it.
+|Parties involved |Buyer +
+Seller
+|Result |The Seller has been notified that a PO reference is missing from the Invoice and that he must provide it in order for Buyer to continue with processing
+|XML example |T111-uc006a-Missing PO.xml #Add link#
+|====

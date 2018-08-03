@@ -57,6 +57,11 @@
         <Path>structure/syntax/ubl-mlr.xml</Path>
         <Title>UBL Message Level Response</Title>
     </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-invoiceresponse.xml</Path>
+        <Title>UBL Invoice Response</Title>
+    </Resource>
     
     <!-- Rules -->
     
@@ -95,6 +100,10 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL4343.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL4343-T111.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
@@ -138,6 +147,14 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/GS17009.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/OPStatusReason.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/OPStatusAction.xml</Path>
     </Resource>
  
 </Project>

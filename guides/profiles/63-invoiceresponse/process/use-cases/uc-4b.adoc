@@ -1,0 +1,17 @@
+[[use-case-4b-invoice-is-rejected-requesting-re-issue]]
+= Use case 4b — Invoice is rejected requesting re-issue
+
+[cols="1h,5",options="header"]
+|====
+|Use Case number |4b
+|Use Case Name |Invoice is rejected requesting re-issue
+|Assumption and description |Invoice is rejected e.g. because of missing PO reference.
+The Buyer may not have booked the invoice into his accounts, so he considers that a Credit note is not needed but a correct Invoice is needed.
+|The flow |Invoice Response with 'Rejected' status, explanatory clarification code e.g, for missing PO reference and instructive clarification code for issuing a correct Invoice.
+|Parties involved |Buyer +
+Seller
+|Result |Seller is notified that an invoice has been rejected because of missing PO reference. +
+Seller needs to add PO number to the Invoice and reissue it.
+How he handles the initial invoice is up to him.
+|XML example |T111-uc004b-Rejected requesting reissue.xml #Add link#
+|====

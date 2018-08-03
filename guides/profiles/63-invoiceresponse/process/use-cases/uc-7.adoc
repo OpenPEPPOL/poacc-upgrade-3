@@ -1,0 +1,14 @@
+[[use-case-7-invoice-payment-has-been-initiated]]
+= Use case 7 — Invoice payment has been initiated
+
+[cols="1h,5",options="header"]
+|====
+|Use Case number |7
+|Use Case Name |Invoice payment has been initiated
+|Assumption and description |The Buyer indicates to the Seller that an invoice payment has been initiated.
+|The flow |An Invoice Response is sent with 'Paid' status.
+|Parties involved |Buyer +
+Seller
+|Result |Seller knows that the payment will be received soon.
+|XML example |T111-uc007-Payment has been initiated.xml #Add link#
+|====
