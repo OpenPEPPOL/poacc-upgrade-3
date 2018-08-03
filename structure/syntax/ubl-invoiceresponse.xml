@@ -269,7 +269,8 @@
                 
                 <Element cardinality="0..unbounded">
                     <Term>cac:Status</Term>
-                    <Name>Status information</Name>
+                    <Name>Clarification information</Name>
+                    <Description>Clarification is mandatory when the status is UQ-Under query, RE - Rejected and CA - Conditionally accepted. Clarification may be given as a code, a description or both. If both are used, they must indicate the same clarification.</Description>
                     
                     <Element cardinality="0..1">
                         <Term>cbc:StatusReasonCode</Term>
@@ -280,6 +281,13 @@
                         <Reference type="BUSINESS_TERM">tir111-015</Reference>
                         <Reference type="CODE_LIST">OPStatusReason</Reference>    
                         <Reference type="CODE_LIST">OPStatusAction</Reference>
+                        <Attribute usage="optional">
+                            <Term>listID</Term>
+                            <Name>List identifier</Name>
+                            <Description>List identifier for clarification</Description>
+                            <Reference type="CODE_LIST">Clarification</Reference>
+                            <Value type="EXAMPLE">OPStatusAction</Value>
+                        </Attribute>
                     </Element>
                     
                     <Element cardinality="0..1">

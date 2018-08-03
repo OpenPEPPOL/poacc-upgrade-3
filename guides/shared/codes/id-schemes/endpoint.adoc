@@ -5,7 +5,7 @@
 All electronic address identifiers (`cbc:EndpointID/@schemeID`) use of a code list to be maintained by CEF.
 #This code list is still not available. Use PEPPOL Policy for identifiers until code list is available#
 
-.Examples of usage in `cbc:EndpointID`:
+.Examples of usage in `cbc:EndpointID`
 [source,xml, indent="0"]
 ----
 
@@ -13,3 +13,5 @@ All electronic address identifiers (`cbc:EndpointID/@schemeID`) use of a code li
 
 ----
 <1> schemeID attribute is mandatory
+
+  
