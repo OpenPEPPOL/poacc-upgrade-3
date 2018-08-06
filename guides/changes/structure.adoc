@@ -7,9 +7,9 @@
 * Add filename to attachments
 * Align contact classes, use name, telephone and email.
 
+
 Order/order response::
 * Your ref into cbc:CustomerReference, instead of Buyer/Contact/ID.
-** Order agreement uses CustomerReference
 * AccountingCustomerParty, use Contact ID or Name?
 
 

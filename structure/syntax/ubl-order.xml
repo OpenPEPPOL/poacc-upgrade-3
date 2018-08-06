@@ -91,6 +91,15 @@
 			<Reference type="CODE_LIST">ISO4217</Reference>
 			<Value type="EXAMPLE">NOK</Value>
 		</Element>
+		
+	<Element cardinality="0..1">
+		<Term>cbc:CustomerReference</Term>
+		<Name>Buyer contact</Name>
+		<Description>Reference to buyer contact, "Your ref."</Description>
+		<DataType>Text</DataType>
+		<Reference type="RULE">OP-T01-010</Reference>
+		<Value type="EXAMPLE">oik987</Value>
+	</Element>
 		<Element cardinality="0..1">
 			<Term>cbc:AccountingCost</Term>
 			<Name>Buyers accounting string</Name>

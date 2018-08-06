@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<OrderResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2 C:\Users\Notandi\Documents\Upplýsingar\Standards\UBL\UBL-2.1\xsdrt\maindoc\UBL-OrderResponse-2.1.xsd">
+<OrderResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 
 
 	<!-- tag::customizationid[] -->
@@ -36,7 +38,7 @@
 		</cac:Attachment>
 	</cac:AdditionalDocumentReference>
 	<!-- end::AdditionalDocumentReference[] -->
-	
+
 	<!-- tag::contract[] -->
 	<cac:Contract>
 		<cbc:ID>contract id</cbc:ID>
@@ -213,13 +215,13 @@
 	<!-- end::LegalMonetaryTotal[] -->
 
 	<cac:OrderLine>
-			<!-- tag::LineItem[] -->
+		<!-- tag::LineItem[] -->
 		<cac:LineItem>
 			<cbc:ID>1</cbc:ID>
 			<cbc:Note>Line note</cbc:Note>
 			<cbc:Quantity unitCode="C62">120</cbc:Quantity>
 			<cbc:LineExtensionAmount currencyID="EUR">500</cbc:LineExtensionAmount>
-			
+
 			<!-- end::LineItem[] -->
 
 			<!-- tag::DeliveryLine[] -->
@@ -261,7 +263,8 @@
 					<cbc:ID>doc id</cbc:ID>
 					<cbc:DocumentType>Item specs</cbc:DocumentType>
 					<cac:Attachment>
-						<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="specs.pdf">
+						<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf"
+							filename="specs.pdf">
 							UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
 					</cac:Attachment>
 				</cac:ItemSpecificationDocumentReference>

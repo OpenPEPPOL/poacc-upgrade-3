@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<OrderResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2 C:\Users\Notandi\Documents\Upplýsingar\Standards\UBL\UBL-2.1\xsdrt\maindoc\UBL-OrderResponse-2.1.xsd">
-	<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+<OrderResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns110:ver1.0:extended:urn:www.peppol.eu:bis:peppol42a:ver1.0</cbc:CustomizationID>
 	<cbc:ProfileID>urn:www.cenbii.eu:profile:bii42:ver1.0</cbc:ProfileID>
 	<cbc:ID>id123 tir110-001</cbc:ID>
@@ -16,7 +17,8 @@
 		<cbc:ID>Document idtir110-045</cbc:ID>
 		<cbc:DocumentType>Document description</cbc:DocumentType>
 		<cac:Attachment>
-			<cbc:EmbeddedDocumentBinaryObject filename="file.pdf" mimeCode="application/pdf">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
+			<cbc:EmbeddedDocumentBinaryObject filename="file.pdf" mimeCode="application/pdf"
+				>UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
 			<cac:ExternalReference>
 				<cbc:URI>https://joinup.ec.europa.eu/svn/peppol/PostAward/Ordering28A/20160310%20-%20PEPPOL_BIS_28a-101.pdf</cbc:URI>
 			</cac:ExternalReference>
@@ -200,7 +202,9 @@
 					<cbc:ID>doc id</cbc:ID>
 					<cbc:DocumentType>Item specs</cbc:DocumentType>
 					<cac:Attachment>
-						<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="specs.pdf">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
+						<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf"
+							filename="specs.pdf"
+							>UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
 						<cac:ExternalReference>
 							<cbc:URI>https://joinup.ec.europa.eu/svn/peppol/PostAward/Ordering28A/20160310%20-%20PEPPOL_BIS_28a-101.pdf</cbc:URI>
 						</cac:ExternalReference>

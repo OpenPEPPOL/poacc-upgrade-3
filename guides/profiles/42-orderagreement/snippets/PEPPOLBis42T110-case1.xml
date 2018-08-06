@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<OrderResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2 C:\Users\Notandi\Documents\Upplýsingar\Standards\UBL\UBL-2.1\xsdrt\maindoc\UBL-OrderResponse-2.1.xsd">
-	<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+<OrderResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns110:ver1.0:extended:urn:www.peppol.eu:bis:peppol42a:ver1.0</cbc:CustomizationID>
 	<cbc:ProfileID>urn:www.cenbii.eu:profile:bii42:ver1.0</cbc:ProfileID>
 	<cbc:ID>id123 tir110-001</cbc:ID>
@@ -120,8 +121,7 @@
 			<cbc:LineExtensionAmount currencyID="EUR">1000</cbc:LineExtensionAmount>
 			<cbc:TotalTaxAmount currencyID="EUR">0</cbc:TotalTaxAmount>
 			<cac:Delivery>
-				<cbc:Quantity unitCode="EUR">12</cbc:Quantity>
-0			</cac:Delivery>
+				<cbc:Quantity unitCode="EUR">12</cbc:Quantity> 0 </cac:Delivery>
 			<cac:Price>
 				<cbc:PriceAmount currencyID="EUR">1000</cbc:PriceAmount>
 				<cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>

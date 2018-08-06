@@ -706,7 +706,7 @@
                             relevant.</Description>
 						<DataType>Quantity</DataType>
 						<Reference type="BUSINESS_TERM">tir77-041</Reference>
-						<Attribute usage="optional">
+						<Attribute>
 							<Term>unitCode</Term>
 							<Name>Item property unit of measure</Name>
 							<Description>May not be relevant when properties are descriptive. The

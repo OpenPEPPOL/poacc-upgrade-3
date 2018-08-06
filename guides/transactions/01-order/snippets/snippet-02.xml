@@ -3,7 +3,6 @@
   xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2"
   xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-
   <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns001:ver2.0:extended:urn:www.peppol.eu:bis:peppol03a:ver2.0</cbc:CustomizationID>
   <cbc:ProfileID>urn:www.cenbii.eu:profile:bii03:ver2.0</cbc:ProfileID>
   <cbc:ID>1</cbc:ID>
@@ -37,7 +36,6 @@
         </cac:RegistrationAddress>
       </cac:PartyLegalEntity>
       <cac:Contact>
-        <cbc:ID>MAFO</cbc:ID>
         <cbc:Name>Martin Foggerty</cbc:Name>
         <cbc:Telephone>+46555785488</cbc:Telephone>
         <cbc:Telefax>+46555785477</cbc:Telefax>
@@ -78,7 +76,6 @@
       <cac:Contact>
         <cbc:Name>John</cbc:Name>
         <cbc:Telephone>+465558877523</cbc:Telephone>
-        <cbc:Telefax>+465558877524</cbc:Telefax>
         <cbc:ElectronicMail>john@cityhospital.se</cbc:ElectronicMail>
       </cac:Contact>
     </cac:DeliveryParty>

@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
-	<!-- tag::ubl-version[] -->
-	<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
-	<!-- end::ubl-version[] -->
 	<!-- tag::customizationid[] -->
 	<cbc:CustomizationID>
 		urn:www.cenbii.eu:transaction:biitrns019:ver2.0:extended:urn:www.peppol.eu:bis:peppol1a:ver4.0

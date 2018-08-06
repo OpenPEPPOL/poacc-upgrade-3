@@ -32,8 +32,6 @@ include::../../shared/datatypes/index.adoc[]
 
 include::../../shared/codes/index.adoc[]
 
-include::rules/index.adoc[]
-
 include::process/index.adoc[]
 
 include::{order}/description/index.adoc[]

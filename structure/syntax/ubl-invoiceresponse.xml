@@ -130,16 +130,7 @@
                         regarding this message.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">tir111-026</Reference>
-                    <Attribute usage="optional">
-                        <Term>languageID</Term>
-                        <Name>Language identifier</Name>
-                        <Value type="EXAMPLE">en</Value>
-                    </Attribute>
-                    <Attribute usage="optional">
-                        <Term>languageLocaleID</Term>
-                        <Name>Language locale identifier</Name>
-                        <Value type="EXAMPLE">32</Value>
-                    </Attribute>
+                   
                     <Value type="EXAMPLE">Jens Jensen</Value>
                 </Element>
 
@@ -149,16 +140,7 @@
                     <Description>Then telephone for the sending party´s contact point for
                         communication regarding this message.</Description>
                     <Reference type="BUSINESS_TERM">tir111-028</Reference>
-                    <Attribute usage="optional">
-                        <Term>languageID</Term>
-                        <Name>Language identifier</Name>
-                        <Value type="EXAMPLE">en</Value>
-                    </Attribute>
-                    <Attribute usage="optional">
-                        <Term>languageLocaleID</Term>
-                        <Name>Language locale identifier</Name>
-                        <Value type="EXAMPLE">1</Value>
-                    </Attribute>
+                    
                     <Value type="EXAMPLE">23 23 23 23</Value>
                 </Element>
 
@@ -169,17 +151,7 @@
                         regarding this message.</Description>
                     <Reference type="BUSINESS_TERM">tir111-027</Reference>
                     
-                    <Attribute usage="optional">
-                        <Term>languageID</Term>
-                        <Name>Language identifier</Name>
-                        <Value type="EXAMPLE">en</Value>
-                    </Attribute>
-                    
-                    <Attribute usage="optional">
-                        <Term>languageLocaleID</Term>
-                        <Name>Language locale identifier</Name>
-                        <Value type="EXAMPLE">4d</Value>
-                    </Attribute>
+                   
                     <Value type="EXAMPLE">jj@test-company.dk</Value>
                 </Element>
 

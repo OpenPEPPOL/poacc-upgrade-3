@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<?xml-stylesheet type="text/xsl" href="file:///C:/Users/Notandi/Documents/Verkefni/ESV/Peppol%20BIS/BIS%2018%20Punch%20Out/Punch%20Out%20schematron/OPENPEPPOL-UBL-T77.xsl"?>
-<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2 C:\Users\Notandi\Documents\Upplýsingar\Standards\UBL\UBL-2.1\xsd\maindoc\UBL-Catalogue-2.1.xsd">
-	<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+	xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns077:ver2.0:extended:www.peppol.eu:bis:peppol18a:ver1.0</cbc:CustomizationID>
 	<cbc:ProfileID>urn:www.cenbii.eu:profile:bii18:ver1.0</cbc:ProfileID>
 	<cbc:ID>1387</cbc:ID>
@@ -41,9 +41,9 @@
 	</cac:ReceiverParty>
 	<cac:CatalogueLine>
 		<cbc:ID>1</cbc:ID>
-		<cbc:ContractSubdivision>RT1387</cbc:ContractSubdivision>
+		<cbc:ContractSubdivision>CRT1387</cbc:ContractSubdivision>
 		<cac:LineValidityPeriod>
-			<cbc:StartDate>2016-08-07</cbc:StartDate>
+			<cbc:StartDate>2014-12-31</cbc:StartDate>
 		</cac:LineValidityPeriod>
 		<cac:RequiredItemLocationQuantity>
 			<cbc:LeadTimeMeasure unitCode="DAY">10</cbc:LeadTimeMeasure>
@@ -56,7 +56,8 @@
 			</cac:DeliveryUnit>
 		</cac:RequiredItemLocationQuantity>
 		<cac:Item>
-			<cbc:Description>One Personal Computer package with a monitor and setup service</cbc:Description>
+			<cbc:Description>One Personal Computer package with a monitor and setup
+				service</cbc:Description>
 			<cbc:Name>PC computer package</cbc:Name>
 			<cac:SellersItemIdentification>
 				<cbc:ID>PC01</cbc:ID>
@@ -72,14 +73,16 @@
 				<cbc:DocumentTypeCode>main_image</cbc:DocumentTypeCode>
 				<cbc:DocumentType>Picture of the computer</cbc:DocumentType>
 				<cac:Attachment>
-					<cbc:EmbeddedDocumentBinaryObject mimeCode="image/jpeg">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
+					<cbc:EmbeddedDocumentBinaryObject mimeCode="image/jpeg"
+						>UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
 				</cac:Attachment>
 			</cac:ItemSpecificationDocumentReference>
 			<cac:ItemSpecificationDocumentReference>
-				<cbc:ID>PC01specs</cbc:ID>
+				<cbc:ID>PC01specs.pdf</cbc:ID>
 				<cbc:DocumentType>PC detailed specification</cbc:DocumentType>
 				<cac:Attachment>
-					<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
+					<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf"
+						>UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
 				</cac:Attachment>
 			</cac:ItemSpecificationDocumentReference>
 			<cac:OriginCountry>
@@ -92,7 +95,7 @@
 				<cbc:ID schemeID="UNCL5305 SUBSET">S</cbc:ID>
 				<cbc:Percent>18</cbc:Percent>
 				<cac:TaxScheme>
-					<cbc:ID schemeID="UNCL5153">VAT</cbc:ID>
+					<cbc:ID schemeID="UNCL5103">VAT</cbc:ID>
 				</cac:TaxScheme>
 			</cac:ClassifiedTaxCategory>
 			<cac:AdditionalItemProperty>
@@ -103,23 +106,9 @@
 				<cbc:Name>RAM memory</cbc:Name>
 				<cbc:NameCode>Item property classification code</cbc:NameCode>
 				<cbc:Value>16 GB</cbc:Value>
-				<cbc:ValueQuantity unitCode="AD" unitCodeListID="UNECERec20">17179869184</cbc:ValueQuantity>
+				<cbc:ValueQuantity unitCode="AD" unitCodeListID="UNECERec20"
+					>16000000</cbc:ValueQuantity>
 			</cac:AdditionalItemProperty>
-			<cac:ManufacturerParty>
-				<cac:PartyName>
-					<cbc:Name>The PC Manufacturing Party</cbc:Name>
-				</cac:PartyName>
-			</cac:ManufacturerParty>
-			<cac:Certificate>
-				<cbc:ID>EU Ecolabel</cbc:ID>
-				<cbc:CertificateTypeCode>NA</cbc:CertificateTypeCode>
-				<cbc:CertificateType>active</cbc:CertificateType>
-				<cac:IssuerParty>
-					<cac:PartyName>
-						<cbc:Name>NA</cbc:Name>
-					</cac:PartyName>
-				</cac:IssuerParty>
-			</cac:Certificate>
 		</cac:Item>
 	</cac:CatalogueLine>
 	<cac:CatalogueLine>
@@ -152,7 +141,7 @@
 				<cbc:ID schemeID="UNCL5305 SUBSET">S</cbc:ID>
 				<cbc:Percent>18</cbc:Percent>
 				<cac:TaxScheme>
-					<cbc:ID schemeID="UNCL5153">VAT</cbc:ID>
+					<cbc:ID schemeID="UNCL5103">VAT</cbc:ID>
 				</cac:TaxScheme>
 			</cac:ClassifiedTaxCategory>
 			<cac:AdditionalItemProperty>
@@ -182,7 +171,7 @@
 				<cbc:ID schemeID="UNCL5305 SUBSET">AA</cbc:ID>
 				<cbc:Percent>8</cbc:Percent>
 				<cac:TaxScheme>
-					<cbc:ID schemeID="UNCL5153">VAT</cbc:ID>
+					<cbc:ID schemeID="UNCL5103">VAT</cbc:ID>
 				</cac:TaxScheme>
 			</cac:ClassifiedTaxCategory>
 			<cac:AdditionalItemProperty>

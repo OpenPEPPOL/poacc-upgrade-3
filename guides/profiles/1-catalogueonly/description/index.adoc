@@ -5,13 +5,6 @@
 
 include::parties.adoc[]
 
-:leveloffset: -1
-
-[[other-key-elements]]
-== Other key elements
-
-:leveloffset: +1
-
 include::actioncode.adoc[]
 
 include::itemidentification.adoc[]

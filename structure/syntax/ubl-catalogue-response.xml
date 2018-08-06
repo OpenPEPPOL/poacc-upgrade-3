@@ -68,6 +68,7 @@
 				<Description>A response may contain the party electronic address. The address can
                     be of any format and the format should be identified in the
                     message.</Description>
+				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">tir58-009</Reference>
 				<Reference type="RULE">EUGEN-T58-R001</Reference>
 				<Attribute>
@@ -121,6 +122,7 @@
 				<Description>A response may contain the party electronic address. The address can
                     be of any format and the format should be identified in the
                     message.</Description>
+				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">tir58-012</Reference>
 				<Reference type="RULE">EUGEN-T58-R001</Reference>
 				<Attribute>
