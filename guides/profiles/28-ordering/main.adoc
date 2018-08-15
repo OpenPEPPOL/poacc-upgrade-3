@@ -26,13 +26,13 @@ include::introduction/index.adoc[]
 
 include::principles/index.adoc[]
 
+include::process/index.adoc[]
+
 include::requirements/index.adoc[]
 
 include::../../shared/datatypes/index.adoc[]
 
 include::../../shared/codes/index.adoc[]
-
-include::process/index.adoc[]
 
 include::{order}/description/index.adoc[]
 

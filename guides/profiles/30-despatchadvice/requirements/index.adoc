@@ -2,12 +2,10 @@
 = Despatch Advice transaction business requirements
 
 
-
-_General requirements (the identifiers in the first column are referenced to from the detailed message structure)_
-
-[cols="1,5",options="header",]
+.General requirements (the identifiers in the first column are referenced to from the detailed message structure)
+[cols="1h,5",options="header",]
 |====
-|*ID* |*Requirement*
+|ID |Requirement
 |tbr16-016 |The despatch advice must be identified with an identifier, with the issue date and possibly the issue time.
 |tbr16-001 |The despatch advice message is used by the supplier to indicate to the receiver, the goods to be delivered and how they are packaged.
 |tbr16-002 a|
@@ -27,11 +25,10 @@ The despatch advice may refer to an order.
 |tbr16-017 |The despatch advice may contain a textual note.
 |====
 
-_Parties_
-
-[cols="1,5",options="header",]
+.Parties
+[cols="1h,5",options="header",]
 |====
-|*ID* |*Requirement*
+|ID |Requirement
 |tbr16-004 a|
 The despatch advice must identify the despatch party, who is responsible for the physical despatch.
 
@@ -65,11 +62,10 @@ If the physical transport is provided by a third party, the despatch advice may 
 
 |====
 
-_Line Item_
-
-[cols="1,5",options="header",]
+.Line Item
+[cols="1h,5",options="header",]
 |====
-|*ID* |*Requirement*
+|ID |Requirement
 |tbr16-007 a|
 Each despatch statement line should describe despatching of each order line.
 The line should provide reference to

@@ -1,9 +1,8 @@
 include::../../shared/links.adoc[]
 
-= PEPPOL BIS Catalogue Only - 1A
-OpenPEPPOL AISBL, Post-Award Coordinating Community
+= image:../../shared/images/peppol.png[float="right"]PEPPOL BIS Catalogue Only - 1A
+{author}
 v3.0.0
-:description: The PEPPOL Business Interoperability Specification, “BIS” from here on after, has been developed by the OpenPEPPOL AISBL Post Award Coordinating Community and is published as part of the PEPPOL specifications.
 :doctype: book
 :icons: font
 :stem:
@@ -13,9 +12,8 @@ v3.0.0
 :source-language: xml
 :sectanchors:
 :sectnums:
-:title-logo-image: ../images/peppol.jpg
 
-
+{description}
 
 :leveloffset: +1
 
