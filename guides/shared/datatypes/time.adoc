@@ -1,7 +1,7 @@
 
 = Time
 
-Time shall be in accordance to the “Extended time format” as specified by {ISO8601}, format [hh]:[mm]:[ss]. #The precision of decimal fraction is zero, i.e it should be used.#
+Time shall be in accordance to the “Extended time format” as specified by {ISO8601}, format [hh]:[mm]:[ss]. #The precision of decimal fraction is zero, i.e it should not be used.#
 
 ====
 IMPORTANT: Time shall *not* include timezone information.

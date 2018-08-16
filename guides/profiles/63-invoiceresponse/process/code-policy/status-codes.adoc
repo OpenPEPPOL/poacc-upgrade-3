@@ -3,7 +3,7 @@
 
 .The following policies apply to the use of status codes:
 * List of Status codes is fixed and can not be changed bilaterally.
-* There are Six pre-agreed status codes (main statuses).
+* There are seven pre-agreed status codes (main statuses).
 * Status code is sent from Buyer to Seller to inform the Seller about further processing of the invoice on Buyer side.
 * Status code does not inform the business reason for the Status to the Seller (there is a clarification code for that).
 * Every status can be the first status sent to the Seller but from there further statuses must follow a defined order (see <<invoice-response-process-rules>>, rule OP-BR111-R012).
@@ -16,7 +16,7 @@
 
 .The columns in the below table shall be understood as follows:
 [horizontal]
-Status code:: The code that defines the status of the reference document, e.g. Invoice.
+Status code:: The code that defines the status of the reference document, e.g. AP.
 
 UNECE name:: The name of the code, based on UNECE code list 4343.
 
