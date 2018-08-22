@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 	<Term>Order</Term>
+	
+	
+	<Property key="sch:prefix">PEPPOL-order</Property>
+	<Property key="sch:identifier">order-basic</Property>
+	
+	
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Order-2</Namespace>
 	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
 	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+	
+	
 	<Document>
 		<Term>ubl:Order</Term>
 		<Element>
@@ -65,7 +73,7 @@
 		<Element cardinality="0..1">
 			<Term>cbc:OrderTypeCode</Term>
 			<Name>Consignment order indication</Name>
-			<Description>"Indicates wether the order is a purchase order or consignement order.
+			<Description>Indicates wether the order is a purchase order or consignement order.
                 Default is purchase order.</Description>
 			<Reference type="BUSINESS_TERM">tir01-153</Reference>
 			<Reference type="CODE_LIST">UNCL1001_T01</Reference>
@@ -1500,7 +1508,7 @@
 					<Description>Price information </Description>
 					<Element>
 						<Term>cbc:PriceAmount</Term>
-						<Name>Iitem price</Name>
+						<Name>Item price</Name>
 						<Description>The net price of the item including all allowances, charges and taxes
                             but exluding VAT. Although price is an optional element in an
                             order it recommended as best practice to either state the price or
