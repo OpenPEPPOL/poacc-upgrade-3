@@ -3,7 +3,7 @@
 	<Term>PunchOut</Term>
 	
 	<Property key="sch:prefix">PEPPOL-T77</Property>
-	<Property key="sch:identifier">basic</Property>
+	<Property key="sch:identifier">T77-basic</Property>
 	
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2</Namespace>
 	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>

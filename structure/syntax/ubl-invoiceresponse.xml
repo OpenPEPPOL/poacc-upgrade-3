@@ -3,7 +3,7 @@
     <Term>InvoiceResponse</Term>
     
     <Property key="sch:prefix">PEPPOL-T111</Property>
-    <Property key="sch:identifier">basic</Property>
+    <Property key="sch:identifier">T111-basic</Property>
     
     
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2</Namespace>

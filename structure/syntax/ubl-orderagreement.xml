@@ -3,7 +3,7 @@
 	<Term>OrderAgreement</Term>
 	
 	<Property key="sch:prefix">PEPPOL-T110</Property>
-	<Property key="sch:identifier">basic</Property>
+	<Property key="sch:identifier">T110-basic</Property>
 	
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2</Namespace>
 	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>

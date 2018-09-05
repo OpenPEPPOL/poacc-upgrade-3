@@ -3,7 +3,7 @@
 	<Term>CatalogueResponse</Term>
 	
 	<Property key="sch:prefix">PEPPOL-T58</Property>
-	<Property key="sch:identifier">basic</Property>
+	<Property key="sch:identifier">T58-basic</Property>
 	
 	
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2</Namespace>
