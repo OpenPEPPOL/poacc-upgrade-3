@@ -3,8 +3,8 @@
 	<Term>Order</Term>
 	
 	
-	<Property key="sch:prefix">PEPPOL-order</Property>
-	<Property key="sch:identifier">order-basic</Property>
+	<Property key="sch:prefix">PEPPOL-T76</Property>
+	<Property key="sch:identifier">basic</Property>
 	
 	
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Order-2</Namespace>
