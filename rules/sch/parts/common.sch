@@ -6,12 +6,8 @@
 
   <ns uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" prefix="cbc"/>
   <ns uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" prefix="cac"/>
-  <ns uri="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2" prefix="ubl-application-response"/>
-  <ns uri="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2" prefix="ubl-catalogue"/>
-  <ns uri="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2" prefix="ubl-despatch-advice"/>
-  <ns uri="urn:oasis:names:specification:ubl:schema:xsd:Order-2" prefix="ubl-order"/>
-  <ns uri="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2" prefix="ubl-order-response"/>
   <ns uri="utils" prefix="u"/>
+  
 
   <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:gln" as="xs:boolean">
     <param name="val"/>
@@ -28,6 +24,7 @@
               test=". != ''"
               flag="fatal">Document MUST not contain empty elements.</assert>
     </rule>
+    
     <rule context="cac:*">
       <assert id="PEPPOL-COMMON-R002"
               test="count(*) != 0"
