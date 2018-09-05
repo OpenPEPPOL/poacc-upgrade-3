@@ -8,7 +8,7 @@
     <ns prefix="cbc" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
 
     <!-- <include href="parts/common.sch"/> -->
-    <include href="../../target/generated/order-basic.sch"/>
+    <include href="../../target/generated/T01-basic.sch"/>
 
     <!-- TODO Rules specific to PEPPOL BIS Order 3.0 -->
 
