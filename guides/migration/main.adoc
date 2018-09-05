@@ -1,4 +1,4 @@
-include::../cius/links.adoc[]
+include::../../shared/links.adoc[]
 include::settings.adoc[]
 
 = Migration plan
