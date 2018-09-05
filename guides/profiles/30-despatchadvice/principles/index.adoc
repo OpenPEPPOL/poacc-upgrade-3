@@ -20,7 +20,9 @@ A delivery is taken to be a number of items that are despatched as a single cons
 :leveloffset: +1
 
 include::parties.adoc[]
+
 include::otherconcepts.adoc[]
-include::requirements.adoc[]
+
+//include::requirements.adoc[]
 
 :leveloffset: -1
