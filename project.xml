@@ -175,5 +175,15 @@
         <Property key="filename">PEPPOLBIS-Upgrade-Schematron.zip</Property>
     </Resource>
 
+    <!-- Namespaces -->
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/cac.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/cbc.xml</Path>
+    </Resource>
+    
 
 </Project>
