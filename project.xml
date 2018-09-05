@@ -5,6 +5,7 @@
 
     <Documentation path="changes/">Overview and remarks on alignment work</Documentation>
     <Documentation path="review/">Review of alignments</Documentation>
+    <Documentation path="migration/">Migration plan (copy from Billing)</Documentation>
 
     <!-- BIS documents --> 
     <Documentation path="profiles/3-order-only/">Order only BIS (Business Interoperability Specifications)</Documentation>
