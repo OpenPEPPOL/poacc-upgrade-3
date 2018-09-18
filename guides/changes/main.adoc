@@ -11,8 +11,6 @@
 
 :leveloffset: +1
 
-include::rules/order.adoc[]
-
 include::structure.adoc[]
 
 include::vat-alignment.adoc[]

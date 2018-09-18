@@ -1,0 +1,24 @@
+= Automatic/manual rules
+
+:doctype: book
+:icons: font
+:stem:
+:toc: left
+:toclevels: 2
+:source-highlighter: coderay
+:source-language: xml
+:sectanchors:
+:sectnums:
+
+:leveloffset: +1
+
+include::order.adoc[]
+
+include::order-response.adoc[]
+
+include::catalogue.adoc[]
+
+//include::catalogue-response.adoc[]
+
+
+:leveloffset: -1
