@@ -18,17 +18,17 @@
     <Documentation path="profiles/63-invoiceresponse/">Invoice Response BIS (Business Interoperability Specifications)</Documentation>
     
     <!-- Syntax -->
-    <Resource>
+<!--    <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-order.xml</Path>
         <Title>UBL Order</Title>
-    </Resource>
+    </Resource>-->
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-order-response.xml</Path>
         <Title>UBL Order Response</Title>
     </Resource>
-    <Resource>
+   <!-- <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-orderagreement.xml</Path>
         <Title>UBL Order Agreement</Title>
@@ -63,7 +63,7 @@
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-invoiceresponse.xml</Path>
         <Title>UBL Invoice Response</Title>
-    </Resource>
+    </Resource>-->
     
     <!-- Rules -->
     
