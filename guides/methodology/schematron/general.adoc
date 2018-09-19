@@ -27,7 +27,7 @@ include::../snippets/schematron.sch[tags=parameters]
 
 = Functions
 
-Functions can be created to do checking of format/pattern of values, example is to check that the GLN number has a correct format/pattern, as seen below.
+Functions can be created to do checking of calculations, like the example below:
 
 [source, xml, indent=0]
 ----
@@ -41,7 +41,7 @@ In PEPPOL we only use assertions, not report when creating the rules.
 All asserts must have an `id` attribute with the identifier of the rule
 IMPORTANT: this must be unique within one schematron file
 
-In addition, the `test` attribute must be present, as well as the `flag` attribute. The `flag` attribute must contain either the value "fatal" or "warning". 
+In addition, the `test` attribute must be present, as well as the `flag` attribute. The `flag` attribute must contain either the value "fatal" or "warning".
 
 The error-message is the content of the `assert`- element, and should not be prefixed with the identifier.
 
