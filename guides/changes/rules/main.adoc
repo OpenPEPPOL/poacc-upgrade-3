@@ -1,9 +1,8 @@
 = Automatic/manual rules
-
 :doctype: book
 :icons: font
 :stem:
-:toc:
+:toc: left
 :toclevels: 2
 :source-highlighter: coderay
 :source-language: xml
