@@ -105,10 +105,10 @@
 
 <!-- tag::rule[] -->
     <!-- Accounting supplier -->
-    <rule context="cac:AccountingSupplierParty/cac:Party">
+    <rule context="cac:AccountingSupplierParty/cac:Party"><!--1-->
       <assert id="PEPPOL-EN16931-R020"
               test="cbc:EndpointID"
-              flag="fatal">Seller electronic address MUST be provided</assert>
+              flag="fatal">Seller electronic address MUST be provided</assert><!--2-->
     </rule>
     <!-- end::rule[] -->
     
