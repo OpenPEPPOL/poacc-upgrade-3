@@ -1,5 +1,7 @@
-[[order-business-rules]]
+
 = Order rules
+
+== Transaction rules
 
 [cols="^1,1s,4,1",options="header"]
 |====
@@ -58,7 +60,7 @@
 |====
 
 
-= Order code lists rules
+== Code lists rules
 
 [cols="^1,1s,5",options="header"]
 |====
