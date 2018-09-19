@@ -77,7 +77,7 @@
                 Default is purchase order.</Description>
 			<Reference type="BUSINESS_TERM">tir01-153</Reference>
 			<Reference type="CODE_LIST">UNCL1001_T01</Reference>
-			<Value type="EXAMPLE">105</Value>
+			<Value type="EXAMPLE">220</Value>
 		</Element>
 		<Element cardinality="0..1">
 			<Term>cbc:Note</Term>

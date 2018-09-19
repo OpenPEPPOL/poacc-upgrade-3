@@ -9,12 +9,12 @@
 
  
     <Code>
-        <Id>105</Id>
-        <Name>Purchase order</Name>
-        <Description>Document/message issued within an enterprise to initiate
-            the purchase of articles, materials or services required
-            for the production or manufacture of goods to be offered
-            for sale or otherwise supplied to customers.
+        <Id>220</Id>
+        <Name>Order</Name>
+        <Description>Document/message by means of which a buyer initiates a
+            transaction with a seller involving the supply of goods
+            or services as specified, according to conditions set
+            out in an offer, or otherwise known to the buyer.
         </Description>
     </Code>
   

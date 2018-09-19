@@ -1,5 +1,5 @@
-[[catalogue-business-rules]]
-= Catalogue business rules
+
+= Catalogue transaction rules
 
 [cols="^1,1s,4,1",options="header"]
 |====
@@ -47,7 +47,7 @@
 |-|EUGEN-T19-R053 |An attribute identifier MUST have an scheme identifier “UNCL6313” |fatal
 |====
 
-= Catalogue response rules
+= Catalogue response transaction rules
 
 [cols="^1,1s,4,1",options="header"]
 |====
@@ -70,8 +70,7 @@
 |-|EUGEN-T58-R003 |A response code MUST have a list identifier attribute “UNCL4343” |fatal
 |====
 
-[[code-lists-business-rules]]
-= Code lists business rules
+= Code lists rules
 
 [cols="^1,1s,4,1",options="header"]
 |====

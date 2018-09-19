@@ -3,7 +3,7 @@
 :doctype: book
 :icons: font
 :stem:
-:toc: left
+:toc:
 :toclevels: 2
 :source-highlighter: coderay
 :source-language: xml
@@ -18,7 +18,15 @@ include::order-response.adoc[]
 
 include::catalogue.adoc[]
 
-//include::catalogue-response.adoc[]
+include::order-agreement.adoc[]
+
+include::despatch-advice.adoc[]
+
+include::punchout.adoc[]
+
+include::mlr.adoc[]
+
+include::imr.adoc[]
 
 
 :leveloffset: -1
