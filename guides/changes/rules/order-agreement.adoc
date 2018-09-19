@@ -20,7 +20,7 @@ The following rules apply to the order agreement transaction as it is used in th
 |A|BII3-T110-R009|An Order agreement line MUST contain a #unique# line identifier.|fatal
 |M|BII3-T110-R011|Prices of items MUST not be negative.|fatal
 |M|BII3-T110-R012|An item in an Order agreement line MUST be identifiable by either “item sellers identifier” or “item standard identifier”.|fatal
-|A|BII3-T110-R015|An Order agreement line MUST specify line VAT information.||fatal
+|A|BII3-T110-R015|An Order agreement line MUST specify line VAT information.|fatal
 |A|BII3-T110-R018|A seller MUST contain the seller identifier|fatal
 |A|BII3-T110-R019a|A seller name MUST be at most one|fatal
 |A|BII3-T110-R019b|A seller id MUST be at most one|fatal
