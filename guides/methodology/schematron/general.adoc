@@ -12,7 +12,6 @@ include::../snippets/schematron.sch[tags=schema]
 Different patterns should be provided, suggestion is to have 3 different patterns (if applicable):
 
 . Transaction rules
-. Codelist rules
 . National rules
 
 = Parameters
