@@ -9,7 +9,7 @@ include::../snippets/schematron.sch[tags=schema]
 
 = Patterns
 
-Different patterns should be provided, suggestion is to have 3 different patterns:
+Different patterns should be provided, suggestion is to have 3 different patterns (if applicable):
 
 . Transaction rules
 . Codelist rules

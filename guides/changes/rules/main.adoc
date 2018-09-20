@@ -27,5 +27,7 @@ include::mlr.adoc[]
 
 include::imr.adoc[]
 
+include::billing.adoc[]
+
 
 :leveloffset: -1
