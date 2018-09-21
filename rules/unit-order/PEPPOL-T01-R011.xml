@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-en16931-base-3.0-ubl">
+	configuration="peppolbis-T01-base-3.0">
 	<assert>
 		<description>Verify that the expected total amount without VAT = Expected total sum of line amounts - Sum of allowances on document level + Sum of charges on document level</description>
 		<scope>PEPPOL-T01-R011</scope>

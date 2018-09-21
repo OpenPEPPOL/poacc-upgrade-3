@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-en16931-base-3.0-ubl">
+	configuration="peppolbis-T01-base-3.0">
 	<assert>
 		<description>Verify that Amount due for payment = Invoice total amount with VAT - Paid amount + Rounding amount.</description>
 		<scope>PEPPOL-T01-R016</scope>
