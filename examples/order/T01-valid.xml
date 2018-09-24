@@ -64,7 +64,7 @@
                 </cac:Country>
             </cac:PostalAddress>
             <cac:PartyTaxScheme>
-                <cbc:CompanyID>9311867455MVA</cbc:CompanyID>
+                <cbc:CompanyID>NO9311867455MVA</cbc:CompanyID>
                 <cac:TaxScheme>
                     <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
@@ -112,7 +112,7 @@
             </cac:Contact>
         </cac:Party>
     </cac:SellerSupplierParty>
-    <cac:OriginatorCustomerParty>
+    <cac:AccountingCustomerParty>
         <cac:Party>
             <cac:PartyIdentification>
                 <cbc:ID schemeID="ZZZ">12345</cbc:ID>
@@ -120,13 +120,19 @@
             <cac:PartyName>
                 <cbc:Name>Helseavdeling</cbc:Name>
             </cac:PartyName>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID>GB9311867455MVA</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
             <cac:Contact>
                 <cbc:Name>Per Persen</cbc:Name>
                 <cbc:Telephone>67915000</cbc:Telephone>
                 <cbc:ElectronicMail>post@helse.no</cbc:ElectronicMail>
             </cac:Contact>
         </cac:Party>
-    </cac:OriginatorCustomerParty>
+    </cac:AccountingCustomerParty>
     <cac:Delivery>
         <cac:DeliveryLocation>
             <cac:Address>
@@ -165,33 +171,32 @@
     </cac:DeliveryTerms>
     <cac:AllowanceCharge>
         <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
-        <cbc:AllowanceChargeReason>Transport documents</cbc:AllowanceChargeReason>
-        <cbc:Amount currencyID="NOK">400</cbc:Amount>
+        <cbc:AllowanceChargeReasonCode>97</cbc:AllowanceChargeReasonCode>
+        <cbc:Amount currencyID="NOK">400.00</cbc:Amount>
     </cac:AllowanceCharge>
     <cac:AllowanceCharge>
         <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
         <cbc:AllowanceChargeReason>Total order value discount</cbc:AllowanceChargeReason>
-        <cbc:Amount currencyID="NOK">100</cbc:Amount>
+        <cbc:Amount currencyID="NOK">100.00</cbc:Amount>
     </cac:AllowanceCharge>
-  <!--  <cac:TaxTotal>
-        <cbc:TaxAmount currencyID="NOK">1556.25</cbc:TaxAmount>
-    </cac:TaxTotal>-->
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="NOK">1000.00</cbc:TaxAmount>
+    </cac:TaxTotal>
     <cac:AnticipatedMonetaryTotal>
-        <cbc:LineExtensionAmount currencyID="NOK">6225.0</cbc:LineExtensionAmount>
-        <cbc:TaxExclusiveAmount currencyID="NOK">6525</cbc:TaxExclusiveAmount>
-        <cbc:TaxInclusiveAmount currencyID="NOK">8081.2</cbc:TaxInclusiveAmount>
+        <cbc:LineExtensionAmount currencyID="NOK">6525.00</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="NOK">6825</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="NOK">7825</cbc:TaxInclusiveAmount>
         <cbc:AllowanceTotalAmount currencyID="NOK">100</cbc:AllowanceTotalAmount>
         <cbc:ChargeTotalAmount currencyID="NOK">400</cbc:ChargeTotalAmount>
-        <cbc:PrepaidAmount>10</cbc:PrepaidAmount>
-        <cbc:PayableAmount currencyID="NOK">8071.2</cbc:PayableAmount>
+        <cbc:PrepaidAmount currencyID="NOK">10</cbc:PrepaidAmount>
+        <cbc:PayableAmount currencyID="NOK">7815.00</cbc:PayableAmount>
     </cac:AnticipatedMonetaryTotal>
     <cac:OrderLine>
         <cbc:Note>Freetext note on line 1</cbc:Note>
         <cac:LineItem>
             <cbc:ID>1</cbc:ID>
             <cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">120</cbc:Quantity>
-            <cbc:LineExtensionAmount currencyID="NOK">6000.00</cbc:LineExtensionAmount>
-            <cbc:TotalTaxAmount currencyID="NOK">1500</cbc:TotalTaxAmount>
+            <cbc:LineExtensionAmount currencyID="NOK">6300.00</cbc:LineExtensionAmount>
             <cbc:PartialDeliveryIndicator>false</cbc:PartialDeliveryIndicator>
             <cac:Delivery>
                 <cac:RequestedDeliveryPeriod>
@@ -207,8 +212,20 @@
                     <cbc:Name>Josef K.</cbc:Name>
                 </cac:PartyName>
             </cac:OriginatorParty>
+            <cac:AllowanceCharge>
+                <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+                <cbc:AllowanceChargeReasonCode>97</cbc:AllowanceChargeReasonCode>
+                <cbc:Amount currencyID="NOK">400.00</cbc:Amount>
+            </cac:AllowanceCharge>
+            <cac:AllowanceCharge>
+                <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+                <cbc:AllowanceChargeReason>Total order value discount</cbc:AllowanceChargeReason>
+                <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
+                <cbc:Amount currencyID="NOK">100</cbc:Amount>
+                <cbc:BaseAmount currencyID="NOK">1000</cbc:BaseAmount>
+            </cac:AllowanceCharge>
             <cac:Price>
-                <cbc:PriceAmount currencyID="NOK">50</cbc:PriceAmount>
+                <cbc:PriceAmount currencyID="NOK">50.000</cbc:PriceAmount>
                 <cbc:BaseQuantity unitCode="EA" unitCodeListID="UNECERec20">1</cbc:BaseQuantity>
             </cac:Price>
             <cac:Item>
@@ -233,7 +250,6 @@
             <cbc:ID>2</cbc:ID>
             <cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">15</cbc:Quantity>
             <cbc:LineExtensionAmount currencyID="NOK">225</cbc:LineExtensionAmount>
-            <cbc:TotalTaxAmount currencyID="NOK">56.25</cbc:TotalTaxAmount>
             <cbc:PartialDeliveryIndicator>false</cbc:PartialDeliveryIndicator>
             <cbc:AccountingCost>ProjectID123</cbc:AccountingCost>
             <cac:Delivery>
@@ -251,8 +267,13 @@
                 </cac:PartyName>
             </cac:OriginatorParty>
             <cac:Price>
-                <cbc:PriceAmount currencyID="NOK">15</cbc:PriceAmount>
+                <cbc:PriceAmount currencyID="NOK">15.000</cbc:PriceAmount>
                 <cbc:BaseQuantity unitCode="EA" unitCodeListID="UNECERec20">1</cbc:BaseQuantity>
+                <cac:AllowanceCharge>
+                    <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+                    <cbc:Amount currencyID="NOK">100.0000</cbc:Amount>
+                    <cbc:BaseAmount currencyID="NOK">115.0000</cbc:BaseAmount>
+                </cac:AllowanceCharge>
             </cac:Price>
             <cac:Item>
                 <cbc:Description>Wet tissues for children</cbc:Description>

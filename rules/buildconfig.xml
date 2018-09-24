@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildConfigurations xmlns="http://difi.no/xsd/vefa/validator/1.0">
+
+  <package url="http://docs.peppol.eu/poacc/upgrade/3.0/">PEPPOL BIS Upgrade 3.0</package>
+
+  <testfolder>auto-test</testfolder>
+  <testfolder>unit-order</testfolder>
+ 
+
+  <configuration>
+    <identifier>peppolbis-T01-base-3.0</identifier>
+    <title>PEPPOL BIS Order (T01) 3.0 </title>
+    <file source="sch/PEPPOLBIS-T01.sch" path="xsl/PEPPOLBIS-T01.xsl"/>
+  </configuration>
+
+
+</buildConfigurations>

@@ -177,7 +177,6 @@
       <let name="chargesTotal" value="if (cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']) then xs:decimal(sum(cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']/cbc:Amount)) else 0"/>
 
       <!-- tag::parameters[] -->
-      
       <!-- Usage of parameters -->
       <assert id="PEPPOL-EN16931-R120"  
               test="u:slack($lineExtensionAmount, ($quantity * ($priceAmount div $baseQuantity)) + $chargesTotal - $allowancesTotal, 0.02)" 

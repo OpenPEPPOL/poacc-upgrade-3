@@ -377,6 +377,7 @@
                             in case reverse charge is to apply to the purchase.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir01-034</Reference>
+						<Reference type="RULE">PEPPOL-T01-R026</Reference>
 					</Element>
 					<Element>
 						<Term>cac:TaxScheme</Term>
@@ -930,6 +931,7 @@
                             identifier</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">op-tir01-018</Reference>
+						<Reference type="RULE">PEPPOL-T01-R026</Reference>
 					</Element>
 					<Element>
 						<Term>cac:TaxScheme</Term>
@@ -1279,6 +1281,7 @@
 				<DataType>Code</DataType>
 				<Reference type="CODE_LIST">UNCL5189</Reference>
 				<Reference type="CODE_LIST">UNCL7161</Reference>
+				<Reference type="RULE">PEPPOL-T01-R023</Reference>
 				<Value type="EXAMPLE">95</Value>
 			</Element>
 
@@ -1288,6 +1291,7 @@
 				<Description>A textual reason for the allowance or the charge. Can also be its
 					name. The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reason</Description>
 				<DataType>Text</DataType>
+				<Reference type="RULE">PEPPOL-T01-R023</Reference>
 				<Reference type="BUSINESS_TERM">tir01-112</Reference>
 			</Element>
 
@@ -1298,6 +1302,7 @@
 					calculate the document level allowance or charge amount. To state 20%, use value 20.
 				</Description>
 				<DataType>Percentage</DataType>
+				<Reference type="RULE">PEPPOL-T01-R021</Reference>
 				<Value type="EXAMPLE">20</Value>
 			</Element>
 
@@ -1308,6 +1313,8 @@
                     VAT.</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir01-113</Reference>
+				<Reference type="RULE">PEPPOL-T01-R022</Reference>
+				<Reference type="RULE">PEPPOL-T01-R028</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Name>Currency identifier</Name>
@@ -1326,7 +1333,8 @@
 					calculate the document level allowance or charge amount. Must be rounded to maximum 2 decimals
 				</Description>
 				<DataType>Amount</DataType>
-
+				<Reference type="RULE">PEPPOL-T01-R020</Reference>
+				<Reference type="RULE">PEPPOL-T01-R028</Reference>
 
 				<Attribute>
 					<Term>currencyID</Term>
@@ -1341,7 +1349,7 @@
 
 			</Element>
 
-			<Element>
+			<Element cardinality="0..1">
 				<Term>cac:TaxCategory</Term>
 				<Name>Tax category</Name>
 				<Element>
@@ -1357,7 +1365,10 @@
 					<Name>VAT rate</Name>
 					<Description>The VAT rate, represented as percentage that applies to the document level allowance or charge. As this element is of data type percentage, please note that no %-sign should be used. To state 25 %, use value 25.00</Description>
 					<DataType>Percentage</DataType>
+					<Reference type="RULE">PEPPOL-T01-R029</Reference>
+					<Reference type="RULE">PEPPOL-T01-R030</Reference>
 					<Value type="EXAMPLE">25.00</Value>
+				
 				</Element>
 				<Element>
 					<Term>cac:TaxScheme</Term>
@@ -1366,7 +1377,7 @@
 						<Term>cbc:ID</Term>
 						<Description>Tax scheme identifier. Use “VAT”</Description>
 						<DataType>Identifier</DataType>
-						<Value type="DEFAULT">VAT</Value>
+						<Value type="FIXED">VAT</Value>
 					</Element>
 				</Element>
 			</Element>
@@ -1384,6 +1395,7 @@
                     corresponding invoice.</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir01-114</Reference>
+				<Reference type="RULE">PEPPOL-T01-R028</Reference>
 
 				<Attribute>
 					<Term>currencyID</Term>
@@ -1408,6 +1420,7 @@
 				<Reference type="BUSINESS_TERM">tir01-115</Reference>
 				<Reference type="RULE">PEPPOL-T01-R007</Reference>
 				<Reference type="RULE">PEPPOL-T01-R008</Reference>
+				<Reference type="RULE">PEPPOL-T01-R028</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Description>
@@ -1425,6 +1438,7 @@
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir01-145</Reference>
 				<Reference type="RULE">PEPPOL-T01-R011</Reference>
+				<Reference type="RULE">PEPPOL-T01-R028</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Description>
@@ -1441,6 +1455,7 @@
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir01-147</Reference>
 				<Reference type="RULE">PEPPOL-T01-R017</Reference>
+				<Reference type="RULE">PEPPOL-T01-R028</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Description>
@@ -1459,6 +1474,7 @@
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir01-116</Reference>
 				<Reference type="RULE">PEPPOL-T01-R009</Reference>
+				<Reference type="RULE">PEPPOL-T01-R028</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Description>
@@ -1477,6 +1493,7 @@
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir01-117</Reference>
 				<Reference type="RULE">PEPPOL-T01-R010</Reference>
+				<Reference type="RULE">PEPPOL-T01-R028</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Description>
@@ -1491,6 +1508,7 @@
 				<Name>Prepaid amounts</Name>
 				<Description>Any amounts that have been paid a-priory. Must be rounded to maximum 2 decimals.</Description>
 				<Reference type="BUSINESS_TERM">tir01-148</Reference>
+				<Reference type="RULE">PEPPOL-T01-R028</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Description>
@@ -1506,6 +1524,7 @@
 				<Description>The amount to be added to the total to round the amount to be paid. Must be rounded to maximum 2 decimals.</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir01-146</Reference>
+				<Reference type="RULE">PEPPOL-T01-R028</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Description>
@@ -1523,6 +1542,7 @@
 				<Reference type="BUSINESS_TERM">tir01-118</Reference>
 				<Reference type="RULE">PEPPOL-T01-R006</Reference>
 				<Reference type="RULE">PEPPOL-T01-R016</Reference>
+				<Reference type="RULE">PEPPOL-T01-R028</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Description>
@@ -1587,6 +1607,8 @@
                         other charges, allowances and taxes.</Description>
 					<DataType>Amount</DataType>
 					<Reference type="BUSINESS_TERM">tir01-128</Reference>
+					<Reference type="RULE">PEPPOL-T01-R024</Reference>
+					<Reference type="RULE">PEPPOL-T01-R028</Reference>
 					<Attribute>
 						<Term>currencyID</Term>
 						<Description>Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Description>
@@ -1705,6 +1727,7 @@
 						<DataType>Code</DataType>
 						<Reference type="CODE_LIST">UNCL5189</Reference>
 						<Reference type="CODE_LIST">UNCL7161</Reference>
+						<Reference type="RULE">PEPPOL-T01-R023</Reference>
 						<Value type="EXAMPLE">95</Value>
 					</Element>
 
@@ -1713,6 +1736,7 @@
 						<Name>Line level allowance or charge reason</Name>
 						<Description>The reason for the line level allowance or charge, expressed as text. The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reason </Description>
 						<DataType>Text</DataType>
+						<Reference type="RULE">PEPPOL-T01-R023</Reference>
 						<Value type="EXAMPLE">Discount</Value>
 
 					</Element>
@@ -1724,6 +1748,7 @@
 							calculate the line level allowance or charge amount.
 						</Description>
 						<DataType>Percentage</DataType>
+						<Reference type="RULE">PEPPOL-T01-R021</Reference>
 						<Value type="EXAMPLE">20</Value>
 					</Element>
 
@@ -1732,6 +1757,8 @@
 						<Name>Line level allowance or charge amount</Name>
 						<Description>The amount of an allowance or a charge, without VAT. Must be rounded to maximum 2 decimals</Description>
 						<DataType>Amount</DataType>
+						<Reference type="RULE">PEPPOL-T01-R022</Reference>
+						<Reference type="RULE">PEPPOL-T01-R028</Reference>
 						
 						<Attribute>
 							<Term>currencyID</Term>
@@ -1750,6 +1777,8 @@
 							calculate the line level allowance or charge amount. Must be rounded to maximum 2 decimals
 						</Description>
 						<DataType>Amount</DataType>
+						<Reference type="RULE">PEPPOL-T01-R020</Reference>
+						<Reference type="RULE">PEPPOL-T01-R028</Reference>
 						
 						<Attribute>
 							<Term>currencyID</Term>
@@ -1778,6 +1807,7 @@
 						<DataType>Price amount</DataType>
 						<Reference type="BUSINESS_TERM">tir01-130</Reference>
 						<Reference type="RULE">PEPPOL-T01-R005</Reference>
+						<Reference type="RULE">PEPPOL-T01-R019</Reference>
 						<Attribute>
 							<Term>currencyID</Term>
 							<Description>Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Description>
@@ -1793,6 +1823,7 @@
 						<Name>Item price base quantity</Name>
 						<Description>The actual quantity to which the price applies.</Description>
 						<Reference type="BUSINESS_TERM">tir01-131</Reference>
+						<Reference type="RULE">PEPPOL-T01-R025</Reference>
 						<Attribute usage="Optional">
 							<Term>unitCode</Term>
 							<Name>Base quantity unit of measure</Name>
@@ -1821,6 +1852,7 @@
 							<Description>Discount amount connected to the price</Description>
 							<DataType>Price amount</DataType>
 							<Reference type="BUSINESS_TERM">op-tir01-006</Reference>
+							
 							<Attribute>
 								<Term>currencyID</Term>
 								<Description>Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Description>
@@ -1837,6 +1869,7 @@
                                 E.g. list price.</Description>
 							<DataType>Price amount</DataType>
 							<Reference type="BUSINESS_TERM">tir01-152</Reference>
+							<Reference type="RULE">PEPPOL-T01-R027</Reference>
 							<Attribute>
 								<Term>currencyID</Term>
 								<Description>Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Description>
@@ -1975,6 +2008,8 @@
                                 amount.</Description>
 							<DataType>Percentage</DataType>
 							<Reference type="BUSINESS_TERM">tir01-170</Reference>
+							<Reference type="RULE">PEPPOL-T01-R029</Reference>
+							<Reference type="RULE">PEPPOL-T01-R030</Reference>
 							<Value type="EXAMPLE">25</Value>
 						</Element>
 						<Element>
@@ -1984,7 +2019,7 @@
 								<Term>cbc:ID</Term>
 								<Description>Tax scheme. Use “VAT”</Description>
 								<DataType>Identifier</DataType>
-								<Value type="DEFAULT">VAT</Value>
+								<Value type="FIXED">VAT</Value>
 							</Element>
 						</Element>
 					</Element>
