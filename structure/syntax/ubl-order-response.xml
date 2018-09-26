@@ -19,7 +19,7 @@
                 transaction.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir76-001</Reference>
-			<Reference type="RULE">BII2-T76-R001</Reference>
+			
 			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrns076:ver2.0:extended:urn:www.peppol.eu:bis:peppol28a:ver1.0</Value>
 		</Element>
 		<Element>
@@ -29,7 +29,7 @@
                 transaction appears.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir76-002</Reference>
-			<Reference type="RULE">BII2-T76-R002</Reference>
+			
 			<Value type="FIXED">urn:www.cenbii.eu:profile:bii28:ver2.0</Value>
 		</Element>
 		<Element>
@@ -40,7 +40,7 @@
                 that are part of the same process.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir76-003</Reference>
-			<Reference type="RULE">BII2-T76-R006</Reference>
+			
 			<Value type="EXAMPLE">or0987</Value>
 		</Element>
 		<Element cardinality="0..1">
@@ -56,7 +56,7 @@
 			<Description>The date on which the transaction instance was issued.</Description>
 			<DataType>Date</DataType>
 			<Reference type="BUSINESS_TERM">tir76-004</Reference>
-			<Reference type="RULE">BII2-T76-R004</Reference>
+			
 			<Value type="EXAMPLE">2018-05-15</Value>
 		</Element>
 		<Element cardinality="0..1">
@@ -76,8 +76,8 @@
                 Reject there may not be any response lines.</Description>
 			<DataType>Code</DataType>
 			<Reference type="BUSINESS_TERM">tir76-200</Reference>
-			<Reference type="CODE_LIST">UNCL1225</Reference>
-			<Reference type="RULE">BII2-T76-R033</Reference>
+			<Reference type="CODE_LIST">UNCL4343-T76</Reference>
+			
 			<Value type="EXAMPLE">27</Value>
 		</Element>
 		<Element cardinality="0..1">
@@ -92,7 +92,7 @@
 			<Name>Document currency</Name>
 			<Description>The default currency for the offer.</Description>
 			<Reference type="BUSINESS_TERM">tir76-007</Reference>
-			<Reference type="RULE">OP-T76-003</Reference>
+			
 			<Reference type="CODE_LIST">ISO4217</Reference>
 			<Value type="EXAMPLE">EUR</Value>
 		</Element>
@@ -115,7 +115,7 @@
 				<Description>Used to reference the order that is being responded to.</Description>
 				<DataType>Document reference</DataType>
 				<Reference type="BUSINESS_TERM">tir76-011</Reference>
-				<Reference type="RULE">BII2-T76-R032</Reference>
+				
 				<Value type="EXAMPLE">o-23424</Value>
 			</Element>
 		</Element>
@@ -131,7 +131,7 @@
 					<Description>Identifies the end point of the routing service, e.g., EAN
                         Location Number, GLN.</Description>
 					<Reference type="BUSINESS_TERM">tir76-058</Reference>
-					<Reference type="RULE">EUGEN-T76-R001</Reference>
+					
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
@@ -144,13 +144,14 @@
 				<Element cardinality="0..n">
 					<Term>cac:PartyIdentification</Term>
 					<Name>Seller identification </Name>
+					<Reference type="RULE">PEPPOL-T76-R002</Reference>
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Seller party identification</Name>
 						<Description>Identifies a party.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir76-059</Reference>
-						<Reference type="RULE">BII2-T76-R022</Reference>
+						
 						<Attribute usage="optional">
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
@@ -164,13 +165,14 @@
 				<Element cardinality="0..1">
 					<Term>cac:PartyName</Term>
 					<Name>Name of seller</Name>
+					<Reference type="RULE">PEPPOL-T76-R002</Reference>
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Seller party name</Name>
 						<Description>The name of the party.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir76-060</Reference>
-						<Reference type="RULE">BII2-T76-R022</Reference>
+						
 						<Value type="EXAMPLE">Seller Inc.</Value>
 					</Element>
 				</Element>
@@ -217,7 +219,7 @@
 					<Name>Buyer party endpoint identifier</Name>
 					<Description>Identifies the end point of the routing service.</Description>
 					<Reference type="BUSINESS_TERM">tir76-021</Reference>
-					<Reference type="RULE">EUGEN-T76-R001</Reference>
+					
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
@@ -230,12 +232,14 @@
 				<Element cardinality="0..n">
 					<Term>cac:PartyIdentification</Term>
 					<Name>Buyer identification</Name>
+					<Reference type="RULE">PEPPOL-T76-R001</Reference>
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Buyer party identification</Name>
 						<Description>An identification for the buyer party.</Description>
 						<Reference type="BUSINESS_TERM">tir76-022</Reference>
-						<Reference type="RULE">BII2-T76-R021</Reference>
+						
+						
 						<Attribute usage="optional">
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
@@ -249,6 +253,7 @@
 				<Element cardinality="0..1">
 					<Term>cac:PartyName</Term>
 					<Name>Party name</Name>
+					<Reference type="RULE">PEPPOL-T76-R001</Reference>
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Buyer party name</Name>
@@ -256,7 +261,7 @@
                             response.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir76-023</Reference>
-						<Reference type="RULE">BII2-T76-R021</Reference>
+						<Reference type="RULE">PEPPOL-T76-R001</Reference>
 						<Value type="EXAMPLE">Buyer name</Value>
 					</Element>
 				</Element>
@@ -287,6 +292,7 @@
                         part of the period.</Description>
 					<DataType>date</DataType>
 					<Reference type="BUSINESS_TERM">tir76-099</Reference>
+					<Reference type="RULE">PEPPOL-T76-R004</Reference>
 					<Value type="EXAMPLE">2018-06-01</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -296,6 +302,7 @@
                         the period.</Description>
 					<DataType>Date</DataType>
 					<Reference type="BUSINESS_TERM">tir76-100</Reference>
+					<Reference type="RULE">PEPPOL-T76-R004</Reference>
 					<Value type="EXAMPLE">2018-06-30</Value>
 				</Element>
 			</Element>
@@ -312,7 +319,7 @@
 					<Description>Identifies the response line.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir76-120</Reference>
-					<Reference type="RULE">BII2-T76-R003</Reference>
+					<Reference type="RULE">PEPPOL-T76-R003</Reference>
 					<Value type="EXAMPLE">3</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -332,7 +339,7 @@
                         change.</Description>
 					<Reference type="BUSINESS_TERM">tir76-202</Reference>
 					<Reference type="CODE_LIST">UNCL1229</Reference>
-					<Reference type="RULE">EUGEN-T76-R004</Reference>
+					
 					<Value type="EXAMPLE">3</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -372,6 +379,7 @@
                                 counts as part of the period.</Description>
 							<DataType>Date</DataType>
 							<Reference type="BUSINESS_TERM">tir76-126</Reference>
+							<Reference type="RULE">PEPPOL-T76-R004</Reference>
 							<Value type="EXAMPLE">2018-05-28</Value>
 						</Element>
 						<Element cardinality="0..1">
@@ -381,6 +389,7 @@
                                 part of the period.</Description>
 							<DataType>Date</DataType>
 							<Reference type="BUSINESS_TERM">tir76-127</Reference>
+							<Reference type="RULE">PEPPOL-T76-R004</Reference>
 							<Value type="EXAMPLE">2018-05-29</Value>
 						</Element>
 					</Element>
@@ -402,8 +411,9 @@
 						<Reference type="BUSINESS_TERM">tir76-130</Reference>
 						<Attribute>
 							<Term>currencyID</Term>
-							<Description>Currency identifier, must have the same value as element "Document currency" (tir76-007).</Description>
+							<Description>Currency identifier, must have the same value as element "Document currency".</Description>
 							<Reference type="CODE_LIST">ISO4217</Reference>
+							<Reference type="RULE">PEPPOL-T76-R004</Reference>
 							<Value type="EXAMPLE">EUR</Value>
 						</Attribute>
 						<Value type="EXAMPLE">1000.00</Value>
@@ -573,7 +583,7 @@
 							<Description>The VAT category code for the item.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir76-150</Reference>
-							<Reference type="RULE">OP-T76-008</Reference>
+							
 							<Reference type="CODE_LIST">UNCL5305</Reference>
 							<Value type="EXAMPLE">S</Value>
 						</Element>
@@ -626,7 +636,7 @@
                                 descriptive.</Description>
 							<DataType>Quantity</DataType>
 							<Reference type="BUSINESS_TERM">OP-T76-002</Reference>
-							<Reference type="RULE">EUGEN-T110-R014</Reference>
+							
 							<Attribute>
 								<Term>unitCode</Term>
 								<Name>Value quantity unit of measure</Name>
@@ -656,7 +666,7 @@
                         response.Each order line may only be referenced once. All order lines should
                         be stated.</Description>
 					<Reference type="BUSINESS_TERM">tir76-201</Reference>
-					<Reference type="RULE">BII2-T76-R034</Reference>
+					
 					<Value type="EXAMPLE">34</Value>
 				</Element>
 			</Element>

@@ -111,6 +111,10 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL4343-T76.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL7143.xml</Path>
         <Title>Item classification code</Title>
     </Resource>
@@ -121,6 +125,10 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL1001_T01.xml</Path>
+    </Resource> 
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL1229.xml</Path>
     </Resource> 
     <Resource>
         <Type>CodeList-1</Type>

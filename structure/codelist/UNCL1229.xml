@@ -8,6 +8,11 @@
     <Subset>openPEPPOL</Subset>
 
     <Code>
+        <Id>1</Id>
+        <Name>Order line is added</Name>
+        <Description>The information is to be or has been added.</Description>
+    </Code>
+    <Code>
         <Id>3</Id>
         <Name>Changed</Name>
         <Description>The Order line is accepted with change.</Description>
@@ -21,6 +26,11 @@
         <Id>7</Id>
         <Name>Not accepted</Name>
         <Description>The Order line is rejected.</Description>
+    </Code>
+    <Code>
+        <Id>42</Id>
+        <Name>Allready delivered</Name>
+        <Description>Delivery has taken place</Description>
     </Code>
 
 </CodeList>
