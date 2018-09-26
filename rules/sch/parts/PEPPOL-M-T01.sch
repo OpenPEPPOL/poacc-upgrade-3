@@ -11,7 +11,7 @@
         <ns uri="http://www.w3.org/2001/XMLSchema" prefix="xs"/>
         <ns uri="utils" prefix="u"/>
 
-        
+        <xsl:key name="k_lineId"  match="cac:LineItem" use="cbc:ID"/>
         
         <!-- tag::functions[] -->
         <!-- Functions -->
@@ -156,7 +156,7 @@
             <!-- Line level -->       
             <rule context="cac:OrderLine/cac:LineItem"> 
                 
-                <xsl:key name="k_lineId"  match="cac:LineItem" use="cbc:ID"/>
+            
 
                 <let name="lineExtensionAmount" value="if (cbc:LineExtensionAmount) then xs:decimal(cbc:LineExtensionAmount) else 0"/>
                 <let name="quantity" value="if (cbc:Quantity) then xs:decimal(cbc:Quantity) else 1"/>

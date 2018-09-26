@@ -173,6 +173,13 @@
         <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
         <cbc:AllowanceChargeReasonCode>97</cbc:AllowanceChargeReasonCode>
         <cbc:Amount currencyID="NOK">400.00</cbc:Amount>
+        <cac:TaxCategory>
+            <cbc:ID>S </cbc:ID>
+            <cbc:Percent>25</cbc:Percent>
+            <cac:TaxScheme>
+                <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+        </cac:TaxCategory>
     </cac:AllowanceCharge>
     <cac:AllowanceCharge>
         <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
@@ -225,8 +232,8 @@
                 <cbc:BaseAmount currencyID="NOK">1000</cbc:BaseAmount>
             </cac:AllowanceCharge>
             <cac:Price>
-                <cbc:PriceAmount currencyID="NOK">50.000</cbc:PriceAmount>
-                <cbc:BaseQuantity unitCode="EA" unitCodeListID="UNECERec20">1</cbc:BaseQuantity>
+                <cbc:PriceAmount currencyID="NOK">100.000</cbc:PriceAmount>
+                <cbc:BaseQuantity unitCode="EA" unitCodeListID="UNECERec20">2</cbc:BaseQuantity>
             </cac:Price>
             <cac:Item>
                 <cbc:Description>Needle 4mm</cbc:Description>
@@ -234,9 +241,17 @@
                 <cac:SellersItemIdentification>
                     <cbc:ID>121212</cbc:ID>
                 </cac:SellersItemIdentification>
+            
                 <cac:CommodityClassification>
                     <cbc:ItemClassificationCode listID="UNSPSC">12345</cbc:ItemClassificationCode>
                 </cac:CommodityClassification>
+                <cac:ClassifiedTaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>0</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:ClassifiedTaxCategory>
                 <cac:AdditionalItemProperty>
                     <cbc:Name>Length</cbc:Name>
                     <cbc:Value>30 mm</cbc:Value>
@@ -244,10 +259,54 @@
             </cac:Item>
         </cac:LineItem>
     </cac:OrderLine>
+    
     <cac:OrderLine>
         <cbc:Note>Freetext note on line 2</cbc:Note>
         <cac:LineItem>
             <cbc:ID>2</cbc:ID>
+            <cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">45</cbc:Quantity>
+            <cbc:LineExtensionAmount currencyID="NOK">0</cbc:LineExtensionAmount>
+            <cbc:PartialDeliveryIndicator>false</cbc:PartialDeliveryIndicator>
+            <cbc:AccountingCost>ProjectID123</cbc:AccountingCost>
+            <cac:Delivery>
+                <cac:RequestedDeliveryPeriod>
+                    <cbc:StartDate>2012-10-15</cbc:StartDate>
+                    <cbc:EndDate>2012-10-31</cbc:EndDate>
+                </cac:RequestedDeliveryPeriod>
+            </cac:Delivery>
+            <cac:OriginatorParty>
+                <cac:PartyIdentification>
+                    <cbc:ID schemeID="ZZZ">EmployeeXXX</cbc:ID>
+                </cac:PartyIdentification>
+                <cac:PartyName>
+                    <cbc:Name>Josef K.</cbc:Name>
+                </cac:PartyName>
+            </cac:OriginatorParty>
+            <cac:Price>
+                <cbc:PriceAmount currencyID="NOK">0.000</cbc:PriceAmount>
+              
+            </cac:Price>
+            <cac:Item>
+                <cbc:Description>Wet tissues for children</cbc:Description>
+                <cbc:Name>Wet tissues</cbc:Name>
+                <cac:SellersItemIdentification>
+                    <cbc:ID>SItemNo011</cbc:ID>
+                </cac:SellersItemIdentification>
+                <cac:CommodityClassification>
+                    <cbc:ItemClassificationCode listID="UNSPSC">56789</cbc:ItemClassificationCode>
+                </cac:CommodityClassification>
+                <cac:AdditionalItemProperty>
+                    <cbc:Name>Weight</cbc:Name>
+                    <cbc:Value>100 g</cbc:Value>
+                </cac:AdditionalItemProperty>
+            </cac:Item>
+        </cac:LineItem>
+    </cac:OrderLine>
+
+    <cac:OrderLine>
+        <cbc:Note>Freetext note on line 2</cbc:Note>
+        <cac:LineItem>
+            <cbc:ID>3</cbc:ID>
             <cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">15</cbc:Quantity>
             <cbc:LineExtensionAmount currencyID="NOK">225</cbc:LineExtensionAmount>
             <cbc:PartialDeliveryIndicator>false</cbc:PartialDeliveryIndicator>
