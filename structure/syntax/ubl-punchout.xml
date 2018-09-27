@@ -528,6 +528,7 @@
 						<Description>A functional description of the attachment/image expressed as code</Description>
 						<DataType>Code</DataType>
 						<Reference type="CODE_LIST">UNCL1001</Reference>
+						<Reference type="CODE_LIST">Image</Reference>
 						<Reference type="BUSINESS_TERM">tir77-044</Reference>
 						<Reference type="BUSINESS_TERM">OP-T77-005</Reference>
 						<Reference type="RULE">EUGEN-T77-R012</Reference>
