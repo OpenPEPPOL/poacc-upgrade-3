@@ -21,21 +21,21 @@
             <rule context="cac:BuyerCustomerParty/cac:Party">
                 <assert id="PEPPOL-T76-R001"
                     test="cac:PartyName/cbc:Name or cac:PartyIdentification/cbc:ID"
-                    flag="fatal">An order response MUST have the buyer party official name or a buyer party identifier</assert>
+                    flag="fatal">An order response SHALL have the buyer party official name or a buyer party identifier</assert>
             </rule>
             
             <!-- Seller party -->
             <rule context="cac:SellerSupplierParty/cac:Party">
                 <assert id="PEPPOL-T76-R002"
                     test="cac:PartyName/cbc:Name or cac:PartyIdentification/cbc:ID"
-                    flag="fatal">An order response MUST have the seller party official name or a seller party identifier</assert>
+                    flag="fatal">An order response SHALL have the seller party official name or a seller party identifier</assert>
             </rule>
             
             <!-- Delivery period -->
             <rule context="cac:PromisedDeliveryPeriod | cac:OrderLine/cac:LineItem/cac:PromisedDeliveryPeriod">
                 <assert  id="PEPPOL-T76-R004"
                     test="(exists(cbc:EndDate) and exists(cbc:StartDate) and (cbc:EndDate) &gt;= (cbc:StartDate)) or not(exists(cbc:StartDate)) or not(exists(cbc:EndDate)) "   
-                    flag="fatal">If both delivery period start date and delivery period end date are given then the end date shall be later or equal to the start date.</assert>
+                    flag="fatal">If both delivery period start date and delivery period end date are given then the end date SHALL be later or equal to the start date.</assert>
                </rule>
            
             <!-- Line level -->       
@@ -43,7 +43,7 @@
              
                 <assert id="PEPPOL-T76-R003"
                     test="count(key('k_lineId',cbc:ID)) = 1"    
-                    flag="fatal">Each order response line MUST have a document line identifier that is unique within the order. 
+                    flag="fatal">Each order response line SHALL have a document line identifier that is unique within the order. 
                 </assert>  
             
             </rule>
@@ -52,7 +52,7 @@
             <rule context=" cbc:PriceAmount">      
                 <assert id="PEPPOL-T76-R005"
                     test="not(@currencyID) or @currencyID = $documentCurrencyCode"
-                    flag="fatal">An order reposnse MUST be stated in a single currency</assert>
+                    flag="fatal">An order reposnse SHALL be stated in a single currency</assert>
                 
             </rule>
             

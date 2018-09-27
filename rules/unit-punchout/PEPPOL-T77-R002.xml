@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--BII3-T77-R011-->
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+	configuration="peppolbis-T77-base-3.0">
+	<assert>
+		<description>Verify that prices must not be negative</description>
+		<scope>PEPPOL-T77-R002</scope>
+	</assert>
+	
+	<test>
+		<assert>
+			<success>PEPPOL-T77-R002</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+			
+			<cac:CatalogueLine>
+				<cac:RequiredItemLocationQuantity>
+					<cac:Price>
+						<cbc:PriceAmount currencyID="EUR">10.00</cbc:PriceAmount>
+					</cac:Price>
+				</cac:RequiredItemLocationQuantity>
+			</cac:CatalogueLine>
+
+		</Catalogue>
+	</test>
+	
+	<test>
+		<assert>
+			<success>PEPPOL-T77-R002</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+			
+			<cac:CatalogueLine>
+				<cac:RequiredItemLocationQuantity>
+					<cac:Price>
+						<cbc:PriceAmount currencyID="EUR">0.00</cbc:PriceAmount>
+					</cac:Price>
+				</cac:RequiredItemLocationQuantity>
+			</cac:CatalogueLine>
+
+		</Catalogue>
+	</test>
+
+	<test>
+		<assert>
+			<error number="1">PEPPOL-T77-R002</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+			
+			<cac:CatalogueLine>
+				<cac:RequiredItemLocationQuantity>
+					<cac:Price>
+						<cbc:PriceAmount currencyID="EUR">-10.00</cbc:PriceAmount>
+					</cac:Price>
+				</cac:RequiredItemLocationQuantity>
+			</cac:CatalogueLine>
+
+		</Catalogue>
+	</test>
+	
+</testSet>

@@ -48,6 +48,7 @@
 			<Name>Sales order reference</Name>
 			<Description>An identifier of a referenced sales order, issued by the Seller.</Description>
 			<DataType>Document Reference</DataType>
+			<Reference type="BUSINESS_TERM">tir76-p001</Reference>
 			<Value type="EXAMPLE">112233</Value>
 		</Element>
 		<Element>
@@ -499,6 +500,7 @@
 					<Term>cbc:ID</Term>
 					<Name>Substituted Line Item Identifier </Name>
 					<Description>Identifier of the substituted line item </Description>
+					<Reference type="BUSINESS_TERM">tir76-p002</Reference>
 					<Value type="EXAMPLE">3</Value>
 				</Element>
 				<Element>
@@ -603,6 +605,7 @@
 								<Term>cbc:ID</Term>
 								<Description>Tax scheme. Use “VAT”</Description>
 								<DataType>Identifier</DataType>
+								<Reference type="BUSINESS_TERM">tir76-p003</Reference>
 								<Value type="DEFAULT">VAT</Value>
 							</Element>
 						</Element>
