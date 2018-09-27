@@ -107,7 +107,6 @@
 						<Description>The identifier of the despatching party</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">op-tir16-001</Reference>
-						<Reference type="RULE">OP-T16-R006</Reference>
 						<Attribute usage="optional">
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
@@ -127,6 +126,7 @@
 						<Description>The name of the dispatching party</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir16-007</Reference>
+						<Reference type="RULE">PEPPOL-T16-R008</Reference>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
@@ -199,7 +199,6 @@
 							representation.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir16-023</Reference>
-						<Reference type="RULE">EUGEN-T110-R004</Reference>
 						<Reference type="CODE_LIST">ISO3166</Reference>
 						<Value type="EXAMPLE">DK</Value>
 					</Element>
@@ -266,6 +265,7 @@
 						<Description>The receiving party identifier.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir16-015</Reference>
+						<Reference type="RULE">PEPPOL-T16-R001</Reference>
 						<Attribute usage="optional">
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
@@ -285,6 +285,7 @@
 						<Description>The name of the receiving party.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir16-014</Reference>
+						<Reference type="RULE">PEPPOL-T16-R001</Reference>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
@@ -357,7 +358,6 @@
                                 representation.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir16-023</Reference>
-							<Reference type="RULE">EUGEN-T110-R004</Reference>
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">DK</Value>
 						</Element>
@@ -492,7 +492,6 @@
 							<Description>A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">op-tir16-031</Reference>
-							<Reference type="RULE">EUGEN-T110-R004</Reference>
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">DK</Value>
 						</Element>
@@ -597,7 +596,6 @@
 							<Description>A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">op-tir16-024</Reference>
-							<Reference type="RULE">EUGEN-T110-R004</Reference>
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">DK</Value>
 						</Element>
@@ -723,7 +721,6 @@
 							<Description>A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">op-tir16-038</Reference>
-							<Reference type="RULE">EUGEN-T110-R004</Reference>
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">DK</Value>
 						</Element>
@@ -958,6 +955,8 @@
 				<Name>Delivererd quantity</Name>
 				<Description>The quantity that is despatched in the line.</Description>
 				<Reference type="BUSINESS_TERM">tir16-048</Reference>
+				<Reference type="RULE">PEPPOL-T16-R005</Reference>
+				<Reference type="RULE">PEPPOL-T16-R006</Reference>
 				<Attribute>
 					<Term>unitCode</Term>
 					<Name>Ordered quantity unit of measure</Name>
@@ -973,6 +972,7 @@
 				<Description>The quantity outstanding (which will follow in a later
                     shipment).</Description>
 				<Reference type="BUSINESS_TERM">tir16-049</Reference>
+				<Reference type="RULE">PEPPOL-T16-R007</Reference>
 				<Attribute>
 					<Term>unitCode</Term>
 					<Name>Ordered quantity unit of measure</Name>
@@ -987,6 +987,7 @@
 				<Name>Outstanding quantity reason</Name>
 				<Description>The reason for the outstanding quantity.</Description>
 				<Reference type="BUSINESS_TERM">tir16-050</Reference>
+				<Reference type="RULE">PEPPOL-T16-R007</Reference>
 			</Element>
 			<Element>
 				<Term>cac:OrderLineReference</Term>
@@ -1004,7 +1005,8 @@
 						<Term>cbc:ID</Term>
 						<Name>Order identifier</Name>
 						<Description>Identifies the order that the reference order line belongs to.</Description>
-						<Reference type="BUSINESS_TERM">op-tir16-010</Reference>
+						<Reference type="BUSINESS_TERM">tir16-010</Reference>
+						<Reference type="RULE">PEPPOL-T16-R002</Reference>
 					</Element>
 				</Element>
 			</Element>
@@ -1015,6 +1017,7 @@
 					<Name>Item name</Name>
 					<Description>A short name for an item.</Description>
 					<Reference type="BUSINESS_TERM">tir16-052</Reference>
+					<Reference type="RULE">PEPPOL-T16-R004</Reference>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:BuyersItemIdentification</Term>
@@ -1032,6 +1035,7 @@
 						<Name>Item sellers identifier</Name>
 						<Description>The sellers identifier for the item.</Description>
 						<Reference type="BUSINESS_TERM">tir16-053</Reference>
+						<Reference type="RULE">PEPPOL-T16-R003</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:ExtendedID</Term>
@@ -1049,6 +1053,7 @@
 						<Name>Item standard identifier</Name>
 						<Description>A item identifier based on a registered schema.</Description>
 						<Reference type="BUSINESS_TERM">tir16-055</Reference>
+						<Reference type="RULE">PEPPOL-T16-R003</Reference>
 						<Attribute>
 							<Term>schemeID</Term>
 							<Name>Item standard identifier identification scheme identifier</Name>

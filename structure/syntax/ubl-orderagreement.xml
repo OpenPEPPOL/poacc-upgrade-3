@@ -19,7 +19,6 @@
                 version of the specification as well as any customizations applied.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir110-009</Reference>
-			<Reference type="RULE">EUGEN-T110-R007</Reference>
 			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrns110:ver1.0:extended:urn:www.peppol.eu:bis:peppol42a:ver1.0</Value>
 		</Element>
 		<Element>
@@ -28,8 +27,7 @@
 			<Description>Identifies the business process context in which the transaction appears.
                 It enables the buyer to process the document in an appropriate way.</Description>
 			<DataType>Identifier</DataType>
-			<Reference type="BUSINESS_TERM">tir110-008</Reference>
-			<Reference type="RULE">EUGEN-T110-R008</Reference>
+			<Reference type="BUSINESS_TERM">tir110-008</Reference>			
 			<Value type="FIXED">urn:www.cenbii.eu:profile:bii42:ver1.0</Value>
 		</Element>
 		<Element>
@@ -40,7 +38,6 @@
                 seller).</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir110-001</Reference>
-			<Reference type="RULE">BII3-T110-R005</Reference>
 			<Value type="EXAMPLE">0263bf48-9a55-4d15-adf5-2c2921036d1c</Value>
 		</Element>
 		<Element cardinality="0..1">
@@ -56,7 +53,6 @@
 			<Description>The date on which an order agreement was issued. Must be formatted YYYY-MM-DD</Description>
 			<DataType>Date</DataType>
 			<Reference type="BUSINESS_TERM">tir110-002</Reference>
-			<Reference type="RULE">BII3-T110-R003</Reference>
 			<Value type="EXAMPLE">2018-05-18</Value>
 		</Element>
 		<Element cardinality="0..1">
@@ -83,7 +79,6 @@
 			<Description>The default currency for the order agreement</Description>
 			<DataType>Code</DataType>
 			<Reference type="BUSINESS_TERM">tir110-007</Reference>
-			<Reference type="RULE">EUGEN-T110-R003</Reference>
 			<Reference type="CODE_LIST">ISO4217</Reference>
 			<Value type="EXAMPLE">EUR</Value>
 		</Element>
@@ -209,7 +204,6 @@
                         e.g., EAN Location Number, GLN.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir110-015</Reference>
-					<Reference type="RULE">EUGEN-T110-R001</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
@@ -230,7 +224,6 @@
                             party.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir110-014</Reference>
-						<Reference type="RULE">BII3-T110-R007</Reference>
 						<Attribute usage="optional">
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
@@ -252,7 +245,6 @@
                             party.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir110-013</Reference>
-						<Reference type="RULE">BII3-T110-R007</Reference>
 						<Value type="EXAMPLE">Seller company Ltd.</Value>
 					</Element>
 				</Element>
@@ -328,7 +320,6 @@
                                 representation.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir110-062</Reference>
-							<Reference type="RULE">EUGEN-T110-R004</Reference>
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">DK</Value>
 						</Element>
@@ -379,7 +370,6 @@
                         service.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir110-012</Reference>
-					<Reference type="RULE">EUGEN-T110-R001</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
@@ -399,7 +389,6 @@
                             the buyer party.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir110-011</Reference>
-						<Reference type="RULE">BII3-T110-R006</Reference>
 						<Attribute usage="optional">
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
@@ -420,7 +409,6 @@
                             the items and receives the response.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir110-010</Reference>
-						<Reference type="RULE">BII3-T110-R006</Reference>
 						<Value type="EXAMPLE">Customer AS</Value>
 					</Element>
 				</Element>
@@ -495,7 +483,6 @@
                                 representation.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir110-056</Reference>
-							<Reference type="RULE">EUGEN-T110-R004</Reference>
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">NL</Value>
 						</Element>
@@ -766,8 +753,6 @@
 								subdivisions". Codes must be according to the alpha-2
 								representation.</Description>
 							<DataType>Code</DataType>
-							
-							<Reference type="RULE">EUGEN-T110-R004</Reference>
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">DK</Value>
 						</Element>
@@ -880,7 +865,6 @@
                                 representation.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir110-077</Reference>
-							<Reference type="RULE">EUGEN-T110-R004</Reference>
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">NL</Value>
 						</Element>
@@ -898,7 +882,6 @@
 				<Description>Boolean indicator, charge ='true', allowance = 'false'</Description>
 				<DataType>Boolean</DataType>
 				<Reference type="BUSINESS_TERM">OP-110-001</Reference>
-				<Reference type="RULE">EUGEN-T110-R021</Reference>
 				<Reference type="CODE_LIST">TrueFalse</Reference>
 				<Value type="EXAMPLE">false</Value>
 			</Element>
@@ -920,7 +903,6 @@
 				<Description>The reason for the allowance or charge, expressed as text.</Description>
 				<DataType>Text</DataType>
 				<Reference type="BUSINESS_TERM">OP-110-012OP-110-002</Reference>
-				<Reference type="RULE">EUGEN-T110-R015</Reference>
 				<Value type="EXAMPLE">Discount</Value>
 			</Element>
 			
@@ -940,11 +922,11 @@
 				<Description>The allowance or charge amount (net amount).</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">OP-110-011OP-110-001</Reference>
-				<Reference type="RULE">EUGEN-T110-R021</Reference>
-				
+				<Reference type="RULE">PEPPOL-T110-R004</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
+					
 					<Reference type="CODE_LIST">ISO4217</Reference>
 					<Value type="EXAMPLE">EUR</Value>
 				</Attribute>
@@ -958,8 +940,8 @@
 					calculate the document level allowance or charge amount. Must be rounded to maximum 2 decimals
 				</Description>
 				<DataType>Amount</DataType>
-				
-				
+				<Reference type="BUSINESS_TERM">tir110-p001</Reference>
+				<Reference type="RULE">PEPPOL-T110-R004</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there</Description>
@@ -1010,7 +992,8 @@
                     amounts.</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir110-112</Reference>
-				<Reference type="RULE">EUGEN-T110-R011</Reference>
+				<Reference type="RULE">PEPPOL-T110-R004</Reference>
+				<Reference type="RULE">PEPPOL-T110-R011</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1034,7 +1017,7 @@
                         category rate is applicable).</Description>
 					<DataType>Amount</DataType>
 					<Reference type="BUSINESS_TERM">OP-110-003</Reference>
-					<Reference type="RULE">EUGEN-T110-R021</Reference>
+					<Reference type="RULE">PEPPOL-T110-R004</Reference>
 					<Attribute>
 						<Term>currencyID</Term>
 						<Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1051,7 +1034,7 @@
                         the relevant VAT category.</Description>
 					<DataType>Amount</DataType>
 					<Reference type="BUSINESS_TERM">OP-110-004</Reference>
-					<Reference type="RULE">EUGEN-T110-R021</Reference>
+					<Reference type="RULE">PEPPOL-T110-R004</Reference>
 					<Attribute>
 						<Term>currencyID</Term>
 						<Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1069,7 +1052,6 @@
 						<Description>Coded identification of a VAT category.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">OP-110-005</Reference>
-						<Reference type="RULE">EUGEN-T110-R005</Reference>
 						<Reference type="CODE_LIST">UNCL5305</Reference>
 						<Value type="EXAMPLE">S</Value>
 					</Element>
@@ -1114,7 +1096,9 @@
 				<Description>Sum of all line amounts in the document.</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir110-086</Reference>
-				<Reference type="RULE">EUGEN-T110-R011</Reference>
+				<Reference type="RULE">PEPPOL-T110-R004</Reference>
+				<Reference type="RULE">PEPPOL-T110-R006</Reference>
+				<Reference type="RULE">PEPPOL-T110-R007</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1131,7 +1115,9 @@
                     document level.</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir110-087</Reference>
-				<Reference type="RULE">EUGEN-T110-R011</Reference>
+				<Reference type="RULE">PEPPOL-T110-R004</Reference>
+				<Reference type="RULE">PEPPOL-T110-R010</Reference>
+				<Reference type="RULE">PEPPOL-T110-R011</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1148,7 +1134,9 @@
                     be equal or greater than zero.</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir110-088</Reference>
-				<Reference type="RULE">EUGEN-T110-R011</Reference>
+				<Reference type="RULE">PEPPOL-T110-R004</Reference>
+				<Reference type="RULE">PEPPOL-T110-R011</Reference>
+				<Reference type="RULE">PEPPOL-T110-R012</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1165,7 +1153,9 @@
                     amount".</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">OP-110-009</Reference>
-				<Reference type="RULE">EUGEN-T110-R011</Reference>
+				<Reference type="RULE">PEPPOL-T110-R004</Reference>
+				<Reference type="RULE">PEPPOL-T110-R009</Reference>
+				<Reference type="RULE">PEPPOL-T110-R010</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1182,7 +1172,9 @@
                     amount".</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">OP-110-008</Reference>
-				<Reference type="RULE">EUGEN-T110-R011</Reference>
+				<Reference type="RULE">PEPPOL-T110-R004</Reference>
+				<Reference type="RULE">PEPPOL-T110-R008</Reference>
+				<Reference type="RULE">PEPPOL-T110-R010</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1197,7 +1189,8 @@
 				<Description>The sum of amounts which have been paid a-priori.</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir110-089</Reference>
-				<Reference type="RULE">EUGEN-T110-R011</Reference>
+				<Reference type="RULE">PEPPOL-T110-R004</Reference>
+				<Reference type="RULE">PEPPOL-T110-R012</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1212,7 +1205,8 @@
 				<Description>Any rounding of the "Document total including VAT"</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">OP-110-010</Reference>
-				<Reference type="RULE">EUGEN-T110-R011</Reference>
+				<Reference type="RULE">PEPPOL-T110-R004</Reference>
+				<Reference type="RULE">PEPPOL-T110-R012</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1230,7 +1224,9 @@
                     fully paid .</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir110-090</Reference>
-				<Reference type="RULE">EUGEN-T110-R011</Reference>
+				<Reference type="RULE">PEPPOL-T110-R004</Reference>
+				<Reference type="RULE">PEPPOL-T110-R005</Reference>
+				<Reference type="RULE">PEPPOL-T110-R012</Reference>
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1253,7 +1249,6 @@
                         agreement.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir110-022</Reference>
-					<Reference type="RULE">BII3-T110-R008</Reference>
 					<Value type="EXAMPLE">1</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -1271,7 +1266,6 @@
                         using recommendation 20"</Description>
 					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir110-093</Reference>
-					<Reference type="RULE">BII3-T110-R021</Reference>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Ordered quantity unit of measure</Name>
@@ -1289,6 +1283,10 @@
                         agreement line, including all taxes except VAT.</Description>
 					<DataType>Amount</DataType>
 					<Reference type="BUSINESS_TERM">tir110-092</Reference>
+					<Reference type="RULE">PEPPOL-T110-R004</Reference>
+					<Reference type="RULE">PEPPOL-T110-R006</Reference>
+					<Reference type="RULE">PEPPOL-T110-R007</Reference>
+					<Reference type="RULE">PEPPOL-T110-R010</Reference>
 					<Attribute>
 						<Term>currencyID</Term>
 						<Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1366,7 +1364,8 @@
                             the item price discount.</Description>
 						<DataType>Price Amount</DataType>
 						<Reference type="BUSINESS_TERM">tir110-109</Reference>
-						<Reference type="RULE">BII3-T110-R011</Reference>
+						<Reference type="RULE">PEPPOL-T110-R001</Reference>
+						<Reference type="RULE">PEPPOL-T110-R004</Reference>
 						<Attribute>
 							<Term>currencyID</Term>
 							<Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1416,7 +1415,10 @@
 							<Name>Discount amount</Name>
 							<Description>Discount amount connected to the price</Description>
 							<DataType>Price amount</DataType>
-							
+							<Reference type="BUSINESS_TERM">tir110-p002</Reference>
+							<Reference type="RULE">PEPPOL-T110-R004</Reference>
+							<Reference type="RULE">PEPPOL-T110-R008</Reference>
+							<Reference type="RULE">PEPPOL-T110-R009</Reference>
 							<Attribute>
 								<Term>currencyID</Term>
 								<Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1431,6 +1433,8 @@
 							<Description>The gross price of the item before subtracting discounts.
 								E.g. list price.</Description>
 							<DataType>Price amount</DataType>
+							<Reference type="BUSINESS_TERM">tir116-p003</Reference>
+							<Reference type="RULE">PEPPOL-T110-R004</Reference>
 							<Attribute>
 								<Term>currencyID</Term>
 								<Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1459,6 +1463,7 @@
                             description shall be provided.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir110-032</Reference>
+						<Reference type="RULE">PEPPOL-T110-R003</Reference>
 						<Value type="EXAMPLE">Window</Value>
 					</Element>
 					<Element cardinality="0..1">
@@ -1472,7 +1477,7 @@
                                 seller's system. </Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir110-033</Reference>
-							<Reference type="RULE">BII3-T110-R012</Reference>
+							<Reference type="RULE">PEPPOL-T110-R002</Reference>
 							<Value type="EXAMPLE">3249834</Value>
 						</Element>
 					</Element>
@@ -1486,7 +1491,7 @@
                                 the item with its identification according to a standard system.</Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir110-034</Reference>
-							<Reference type="RULE">BII3-T110-R012</Reference>
+							<Reference type="RULE">PEPPOL-T110-R002</Reference>
 							<Attribute>
 								<Term>schemeID</Term>
 								<Name>Item standard identifier identification scheme identifier</Name>
@@ -1525,7 +1530,6 @@
                                     embedded as binary object.</Description>
 								<DataType>Binary objects</DataType>
 								<Reference type="BUSINESS_TERM">tir110-105</Reference>
-								<Reference type="RULE">EUGEN-T110-R012</Reference>
 								<Attribute>
 									<Term>mimeCode</Term>
 									<Name>Attached document Mime code</Name>
@@ -1568,7 +1572,6 @@
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir110-096</Reference>
 							<Reference type="BUSINESS_TERM">tir110-097</Reference>
-							<Reference type="RULE">EUGEN-T110-R013</Reference>
 							<Attribute>
 								<Term>listID</Term>
 								<Name>Item classification identifier identification scheme identifier</Name>
@@ -1605,7 +1608,6 @@
 							<Description>The VAT category code for the item.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir110-106</Reference>
-							<Reference type="RULE">BII3-T110-R015</Reference>
 							<Reference type="CODE_LIST">UNCL5305</Reference>
 							<Value type="EXAMPLE">S</Value>
 						</Element>
@@ -1653,7 +1655,7 @@
 								<Term>listID</Term>
 								<Name>Name code list id.</Name>
 								<Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
-					
+			
 							</Attribute>
 						</Element>
 						<Element cardinality="0..1">
@@ -1672,7 +1674,6 @@
                                 descriptive.</Description>
 							<DataType>Quantity</DataType>
 							<Reference type="BUSINESS_TERM">tir110-100</Reference>
-							<Reference type="RULE">EUGEN-T110-R014</Reference>
 							<Attribute usage="Optional">
 								<Term>unitCode</Term>
 								<Name>Value quantity unit of measure</Name>
@@ -1692,7 +1693,6 @@
 							<Description>The name of the product label.</Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">OP-110-013</Reference>
-							<Reference type="RULE">EUGEN-T110-R026</Reference>
 							<Value type="EXAMPLE">EU EcoLabel</Value>
 						</Element>
 						<Element>
@@ -1718,7 +1718,6 @@
 							<Description>The label value that applies to the item.</Description>
 							<DataType>Text</DataType>
 							<Reference type="BUSINESS_TERM">OP-110-014</Reference>
-							<Reference type="RULE">EUGEN-T110-R027</Reference>
 							<Value type="EXAMPLE">Item label value</Value>
 						</Element>
 						<Element>

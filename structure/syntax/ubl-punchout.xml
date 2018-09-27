@@ -584,7 +584,7 @@
                             subdivisions". Codes must be according to the alpha-2
                             representation.</Description>
 						<DataType>Code</DataType>
-						<Reference type="CODE_LIST">UNCL3166</Reference>
+						<Reference type="CODE_LIST">ISO3166</Reference>
 						<Reference type="BUSINESS_TERM">tir77-029</Reference>
 					</Element>
 				</Element>
@@ -691,9 +691,8 @@
 						<Attribute>
 							<Term>listID</Term>
 							<Name>Name code list id.</Name>
-							<Description>An identifier for the code list used for the Name code.</Description>
-							<Reference type="CODE_LIST">Bilaterally agreed</Reference>
-							<!-- <Value type="EXAMPLE">0160</Value> -->
+							<Description>An identifier for the code list used for the Name code, this is bilaterally agreed.</Description>
+						
 						</Attribute>
 					</Element>
 					<Element cardinality="0..1">

@@ -8,6 +8,8 @@
   <testfolder>unit-order-response</testfolder>
   <testfolder>unit-catalogue</testfolder>
   <testfolder>unit-punchout</testfolder>
+  <testfolder>unit-despatchadvice</testfolder>
+  <testfolder>unit-orderagreement</testfolder>
  
 
   <configuration>
@@ -15,6 +17,15 @@
     <title>PEPPOL BIS Order (T01) 3.0 </title>
     <file source="sch/PEPPOLBIS-T01.sch" path="xsl/PEPPOLBIS-T01.xsl"/>
   </configuration>
-
+  <configuration>
+    <identifier>peppolbis-T16-base-3.0</identifier>
+    <title>PEPPOL BIS DespatchAdvice (T16) 3.0 </title>
+    <file source="sch/PEPPOLBIS-T16.sch" path="xsl/PEPPOLBIS-T16.xsl"/>
+  </configuration>
+  <configuration>
+    <identifier>peppolbis-T110-base-3.0</identifier>
+    <title>PEPPOL BIS Order Agreement (T110) 3.0 </title>
+    <file source="sch/PEPPOLBIS-T110.sch" path="xsl/PEPPOLBIS-T110.xsl"/>
+  </configuration>
 
 </buildConfigurations>
