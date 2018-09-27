@@ -1370,10 +1370,10 @@
 
 				<Attribute>
 					<Term>currencyID</Term>
-					<Description>Mandatory attribute. Use BT-5</Description>
-					<Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
-					<Reference type="RULE">PEPPOL-EN16931-R051</Reference>
+					<Description>Currency identifier, value must be the same as what is used in
+						tir01-007, DocumentCurrencyCode.</Description>
 					<Reference type="CODE_LIST">ISO4217</Reference>
+					<Reference type="RULE">PEPPOL-T01-R003</Reference>
 					<Value type="EXAMPLE">EUR</Value>
 				</Attribute>
 

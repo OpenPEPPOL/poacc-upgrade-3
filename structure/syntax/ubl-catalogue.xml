@@ -1666,9 +1666,8 @@
 						<Attribute>
 							<Term>listID</Term>
 							<Name>Name code list id.</Name>
-							<Description>An identifier for the code list used for the Name code.</Description>
-							<Reference type="CODE_LIST">Bilaterally agreed</Reference>
-							<!-- <Value type="EXAMPLE">0160</Value> -->
+							<Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
+							
 						</Attribute>
 					</Element>
 					<Element cardinality="0..1">
