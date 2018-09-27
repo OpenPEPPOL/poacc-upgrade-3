@@ -30,19 +30,10 @@
     </Code>
 
     <Code>
-        <Id>video/mp4</Id>
-        <Name>video/mp4</Name>
-    </Code>
-
-    <Code>
         <Id>application/acad</Id>
         <Name>application/acad</Name>
     </Code>
 
-    <Code>
-        <Id>application/autocad_dwg</Id>
-        <Name>application/autocad_dwg</Name>
-    </Code>
 
     <Code>
         <Id>application/dwg</Id>

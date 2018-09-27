@@ -108,9 +108,8 @@
 			<Term>cbc:CustomerReference</Term>
 			<Name>Buyer contact</Name>
 			<Description>Reference to buyer contact, "Your ref."</Description>
-			<Reference type="BUSINESS_TERM">tir01-p002</Reference>
 			<DataType>Text</DataType>
-
+			<Reference type="BUSINESS_TERM">tir01-p002</Reference>
 			<Value type="EXAMPLE">oik987</Value>
 		</Element>
 		<Element cardinality="0..1">
@@ -2104,8 +2103,8 @@
 							<Element>
 								<Term>cbc:ID</Term>
 								<Description>Tax scheme. Use “VAT”</Description>
-								<Reference type="BUSINESS_TERM">tir01-p021</Reference>
 								<DataType>Identifier</DataType>
+								<Reference type="BUSINESS_TERM">tir01-p021</Reference>
 								<Value type="FIXED">VAT</Value>
 							</Element>
 						</Element>

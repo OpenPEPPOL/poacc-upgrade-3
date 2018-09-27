@@ -5,6 +5,9 @@
 
   <testfolder>auto-test</testfolder>
   <testfolder>unit-order</testfolder>
+  <testfolder>unit-order-response</testfolder>
+  <testfolder>unit-catalogue</testfolder>
+  <testfolder>unit-punchout</testfolder>
  
 
   <configuration>
