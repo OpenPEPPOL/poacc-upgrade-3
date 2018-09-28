@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+	configuration="peppolbis-T111-base-3.0">
+	<assert>
+		<description>Verify that clarification code OTH has a description</description>
+		<scope>PEPPOL-T111-base-3-R002</scope>
+	</assert>
+	
+	<test>
+		<assert>
+			<success>PEPPOL-T111-R002</success>
+		</assert>
+
+		<ApplicationResponse 
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"> 
+
+		
+				<cbc:StatusReasonCode listID="OPStatusReason">OTH</cbc:StatusReasonCode>
+				<cbc:StatusReason>Description of other reason</cbc:StatusReason>
+				
+		</ApplicationResponse>
+	</test>
+	
+	<test>
+		<assert>
+			<success>PEPPOL-T111-R002</success>
+		</assert>
+
+		<ApplicationResponse 
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"> 
+
+		
+				<cbc:StatusReasonCode listID="OPStatusAction">OTH</cbc:StatusReasonCode>
+				<cbc:StatusReason>Description of other action</cbc:StatusReason>
+				
+		</ApplicationResponse>	
+	</test>	
+
+	<test>
+		<assert>
+			<error>PEPPOL-T111-R002</error>
+		</assert>
+
+		<ApplicationResponse 
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"> 
+
+		
+				<cbc:StatusReasonCode listID="OPStatusReason">OTH</cbc:StatusReasonCode>
+				
+		</ApplicationResponse>	
+	</test>
+	
+	<test>
+		<assert>
+			<error>PEPPOL-T111-R002</error>
+		</assert>
+
+		<ApplicationResponse 
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"> 
+		
+				<cbc:StatusReasonCode listID="OPStatusAction">OTH</cbc:StatusReasonCode>
+				
+		</ApplicationResponse>	
+
+	</test>
+
+</testSet>
