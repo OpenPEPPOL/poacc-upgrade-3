@@ -33,7 +33,7 @@
 			<assert 
 				id="BII3-T77-R010"
 				test="(( normalize-space(.) = 'OTH' and (../cbc:StatusReason != ' ') ) or normalize-space(.) != 'OTH') " 
-				flag="fatal">[BII3-T77-R010]-Shopping cart line quantities MUST be greater than ZERO.
+				flag="fatal">[BII3-T77-R010]-Shopping cart line quantities SHALL be greater than ZERO.
 			</assert>
 		</rule>
 
@@ -41,7 +41,7 @@
 			<assert 
 				id="BII3-T77-R011"
 				test="number(cbc:PriceAmount) &gt;=0" 
-				flag="fatal">[BII3-T77-R011]-Prices of items MUST not be negative
+				flag="fatal">[BII3-T77-R011]-Prices of items SHALL not be negative
 			</assert>
 		</rule>
 
@@ -49,7 +49,7 @@
 			<assert 
 				id="BII3-T77-R012"
 				test="cac:SellersItemIdentification or cac:StandardItemIdentification" 
-				flag="fatal">[BII3-T77-R012]-An item in a shopping cart MUST be uniquely identifiable by either "item sellers identifier" or "item standard identifier"
+				flag="fatal">[BII3-T77-R012]-An item in a shopping cart SHALL be uniquely identifiable by either "item sellers identifier" or "item standard identifier"
 			</assert>
   			<assert 
 				id="EUGEN-T77-R012"
@@ -62,7 +62,7 @@
   			<assert 
 				id="EUGEN-T77-R008"
 				test="(cac:Price/cbc:BaseQuantity/@unitCode) = (cac:DeliveryUnit/cbc:BatchQuantity/@unitCode) or (not(cac:Price/cbc:BaseQuantity)) or (not(cac:DeliveryUnit/cbc:BatchQuantity))" 
-				flag="fatal">[EUGEN-T77-R008]-Unit code for price base quantity must be same as for batch quantity.
+				flag="fatal">[EUGEN-T77-R008]-Unit code for price base quantity SHALL be same as for batch quantity.
 			</assert>
 		</rule>
 		

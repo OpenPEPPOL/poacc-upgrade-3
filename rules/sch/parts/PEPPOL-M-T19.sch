@@ -27,7 +27,7 @@
             <rule context="//cac:ValidityPeriod">         
                 <assert id="PEPPOL-T19-R001"
                     test="(number(translate(cbc:StartDate,'-','')) &lt;= number(translate(cbc:EndDate,'-',''))) or (not(cbc:StartDate)) or (not(cbc:EndDate))"    
-                    flag="fatal">A validity period end date MUST be later or equal to a validity period start date if both validity period end date and validity period start date are present
+                    flag="fatal">A validity period end date SHALL be later or equal to a validity period start date if both validity period end date and validity period start date are present
                 </assert>             
             </rule>
     
@@ -35,7 +35,7 @@
                 <assert id="PEPPOL-T19-R002"
                     test="(cac:PartyName/cbc:Name) or (cac:PartyIdentification/cbc:ID)"    
                     flag="fatal">
-                    A catalogue provider MUST contain the full name or an identifier
+                    A catalogue provider SHALL contain the full name or an identifier
                 </assert>             
             </rule>
 
@@ -43,7 +43,7 @@
                 <assert id="PEPPOL-T19-R003"
                     test="(cac:PartyName/cbc:Name) or (cac:PartyIdentification/cbc:ID)"    
                     flag="fatal">
-                    A catalogue receiver MUST contain the full name or an identifier
+                    A catalogue receiver SHALL contain the full name or an identifier
                 </assert>             
             </rule>
 
@@ -51,7 +51,7 @@
                 <assert id="PEPPOL-T19-R004"
                     test="(cac:Party/cac:PartyName/cbc:Name) or (cac:Party/cac:PartyIdentification/cbc:ID)"    
                     flag="fatal">
-                    A catalogue supplier MUST contain the full name or an identifier
+                    A catalogue supplier SHALL contain the full name or an identifier
                 </assert>             
             </rule>
 
@@ -59,7 +59,7 @@
                 <assert id="PEPPOL-T19-R005"
                     test="(cac:Party/cac:PartyName/cbc:Name) or (cac:Party/cac:PartyIdentification/cbc:ID)"    
                     flag="fatal">
-                    A catalogue customer MUST contain the full name or an identifier
+                    A catalogue customer SHALL contain the full name or an identifier
                 </assert>             
             </rule>
 
@@ -67,7 +67,7 @@
                 <assert id="PEPPOL-T19-R006"
                     test="number(cbc:PriceAmount) &gt;=0"    
                     flag="fatal">
-                    Prices of items MUST not be negative
+                    Prices of items SHALL not be negative
                 </assert>             
             </rule>
 
@@ -75,7 +75,7 @@
                 <assert id="PEPPOL-T19-R007"
                     test="not(cac:LineValidityPeriod) or ((cac:LineValidityPeriod/cbc:StartDate and cac:LineValidityPeriod/cbc:EndDate) and (number(translate(cac:LineValidityPeriod/cbc:StartDate,'-','')) &gt;= number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:StartDate,'-',''))) and  (number(translate(cac:LineValidityPeriod/cbc:EndDate,'-','')) &lt;= number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:EndDate,'-',''))))"    
                     flag="warning">
-                    Catalogue line validity period MUST be within the range of the whole catalogue validity period
+                    Catalogue line validity period SHALL be within the range of the whole catalogue validity period
                 </assert>             
             </rule>
 
@@ -83,7 +83,7 @@
                 <assert id="PEPPOL-T19-R008"
                     test="not (cac:Price/cac:ValidityPeriod) or ((//cac:Price/cac:ValidityPeriod/cbc:StartDate and //cac:Price/cac:ValidityPeriod/cbc:EndDate) and (number(translate(//cac:Price/cac:ValidityPeriod/cbc:StartDate,'-','')) &gt;= number(translate(//cac:LineValidityPeriod/cbc:StartDate,'-',''))) and  (number(translate(//cac:Price/cac:ValidityPeriod/cbc:EndDate,'-','')) &lt;= number(translate(//cac:LineValidityPeriod/cbc:EndDate,'-',''))))"    
                     flag="warning">
-                    Price validity period MUST be within the range of the whole catalogue line validity period
+                    Price validity period SHALL be within the range of the whole catalogue line validity period
                 </assert>             
             </rule>
             
@@ -101,7 +101,7 @@
                 <assert id="PEPPOL-T19-R010"
                     test="(cac:StandardItemIdentification/cbc:ID) or  (cac:SellersItemIdentification/cbc:ID)"    
                     flag="fatal">
-                    An item in a catalogue line MUST be uniquely identifiable by at least one of the following:
+                    An item in a catalogue line SHALL be uniquely identifiable by at least one of the following:
                     - Catalogue Provider identifier
                     - Standard identifier	
                 </assert>             
@@ -128,7 +128,7 @@
                 <assert id="PEPPOL-T19-R013"
                     test="not(cbc:MinimumOrderQuantity) or number(cbc:MinimumOrderQuantity) &gt;= 0"    
                     flag="fatal">
-                    Orderable quantities MUST be greater than zero
+                    Orderable quantities SHALL be greater than zero
                 </assert>             
             </rule>
 
@@ -137,7 +137,7 @@
                 <assert id="BII2-T19-R029"
                     test="not(cbc:MaximumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= 0"    
                     flag="warning">
-                    Maximum quantity MUST be greater than zero
+                    Maximum quantity SHALL be greater than zero
                 </assert>             
             </rule>
 			<!--Delete rule??-->
@@ -145,7 +145,7 @@
                 <assert id="BII2-T19-R030"
                     test="not(cbc:MinimumOrderQuantity) or number(cbc:MinimumOrderQuantity) &gt;= 0"    
                     flag="warning">
-                    Minimum quantity MUST be greater than zero
+                    Minimum quantity SHALL be greater than zero
                 </assert>             
             </rule>
 			
@@ -154,7 +154,7 @@
                 <assert id="PEPPOL-T19-R016"
                     test="not(cbc:MaximumOrderQuantity) or not(cbc:MinimumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= number(cbc:MinimumOrderQuantity)"    
                     flag="warning">
-                    Maximum quantity MUST be greater or equal to the Minimum quantity
+                    Maximum quantity SHALL be greater or equal to the Minimum quantity
                 </assert>             
             </rule>
                
