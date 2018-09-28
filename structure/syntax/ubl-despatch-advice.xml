@@ -106,7 +106,7 @@
 						<Name>Despatching party identifier</Name>
 						<Description>The identifier of the despatching party</Description>
 						<DataType>Identifier</DataType>
-						<Reference type="BUSINESS_TERM">op-tir16-001</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p001</Reference>
 						<Attribute usage="optional">
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
@@ -138,7 +138,7 @@
 					<Description>The main address line in a postal address usually the street
 						name and number.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">op-tir16-012</Reference>
+					<Reference type="BUSINESS_TERM">tir16-p012</Reference>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:AdditionalStreetName</Term>
@@ -147,7 +147,7 @@
 						used to give further details supplementing the main line. Common use are
 						secondary house number in a complex or in a building.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">op-tir16-013</Reference>
+					<Reference type="BUSINESS_TERM">tir16-p013</Reference>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:CityName</Term>
@@ -155,7 +155,7 @@
 					<Description>The common name of the city where the postal address is. The
 						name is written in full rather than as a code.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">op-tir16-014</Reference>
+					<Reference type="BUSINESS_TERM">tir16-p014</Reference>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:PostalZone</Term>
@@ -164,7 +164,7 @@
 						according to the relevant national postal service, such as a ZIP code or
 						Post Code.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">op-tir16-015</Reference>
+					<Reference type="BUSINESS_TERM">tir16-p015</Reference>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:CountrySubentity</Term>
@@ -172,7 +172,7 @@
 					<Description>For specifying a region, county, state, province etc. within a
 						country by using text.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">op-tir16-016</Reference>
+					<Reference type="BUSINESS_TERM">tir16-p016</Reference>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:AddressLine</Term>
@@ -182,7 +182,7 @@
 						<Name>Address line 3</Name>
 						<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">op-tir16-017</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p017</Reference>
 						<Value type="EXAMPLE">Use gate 34</Value>
 					</Element>
 				</Element>
@@ -341,7 +341,7 @@
 							<Name>Address line 3</Name>
 							<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
 							<DataType>Text</DataType>
-							<Reference type="BUSINESS_TERM">op-tir16-011</Reference>
+							<Reference type="BUSINESS_TERM">tir16-p011</Reference>
 							<Value type="EXAMPLE">Use gate 34</Value>
 						</Element>
 					</Element>
@@ -440,7 +440,7 @@
 						<Name>Address line 1</Name>
 						<Description>The main address line in a postal address usually the street name and number.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">op-tir16-025</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p025</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:AdditionalStreetName</Term>
@@ -448,28 +448,28 @@
 						<Description>An additional address line in a postal address that can be	used to give further details supplementing the main line. Common use are
 							secondary house number in a complex or in a building.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">op-tir16-026</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p026</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
 						<Name>City</Name>
 						<Description>The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">op-tir16-027</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p027</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:PostalZone</Term>
 						<Name>Post code</Name>
 						<Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">op-tir16-028</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p028</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CountrySubentity</Term>
 						<Name>Country subdivision</Name>
 						<Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">op-tir16-029</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p029</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:AddressLine</Term>
@@ -479,7 +479,7 @@
 							<Name>Address line 3</Name>
 							<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
 							<DataType>Text</DataType>
-							<Reference type="BUSINESS_TERM">op-tir16-030</Reference>
+							<Reference type="BUSINESS_TERM">tir16-p030</Reference>
 							<Value type="EXAMPLE">Use gate 34</Value>
 						</Element>
 					</Element>
@@ -491,7 +491,7 @@
 							<Name>Country code</Name>
 							<Description>A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Description>
 							<DataType>Code</DataType>
-							<Reference type="BUSINESS_TERM">op-tir16-031</Reference>
+							<Reference type="BUSINESS_TERM">tir16-p031</Reference>
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">DK</Value>
 						</Element>
@@ -544,7 +544,7 @@
 						<Name>Address line 1</Name>
 						<Description>The main address line in a postal address usually the street name and number.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">op-tir16-018</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p018</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:AdditionalStreetName</Term>
@@ -552,28 +552,28 @@
 						<Description>An additional address line in a postal address that can be	used to give further details supplementing the main line. Common use are
 							secondary house number in a complex or in a building.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">op-tir16-019</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p019</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
 						<Name>City</Name>
 						<Description>The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">op-tir16-020</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p020</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:PostalZone</Term>
 						<Name>Post code</Name>
 						<Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">op-tir16-021</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p021</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CountrySubentity</Term>
 						<Name>Country subdivision</Name>
 						<Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">op-tir16-022</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p022</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:AddressLine</Term>
@@ -583,7 +583,7 @@
 							<Name>Address line 3</Name>
 							<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
 							<DataType>Text</DataType>
-							<Reference type="BUSINESS_TERM">op-tir16-023</Reference>
+							<Reference type="BUSINESS_TERM">tir16-p023</Reference>
 							<Value type="EXAMPLE">Use gate 34</Value>
 						</Element>
 					</Element>
@@ -595,7 +595,7 @@
 							<Name>Country code</Name>
 							<Description>A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Description>
 							<DataType>Code</DataType>
-							<Reference type="BUSINESS_TERM">op-tir16-024</Reference>
+							<Reference type="BUSINESS_TERM">tir16-p024</Reference>
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">DK</Value>
 						</Element>
@@ -669,7 +669,7 @@
 						<Name>Address line 1</Name>
 						<Description>The main address line in a postal address usually the street name and number.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">op-tir16-032</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p032</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:AdditionalStreetName</Term>
@@ -677,28 +677,28 @@
 						<Description>An additional address line in a postal address that can be	used to give further details supplementing the main line. Common use are
 							secondary house number in a complex or in a building.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">op-tir16-033</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p033</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
 						<Name>City</Name>
 						<Description>The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">op-tir16-034</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p034</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:PostalZone</Term>
 						<Name>Post code</Name>
 						<Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">op-tir16-035</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p035</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CountrySubentity</Term>
 						<Name>Country subdivision</Name>
 						<Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">op-tir16-036</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p036</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:AddressLine</Term>
@@ -708,7 +708,7 @@
 							<Name>Address line 3</Name>
 							<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
 							<DataType>Text</DataType>
-							<Reference type="BUSINESS_TERM">op-tir16-037</Reference>
+							<Reference type="BUSINESS_TERM">tir16-p037</Reference>
 							<Value type="EXAMPLE">Use gate 34</Value>
 						</Element>
 					</Element>
@@ -720,7 +720,7 @@
 							<Name>Country code</Name>
 							<Description>A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Description>
 							<DataType>Code</DataType>
-							<Reference type="BUSINESS_TERM">op-tir16-038</Reference>
+							<Reference type="BUSINESS_TERM">tir16-p038</Reference>
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">DK</Value>
 						</Element>
@@ -777,7 +777,7 @@
 			<Element cardinality="0..1">
 				<Term>cbc:TotalTransportHandlingUnitQuantity</Term>
 				<Name>Total number of transport handling units</Name>
-				<Reference type="BUSINESS_TERM">op-tir16-002</Reference>
+				<Reference type="BUSINESS_TERM">tir16-p002</Reference>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:Consignment</Term>
@@ -813,7 +813,7 @@
 							<Element cardinality="0..1">
 								<Term>cbc:DocumentType</Term>
 								<Name>Driver identification document type</Name>
-								<Reference type="BUSINESS_TERM">op-tir16-009</Reference>
+								<Reference type="BUSINESS_TERM">tir16-p009</Reference>
 							</Element>
 						</Element>
 					</Element>
@@ -879,27 +879,27 @@
 						<Element cardinality="0..1">
 							<Term>cbc:StreetName</Term>
 							<Name>Address line 1</Name>
-							<Reference type="BUSINESS_TERM">op-tir16-003</Reference>
+							<Reference type="BUSINESS_TERM">tir16-p003</Reference>
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cbc:AdditionalStreetName</Term>
 							<Name>Address line 2</Name>
-							<Reference type="BUSINESS_TERM">op-tir16-004</Reference>
+							<Reference type="BUSINESS_TERM">tir16-p004</Reference>
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cbc:CityName</Term>
 							<Name>City</Name>
-							<Reference type="BUSINESS_TERM">op-tir16-005</Reference>
+							<Reference type="BUSINESS_TERM">tir16-p005</Reference>
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cbc:PostalZone</Term>
 							<Name>Post code</Name>
-							<Reference type="BUSINESS_TERM">op-tir16-006</Reference>
+							<Reference type="BUSINESS_TERM">tir16-p006</Reference>
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cbc:CountrySubentity</Term>
 							<Name>Country subdivision</Name>
-							<Reference type="BUSINESS_TERM">op-tir16-007</Reference>
+							<Reference type="BUSINESS_TERM">tir16-p007</Reference>
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cac:AddressLine</Term>
@@ -923,7 +923,7 @@
                                     subdivisions". Codes must be according to the alpha-2
                                     representation.</Description>
 								<DataType>Code</DataType>
-								<Reference type="BUSINESS_TERM">op-tir16-008</Reference>
+								<Reference type="BUSINESS_TERM">tir16-p008</Reference>
 								<Reference type="CODE_LIST">ISO3166</Reference>
 								<Value type="EXAMPLE">DK</Value>
 							</Element>
@@ -1025,7 +1025,7 @@
 						<Term>cbc:ID</Term>
 						<Name>Buyers item identifier</Name>
 						<Description>The BuyerCustomerParty identifier for the item.</Description>
-						<Reference type="BUSINESS_TERM">op-tir16-041</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p041</Reference>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
@@ -1100,7 +1100,7 @@
 							descriptive to define the value. The definition may be supplemented
 							with the property unit of measure when relevant.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">op-tir16-039</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p039</Reference>
 						<Value type="EXAMPLE">NPLId</Value>
 					</Element>
 					<Element>
@@ -1108,7 +1108,7 @@
 						<Name>Item property value</Name>
 						<Description>The value of the item property.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">op-tir16-040</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p040</Reference>
 						<Value type="EXAMPLE">20300709400050</Value>
 					</Element>
 				</Element>

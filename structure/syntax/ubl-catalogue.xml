@@ -205,14 +205,14 @@
 				<Term>cac:PostalAddress</Term>
 				<Name>Provider Postal Address</Name>
 				<Description>A group of business terms providing information about the address of the Catalogue Provider.</Description>
-				<Reference type="BUSINESS_TERM">OP-T19-031</Reference>
+				<Reference type="BUSINESS_TERM">tir19-p031</Reference>
 				<Element cardinality="0..1">
 					<Term>cbc:StreetName</Term>
 					<Name>Address line 1</Name>
 					<Description>The main address line in a postal address usually the street name
                         and number.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">OP-T19-029a</Reference>
+					<Reference type="BUSINESS_TERM">tir19-p029a</Reference>
 					<Value type="EXAMPLE">Main street 1</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -222,7 +222,7 @@
                         give further details supplementing the main line. Common use are secondary
                         house number in a complex or in a building.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">OP-T19-029b</Reference>
+					<Reference type="BUSINESS_TERM">tir19-p029b</Reference>
 					<Value type="EXAMPLE">Building 23</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -231,7 +231,7 @@
 					<Description>The common name of the city where the postal address is. The name
                         is written in full rather than as a code.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">OP-T19-029c</Reference>
+					<Reference type="BUSINESS_TERM">tir19-p029c</Reference>
 					<Value type="EXAMPLE">London</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -241,7 +241,7 @@
                         the relevant national postal service, such as a ZIP code or Post
                         Code.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">OP-T19-029d</Reference>
+					<Reference type="BUSINESS_TERM">tir19-p029d</Reference>
 					<Value type="EXAMPLE">N12 W34</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -250,7 +250,7 @@
 					<Description>For specifying a region, county, state, province etc. within a
                         country by using text.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">OP-T19-029e</Reference>
+					<Reference type="BUSINESS_TERM">tir19-p029e</Reference>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:AddressLine</Term>
@@ -275,7 +275,7 @@
 							subdivisions". Codes must be according to the alpha-2
 							representation.</Description>
 						<DataType>Code</DataType>
-						<Reference type="BUSINESS_TERM">OP-T19-029f</Reference>
+						<Reference type="BUSINESS_TERM">tir19-p029f</Reference>
 						<Reference type="RULE">OP-T19-001</Reference>
 						<Reference type="CODE_LIST">ISO3166</Reference>
 						<Value type="EXAMPLE">DK</Value>
@@ -291,7 +291,7 @@
 					<Description>The name under which the provider is legally
                         registered.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">OP-T19-028b</Reference>
+					<Reference type="BUSINESS_TERM">tir19-p028b</Reference>
 					<Value type="EXAMPLE">Povider legal entity</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -300,7 +300,7 @@
 					<Description>A catalogue may contain the identifier assigned to the party by
                         the national company registrar.</Description>
 					<DataType>Identifier</DataType>
-					<Reference type="BUSINESS_TERM">OP-T19-028a</Reference>
+					<Reference type="BUSINESS_TERM">tir19-p028a</Reference>
 					<Attribute usage="Optional">
 						<Term>schemeID</Term>
 						<Name>Provider legal registration identifier identification scheme identifier</Name>
@@ -319,7 +319,7 @@
 						<Description>The name of the city where the provider is legally
                             registered.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">OP-T19-028c</Reference>
+						<Reference type="BUSINESS_TERM">tir19-p028c</Reference>
 						<Value type="EXAMPLE">London</Value>
 					</Element>
 					<Element cardinality="0..1">
@@ -334,7 +334,7 @@
 								subdivisions". Codes must be according to the alpha-2
 								representation.</Description>
 							<DataType>Code</DataType>
-							<Reference type="BUSINESS_TERM">OP-T19-028d</Reference>
+							<Reference type="BUSINESS_TERM">tir19-p028d</Reference>
 							<Reference type="RULE">OP-T19-001</Reference>
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">UK</Value>
@@ -407,14 +407,14 @@
 			<Element cardinality="0..1">
 				<Term>cac:PostalAddress</Term>
 				<Name>Postal address</Name>
-				<Reference type="BUSINESS_TERM">OP-T19-029</Reference>
+				<Reference type="BUSINESS_TERM">tir19-p029</Reference>
 				<Element cardinality="0..1">
 					<Term>cbc:StreetName</Term>
 					<Name>Address line 1</Name>
 					<Description>The main address line in a postal address usually the street name
                         and number.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">OP-T19-031a</Reference>
+					<Reference type="BUSINESS_TERM">tir19-p031a</Reference>
 					<Value type="EXAMPLE">Hovedgaten 12</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -424,7 +424,7 @@
                         give further details supplementing the main line. Common use are secondary
                         house number in a complex or in a building.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">OP-T19-031b</Reference>
+					<Reference type="BUSINESS_TERM">tir19-p031b</Reference>
 					<Value type="EXAMPLE">3rd floor</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -433,7 +433,7 @@
 					<Description>The common name of the city where the postal address is. The name
                         is written in full rather than as a code.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">OP-T19-031c</Reference>
+					<Reference type="BUSINESS_TERM">tir19-p031c</Reference>
 					<Value type="EXAMPLE">Copenhagen</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -443,7 +443,7 @@
                         the relevant national postal service, such as a ZIP code or Post
                         Code.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">OP-T19-031d</Reference>
+					<Reference type="BUSINESS_TERM">tir19-p031d</Reference>
 					<Value type="EXAMPLE">98798</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -452,7 +452,7 @@
 					<Description>For specifying a region, county, state, province etc. within a
                         country by using text.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">OP-T19-031e</Reference>
+					<Reference type="BUSINESS_TERM">tir19-p031e</Reference>
 					<Value type="EXAMPLE">Jylland</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -478,7 +478,7 @@
 							subdivisions". Codes must be according to the alpha-2
 							representation.</Description>
 						<DataType>Code</DataType>
-						<Reference type="BUSINESS_TERM">OP-T19-031f</Reference>
+						<Reference type="BUSINESS_TERM">tir19-p031f</Reference>
 						<Reference type="RULE">OP-T19-001</Reference>
 						<Reference type="CODE_LIST">ISO3166</Reference>
 						<Value type="EXAMPLE">DK</Value>
@@ -494,7 +494,7 @@
 					<Description>The name under which the receiver is legally
                         registered.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">OP-T19-030b</Reference>
+					<Reference type="BUSINESS_TERM">tir19-p030b</Reference>
 					<Value type="EXAMPLE">Registration name</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -503,7 +503,7 @@
 					<Description>A catalogue may contain the identifier assigned to the party by
                         the national company registrar.</Description>
 					<DataType>Identifier</DataType>
-					<Reference type="BUSINESS_TERM">OP-T19-030a</Reference>
+					<Reference type="BUSINESS_TERM">tir19-p030a</Reference>
 					<Attribute usage="Optional">
 						<Term>schemeID</Term>
 						<Name>Provider legal registration identifier identification scheme identifier</Name>
@@ -522,7 +522,7 @@
 						<Description>The name of the city where the receiver is legally
                             registered.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">OP-T19-030c</Reference>
+						<Reference type="BUSINESS_TERM">tir19-p030c</Reference>
 						<Value type="EXAMPLE">Stockholm</Value>
 					</Element>
 					<Element cardinality="0..1">
@@ -537,7 +537,7 @@
 								subdivisions". Codes must be according to the alpha-2
 								representation.</Description>
 							<DataType>Code</DataType>
-							<Reference type="BUSINESS_TERM">OP-T19-030d</Reference>
+							<Reference type="BUSINESS_TERM">tir19-p030d</Reference>
 							<Reference type="RULE">OP-T19-001</Reference>
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">SE</Value>
@@ -822,7 +822,7 @@
 				<Name>General payment conditions</Name>
 				<Description>Information about the general payment conditions</Description>
 				<DataType>Text</DataType>
-				<Reference type="BUSINESS_TERM">OP-T19-019</Reference>
+				<Reference type="BUSINESS_TERM">tir19-p019</Reference>
 				<Value type="EXAMPLE">Net within 30 days</Value>
 			</Element>
 		</Element>
@@ -1172,7 +1172,7 @@
 					<Name>Quantity threshold</Name>
 					<Description>Used to indicate the threshold quantity for the given price</Description>
 					<DataType>Quantity</DataType>
-					<Reference type="BUSINESS_TERM">OP-T19-025</Reference>
+					<Reference type="BUSINESS_TERM">tir19-p025</Reference>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Quantity threshold units</Name>
@@ -1189,7 +1189,7 @@
 					<Name>Quantity ceiling</Name>
 					<Description>Used to indicate maximum quantity for given price.</Description>
 					<DataType>Quantity</DataType>
-					<Reference type="BUSINESS_TERM">OP-T19-026</Reference>
+					<Reference type="BUSINESS_TERM">tir19-p026</Reference>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Quantity ceiling units</Name>
@@ -1304,7 +1304,7 @@
 						<Name>Item price base quantity</Name>
 						<Description>The number of item units to which the price applies</Description>
 						<DataType>Quantity</DataType>
-						<Reference type="BUSINESS_TERM">OP-T19-024</Reference>
+						<Reference type="BUSINESS_TERM">tir19-p024</Reference>
 						<Attribute>
 							<Term>unitCode</Term>
 							<Name>Item price base quantity unit of measure code</Name>
@@ -1331,7 +1331,7 @@
                             Unit. Must be specified if the Orderable Unit differs from the Base
                             Quantity. If not present, assumed value is 1</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">OP-T19-035</Reference>
+						<Reference type="BUSINESS_TERM">tir19-p035</Reference>
 					</Element>
 					<Element cardinality="0..n">
 						<Term>cac:ValidityPeriod</Term>
@@ -1418,7 +1418,7 @@
 					<Name>Brand name</Name>
 					<Description>A Brand name for the item</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">OP-T19-018</Reference>
+					<Reference type="BUSINESS_TERM">tir19-p018</Reference>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:SellersItemIdentification</Term>
@@ -1580,7 +1580,7 @@
 						<Name>Contracted item indicator</Name>
 						<Description>The code CT indicates that the item is offered in accordance to the referenced contract.</Description>
 						<DataType>Code</DataType>
-						<Reference type="BUSINESS_TERM">OP-T19-027</Reference>
+						<Reference type="BUSINESS_TERM">tir19-p027</Reference>
 						<Value type="EXAMPLE">CT</Value>
 					</Element>
 				</Element>
@@ -1661,7 +1661,7 @@
 						<Name>Item property name code</Name>
 						<Description>A coded expression of the item property name to suppport machine readability.</Description>
 						<DataType>CODE</DataType>
-						<Reference type="BUSINESS_TERM">OP-T19-039</Reference>
+						<Reference type="BUSINESS_TERM">tir19-p039</Reference>
 						<!-- <Value type="EXAMPLE">should we use eClass for examples?</Value> -->
 						<Attribute>
 							<Term>listID</Term>
@@ -1848,9 +1848,9 @@
 						<Reference type="BUSINESS_TERM">tir19-099</Reference>
 						<Reference type="BUSINESS_TERM">tir19-100</Reference>
 						<Reference type="BUSINESS_TERM">tir19-101</Reference>
-						<Reference type="BUSINESS_TERM">OP-T19-037</Reference>
-						<Reference type="BUSINESS_TERM">OP-T19-017</Reference>
-						<Reference type="BUSINESS_TERM">OP-T19-016</Reference>
+						<Reference type="BUSINESS_TERM">tir19-p037</Reference>
+						<Reference type="BUSINESS_TERM">tir19-p017</Reference>
+						<Reference type="BUSINESS_TERM">tir19-p016</Reference>
 						<Reference type="CODE_LIST">UNCL6313</Reference>
 					</Element>
 					<Element cardinality="0..n">
@@ -1859,7 +1859,7 @@
 						<Description>Used for differentiating between measures with same
                             attributeID</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">OP-T19-038</Reference>
+						<Reference type="BUSINESS_TERM">tir19-p038</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:MinimumMeasure</Term>
