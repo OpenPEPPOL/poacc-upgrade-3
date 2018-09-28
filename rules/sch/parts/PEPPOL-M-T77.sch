@@ -48,7 +48,7 @@
 		<rule context="cac:Item">
 			<assert 
 				id="BII3-T77-R012"
-				test="cac:SellersItemIdentification) or (cac:StandardItemIdentification)" 
+				test="cac:SellersItemIdentification or cac:StandardItemIdentification" 
 				flag="fatal">[BII3-T77-R012]-An item in a shopping cart MUST be uniquely identifiable by either "item sellers identifier" or "item standard identifier"
 			</assert>
   			<assert 

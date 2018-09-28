@@ -13,7 +13,7 @@
 
         <xsl:key name="k_lineId"  match="cac:LineItem" use="cbc:ID"/>
         
-        <!-- tag::functions[] -->
+        
         <!-- Functions -->
         
         <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:slack" as="xs:boolean">
@@ -110,11 +110,11 @@
                     flag="fatal">Expected total amount without VAT = Expected total sum of line amounts - Sum of allowances on document level + Sum of charges on document level
                 </assert>
                 <assert  id="PEPPOL-T01-R016"
-                    test="if ($taxinclusiveAmount) then ($payableAmount = $taxinclusiveAmount - $prepaidAmount + $roundingAmount) else $payableAmount"
+                    test="if ($taxinclusiveAmount) then ($payableAmount = $taxinclusiveAmount - $prepaidAmount + $roundingAmount) else 1"
                     flag="fatal">Amount due for payment = Invoice total amount with VAT - Paid amount + Rounding amount.
                 </assert>
                 <assert  id="PEPPOL-T01-R017"
-                    test="if ($taxinclusiveAmount and $VATamount) then ($taxinclusiveAmount = $taxexclusiveAmount + $VATamount) else $lineEtensionAmount"
+                    test="if ($taxinclusiveAmount and $VATamount) then ($taxinclusiveAmount = $taxexclusiveAmount + $VATamount) else 1"
                     flag="fatal">Expected total amount with VAT = Expected total amount without VAT + Order total VAT amount.
                 </assert>
 
@@ -122,7 +122,7 @@
             
             
             <!-- Allowance/Charge (document level/line level) -->
-            <rule context="/ubl-order:Order/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)] | /ubl-order:Order/cac:OrderLine/cac:LineItem/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)]">
+            <rule context="cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)] | /ubl-order:Order/cac:OrderLine/cac:LineItem/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)]">
                 <assert id="PEPPOL-T01-R020"
                     test="false()"
                     flag="fatal">Allowance/charge base amount SHALL be provided when allowance/charge percentage is provided.</assert>

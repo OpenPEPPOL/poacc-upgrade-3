@@ -7,21 +7,13 @@
         
         <ns uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" prefix="cbc"/>
         <ns uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" prefix="cac"/>
-        <ns uri="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2" prefix="ubl-catalogue"/>
+        <ns uri="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2" prefix="ubl"/>
         <ns uri="http://www.w3.org/2001/XMLSchema" prefix="xs"/>
         <ns uri="utils" prefix="u"/>
 
         
-        <!-- tag::functions[] -->
-        <!-- Functions -->
-        
-        <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:slack" as="xs:boolean">
-            <param name="exp" as="xs:decimal"/>
-            <param name="val" as="xs:decimal"/>
-            <param name="slack" as="xs:decimal"/>
-            <value-of select="xs:decimal($exp + $slack) &gt;= $val and xs:decimal($exp - $slack) &lt;= $val"/>
-        </function>
-        
+ 
+
         <pattern>       
             
             <rule context="//cac:ValidityPeriod">         
