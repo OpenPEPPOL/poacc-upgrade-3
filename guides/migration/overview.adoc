@@ -50,8 +50,8 @@ h| {phase-out}
 | Discontinued
 
 | BIS3 Upgrade
-| Mandatory
 | Optional
-| Discontinued
+| Mandatory
+| Mandatory
 
 |====
