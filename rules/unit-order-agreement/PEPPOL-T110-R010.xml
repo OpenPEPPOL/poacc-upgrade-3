@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-T110-base-3.0">
+	configuration="peppolbis-t110-base-3.0">
 	<assert>
 		<description>Verify tax exclusive amount is equal to the sum of line amount plus total charge amount at document level less total allowance amount at document level if tax exclusive amount is provided.</description>
 		<scope>PEPPOL-T110-R010</scope>

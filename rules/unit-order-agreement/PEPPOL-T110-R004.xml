@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-T110-base-3.0">
+	configuration="peppolbis-t110-base-3.0">
 	<assert>
 		<description>All amounts have the same currency code as document currency</description>
 		<scope>PEPPOL-T110-R004</scope>

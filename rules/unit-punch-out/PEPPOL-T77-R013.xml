@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--BII3-T77-R031-->
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-T77-base-3.0">
+	configuration="peppolbis-t77-base-3.0">
 	<assert>
 		<description>Verify that an item commodity classification has classification scheme identifier</description>
 		<scope>PEPPOL-T77-R013</scope>

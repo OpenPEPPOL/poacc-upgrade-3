@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--EUGEN-T77-R008-->
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-T77-base-3.0">
+	configuration="peppolbis-t77-base-3.0">
 	<assert>
 		<description>Verify Unit code for price base quantity is same as for batch quantity.</description>
 		<scope>PEPPOL-T77-R017</scope>

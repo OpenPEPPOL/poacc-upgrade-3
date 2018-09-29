@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-T01-base-3.0">
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t01-base-3.0">
 	<assert>
 		<scope>PEPPOL-T01-R026</scope>
 		<description>Verify that the party VAT identifiers have a prefix in accordance with ISO code ISO 3166-1 alpha-2 by which the country of issue may be identified. 

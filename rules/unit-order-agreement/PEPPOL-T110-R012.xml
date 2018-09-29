@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-T110-base-3.0">
+	configuration="peppolbis-t110-base-3.0">
 	<assert>
 		<description>Total amount for payment SHALL be equal to the tax inclusive amount minus the prepaid amount plus rounding amount.</description>
 		<scope>PEPPOL-T110-R012</scope>

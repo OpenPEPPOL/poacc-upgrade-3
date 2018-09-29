@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-T01-base-3.0">
+	configuration="peppolbis-t01-base-3.0">
 	<assert>
 		<description>Verify that each document or line level allowance have an allowance reason text or an allowance reason code.</description>
 		<scope>PEPPOL-T01-R023</scope>

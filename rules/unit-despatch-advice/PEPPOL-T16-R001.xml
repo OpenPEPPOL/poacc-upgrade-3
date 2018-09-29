@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-T16-base-3.0">
+	configuration="peppolbis-t16-base-3.0">
 	<assert>
 		<description>Verify consignee party has party name or party identifier</description>
 		<scope>PEPPOL-T16-R001</scope>

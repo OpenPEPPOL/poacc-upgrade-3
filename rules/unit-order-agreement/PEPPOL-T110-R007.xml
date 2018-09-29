@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-T110-base-3.0">
+	configuration="peppolbis-t110-base-3.0">
 	<assert>
 		<description>Verify total sum of line amounts is equal to the sum of the order line amounts at order line level, if total sum of line amounts is provided.</description>
 		<scope>PEPPOL-T110-R007</scope>

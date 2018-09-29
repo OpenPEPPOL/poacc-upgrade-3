@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:u="utils" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    schemaVersion="iso" queryBinding="xslt2">
+        xmlns:xi="http://www.w3.org/2001/XInclude"
+        schemaVersion="iso" queryBinding="xslt2">
 
     <title>Rules for PEPPOL BIS 3.0 Order Response</title>
     
@@ -14,7 +15,7 @@
     
     <!-- Functions -->
 
-    <include href="parts/function/gln.xml"/>
+    <xi:include href="parts/function/gln.xml"/>
 
     <!-- Rules -->
 

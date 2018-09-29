@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--BII2-T19-R026-->
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-T19-base-3.0">
+	configuration="peppolbis-t19-base-3.0">
 	<assert>
 		<description>Verify maximum quantity greater than zero</description>
 		<scope>PEPPOL-T19-R014</scope>
