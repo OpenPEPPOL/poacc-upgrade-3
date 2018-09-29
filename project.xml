@@ -201,12 +201,31 @@
     <!-- Namespaces -->
     <Resource>
         <Type>Namespace-1</Type>
-        <Path>structure/namespace/cac.xml</Path>
+        <Path>structure/namespace/ubl-application-response.xml</Path>
     </Resource>
     <Resource>
         <Type>Namespace-1</Type>
-        <Path>structure/namespace/cbc.xml</Path>
+        <Path>structure/namespace/ubl-catalogue.xml</Path>
     </Resource>
-    
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/ubl-despatch-advice.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/ubl-order.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/ubl-order-response.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/ubl-cac.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/ubl-cbc.xml</Path>
+    </Resource>
 
 </Project>

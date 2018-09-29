@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--BII3-T77-R030-->
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+	configuration="peppolbis-T77-base-3.0">
+	<assert>
+		<description>Verify that an item have at most one commodity classification</description>
+		<scope>PEPPOL-T77-R012</scope>
+	</assert>
+	
+	<test>
+		<assert>
+			<success>PEPPOL-T77-R012</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:CatalogueLine>
+				<cac:Item>
+					<cac:CommodityClassification>
+						<cbc:ItemClassificationCode listID="MP" listVersionID="19.0501">20101601</cbc:ItemClassificationCode>
+					</cac:CommodityClassification>
+				</cac:Item>
+			</cac:CatalogueLine>
+		</Catalogue>
+	</test>
+	
+	<test>
+		<assert>
+			<success>PEPPOL-T77-R012</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:CatalogueLine>
+				<cac:Item>
+					<cac:CommodityClassification>
+					</cac:CommodityClassification>
+				</cac:Item>
+			</cac:CatalogueLine>
+		</Catalogue>
+	</test>
+	
+	<test>
+		<assert>
+			<success>PEPPOL-T77-R012</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:CatalogueLine>
+				<cac:Item>
+				</cac:Item>
+			</cac:CatalogueLine>
+		</Catalogue>
+	</test>
+	
+	<test>
+		<assert>
+			<warning number="1">PEPPOL-T77-R012</warning>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:CatalogueLine>
+				<cac:Item>
+					<cac:CommodityClassification>
+						<cbc:ItemClassificationCode listID="MP" listVersionID="19.0501">20101601</cbc:ItemClassificationCode>
+					</cac:CommodityClassification>
+					<cac:CommodityClassification>
+						<cbc:ItemClassificationCode listID="MP" listVersionID="19.0501">20101601</cbc:ItemClassificationCode>
+					</cac:CommodityClassification>
+				</cac:Item>
+			</cac:CatalogueLine>
+		</Catalogue>
+	</test>
+	
+</testSet>

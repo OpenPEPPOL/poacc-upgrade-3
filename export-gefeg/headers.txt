@@ -1,3 +1,0 @@
-"term";"xpath";"name";"desc";"MinOccurs";"MaxOccurs";"card2";"rules";"examples";"name2";"desc2";"tir";"example2";"rules2";"level"
-
-"term";"xpath";"name";"desc";"MinOccurs";"MaxOccurs";"card2";"name2";"tir";"desc2";"example2";"rules2";"level"

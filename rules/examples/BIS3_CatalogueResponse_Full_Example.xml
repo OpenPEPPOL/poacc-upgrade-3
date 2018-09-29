@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+                Content:
+                This file contains a Full BIS3 PEPPOL UBL Catalogue Response.
+
+                Errors:
+                None
+                
+                Warnings:
+                None
+				
+-->
+<ApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
+					 xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+					 xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns058:ver2.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:www.cenbii.eu:profile:bii01:ver2.0</cbc:ProfileID>
+	<cbc:ID>imrid001</cbc:ID>
+	<cbc:IssueDate>2017-12-01</cbc:IssueDate>
+	<cbc:IssueTime>12:00:00</cbc:IssueTime>
+	<cbc:Note>text</cbc:Note>
+	<cac:SenderParty>
+		<cbc:EndpointID schemeID="0088">5798000012345</cbc:EndpointID>
+		<cac:PartyIdentification>
+			<cbc:ID schemeID="0184">DK88776655</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyName>
+			<cbc:Name>Buyer organization</cbc:Name>
+		</cac:PartyName>
+	</cac:SenderParty>
+	<cac:ReceiverParty>
+		<cbc:EndpointID schemeID="0088">7330001000001</cbc:EndpointID>
+		<cac:PartyIdentification>
+			<cbc:ID schemeID="0192">98765432</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyName>
+			<cbc:Name>Seller company</cbc:Name>
+		</cac:PartyName>
+	</cac:ReceiverParty>
+	<cac:DocumentResponse>
+		<cac:Response>
+			<cbc:ResponseCode>AP</cbc:ResponseCode>
+		</cac:Response>
+		<cac:DocumentReference>
+			<cbc:ID>Cat-1</cbc:ID>
+			<cbc:VersionID>2.0</cbc:VersionID>
+		</cac:DocumentReference>
+	</cac:DocumentResponse>
+</ApplicationResponse>

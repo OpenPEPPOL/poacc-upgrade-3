@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--EUGEN-T77-R006-->
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+	configuration="peppolbis-T77-base-3.0">
+	<assert>
+		<description>Verify that seller endpoint id is specified</description>
+		<scope>PEPPOL-T77-R015</scope>
+	</assert>
+	
+	<test>
+		<assert>
+			<success>PEPPOL-T77-R015</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:ProviderParty>
+				<cbc:EndpointID schemeID="0082">9656789960</cbc:EndpointID>
+			</cac:ProviderParty>
+		</Catalogue>
+	</test>
+		
+	<test>
+		<assert>
+			<warning number="1">PEPPOL-T77-R015</warning>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+				
+			<cac:ProviderParty>
+				<cbc:EndpointID schemeID="0082"></cbc:EndpointID>
+			</cac:ProviderParty>
+		</Catalogue>
+	</test>
+
+	<test>
+		<assert>
+			<warning number="2">PEPPOL-T77-R015</warning>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+				
+			<cac:ProviderParty>
+			</cac:ProviderParty>
+		</Catalogue>
+	</test>
+	
+</testSet>
