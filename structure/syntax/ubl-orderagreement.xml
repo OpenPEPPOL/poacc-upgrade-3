@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 	<Term>OrderAgreement</Term>
 	
 	<Property key="sch:prefix">PEPPOL-T110</Property>

@@ -19,7 +19,7 @@
                 transaction.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir76-001</Reference>
-			
+
 			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrns076:ver2.0:extended:urn:www.peppol.eu:bis:peppol28a:ver1.0</Value>
 		</Element>
 		<Element>
@@ -29,7 +29,7 @@
                 transaction appears.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir76-002</Reference>
-			
+
 			<Value type="FIXED">urn:www.cenbii.eu:profile:bii28:ver2.0</Value>
 		</Element>
 		<Element>
@@ -40,7 +40,7 @@
                 that are part of the same process.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir76-003</Reference>
-			
+
 			<Value type="EXAMPLE">or0987</Value>
 		</Element>
 		<Element cardinality="0..1">

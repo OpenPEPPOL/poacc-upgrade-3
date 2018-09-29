@@ -3,18 +3,14 @@
 
     <rule context="cac:SenderParty">
         <assert id="BII2-T58-R007"
-            test="(cac:PartyName/cbc:Name) or (cac:PartyIdentification/cbc:ID)"
-            flag="fatal">
-            A catalogue response sending party SHALL contain the full name or an identifier
-        </assert>
+                test="(cac:PartyName/cbc:Name) or (cac:PartyIdentification/cbc:ID)"
+                flag="fatal">A catalogue response sending party SHALL contain the full name or an identifier</assert>
     </rule>
 
     <rule context="cac:ReceiverParty">
         <assert id="BII2-T58-R008"
-            test="(cac:PartyName/cbc:Name) or (cac:PartyIdentification/cbc:ID)"
-            flag="fatal">
-            A catalogue response receiving party SHALL contain the full name or an identifier
-        </assert>
+                test="(cac:PartyName/cbc:Name) or (cac:PartyIdentification/cbc:ID)"
+                flag="fatal">A catalogue response receiving party SHALL contain the full name or an identifier</assert>
     </rule>
 
 </pattern>

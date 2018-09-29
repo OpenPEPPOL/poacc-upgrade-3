@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 	<Term>PunchOut</Term>
 	
 	<Property key="sch:prefix">PEPPOL-T77</Property>
@@ -46,7 +46,6 @@
                 is ordered.</Description>
 			<DataType>Code</DataType>
 			<Reference type="BUSINESS_TERM">tir77-005</Reference>
-			<Reference type="RULE">EUGEN-T77-R004</Reference>
 			<Value type="EXAMPLE">true</Value>
 		</Element>
 		<Element>
@@ -78,7 +77,6 @@
                     ends.Format= "YYYY-MM-DD"</Description>
 				<DataType>Date</DataType>
 				<Reference type="BUSINESS_TERM">tir77-008</Reference>
-				<Reference type="RULE">EUGEN-T77-R003</Reference>
 				<Value type="EXAMPLE">2018-05-31</Value>
 			</Element>
 			<Element cardinality="0..1">
@@ -114,7 +112,6 @@
                     document may be delivered.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">OP-T77-001</Reference>
-				<Reference type="RULE">EUGEN-T77-R006</Reference>
 				<Attribute>
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
@@ -168,7 +165,6 @@
                     document should be delivered.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">OP-T77-002</Reference>
-				<Reference type="RULE">EUGEN-T77-R007</Reference>
 				<Attribute>
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
@@ -364,7 +360,6 @@
                                 representation.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir01-033</Reference>
-							<Reference type="RULE">OP-T77-013</Reference>
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">NL</Value>
 						</Element>
@@ -397,7 +392,6 @@
 						<Description>The number of item units to which the price applies. UOM should be stated by using recommendation 20</Description>
 						<DataType>Quantity</DataType>
 						<Reference type="BUSINESS_TERM">tir77-033</Reference>
-						<Reference type="RULE">EUGEN-T77-R008</Reference>
 						<Attribute>
 							<Term>unitCode</Term>
 							<Name>Base quantity unit of measure</Name>
@@ -531,7 +525,6 @@
 						<Reference type="CODE_LIST">Image</Reference>
 						<Reference type="BUSINESS_TERM">tir77-044</Reference>
 						<Reference type="BUSINESS_TERM">OP-T77-005</Reference>
-						<Reference type="RULE">EUGEN-T77-R012</Reference>
 						<Value type="EXAMPLE">858</Value>
 					</Element>
 					<Element cardinality="0..1">

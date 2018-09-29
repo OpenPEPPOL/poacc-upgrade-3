@@ -17,7 +17,6 @@
                 transaction.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir19-002</Reference>
-			<Reference type="RULE">BII2-T19-R001</Reference>
 			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrns019:ver2.0:extended:urn:www.peppol.eu:bis:peppol1a:ver2.0</Value>
 		</Element>
 		<Element>
@@ -27,7 +26,6 @@
                 transaction appears.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir19-001</Reference>
-			<Reference type="RULE">BII2-T19-R002</Reference>
 			<Value type="FIXED">urn:www.cenbii.eu:profile:bii01:ver2.0</Value>
 		</Element>
 		<Element>
@@ -38,7 +36,6 @@
                 referencing between transactions that are part of the same process.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir19-003</Reference>
-			<Reference type="RULE">BII2-T19-R004</Reference>
 			<Value type="EXAMPLE">Cat-02</Value>
 		</Element>
 		<Element cardinality="0..1">
@@ -70,7 +67,6 @@
 			<Description>The date on which the catalogue instance was issued. Format = "YYYY-MM-DD"</Description>
 			<DataType>Date</DataType>
 			<Reference type="BUSINESS_TERM">tir19-006</Reference>
-			<Reference type="RULE">BII2-T19-R003</Reference>
 			<Value type="EXAMPLE">2018-05-31</Value>
 		</Element>
 		<Element cardinality="0..1">
@@ -92,7 +88,6 @@
 			<Description>The period during which the content of the catalogue is valid and can be
                 used for trade.</Description>
 			<Reference type="BUSINESS_TERM">2</Reference>
-			<Reference type="RULE">BII2-T19-R006</Reference>
 			<Element cardinality="0..1">
 				<Term>cbc:StartDate</Term>
 				<Name>Period start date</Name>
@@ -146,7 +141,6 @@
 			<Description>The party that sends the catalogue. The seller or a catalogue
                 repository.</Description>
 			<Reference type="BUSINESS_TERM">3</Reference>
-			<Reference type="RULE">BII2-T19-R007</Reference>
 			<Element>
 				<Term>cbc:EndpointID</Term>
 				<Name>Electronic address ID</Name>
@@ -175,7 +169,6 @@
                         identifier known to the document recipient.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-010</Reference>
-					<Reference type="RULE">BII2-T19-R010</Reference>
 					<Attribute usage="Optional">
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
@@ -197,7 +190,6 @@
                         Identifier.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-011</Reference>
-					<Reference type="RULE">BII2-T19-R010</Reference>
 					<Value type="EXAMPLE">Provider</Value>
 				</Element>
 			</Element>
@@ -349,7 +341,6 @@
 			<Description>The party to which the catalogue is sent. Buyer or a catalogue repository
                 on his behalf.</Description>
 			<Reference type="BUSINESS_TERM">4</Reference>
-			<Reference type="RULE">BII2-T19-R008</Reference>
 			<Element cardinality="0..1">
 				<Term>cbc:EndpointID</Term>
 				<Name>Electronic address ID</Name>
@@ -378,7 +369,6 @@
                         identifier known to the document recipient.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-013</Reference>
-					<Reference type="RULE">BII2-T19-R011</Reference>
 					<Attribute usage="Optional">
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
@@ -400,7 +390,6 @@
                         Identifier.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-014</Reference>
-					<Reference type="RULE">BII2-T19-R011</Reference>
 					<Value type="EXAMPLE">Receiver</Value>
 				</Element>
 			</Element>
@@ -552,7 +541,6 @@
 			<Description>The party that provides the items specified in the
                 catalogue.</Description>
 			<Reference type="BUSINESS_TERM">5</Reference>
-			<Reference type="RULE">BII2-T19-R009</Reference>
 			<Element>
 				<Term>cac:Party</Term>
 				<Name>Party</Name>
@@ -584,7 +572,6 @@
                             identifier known to the document recipient.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-016</Reference>
-						<Reference type="RULE">BII2-T19-R012</Reference>
 						<Attribute usage="Optional">
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
@@ -606,7 +593,6 @@
                             Identifier.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-017</Reference>
-						<Reference type="RULE">BII2-T19-R012</Reference>
 						<Value type="EXAMPLE">Supplier</Value>
 					</Element>
 				</Element>
@@ -756,7 +742,6 @@
                             identifier known to the document recipient.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-055</Reference>
-						<Reference type="RULE">BII2-T19-R013</Reference>
 						<Attribute usage="Optional">
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
@@ -778,7 +763,6 @@
                             Identifier.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-079</Reference>
-						<Reference type="RULE">BII2-T19-R013</Reference>
 						<Value type="EXAMPLE">Customer</Value>
 					</Element>
 				</Element>
@@ -831,7 +815,6 @@
 			<Name>Catalogue line</Name>
 			<Description>Catalogue line content</Description>
 			<Reference type="BUSINESS_TERM">7</Reference>
-			<Reference type="RULE">BII2-T19-R023</Reference>
 			<Element>
 				<Term>cbc:ID</Term>
 				<Name>Line identifier</Name>
@@ -840,7 +823,6 @@
                     documents.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">tir19-032</Reference>
-				<Reference type="RULE">BII2-T19-R024</Reference>
 				<Value type="EXAMPLE">1</Value>
 			</Element>
 			<Element cardinality="0..1">
@@ -914,7 +896,6 @@
                     details provided in the catalogue line, such as price.</Description>
 				<DataType>Quantity</DataType>
 				<Reference type="BUSINESS_TERM">tir19-038</Reference>
-				<Reference type="RULE">BII2-T19-R030</Reference>
 				<Attribute>
 					<Term>unitCode</Term>
 					<Name>Minimum order quantity unit of measure</Name>
@@ -934,7 +915,6 @@
                     details provided in the catalogue line, such as price.</Description>
 				<DataType>Quantity</DataType>
 				<Reference type="BUSINESS_TERM">tir19-039</Reference>
-				<Reference type="RULE">BII2-T19-R029</Reference>
 				<Attribute>
 					<Term>unitCode</Term>
 					<Name>Maximum order quantity unit of measure</Name>
@@ -972,7 +952,6 @@
                     valid. An orderable catalogue item is no longer orderable after the validity
                     period expires. Used for example for promotional items or prices.</Description>
 				<Reference type="BUSINESS_TERM">8</Reference>
-				<Reference type="RULE">BII2-T19-R017</Reference>
 				<Element cardinality="0..1">
 					<Term>cbc:StartDate</Term>
 					<Name>Period start date</Name>
@@ -1290,7 +1269,6 @@
                             given for each orderable unit.</Description>
 						<DataType>Price amount</DataType>
 						<Reference type="BUSINESS_TERM">tir19-051</Reference>
-						<Reference type="RULE">BII2-T19-R015</Reference>
 						<Attribute>
 							<Term>currencyID</Term>
 							<Description>Mandatory attribute</Description>
@@ -1401,7 +1379,6 @@
 					<Description>A short name for an item.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-078</Reference>
-					<Reference type="RULE">BII2-T19-R019</Reference>
 					<Value type="EXAMPLE">Office chair</Value>
 				</Element>
 				<Element cardinality="0..n">
@@ -1453,7 +1430,6 @@
 						<Description>A item identifier based on a registered schema.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-092</Reference>
-						<Reference type="RULE">BII2-T19-R020</Reference>
 						<Attribute>
 							<Term>schemeID</Term>
 							<Name>Item standard identifier identification scheme identifier</Name>
@@ -1556,7 +1532,6 @@
                             the Item. More than one classifications can be used including UNSPSC
                             code and CPV code.</Description>
 						<Reference type="BUSINESS_TERM">tir19-069</Reference>
-						<Reference type="RULE">BII2-T19-R022</Reference>
 						<Attribute>
 							<Term>listID</Term>
 							<Name>Item classification identifier identification scheme identifier</Name>
@@ -1677,7 +1652,6 @@
                             2007.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-077</Reference>
-						<Reference type="RULE">BII2-T19-R027</Reference>
 						<Value type="EXAMPLE">XXL</Value>
 					</Element>
 					<Element cardinality="0..1">
