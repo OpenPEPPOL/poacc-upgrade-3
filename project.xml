@@ -193,6 +193,13 @@
     <Resource>
         <Type>native:File</Type>
         <Path>project.xml</Path>
+        <Title>Example files</Title>
+        <Property key="download">PEPPOLBIS-Examples.zip</Property>
+        <Property key="filename">PEPPOLBIS-Examples.zip</Property>
+    </Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Path>project.xml</Path>
         <Title>Schematron files</Title>
         <Property key="download">PEPPOLBIS-Upgrade-Schematron.zip</Property>
         <Property key="filename">PEPPOLBIS-Upgrade-Schematron.zip</Property>

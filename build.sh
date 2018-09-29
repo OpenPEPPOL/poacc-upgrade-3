@@ -19,6 +19,10 @@ done
 docker run --rm -i -v $PROJECT/target/site/files:/src alpine:3.6 rm -rf /src/PEPPOLBIS-Upgrade-Schematron.zip
 docker run --rm -i -v $PROJECT/target/schematron:/src -v $PROJECT/target/site/files:/target -w /src kramos/alpine-zip -r /target/PEPPOLBIS-Upgrade-Schematron.zip .
 
+# Example files
+docker run --rm -i -v $PROJECT/target/site/files:/src alpine:3.6 rm -rf /src/PEPPOLBIS-Examples.zip
+docker run --rm -i -v $PROJECT/rules/examples:/src -v $PROJECT/target/site/files:/target -w /src kramos/alpine-zip -r /target/PEPPOLBIS-Examples.zip .
+
 
 # Guides
 docker run --rm -i -v $PROJECT:/documents -v $PROJECT/target:/target difi/asciidoctor
