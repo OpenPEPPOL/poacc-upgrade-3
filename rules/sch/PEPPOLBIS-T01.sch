@@ -16,6 +16,7 @@
     <!-- Functions -->
 
     <xi:include href="parts/function/gln.xml"/>
+    <xi:include href="parts/function/slack.xml"/>
 
     <!-- Rules -->
 
