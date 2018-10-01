@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
-
+    
     <rule context="cac:ValidityPeriod">
         <assert id="PEPPOL-T19-R001"
                 test="(number(translate(cbc:StartDate,'-','')) &lt;= number(translate(cbc:EndDate,'-',''))) or (not(cbc:StartDate)) or (not(cbc:EndDate))"
@@ -43,7 +43,7 @@
     <rule context="cac:CatalogueLine">
         <assert id="PEPPOL-T19-R007"
                 test="not(cac:LineValidityPeriod)
-                or ((cac:LineValidityPeriod/cbc:StartDate
+                or ( cac:LineValidityPeriod/cbc:StartDate
                 and cac:LineValidityPeriod/cbc:EndDate)
                 and (number(translate(cac:LineValidityPeriod/cbc:StartDate,'-','')) &gt;= $CatalogueValidityStart)
                 and  (number(translate(cac:LineValidityPeriod/cbc:EndDate,'-','')) &lt;= $CatalogueValidityEnd)"
@@ -65,7 +65,7 @@
     <rule context="cac:CatalogueLine/cac:Price">
         <assert id="PEPPOL-T19-R011"
                 test="not (cac:ValidityPeriod)
-                or ((cac:ValidityPeriod/cbc:StartDate
+                or (cac:ValidityPeriod/cbc:StartDate
                 and cac:ValidityPeriod/cbc:EndDate)
                 and (number(translate(cac:ValidityPeriod/cbc:StartDate,'-','')) &gt;= $CatalogueValidityStart)
                 and  (number(translate(//cac:Price/cac:ValidityPeriod/cbc:EndDate,'-','')) &lt;= $CatalogueValidityEnd)"
@@ -111,3 +111,4 @@
     <!--Delete rule??-->
 
 </pattern>
+
