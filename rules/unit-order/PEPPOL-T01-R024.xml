@@ -188,7 +188,7 @@
 			<cac:OrderLine>
 				<cac:LineItem>
 					<cbc:Quantity>120</cbc:Quantity>
-					<cbc:LineExtensionAmount>6000.00</cbc:LineExtensionAmount>
+					<cbc:LineExtensionAmount>12000.00</cbc:LineExtensionAmount>
 
 					
 					<cac:Price>

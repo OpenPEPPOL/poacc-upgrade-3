@@ -6,7 +6,7 @@
 			+ Order total VAT amount.</description>
 		<scope>PEPPOL-T01-R017</scope>
 	</assert>
-	<test>
+	<test id="1">
 		<assert>
 			<success>PEPPOL-T01-R017</success>
 		</assert>
@@ -26,7 +26,7 @@
 			</cac:AnticipatedMonetaryTotal>
 		</Order>
 	</test>
-	<test>
+	<test id="2">
 		<assert>
 			<success>PEPPOL-T01-R017</success>
 		</assert>
@@ -43,7 +43,7 @@
 			</cac:AnticipatedMonetaryTotal>
 		</Order>
 	</test>
-	<test>
+	<test id="3">
 		<assert>
 			<success>PEPPOL-T01-R017</success>
 		</assert>
@@ -57,13 +57,13 @@
 			<cac:AnticipatedMonetaryTotal>
 				<cbc:LineExtensionAmount>6300.0</cbc:LineExtensionAmount>
 				<!--<cbc:TaxExclusiveAmount>6000</cbc:TaxExclusiveAmount>-->
-				<cbc:TaxInclusiveAmount>6500</cbc:TaxInclusiveAmount>			
+				<cbc:TaxInclusiveAmount>7000</cbc:TaxInclusiveAmount>			
 				<cbc:AllowanceTotalAmount>200</cbc:AllowanceTotalAmount>
 				<cbc:ChargeTotalAmount>400</cbc:ChargeTotalAmount>
 			</cac:AnticipatedMonetaryTotal>
 		</Order>
 	</test>
-	<test>
+	<test id="4">
 		<assert>
 			<error>PEPPOL-T01-R017</error>
 		</assert>
@@ -80,7 +80,7 @@
 			</cac:AnticipatedMonetaryTotal>
 		</Order>
 	</test>
-	<test>
+	<test id="5">
 		<assert>
 			<error>PEPPOL-T01-R017</error>
 		</assert>
@@ -97,7 +97,7 @@
 			</cac:AnticipatedMonetaryTotal>
 		</Order>
 	</test>
-	<test>
+	<test id="6">
 		<assert>
 			<error>PEPPOL-T01-R017</error>
 		</assert>

@@ -1,33 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-t16-base-3.0">
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t16-base-3.0">
 	<assert>
 		<description>Verify each delivered quantity is not negative</description>
-		<scope>PEPPOL-T16-R005</scope>
+		<scope>PEPPOL-T16-R006</scope>
 	</assert>
 	<test>
 		<assert>
-			<success>PEPPOL-T16-R005</success>
+			<success>PEPPOL-T16-R006</success>
 		</assert>
-		<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+		<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 			<cac:DespatchLine>
-				<cbc:ID>1</cbc:ID>
-				<DeliveredQuantity unitCode="NAR" unitCodeListID="UNECERec20">1</DeliveredQuantity>  
+				<DeliveredQuantity>1</DeliveredQuantity>
 			</cac:DespatchLine>
 		</DespatchAdvice>
 	</test>
 
-	
 	<test>
 		<assert>
-			<error>PEPPOL-T16-R005</error>
+			<success>PEPPOL-T16-R006</success>
 		</assert>
-		<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+		<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 			<cac:DespatchLine>
-				<cbc:ID>1</cbc:ID>
-				<DeliveredQuantity unitCode="NAR" unitCodeListID="UNECERec20">-1</DeliveredQuantity>
+				<DeliveredQuantity>0</DeliveredQuantity>
 			</cac:DespatchLine>
 		</DespatchAdvice>
 	</test>
-	
+
+	<test>
+		<assert>
+			<error>PEPPOL-T16-R006</error>
+		</assert>
+		<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:DespatchLine>
+				<DeliveredQuantity>-1</DeliveredQuantity>
+			</cac:DespatchLine>
+		</DespatchAdvice>
+	</test>
+
 </testSet>

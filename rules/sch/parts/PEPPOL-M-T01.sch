@@ -27,14 +27,14 @@
     <!-- Buyer party -->
     <rule context="cac:BuyerCustomerParty/cac:Party">
         <assert id="PEPPOL-T01-R014"
-                test="cac:PartyName/cbc:Name or cac:PartyIdentification/cbc:ID"
+                test="cac:PartyLegalEntity/cbc:RegistrationName or cac:PartyIdentification/cbc:ID"
                 flag="fatal">An order SHALL have the buyer party official name or a buyer party identifier</assert>
     </rule>
 
     <!-- Seller party -->
     <rule context="cac:SellerSupplierParty/cac:Party">
         <assert id="PEPPOL-T01-R015"
-                test="cac:PartyName/cbc:Name or cac:PartyIdentification/cbc:ID"
+                test="cac:PartyLegalEntity/cbc:RegistrationName or cac:PartyIdentification/cbc:ID"
                 flag="fatal">An order SHALL have the seller party official name or a seller party identifier</assert>
     </rule>
 
@@ -165,7 +165,7 @@
                 flag="fatal">Each order line item net price SHALL not be negative
         </assert>
         <assert  id="PEPPOL-T01-R027"
-                test="(cac:Price/cac:AllowanceCharge/cbc:BaseAmount) &gt;= 0 or not(exists(cac:Price/cac:AllowanceCharge/cbc:BaseAmount))"
+                test="(cac:AllowanceCharge/cbc:BaseAmount) &gt;= 0 or not(exists(cac:Price/cac:AllowanceCharge/cbc:BaseAmount))"
                 flag="fatal">The Item gross price SHALL NOT be negative.</assert>
     </rule>
 

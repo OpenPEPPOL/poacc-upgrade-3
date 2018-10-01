@@ -6,14 +6,14 @@
     <!-- Buyer party -->
     <rule context="cac:BuyerCustomerParty/cac:Party">
         <assert id="PEPPOL-T76-R001"
-                test="cac:PartyName/cbc:Name or cac:PartyIdentification/cbc:ID"
+            test="cac:PartyLegalEntity/cbc:RegistrationName or cac:PartyIdentification/cbc:ID"
                 flag="fatal">An order response SHALL have the buyer party official name or a buyer party identifier</assert>
     </rule>
 
     <!-- Seller party -->
     <rule context="cac:SellerSupplierParty/cac:Party">
         <assert id="PEPPOL-T76-R002"
-                test="cac:PartyName/cbc:Name or cac:PartyIdentification/cbc:ID"
+                test="cac:PartyLegalEntity/cbc:RegistrationName or cac:PartyIdentification/cbc:ID"
                 flag="fatal">An order response SHALL have the seller party official name or a seller party identifier</assert>
     </rule>
 
@@ -32,7 +32,7 @@
     </rule>
 
     <!-- Price -->
-    <rule context=" cbc:PriceAmount">
+    <rule context="cbc:PriceAmount">
         <assert id="PEPPOL-T76-R005"
                 test="not(@currencyID) or @currencyID = $documentCurrencyCode"
                 flag="fatal">An order reposnse SHALL be stated in a single currency</assert>

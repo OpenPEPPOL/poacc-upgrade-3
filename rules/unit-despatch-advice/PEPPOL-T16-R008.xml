@@ -1,50 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-t16-base-3.0">
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t16-base-3.0">
 	<assert>
 		<description>Verify despatching party has a name</description>
-		<scope>PEPPOL-T16-R007</scope>
+		<scope>PEPPOL-T16-R008</scope>
 	</assert>
 	<test>
 		<assert>
-			<success>PEPPOL-T16-R007</success>
+			<success>PEPPOL-T16-R008</success>
 		</assert>
-		<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-			<cac:DespatchSupplierParty> 
+		<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:DespatchSupplierParty>
 				<cac:Party>
-					<ns3:PartyName> 
-					  <cbc:Name>CER MEDICAL SRL</cbc:Name> 
-					</ns3:PartyName>  
-				</cac:Party> 
-			</cac:DespatchSupplierParty>  
+					<cac:PartyName>
+						<cbc:Name>CER MEDICAL SRL</cbc:Name>
+					</cac:PartyName>
+				</cac:Party>
+			</cac:DespatchSupplierParty>
 		</DespatchAdvice>
 	</test>
 
 	<test>
 		<assert>
-			<warning>PEPPOL-T16-R007</warning>
+			<warning>PEPPOL-T16-R08</warning>
 		</assert>
-		<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-			<cac:DespatchSupplierParty> 
+		<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:DespatchSupplierParty>
 				<cac:Party>
-					<ns3:PartyName> 
-					</ns3:PartyName>  
-				</cac:Party> 
-			</cac:DespatchSupplierParty>  
+					<cac:PartyName/> 
+				</cac:Party>
+			</cac:DespatchSupplierParty>
 		</DespatchAdvice>
 	</test>
 
-	
+
 	<test>
 		<assert>
-			<warning>PEPPOL-T16-R007</warning>
+			<warning>PEPPOL-T16-R008</warning>
 		</assert>
-		<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-			<cac:DespatchSupplierParty> 
-				<cac:Party>
-				</cac:Party> 
-			</cac:DespatchSupplierParty>  
+		<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+			<cac:DespatchSupplierParty>
+				<cac:Party/> 
+			</cac:DespatchSupplierParty>
 		</DespatchAdvice>
 	</test>
-	
+
 </testSet>
