@@ -48,7 +48,7 @@
                 deleted). Default action is to fully replace the source catalogue.</Description>
 			<DataType>Code</DataType>
 			<Reference type="BUSINESS_TERM">tir19-047</Reference>
-			<Reference type="RULE">OP-T19-007</Reference>
+			
 			<Reference type="CODE_LIST">ActionCode</Reference>
 			<Value type="EXAMPLE">Add</Value>
 		</Element>
@@ -149,12 +149,12 @@
                     message.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">tir19-009</Reference>
-				<Reference type="RULE">EUGEN-T19-R043</Reference>
+				
 				<Attribute>
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
 					<Description>Scheme identifier for Electronic address</Description>
-					<Reference type="RULE">OP-T19-005</Reference>
+					
 					<Value type="EXAMPLE">0088</Value>
 				</Attribute>
 				<Value type="EXAMPLE">7300010000001</Value>
@@ -173,7 +173,7 @@
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
 						<Description>Scheme identifier of the Provider identification</Description>
-						<Reference type="RULE">OP-T19-006</Reference>
+						
 						<Reference type="CODE_LIST">ICD</Reference>
 						<Value type="EXAMPLE">0184</Value>
 					</Attribute>
@@ -268,7 +268,7 @@
 							representation.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-p029f</Reference>
-						<Reference type="RULE">OP-T19-001</Reference>
+						
 						<Reference type="CODE_LIST">ISO3166</Reference>
 						<Value type="EXAMPLE">DK</Value>
 					</Element>
@@ -327,7 +327,7 @@
 								representation.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir19-p028d</Reference>
-							<Reference type="RULE">OP-T19-001</Reference>
+							
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">UK</Value>
 						</Element>
@@ -349,12 +349,12 @@
                     message.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">tir19-012</Reference>
-				<Reference type="RULE">EUGEN-T19-R043</Reference>
+				
 				<Attribute>
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
 					<Description>Scheme identifier for Electronic address</Description>
-					<Reference type="RULE">OP-T19-005</Reference>
+					
 					<Value type="EXAMPLE">0088</Value>
 				</Attribute>
 				<Value type="EXAMPLE">923654321</Value>
@@ -373,7 +373,7 @@
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
 						<Description>Scheme identifier for Receiver identifier</Description>
-						<Reference type="RULE">OP-T19-006</Reference>
+						
 						<Reference type="CODE_LIST">ICD</Reference>
 						<Value type="EXAMPLE">0184</Value>
 					</Attribute>
@@ -468,7 +468,7 @@
 							representation.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-p031f</Reference>
-						<Reference type="RULE">OP-T19-001</Reference>
+						
 						<Reference type="CODE_LIST">ISO3166</Reference>
 						<Value type="EXAMPLE">DK</Value>
 					</Element>
@@ -527,7 +527,7 @@
 								representation.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir19-p030d</Reference>
-							<Reference type="RULE">OP-T19-001</Reference>
+							
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">SE</Value>
 						</Element>
@@ -552,12 +552,12 @@
                         message.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-015</Reference>
-					<Reference type="RULE">EUGEN-T19-R043</Reference>
+					
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
 						<Description>Scheme identifier for Electronic address identifier</Description>
-						<Reference type="RULE">OP-T19-005</Reference>
+						
 						<Value type="EXAMPLE">0088</Value>
 					</Attribute>
 					<Value type="EXAMPLE">123456789</Value>
@@ -576,7 +576,7 @@
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
 							<Description>Scheme identifier for Catalogue supplier identifier</Description>
-							<Reference type="RULE">OP-T19-006</Reference>
+							
 							<Reference type="CODE_LIST">ICD</Reference>
 							<Value type="EXAMPLE">0184</Value>
 						</Attribute>
@@ -668,7 +668,7 @@
 								representation.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir19-026</Reference>
-							<Reference type="RULE">OP-T19-001</Reference>
+							
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">NO</Value>
 						</Element>
@@ -722,12 +722,12 @@
                         message.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-054</Reference>
-					<Reference type="RULE">EUGEN-T19-R043</Reference>
+					
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
 						<Description>Scheme identifier for Electronic address identifier</Description>
-						<Reference type="RULE">OP-T19-005</Reference>
+						
 						<Value type="EXAMPLE">0184</Value>
 					</Attribute>
 					<Value type="EXAMPLE">DK9234873</Value>
@@ -746,7 +746,7 @@
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
 							<Description>Scheme identifier for Catalogue customer identifier</Description>
-							<Reference type="RULE">OP-T19-006</Reference>
+							
 							<Reference type="CODE_LIST">ICD</Reference>
 							<Value type="EXAMPLE">0184</Value>
 						</Attribute>
@@ -834,7 +834,7 @@
                     deleted.</Description>
 				<DataType>Code</DataType>
 				<Reference type="BUSINESS_TERM">tir19-033</Reference>
-				<Reference type="RULE">CL-T19-001</Reference>
+				
 				<Reference type="CODE_LIST">ActionCode</Reference>
 				<Value type="EXAMPLE">Update</Value>
 			</Element>
@@ -859,7 +859,7 @@
                     orderable in pallets where the price is lower.</Description>
 				<DataType>Code</DataType>
 				<Reference type="BUSINESS_TERM">tir19-035</Reference>
-				<Reference type="RULE">OP-T19-010</Reference>
+				
 				<Reference type="CODE_LIST">UNECERec20</Reference>
 				<Value type="EXAMPLE">EA</Value>
 			</Element>
@@ -876,7 +876,7 @@
 					<Description>The unit of measure that applies to the item net quantity</Description>
 					<DataType>Code</DataType>
 					<Reference type="BUSINESS_TERM">20</Reference>
-					<Reference type="RULE">OP-T19-002</Reference>
+					
 					<Reference type="CODE_LIST">UNECERec20</Reference>
 					<Value type="EXAMPLE">C62</Value>
 				</Attribute>
@@ -902,7 +902,7 @@
 					<Description>The unit of measure that applies to the minimum order quantity</Description>
 					<DataType>code</DataType>
 					<Reference type="BUSINESS_TERM">20</Reference>
-					<Reference type="RULE">OP-T19-002</Reference>
+					
 					<Reference type="CODE_LIST">UNECERec20</Reference>
 					<Value type="EXAMPLE">C62</Value>
 				</Attribute>
@@ -921,7 +921,7 @@
 					<Description>The unit of measure that applies to the maximum order quantity</Description>
 					<DataType>Code</DataType>
 					<Reference type="BUSINESS_TERM">20</Reference>
-					<Reference type="RULE">OP-T19-002</Reference>
+					
 					<Reference type="CODE_LIST">UNECERec20</Reference>
 					<Value type="EXAMPLE">C62</Value>
 				</Attribute>
@@ -941,7 +941,7 @@
 				<Description>The packing level of the catalogue line.</Description>
 				<DataType>Code</DataType>
 				<Reference type="BUSINESS_TERM">tir19-102</Reference>
-				<Reference type="RULE">OP-T19-008</Reference>
+				
 				<Reference type="CODE_LIST">GS17009</Reference>
 				<Value type="EXAMPLE">TU</Value>
 			</Element>
@@ -985,7 +985,7 @@
 						<Term>currencyID</Term>
 						<Name>Currency identifier</Name>
 						<Description>Mandatory attribute</Description>
-						<Reference type="RULE">OP-T19-011</Reference>
+						
 						<Reference type="CODE_LIST">ISO4217</Reference>
 						<Value type="EXAMPLE">EUR</Value>
 					</Attribute>
@@ -1006,7 +1006,7 @@
                             price to other items.See guideline on Items and packing units in a
                             catalogue.</Description>
 						<Reference type="BUSINESS_TERM">tir19-085</Reference>
-						<Reference type="RULE">OP-T19-002</Reference>
+						
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 					</Attribute>
 				</Element>
@@ -1036,7 +1036,7 @@
                             The value shoud be a valid UOM code like CS for case.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-065</Reference>
-						<Reference type="RULE">OP-T19-002</Reference>
+						
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">CS</Value>
 					</Attribute>
@@ -1064,7 +1064,7 @@
 						<Description>The packaging unit for related items. The value shoud be a valid UOM code like CS for case.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">20</Reference>
-						<Reference type="RULE">OP-T19-002</Reference>
+						
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">CS</Value>
 					</Attribute>
@@ -1092,7 +1092,7 @@
 						<Description>The packaging unit for required related items. The value shoud be a valid UOM code like CS for case.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">20</Reference>
-						<Reference type="RULE">OP-T19-002</Reference>
+						
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">CS</Value>
 					</Attribute>
@@ -1120,7 +1120,7 @@
 						<Description>The packaging unit for replaced items. The value shoud be a valid UOM code like CS for case.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">20</Reference>
-						<Reference type="RULE">OP-T19-002</Reference>
+						
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">CS</Value>
 					</Attribute>
@@ -1141,7 +1141,7 @@
 						<Description>The lead time units for price lead time. The value shoud be a valid UOM code like DAY for days.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">20</Reference>
-						<Reference type="RULE">OP-T19-002</Reference>
+						
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">CS</Value>
 					</Attribute>
@@ -1158,7 +1158,7 @@
 						<Description>The quantity units for minimum quantity. The value shoud be a valid UOM code like CS for case.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">20</Reference>
-						<Reference type="RULE">OP-T19-002</Reference>
+						
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">CS</Value>
 					</Attribute>
@@ -1175,7 +1175,7 @@
 						<Description>The quantity units for ceiling quantity. The value shoud be a valid UOM code like CS for case.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">20</Reference>
-						<Reference type="RULE">OP-T19-002</Reference>
+						
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">CS</Value>
 					</Attribute>
@@ -1253,7 +1253,7 @@
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir19-063</Reference>
 							<Reference type="BUSINESS_TERM">tir19-113</Reference>
-							<Reference type="RULE">OP-T19-001</Reference>
+							
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">DK</Value>
 						</Element>
@@ -1272,7 +1272,7 @@
 						<Attribute>
 							<Term>currencyID</Term>
 							<Description>Mandatory attribute</Description>
-							<Reference type="RULE">OP-T19-011</Reference>
+							
 							<Reference type="CODE_LIST">ISO4217</Reference>
 							<Value type="EXAMPLE">EUR</Value>
 						</Attribute>
@@ -1289,7 +1289,7 @@
 							<Description>The unit of measure that applies to the Item price base quantity.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">20</Reference>
-							<Reference type="RULE">OP-T19-002</Reference>
+							
 							<Reference type="CODE_LIST">UNECERec20</Reference>
 							<Value type="EXAMPLE">CS</Value>
 						</Attribute>
@@ -1359,7 +1359,7 @@
 						<Name>Packed quantity unit of measure code</Name>
 						<Description>The unit of measure that applies to the packed quantity.</Description>
 						<Reference type="BUSINESS_TERM">20</Reference>
-						<Reference type="RULE">OP-T19-002</Reference>
+						
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">CS</Value>
 					</Attribute>
@@ -1480,7 +1480,7 @@
 								<Name>Attached object Mime code</Name>
 								<Description>The mime code of the attached document</Description>
 								<DataType>Code</DataType>
-								<Reference type="RULE">CL-T19-002</Reference>
+								
 								<Reference type="CODE_LIST">MimeCode</Reference>
 								<Value type="EXAMPLE">text/csv</Value>
 							</Attribute>
@@ -1517,7 +1517,7 @@
 							representation.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-071</Reference>
-						<Reference type="RULE">OP-T19-001</Reference>
+						
 						<Reference type="CODE_LIST">ISO3166</Reference>
 						<Value type="EXAMPLE">DK</Value>
 					</Element>
@@ -1569,8 +1569,8 @@
 								the United Nations, expressed as a code.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-072</Reference>
-						<Reference type="RULE">EUGEN-T19-R051</Reference>
-						<Reference type="RULE">OP-T19-003</Reference>
+						
+						
 						<Reference type="CODE_LIST">UNCL8273</Reference>
 					</Element>
 					<Element cardinality="0..1">
@@ -1594,7 +1594,7 @@
                             item.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-094</Reference>
-						<Reference type="RULE">CL-T19-004</Reference>
+						
 						<Reference type="CODE_LIST">UNCL5305</Reference>
 						<Value type="EXAMPLE">S</Value>
 					</Element>
@@ -1668,7 +1668,7 @@
 							<Description>The quantity units for value quantity. The value shoud be a valid UOM code like CS for case.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">20</Reference>
-							<Reference type="RULE">OP-T19-002</Reference>
+							
 							<Reference type="CODE_LIST">UNECERec20</Reference>
 							<Value type="EXAMPLE">KGM</Value>
 						</Attribute>
@@ -1804,7 +1804,7 @@
                             contained.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-104</Reference>
-						<Reference type="RULE">OP-T19-009</Reference>
+						
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:Measure</Term>

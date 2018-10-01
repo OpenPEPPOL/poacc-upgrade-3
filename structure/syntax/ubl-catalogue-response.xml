@@ -75,7 +75,7 @@
                     message.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">tir58-009</Reference>
-				<Reference type="RULE">EUGEN-T58-R001</Reference>
+				
 				<Attribute>
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
@@ -94,7 +94,7 @@
                         the party.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir58-008</Reference>
-					<Reference type="RULE">EUGEN-T58-R002</Reference>
+					
 					<Attribute usage="Optional">
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
@@ -129,7 +129,7 @@
                     message.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">tir58-012</Reference>
-				<Reference type="RULE">EUGEN-T58-R001</Reference>
+				
 				<Attribute>
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
@@ -186,7 +186,7 @@
                         code</Description>
 					<DataType>Code</DataType>
 					<Reference type="BUSINESS_TERM">tir58-014</Reference>
-					<Reference type="RULE">EUGEN-T58-R003</Reference>
+					
 					<Reference type="CODE_LIST">UNCL4343</Reference>
 					<Value type="EXAMPLE">AP</Value>
 				</Element>

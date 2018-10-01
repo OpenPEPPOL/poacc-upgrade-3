@@ -147,6 +147,7 @@
 					base for the order.</Description>
 				<DataType>Document reference</DataType>
 				<Reference type="BUSINESS_TERM">tir01-010</Reference>
+				<Value type="FIXED">1232424</Value>
 			</Element>
 		</Element>
 		<Element cardinality="0..1">
@@ -159,6 +160,7 @@
 					is issued.</Description>
 				<DataType>Document reference</DataType>
 				<Reference type="BUSINESS_TERM">tir01-011</Reference>
+				<Value type="EXAMPLE">4832423</Value>
 			</Element>
 		</Element>
 		<Element cardinality="0..1">
@@ -172,6 +174,7 @@
 					based.</Description>
 				<DataType>Document reference</DataType>
 				<Reference type="BUSINESS_TERM">tir01-012</Reference>
+				<Value type="EXAMPLE">5435235</Value>
 			</Element>
 		</Element>
 		<Element cardinality="0..n">
@@ -182,6 +185,7 @@
 				<Name>Document identifier</Name>
 				<Description>An identifier for the referenced document.</Description>
 				<Reference type="BUSINESS_TERM">tir01-154</Reference>
+				<Value type="EXAMPLE">testid123</Value>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cbc:DocumentType</Term>
@@ -189,6 +193,7 @@
 				<Description>A short description of the document type.</Description>
 				<DataType>Text</DataType>
 				<Reference type="BUSINESS_TERM">tir01-016</Reference>
+				<Value type="EXAMPLE">test example</Value>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:Attachment</Term>
@@ -293,7 +298,7 @@
 							items.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-023</Reference>
-
+						<Value type="EXAMPLE">Buyer name</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
@@ -539,7 +544,7 @@
 				<Element cardinality="0..1">
 					<Term>cac:PartyName</Term>
 					<Name>Party name</Name>
-					<Description>Name of seller The name of the party.</Description>
+					<Description>Name of seller</Description>
 					<Reference type="BUSINESS_TERM">tir01-060</Reference>
 
 					<Element>
@@ -548,7 +553,7 @@
 						<Description>The trading name of the party.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-060</Reference>
-
+						<Value type="EXAMPLE">Seller name</Value>
 					</Element>
 				</Element>
 				<Element>
@@ -761,6 +766,7 @@
 						<Description>The name of the party.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-082</Reference>
+						<Value type="EXAMPLE">Originator name</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
@@ -852,6 +858,7 @@
 							items (invoicee).</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-155</Reference>
+						<Value type="EXAMPLE">Invoicee name</Value>
 					</Element>
 				</Element>
 
@@ -1178,7 +1185,7 @@
 							items.In this BIS: The identifier of the party that should receive the
 							ordered items</Description>
 						<Reference type="BUSINESS_TERM">tir01-101</Reference>
-						
+
 						<Attribute usage="Optional">
 							<Term>schemeID</Term>
 							<Name>Deliver party registration identifier identification scheme
@@ -1202,6 +1209,7 @@
 							delivery</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-102</Reference>
+						<Value type="EXAMPLE">Delivery name</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
@@ -1755,6 +1763,7 @@
 							<Description>The party who originated Order.</Description>
 							<DataType>Text</DataType>
 							<Reference type="BUSINESS_TERM">tir01-122</Reference>
+							<Value type="EXAMPLE">Originator name</Value>
 						</Element>
 					</Element>
 				</Element>
@@ -1988,6 +1997,7 @@
 							<Description>The BuyerCustomerParty identifier for the
 								item.</Description>
 							<Reference type="BUSINESS_TERM">tir01-p022</Reference>
+							<Value type="EXAMPLE">abc32432</Value>
 						</Element>
 					</Element>
 					<Element cardinality="0..1">
@@ -2040,6 +2050,7 @@
 								to specify the details of the item.</Description>
 							<DataType>Document reference</DataType>
 							<Reference type="BUSINESS_TERM">tir01-p007</Reference>
+							<Value type="EXAMPLE">doc4353.pdf</Value>
 						</Element>
 					</Element>
 					<Element cardinality="0..n">
@@ -2140,6 +2151,7 @@
 								descriptive.</Description>
 							<DataType>Quantity</DataType>
 							<Reference type="BUSINESS_TERM">tir01-p020</Reference>
+
 							<Attribute usage="Optional">
 								<Term>unitCode</Term>
 								<Name>Value quantity unit of measure</Name>
@@ -2147,7 +2159,10 @@
 									quantity.</Description>
 								<DataType>Code</DataType>
 								<Reference type="CODE_LIST">UNECERec20</Reference>
+								<Value type="EXAMPLE">C62</Value>
 							</Attribute>
+
+							<Value type="EXAMPLE">10</Value>
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cbc:ValueQualifier</Term>
@@ -2179,7 +2194,7 @@
 								<Description>An identifier for the production lot which the order
 									line items come from.</Description>
 								<Reference type="BUSINESS_TERM">tir01-p022</Reference>
-							
+
 							</Element>
 						</Element>
 					</Element>

@@ -18,7 +18,7 @@
                 transaction.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir71-006</Reference>
-			<Reference type="RULE">BII2-T71-R002</Reference>
+			
 			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrns071:ver2.0:extended:urn:www.peppol.eu:bis:peppol36a:ver2.0</Value>
 		</Element>
 		<Element>
@@ -28,7 +28,7 @@
                 transaction appears.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir71-005</Reference>
-			<Reference type="RULE">BII2-T71-R001</Reference>
+			
 			<Value type="FIXED">urn:www.cenbii.eu:profile:bii36a:ver2.0</Value>
 		</Element>
 		<Element>
@@ -39,7 +39,7 @@
                 referencing between transactions that are part of the same process.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir71-001</Reference>
-			<Reference type="RULE">BII2-T71-R004</Reference>
+			
 			<Value type="EXAMPLE">23</Value>
 		</Element>
 		<Element>
@@ -48,7 +48,7 @@
 			<Description>The date on which the transaction instance was issued.Format "YYYY-MM-DD"</Description>
 			<DataType>Date</DataType>
 			<Reference type="BUSINESS_TERM">tir71-002</Reference>
-			<Reference type="RULE">BII2-T71-R003</Reference>
+			
 			<Value type="EXAMPLE">2018-05-18</Value>
 		</Element>
 		<Element cardinality="0..1">
@@ -70,7 +70,7 @@
                     of any format and the format should be identified in the message.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">tir71-009</Reference>
-				<Reference type="RULE">EUGEN-T71-R004</Reference>
+				
 				<Attribute>
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
@@ -92,7 +92,7 @@
                     of any format and the format should be identified in the message.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">tir71-012</Reference>
-				<Reference type="RULE">EUGEN-T71-R004</Reference>
+				
 				<Attribute>
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
@@ -119,7 +119,7 @@
                         issues.</Description>
 					<DataType>Code</DataType>
 					<Reference type="BUSINESS_TERM">tir71-014</Reference>
-					<Reference type="RULE">CL-071-R002</Reference>
+					
 					<Reference type="CODE_LIST">UNCL4343</Reference>
 					<Value type="EXAMPLE">RE</Value>
 				</Element>
@@ -145,7 +145,7 @@
 					<Description>Identifies the document on which the message level response is based.</Description>
 					<DataType>Document reference</DataType>
 					<Reference type="BUSINESS_TERM">tir71-018</Reference>
-					<Reference type="RULE">EUGEN-T71-R006</Reference>
+					
 					<Value type="EXAMPLE">EnvelopeID-12345</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -222,7 +222,7 @@
                                 violation, etc.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir71-016</Reference>
-							<Reference type="RULE">OP-071-R003</Reference>
+							
 							<Reference type="CODE_LIST">StatusReason</Reference>
 							<Value type="EXAMPLE">BV</Value>
 						</Element>
