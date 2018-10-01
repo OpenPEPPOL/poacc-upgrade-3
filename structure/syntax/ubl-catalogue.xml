@@ -1373,7 +1373,7 @@
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-036</Reference>
 				</Element>
-				<Element>
+				<Element cardinality="0..1">
 					<Term>cbc:Name</Term>
 					<Name>Item name</Name>
 					<Description>A short name for an item.</Description>
