@@ -12,7 +12,7 @@
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 			<cac:DespatchLine>
-				<cac:DeliveredQuantity>1</cac:DeliveredQuantity>
+				<cbc:DeliveredQuantity>1</cbc:DeliveredQuantity>
 			</cac:DespatchLine>
 		</DespatchAdvice>
 	</test>
@@ -25,7 +25,7 @@
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 			<cac:DespatchLine>
-				<cac:DeliveredQuantity>0</cac:DeliveredQuantity>
+				<cbc:DeliveredQuantity>0</cbc:DeliveredQuantity>
 			</cac:DespatchLine>
 		</DespatchAdvice>
 	</test>
@@ -38,7 +38,7 @@
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 			<cac:DespatchLine>
-				<cac:DeliveredQuantity>-1</cac:DeliveredQuantity>
+				<cbc:DeliveredQuantity>-1</cbc:DeliveredQuantity>
 			</cac:DespatchLine>
 		</DespatchAdvice>
 	</test>

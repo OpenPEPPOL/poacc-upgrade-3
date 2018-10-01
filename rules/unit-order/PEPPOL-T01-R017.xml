@@ -72,7 +72,7 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
 			<cac:TaxTotal>
-				<cbc:TaxAmount>0.00</cbc:TaxAmount>
+				<cbc:TaxAmount>1.00</cbc:TaxAmount>
 			</cac:TaxTotal>
 			
 			<cac:AnticipatedMonetaryTotal>
