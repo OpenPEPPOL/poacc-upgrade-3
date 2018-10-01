@@ -70,7 +70,7 @@
                 and (number(translate(cac:ValidityPeriod/cbc:StartDate,'-','')) &gt;= $CatalogueValidityStart)
                 and  (number(translate(//cac:Price/cac:ValidityPeriod/cbc:EndDate,'-','')) &lt;= $CatalogueValidityEnd)"
                 flag="warning">Price validity period SHALL be within the range of the whole catalogue line validity period</assert>
-
+    </rule>
 
     <rule context="cac:Item">
         <assert id="PEPPOL-T19-R012"
