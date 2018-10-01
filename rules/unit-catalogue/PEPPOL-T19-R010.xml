@@ -7,7 +7,7 @@
 		<scope>PEPPOL-T19-R010</scope>
 	</assert>
 
-	<test>
+	<test id="1">
 		<assert>
 			<success>PEPPOL-T19-R010</success>
 		</assert>
@@ -24,7 +24,7 @@
 		</Catalogue>
 	</test>
 
-	<test>
+	<test id="2">
 		<assert>
 			<warning number="1">PEPPOL-T19-R010</warning>
 		</assert>
@@ -41,7 +41,7 @@
 		</Catalogue>
 	</test>
 
-	<test>
+	<test id="3">
 		<assert>
 			<warning number="2">PEPPOL-T19-R010</warning>
 		</assert>

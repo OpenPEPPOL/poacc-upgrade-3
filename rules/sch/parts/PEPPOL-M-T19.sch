@@ -46,11 +46,11 @@
                 test="not (cac:Price/cac:ValidityPeriod) or ((//cac:Price/cac:ValidityPeriod/cbc:StartDate and //cac:Price/cac:ValidityPeriod/cbc:EndDate) and (number(translate(//cac:Price/cac:ValidityPeriod/cbc:StartDate,'-','')) &gt;= number(translate(//cac:LineValidityPeriod/cbc:StartDate,'-',''))) and  (number(translate(//cac:Price/cac:ValidityPeriod/cbc:EndDate,'-','')) &lt;= number(translate(//cac:LineValidityPeriod/cbc:EndDate,'-',''))))"
                 flag="warning">Price validity period SHALL be within the range of the whole catalogue line validity period</assert>
 
-        <assert id="BII2-T19-R009"
+        <assert id="PEPPOL-T19-R008"
                 test="not(cbc:MaximumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= 0"
-                flag="warning">Maximum quantity SHALL be greater than zero</assert>
+                flag="fatal">Maximum quantity SHALL be greater than zero</assert>
 
-        <assert id="BII2-T19-R010"
+        <assert id="PEPPOL-T19-R010"
                 test="not(cbc:MinimumOrderQuantity) or number(cbc:MinimumOrderQuantity) &gt;= 0"
                 flag="fatal">Minimum quantity SHALL be greater than zero</assert>
 
