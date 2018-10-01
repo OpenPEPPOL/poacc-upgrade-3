@@ -6,15 +6,15 @@
 		<description>Verify that either seller item identification or standard item identification is specified</description>
 		<scope>PEPPOL-T19-R010</scope>
 	</assert>
-	
+
 	<test id="1">
 		<assert>
 			<success>PEPPOL-T19-R010</success>
 		</assert>
-		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
-				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
-			
+
 			<cac:CatalogueLine>
 				<cac:Item>
 					<cac:SellersItemIdentification>
@@ -25,18 +25,18 @@
 					</cac:StandardItemIdentification>
 				</cac:Item>
 			</cac:CatalogueLine>
-			
+
 		</Catalogue>
 	</test>
-	
+
 	<test id="2">
 		<assert>
 			<success>PEPPOL-T19-R010</success>
 		</assert>
-		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
-				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
-			
+
 			<cac:CatalogueLine>
 				<cac:Item>
 					<cac:SellersItemIdentification>
@@ -44,18 +44,18 @@
 					</cac:SellersItemIdentification>
 				</cac:Item>
 			</cac:CatalogueLine>
-			
+
 		</Catalogue>
 	</test>
-	
+
 	<test id="3">
 		<assert>
 			<success>PEPPOL-T19-R010</success>
 		</assert>
-		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
-				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
-			
+
 			<cac:CatalogueLine>
 				<cac:Item>
 					<cac:StandardItemIdentification>
@@ -63,25 +63,8 @@
 					</cac:StandardItemIdentification>
 				</cac:Item>
 			</cac:CatalogueLine>
-			
+
 		</Catalogue>
 	</test>
-	
-	<test id="4">
-		<assert>
-			<error>PEPPOL-T19-R010</error>
-		</assert>
-		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
-				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
-				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
-			
-			<cac:CatalogueLine>
-				<cac:Item>
-				
-				</cac:Item>
-			</cac:CatalogueLine>
-			
-		</Catalogue>
-	</test>
-	
+
 </testSet>

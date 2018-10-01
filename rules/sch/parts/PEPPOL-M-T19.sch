@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>    
+<?xml version="1.0" encoding="UTF-8"?>
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
 
     <rule context="cac:ValidityPeriod">
@@ -66,17 +66,19 @@
                 - Standard identifier</assert>
     </rule>
 
-    <rule context="cac:StandardItemIdentification">
+    <!-- <rule context="cac:StandardItemIdentification">
+    GB: Rule removed because @schemaID is already mandated in the structure and that is in line with catalogue.
         <assert id="PEPPOL-T19-R011"
                 test="(cbc:ID/@schemeID)"
                 flag="warning">Standard Identifiers SHOULD contain the Schema Identifier (e.g. GTIN)</assert>
-    </rule>
+    </rule> -->
 
-    <rule context="cac:CommodityClassification/cbc:ItemClassificationCode">
+    <!-- <rule context="cac:CommodityClassification/cbc:ItemClassificationCode">
+    GB: Rule removed. attribute is made mandatory in struture in line with invoice.
         <assert id="PEPPOL-T19-R012"
                 test="(@listID)"
                 flag="warning">Classification codes SHOULD contain the Classification scheme Identifier (e.g. CPV or UNSPSC)</assert>
-    </rule>
+    </rule> -->
 
     <!--Change rule to cover quantities-->
     <rule context="cac:CatalogueLine">
