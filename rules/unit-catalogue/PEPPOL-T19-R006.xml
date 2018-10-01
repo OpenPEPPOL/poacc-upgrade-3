@@ -6,15 +6,15 @@
 		<description>Verify PriceAmount is not negative</description>
 		<scope>PEPPOL-T19-R006</scope>
 	</assert>
-	
-	<test>
+
+	<test id="1">
 		<assert>
 			<success>PEPPOL-T19-R006</success>
 		</assert>
-		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
-				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
-			
+
 			<cac:CatalogueLine>
 				<cac:RequiredItemLocationQuantity>
 					<cac:Price>
@@ -25,14 +25,14 @@
 		</Catalogue>
 	</test>
 
-	<test>
+	<test id="2">
 		<assert>
 			<success>PEPPOL-T19-R006</success>
 		</assert>
-		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
-				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
-			
+
 			<cac:CatalogueLine>
 				<cac:RequiredItemLocationQuantity>
 					<cac:Price>
@@ -42,15 +42,15 @@
 			</cac:CatalogueLine>
 		</Catalogue>
 	</test>
-	
-	<test>
+
+	<test id="3">
 		<assert>
 			<error number="1">PEPPOL-T19-R006</error>
 		</assert>
-		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
-				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
-			
+
 			<cac:CatalogueLine>
 				<cac:RequiredItemLocationQuantity>
 					<cac:Price>
