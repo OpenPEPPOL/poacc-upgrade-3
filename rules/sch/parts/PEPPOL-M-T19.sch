@@ -41,29 +41,28 @@
         <assert id="PEPPOL-T19-R007"
                 test="not(cac:LineValidityPeriod) or ((cac:LineValidityPeriod/cbc:StartDate and cac:LineValidityPeriod/cbc:EndDate) and (number(translate(cac:LineValidityPeriod/cbc:StartDate,'-','')) &gt;= number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:StartDate,'-',''))) and  (number(translate(cac:LineValidityPeriod/cbc:EndDate,'-','')) &lt;= number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:EndDate,'-',''))))"
                 flag="warning">Catalogue line validity period SHALL be within the range of the whole catalogue validity period</assert>
-    </rule>
 
-    <rule context="cac:CatalogueLine">
         <assert id="PEPPOL-T19-R008"
                 test="not (cac:Price/cac:ValidityPeriod) or ((//cac:Price/cac:ValidityPeriod/cbc:StartDate and //cac:Price/cac:ValidityPeriod/cbc:EndDate) and (number(translate(//cac:Price/cac:ValidityPeriod/cbc:StartDate,'-','')) &gt;= number(translate(//cac:LineValidityPeriod/cbc:StartDate,'-',''))) and  (number(translate(//cac:Price/cac:ValidityPeriod/cbc:EndDate,'-','')) &lt;= number(translate(//cac:LineValidityPeriod/cbc:EndDate,'-',''))))"
                 flag="warning">Price validity period SHALL be within the range of the whole catalogue line validity period</assert>
+
+        <assert id="BII2-T19-R009"
+                test="not(cbc:MaximumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= 0"
+                flag="warning">Maximum quantity SHALL be greater than zero</assert>
+
+        <assert id="BII2-T19-R010"
+                test="not(cbc:MinimumOrderQuantity) or number(cbc:MinimumOrderQuantity) &gt;= 0"
+                flag="fatal">Minimum quantity SHALL be greater than zero</assert>
+
+        <assert id="PEPPOL-T19-R011"
+                test="not(cbc:MaximumOrderQuantity) or not(cbc:MinimumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= number(cbc:MinimumOrderQuantity)"
+                flag="fatal">Maximum quantity SHALL be greater or equal to the Minimum quantity</assert>
     </rule>
 
-    <!--Change text-->
     <rule context="cac:Item">
-        <assert id="PEPPOL-T19-R009"
-                test="(cbc:Name)"
-                flag="fatal">An item in a catalogue line SHALL have a name</assert>
-    </rule>
-
-    <!--Change text-->
-    <rule context="cac:Item">
-        <assert id="PEPPOL-T19-R010"
-                test="(cac:StandardItemIdentification/cbc:ID) or  (cac:SellersItemIdentification/cbc:ID)"
-                flag="fatal">
-                An item in a catalogue line SHALL be uniquely identifiable by at least one of the following:
-                - Catalogue Provider identifier
-                - Standard identifier</assert>
+        <assert id="PEPPOL-T19-R012"
+                test="(cac:StandardItemIdentification/cbc:ID) or (cac:SellersItemIdentification/cbc:ID)"
+                flag="fatal">Each item in a Catalogue SHALL be identifiable by either “item sellers identifier” or “item standard identifier”</assert>
     </rule>
 
     <!-- <rule context="cac:StandardItemIdentification">
@@ -80,31 +79,22 @@
                 flag="warning">Classification codes SHOULD contain the Classification scheme Identifier (e.g. CPV or UNSPSC)</assert>
     </rule> -->
 
-    <!--Change rule to cover quantities-->
-    <rule context="cac:CatalogueLine">
-        <assert id="PEPPOL-T19-R013"
+    <!--Change rule to cover quantities. GB: This rule is not correct. Orderable quantitiy is not used in catalogue. Rule removed.-->
+    <!-- <rule context="cac:CatalogueLine">
+        <assert id="PEPPOL-T19-R026"
                 test="not(cbc:MinimumOrderQuantity) or number(cbc:MinimumOrderQuantity) &gt;= 0"
                 flag="fatal">Orderable quantities SHALL be greater than zero</assert>
-    </rule>
+    </rule> -->
+
+    <!--Change text. GB: Item name made mandatory in syntax-->
+    <!-- <rule context="cac:Item">
+        <assert id="PEPPOL-T19-R009"
+                test="(cbc:Name)"
+                flag="fatal">An item in a catalogue line SHALL have a name</assert>
+    </rule> -->
+
+    <!--Change text-->
 
     <!--Delete rule??-->
-    <rule context="cac:CatalogueLine">
-        <assert id="BII2-T19-R029"
-                test="not(cbc:MaximumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= 0"
-                flag="warning">Maximum quantity SHALL be greater than zero</assert>
-    </rule>
-    <!--Delete rule??-->
-    <rule context="cac:CatalogueLine">
-        <assert id="BII2-T19-R030"
-                test="not(cbc:MinimumOrderQuantity) or number(cbc:MinimumOrderQuantity) &gt;= 0"
-                flag="warning">Minimum quantity SHALL be greater than zero</assert>
-    </rule>
-
-    <!--Change rule ID if prior rules are deleted-->
-    <rule context="cac:CatalogueLine">
-        <assert id="PEPPOL-T19-R016"
-                test="not(cbc:MaximumOrderQuantity) or not(cbc:MinimumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= number(cbc:MinimumOrderQuantity)"
-                flag="warning">Maximum quantity SHALL be greater or equal to the Minimum quantity</assert>
-    </rule>
 
 </pattern>
