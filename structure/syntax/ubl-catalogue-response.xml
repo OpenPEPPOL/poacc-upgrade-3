@@ -200,7 +200,6 @@
 					<Description>Identifies the document being referred to.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir58-016</Reference>
-					<Reference type="RULE">BII2-T58-R010</Reference>
 					<Value type="EXAMPLE">Cat-12</Value>
 				</Element>
 				<Element cardinality="0..1">

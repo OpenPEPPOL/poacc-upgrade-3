@@ -23,7 +23,7 @@
 
 	<test>
 		<assert>
-			<warning>PEPPOL-T16-R08</warning>
+			<warning>PEPPOL-T16-R008</warning>
 		</assert>
 		<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2"
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"

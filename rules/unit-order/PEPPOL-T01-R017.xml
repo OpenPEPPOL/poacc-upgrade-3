@@ -63,6 +63,7 @@
 			</cac:AnticipatedMonetaryTotal>
 		</Order>
 	</test>
+	
 	<test id="4">
 		<assert>
 			<error>PEPPOL-T01-R017</error>
@@ -71,15 +72,16 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
 			<cac:TaxTotal>
-				<cbc:TaxAmount>0</cbc:TaxAmount>
+				<cbc:TaxAmount>0.00</cbc:TaxAmount>
 			</cac:TaxTotal>
 			
 			<cac:AnticipatedMonetaryTotal>
 				<cbc:TaxExclusiveAmount>6000</cbc:TaxExclusiveAmount>
-				<cbc:TaxInclusiveAmount>6500</cbc:TaxInclusiveAmount>
+				<cbc:TaxInclusiveAmount>6300</cbc:TaxInclusiveAmount>
 			</cac:AnticipatedMonetaryTotal>
 		</Order>
 	</test>
+	
 	<test id="5">
 		<assert>
 			<error>PEPPOL-T01-R017</error>

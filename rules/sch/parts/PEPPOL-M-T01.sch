@@ -165,7 +165,7 @@
                 flag="fatal">Each order line item net price SHALL not be negative
         </assert>
         <assert  id="PEPPOL-T01-R027"
-                test="(cac:AllowanceCharge/cbc:BaseAmount) &gt;= 0 or not(exists(cac:Price/cac:AllowanceCharge/cbc:BaseAmount))"
+                test="(cac:AllowanceCharge/cbc:BaseAmount) &gt;= 0 or not(exists(cac:AllowanceCharge/cbc:BaseAmount))"
                 flag="fatal">The Item gross price SHALL NOT be negative.</assert>
     </rule>
 
