@@ -7,7 +7,7 @@
 		<scope>PEPPOL-T19-R005</scope>
 	</assert>
 	
-	<test>
+	<test id="1">
 		<assert>
 			<success>PEPPOL-T19-R005</success>
 		</assert>
@@ -16,18 +16,20 @@
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 			
 			<cac:ContractorCustomerParty>
-				<cac:PartyIdentification>
-					<cbc:ID schemeID="0088">5790000435951</cbc:ID>
-				</cac:PartyIdentification>
-				<cac:PartyName>
-					<cbc:Name>ABC Supplier Ltd.</cbc:Name>
-				</cac:PartyName>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0088">5790000435951</cbc:ID>
+					</cac:PartyIdentification>
+					<cac:PartyName>
+						<cbc:Name>ABC Supplier Ltd.</cbc:Name>
+					</cac:PartyName>
+				</cac:Party>
 			</cac:ContractorCustomerParty>
 
 		</Catalogue>
 	</test>
 
-	<test>
+	<test id="2">
 		<assert>
 			<success>PEPPOL-T19-R005</success>
 		</assert>
@@ -36,15 +38,17 @@
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 			
 			<cac:ContractorCustomerParty>
-				<cac:PartyIdentification>
-					<cbc:ID schemeID="0088">5790000435951</cbc:ID>
-				</cac:PartyIdentification>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0088">5790000435951</cbc:ID>
+					</cac:PartyIdentification>
+				</cac:Party>
 			</cac:ContractorCustomerParty>
 
 		</Catalogue>
 	</test>
 	
-	<test>
+	<test id="3">
 		<assert>
 			<success>PEPPOL-T19-R005</success>
 		</assert>
@@ -53,17 +57,19 @@
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 			
 			<cac:ContractorCustomerParty>
-				<cac:PartyName>
-					<cbc:Name>ABC Supplier Ltd.</cbc:Name>
-				</cac:PartyName>
+				<cac:Party>
+					<cac:PartyName>
+						<cbc:Name>ABC Supplier Ltd.</cbc:Name>
+					</cac:PartyName>
+				</cac:Party>
 			</cac:ContractorCustomerParty>
 
 		</Catalogue>
 	</test>
 	
-	<test>
+	<test id="4">
 		<assert>
-			<error number="1">PEPPOL-T19-R005</error>
+			<error ->PEPPOL-T19-R005</error>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
 				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
@@ -74,26 +80,5 @@
 
 		</Catalogue>
 	</test>
-	
-			
-	<test>
-		<assert>
-			<error number="2">PEPPOL-T19-R005</error>
-		</assert>
-		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
-				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
-				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
-			
-			<cac:ContractorCustomerParty>
-				<cac:PartyIdentification>
-					<cbc:ID schemeID="0088"></cbc:ID>
-				</cac:PartyIdentification>
-				<cac:PartyName>
-					<cbc:Name></cbc:Name>
-				</cac:PartyName>
-			</cac:ContractorCustomerParty>
 
-		</Catalogue>
-	</test>
-	
 </testSet>

@@ -7,7 +7,7 @@
 		<scope>PEPPOL-T19-R009</scope>
 	</assert>
 	
-	<test>
+	<test id="1">
 		<assert>
 			<success>PEPPOL-T19-R009</success>
 		</assert>
@@ -23,9 +23,9 @@
 		</Catalogue>
 	</test>
 	
-	<test>
+	<test id="2">
 		<assert>
-			<error number="1">PEPPOL-T19-R009</error>
+			<error>PEPPOL-T19-R009</error>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
 				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
@@ -38,19 +38,4 @@
 		</Catalogue>
 	</test>
 	
-	<test>
-		<assert>
-			<error number="2">PEPPOL-T19-R009</error>
-		</assert>
-		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
-				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
-				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
-			
-			<cac:CatalogueLine>
-				<cac:Item>
-					<cbc:Name></cbc:Name>
-				</cac:Item>
-			</cac:CatalogueLine>
-		</Catalogue>
-	</test>
 </testSet>

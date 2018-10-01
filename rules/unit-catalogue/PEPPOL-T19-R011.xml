@@ -22,13 +22,12 @@
 					</cac:StandardItemIdentification>
 				</cac:Item>
 			</cac:CatalogueLine>
-			
 		</Catalogue>
 	</test>
 		
 	<test id="2">
 		<assert>
-			<warning number="1">PEPPOL-T19-R011</warning>
+			<warning>PEPPOL-T19-R011</warning>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
 				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
@@ -41,13 +40,12 @@
 					</cac:StandardItemIdentification>
 				</cac:Item>
 			</cac:CatalogueLine>
-			
 		</Catalogue>
 	</test>
 
 	<test id="3">
 		<assert>
-			<warning number="2">PEPPOL-T19-R011</warning>
+			<warning>PEPPOL-T19-R011</warning>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
 				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
@@ -60,9 +58,7 @@
 					</cac:StandardItemIdentification>
 				</cac:Item>
 			</cac:CatalogueLine>
-			
 		</Catalogue>
 	</test>
-
 	
 </testSet>
