@@ -37,13 +37,16 @@
                 flag="fatal">Prices of items SHALL not be negative</assert>
     </rule>
 
+    <let name="CatalogueValidityStart" value="number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:StartDate,'-',''))"/>
+    <let name="CatalogueValidityEnd" value="number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:EndDate,'-',''))"/>
+
     <rule context="cac:CatalogueLine">
         <assert id="PEPPOL-T19-R007"
                 test="not(cac:LineValidityPeriod)
                 or ((cac:LineValidityPeriod/cbc:StartDate
                 and cac:LineValidityPeriod/cbc:EndDate)
-                and (number(translate(cac:LineValidityPeriod/cbc:StartDate,'-','')) &gt;= number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:StartDate,'-','')))
-                and  (number(translate(cac:LineValidityPeriod/cbc:EndDate,'-','')) &lt;= number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:EndDate,'-',''))))"
+                and (number(translate(cac:LineValidityPeriod/cbc:StartDate,'-','')) &gt;= $CatalogueValidityStart)
+                and  (number(translate(cac:LineValidityPeriod/cbc:EndDate,'-','')) &lt;= $CatalogueValidityEnd)"
                 flag="warning">Catalogue line validity period SHALL be within the range of the whole catalogue validity period</assert>
 
         <assert id="PEPPOL-T19-R008"
@@ -64,8 +67,8 @@
                 test="not (cac:ValidityPeriod)
                 or ((cac:ValidityPeriod/cbc:StartDate
                 and cac:ValidityPeriod/cbc:EndDate)
-                and (number(translate(cac:ValidityPeriod/cbc:StartDate,'-','')) &gt;= number(translate(//cac:LineValidityPeriod/cbc:StartDate,'-','')))
-                and  (number(translate(//cac:Price/cac:ValidityPeriod/cbc:EndDate,'-','')) &lt;= number(translate(//cac:LineValidityPeriod/cbc:EndDate,'-',''))))"
+                and (number(translate(cac:ValidityPeriod/cbc:StartDate,'-','')) &gt;= $CatalogueValidityStart)
+                and  (number(translate(//cac:Price/cac:ValidityPeriod/cbc:EndDate,'-','')) &lt;= $CatalogueValidityEnd)"
                 flag="warning">Price validity period SHALL be within the range of the whole catalogue line validity period</assert>
 
 

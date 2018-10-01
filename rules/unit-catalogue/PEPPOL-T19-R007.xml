@@ -6,20 +6,20 @@
 		<description>Verify line validity period is within document validity period</description>
 		<scope>PEPPOL-T19-R007</scope>
 	</assert>
-	
+
 	<test id="1">
 		<assert>
 			<success>PEPPOL-T19-R007</success>
 		</assert>
-		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
-				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cac:ValidityPeriod>
 				<cbc:StartDate>2018-09-01</cbc:StartDate>
 				<cbc:EndDate>2019-08-31</cbc:EndDate>
 			</cac:ValidityPeriod>
-			
+
 			<cac:CatalogueLine>
 				<cac:LineValidityPeriod>
 					<cbc:StartDate>2018-09-01</cbc:StartDate>
@@ -28,20 +28,20 @@
 			</cac:CatalogueLine>
 		</Catalogue>
 	</test>
-	
+
 	<test id="2">
 		<assert>
 			<success>PEPPOL-T19-R007</success>
 		</assert>
-		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
-				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cac:ValidityPeriod>
 				<cbc:StartDate>2018-09-01</cbc:StartDate>
 				<cbc:EndDate>2019-08-31</cbc:EndDate>
 			</cac:ValidityPeriod>
-			
+
 			<cac:CatalogueLine>
 				<cac:LineValidityPeriod>
 					<cbc:StartDate>2018-09-10</cbc:StartDate>
@@ -55,8 +55,8 @@
 		<assert>
 			<success>PEPPOL-T19-R007</success>
 		</assert>
-		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
-				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cac:ValidityPeriod>
@@ -74,37 +74,17 @@
 
 	<test id="4">
 		<assert>
-			<success>PEPPOL-T19-R007</success>
+			<warning>PEPPOL-T19-R007</warning>
 		</assert>
-		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
-				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cac:ValidityPeriod>
 				<cbc:StartDate>2018-09-01</cbc:StartDate>
 				<cbc:EndDate>2019-08-31</cbc:EndDate>
 			</cac:ValidityPeriod>
-			
-			<cac:CatalogueLine>
-				<cac:LineValidityPeriod>
-				</cac:LineValidityPeriod>
-			</cac:CatalogueLine>
-		</Catalogue>
-	</test>
-	
-	<test id="5">
-		<assert>
-			<warning number="1">PEPPOL-T19-R007</warning>
-		</assert>
-		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
-				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
-				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
-			<cac:ValidityPeriod>
-				<cbc:StartDate>2018-09-01</cbc:StartDate>
-				<cbc:EndDate>2019-08-31</cbc:EndDate>
-			</cac:ValidityPeriod>
-			
 			<cac:CatalogueLine>
 				<cac:LineValidityPeriod>
 					<cbc:StartDate>2018-08-10</cbc:StartDate>
@@ -113,19 +93,19 @@
 			</cac:CatalogueLine>
 		</Catalogue>
 	</test>
-	<test id="6">
+	<test id="5">
 		<assert>
-			<warning number="2">PEPPOL-T19-R007</warning>
+			<warning>PEPPOL-T19-R007</warning>
 		</assert>
-		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
-				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cac:ValidityPeriod>
 				<cbc:StartDate>2018-09-01</cbc:StartDate>
 				<cbc:EndDate>2019-08-31</cbc:EndDate>
 			</cac:ValidityPeriod>
-			
+
 			<cac:CatalogueLine>
 				<cac:LineValidityPeriod>
 					<cbc:StartDate>2018-09-10</cbc:StartDate>
@@ -133,20 +113,20 @@
 				</cac:LineValidityPeriod>
 			</cac:CatalogueLine>
 		</Catalogue>
-	</test>	
-	<test id="7">
+	</test>
+	<test id="6">
 		<assert>
-			<warning number="3">PEPPOL-T19-R007</warning>
+			<warning>PEPPOL-T19-R007</warning>
 		</assert>
-		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
-				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cac:ValidityPeriod>
 				<cbc:StartDate>2018-09-01</cbc:StartDate>
 				<cbc:EndDate>2019-08-31</cbc:EndDate>
 			</cac:ValidityPeriod>
-			
+
 			<cac:CatalogueLine>
 				<cac:LineValidityPeriod>
 					<cbc:StartDate>2018-08-10</cbc:StartDate>
@@ -154,5 +134,5 @@
 				</cac:LineValidityPeriod>
 			</cac:CatalogueLine>
 		</Catalogue>
-	</test>	
+	</test>
 </testSet>
