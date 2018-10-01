@@ -41,6 +41,7 @@
 		</Catalogue>
 	</test>
 
+
 	<test id="3">
 		<assert>
 			<warning number="2">PEPPOL-T19-R008</warning>
