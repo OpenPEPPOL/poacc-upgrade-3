@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--BII2-T19-R026-->
+<!--BII2-T19-R030-->
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
 	configuration="peppolbis-t19-base-3.0">
 	<assert>
-		<description>Verify maximum quantity greater than zero</description>
+		<description>Verify minimum quantity greater than zero</description>
 		<scope>PEPPOL-T19-R009</scope>
 	</assert>
 
@@ -17,7 +17,7 @@
 
 			<cac:CatalogueLine>
 				<cac:RequiredItemLocationQuantity>
-					<cbc:MaximumQuantity unitCode="XPK">10</cbc:MaximumQuantity>
+					<cbc:MinimumQuantity unitCode="XPK">10</cbc:MinimumQuantity>
 				</cac:RequiredItemLocationQuantity>
 			</cac:CatalogueLine>
 
@@ -34,7 +34,7 @@
 
 			<cac:CatalogueLine>
 				<cac:RequiredItemLocationQuantity>
-					<cbc:MaximumQuantity unitCode="XPK">0</cbc:MaximumQuantity>
+					<cbc:MinimumQuantity unitCode="XPK">0</cbc:MinimumQuantity>
 				</cac:RequiredItemLocationQuantity>
 			</cac:CatalogueLine>
 
@@ -51,7 +51,7 @@
 
 			<cac:CatalogueLine>
 				<cac:RequiredItemLocationQuantity>
-					<cbc:MaximumQuantity unitCode="XPK">-1</cbc:MaximumQuantity>
+					<cbc:MinimumQuantity unitCode="XPK">-1</cbc:MinimumQuantity>
 				</cac:RequiredItemLocationQuantity>
 			</cac:CatalogueLine>
 

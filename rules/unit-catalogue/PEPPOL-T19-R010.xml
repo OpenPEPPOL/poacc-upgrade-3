@@ -1,13 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--BII2-T19-R030-->
+<!--BII2-T19-R031-->
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-t19-base-3.0">
+	configuration="peppolbis-19-base-3.0">
 	<assert>
-		<description>Verify minimum quantity greater than zero</description>
+		<description>Verify maximum quantity greater than or equal to minimum quantity</description>
 		<scope>PEPPOL-T19-R010</scope>
 	</assert>
 
 	<test id="1">
+		<assert>
+			<success>PEPPOL-T19-R010</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:CatalogueLine>
+				<cac:RequiredItemLocationQuantity>
+					<cbc:MinimumQuantity unitCode="XPK">10</cbc:MinimumQuantity>
+					<cbc:MaximumQuantity unitCode="XPK">10</cbc:MaximumQuantity>
+				</cac:RequiredItemLocationQuantity>
+			</cac:CatalogueLine>
+
+		</Catalogue>
+	</test>
+
+	<test id="2">
+		<assert>
+			<success>PEPPOL-T19-R010</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:CatalogueLine>
+				<cac:RequiredItemLocationQuantity>
+					<cbc:MinimumQuantity unitCode="XPK">10</cbc:MinimumQuantity>
+					<cbc:MaximumQuantity unitCode="XPK">12</cbc:MaximumQuantity>
+				</cac:RequiredItemLocationQuantity>
+			</cac:CatalogueLine>
+
+		</Catalogue>
+	</test>
+
+	<test id="3">
 		<assert>
 			<success>PEPPOL-T19-R010</success>
 		</assert>
@@ -24,7 +60,24 @@
 		</Catalogue>
 	</test>
 
-	<test id="2">
+	<test>
+		<assert>
+			<success>PEPPOL-T19-R010</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:CatalogueLine>
+				<cac:RequiredItemLocationQuantity>
+					<cbc:MaximumQuantity unitCode="XPK">12</cbc:MaximumQuantity>
+				</cac:RequiredItemLocationQuantity>
+			</cac:CatalogueLine>
+
+		</Catalogue>
+	</test>
+
+	<test>
 		<assert>
 			<warning number="1">PEPPOL-T19-R010</warning>
 		</assert>
@@ -34,24 +87,8 @@
 
 			<cac:CatalogueLine>
 				<cac:RequiredItemLocationQuantity>
-					<cbc:MinimumQuantity unitCode="XPK">0</cbc:MinimumQuantity>
-				</cac:RequiredItemLocationQuantity>
-			</cac:CatalogueLine>
-
-		</Catalogue>
-	</test>
-
-	<test id="3">
-		<assert>
-			<warning number="2">PEPPOL-T19-R010</warning>
-		</assert>
-		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
-
-			<cac:CatalogueLine>
-				<cac:RequiredItemLocationQuantity>
-					<cbc:MinimumQuantity unitCode="XPK">-1</cbc:MinimumQuantity>
+					<cbc:MinimumQuantity unitCode="XPK">10</cbc:MinimumQuantity>
+					<cbc:MaximumQuantity unitCode="XPK">9</cbc:MaximumQuantity>
 				</cac:RequiredItemLocationQuantity>
 			</cac:CatalogueLine>
 

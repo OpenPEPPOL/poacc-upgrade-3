@@ -39,25 +39,35 @@
 
     <rule context="cac:CatalogueLine">
         <assert id="PEPPOL-T19-R007"
-                test="not(cac:LineValidityPeriod) or ((cac:LineValidityPeriod/cbc:StartDate and cac:LineValidityPeriod/cbc:EndDate) and (number(translate(cac:LineValidityPeriod/cbc:StartDate,'-','')) &gt;= number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:StartDate,'-',''))) and  (number(translate(cac:LineValidityPeriod/cbc:EndDate,'-','')) &lt;= number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:EndDate,'-',''))))"
+                test="not(cac:LineValidityPeriod)
+                or ((cac:LineValidityPeriod/cbc:StartDate
+                and cac:LineValidityPeriod/cbc:EndDate)
+                and (number(translate(cac:LineValidityPeriod/cbc:StartDate,'-','')) &gt;= number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:StartDate,'-','')))
+                and  (number(translate(cac:LineValidityPeriod/cbc:EndDate,'-','')) &lt;= number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:EndDate,'-',''))))"
                 flag="warning">Catalogue line validity period SHALL be within the range of the whole catalogue validity period</assert>
-
-        <assert id="PEPPOL-T19-R008"
-                test="not (cac:Price/cac:ValidityPeriod) or ((//cac:Price/cac:ValidityPeriod/cbc:StartDate and //cac:Price/cac:ValidityPeriod/cbc:EndDate) and (number(translate(//cac:Price/cac:ValidityPeriod/cbc:StartDate,'-','')) &gt;= number(translate(//cac:LineValidityPeriod/cbc:StartDate,'-',''))) and  (number(translate(//cac:Price/cac:ValidityPeriod/cbc:EndDate,'-','')) &lt;= number(translate(//cac:LineValidityPeriod/cbc:EndDate,'-',''))))"
-                flag="warning">Price validity period SHALL be within the range of the whole catalogue line validity period</assert>
 
         <assert id="PEPPOL-T19-R008"
                 test="not(cbc:MaximumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= 0"
                 flag="fatal">Maximum quantity SHALL be greater than zero</assert>
 
-        <assert id="PEPPOL-T19-R010"
+        <assert id="PEPPOL-T19-R009"
                 test="not(cbc:MinimumOrderQuantity) or number(cbc:MinimumOrderQuantity) &gt;= 0"
                 flag="fatal">Minimum quantity SHALL be greater than zero</assert>
 
-        <assert id="PEPPOL-T19-R011"
+        <assert id="PEPPOL-T19-R010"
                 test="not(cbc:MaximumOrderQuantity) or not(cbc:MinimumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= number(cbc:MinimumOrderQuantity)"
                 flag="fatal">Maximum quantity SHALL be greater or equal to the Minimum quantity</assert>
     </rule>
+
+    <rule context="cac:CatalogueLine/cac:Price">
+        <assert id="PEPPOL-T19-R011"
+                test="not (cac:ValidityPeriod)
+                or ((cac:ValidityPeriod/cbc:StartDate
+                and cac:ValidityPeriod/cbc:EndDate)
+                and (number(translate(cac:ValidityPeriod/cbc:StartDate,'-','')) &gt;= number(translate(//cac:LineValidityPeriod/cbc:StartDate,'-','')))
+                and  (number(translate(//cac:Price/cac:ValidityPeriod/cbc:EndDate,'-','')) &lt;= number(translate(//cac:LineValidityPeriod/cbc:EndDate,'-',''))))"
+                flag="warning">Price validity period SHALL be within the range of the whole catalogue line validity period</assert>
+
 
     <rule context="cac:Item">
         <assert id="PEPPOL-T19-R012"
