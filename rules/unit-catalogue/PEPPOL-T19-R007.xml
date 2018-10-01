@@ -7,7 +7,7 @@
 		<scope>PEPPOL-T19-R007</scope>
 	</assert>
 	
-	<test>
+	<test id="1">
 		<assert>
 			<success>PEPPOL-T19-R007</success>
 		</assert>
@@ -29,7 +29,7 @@
 		</Catalogue>
 	</test>
 	
-	<test>
+	<test id="2">
 		<assert>
 			<success>PEPPOL-T19-R007</success>
 		</assert>
@@ -51,7 +51,7 @@
 		</Catalogue>
 	</test>
 
-	<test>
+	<test id="3">
 		<assert>
 			<success>PEPPOL-T19-R007</success>
 		</assert>
@@ -72,7 +72,7 @@
 		</Catalogue>
 	</test>
 
-	<test>
+	<test id="4">
 		<assert>
 			<success>PEPPOL-T19-R007</success>
 		</assert>
@@ -92,7 +92,7 @@
 		</Catalogue>
 	</test>
 	
-	<test>
+	<test id="5">
 		<assert>
 			<warning number="1">PEPPOL-T19-R007</warning>
 		</assert>
@@ -113,7 +113,7 @@
 			</cac:CatalogueLine>
 		</Catalogue>
 	</test>
-	<test>
+	<test id="6">
 		<assert>
 			<warning number="2">PEPPOL-T19-R007</warning>
 		</assert>
@@ -134,7 +134,7 @@
 			</cac:CatalogueLine>
 		</Catalogue>
 	</test>	
-	<test>
+	<test id="7">
 		<assert>
 			<warning number="3">PEPPOL-T19-R007</warning>
 		</assert>
