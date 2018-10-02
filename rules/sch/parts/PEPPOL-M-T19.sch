@@ -44,7 +44,7 @@
         <assert id="PEPPOL-T19-R007"
                 test="not(cac:LineValidityPeriod)
                 or (not(cac:LineValidityPeriod/cbc:StartDate) or (number(translate(cac:LineValidityPeriod/cbc:StartDate,'-','')) &gt;= $CatalogueValidityStart))
-                or (not(cac:LineValidityPeriod/cbc:EndDate) or (number(translate(cac:LineValidityPeriod/cbc:EndDate,'-','')) &lt;= $CatalogueValidityEnd))
+                or (not(cac:LineValidityPeriod/cbc:EndDate) or (number(translate(cac:LineValidityPeriod/cbc:EndDate,'-','')) &lt;= $CatalogueValidityEnd))"
                 flag="warning">Catalogue line validity period SHALL be within the range of the whole catalogue validity period</assert>
 
         <assert id="PEPPOL-T19-R008"
