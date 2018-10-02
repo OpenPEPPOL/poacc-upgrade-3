@@ -7,6 +7,13 @@
     <let name="sumCharge" value="if (/ubl:Order/cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']) then xs:decimal(sum(/ubl:Order/cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']/cbc:Amount)) else 0"/>
     <let name="VATamount" value="if (/ubl:Order/cac:TaxTotal/cbc:TaxAmount) then xs:decimal(/ubl:Order/cac:TaxTotal/cbc:TaxAmount) else 0"/>
 
+        <rule context="cbc:ProfileID">
+                <assert id="PEPPOL-T01-R031"
+                        test="some $p in tokenize('urn:fdc:peppol.eu:poacc:bis03a:order_only:bis3-1.0 urn:fdc:peppol.eu:poacc:bis28a:ordering_only:bis3-1.0', '\s') satisfies $p = normalize-space(.)"
+                        flag="fatal">An order transaction SHALL use profile order only or ordering.</assert>
+        </rule>
+        
+
     <!-- Amounts -->
     <rule context="cbc:Amount | cbc:TaxAmount | cbc:LineExtensionAmount | cbc:PriceAmount | cbc:BaseAmount | cac:AnticipatedMonetaryTotal/cbc:*">
         <assert id="PEPPOL-T01-R003"

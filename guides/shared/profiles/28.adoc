@@ -12,12 +12,10 @@ In the table below you will find the values to be used as the specification iden
 
 
 | Order (Trdm01)
-| urn:www.cenbii.eu:transaction:biitrns001:ver2.0: +
-extended:urn:www.peppol.eu:bis:peppol3a:ver2.0
-.2+.^| urn:www.cenbii.eu:profile:bii28:ver2.0
+| urn:fdc:peppol.eu:poacc:trns01a:order:bis3-1.0
+.2+.^| urn:fdc:peppol.eu:poacc:bis28a:ordering_only:bis3-1.0
 
 | Order response (Trdm76)
-| urn:www.cenbii.eu:transaction:biitrns076:ver2.0: +
-extended:urn:www.peppol.eu:bis:peppol28a:ver1.0
+| urn:fdc:peppol.eu:poacc:trns76a:order_response:bis3-1.0
 |
 |===
