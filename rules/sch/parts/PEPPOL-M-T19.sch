@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
-    
+
     <rule context="cac:ValidityPeriod">
         <assert id="PEPPOL-T19-R001"
                 test="(number(translate(cbc:StartDate,'-','')) &lt;= number(translate(cbc:EndDate,'-',''))) or (not(cbc:StartDate)) or (not(cbc:EndDate))"
@@ -43,10 +43,8 @@
     <rule context="cac:CatalogueLine">
         <assert id="PEPPOL-T19-R007"
                 test="not(cac:LineValidityPeriod)
-                or ( cac:LineValidityPeriod/cbc:StartDate
-                and cac:LineValidityPeriod/cbc:EndDate)
-                and (number(translate(cac:LineValidityPeriod/cbc:StartDate,'-','')) &gt;= $CatalogueValidityStart)
-                and  (number(translate(cac:LineValidityPeriod/cbc:EndDate,'-','')) &lt;= $CatalogueValidityEnd)"
+                or (not(cac:LineValidityPeriod/cbc:StartDate) or (number(translate(cac:LineValidityPeriod/cbc:StartDate,'-','')) &gt;= $CatalogueValidityStart))
+                or (not(cac:LineValidityPeriod/cbc:EndDate) or (number(translate(cac:LineValidityPeriod/cbc:EndDate,'-','')) &lt;= $CatalogueValidityEnd))
                 flag="warning">Catalogue line validity period SHALL be within the range of the whole catalogue validity period</assert>
 
         <assert id="PEPPOL-T19-R008"
@@ -111,4 +109,3 @@
     <!--Delete rule??-->
 
 </pattern>
-
