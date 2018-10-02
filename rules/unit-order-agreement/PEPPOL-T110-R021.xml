@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t01-base-3.0">
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t110-base-3.0">
 	<assert>
 		<description>Verify that allowance amounts are not negative</description>
 		<scope>PEPPOL-T110-R021</scope>
@@ -16,13 +16,6 @@
 				<cbc:Amount>100</cbc:Amount>
 			</cac:AllowanceCharge>
 
-			<cac:OrderLine>
-				<cac:LineItem>
-					<cac:AllowanceCharge>
-						<cbc:Amount>10</cbc:Amount>
-					</cac:AllowanceCharge>
-				</cac:LineItem>
-			</cac:OrderLine>
 		</OrderResponse>
 	</test>
 	<test>
@@ -36,20 +29,13 @@
 			<cac:AllowanceCharge>
 				<cbc:Amount>0</cbc:Amount>
 			</cac:AllowanceCharge>
-			
-			<cac:OrderLine>
-				<cac:LineItem>
-					<cac:AllowanceCharge>
-						<cbc:Amount>0.00</cbc:Amount>
-					</cac:AllowanceCharge>
-				</cac:LineItem>
-			</cac:OrderLine>
+
 		</OrderResponse>
 	</test>
 
 	<test>
 		<assert>
-			<error number="2">PEPPOL-T110-R021</error>
+			<error>PEPPOL-T110-R021</error>
 		</assert>
 		<OrderResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -59,13 +45,6 @@
 				<cbc:Amount>-100</cbc:Amount>
 			</cac:AllowanceCharge>
 			
-			<cac:OrderLine>
-				<cac:LineItem>
-					<cac:AllowanceCharge>
-						<cbc:Amount>-10</cbc:Amount>
-					</cac:AllowanceCharge>
-				</cac:LineItem>
-			</cac:OrderLine>
 		</OrderResponse>
 	</test>
 

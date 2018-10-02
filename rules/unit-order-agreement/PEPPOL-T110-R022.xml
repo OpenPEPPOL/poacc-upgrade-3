@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-t01-base-3.0">
+	configuration="peppolbis-t110-base-3.0">
 	<assert>
 		<description>Verify that item gross price is not negative</description>
 		<scope>PEPPOL-T110-R022</scope>
@@ -66,7 +66,6 @@
 					</cac:Price>
 				</cac:LineItem>
 			</cac:OrderLine>
-			
 		</OrderResponse>
 	</test>
 
