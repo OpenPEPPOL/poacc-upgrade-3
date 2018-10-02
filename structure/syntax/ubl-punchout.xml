@@ -17,7 +17,7 @@
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir77-007</Reference>
 			
-			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrns077:ver2.0:extended:www.peppol.eu:bis:peppol18a:ver1.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns77a:shopping_card:bis3-1.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
@@ -27,7 +27,7 @@
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir77-006</Reference>
 			
-			<Value type="FIXED">urn:www.cenbii.eu:profile:bii18:ver1.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:bis18a:punch_out:bis3-1.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>
