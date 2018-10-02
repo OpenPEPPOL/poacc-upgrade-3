@@ -21,7 +21,7 @@
 	- [x] 58
 
 == Rules
-    - [ ] Add a rules to ensure that allowance and charge amounts are not negative. (Siw)
+    - [x] Add a rules to ensure that allowance and charge amounts are not negative. (Siw)
 	  - [ ] Align rules on name and identifiers.
     - [x] Id's are missing.
 
