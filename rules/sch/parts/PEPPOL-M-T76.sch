@@ -3,6 +3,13 @@
 
     <let name="documentCurrencyCode" value="/ubl:OrderReponse/cbc:DocumentCurrencyCode"/>
 
+    <!-- Price -->
+    <rule context="cbc:PriceAmount">
+        <assert id="PEPPOL-T76-R005"
+            test="not(@currencyID) or @currencyID = $documentCurrencyCode"
+            flag="fatal">An order response SHALL be stated in a single currency</assert>
+    </rule>
+    
     <!-- Buyer party -->
     <rule context="cac:BuyerCustomerParty/cac:Party">
         <assert id="PEPPOL-T76-R001"
@@ -31,11 +38,6 @@
                 flag="fatal">Each order response line SHALL have a document line identifier that is unique within the order.</assert>
     </rule>
 
-    <!-- Price -->
-    <rule context="cbc:PriceAmount">
-        <assert id="PEPPOL-T76-R005"
-                test="not(@currencyID) or @currencyID = $documentCurrencyCode"
-                flag="fatal">An order reposnse SHALL be stated in a single currency</assert>
-    </rule>
+ 
 
 </pattern>
