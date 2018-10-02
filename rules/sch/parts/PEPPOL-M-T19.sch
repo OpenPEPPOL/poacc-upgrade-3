@@ -40,13 +40,14 @@
     <let name="CatalogueValidityStart" value="number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:StartDate,'-',''))"/>
     <let name="CatalogueValidityEnd" value="number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:EndDate,'-',''))"/>
 
-    <rule context="cac:CatalogueLine">
+    <rule context="cac:CatalogueLine/cac:LineValidityPeriod">
         <assert id="PEPPOL-T19-R007"
-                test="not(cac:LineValidityPeriod)
-                or (not(cac:LineValidityPeriod/cbc:StartDate) or (number(translate(cac:LineValidityPeriod/cbc:StartDate,'-','')) &gt;= $CatalogueValidityStart))
-                or (not(cac:LineValidityPeriod/cbc:EndDate) or (number(translate(cac:LineValidityPeriod/cbc:EndDate,'-','')) &lt;= $CatalogueValidityEnd))"
+                test="(not(cbc:StartDate) or (number(translate(cbc:StartDate,'-','')) &gt;= $CatalogueValidityStart))
+                and (not(cbc:EndDate) or (number(translate(cbc:EndDate,'-','')) &lt;= $CatalogueValidityEnd))"
                 flag="warning">Catalogue line validity period SHALL be within the range of the whole catalogue validity period</assert>
+    </rule>
 
+    <rule context="cac:CatalogueLine/cac:RequiredItemLocationQuantity">
         <assert id="PEPPOL-T19-R008"
                 test="not(cbc:MaximumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= 0"
                 flag="fatal">Maximum quantity SHALL be greater than zero</assert>
@@ -60,13 +61,11 @@
                 flag="fatal">Maximum quantity SHALL be greater or equal to the Minimum quantity</assert>
     </rule>
 
-    <rule context="cac:CatalogueLine/cac:Price">
+    <rule context="cac:CatalogueLine/cac:Price/cac:ValidityPeriod">
         <assert id="PEPPOL-T19-R011"
-                test="not (cac:ValidityPeriod)
-                or (cac:ValidityPeriod/cbc:StartDate
-                and cac:ValidityPeriod/cbc:EndDate)
-                and (number(translate(cac:ValidityPeriod/cbc:StartDate,'-','')) &gt;= $CatalogueValidityStart)
-                and  (number(translate(//cac:Price/cac:ValidityPeriod/cbc:EndDate,'-','')) &lt;= $CatalogueValidityEnd)"
+                test="(cbc:StartDate and cbc:EndDate)
+                and (number(translate(cbc:StartDate,'-','')) &gt;= $CatalogueValidityStart)
+                and (number(translate(cbc:EndDate,'-','')) &lt;= $CatalogueValidityEnd)"
                 flag="warning">Price validity period SHALL be within the range of the whole catalogue line validity period</assert>
     </rule>
 
