@@ -1,7 +1,7 @@
 [[classification]]
 == Classification
 
-#An item may be classified according to UNSPSC being the mandatory public classification schemes in some countries/sectors.#
+An item may be classified according to UNSPSC being the mandatory public classification schemes in some countries/sectors.
 Products can also be classified according to regulatory schemes or classification schemes used in certain business sectors.
 
 .Example:

@@ -1591,12 +1591,12 @@
 						<Term>cac:TransactionConditions</Term>
 						<Name>Contracted item</Name>
 						<Element>
-							<Term>cbc:ActionCode</Term>
+							<Term>cbc:ID</Term>
 							<Name>Contracted item indicator</Name>
 							<Description>The code CT indicates that the item is offered in accordance to the referenced contract.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir110-094</Reference>
-							<Value type="EXAMPLE">CT</Value>
+							<Value type="FIXED">CT</Value>
 						</Element>
 					</Element>
 					<Element cardinality="0..1">

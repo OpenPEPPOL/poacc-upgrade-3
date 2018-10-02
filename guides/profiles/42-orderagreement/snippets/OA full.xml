@@ -290,7 +290,7 @@
 
 				<!-- tag::TransactionConditions[] -->
 				<cac:TransactionConditions>
-					<cbc:ActionCode>CT</cbc:ActionCode>
+					<cbc:ID>CT</cbc:ID>
 				</cac:TransactionConditions>
 				<!-- end::TransactionConditions[] -->
 
