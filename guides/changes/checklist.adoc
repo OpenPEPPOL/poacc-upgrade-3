@@ -3,7 +3,7 @@
 - [ ] Open issue
 - [x] Closed issue
 
-- [x] Syntax files, remove old rules.
+== Syntax files, remove old rules.
   - [x] Despatch advice.
   - [x] Order agreement.
   - [x] Order
@@ -14,18 +14,18 @@
   - [x] Catalogue response, not needed
   - [x] MLR, not needed.
 
-- [x] Errors referring to old rules (Siw)
+== Errors referring to old rules (Siw)
 	- [x] 71
 	- [x] 77
 	- [x] 19, only removed BII rules?
 	- [x] 58
 
-- [ ] Rules
+== Rules
     - [ ] Add a rules to ensure that allowance and charge amounts are not negative. (Siw)
 	  - [ ] Align rules on name and identifiers.
     - [x] Id's are missing.
 
-- [x] Creation of unit test files.
+== Creation of unit test files.
     - [x] Despatch advice.
     - [x] Order agreement.
     - [x] Order.
@@ -34,21 +34,21 @@
     - [x] Punch out.
     - [x] Catalogue.
 
-- [x] Verifying and bugfixing rules and tests.
-	- [x] Siw
+== Verifying and bugfixing rules and tests.
+=== Siw
 		- [x] Order.
 		- [x] Order agreement.
 		- [x] Order response.
 		- [x] Despatch.
 
-	- [ ] Georg
+=== Georg
 		- [ ] Catalogue.
 		- [x] Catalogue response.
 		- [ ] Punch out.
 		- [x] IMR.
 		- [x] Anyone we are missing.
 
-- [ ] Other
+== Other
     - [ ] Release notes (In Git)
     - [x] BIS, clean up yellow highlighting.
     - [x] Base rules for all transactions have transaction id T01.
@@ -61,7 +61,7 @@
     - [ ] Add manual rule to order checking for two allowed profile id's
     - [x] Syntax, add tir ids to new business terms "tirnn=pxxx"
 
-Work schedule
+== Work schedule
     - [x] Finish cleaning up schematrons before end Friday - Siw, Georg, Iacopo
     - [x] Finish unit test files before end Friday - Charlotte, Georg
     - [ ] Verify testing, Monday - Siw, Georg.
