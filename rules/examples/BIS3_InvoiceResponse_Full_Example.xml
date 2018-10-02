@@ -13,8 +13,8 @@
 <ApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
 					 xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 					 xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-	<cbc:CustomizationID>urn:www.peppol.eu:transaction:biitrns111:ver1.0</cbc:CustomizationID>
-	<cbc:ProfileID>urn:www.peppol.eu:profile:bis63a:ver1.0</cbc:ProfileID>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns111a:invoice_response:bis3-1.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis63a:invoice-response:bis3-1.0</cbc:ProfileID>
 	<cbc:ID>imrid001</cbc:ID>
 	<cbc:IssueDate>2017-12-01</cbc:IssueDate>
 	<cbc:IssueTime>12:00:00</cbc:IssueTime>
@@ -47,7 +47,7 @@
 			<cbc:ResponseCode>RE</cbc:ResponseCode>
 			<cbc:EffectiveDate>2018-09-24</cbc:EffectiveDate>
 			<cac:Status>
-				<cbc:StatusReasonCode listID="OPStatusAction"/>
+				<cbc:StatusReasonCode listID="OPStatusAction">REF</cbc:StatusReasonCode>
 				<cbc:StatusReason>VAT Reference not found</cbc:StatusReason>
 				<cac:Condition>
 					<cbc:AttributeID>BT-48</cbc:AttributeID>

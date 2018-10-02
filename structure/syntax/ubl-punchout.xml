@@ -592,13 +592,14 @@
                             allow grouping of similar items for a various purposes e.g. public
                             procurement (CPV), e-Commerce (UNSPSC) etc.</Description>
 						<DataType>Code</DataType>
-						<Reference type="CODE_LIST">UNCL7143</Reference>
+						
 						<Reference type="BUSINESS_TERM">tir77-028</Reference>
 
 						<Attribute>
 							<Term>listID</Term>
 							<Name>Item classification identifier identification scheme identifier</Name>
 							<Description>The identification scheme identifier of the Item classification identifier</Description>
+							<Reference type="CODE_LIST">UNCL7143</Reference>
 							<Value type="EXAMPLE">STI</Value>
 						</Attribute>
 						<Attribute usage="Optional">

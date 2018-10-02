@@ -78,13 +78,13 @@
 	</rule>
 
 	<!-- Allowance/Charge -->
-	<rule context="cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)]">
+	<rule context="/ubl:OrderResponse/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)]">
 		<assert id="PEPPOL-T110-R015"
 				test="false()"
 				flag="fatal">Allowance/charge base amount SHALL be provided when allowance/charge percentage is provided.</assert>
 	</rule>
 
-	<rule context="cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount]">
+	<rule context="/ubl:OrderResponse/cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount]">
 		<assert id="PEPPOL-T110-R016"
 				test="false()"
 				flag="fatal">Allowance/charge percentage SHALL be provided when allowance/charge base amount is provided.</assert>
@@ -99,7 +99,7 @@
 				flag="fatal">Each document level allowance SHALL have an allowance reason text or an allowance reason code.</assert>
 		<assert  id="PEPPOL-T110-R021"
 			test="number(cbc:Amount) &gt;= 0"
-			flag="fatal">Allowance or charge amounts SHALL NOT be negative.</assert>
+			flag="fatal">Document level allowance or charge amounts SHALL NOT be negative.</assert>
 	</rule>
 
 	<rule context="cac:TaxCategory | cac:ClassifiedTaxCategory">
@@ -122,7 +122,7 @@
 			flag="fatal">The Item gross price SHALL NOT be negative.</assert>
 		<assert  id="PEPPOL-T110-R023"
 			test="number(cac:AllowanceCharge/cbc:Amount) &gt;= 0"
-			flag="fatal">Allowance or charge amounts SHALL NOT be negative.</assert>
+			flag="fatal">Allowance or charge price amounts SHALL NOT be negative.</assert>
 	</rule>
 
 </pattern>

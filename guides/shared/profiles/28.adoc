@@ -13,7 +13,7 @@ In the table below you will find the values to be used as the specification iden
 
 | Order (Trdm01)
 | urn:fdc:peppol.eu:poacc:trns01a:order:bis3-1.0
-.2+.^| urn:fdc:peppol.eu:poacc:bis28a:ordering_only:bis3-1.0
+.2+.^| urn:fdc:peppol.eu:poacc:bis28a:ordering:bis3-1.0
 
 | Order response (Trdm76)
 | urn:fdc:peppol.eu:poacc:trns76a:order_response:bis3-1.0

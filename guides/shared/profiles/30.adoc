@@ -12,6 +12,6 @@ In the table below you will find the values to be used as the specification iden
 
 
 | Despatch Advice (Trdm16)
-| urn:fdc:peppol.eu:poacc:trns16a:dispatch_advice:bis3-1.0
-| urn:fdc:peppol.eu:poacc:bis30a:dispatch_advice:bis3-1.0
+| urn:fdc:peppol.eu:poacc:trns16a:despatch_advice:bis3-1.0
+| urn:fdc:peppol.eu:poacc:bis30a:despatch_advice:bis3-1.0
 |===
