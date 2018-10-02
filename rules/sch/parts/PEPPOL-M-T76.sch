@@ -42,4 +42,3 @@
  
 
 </pattern>
-</schema>
