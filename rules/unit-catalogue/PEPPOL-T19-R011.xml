@@ -114,7 +114,7 @@
 
 	<test id="5">
 		<assert>
-			<warning>PEPPOL-T19-R011</warning>
+			<error>PEPPOL-T19-R011</error>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -141,7 +141,7 @@
 
 	<test id="6">
 		<assert>
-			<warning>PEPPOL-T19-R011</warning>
+			<error>PEPPOL-T19-R011</error>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -168,7 +168,7 @@
 
 	<test id="7">
 		<assert>
-			<warning>PEPPOL-T19-R011</warning>
+			<error>PEPPOL-T19-R011</error>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"

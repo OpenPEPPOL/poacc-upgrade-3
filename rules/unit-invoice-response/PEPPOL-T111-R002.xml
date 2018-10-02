@@ -42,7 +42,7 @@
 
 	<test id="3">
 		<assert>
-			<error>PEPPOL-T111-R002</error>
+			<warning>PEPPOL-T111-R002</warning>
 		</assert>
 
 		<ApplicationResponse
@@ -58,7 +58,7 @@
 
 	<test id="4">
 		<assert>
-			<error>PEPPOL-T111-R002</error>
+			<warning>PEPPOL-T111-R002</warning>
 		</assert>
 
 		<ApplicationResponse
