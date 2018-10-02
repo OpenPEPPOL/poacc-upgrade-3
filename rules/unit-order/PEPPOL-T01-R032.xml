@@ -1,46 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t01-base-3.0">
 	<assert>
-		<scope>PEPPOL-T01-R031</scope>
-		<description>Verify that ProfileID is correct</description>
+		<description>Verify that allowance amounts are not negative</description>
+		<scope>PEPPOL-T01-R032</scope>
 	</assert>
-	<test id="1">
+	<test>
 		<assert>
-			<success>PEPPOL-T01-R031</success>
+			<success>PEPPOL-T01-R032</success>
 		</assert>
 		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
 
-			<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis03a:order_only:bis3-1.0</cbc:ProfileID>
-			
+			<cac:AllowanceCharge>
+				<cbc:Amount>100</cbc:Amount>
+			</cac:AllowanceCharge>
+
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cac:AllowanceCharge>
+						<cbc:Amount>10</cbc:Amount>
+					</cac:AllowanceCharge>
+				</cac:LineItem>
+			</cac:OrderLine>
 		</Order>
 	</test>
-
-
-	<test id="2">
+	<test>
 		<assert>
-			<success>PEPPOL-T01-R031</success>
+			<success>PEPPOL-T01-R032</success>
 		</assert>
 		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
 			
-			<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis28a:ordering_only:bis3-1.0</cbc:ProfileID>
+			<cac:AllowanceCharge>
+				<cbc:Amount>0</cbc:Amount>
+			</cac:AllowanceCharge>
 			
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cac:AllowanceCharge>
+						<cbc:Amount>0.00</cbc:Amount>
+					</cac:AllowanceCharge>
+				</cac:LineItem>
+			</cac:OrderLine>
 		</Order>
 	</test>
 
-	<test id="3">
+	<test>
 		<assert>
-			<error>PEPPOL-T01-R031</error>
+			<error number="2">PEPPOL-T01-R032</error>
 		</assert>
 		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
 			
-			<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis36a:mlr:bis3-1.0</cbc:ProfileID>
+			<cac:AllowanceCharge>
+				<cbc:Amount>-100</cbc:Amount>
+			</cac:AllowanceCharge>
 			
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cac:AllowanceCharge>
+						<cbc:Amount>-10</cbc:Amount>
+					</cac:AllowanceCharge>
+				</cac:LineItem>
+			</cac:OrderLine>
 		</Order>
 	</test>
+
 </testSet>

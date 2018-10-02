@@ -112,6 +112,9 @@
         <assert id="PEPPOL-T01-R023"
                 test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)"
                 flag="fatal">Each document or line level allowance SHALL have an allowance reason text or an allowance reason code.</assert>
+            <assert  id="PEPPOL-T01-R032"
+                    test="(cbc:Amount) &gt;= 0"
+                    flag="fatal">Allowance or charge amounts SHALL NOT be negative.</assert>
     </rule>
 
     <rule context="cac:TaxCategory | cac:ClassifiedTaxCategory">
@@ -174,6 +177,9 @@
         <assert  id="PEPPOL-T01-R027"
                 test="(cac:AllowanceCharge/cbc:BaseAmount) &gt;= 0 or not(exists(cac:AllowanceCharge/cbc:BaseAmount))"
                 flag="fatal">The Item gross price SHALL NOT be negative.</assert>
+            <assert  id="PEPPOL-T01-R033"
+                    test="(cbc:Amount) &gt;= 0"
+                    flag="fatal">Allowance or charge amounts SHALL NOT be negative.</assert>
     </rule>
 
 </pattern>
