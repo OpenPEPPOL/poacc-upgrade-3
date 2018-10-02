@@ -1825,7 +1825,14 @@
 						<Reference type="BUSINESS_TERM">tir19-p037</Reference>
 						<Reference type="BUSINESS_TERM">tir19-p017</Reference>
 						<Reference type="BUSINESS_TERM">tir19-p016</Reference>
-						<Reference type="CODE_LIST">UNCL6313</Reference>
+						
+						<Attribute>
+							<Term>unitCode</Term>
+							<Name>Measure unit code</Name>
+							<Description>The unit code of the measurement of the orderable unit</Description>
+							<DataType>Code</DataType>
+							<Reference type="CODE_LIST">UNCL6313</Reference>
+						</Attribute>
 					</Element>
 					<Element cardinality="0..n">
 						<Term>cbc:Description</Term>
@@ -1840,16 +1847,30 @@
 						<Name>Minimum storage temperature or minimum Storage Humidity</Name>
 						<Description>The lower margin of the recommended storage temerature range
                             for the item.</Description>
-						<Reference type="BUSINESS_TERM">tir19-115OP-T19-015</Reference>
-						<Reference type="CODE_LIST">UNCL6313</Reference>
+						<Reference type="BUSINESS_TERM">tir19-115</Reference>
+						<Reference type="BUSINESS_TERM">OP-T19-015</Reference>
+						<Attribute>
+							<Term>unitCode</Term>
+							<Name>Measure unit code</Name>
+							<Description>The unit code of the minimum storage humidity or temperature</Description>
+							<DataType>Code</DataType>
+							<Reference type="CODE_LIST">UNCL6313</Reference>
+						</Attribute>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:MaximumMeasure</Term>
 						<Name>Maximum storage temperature or maximum Storage Humidity</Name>
 						<Description>The upper margin of the recommended storage temerature range
                             for the item.</Description>
-						<Reference type="BUSINESS_TERM">tir19-116OP-T19-014</Reference>
-						<Reference type="CODE_LIST">UNCL6313</Reference>
+						<Reference type="BUSINESS_TERM">tir19-116</Reference>
+						<Reference type="BUSINESS_TERM">OP-T19-014</Reference>
+						<Attribute>
+							<Term>unitCode</Term>
+							<Name>Measure unit code</Name>
+							<Description>The unit code of the maximum storage humidity or temperature</Description>
+							<DataType>Code</DataType>
+							<Reference type="CODE_LIST">UNCL6313</Reference>
+						</Attribute>
 					</Element>
 				</Element>
 			</Element>
