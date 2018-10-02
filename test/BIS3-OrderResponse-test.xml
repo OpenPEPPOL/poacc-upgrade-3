@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OrderResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2"
+               xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+               xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns076:ver2.0:extended:urn:www.peppol.eu:bis:peppol28a:ver1.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:www.cenbii.eu:profile:bii28:ver2.0</cbc:ProfileID>
+    <cbc:ID>154</cbc:ID>
+    <cbc:SalesOrderID>123456</cbc:SalesOrderID>
+    <cbc:IssueDate>2018-05-08</cbc:IssueDate>
+    <cbc:IssueTime>08:30:00</cbc:IssueTime>
+    <cbc:OrderResponseCode>54</cbc:OrderResponseCode>
+    <cbc:Note>Response message(s) in detail(s).</cbc:Note>
+    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <cbc:CustomerReference>QW235</cbc:CustomerReference>
+
+    <cac:OrderReference>
+        <cbc:ID>233543</cbc:ID>
+    </cac:OrderReference>
+
+    <cac:SellerSupplierParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0489">3645546</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0524">3546854385</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Elektro Andersen AS</cbc:Name>
+            </cac:PartyName>
+            <cac:Contact>
+                <cbc:Name>Johan Andersen</cbc:Name>
+                <cbc:Telephone>95412458</cbc:Telephone>
+                <cbc:ElectronicMail>johan.andersen@elektro.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:SellerSupplierParty>
+
+</OrderResponse>

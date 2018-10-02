@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Order xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2"
+       xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+       xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+
+    <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns001:ver2.0:extended:urn:www.peppol.eu:bis:peppol28a:ver1.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:www.cenbii.eu:profile:bii28:ver2.0</cbc:ProfileID>
+    <cbc:ID>1234</cbc:ID>
+    <cbc:SalesOrderID>0074</cbc:SalesOrderID>
+    <cbc:IssueDate>2018-06-01</cbc:IssueDate>
+    <cbc:IssueTime>12:03:43</cbc:IssueTime>
+    <cbc:OrderTypeCode>110</cbc:OrderTypeCode>
+    <cbc:Note>No packages with plastics.</cbc:Note>
+    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <cbc:CustomerReference>AB432</cbc:CustomerReference>
+    <cbc:AccountingCost>154:4929:8426</cbc:AccountingCost>
+
+    <cac:ValidityPeriod>
+        <cbc:EndDate>2018-06-05</cbc:EndDate>
+    </cac:ValidityPeriod>
+
+    <cac:QuotationDocumentReference>
+        <cbc:ID>3643</cbc:ID>
+    </cac:QuotationDocumentReference>
+
+    <cac:OrderDocumentReference>
+        <cbc:ID>123456</cbc:ID>
+    </cac:OrderDocumentReference>
+
+    <cac:AdditionalDocumentReference>
+        <cbc:ID>3521</cbc:ID>
+        <cbc:DocumentType>Pdf file.</cbc:DocumentType>
+        <cac:Attachment>
+            <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="hello.pdf">JSGAOI3252</cbc:EmbeddedDocumentBinaryObject>
+            <cac:ExternalReference>
+                <cbc:URI>www.hello/order.com</cbc:URI>
+            </cac:ExternalReference>
+        </cac:Attachment>
+    </cac:AdditionalDocumentReference>
+
+    <cac:Contact>
+        <cbc:ID>245</cbc:ID>
+    </cac:Contact>
+
+    <cac:BuyerCustomerParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0144">324687446577</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0144">715446446345</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>John Nickson</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>82 High Street</cbc:StreetName>
+                <cbc:AdditionalStreetName>Building A</cbc:AdditionalStreetName>
+                <cbc:CityName>EAST GINGE</cbc:CityName>
+                <cbc:PostalZone>OX12 7WB</cbc:PostalZone>
+                <cbc:CountrySubentity>Region B</cbc:CountrySubentity>
+                <cac:AddressLine>
+                    <cbc:Line>Gate 2</cbc:Line>
+                </cac:AddressLine>
+                <cac:Country>
+                    <cbc:IdentificationCode>UK</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Cellphone AS</cbc:RegistrationName>
+                <cbc:CompanyID schemeID="001">1222558</cbc:CompanyID>
+                <cac:RegistrationAddress>
+                    <cbc:CityName>London</cbc:CityName>
+                    <cac:Country>
+                        <cbc:IdentificationCode>UK</cbc:IdentificationCode>
+                    </cac:Country>
+                </cac:RegistrationAddress>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:Name>Edward James</cbc:Name>
+                <cbc:Telephone>079 1454 7788</cbc:Telephone>
+                <cbc:ElectronicMail>esward.james@cellphone.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:BuyerCustomerParty>
+
+    <cac:SellerSupplierParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0144">7105584323</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0144">554465562</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Ole Jensen</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Storgata 3</cbc:StreetName>
+                <cbc:AdditionalStreetName>Building C</cbc:AdditionalStreetName>
+                <cbc:CityName>Oslo</cbc:CityName>
+                <cbc:PostalZone>0578</cbc:PostalZone>
+                <cbc:CountrySubentity>Region A</cbc:CountrySubentity>
+                <cac:AddressLine>
+                    <cbc:Line>Gate 3</cbc:Line>
+                </cac:AddressLine>
+                <cac:Country>
+                    <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Nord Internet AS</cbc:RegistrationName>
+                <cbc:CompanyID schemeID="124">01514158</cbc:CompanyID>
+                <cac:RegistrationAddress>
+                    <cbc:CityName>Oslo</cbc:CityName>
+                    <cac:Country>
+                        <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                    </cac:Country>
+                </cac:RegistrationAddress>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:Name>Ola Nordmann</cbc:Name>
+                <cbc:Telephone>95424874</cbc:Telephone>
+                <cbc:ElectronicMail>ola.nordmann@nordinternett.no</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:SellerSupplierParty>
+
+    <cac:OriginatorCustomerParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="111">2454122</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Power</cbc:Name>
+            </cac:PartyName>
+            <cac:Contact>
+                <cbc:Name>Janne Olafsen</cbc:Name>
+                <cbc:Telephone>94248424</cbc:Telephone>
+                <cbc:ElectronicMail>janne.olafsen@power.no</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:OriginatorCustomerParty>
+
+    <cac:AccountingCustomerParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="451">7412544682523</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID>244312</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Accounting name</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Evensenveien 45</cbc:StreetName>
+                <cbc:AdditionalStreetName>Building F</cbc:AdditionalStreetName>
+                <cbc:CityName>Sandvika</cbc:CityName>
+                <cbc:PostalZone>0245</cbc:PostalZone>
+                <cbc:CountrySubentity>Region B</cbc:CountrySubentity>
+                <cac:AddressLine>
+                    <cbc:Line>Gate 1</cbc:Line>
+                </cac:AddressLine>
+                <cac:Country>
+                    <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>cellphoneXY</cbc:RegistrationName>
+                <cbc:CompanyID schemeID="012">6414423254</cbc:CompanyID>
+                <cac:RegistrationAddress>
+                    <cbc:CityName>Sandvika</cbc:CityName>
+                    <cac:Country>
+                        <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                    </cac:Country>
+                </cac:RegistrationAddress>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:ID>1248624</cbc:ID>
+            </cac:Contact>
+        </cac:Party>
+    </cac:AccountingCustomerParty>
+
+    <cac:Delivery>
+        <cac:DeliveryLocation>
+            <cbc:ID schemeID="0047">57456465453</cbc:ID>
+            <cac:Address>
+                <cbc:StreetName>Vesterdalsenga 433</cbc:StreetName>
+                <cbc:AdditionalStreetName>Building A</cbc:AdditionalStreetName>
+                <cbc:CityName>Jessheim</cbc:CityName>
+                <cbc:PostalZone>0145</cbc:PostalZone>
+                <cbc:CountrySubentity>Region F</cbc:CountrySubentity>
+                <cac:AddressLine>
+                    <cbc:Line>ADD</cbc:Line>
+                </cac:AddressLine>
+                <cac:Country>
+                    <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:Address>
+        </cac:DeliveryLocation>
+        <cac:RequestedDeliveryPeriod>
+            <cbc:StartDate>2018-02-06</cbc:StartDate>
+            <cbc:EndDate>2018-02-08</cbc:EndDate>
+        </cac:RequestedDeliveryPeriod>
+        <cac:DeliveryParty>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0047">246843321</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Mobile XYZ</cbc:Name>
+            </cac:PartyName>
+            <cac:Contact>
+                <cbc:Name>Henrik Hansen</cbc:Name>
+                <cbc:Telephone>98427542</cbc:Telephone>
+                <cbc:ElectronicMail>henrik.hansen@mobilexyz.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:DeliveryParty>
+    </cac:Delivery>
+
+    <cac:DeliveryTerms>
+        <cbc:ID>ABC123</cbc:ID>
+        <cbc:SpecialTerms>XXX</cbc:SpecialTerms>
+        <cac:DeliveryLocation>
+            <cbc:ID>Ullern</cbc:ID>
+        </cac:DeliveryLocation>
+    </cac:DeliveryTerms>
+
+    <cac:PaymentTerms>
+        <cbc:Note>Pay within 14 days.</cbc:Note>
+    </cac:PaymentTerms>
+
+    <cac:AllowanceCharge>
+        <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+        <cbc:AllowanceChargeReasonCode>120</cbc:AllowanceChargeReasonCode>
+        <cbc:AllowanceChargeReason>Allowance reason X.</cbc:AllowanceChargeReason>
+        <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
+        <cbc:Amount currencyID="EUR">120.00</cbc:Amount>
+        <cbc:BaseAmount currencyID="EUR">500.00</cbc:BaseAmount>
+        <cac:TaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>25.00</cbc:Percent>
+            <cac:TaxScheme>
+                <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+        </cac:TaxCategory>
+    </cac:AllowanceCharge>
+    
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">120.00</cbc:TaxAmount>
+    </cac:TaxTotal>
+    
+    <cac:AnticipatedMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">500.00</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">550.00</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">621.52</cbc:TaxInclusiveAmount>
+        <cbc:ChargeTotalAmount currencyID="EUR">120.00</cbc:ChargeTotalAmount>
+        <cbc:PrepaidAmount currencyID="EUR">10.00</cbc:PrepaidAmount>
+        <cbc:PayableRoundingAmount currencyID="EUR">1.25</cbc:PayableRoundingAmount>
+        <cbc:PayableAmount currencyID="EUR">618.00</cbc:PayableAmount>
+    </cac:AnticipatedMonetaryTotal>
+
+    <cac:OrderLine>
+        <cbc:Note>Free text</cbc:Note>
+        <cac:LineItem>
+            <cbc:ID>33</cbc:ID>
+            <cbc:Quantity unitCode="C62">5</cbc:Quantity>
+            <cbc:LineExtensionAmount currencyID="EUR">6500.00</cbc:LineExtensionAmount>
+            <cbc:PartialDeliveryIndicator>false</cbc:PartialDeliveryIndicator>
+            <cbc:AccountingCost>120.00</cbc:AccountingCost>
+            <cac:Delivery>
+                <cac:RequestedDeliveryPeriod>
+                    <cbc:StartDate>2018-06-05</cbc:StartDate>
+                    <cbc:EndDate>2018-06-08</cbc:EndDate>
+                </cac:RequestedDeliveryPeriod>
+            </cac:Delivery>
+            <cac:OriginatorParty>
+                <cac:PartyIdentification>
+                    <cbc:ID schemeID="0087">356</cbc:ID>
+                </cac:PartyIdentification>
+                <cac:PartyName>
+                    <cbc:Name>Nick Nilsson</cbc:Name>
+                </cac:PartyName>
+            </cac:OriginatorParty>
+            <cac:AllowanceCharge>
+                <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+                <cbc:AllowanceChargeReasonCode>ABK</cbc:AllowanceChargeReasonCode>
+                <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
+                <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+                <cbc:Amount currencyID="EUR">500.00</cbc:Amount>
+                <cbc:BaseAmount currencyID="EUR">200.00</cbc:BaseAmount>
+            </cac:AllowanceCharge>
+            <cac:Price>
+                <cbc:PriceAmount currencyID="EUR">115.52</cbc:PriceAmount>
+                <cbc:BaseQuantity unitCode="C62">5</cbc:BaseQuantity>
+                <cac:AllowanceCharge>
+                    <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+                    <cbc:Amount currencyID="EUR">50.00</cbc:Amount>
+                    <cbc:BaseAmount currencyID="EUR">6000.00</cbc:BaseAmount>
+                </cac:AllowanceCharge>
+            </cac:Price>
+            <cac:Item>
+                <cbc:Description>Free form text</cbc:Description>
+                <cbc:Name>iPhone</cbc:Name>
+                <cac:BuyersItemIdentification>
+                    <cbc:ID>45124</cbc:ID>
+                </cac:BuyersItemIdentification>
+                <cac:SellersItemIdentification>
+                    <cbc:ID schemeID="045">2464536</cbc:ID>
+                </cac:SellersItemIdentification>
+                <cac:ItemSpecificationDocumentReference>
+                    <cbc:ID>xyz.pdf</cbc:ID>
+                </cac:ItemSpecificationDocumentReference>
+                <cac:CommodityClassification>
+                    <cbc:ItemClassificationCode listID="STI" listVersionID="3">54646563</cbc:ItemClassificationCode>
+                </cac:CommodityClassification>
+                <cac:AdditionalItemProperty>
+                    <cbc:Name>Color</cbc:Name>
+                    <cbc:Value>Black</cbc:Value>
+                    <cbc:ValueQuantity unitCode="C62">7</cbc:ValueQuantity>
+                    <cbc:ValueQualifier>Description of the quantity.</cbc:ValueQualifier>
+                </cac:AdditionalItemProperty>
+                <cac:ItemInstance>
+                    <cbc:SerialID>JGA35436</cbc:SerialID>
+                    <cac:LotIdentification>
+                        <cbc:LotNumberID>24515</cbc:LotNumberID>
+                    </cac:LotIdentification>
+                </cac:ItemInstance>
+            </cac:Item>
+        </cac:LineItem>
+    </cac:OrderLine>
+</Order>
