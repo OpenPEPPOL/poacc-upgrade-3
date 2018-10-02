@@ -87,7 +87,7 @@
                 test="if ($taxinclusiveAmount) then ($payableAmount = $taxinclusiveAmount - $prepaidAmount + $roundingAmount) else 1"
                 flag="fatal">Amount due for payment = Invoice total amount with VAT - Paid amount + Rounding amount.</assert>
         <assert id="PEPPOL-T01-R017"
-                test="if($taxinclusiveAmount) then ($taxinclusiveAmount = $taxexclusiveAmount + $VATamount) else 1"
+                test="if($taxinclusiveAmount and /ubl:Order/cac:TaxTotal) then ($taxinclusiveAmount = $taxexclusiveAmount + $VATamount) else 1"
                 flag="fatal">Expected total amount with VAT = Expected total amount without VAT + Order total VAT amount.</assert>
     </rule>
 
