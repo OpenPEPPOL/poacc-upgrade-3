@@ -16,8 +16,8 @@
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cac:CatalogueLine>
-					<cbc:MinimumOrderQuantity unitCode="C62">10</cbc:MinimumOrderQuantity>
-					<cbc:MaximumOrderQuantity unitCode="C62">10</cbc:MaximumOrderQuantity>
+					<cbc:MinimumOrderQuantity>10</cbc:MinimumOrderQuantity>
+					<cbc:MaximumOrderQuantity>10</cbc:MaximumOrderQuantity>
 			</cac:CatalogueLine>
 
 		</Catalogue>
@@ -54,7 +54,7 @@
 		</Catalogue>
 	</test>
 
-	<test>
+	<test id="4">
 		<assert>
 			<success>PEPPOL-T19-R010</success>
 		</assert>
@@ -69,9 +69,9 @@
 		</Catalogue>
 	</test>
 
-	<test>
+	<test id="5">
 		<assert>
-			<warning number="1">PEPPOL-T19-R010</warning>
+			<error>PEPPOL-T19-R010</error>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
