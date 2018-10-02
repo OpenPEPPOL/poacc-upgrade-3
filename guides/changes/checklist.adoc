@@ -1,0 +1,73 @@
+= Clecklist for cleanup
+
+- [] Open issue
+- [x] Closed issue
+
++ Syntax files, remove old rules.
+    + Despatch advice.
+    + Order agreement.
+    + Order
+    + Order response
+    + Invoice Response
+    + Punch out
+    + Catalogue
+    + Catalogue response, not needed
+    + MLR, not needed.
+
++ Errors referring to old rules (Siw)
+	+ 71
+	+ 77
+	+ 19, only removed BII rules?
+	+ 58
+
+- No new rules added to 71 77 19 58
+
+- Missing examples on syntax files (low priority)
+- Create test files based on syntax files. (Jalini is working on this)
+- In main site of upgrade project there is reviewofalignment.xml (Jalini)
++ Inserting new customzation and profile identifiers
+- Add manual rule to order checking for two allowed profile id's
+
++ Syntax, add tir ids to new business terms "tirnn=pxxx"
+
+Rules
+    - Add a rules to ensure that allowance and charge amounts are not negative. (Siw)
+	- Align rules on name and identifiers.
+    + Id's are missing.
+
++ Creation of unit test files.
+    + Despatch advice.
+    + Order agreement.
+    + Order.
+    + Order response.
+    + Invoice Response.
+    + Punch out.
+    + Catalogue.
+
+- Rules generate alot of errors.
+	- Siw
+		+ Order.
+		+ Order agreement.
+		+ Order response.
+		+ Despatch.
+
+	- Georg
+		- Catalogue.
+		+ Catalogue response.
+		- Punch out.
+		- IMR.
+		+ Anyone we are missing.
+
+Other
+    - Release notes (In Git)
+    + BIS, clean up yellow highlighting.
+    + Base rules for all transactions have transaction id T01.
+    + tir77-011tir77-012 in punchout, error or two tir?
+
+Work schedule
+
+    + Finish cleaning up schematrons before end Friday - Siw, Georg, Iacopo
+    + Finish unit test files before end Friday - Charlotte, Georg
+    - Verify testing, Monday - Siw, Georg.
+    - Prepare package for distribution, Tuesday - Siw, Georg
+    - Initiate review period, Wednesday - Georg
