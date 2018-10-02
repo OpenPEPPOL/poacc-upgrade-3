@@ -1,0 +1,69 @@
+= Clecklist for cleanup
+
+- [ ] Open issue
+- [x] Closed issue
+
+== Syntax files, remove old rules.
+  - [x] Despatch advice.
+  - [x] Order agreement.
+  - [x] Order
+  - [x] Order response
+  - [x] Invoice Response
+  - [x] Punch out
+  - [x] Catalogue
+  - [x] Catalogue response, not needed
+  - [x] MLR, not needed.
+
+== Errors referring to old rules (Siw)
+	- [x] 71
+	- [x] 77
+	- [x] 19, only removed BII rules?
+	- [x] 58
+
+== Rules
+    - [ ] Add a rules to ensure that allowance and charge amounts are not negative. (Siw)
+	  - [ ] Align rules on name and identifiers.
+    - [x] Id's are missing.
+
+== Creation of unit test files.
+    - [x] Despatch advice.
+    - [x] Order agreement.
+    - [x] Order.
+    - [x] Order response.
+    - [x] Invoice Response.
+    - [x] Punch out.
+    - [x] Catalogue.
+
+== Verifying and bugfixing rules and tests.
+=== Siw
+		- [x] Order.
+		- [x] Order agreement.
+		- [x] Order response.
+		- [x] Despatch.
+
+=== Georg
+		- [ ] Catalogue.
+		- [x] Catalogue response.
+		- [ ] Punch out.
+		- [x] IMR.
+		- [x] Anyone we are missing.
+
+== Other
+    - [ ] Release notes (In Git)
+    - [x] BIS, clean up yellow highlighting.
+    - [x] Base rules for all transactions have transaction id T01.
+    - [x] tir77-011tir77-012 in punchout, error or two tir?
+    - [ ] No new rules added to 71 77 19 58, verify
+    - [ ] Missing examples on syntax files (low priority)
+    - [ ] Create test files based on syntax files. (Jalini is working on this)
+    - [ ] In main site of upgrade project there is reviewofalignment.xml (Jalini)
+    - [x] Inserting new customzation and profile identifiers
+    - [ ] Add manual rule to order checking for two allowed profile id's
+    - [x] Syntax, add tir ids to new business terms "tirnn=pxxx"
+
+== Work schedule
+  - [x] Finish cleaning up schematrons before end Friday - Siw, Georg, Iacopo
+  - [x] Finish unit test files before end Friday - Charlotte, Georg
+  - [ ] Verify testing, Monday - Siw, Georg.
+  - [ ] Prepare package for distribution, Tuesday - Siw, Georg
+  - [ ] Initiate review period, Wednesday - Georg

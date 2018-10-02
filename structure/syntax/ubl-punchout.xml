@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 	<Term>PunchOut</Term>
-	
+
 	<Property key="sch:prefix">PEPPOL-T77</Property>
 	<Property key="sch:identifier">T77-basic</Property>
-	
+
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2</Namespace>
 	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
 	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
@@ -16,8 +16,8 @@
 			<Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir77-007</Reference>
-			
-			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrns077:ver2.0:extended:www.peppol.eu:bis:peppol18a:ver1.0</Value>
+
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns77a:shopping_card:bis3-1.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
@@ -26,8 +26,8 @@
                 It enables the buyer to process the document in an appropriate way.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir77-006</Reference>
-			
-			<Value type="FIXED">urn:www.cenbii.eu:profile:bii18:ver1.0</Value>
+
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:bis18a:punch_out:bis3-1.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>
@@ -35,7 +35,7 @@
 			<Description>An identifier for the shopping cart.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir77-001</Reference>
-			
+
 			<Value type="EXAMPLE">8675</Value>
 		</Element>
 		<Element cardinality="0..1">
@@ -54,7 +54,7 @@
 			<Description>The date when the shopping cart was issued.Format= "YYYY-MM-DD"</Description>
 			<DataType>Date</DataType>
 			<Reference type="BUSINESS_TERM">tir77-002</Reference>
-			
+
 			<Value type="EXAMPLE">2018-05-15</Value>
 		</Element>
 		<Element>
@@ -63,7 +63,7 @@
 			<Description>The time of day when shopping cart was issued.Format ="hh:mm:ss"</Description>
 			<DataType>Time</DataType>
 			<Reference type="BUSINESS_TERM">tir77-003</Reference>
-			
+
 			<Value type="EXAMPLE">13:48:12</Value>
 		</Element>
 		<Element cardinality="0..1">
@@ -129,7 +129,7 @@
 					<Description>An identification of the seller.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir77-014</Reference>
-					
+
 					<Attribute usage="optional">
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
@@ -150,7 +150,7 @@
                         national registry of legal entities or persons.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir77-013</Reference>
-					
+
 					<Value type="EXAMPLE">Seller name</Value>
 				</Element>
 			</Element>
@@ -183,7 +183,8 @@
                         the document in which the identifier is used.An identifier for the
                         buyer.</Description>
 					<DataType>Identifier</DataType>
-					<Reference type="BUSINESS_TERM">tir77-011tir77-012</Reference>
+					<Reference type="BUSINESS_TERM">tir77-011</Reference>
+					<Reference type="BUSINESS_TERM">tir77-012</Reference>
 					<Attribute usage="optional">
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
@@ -203,7 +204,7 @@
 					<Description>The full name of the buyer.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir77-010</Reference>
-					
+
 					<Value type="EXAMPLE">Buyer name</Value>
 				</Element>
 			</Element>
@@ -232,7 +233,7 @@
                     cart.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">tir77-015</Reference>
-				
+
 				<Value type="EXAMPLE">1</Value>
 			</Element>
 			<Element cardinality="0..1">
@@ -344,7 +345,7 @@
 							<DataType>Text</DataType>
 							<Reference type="BUSINESS_TERM">OP-T77-009</Reference>
 							<Value type="EXAMPLE">Gate 34</Value>
-							
+
 						</Element>
 					</Element>
 					<Element cardinality="0..1">
@@ -377,7 +378,7 @@
 							subtracting item price discount.</Description>
 						<DataType>Price amount</DataType>
 						<Reference type="BUSINESS_TERM">tir77-032</Reference>
-						
+
 						<Attribute>
 							<Term>currencyID</Term>
 							<Description>Currency identifier</Description>
@@ -419,7 +420,7 @@
 						<Description>The number of item units requested by the buyer. UOM should be stated by using recommendation 20</Description>
 						<DataType>Quantity</DataType>
 						<Reference type="BUSINESS_TERM">tir77-017</Reference>
-						
+
 						<Attribute>
 							<Term>unitCode</Term>
 							<Name>Batch quantity unit of measure</Name>
@@ -441,7 +442,7 @@
 					<Description>A free text detailed description of an item.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir77-039</Reference>
-					
+
 					<Value type="EXAMPLE">Tissue paper, white, pack of 100</Value>
 				</Element>
 				<!-- </Element> -->
@@ -452,7 +453,7 @@
                         provided.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir77-021</Reference>
-					
+
 					<Value type="EXAMPLE">100 tissue paper, white</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -465,7 +466,7 @@
                             item.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir77-022</Reference>
-						
+
 						<Value type="EXAMPLE">3249834</Value>
 					</Element>
 				</Element>
@@ -478,7 +479,7 @@
 						<Description>The manufacturer's identifier for the item.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir77-024</Reference>
-						
+
 						<Value type="EXAMPLE">m97965</Value>
 					</Element>
 				</Element>
@@ -492,7 +493,7 @@
                             the item with its identification according to a standard system.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir77-023</Reference>
-						
+
 						<Attribute>
 							<Term>schemeID</Term>
 							<Name>Item standard identifier identification scheme identifier</Name>
@@ -513,7 +514,7 @@
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir77-036</Reference>
 						<Reference type="BUSINESS_TERM">OP-T77-003</Reference>
-						
+
 						<Value type="EXAMPLE">23423</Value>
 					</Element>
 					<Element cardinality="0..1">
@@ -535,7 +536,7 @@
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir77-037</Reference>
 						<Reference type="BUSINESS_TERM">OP-T77-004</Reference>
-						
+
 						<Value type="EXAMPLE">Product image</Value>
 					</Element>
 					<Element cardinality="0..1">
@@ -593,7 +594,7 @@
 						<DataType>Code</DataType>
 						<Reference type="CODE_LIST">UNCL7143</Reference>
 						<Reference type="BUSINESS_TERM">tir77-028</Reference>
-						
+
 						<Attribute>
 							<Term>listID</Term>
 							<Name>Item classification identifier identification scheme identifier</Name>
@@ -629,7 +630,7 @@
 						<Description>The VAT category code for the item.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir77-034</Reference>
-						
+
 						<Reference type="CODE_LIST">UNCL5305</Reference>
 						<Value type="EXAMPLE">Z</Value>
 					</Element>
@@ -641,7 +642,7 @@
                             as percentage that applies to the item.</Description>
 						<DataType>Percentage</DataType>
 						<Reference type="BUSINESS_TERM">tir77-035</Reference>
-						
+
 						<Value type="EXAMPLE">0</Value>
 					</Element>
 					<Element>
@@ -671,7 +672,7 @@
 						<Reference type="BUSINESS_TERM">tir77-018</Reference>
 						<Reference type="BUSINESS_TERM">tir77-026</Reference>
 						<Reference type="BUSINESS_TERM">tir77-043</Reference>
-						
+
 						<Value type="EXAMPLE">Color</Value>
 					</Element>
 					<Element cardinality="0..1">
@@ -685,7 +686,7 @@
 							<Term>listID</Term>
 							<Name>Name code list id.</Name>
 							<Description>An identifier for the code list used for the Name code, this is bilaterally agreed.</Description>
-						
+
 						</Attribute>
 					</Element>
 					<Element cardinality="0..1">
@@ -730,7 +731,7 @@
 							<Description>The name of the manufacturer of the item.</Description>
 							<DataType>Text</DataType>
 							<Reference type="BUSINESS_TERM">tir77-025</Reference>
-							
+
 							<Value type="EXAMPLE">Manufacturer</Value>
 						</Element>
 					</Element>
@@ -745,7 +746,7 @@
 						<Description>The name of the product label.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir77-030</Reference>
-						
+
 						<Value type="EXAMPLE">Blue Angel</Value>
 					</Element>
 					<Element>
@@ -763,7 +764,7 @@
                             etc.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir77-031</Reference>
-						
+
 						<Value type="EXAMPLE">Environmental</Value>
 					</Element>
 					<Element cardinality="0..n">
@@ -786,7 +787,7 @@
                                     use the value NA.</Description>
 								<DataType>Text</DataType>
 								<Reference type="BUSINESS_TERM">tir77-030</Reference>
-								
+
 								<Value type="EXAMPLE">NA</Value>
 							</Element>
 						</Element>

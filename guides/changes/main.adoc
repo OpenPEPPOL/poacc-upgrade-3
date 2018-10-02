@@ -11,6 +11,8 @@
 
 :leveloffset: +1
 
+include::checklist.adoc[]
+
 include::structure.adoc[]
 
 include::vat-alignment.adoc[]

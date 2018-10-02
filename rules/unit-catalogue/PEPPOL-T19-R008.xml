@@ -26,7 +26,7 @@
 
 	<test id="2">
 		<assert>
-			<warning>PEPPOL-T19-R008</warning>
+			<success>PEPPOL-T19-R008</success>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -44,7 +44,7 @@
 
 	<test id="3">
 		<assert>
-			<warning>PEPPOL-T19-R008</warning>
+			<error>PEPPOL-T19-R008</error>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
