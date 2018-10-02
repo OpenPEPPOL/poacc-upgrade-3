@@ -32,8 +32,8 @@
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cac:CatalogueLine>
-					<cbc:MinimumOrderQuantity unitCode="XPK">10</cbc:MinimumOrderQuantity>
-					<cbc:MaximumOrderQuantity unitCode="XPK">12</cbc:MaximumOrderQuantity>
+					<cbc:MinimumOrderQuantity unitCode="C62">10</cbc:MinimumOrderQuantity>
+					<cbc:MaximumOrderQuantity unitCode="C62">12</cbc:MaximumOrderQuantity>
 			</cac:CatalogueLine>
 
 		</Catalogue>
@@ -48,7 +48,7 @@
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cac:CatalogueLine>
-					<cbc:MinimumOrderQuantity unitCode="XPK">10</cbc:MinimumOrderQuantity>
+					<cbc:MinimumOrderQuantity unitCode="C62">10</cbc:MinimumOrderQuantity>
 			</cac:CatalogueLine>
 
 		</Catalogue>
@@ -63,7 +63,7 @@
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cac:CatalogueLine>
-					<cbc:MaximumOrderQuantity unitCode="XPK">12</cbc:MaximumOrderQuantity>
+					<cbc:MaximumOrderQuantity unitCode="C62">12</cbc:MaximumOrderQuantity>
 			</cac:CatalogueLine>
 
 		</Catalogue>
@@ -78,8 +78,8 @@
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cac:CatalogueLine>
-					<cbc:MinimumOrderQuantity unitCode="XPK">10</cbc:MinimumOrderQuantity>
-					<cbc:MaximumOrderQuantity unitCode="XPK">9</cbc:MaximumOrderQuantity>
+					<cbc:MinimumOrderQuantity unitCode="C62">10</cbc:MinimumOrderQuantity>
+					<cbc:MaximumOrderQuantity unitCode="C62">9</cbc:MaximumOrderQuantity>
 			</cac:CatalogueLine>
 
 		</Catalogue>
