@@ -57,15 +57,15 @@
 	
     <rule context="cac:CatalogueLine/cac:RequiredItemLocationQuantity">
         <assert id="PEPPOL-T19-R008"
-                test="not(cbc:MaximumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= 0"
+                test="not(cbc:MaximumQuantity) or number(cbc:MaximumQuantity) &gt;= 0"
                 flag="fatal">Maximum quantity SHALL be greater than zero</assert>
 
         <assert id="PEPPOL-T19-R009"
-                test="not(cbc:MinimumOrderQuantity) or number(cbc:MinimumOrderQuantity) &gt;= 0"
+                test="not(cbc:MinimumQuantity) or number(cbc:MinimumQuantity) &gt;= 0"
                 flag="fatal">Minimum quantity SHALL be greater than zero</assert>
 
         <assert id="PEPPOL-T19-R010"
-                test="not(cbc:MaximumOrderQuantity) or not(cbc:MinimumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= number(cbc:MinimumOrderQuantity)"
+                test="not(cbc:MaximumQuantity) or not(cbc:MinimumQuantity) or number(cbc:MaximumQuantity) &gt;= number(cbc:MinimumQuantity)"
                 flag="fatal">Maximum quantity SHALL be greater or equal to the Minimum quantity</assert>
     </rule>
 
