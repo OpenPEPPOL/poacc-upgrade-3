@@ -2,12 +2,11 @@
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t01-base-3.0">
 	<assert>
 		<scope>PEPPOL-T01-R031</scope>
-		<description>Verify that VAT rate is higher than zero(0) if VAT category is "S" (standard
-			rate)</description>
+		<description>Verify that ProfileID is correct</description>
 	</assert>
 	<test id="1">
 		<assert>
-			<success>PEPPOL-T01-R030</success>
+			<success>PEPPOL-T01-R031</success>
 		</assert>
 		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"

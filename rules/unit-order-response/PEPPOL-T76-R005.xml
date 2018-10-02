@@ -7,24 +7,26 @@
 	</assert>
 	
 	<test>
+		
 	<assert>		
 		<success>PEPPOL-T76-R005</success>
 	</assert>
-	<OrderResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-		xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-		xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2">
 		
-		<cbc:DocumentCurrencyCode>NOK</cbc:DocumentCurrencyCode>
-		
-		<cac:OrderLine>
-			<cac:LineItem>
-				<cac:Price>
-					<cbc:PriceAmount currencyID="NOK">59.12</cbc:PriceAmount>
-				</cac:Price>
-			</cac:LineItem>
-		</cac:OrderLine>
-		
-	</OrderResponse>
+		<OrderResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2">
+			
+			<cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+			
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cac:Price>
+						<cbc:PriceAmount currencyID="EUR"/>
+					</cac:Price>
+				</cac:LineItem>
+			</cac:OrderLine>
+			
+		</OrderResponse>
 	</test>
 	
 	<test>
