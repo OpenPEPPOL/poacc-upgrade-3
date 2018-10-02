@@ -16,10 +16,8 @@
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cac:CatalogueLine>
-				<cac:RequiredItemLocationQuantity>
-					<cbc:MinimumQuantity unitCode="XPK">10</cbc:MinimumQuantity>
-					<cbc:MaximumQuantity unitCode="XPK">10</cbc:MaximumQuantity>
-				</cac:RequiredItemLocationQuantity>
+					<cbc:MinimumOrderQuantity unitCode="XPK">10</cbc:MinimumOrderQuantity>
+					<cbc:MaximumOrderQuantity unitCode="XPK">10</cbc:MaximumOrderQuantity>
 			</cac:CatalogueLine>
 
 		</Catalogue>
@@ -34,10 +32,8 @@
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cac:CatalogueLine>
-				<cac:RequiredItemLocationQuantity>
-					<cbc:MinimumQuantity unitCode="XPK">10</cbc:MinimumQuantity>
-					<cbc:MaximumQuantity unitCode="XPK">12</cbc:MaximumQuantity>
-				</cac:RequiredItemLocationQuantity>
+					<cbc:MinimumOrderQuantity unitCode="XPK">10</cbc:MinimumOrderQuantity>
+					<cbc:MaximumOrderQuantity unitCode="XPK">12</cbc:MaximumOrderQuantity>
 			</cac:CatalogueLine>
 
 		</Catalogue>
@@ -52,9 +48,7 @@
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cac:CatalogueLine>
-				<cac:RequiredItemLocationQuantity>
-					<cbc:MinimumQuantity unitCode="XPK">10</cbc:MinimumQuantity>
-				</cac:RequiredItemLocationQuantity>
+					<cbc:MinimumOrderQuantity unitCode="XPK">10</cbc:MinimumOrderQuantity>
 			</cac:CatalogueLine>
 
 		</Catalogue>
@@ -69,9 +63,7 @@
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cac:CatalogueLine>
-				<cac:RequiredItemLocationQuantity>
-					<cbc:MaximumQuantity unitCode="XPK">12</cbc:MaximumQuantity>
-				</cac:RequiredItemLocationQuantity>
+					<cbc:MaximumOrderQuantity unitCode="XPK">12</cbc:MaximumOrderQuantity>
 			</cac:CatalogueLine>
 
 		</Catalogue>
@@ -86,10 +78,8 @@
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cac:CatalogueLine>
-				<cac:RequiredItemLocationQuantity>
-					<cbc:MinimumQuantity unitCode="XPK">10</cbc:MinimumQuantity>
-					<cbc:MaximumQuantity unitCode="XPK">9</cbc:MaximumQuantity>
-				</cac:RequiredItemLocationQuantity>
+					<cbc:MinimumOrderQuantity unitCode="XPK">10</cbc:MinimumOrderQuantity>
+					<cbc:MaximumOrderQuantity unitCode="XPK">9</cbc:MaximumOrderQuantity>
 			</cac:CatalogueLine>
 
 		</Catalogue>

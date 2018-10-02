@@ -55,7 +55,7 @@
         </assert>
     </rule>
 	
-    <rule context="cac:CatalogueLine/cac:RequiredItemLocationQuantity">
+    <rule context="cac:CatalogueLine">
         <assert id="PEPPOL-T19-R008"
                 test="not(cbc:MaximumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= 0"
                 flag="fatal">Maximum quantity SHALL be greater than zero</assert>
