@@ -62,8 +62,8 @@
     - [x] Syntax, add tir ids to new business terms "tirnn=pxxx"
 
 == Work schedule
-    - [x] Finish cleaning up schematrons before end Friday - Siw, Georg, Iacopo
-    - [x] Finish unit test files before end Friday - Charlotte, Georg
-    - [ ] Verify testing, Monday - Siw, Georg.
-    - [ ] Prepare package for distribution, Tuesday - Siw, Georg
-    - [ ] Initiate review period, Wednesday - Georg
+  - [x] Finish cleaning up schematrons before end Friday - Siw, Georg, Iacopo
+  - [x] Finish unit test files before end Friday - Charlotte, Georg
+  - [ ] Verify testing, Monday - Siw, Georg.
+  - [ ] Prepare package for distribution, Tuesday - Siw, Georg
+  - [ ] Initiate review period, Wednesday - Georg
