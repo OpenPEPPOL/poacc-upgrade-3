@@ -1153,66 +1153,74 @@
 						</Element>
 					</Element>
 				</Element>
-				<Element cardinality="0..1">
-					<Term>cac:Shipment</Term>
-					<Element>
+			
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:Shipment</Term>
+				<Element>
+					<Term>cbc:ID</Term>
+				</Element>
+				<Element cardinality="0..n">
+					<Term>cac:TransportHandlingUnit</Term>
+					<Element cardinality="0..1">
 						<Term>cbc:ID</Term>
+						<Name>Handling unit identifier</Name>
+						<Description>Identifies the transport handling unit.</Description>
+						<Reference type="BUSINESS_TERM">tir16-061</Reference>
 					</Element>
-					<Element cardinality="0..n">
-						<Term>cac:TransportHandlingUnit</Term>
 						<Element cardinality="0..1">
-							<Term>cbc:ID</Term>
-							<Name>Handling unit identifier</Name>
-							<Description>Identifies the transport handling unit.</Description>
-							<Reference type="BUSINESS_TERM">tir16-061</Reference>
-							<Element cardinality="0..1">
-								<Term>cbc:TransportHandlingUnitTypeCode</Term>
-								<Name>Handling unit type</Name>
-								<Description>The type of packaging that represent the handling unit, such
-                            as box, pallet, container etx.</Description>
-								<Reference type="BUSINESS_TERM">tir16-085</Reference>
-								<Reference type="CODE_LIST">UNECERec21</Reference>
-							</Element>
-							<Element cardinality="0..1">
-								<Term>cbc:HazardousRiskIndicator</Term>
-								<Name>Handling unit hazardous indicator</Name>
-								<Description>Indicates whether the shipment contains hazardous
-                            materials.</Description>
-								<Reference type="BUSINESS_TERM">tir16-062</Reference>
-							</Element>
-							<Element cardinality="0..n">
-								<Term>cbc:ShippingMarks</Term>
-								<Name>Handing unit shipping marks</Name>
-								<Description>Free-form description of the marks and numbers on a transport
-                            unit or package.</Description>
-								<Reference type="BUSINESS_TERM">tir16-064</Reference>
-							</Element>
-							<Element cardinality="0..n">
-								<Term>cac:MeasurementDimension</Term>
-								<Element>
-									<Term>cbc:AttributeID</Term>
-									<Name>Attribute identifier</Name>
-									<Reference type="CODE_LIST">UNCL6313-T16</Reference>
-								</Element>
-								<Element cardinality="0..1">
-									<Term>cbc:Measure</Term>
-									<Name>Handling unit gross weightHandling unit gross volume</Name>
-									<Description>Handling gross weight, including packaging as dispatched
-                                    by dispatching party.Handling gross volume, including packaging as
-                                    dispatched by dispatching party.</Description>
-									<Reference type="BUSINESS_TERM">tir16-086tir16-087</Reference>
-									<Attribute>
-										<Term>unitCode</Term>
-										<Name>Ordered quantity unit of measure</Name>
-										<Description>The unit of measure that applies to the ordered quantity.</Description>
-										<DataType>Code</DataType>
-										<Reference type="CODE_LIST">UNECERec20</Reference>
-										<Value type="EXAMPLE">C62</Value>
-									</Attribute>
-								</Element>
-							</Element>
+							<Term>cbc:TransportHandlingUnitTypeCode</Term>
+							<Name>Handling unit type</Name>
+							<Description>The type of packaging that represent the handling unit, such
+								as box, pallet, container etx.</Description>
+							<Reference type="BUSINESS_TERM">tir16-085</Reference>
+							<Reference type="CODE_LIST">UNECERec21</Reference>
 						</Element>
-					</Element>
+						
+						<Element cardinality="0..1">
+							<Term>cbc:HazardousRiskIndicator</Term>
+							<Name>Handling unit hazardous indicator</Name>
+							<Description>Indicates whether the shipment contains hazardous
+								materials.</Description>
+							<Reference type="BUSINESS_TERM">tir16-062</Reference>
+						</Element>
+						
+						<Element cardinality="0..n">
+							<Term>cbc:ShippingMarks</Term>
+							<Name>Handing unit shipping marks</Name>
+							<Description>Free-form description of the marks and numbers on a transport
+								unit or package.</Description>
+							<Reference type="BUSINESS_TERM">tir16-064</Reference>
+						</Element>
+						
+						<Element cardinality="0..n">
+							<Term>cac:MeasurementDimension</Term>
+							<Element>
+								<Term>cbc:AttributeID</Term>
+								<Name>Attribute identifier</Name>
+								<Reference type="CODE_LIST">UNCL6313-T16</Reference>
+							</Element>
+							
+							<Element cardinality="0..1">
+								<Term>cbc:Measure</Term>
+								<Name>Handling unit gross weightHandling unit gross volume</Name>
+								<Description>Handling gross weight, including packaging as dispatched
+									by dispatching party.Handling gross volume, including packaging as
+									dispatched by dispatching party.</Description>
+								<Reference type="BUSINESS_TERM">tir16-086tir16-087</Reference>
+								<Attribute>
+									<Term>unitCode</Term>
+									<Name>Ordered quantity unit of measure</Name>
+									<Description>The unit of measure that applies to the ordered quantity.</Description>
+									<DataType>Code</DataType>
+									<Reference type="CODE_LIST">UNECERec20</Reference>
+									<Value type="EXAMPLE">C62</Value>
+								</Attribute>
+							</Element>
+							
+						</Element>
+						
+					
 				</Element>
 			</Element>
 		</Element>
