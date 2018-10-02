@@ -17,7 +17,7 @@
 	<cbc:ProfileID>urn:www.cenbii.eu:profile:bii28:ver2.0</cbc:ProfileID>
 	<cbc:ID>34</cbc:ID>
 	<cbc:SalesOrderID>112233</cbc:SalesOrderID>
-	<cbc:IssueDate>2012-10-01</cbc:IssueDate>
+	<cbc:IssueDate>2018-09-01</cbc:IssueDate>
 	<cbc:IssueTime>12:30:00</cbc:IssueTime>
 	<cbc:OrderTypeCode>220</cbc:OrderTypeCode>
 	<cbc:Note>Information text for the whole order</cbc:Note>
@@ -60,7 +60,7 @@
 		<cac:Party>
 			<cbc:EndpointID schemeID="0082">9311867525</cbc:EndpointID>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="0088">7080000985134</cbc:ID>
+				<cbc:ID schemeID="0088">7300010000001</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
 				<cbc:Name>Helseforetak</cbc:Name>
@@ -105,7 +105,7 @@
 		<cac:Party>
 			<cbc:EndpointID schemeID="0082">938752655</cbc:EndpointID>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="0088">7080000374200</cbc:ID>
+				<cbc:ID schemeID="0088">7300010000001</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
 				<cbc:Name>Medical</cbc:Name>
@@ -143,7 +143,7 @@
 	<cac:OriginatorCustomerParty>
 		<cac:Party>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="0088">7838000000012</cbc:ID>
+				<cbc:ID schemeID="0088">7300010000001</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
 				<cbc:Name>Helseavdeling</cbc:Name>
@@ -159,7 +159,7 @@
 		<cac:Party>
 			<cbc:EndpointID schemeID="0082">9311867625</cbc:EndpointID>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="0088">7838000000013</cbc:ID>
+				<cbc:ID schemeID="0088">7300010000001</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
 				<cbc:Name>Accounting</cbc:Name>
@@ -347,9 +347,7 @@
 				<cac:CommodityClassification>
 					<cbc:ItemClassificationCode listID="MP" listVersionID="19.0501">12345678</cbc:ItemClassificationCode>
 				</cac:CommodityClassification>
-				<cac:TransactionConditions>
-					<cbc:ActionCode>CT</cbc:ActionCode>
-				</cac:TransactionConditions>
+		
 				<cac:ClassifiedTaxCategory>
 					<cbc:ID>S</cbc:ID>
 					<cbc:Percent>25</cbc:Percent>
@@ -360,7 +358,7 @@
 				<cac:AdditionalItemProperty>
 					<cbc:Name>Length</cbc:Name>
 					<cbc:Value>30 mm</cbc:Value>
-					<cbc:ValueQuantity unitCode="MMT">30</cbc:ValueQuantity>
+					<cbc:ValueQuantity unitCode="C62">30</cbc:ValueQuantity>
 					<cbc:ValueQualifier>descr</cbc:ValueQualifier>
 				</cac:AdditionalItemProperty>
 				<cac:ItemInstance>
