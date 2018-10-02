@@ -40,7 +40,7 @@
 			<cac:OrderLine>
 				<cac:LineItem>
 					<cac:Price>
-						<cbc:PriceAmount currencyID="GBP">59.12</cbc:PriceAmount>
+						<cbc:PriceAmount currencyID="EUR"/>
 					</cac:Price>
 				</cac:LineItem>
 			</cac:OrderLine>

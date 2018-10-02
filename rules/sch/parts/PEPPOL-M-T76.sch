@@ -2,9 +2,9 @@
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
 
     <let name="documentCurrencyCode" value="/ubl:OrderReponse/cbc:DocumentCurrencyCode"/>
-
+    
     <!-- Price -->
-    <rule context="cbc:PriceAmount">
+    <rule context="cac:OrderLine/cac:LineItem/cac:Price/cbc:PriceAmount">
         <assert id="PEPPOL-T76-R005"
             test="not(@currencyID) or @currencyID = $documentCurrencyCode"
             flag="fatal">An order response SHALL be stated in a single currency</assert>
