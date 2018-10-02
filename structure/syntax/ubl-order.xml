@@ -32,7 +32,7 @@
 				transaction appears.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir01-002</Reference>
-			<Value type="FIXED">urn:fdc:peppol.eu:poacc:bis28a:ordering_only:bis3-1.0</Value>
+			<Value type="EXAMPLE">Either urn:fdc:peppol.eu:poacc:bis03a:order_only:bis3-1.0 or urn:fdc:peppol.eu:poacc:bis28a:ordering_only:bis3-1.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>
