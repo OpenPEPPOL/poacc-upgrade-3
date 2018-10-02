@@ -1373,7 +1373,7 @@
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-036</Reference>
 				</Element>
-				<Element cardinality="0..1">
+				<Element>
 					<Term>cbc:Name</Term>
 					<Name>Item name</Name>
 					<Description>A short name for an item.</Description>
@@ -1825,7 +1825,7 @@
 						<Reference type="BUSINESS_TERM">tir19-p037</Reference>
 						<Reference type="BUSINESS_TERM">tir19-p017</Reference>
 						<Reference type="BUSINESS_TERM">tir19-p016</Reference>
-						
+
 						<Attribute>
 							<Term>unitCode</Term>
 							<Name>Measure unit code</Name>
