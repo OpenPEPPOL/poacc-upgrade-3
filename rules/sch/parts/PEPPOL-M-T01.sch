@@ -178,7 +178,7 @@
                 test="(cac:AllowanceCharge/cbc:BaseAmount) &gt;= 0 or not(exists(cac:AllowanceCharge/cbc:BaseAmount))"
                 flag="fatal">The Item gross price SHALL NOT be negative.</assert>
             <assert  id="PEPPOL-T01-R033"
-                    test="number(cac:AllowanceCharge/cbc:Amount) &gt;= 0"
+                    test="number(cac:AllowanceCharge/cbc:Amount) &gt;= 0 or not(exists(cac:AllowanceCharge/cbc:Amount))"
                     flag="fatal">Allowance or charge amounts SHALL NOT be negative.</assert>
     </rule>
 

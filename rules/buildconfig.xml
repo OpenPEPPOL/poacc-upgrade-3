@@ -3,6 +3,8 @@
 
   <package url="http://docs.peppol.eu/poacc/upgrade/3.0/">PEPPOL BIS Upgrade 3.0</package>
 
+
+  <testfolder>examples</testfolder>
   <testfolder>unit-catalogue</testfolder>
   <testfolder>unit-despatch-advice</testfolder>
   <testfolder>unit-invoice-response</testfolder>
