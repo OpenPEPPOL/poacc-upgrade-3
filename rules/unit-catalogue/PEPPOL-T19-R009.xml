@@ -16,9 +16,7 @@
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cac:CatalogueLine>
-				<cac:RequiredItemLocationQuantity>
-					<cbc:MinimumQuantity unitCode="XPK">10</cbc:MinimumQuantity>
-				</cac:RequiredItemLocationQuantity>
+					<cbc:MinimumOrderQuantity unitCode="XPK">10</cbc:MinimumOrderQuantity>
 			</cac:CatalogueLine>
 
 		</Catalogue>
@@ -33,9 +31,7 @@
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cac:CatalogueLine>
-				<cac:RequiredItemLocationQuantity>
-					<cbc:MinimumQuantity unitCode="XPK">0</cbc:MinimumQuantity>
-				</cac:RequiredItemLocationQuantity>
+					<cbc:MinimumOrderQuantity unitCode="XPK">0</cbc:MinimumOrderQuantity>
 			</cac:CatalogueLine>
 
 		</Catalogue>
@@ -50,9 +46,7 @@
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
 			<cac:CatalogueLine>
-				<cac:RequiredItemLocationQuantity>
-					<cbc:MinimumQuantity unitCode="XPK">-1</cbc:MinimumQuantity>
-				</cac:RequiredItemLocationQuantity>
+					<cbc:MinimumOrderQuantity unitCode="XPK">-1</cbc:MinimumOrderQuantity>
 			</cac:CatalogueLine>
 
 		</Catalogue>
