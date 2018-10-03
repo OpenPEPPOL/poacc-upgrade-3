@@ -65,7 +65,7 @@
                 flag="fatal">Minimum quantity SHALL be greater than zero</assert>
 
         <assert id="PEPPOL-T19-R010"
-                test="not(cbc:MaximumOrderQuantity) or not(cbc:MinimumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= number(cbc:MinimumOrderQuantity)"
+                test="number(cbc:MaximumOrderQuantity) &gt;= number(cbc:MinimumOrderQuantity)"
                 flag="fatal">Maximum quantity SHALL be greater or equal to the Minimum quantity</assert>
     </rule>
 
