@@ -3,11 +3,6 @@
 
 	<let name="documentCurrencyCode" value="/ubl:OrderResponse/cbc:DocumentCurrencyCode"/>
 
-	<rule context="cac:Price">
-		<assert id="PEPPOL-T110-R001"
-				test="number(cbc:PriceAmount) &gt;=0"
-				flag="fatal">Prices of items SHALL not be negative.</assert>
-	</rule>
 
 	<rule context="cac:Item">
 		<assert id= "PEPPOL-T110-R002"
@@ -83,25 +78,28 @@
 	</rule>
 
 	<!-- Allowance/Charge -->
-	<rule context="cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)]">
+	<rule context="/ubl:OrderResponse/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)]">
 		<assert id="PEPPOL-T110-R015"
 				test="false()"
 				flag="fatal">Allowance/charge base amount SHALL be provided when allowance/charge percentage is provided.</assert>
 	</rule>
 
-	<rule context="cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount]">
+	<rule context="/ubl:OrderResponse/cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount]">
 		<assert id="PEPPOL-T110-R016"
 				test="false()"
 				flag="fatal">Allowance/charge percentage SHALL be provided when allowance/charge base amount is provided.</assert>
 	</rule>
 
-	<rule context="//ubl:OrderResponse/cac:AllowanceCharge">
+	<rule context="/ubl:OrderResponse/cac:AllowanceCharge">
 		<assert id="PEPPOL-T110-R017"
 				test="not(cbc:MultiplierFactorNumeric and cbc:BaseAmount) or u:slack(if (cbc:Amount) then cbc:Amount else 0, (xs:decimal(cbc:BaseAmount) * xs:decimal(cbc:MultiplierFactorNumeric)) div 100, 0.02)"
 				flag="fatal">Allowance/charge amount SHALL equal base amount * percentage/100 if base amount and percentage exists</assert>
 		<assert id="PEPPOL-T110-R018"
 				test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)"
-				flag="fatal">Each document or line level allowance SHALL have an allowance reason text or an allowance reason code.</assert>
+				flag="fatal">Each document level allowance SHALL have an allowance reason text or an allowance reason code.</assert>
+		<assert  id="PEPPOL-T110-R021"
+			test="number(cbc:Amount) &gt;= 0"
+			flag="fatal">Document level allowance or charge amounts SHALL NOT be negative.</assert>
 	</rule>
 
 	<rule context="cac:TaxCategory | cac:ClassifiedTaxCategory">
@@ -111,6 +109,20 @@
 		<assert id="PEPPOL-T110-R020"
 				test="not(normalize-space(cbc:ID)='S') or (cbc:Percent) &gt; 0"
 				flag="fatal">When VAT category code is "Standard rated" (S) the VAT rate SHALL be greater than zero.</assert>
+	</rule>
+	
+	<!-- Price -->
+	<rule context="cac:Price">
+		<assert id="PEPPOL-T110-R001"
+			test="number(cbc:PriceAmount) &gt;=0"
+			flag="fatal">Each order agreement line item net price SHALL not be negative
+		</assert>
+		<assert  id="PEPPOL-T110-R022"
+			test="(cac:AllowanceCharge/cbc:BaseAmount) &gt;= 0 or not(exists(cac:AllowanceCharge/cbc:BaseAmount))"
+			flag="fatal">The Item gross price SHALL NOT be negative.</assert>
+		<assert  id="PEPPOL-T110-R023"
+			test="number(cac:AllowanceCharge/cbc:Amount) &gt;= 0 or not(exists(cac:AllowanceCharge/cbc:Amount))"
+			flag="fatal">Allowance or charge price amounts SHALL NOT be negative.</assert>
 	</rule>
 
 </pattern>

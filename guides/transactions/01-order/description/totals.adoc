@@ -69,9 +69,6 @@ greater than or equal to 0.5 is rounded up, all other values are rounded down.
 
 The element `cac:AnticipatedMonetaryTotal/cbc:PayableRoundingAmount` is used for this purpose and is specified on the header level.
 
-This value must be added to the value in `cac:AnticipatedMonetaryTotal/cbc:TaxInclusiveAmount`
-#Error in validation rule?#
-
 Example: Amount 999.81 rounded to 1000.
 PayableRounding Amount = 0.19.
 

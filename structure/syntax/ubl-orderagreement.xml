@@ -19,7 +19,7 @@
                 version of the specification as well as any customizations applied.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir110-009</Reference>
-			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrns110:ver1.0:extended:urn:www.peppol.eu:bis:peppol42a:ver1.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns110a:order_agreement:bis3-1.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
@@ -28,7 +28,7 @@
                 It enables the buyer to process the document in an appropriate way.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir110-008</Reference>			
-			<Value type="FIXED">urn:www.cenbii.eu:profile:bii42:ver1.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:bis42a:order_agreement:bis3-1.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>
@@ -1591,12 +1591,12 @@
 						<Term>cac:TransactionConditions</Term>
 						<Name>Contracted item</Name>
 						<Element>
-							<Term>cbc:ActionCode</Term>
+							<Term>cbc:ID</Term>
 							<Name>Contracted item indicator</Name>
 							<Description>The code CT indicates that the item is offered in accordance to the referenced contract.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir110-094</Reference>
-							<Value type="EXAMPLE">CT</Value>
+							<Value type="FIXED">CT</Value>
 						</Element>
 					</Element>
 					<Element cardinality="0..1">

@@ -13,8 +13,8 @@
 <Order xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2"
 	   xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 	   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns001:ver2.0:extended:urn:www.peppol.eu:bis:peppol28a:ver1.0</cbc:CustomizationID>
-	<cbc:ProfileID>urn:www.cenbii.eu:profile:bii28:ver2.0</cbc:ProfileID>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns01a:order:bis3-1.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis03a:order_only:bis3-1.0</cbc:ProfileID>
 	<cbc:ID>34</cbc:ID>
 	<cbc:SalesOrderID>112233</cbc:SalesOrderID>
 	<cbc:IssueDate>2018-09-01</cbc:IssueDate>
@@ -272,17 +272,17 @@
 		</cac:TaxCategory>
 	</cac:AllowanceCharge>
 	<cac:TaxTotal>
-		<cbc:TaxAmount currencyID="NOK">1468.13</cbc:TaxAmount>
+		<cbc:TaxAmount currencyID="NOK">100.00</cbc:TaxAmount>
 	</cac:TaxTotal>
 	<cac:AnticipatedMonetaryTotal>
 		<cbc:LineExtensionAmount currencyID="NOK">6525.00</cbc:LineExtensionAmount>
 		<cbc:TaxExclusiveAmount currencyID="NOK">6272.50</cbc:TaxExclusiveAmount>
-		<cbc:TaxInclusiveAmount currencyID="NOK">7740.63</cbc:TaxInclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="NOK">6372.50</cbc:TaxInclusiveAmount>
 		<cbc:AllowanceTotalAmount currencyID="NOK">652.50</cbc:AllowanceTotalAmount>
 		<cbc:ChargeTotalAmount currencyID="NOK">400.00</cbc:ChargeTotalAmount>
 		<cbc:PrepaidAmount currencyID="NOK">10.00</cbc:PrepaidAmount>
-		<cbc:PayableRoundingAmount currencyID="NOK">0.37</cbc:PayableRoundingAmount>
-		<cbc:PayableAmount currencyID="NOK">7731.00</cbc:PayableAmount>
+		<cbc:PayableRoundingAmount currencyID="NOK">0.50</cbc:PayableRoundingAmount>
+		<cbc:PayableAmount currencyID="NOK">6363</cbc:PayableAmount>
 	</cac:AnticipatedMonetaryTotal>
 	<cac:OrderLine>
 		<cbc:Note>Freetext note on line 1</cbc:Note>

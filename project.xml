@@ -63,7 +63,7 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-invoiceresponse.xml</Path>
-        <Title>UBL Invoice Response</Title>
+        <Title>PEPPOL BIS Invoice Response</Title>
     </Resource>
     
     <!-- Rules -->

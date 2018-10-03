@@ -13,8 +13,8 @@
 <Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 		   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 		   xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
-	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns019:ver2.0:extended:urn:www.peppol.eu:bis:peppol1a:ver2.0</cbc:CustomizationID>
-	<cbc:ProfileID>urn:www.cenbii.eu:profile:bii01:ver2.0</cbc:ProfileID>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns19a:catalogue:bis3-1.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis01a:catalogue_only:bis3-1.0</cbc:ProfileID>
 	<cbc:ID>1387</cbc:ID>
 	<cbc:ActionCode>Add</cbc:ActionCode>
 	<cbc:Name>Spring Catalogue</cbc:Name>
@@ -98,7 +98,7 @@
 		<cac:Party>
 			<cbc:EndpointID schemeID="0082">938752655</cbc:EndpointID>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="0088">7080000374200</cbc:ID>
+				<cbc:ID schemeID="0088">5790000435951</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
 				<cbc:Name>Medical</cbc:Name>
@@ -127,7 +127,7 @@
 		<cac:Party>
 			<cbc:EndpointID schemeID="0082">938752655</cbc:EndpointID>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="0088">7080000374200</cbc:ID>
+				<cbc:ID schemeID="0088">5790000435951</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
 				<cbc:Name>Medical</cbc:Name>
@@ -146,41 +146,37 @@
 		<cbc:ID>1</cbc:ID>
 		<cbc:ActionCode>Update</cbc:ActionCode>
 		<cbc:OrderableIndicator>true</cbc:OrderableIndicator>
-		<cbc:OrderableUnit>XPK</cbc:OrderableUnit>
+		<cbc:OrderableUnit>LBR</cbc:OrderableUnit>
 		<cbc:ContentUnitQuantity unitCode="C62">10</cbc:ContentUnitQuantity>
 		<cbc:OrderQuantityIncrementNumeric>1</cbc:OrderQuantityIncrementNumeric>
-		<cbc:MinimumOrderQuantity unitCode="XPK">1</cbc:MinimumOrderQuantity>
-		<cbc:MaximumOrderQuantity unitCode="XPK">100</cbc:MaximumOrderQuantity>
+		<cbc:MinimumOrderQuantity unitCode="LBR">1</cbc:MinimumOrderQuantity>
+		<cbc:MaximumOrderQuantity unitCode="LBR">100</cbc:MaximumOrderQuantity>
 		<cbc:WarrantyInformation>text</cbc:WarrantyInformation>
 		<cbc:PackLevelCode>TU</cbc:PackLevelCode>
 		<cac:LineValidityPeriod>
 			<cbc:StartDate>2018-09-26</cbc:StartDate>
-			<cbc:EndDate>2019-09-26</cbc:EndDate>
+			<cbc:EndDate>2019-08-31</cbc:EndDate>
 		</cac:LineValidityPeriod>
 		<cac:ItemComparison>
 			<cbc:PriceAmount currencyID="EUR">9.00</cbc:PriceAmount>
-			<cbc:Quantity unitCode="XPK">1</cbc:Quantity>
+			<cbc:Quantity unitCode="LBR">1</cbc:Quantity>
 		</cac:ItemComparison>
 		<cac:ComponentRelatedItem>
 			<cbc:ID>2345</cbc:ID>
-			<cbc:Quantity unitCode="XPK">1</cbc:Quantity>
+			<cbc:Quantity unitCode="LBR">1</cbc:Quantity>
 		</cac:ComponentRelatedItem>
 		<cac:AccessoryRelatedItem>
 			<cbc:ID>54584</cbc:ID>
-			<cbc:Quantity unitCode="XPK">1</cbc:Quantity>
+			<cbc:Quantity unitCode="LBR">1</cbc:Quantity>
 		</cac:AccessoryRelatedItem>
 		<cac:RequiredRelatedItem>
 			<cbc:ID>5564540</cbc:ID>
-			<cbc:Quantity unitCode="XPK">1</cbc:Quantity>
+			<cbc:Quantity unitCode="LBR">1</cbc:Quantity>
 		</cac:RequiredRelatedItem>
-		<cac:ReplacementRelatedItem>
-			<cbc:ID>5888</cbc:ID>
-			<cbc:Quantity unitCode="XPK">1</cbc:Quantity>
-		</cac:ReplacementRelatedItem>
 		<cac:RequiredItemLocationQuantity>
 			<cbc:LeadTimeMeasure unitCode="DAY">2</cbc:LeadTimeMeasure>
-			<cbc:MinimumQuantity unitCode="XPK">1</cbc:MinimumQuantity>
-			<cbc:MaximumQuantity unitCode="XPK">10</cbc:MaximumQuantity>
+			<cbc:MinimumQuantity unitCode="LBR">1</cbc:MinimumQuantity>
+			<cbc:MaximumQuantity unitCode="LBR">10</cbc:MaximumQuantity>
 			<cac:ApplicableTerritoryAddress>
 				<cbc:StreetName>Storgt. 12</cbc:StreetName>
 				<cbc:AdditionalStreetName>4. etasje</cbc:AdditionalStreetName>
@@ -207,7 +203,7 @@
 		</cac:RequiredItemLocationQuantity>
 		<cac:Item>
 			<cbc:Description>Photo copy paper 80g A4, package of 500 sheets.</cbc:Description>
-			<cbc:PackQuantity unitCode="XPK">1</cbc:PackQuantity>
+			<cbc:PackQuantity unitCode="LBR">1</cbc:PackQuantity>
 			<cbc:PackSizeNumeric>10</cbc:PackSizeNumeric>
 			<cbc:Name>Copy paper</cbc:Name>
 			<cbc:Keyword>text</cbc:Keyword>
@@ -223,8 +219,6 @@
 			</cac:StandardItemIdentification>
 			<cac:ItemSpecificationDocumentReference>
 				<cbc:ID>12345</cbc:ID>
-				<cbc:DocumentTypeCode></cbc:DocumentTypeCode>
-				<cbc:DocumentDescription></cbc:DocumentDescription>
 				<cac:Attachment>
 					<cbc:EmbeddedDocumentBinaryObject mimeCode="image/png" filename="image1.png">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
 					<cac:ExternalReference>
@@ -242,7 +236,7 @@
 				<cbc:ActionCode>CT</cbc:ActionCode>
 			</cac:TransactionConditions>
 			<cac:HazardousItem>
-				<cbc:UNDGCode>Code</cbc:UNDGCode>
+				<cbc:UNDGCode>ADR</cbc:UNDGCode>
 				<cbc:HazardClassID>Code</cbc:HazardClassID>
 			</cac:HazardousItem>
 			<cac:ClassifiedTaxCategory>
@@ -283,10 +277,10 @@
 			</cac:Certificate>
 			<cac:Dimension>
 				<cbc:AttributeID>text</cbc:AttributeID>
-				<cbc:Measure unitCode="MTR">0.1</cbc:Measure>
+				<cbc:Measure unitCode="LN">0.1</cbc:Measure>
 				<cbc:Description>text</cbc:Description>
-				<cbc:MinimumMeasure unitCode="MTR">0.1</cbc:MinimumMeasure>
-				<cbc:MaximumMeasure unitCode="MTR">0.15</cbc:MaximumMeasure>
+				<cbc:MinimumMeasure unitCode="LN">0.1</cbc:MinimumMeasure>
+				<cbc:MaximumMeasure unitCode="LN">0.15</cbc:MaximumMeasure>
 			</cac:Dimension>
 		</cac:Item>
 	</cac:CatalogueLine>

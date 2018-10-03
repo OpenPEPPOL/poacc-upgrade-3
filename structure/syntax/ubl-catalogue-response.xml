@@ -18,7 +18,7 @@
                 transaction.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir58-006</Reference>
-			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrns058:ver2.0:#urn:www.difi.no:ehf:katalogbekreftelse:ver1.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns58a:catalogue_response:bis3-1.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
@@ -27,7 +27,7 @@
                 transaction appears.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir58-005</Reference>
-			<Value type="FIXED">urn:www.cenbii.eu:profile:bii01:ver2.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:bis01a:catalogue_only:bis3-1.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>
