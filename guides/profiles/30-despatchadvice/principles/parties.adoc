@@ -60,4 +60,4 @@ a|
 
 The diagram below shows the roles in the fulfillment process.
 
-image:images/image3.emf[image,width=649,height=260]
+image::images/image3.emf[image,width=649,height=260]
