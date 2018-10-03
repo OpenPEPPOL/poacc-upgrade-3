@@ -58,9 +58,9 @@
             test="($CatalogueLineValidityStart &lt;= $CatalogueLineValidityEnd)"
             flag="fatal">A line validity period end date SHALL be later or equal to the line validity period start date
         </assert>
-    </rule>
+<!--     </rule>
 	
-<!--     <rule context="cac:CatalogueLine">
+    <rule context="cac:CatalogueLine"> -->
         <assert id="PEPPOL-T19-R008"
                 test="not(cbc:MaximumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= 0"
                 flag="fatal">Maximum quantity SHALL be greater than zero</assert>
@@ -72,7 +72,7 @@
         <assert id="PEPPOL-T19-R010"
                 test="not(cbc:MaximumOrderQuantity) or not(cbc:MinimumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= number(cbc:MinimumOrderQuantity)"
                 flag="fatal">Maximum quantity SHALL be greater or equal to the Minimum quantity</assert>
-    </rule> -->
+    </rule>
 
     <rule context="cac:ClassifiedTaxCategory">
         <assert id="PEPPOL-T19-R014"
