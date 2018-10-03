@@ -66,23 +66,23 @@
                 test="not(cbc:MaximumOrderQuantity) or not(cbc:MinimumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= number(cbc:MinimumOrderQuantity)"
                 flag="fatal">Maximum quantity SHALL be greater or equal to the Minimum quantity</assert>
 
-        <let name="PriceValidityStart" 
-		value="if(exists(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:StartDate)) 
-		then number(translate(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:StartDate,'-','')) 
-		else $CatalogueLineValidityStart"/>
-        <let name="PriceValidityEnd" 
-		value="if(exists(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:EndDate)) 
-		then number(translate(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:EndDate,'-','')) 
-		else $CatalogueLineValidityEnd"/>
+        <!-- <let name="PriceValidityStart"  -->
+		<!-- value="if(exists(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:StartDate))  -->
+		<!-- then number(translate(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:StartDate,'-',''))  -->
+		<!-- else $CatalogueLineValidityStart"/> -->
+        <!-- <let name="PriceValidityEnd"  -->
+		<!-- value="if(exists(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:EndDate))  -->
+		<!-- then number(translate(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:EndDate,'-',''))  -->
+		<!-- else $CatalogueLineValidityEnd"/> -->
  				
-        <assert id="PEPPOL-T19-R011"
-            test="($PriceValidityStart &gt;= $CatalogueLineValidityStart) and ($PriceValidityStart &lt;= $CatalogueLineValidityEnd) 
-            and ($PriceValidityEnd &lt;= $CatalogueLineValidityEnd) and ($PriceValidityEnd &gt;= $CatalogueLineValidityStart)"        
-                flag="fatal">Catalogue line validity period SHALL be within the range of the whole catalogue validity period</assert>
-        <assert id="PEPPOL-T19-R016"
-            test="($PriceValidityStart &lt;= $PriceValidityEnd)"
-            flag="fatal">A line validity period end date SHALL be later or equal to the line validity period start date
-        </assert>		
+        <!-- <assert id="PEPPOL-T19-R011" -->
+            <!-- test="($PriceValidityStart &gt;= $CatalogueLineValidityStart) and ($PriceValidityStart &lt;= $CatalogueLineValidityEnd)  -->
+            <!-- and ($PriceValidityEnd &lt;= $CatalogueLineValidityEnd) and ($PriceValidityEnd &gt;= $CatalogueLineValidityStart)"         -->
+                <!-- flag="fatal">Catalogue line validity period SHALL be within the range of the whole catalogue validity period</assert> -->
+        <!-- <assert id="PEPPOL-T19-R016" -->
+            <!-- test="($PriceValidityStart &lt;= $PriceValidityEnd)" -->
+            <!-- flag="fatal">A line validity period end date SHALL be later or equal to the line validity period start date -->
+        <!-- </assert>		 -->
  
  </rule>
 
