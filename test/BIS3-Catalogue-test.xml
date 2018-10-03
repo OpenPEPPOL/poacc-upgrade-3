@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Catalogue xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"
+           xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+           xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns19a:catalogue:bis3-1.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis01a:catalogue_only:bis3-1.0</cbc:ProfileID>
+    <cbc:ID>Cat-02</cbc:ID>
+    <cbc:ActionCode>Add</cbc:ActionCode>
+    <cbc:Name>Christmas Catalogue</cbc:Name>
+    <cbc:IssueDate>2016-10-01</cbc:IssueDate>
+    <cbc:VersionID>1.0</cbc:VersionID>
+    <cac:ValidityPeriod>
+        <cbc:StartDate>2018-10-01</cbc:StartDate>
+        <cbc:EndDate>2019-10-01</cbc:EndDate>
+    </cac:ValidityPeriod>
+
+    <cac:SourceCatalogueReference>
+        <cbc:ID>Cat-01</cbc:ID>
+    </cac:SourceCatalogueReference>
+
+    <cac:ProviderParty>
+        <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+        <cac:PartyIdentification>
+            <cbc:ID schemeID="0184">6746335</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+            <cbc:Name>Henning Jensen</cbc:Name>
+        </cac:PartyName>
+        <cac:PostalAddress>
+            <cbc:StreetName>Eidsvollsgate 2</cbc:StreetName>
+            <cbc:AdditionalStreetName>2nd floor</cbc:AdditionalStreetName>
+            <cbc:CityName>Eidsvoll</cbc:CityName>
+            <cbc:PostalZone>3512</cbc:PostalZone>
+            <cbc:CountrySubentity>Region A</cbc:CountrySubentity>
+            <cac:AddressLine>
+                <cbc:Line>Address line 3</cbc:Line>
+            </cac:AddressLine>
+            <cac:Country>
+                <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+            </cac:Country>
+        </cac:PostalAddress>
+        <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Christmas joy AS</cbc:RegistrationName>
+            <cbc:CompanyID schemeID="0002">364352894</cbc:CompanyID>
+            <cac:RegistrationAddress>
+                <cbc:CityName>Eidsvoll</cbc:CityName>
+                <cac:Country>
+                    <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:RegistrationAddress>
+        </cac:PartyLegalEntity>
+    </cac:ProviderParty>
+
+    <cac:ReceiverParty>
+        <cbc:EndpointID schemeID="0088">484464368</cbc:EndpointID>
+        <cac:PartyIdentification>
+            <cbc:ID schemeID="0184">651686447</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+            <cbc:Name>Doris S. Sjöberg</cbc:Name>
+        </cac:PartyName>
+        <cac:PostalAddress>
+            <cbc:StreetName>Brunnevägen 97</cbc:StreetName>
+            <cbc:AdditionalStreetName>Building C</cbc:AdditionalStreetName>
+            <cbc:CityName>Trångsviken</cbc:CityName>
+            <cbc:PostalZone>830 47</cbc:PostalZone>
+            <cbc:CountrySubentity>Region A</cbc:CountrySubentity>
+            <cac:AddressLine>
+                <cbc:Line>Address line 3</cbc:Line>
+            </cac:AddressLine>
+            <cac:Country>
+                <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+            </cac:Country>
+        </cac:PostalAddress>
+        <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Registration AS</cbc:RegistrationName>
+            <cbc:CompanyID schemeID="0002">7541584894</cbc:CompanyID>
+            <cac:RegistrationAddress>
+                <cbc:CityName>Trångsviken</cbc:CityName>
+                <cac:Country>
+                    <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:RegistrationAddress>
+        </cac:PartyLegalEntity>
+    </cac:ReceiverParty>
+
+    <cac:SellerSupplierParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0088">154354454</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0184">235464984</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Christmas Ltd.</cbc:Name>
+            </cac:PartyName>
+
+            <cac:PostalAddress>
+                <cbc:StreetName>Københavnsgata 3</cbc:StreetName>
+                <cbc:AdditionalStreetName>2nd floor</cbc:AdditionalStreetName>
+                <cbc:CityName>København</cbc:CityName>
+                <cbc:PostalZone>8520</cbc:PostalZone>
+                <cbc:CountrySubentity>Region A</cbc:CountrySubentity>
+                <cac:AddressLine>
+                    <cbc:Line>Address line 3</cbc:Line>
+                </cac:AddressLine>
+                <cac:Country>
+                    <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:Contact>
+                <cbc:Name>Nils Nilsen</cbc:Name>
+                <cbc:Telephone>+45 306907545</cbc:Telephone>
+                <cbc:ElectronicMail>nils.nilsen@christmas.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:SellerSupplierParty>
+
+    <cac:ContractorCustomerParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0184">SW654334435</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0184">SW646466469</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Christmas sweaters</cbc:Name>
+            </cac:PartyName>
+            <cac:Contact>
+                <cbc:Name>Vilde Larsen</cbc:Name>
+                <cbc:Telephone>06403400689</cbc:Telephone>
+                <cbc:ElectronicMail>vilde.larsen@supplier.se</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:ContractorCustomerParty>
+
+    <cac:TradingTerms>
+        <cbc:Information>Payment within 14 days.</cbc:Information>
+    </cac:TradingTerms>
+
+    <cac:CatalogueLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:ActionCode>Update</cbc:ActionCode>
+        <cbc:OrderableIndicator>true</cbc:OrderableIndicator>
+        <cbc:OrderableUnit>EA</cbc:OrderableUnit>
+        <cbc:ContentUnitQuantity unitCode="C62">5</cbc:ContentUnitQuantity>
+        <cbc:OrderQuantityIncrementNumeric>1</cbc:OrderQuantityIncrementNumeric>
+        <cbc:MinimumOrderQuantity unitCode="C62">1</cbc:MinimumOrderQuantity>
+        <cbc:MaximumOrderQuantity unitCode="C62">50</cbc:MaximumOrderQuantity>
+        <cbc:WarrantyInformation>XXX</cbc:WarrantyInformation>
+        <cbc:PackLevelCode>TU</cbc:PackLevelCode>
+
+        <cac:LineValidityPeriod>
+            <cbc:StartDate>2018-10-01</cbc:StartDate>
+            <cbc:EndDate>2019-10-01</cbc:EndDate>
+        </cac:LineValidityPeriod>
+
+        <cac:ItemComparison>
+            <cbc:PriceAmount currencyID="EUR">80</cbc:PriceAmount>
+            <cbc:Quantity unitCode="CS">1</cbc:Quantity>
+        </cac:ItemComparison>
+
+        <cac:AccessoryRelatedItem>
+            <cbc:ID>3431</cbc:ID>
+            <cbc:Quantity unitCode="CS">1</cbc:Quantity>
+        </cac:AccessoryRelatedItem>
+
+        <cac:RequiredRelatedItem>
+            <cbc:ID>3451</cbc:ID>
+            <cbc:Quantity unitCode="CS">1</cbc:Quantity>
+        </cac:RequiredRelatedItem>
+
+        <cac:ReplacementRelatedItem>
+            <cbc:ID>4614</cbc:ID>
+            <cbc:Quantity unitCode="CS">1</cbc:Quantity>
+        </cac:ReplacementRelatedItem>
+
+        <cac:RequiredItemLocationQuantity>
+            <cbc:LeadTimeMeasure unitCode="CS">5</cbc:LeadTimeMeasure>
+            <cbc:MinimumQuantity unitCode="CS">1</cbc:MinimumQuantity>
+            <cbc:MaximumQuantity unitCode="CS">50</cbc:MaximumQuantity>
+            <cac:ApplicableTerritoryAddress>
+                <cbc:StreetName>Københavnsgata 3</cbc:StreetName>
+                <cbc:AdditionalStreetName>2nd floor</cbc:AdditionalStreetName>
+                <cbc:CityName>København</cbc:CityName>
+                <cbc:PostalZone>8520</cbc:PostalZone>
+                <cbc:CountrySubentity>Region A</cbc:CountrySubentity>
+                <cac:AddressLine>
+                    <cbc:Line>Address line 3</cbc:Line>
+                </cac:AddressLine>
+                <cac:Country>
+                    <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:ApplicableTerritoryAddress>
+            <cac:Price>
+                <cbc:PriceAmount currencyID="EUR">80</cbc:PriceAmount>
+                <cbc:BaseQuantity unitCode="CS">1</cbc:BaseQuantity>
+                <cbc:PriceType>AAA</cbc:PriceType>
+                <cbc:OrderableUnitFactorRate>1</cbc:OrderableUnitFactorRate>
+                <cac:ValidityPeriod>
+                    <cbc:StartDate>2018-10-01</cbc:StartDate>
+                    <cbc:EndDate>2019-10-01</cbc:EndDate>
+                </cac:ValidityPeriod>
+            </cac:Price>
+        </cac:RequiredItemLocationQuantity>
+
+        <cac:Item>
+            <cbc:Description>Christmas sweater to the kindergarten.</cbc:Description>
+            <cbc:PackQuantity unitCode="CS">10</cbc:PackQuantity>
+            <cbc:PackSizeNumeric>5</cbc:PackSizeNumeric>
+            <cbc:Name>Christmas sweaters</cbc:Name>
+            <cbc:Keyword>Sweater</cbc:Keyword>
+            <cbc:BrandName>XYZ</cbc:BrandName>
+            <cac:SellersItemIdentification>
+                <cbc:ID>451646</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:ManufacturersItemIdentification>
+                <cbc:ID>112233</cbc:ID>
+            </cac:ManufacturersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID schemeID="0160">54641465</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:ItemSpecificationDocumentReference>
+                <cbc:ID>6441244</cbc:ID>
+                <cbc:DocumentTypeCode>X</cbc:DocumentTypeCode>
+                <cbc:DocumentDescription>X</cbc:DocumentDescription>
+                <cac:Attachment>
+                    <cbc:EmbeddedDocumentBinaryObject mimeCode="image/png" filename="image1.png">IPGJAG646etatOSHTGOAT436343634jiogfja</cbc:EmbeddedDocumentBinaryObject>
+                    <cac:ExternalReference>
+                        <cbc:URI>http://www.supplier.com/image/sweaters.png</cbc:URI>
+                    </cac:ExternalReference>
+                </cac:Attachment>
+            </cac:ItemSpecificationDocumentReference>
+            <cac:OriginCountry>
+                <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+            </cac:OriginCountry>
+
+            <cac:CommodityClassification>
+                <cbc:ItemClassificationCode listID="STI" listVersionID="1">112233</cbc:ItemClassificationCode>
+            </cac:CommodityClassification>
+
+            <cac:TransactionConditions>
+                <cbc:ActionCode>CT</cbc:ActionCode>
+            </cac:TransactionConditions>
+
+            <cac:HazardousItem>
+                <cbc:UNDGCode>X</cbc:UNDGCode>
+                <cbc:HazardClassID>X</cbc:HazardClassID>
+            </cac:HazardousItem>
+
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+            
+            <cac:AdditionalItemProperty>
+                <cbc:Name>Size</cbc:Name>
+                <cbc:NameCode listID="NN">X</cbc:NameCode>
+                <cbc:Value>18</cbc:Value>
+                <cbc:ValueQuantity unitCode="KGM">M</cbc:ValueQuantity>
+                <cbc:ValueQualifier>X</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty>
+            
+            <cac:ManufacturerParty>
+                <cac:PartyName>
+                    <cbc:Name>Sweaters company AS</cbc:Name>
+                </cac:PartyName>
+            </cac:ManufacturerParty>
+
+            <cac:ItemInstance>
+                <cbc:BestBeforeDate>None</cbc:BestBeforeDate>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>1234</cbc:LotNumberID>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+
+            <cac:Certificate>
+                <cbc:ID>EU EcoLabel</cbc:ID>
+                <cbc:CertificateTypeCode>NA</cbc:CertificateTypeCode>
+                <cbc:CertificateType>Environmental</cbc:CertificateType>
+                <cbc:Remarks>X</cbc:Remarks>
+                <cac:IssuerParty>
+                    <cac:PartyName>
+                        <cbc:Name>NA</cbc:Name>
+                    </cac:PartyName>
+                </cac:IssuerParty>
+                <cac:DocumentReference>
+                    <cbc:ID>http://www.label.eu/test/</cbc:ID>
+                </cac:DocumentReference>
+            </cac:Certificate>
+            <cac:Dimension>
+                <cbc:AttributeID>X</cbc:AttributeID>
+                <cbc:Measure unitCode="AAF">2</cbc:Measure>
+                <cbc:Description>text</cbc:Description>
+                <cbc:MinimumMeasure unitCode="AAF">2</cbc:MinimumMeasure>
+                <cbc:MaximumMeasure unitCode="AAF">4</cbc:MaximumMeasure>
+            </cac:Dimension>
+        </cac:Item>
+    </cac:CatalogueLine>
+</Catalogue>

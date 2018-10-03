@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OrderResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2"
+               xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+               xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns110:ver1.0:extended:urn:www.peppol.eu:bis:peppol42a:ver1.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:www.cenbii.eu:profile:bii42:ver1.0</cbc:ProfileID>
+    <cbc:ID>54345sg-525gs-sg45435-2435hre</cbc:ID>
+    <cbc:SalesOrderID>135445</cbc:SalesOrderID>
+    <cbc:IssueDate>2018-02-08</cbc:IssueDate>
+    <cbc:IssueTime>12:30:00</cbc:IssueTime>
+    <cbc:Note>Call the support number 95424545.</cbc:Note>
+    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <cbc:CustomerReference>LG235</cbc:CustomerReference>
+
+    <cac:OrderReference>
+        <cbc:ID>34354</cbc:ID>
+    </cac:OrderReference>
+
+    <cac:AdditionalDocumentReference>
+        <cbc:ID>doc-23</cbc:ID>
+        <cbc:DocumentType>pdf</cbc:DocumentType>
+        <cac:Attachment>
+            <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="hello.pdf">PIJHGAJPG335EFAAEG445</cbc:EmbeddedDocumentBinaryObject>
+            <cac:ExternalReference>
+                <cbc:URI>http://howtodo.com/hello.html</cbc:URI>
+            </cac:ExternalReference>
+        </cac:Attachment>
+    </cac:AdditionalDocumentReference>
+
+    <cac:SellerSupplierParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0184">DGA4554</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Adidas Ltd.</cbc:Name>
+            </cac:PartyName>
+
+            <cac:PostalAddress>
+                <cbc:StreetName>Bakkelunden 79</cbc:StreetName>
+                <cbc:AdditionalStreetName>2nd floor</cbc:AdditionalStreetName>
+                <cbc:CityName>Svinninge</cbc:CityName>
+                <cbc:PostalZone>4520</cbc:PostalZone>
+                <cbc:CountrySubentity>Region Sjaelland</cbc:CountrySubentity>
+                <cac:AddressLine>
+                    <cbc:Line>Gate 23</cbc:Line>
+                </cac:AddressLine>
+                <cac:Country>
+                    <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:Contact>
+                <cbc:Name>Olivia Andreasen</cbc:Name>
+                <cbc:Telephone>+45 306909876</cbc:Telephone>
+                <cbc:ElectronicMail>olivia@random.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:SellerSupplierParty>
+
+    <cac:BuyerCustomerParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Adidas Football AS</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Pohlstrasse 19</cbc:StreetName>
+                <cbc:AdditionalStreetName>Building C</cbc:AdditionalStreetName>
+                <cbc:CityName>Sickte</cbc:CityName>
+                <cbc:PostalZone>38173</cbc:PostalZone>
+                <cbc:CountrySubentity>Region A</cbc:CountrySubentity>
+                <cac:AddressLine>
+                    <cbc:Line>Gate 2</cbc:Line>
+                </cac:AddressLine>
+                <cac:Country>
+                    <cbc:IdentificationCode>DE</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+        </cac:Party>
+        <cac:DeliveryContact>
+            <cbc:Name>Albert Herz</cbc:Name>
+            <cbc:Telephone>05305 85 52 09</cbc:Telephone>
+            <cbc:ElectronicMail>albert.herz@adidas.com</cbc:ElectronicMail>
+        </cac:DeliveryContact>
+    </cac:BuyerCustomerParty>
+
+    <cac:OriginatorCustomerParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Accounting</cbc:Name>
+            </cac:PartyName>
+        </cac:Party>
+    </cac:OriginatorCustomerParty>
+
+    <cac:Delivery>
+        <cac:PromisedDeliveryPeriod>
+            <cbc:StartDate>2018-02-05</cbc:StartDate>
+            <cbc:StartTime>08:30:00</cbc:StartTime>
+            <cbc:EndDate>2018-02-10</cbc:EndDate>
+            <cbc:EndDate>15:00:00</cbc:EndDate>
+        </cac:PromisedDeliveryPeriod>
+        <cac:DeliveryParty>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Adidas Ltd.</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Inge Beisheim Platz 29</cbc:StreetName>
+                <cbc:AdditionalStreetName>Building G</cbc:AdditionalStreetName>
+                <cbc:CityName>Tangstedt</cbc:CityName>
+                <cbc:PostalZone>22887</cbc:PostalZone>
+                <cbc:CountrySubentity>Region A</cbc:CountrySubentity>
+                <cac:AddressLine>
+                    <cbc:Line>Gate 3</cbc:Line>
+                </cac:AddressLine>
+                <cac:Country>
+                    <cbc:IdentificationCode>DE</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+        </cac:DeliveryParty>
+    </cac:Delivery>
+
+    <cac:DeliveryTerms>
+        <cbc:ID>GDA125</cbc:ID>
+        <cbc:SpecialTerms>Pick up at the store X.</cbc:SpecialTerms>
+        <cac:DeliveryLocation>
+            <cbc:ID>Tangstedt</cbc:ID>
+            <cac:Address>
+                <cbc:StreetName>Gruenauer Strasse 40</cbc:StreetName>
+                <cbc:AdditionalStreetName>Building F</cbc:AdditionalStreetName>
+                <cbc:CityName>Basthorst</cbc:CityName>
+                <cbc:PostalZone>21493</cbc:PostalZone>
+                <cbc:CountrySubentity>Region A</cbc:CountrySubentity>
+                <cac:AddressLine>
+                    <cbc:Line>Gate 2</cbc:Line>
+                </cac:AddressLine>
+                <cac:Country>
+                    <cbc:IdentificationCode>DE</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:Address>
+        </cac:DeliveryLocation>
+    </cac:DeliveryTerms>
+
+    <cac:AllowanceCharge>
+        <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+        <cbc:AllowanceChargeReasonCode>100</cbc:AllowanceChargeReasonCode>
+        <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
+        <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
+        <cbc:Amount currencyID="EUR">1000.00</cbc:Amount>
+        <cbc:BaseAmount currencyID="EUR">800.00</cbc:BaseAmount>
+        <cac:TaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>25.00</cbc:Percent>
+            <cac:TaxScheme>
+                <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+        </cac:TaxCategory>
+    </cac:AllowanceCharge>
+
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">1000.00</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="EUR">500.00</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="EUR">200.00</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>25.00</cbc:Percent>
+                <cbc:TaxExemptionReason>XXX</cbc:TaxExemptionReason>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+    </cac:TaxTotal>
+
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">1200.00</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">850.00</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">1221.52</cbc:TaxInclusiveAmount>
+        <cbc:AllowanceTotalAmount currencyID="EUR">1000.00</cbc:AllowanceTotalAmount>
+        <cbc:ChargeTotalAmount currencyID="EUR">2.00</cbc:ChargeTotalAmount>
+        <cbc:PrepaidAmount currencyID="EUR">500.00</cbc:PrepaidAmount>
+        <cbc:PayableRoundingAmount currencyID="EUR">0.27</cbc:PayableRoundingAmount>
+        <cbc:PayableAmount currencyID="EUR">500.00</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+
+    <cac:OrderLine>
+        <cac:LineItem>
+            <cbc:ID>3</cbc:ID>
+            <cbc:Note>Free text</cbc:Note>
+            <cbc:Quantity unitCode="C62">10</cbc:Quantity>
+            <cbc:LineExtensionAmount currencyID="EUR">1000.00</cbc:LineExtensionAmount>
+            <cac:Delivery>
+                <cbc:Quantity unitCode="C62">10</cbc:Quantity>
+                <cac:PromisedDeliveryPeriod>
+                    <cbc:StartDate>2018-02-05</cbc:StartDate>
+                    <cbc:StartTime>08:30:00</cbc:StartTime>
+                    <cbc:EndDate>2018-02-08</cbc:EndDate>
+                    <cbc:EndTime>15:00:00</cbc:EndTime>
+                </cac:PromisedDeliveryPeriod>
+            </cac:Delivery>
+            <cac:Price>
+                <cbc:PriceAmount currencyID="EUR">152.52</cbc:PriceAmount>
+                <cbc:BaseQuantity unitCode="C62">2</cbc:BaseQuantity>
+                <cbc:PriceType>AAA</cbc:PriceType>
+                <cac:AllowanceCharge>
+                    <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+                    <cbc:Amount currencyID="EUR">1000.00</cbc:Amount>
+                    <cbc:BaseAmount currencyID="EUR">1000.00</cbc:BaseAmount>
+                </cac:AllowanceCharge>
+            </cac:Price>
+            <cac:Item>
+                <cbc:Description>Free form text</cbc:Description>
+                <cbc:Name>Adidas Football shoes</cbc:Name>
+                <cac:SellersItemIdentification>
+                    <cbc:ID>21541</cbc:ID>
+                </cac:SellersItemIdentification>
+                <cac:StandardItemIdentification>
+                    <cbc:ID schemeID="0160">647645</cbc:ID>
+                </cac:StandardItemIdentification>
+                <cac:ItemSpecificationDocumentReference>
+                    <cbc:ID>xyz.pdf</cbc:ID>
+                    <cbc:DocumentType>Picture of shoes.</cbc:DocumentType>
+                    <cac:Attachment>
+                        <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="shoes.pdf">http://www.example.com/shoes.html</cbc:EmbeddedDocumentBinaryObject>
+                    </cac:Attachment>
+                </cac:ItemSpecificationDocumentReference>
+
+                <cac:CommodityClassification>
+                    <cbc:ItemClassificationCode listID="STI" listVersionID="3">542465434</cbc:ItemClassificationCode>
+                </cac:CommodityClassification>
+
+                <cac:TransactionConditions>
+                    <cbc:ActionCode>CT</cbc:ActionCode>
+                </cac:TransactionConditions>
+
+                <cac:ClassifiedTaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>25</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:ClassifiedTaxCategory>
+
+                <cac:AdditionalItemProperty>
+                    <cbc:Name>Height</cbc:Name>
+                    <cbc:NameCode listID="NN">Wire</cbc:NameCode>
+                    <cbc:Value>20 mm</cbc:Value>
+                    <cbc:ValueQuantity unitCode="MMT">20</cbc:ValueQuantity>
+                </cac:AdditionalItemProperty>
+
+                <cac:Certificate>
+                    <cbc:ID>EU EcoLabel</cbc:ID>
+                    <cbc:CertificateTypeCode>NA</cbc:CertificateTypeCode>
+                    <cbc:CertificateType>Environmental</cbc:CertificateType>
+                    <cbc:Remarks>Item label value</cbc:Remarks>
+                    <cac:IssuerParty>
+                        <cac:PartyName>
+                            <cbc:Name>NA</cbc:Name>
+                        </cac:PartyName>
+                    </cac:IssuerParty>
+                    <cac:DocumentReference>
+                        <cbc:ID>gttp://www.label.eu/test/</cbc:ID>
+                    </cac:DocumentReference>
+                </cac:Certificate>
+
+            </cac:Item>
+        </cac:LineItem>
+    </cac:OrderLine>
+</OrderResponse>

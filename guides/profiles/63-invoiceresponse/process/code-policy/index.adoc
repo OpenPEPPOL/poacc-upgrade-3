@@ -9,7 +9,7 @@ The codes in the Invoice Response are given in the following structure.
 
 #Should the list include the xPaths for technical clarification?#
 ====
-* Status code (1..1)
+* Invoice Status (1..1) 'cac:DocumentResponse/Response/cbc:ResponseCode'
 ** Clarification (0..n)
 *** Data (0..n)
 ====

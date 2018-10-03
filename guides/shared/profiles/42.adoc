@@ -12,7 +12,6 @@ In the table below you will find the values to be used as the specification iden
 
 
 | Order Agreement (Trdm110)
-| urn:www.cenbii.eu:transaction:biitrns110:ver1.0: +
-*extended*:urn:www.peppol.eu:bis:peppol42a:ver1.0
-| urn:www.cenbii.eu:profile:bii42:ver1.0
+| urn:fdc:peppol.eu:poacc:trns110a:order_agreement:bis3-1.0
+| urn:fdc:peppol.eu:poacc:bis42a:order_agreement:bis3-1.0
 |===

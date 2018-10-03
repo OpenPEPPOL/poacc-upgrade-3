@@ -1,8 +1,6 @@
 [[descriptions]]
 = Description of selected parts of the invoice message response
 
-#Examples should be fetched from snippet-file, to be done later#
-
 :leveloffset: +1
 
 include::msg-identification.adoc[]

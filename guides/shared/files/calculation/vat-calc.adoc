@@ -4,7 +4,7 @@
 == Total VAT amount
 
 The total VAT amount can be provided without providing the VAT breakdown, but if the VAT breakdown is present, the total VAT amount is the sum of all VAT Category VAT amounts.
-#Or should the VAT Breakdown be mandatory if TaxTotal is used?#
+
 
 ====
 stem:["Total VAT amount" = sum("VAT category tax amount")]

@@ -69,6 +69,15 @@
                 flag="fatal">Maximum quantity SHALL be greater or equal to the Minimum quantity</assert>
     </rule>
 
+    <rule context="cac:ClassifiedTaxCategory">
+        <assert id="PEPPOL-T19-R014"
+            test="cbc:Percent or (normalize-space(cbc:ID)='O')"
+            flag="fatal">Each Tax Category SHALL have a VAT category rate, except if the catalogue line is not subject to VAT.</assert>
+        <assert id="PEPPOL-T19-R015"
+            test="not(normalize-space(cbc:ID)='S') or (cbc:Percent) &gt; 0"
+            flag="fatal">When VAT category code is "Standard rated" (S) the VAT rate SHALL be greater than zero.</assert>
+    </rule>
+    
     <!-- <rule context="cac:CatalogueLine/cac:Price/cac:ValidityPeriod">
                 <let name="CatalogueLineValidityStart" value="if(ubl:Catalogue/cac:CatalogueLine/cac:LineValidityPeriod/cbc:StartDate) then number(translate(/ubl:Catalogue/cac:CatalogueLine/cac:LineValidityPeriod/cbc:StartDate,'-','')) else '0001-01-01'"/>
                 <let name="CatalogueLineValidityEnd" value="if(ubl:Catalogue/cac:CatalogueLine/cac:LineValidityPeriod/cbc:EndDate) then number(translate(/ubl:Catalogue/cac:CatalogueLine/cac:LineValidityPeriod/cbc:EndDate,'-','')) else '9999-12-31'"/>

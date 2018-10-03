@@ -21,7 +21,7 @@
 	- [x] 58
 
 == Rules
-    - [ ] Add a rules to ensure that allowance and charge amounts are not negative. (Siw)
+    - [x] Add a rules to ensure that allowance and charge amounts are not negative. (Siw)
 	  - [ ] Align rules on name and identifiers.
     - [x] Id's are missing.
 
@@ -58,7 +58,7 @@
     - [ ] Create test files based on syntax files. (Jalini is working on this)
     - [ ] In main site of upgrade project there is reviewofalignment.xml (Jalini)
     - [x] Inserting new customzation and profile identifiers
-    - [ ] Add manual rule to order checking for two allowed profile id's
+    - [x] Add manual rule to order checking for two allowed profile id's
     - [x] Syntax, add tir ids to new business terms "tirnn=pxxx"
 
 == Work schedule

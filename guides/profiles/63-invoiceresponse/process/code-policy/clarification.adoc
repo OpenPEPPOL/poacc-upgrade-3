@@ -40,5 +40,3 @@ Invoice status:: RE (Rejected)
 Clarification code:: LEG (Legal information missing)
 Detail type code:: BT-48
 Detail value:: EU12345
-
-#Add snippet?#

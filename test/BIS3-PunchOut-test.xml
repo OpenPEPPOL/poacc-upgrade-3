@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Catalogue xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"
+           xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+           xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns77a:shopping_card:bis3-1.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis18a:punch_out:bis3-1.0</cbc:ProfileID>
+    <cbc:ID>1234</cbc:ID>
+    <cbc:ActionCode>true</cbc:ActionCode>
+    <cbc:IssueDate>2018-08-01</cbc:IssueDate>
+    <cbc:IssueTime>10:00:00</cbc:IssueTime>
+    <cac:ValidityPeriod>
+        <cbc:EndDate>2018-08-15</cbc:EndDate>
+        <cbc:EndTime>20:00:00</cbc:EndTime>
+    </cac:ValidityPeriod>
+
+    <cac:ReferencedContact>
+        <cbc:ID>34431</cbc:ID>
+    </cac:ReferencedContact>
+
+    <cac:ProviderParty>
+        <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+        <cac:PartyIdentification>
+            <cbc:ID schemeID="0184">64633265</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+            <cbc:Name>Seller X</cbc:Name>
+        </cac:PartyName>
+    </cac:ProviderParty>
+
+
+    <cac:ReceiverParty>
+        <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+        <cac:PartyIdentification>
+            <cbc:ID schemeID="0192">998745</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+            <cbc:Name>Buyer Y</cbc:Name>
+        </cac:PartyName>
+        <cac:Contact>
+            <cbc:ID>112233</cbc:ID>
+        </cac:Contact>
+    </cac:ReceiverParty>
+
+    <cac:CatalogueLine>
+        <cbc:ID>1</cbc:ID>
+        <cac:LineValidityPeriod>
+            <cbc:StartDate>2018-08-01</cbc:StartDate>
+            <cbc:EndDate>2018-08-15</cbc:EndDate>
+            <cbc:EndTime>23:00:00</cbc:EndTime>
+        </cac:LineValidityPeriod>
+        <cac:RequiredItemLocationQuantity>
+            <cbc:LeadTimeMeasure unitCode="DAY">5</cbc:LeadTimeMeasure>
+            <cac:ApplicableTerritoryAddress>
+                <cbc:StreetName>Storoveien 35</cbc:StreetName>
+                <cbc:AdditionalStreetName>Building A</cbc:AdditionalStreetName>
+                <cbc:CityName>Oslo</cbc:CityName>
+                <cbc:PostalZone>0344</cbc:PostalZone>
+                <cbc:CountrySubentity>Region A</cbc:CountrySubentity>
+                <cac:AddressLine>
+                    <cbc:Line>3rd address line</cbc:Line>
+                </cac:AddressLine>
+                <cac:Country>
+                    <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:ApplicableTerritoryAddress>
+            <cac:Price>
+                <cbc:PriceAmount currencyID="EUR">1</cbc:PriceAmount>
+                <cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
+            </cac:Price>
+            <cac:DeliveryUnit>
+                <cbc:BatchQuantity unitCode="C62">50</cbc:BatchQuantity>
+            </cac:DeliveryUnit>
+        </cac:RequiredItemLocationQuantity>
+
+        <cac:Item>
+            <cbc:Description>Need 50 office chairs, black color.</cbc:Description>
+            <cbc:Name>Office chair</cbc:Name>
+            <cac:SellersItemIdentification>
+                <cbc:ID>6354653</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:ManufacturersItemIdentification>
+                <cbc:ID>646465</cbc:ID>
+            </cac:ManufacturersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID schemeID="0088">35454152</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:ItemSpecificationDocumentReference>
+                <cbc:ID>15541</cbc:ID>
+                <cbc:DocumentTypeCode>541</cbc:DocumentTypeCode>
+                <cbc:DocumentDescription>pdf file with description and images.</cbc:DocumentDescription>
+                <cac:Attachment>
+                    <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="office-chair.pdf">AAOAGAOGA92352sjkga835JSG</cbc:EmbeddedDocumentBinaryObject>
+                </cac:Attachment>
+            </cac:ItemSpecificationDocumentReference>
+            <cac:OriginCountry>
+                <cbc:IdentificationCode>4654325</cbc:IdentificationCode>
+            </cac:OriginCountry>
+            <cac:CommodityClassification>
+                <cbc:ItemClassificationCode listID="STI" listVersionID="2">54646</cbc:ItemClassificationCode>
+            </cac:CommodityClassification>
+            <cac:TransactionConditions>
+                <cbc:ActionCode>CT</cbc:ActionCode>
+            </cac:TransactionConditions>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>color</cbc:Name>
+                <cbc:NameCode listID="NN">X</cbc:NameCode>
+                <cbc:Value>Black</cbc:Value>
+                <cbc:ValueQuantity unitCode="GRM">100</cbc:ValueQuantity>
+            </cac:AdditionalItemProperty>
+            
+            <cac:ManufacturerParty>
+                <cac:PartyName>
+                    <cbc:Name>Manufacturer X</cbc:Name>
+                </cac:PartyName>
+            </cac:ManufacturerParty>
+            <cac:Certificate>
+                <cbc:ID>21615</cbc:ID>
+                <cbc:CertificateTypeCode>NA</cbc:CertificateTypeCode>
+                <cbc:CertificateType>Environmental</cbc:CertificateType>
+                <cbc:Remarks>X</cbc:Remarks>
+                <cac:IssuerParty>
+                    <cac:PartyName>
+                        <cbc:Name>NA</cbc:Name>
+                    </cac:PartyName>
+                </cac:IssuerParty>
+            </cac:Certificate>
+        </cac:Item>
+    </cac:CatalogueLine>
+
+</Catalogue>

@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
-
+        
     <let name="documentCurrencyCode" value="/ubl:Order/cbc:DocumentCurrencyCode"/>
     <let name="sumLineExtensionAmount" value="if (/ubl:Order/cac:OrderLine/cac:LineItem/cbc:LineExtensionAmount) then xs:decimal(sum(/ubl:Order/cac:OrderLine/cac:LineItem/cbc:LineExtensionAmount)) else 0"/>
     <let name="sumAllowance" value="if (/ubl:Order/cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']) then xs:decimal(sum(/ubl:Order/cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']/cbc:Amount)) else 0"/>
     <let name="sumCharge" value="if (/ubl:Order/cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']) then xs:decimal(sum(/ubl:Order/cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']/cbc:Amount)) else 0"/>
-    <let name="VATamount" value="if (/ubl:Order/cac:TaxTotal/cbc:TaxAmount) then xs:decimal(/ubl:Order/cac:TaxTotal/cbc:TaxAmount) else 0"/>
+    <let name="VATamount" value="if(/ubl:Order/cac:TaxTotal/cbc:TaxAmount) then xs:decimal(/ubl:Order/cac:TaxTotal/cbc:TaxAmount) else 0"/>
+
+        <rule context="cbc:ProfileID">
+                <assert id="PEPPOL-T01-R031"
+                        test="some $p in tokenize('urn:fdc:peppol.eu:poacc:bis03a:order_only:bis3-1.0 urn:fdc:peppol.eu:poacc:bis28a:ordering_only:bis3-1.0', '\s') satisfies $p = normalize-space(.)"
+                        flag="fatal">An order transaction SHALL use profile order only or ordering.</assert>
+        </rule>
+        
 
     <!-- Amounts -->
     <rule context="cbc:Amount | cbc:TaxAmount | cbc:LineExtensionAmount | cbc:PriceAmount | cbc:BaseAmount | cac:AnticipatedMonetaryTotal/cbc:*">
@@ -80,7 +87,7 @@
                 test="if ($taxinclusiveAmount) then ($payableAmount = $taxinclusiveAmount - $prepaidAmount + $roundingAmount) else 1"
                 flag="fatal">Amount due for payment = Invoice total amount with VAT - Paid amount + Rounding amount.</assert>
         <assert id="PEPPOL-T01-R017"
-                test="if ($taxinclusiveAmount and ($VATamount &gt;0)) then ($taxinclusiveAmount = $taxexclusiveAmount + $VATamount) else 1"
+                test="if($taxinclusiveAmount and /ubl:Order/cac:TaxTotal) then ($taxinclusiveAmount = $taxexclusiveAmount + $VATamount) else 1"
                 flag="fatal">Expected total amount with VAT = Expected total amount without VAT + Order total VAT amount.</assert>
     </rule>
 
@@ -105,6 +112,9 @@
         <assert id="PEPPOL-T01-R023"
                 test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)"
                 flag="fatal">Each document or line level allowance SHALL have an allowance reason text or an allowance reason code.</assert>
+            <assert  id="PEPPOL-T01-R032"
+                    test="number(cbc:Amount) &gt;= 0"
+                    flag="fatal">Allowance or charge amounts SHALL NOT be negative.</assert>
     </rule>
 
     <rule context="cac:TaxCategory | cac:ClassifiedTaxCategory">
@@ -167,6 +177,9 @@
         <assert  id="PEPPOL-T01-R027"
                 test="(cac:AllowanceCharge/cbc:BaseAmount) &gt;= 0 or not(exists(cac:AllowanceCharge/cbc:BaseAmount))"
                 flag="fatal">The Item gross price SHALL NOT be negative.</assert>
+            <assert  id="PEPPOL-T01-R033"
+                    test="number(cac:AllowanceCharge/cbc:Amount) &gt;= 0 or not(exists(cac:AllowanceCharge/cbc:Amount))"
+                    flag="fatal">Allowance or charge amounts SHALL NOT be negative.</assert>
     </rule>
 
 </pattern>

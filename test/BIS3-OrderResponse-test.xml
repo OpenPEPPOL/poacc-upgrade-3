@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OrderResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2"
+               xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+               xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns076:ver2.0:extended:urn:www.peppol.eu:bis:peppol28a:ver1.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:www.cenbii.eu:profile:bii28:ver2.0</cbc:ProfileID>
+    <cbc:ID>154</cbc:ID>
+    <cbc:SalesOrderID>123456</cbc:SalesOrderID>
+    <cbc:IssueDate>2018-05-08</cbc:IssueDate>
+    <cbc:IssueTime>08:30:00</cbc:IssueTime>
+    <cbc:OrderResponseCode>54</cbc:OrderResponseCode>
+    <cbc:Note>Response message(s) in detail(s).</cbc:Note>
+    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <cbc:CustomerReference>QW235</cbc:CustomerReference>
+
+    <cac:OrderReference>
+        <cbc:ID>233543</cbc:ID>
+    </cac:OrderReference>
+
+    <cac:SellerSupplierParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0183">7300010000001</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Elektro Andersen AS</cbc:Name>
+            </cac:PartyName>
+            <cac:Contact>
+                <cbc:Name>Johan Andersen</cbc:Name>
+                <cbc:Telephone>95412458</cbc:Telephone>
+                <cbc:ElectronicMail>johan.andersen@elektro.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:SellerSupplierParty>
+
+    <cac:BuyerCustomerParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0184">KJ465353</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Edvard Hagen</cbc:Name>
+            </cac:PartyName>
+            <cac:Contact>
+                <cbc:Name>145</cbc:Name>
+            </cac:Contact>
+        </cac:Party>
+    </cac:BuyerCustomerParty>
+
+    <cac:OrderLine>
+        <cac:LineItem>
+            <cbc:ID>12</cbc:ID>
+            <cbc:Note>Remark: Not available in july and christmas period.</cbc:Note>
+            <cbc:LineStatusCode>5</cbc:LineStatusCode>
+            <cbc:Quantity unitCode="C62">4</cbc:Quantity>
+            <cbc:MaximumBackorderQuantity>1</cbc:MaximumBackorderQuantity>
+            <cac:Delivery>
+                <cac:PromisedDeliveryPeriod>
+                    <cbc:StartDate>2018-05-15</cbc:StartDate>
+                    <cbc:EndDate>2018-05-20</cbc:EndDate>
+                </cac:PromisedDeliveryPeriod>
+            </cac:Delivery>
+            <cac:Price>
+                <cbc:PriceAmount currencyID="EUR">500.00</cbc:PriceAmount>
+                <cbc:BaseQuantity unitCode="C62">3</cbc:BaseQuantity>
+            </cac:Price>
+            <cac:Item>
+                <cbc:Name>Dim light</cbc:Name>
+                <cac:BuyersItemIdentification>
+                    <cbc:ID>635435</cbc:ID>
+                </cac:BuyersItemIdentification>
+                <cac:SellersItemIdentification>
+                    <cbc:ID>6745265</cbc:ID>
+                </cac:SellersItemIdentification>
+                <cac:StandardItemIdentification>
+                    <cbc:ID schemeID="0160">ABG656</cbc:ID>
+                </cac:StandardItemIdentification>
+            </cac:Item>
+        </cac:LineItem>
+
+        <cac:SellerSubstitutedLineItem>
+            <cbc:ID>5</cbc:ID>
+            <cac:Item>
+                <cbc:Name>Dim light</cbc:Name>
+                <cac:SellersItemIdentification>
+                    <cbc:ID>411442</cbc:ID>
+                </cac:SellersItemIdentification>
+                <cac:StandardItemIdentification>
+                    <cbc:ID schemeID="0160">ABG65151556</cbc:ID>
+                </cac:StandardItemIdentification>
+                <cac:CommodityClassification>
+                    <cbc:ItemClassificationCode listID="STI" listVersionID="1">32465443</cbc:ItemClassificationCode>
+                </cac:CommodityClassification>
+                <cac:ClassifiedTaxCategory>
+                    <cbc:ID>S</cbc:ID>
+                    <cbc:Percent>25</cbc:Percent>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:ClassifiedTaxCategory>
+                <cac:AdditionalItemProperty>
+                    <cbc:Name>Color</cbc:Name>
+                    <cbc:Value>White</cbc:Value>
+                    <cbc:ValueQuantity unitCode="NAR">2</cbc:ValueQuantity>
+                    <cbc:ValueQualifier>The radius of dim light must be 10 cm.</cbc:ValueQualifier>
+                </cac:AdditionalItemProperty>
+            </cac:Item>
+        </cac:SellerSubstitutedLineItem>
+        
+        <cac:OrderLineReference>
+            <cbc:LineID>15</cbc:LineID>
+        </cac:OrderLineReference>
+    </cac:OrderLine>
+
+</OrderResponse>

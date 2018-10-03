@@ -13,8 +13,8 @@
 <DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2"
 				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 				xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
-	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns016:ver1.0:extended:urn:www.peppol.eu:bis:peppol30a:ver1.0</cbc:CustomizationID>
-	<cbc:ProfileID>urn:www.cenbii.eu:profile:bii30:ver2.0</cbc:ProfileID>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns16a:despatch_advice:bis3-1.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis30a:despatch_advice:bis3-1.0</cbc:ProfileID>
 	<cbc:ID>565899</cbc:ID>
 	<cbc:IssueDate>2018-09-20</cbc:IssueDate>
 	<cbc:IssueTime>12:00:00</cbc:IssueTime>
@@ -33,8 +33,6 @@
 			</cac:PartyName>
 			<cac:PostalAddress>
 				<cbc:StreetName>Busy Street</cbc:StreetName>
-				<cbc:BuildingName>Thereabouts</cbc:BuildingName>
-				<cbc:BuildingNumber>56A</cbc:BuildingNumber>
 				<cbc:CityName>Farthing</cbc:CityName>
 				<cbc:PostalZone>AA99 1BB</cbc:PostalZone>
 				<cbc:CountrySubentity>Heremouthshire</cbc:CountrySubentity>
@@ -56,7 +54,7 @@
 		<cac:Party>
 			<cbc:EndpointID schemeID="0088">5798000000123</cbc:EndpointID>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="0088">5789000000124</cbc:ID>
+				<cbc:ID schemeID="0088">5790000435951</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
 				<cbc:Name>IYT Corporation</cbc:Name>
@@ -84,7 +82,7 @@
 	<cac:BuyerCustomerParty>
 		<cac:Party>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="0088">5789000000125</cbc:ID>
+				<cbc:ID schemeID="0088">5790000435951</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
 				<cbc:Name>IYT Corporation</cbc:Name>
@@ -107,7 +105,7 @@
 	<cac:SellerSupplierParty>
 		<cac:Party>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="0088">5789000000126</cbc:ID>
+				<cbc:ID schemeID="0088">5790000435951</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
 				<cbc:Name>IYT Corporation</cbc:Name>
@@ -135,7 +133,7 @@
 	<cac:OriginatorCustomerParty>
 		<cac:Party>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="0088">5789000000127</cbc:ID>
+				<cbc:ID schemeID="0088">5790000435951</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
 				<cbc:Name>IYT Corporation</cbc:Name>
@@ -160,7 +158,7 @@
 		<cbc:ID>1</cbc:ID>
 		<cbc:Information>text</cbc:Information>
 		<cbc:GrossWeightMeasure unitCode="C62">1</cbc:GrossWeightMeasure>
-		<cbc:GrossVolumeMeasure unitCode="MTQ">1</cbc:GrossVolumeMeasure>
+		<cbc:GrossVolumeMeasure unitCode="C62">1</cbc:GrossVolumeMeasure>
 		<cbc:TotalTransportHandlingUnitQuantity>3</cbc:TotalTransportHandlingUnitQuantity>
 		<cac:Consignment>
 			<cbc:ID>1</cbc:ID>
@@ -207,8 +205,8 @@
 	<cac:DespatchLine>
 		<cbc:ID>1</cbc:ID>
 		<cbc:Note>Mrs Green agreed to waive charge</cbc:Note>
-		<cbc:DeliveredQuantity unitCode="XPK">10</cbc:DeliveredQuantity>
-		<cbc:OutstandingQuantity unitCode="XPK">2</cbc:OutstandingQuantity>
+		<cbc:DeliveredQuantity unitCode="C62">10</cbc:DeliveredQuantity>
+		<cbc:OutstandingQuantity unitCode="C62">2</cbc:OutstandingQuantity>
 		<cbc:OutstandingReason>text</cbc:OutstandingReason>
 		<cac:OrderLineReference>
 			<cbc:LineID>1</cbc:LineID>
@@ -229,7 +227,7 @@
 				<cbc:ExtendedID>22114455</cbc:ExtendedID>
 			</cac:StandardItemIdentification>
 			<cac:HazardousItem>
-				<cbc:UNDGCode>Code</cbc:UNDGCode>
+				<cbc:UNDGCode>ADR</cbc:UNDGCode>
 				<cbc:HazardClassID>Code</cbc:HazardClassID>
 			</cac:HazardousItem>
 			<cac:AdditionalItemProperty>
@@ -250,12 +248,12 @@
 				<cbc:ID>1</cbc:ID>
 				<cac:TransportHandlingUnit>
 					<cbc:ID>5454</cbc:ID>
-					<cbc:TransportHandlingUnitTypeCode>ZPF</cbc:TransportHandlingUnitTypeCode>
+					<cbc:TransportHandlingUnitTypeCode>4H</cbc:TransportHandlingUnitTypeCode>
 					<cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
 					<cbc:ShippingMarks>text</cbc:ShippingMarks>
 					<cac:MeasurementDimension>
-						<cbc:AttributeID>Length</cbc:AttributeID>
-						<cbc:Measure unitCode="MTR">1</cbc:Measure>
+						<cbc:AttributeID>AAW</cbc:AttributeID>
+						<cbc:Measure unitCode="C62">1</cbc:Measure>
 					</cac:MeasurementDimension>
 				</cac:TransportHandlingUnit>
 			</cac:Shipment>
