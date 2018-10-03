@@ -40,17 +40,12 @@
 	<let name="CatalogueValidityStart" value="if(exists(/ubl:Catalogue/cac:ValidityPeriod/cbc:StartDate)) then number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:StartDate,'-','')) else 0"/>
     <let name="CatalogueValidityEnd" value="if(exists(/ubl:Catalogue/cac:ValidityPeriod/cbc:EndDate)) then number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:EndDate,'-','')) else 99999999"/>
     
-<!--     <rule context="cac:CatalogueLine/cac:LineValidityPeriod">
+    <rule context="cac:CatalogueLine/cac:LineValidityPeriod">
       
         <let name="CatalogueLineValidityStart" value="if(exists(cbc:StartDate)) then number(translate(cbc:StartDate,'-','')) else $CatalogueValidityStart"/>
         <let name="CatalogueLineValidityEnd" value="if(exists(cbc:EndDate)) then number(translate(cbc:EndDate,'-','')) else $CatalogueValidityEnd"/>
-		 -->
-    <rule context="cac:CatalogueLine">
-		
-        <let name="CatalogueLineValidityStart" value="if(exists(cac:LineValidityPeriod/cbc:StartDate)) then number(translate(cac:LineValidityPeriod/cbc:StartDate,'-','')) else $CatalogueValidityStart"/>
-        <let name="CatalogueLineValidityEnd" value="if(exists(cac:LineValidityPeriod/cbc:EndDate)) then number(translate(cac:LineValidityPeriod/cbc:EndDate,'-','')) else $CatalogueValidityEnd"/>
         
-         <assert id="PEPPOL-T19-R007"
+        <assert id="PEPPOL-T19-R007"
             test="($CatalogueLineValidityStart &gt;= $CatalogueValidityStart) and ($CatalogueLineValidityStart &lt;= $CatalogueValidityEnd) 
             and ($CatalogueLineValidityEnd &lt;= $CatalogueValidityEnd) and ($CatalogueLineValidityEnd &gt;= $CatalogueValidityStart)"        
                 flag="fatal">Catalogue line validity period SHALL be within the range of the whole catalogue validity period</assert>
@@ -58,9 +53,9 @@
             test="($CatalogueLineValidityStart &lt;= $CatalogueLineValidityEnd)"
             flag="fatal">A line validity period end date SHALL be later or equal to the line validity period start date
         </assert>
-<!--     </rule>
+    </rule>
 	
-    <rule context="cac:CatalogueLine"> -->
+    <rule context="cac:CatalogueLine">
         <assert id="PEPPOL-T19-R008"
                 test="not(cbc:MaximumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= 0"
                 flag="fatal">Maximum quantity SHALL be greater than zero</assert>
