@@ -39,11 +39,11 @@
 
 	<let name="CatalogueValidityStart" value="if(exists(/ubl:Catalogue/cac:ValidityPeriod/cbc:StartDate)) then number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:StartDate,'-','')) else 0"/>
     <let name="CatalogueValidityEnd" value="if(exists(/ubl:Catalogue/cac:ValidityPeriod/cbc:EndDate)) then number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:EndDate,'-','')) else 99999999"/>
-     
-    <rule context="cac:CatalogueLine">
+    
+    <rule context="cac:CatalogueLine/cac:LineValidityPeriod">
       
-        <let name="CatalogueLineValidityStart" value="if(exists(cac:LineValidityPeriod/cbc:StartDate)) then number(translate(cac:LineValidityPeriod/cbc:StartDate,'-','')) else $CatalogueValidityStart"/>
-        <let name="CatalogueLineValidityEnd" value="if(exists(cac:LineValidityPeriod/cbc:EndDate)) then number(translate(cac:LineValidityPeriod/cbc:EndDate,'-','')) else $CatalogueValidityEnd"/>
+        <let name="CatalogueLineValidityStart" value="if(exists(cbc:StartDate)) then number(translate(cbc:StartDate,'-','')) else $CatalogueValidityStart"/>
+        <let name="CatalogueLineValidityEnd" value="if(exists(cbc:EndDate)) then number(translate(cbc:EndDate,'-','')) else $CatalogueValidityEnd"/>
         
         <assert id="PEPPOL-T19-R007"
             test="($CatalogueLineValidityStart &gt;= $CatalogueValidityStart) and ($CatalogueLineValidityStart &lt;= $CatalogueValidityEnd) 
@@ -53,7 +53,9 @@
             test="($CatalogueLineValidityStart &lt;= $CatalogueLineValidityEnd)"
             flag="fatal">A line validity period end date SHALL be later or equal to the line validity period start date
         </assert>
-
+    </rule>
+	
+    <rule context="cac:CatalogueLine">
         <assert id="PEPPOL-T19-R008"
                 test="not(cbc:MaximumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= 0"
                 flag="fatal">Maximum quantity SHALL be greater than zero</assert>
@@ -65,26 +67,7 @@
         <assert id="PEPPOL-T19-R010"
                 test="not(cbc:MaximumOrderQuantity) or not(cbc:MinimumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= number(cbc:MinimumOrderQuantity)"
                 flag="fatal">Maximum quantity SHALL be greater or equal to the Minimum quantity</assert>
-
-        <!-- <let name="PriceValidityStart"  -->
-		<!-- value="if(exists(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:StartDate))  -->
-		<!-- then number(translate(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:StartDate,'-',''))  -->
-		<!-- else $CatalogueLineValidityStart"/> -->
-        <!-- <let name="PriceValidityEnd"  -->
-		<!-- value="if(exists(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:EndDate))  -->
-		<!-- then number(translate(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:EndDate,'-',''))  -->
-		<!-- else $CatalogueLineValidityEnd"/> -->
- 				
-        <!-- <assert id="PEPPOL-T19-R011" -->
-            <!-- test="($PriceValidityStart &gt;= $CatalogueLineValidityStart) and ($PriceValidityStart &lt;= $CatalogueLineValidityEnd)  -->
-            <!-- and ($PriceValidityEnd &lt;= $CatalogueLineValidityEnd) and ($PriceValidityEnd &gt;= $CatalogueLineValidityStart)"         -->
-                <!-- flag="fatal">Catalogue line validity period SHALL be within the range of the whole catalogue validity period</assert> -->
-        <!-- <assert id="PEPPOL-T19-R016" -->
-            <!-- test="($PriceValidityStart &lt;= $PriceValidityEnd)" -->
-            <!-- flag="fatal">A line validity period end date SHALL be later or equal to the line validity period start date -->
-        <!-- </assert>		 -->
- 
- </rule>
+    </rule>
 
     <rule context="cac:ClassifiedTaxCategory">
         <assert id="PEPPOL-T19-R014"
@@ -94,14 +77,6 @@
             test="not(normalize-space(cbc:ID)='S') or (cbc:Percent) &gt; 0"
             flag="fatal">When VAT category code is "Standard rated" (S) the VAT rate SHALL be greater than zero.</assert>
     </rule>
-
-        <!-- <let name="CatalogueLineValidityStart"  -->
-		<!-- value="if(exists(/ubl:Catalogue/cac:CatalogueLine/cac:LineValidityPeriod/cbc:StartDate))  -->
-		<!-- then number(translate(/ubl:Catalogue/cac:CatalogueLine/cac:LineValidityPeriod/cbc:StartDate,'-','')) -->
-		<!-- else $CatalogueValidityStart"/> -->
-        <!-- <let name="CatalogueLineValidityEnd" value="if(exists(/ubl:Catalogue/cac:CatalogueLine/cac:LineValidityPeriod/cbc:EndDate))  -->
-		<!-- then number(translate(/ubl:Catalogue/cac:CatalogueLine/cac:LineValidityPeriod/cbc:EndDate,'-',''))  -->
-		<!-- else $CatalogueValidityEnd"/> -->
     
     <!-- <rule context="cac:CatalogueLine/cac:Price/cac:ValidityPeriod">
                 <let name="CatalogueLineValidityStart" value="if(ubl:Catalogue/cac:CatalogueLine/cac:LineValidityPeriod/cbc:StartDate) then number(translate(/ubl:Catalogue/cac:CatalogueLine/cac:LineValidityPeriod/cbc:StartDate,'-','')) else '0001-01-01'"/>
