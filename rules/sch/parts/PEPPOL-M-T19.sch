@@ -39,7 +39,15 @@
 
 	<let name="CatalogueValidityStart" value="if(exists(/ubl:Catalogue/cac:ValidityPeriod/cbc:StartDate)) then number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:StartDate,'-','')) else 0"/>
     <let name="CatalogueValidityEnd" value="if(exists(/ubl:Catalogue/cac:ValidityPeriod/cbc:EndDate)) then number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:EndDate,'-','')) else 99999999"/>
-    
+ 
+        <let name="CatalogueLineValidityStart" 
+		value="if(exists(/ubl:Catalogue/cac:CatalogueLine/cac:LineValidityPeriod/cbc:StartDate)) 
+		then number(translate(/ubl:Catalogue/cac:CatalogueLine/cac:LineValidityPeriod/cbc:StartDatecbc:StartDate,'-','')) 
+		else $CatalogueValidityStart"/>
+        <let name="CatalogueLineValidityEnd" value="if(exists(/ubl:Catalogue/cac:CatalogueLine/cac:LineValidityPeriod/cbc:EndDate)) 
+		then number(translate(/ubl:Catalogue/cac:CatalogueLine/cac:LineValidityPeriod/cbc:EndDate,'-','')) 
+		else $CatalogueValidityEnd"/>
+        
     <rule context="cac:CatalogueLine/cac:LineValidityPeriod">
       
         <let name="CatalogueLineValidityStart" value="if(exists(cbc:StartDate)) then number(translate(cbc:StartDate,'-','')) else $CatalogueValidityStart"/>
