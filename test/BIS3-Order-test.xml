@@ -45,9 +45,9 @@
 
     <cac:BuyerCustomerParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="0144">324687446577</cbc:EndpointID>
+            <cbc:EndpointID schemeID="0144">7300010000001</cbc:EndpointID>
             <cac:PartyIdentification>
-                <cbc:ID schemeID="0144">715446446345</cbc:ID>
+                <cbc:ID schemeID="0144">7300010000001</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>
                 <cbc:Name>John Nickson</cbc:Name>
@@ -72,7 +72,7 @@
             </cac:PartyTaxScheme>
             <cac:PartyLegalEntity>
                 <cbc:RegistrationName>Cellphone AS</cbc:RegistrationName>
-                <cbc:CompanyID schemeID="001">1222558</cbc:CompanyID>
+                <cbc:CompanyID schemeID="0088">7300010000001</cbc:CompanyID>
                 <cac:RegistrationAddress>
                     <cbc:CityName>London</cbc:CityName>
                     <cac:Country>
@@ -90,9 +90,9 @@
 
     <cac:SellerSupplierParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="0144">7105584323</cbc:EndpointID>
+            <cbc:EndpointID schemeID="0144">7300010000001</cbc:EndpointID>
             <cac:PartyIdentification>
-                <cbc:ID schemeID="0144">554465562</cbc:ID>
+                <cbc:ID schemeID="0144">7300010000001</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>
                 <cbc:Name>Ole Jensen</cbc:Name>
@@ -112,7 +112,7 @@
             </cac:PostalAddress>
             <cac:PartyLegalEntity>
                 <cbc:RegistrationName>Nord Internet AS</cbc:RegistrationName>
-                <cbc:CompanyID schemeID="124">01514158</cbc:CompanyID>
+                <cbc:CompanyID schemeID="0024">7300010000001</cbc:CompanyID>
                 <cac:RegistrationAddress>
                     <cbc:CityName>Oslo</cbc:CityName>
                     <cac:Country>
@@ -131,7 +131,7 @@
     <cac:OriginatorCustomerParty>
         <cac:Party>
             <cac:PartyIdentification>
-                <cbc:ID schemeID="111">2454122</cbc:ID>
+                <cbc:ID schemeID="0011">7300010000001</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>
                 <cbc:Name>Power</cbc:Name>
@@ -146,7 +146,7 @@
 
     <cac:AccountingCustomerParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="451">7412544682523</cbc:EndpointID>
+            <cbc:EndpointID schemeID="451">7300010000001</cbc:EndpointID>
             <cac:PartyIdentification>
                 <cbc:ID>244312</cbc:ID>
             </cac:PartyIdentification>
@@ -173,7 +173,7 @@
             </cac:PartyTaxScheme>
             <cac:PartyLegalEntity>
                 <cbc:RegistrationName>cellphoneXY</cbc:RegistrationName>
-                <cbc:CompanyID schemeID="012">6414423254</cbc:CompanyID>
+                <cbc:CompanyID schemeID="0012">7300010000001</cbc:CompanyID>
                 <cac:RegistrationAddress>
                     <cbc:CityName>Sandvika</cbc:CityName>
                     <cac:Country>
@@ -189,7 +189,7 @@
 
     <cac:Delivery>
         <cac:DeliveryLocation>
-            <cbc:ID schemeID="0047">57456465453</cbc:ID>
+            <cbc:ID schemeID="0047">7300010000001</cbc:ID>
             <cac:Address>
                 <cbc:StreetName>Vesterdalsenga 433</cbc:StreetName>
                 <cbc:AdditionalStreetName>Building A</cbc:AdditionalStreetName>
@@ -210,7 +210,7 @@
         </cac:RequestedDeliveryPeriod>
         <cac:DeliveryParty>
             <cac:PartyIdentification>
-                <cbc:ID schemeID="0047">246843321</cbc:ID>
+                <cbc:ID schemeID="0047">7300010000001</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>
                 <cbc:Name>Mobile XYZ</cbc:Name>
@@ -281,7 +281,7 @@
             </cac:Delivery>
             <cac:OriginatorParty>
                 <cac:PartyIdentification>
-                    <cbc:ID schemeID="0087">356</cbc:ID>
+                    <cbc:ID schemeID="0087">7300010000001</cbc:ID>
                 </cac:PartyIdentification>
                 <cac:PartyName>
                     <cbc:Name>Nick Nilsson</cbc:Name>
@@ -311,7 +311,7 @@
                     <cbc:ID>45124</cbc:ID>
                 </cac:BuyersItemIdentification>
                 <cac:SellersItemIdentification>
-                    <cbc:ID schemeID="045">2464536</cbc:ID>
+                    <cbc:ID schemeID="045">7300010000001</cbc:ID>
                 </cac:SellersItemIdentification>
                 <cac:ItemSpecificationDocumentReference>
                     <cbc:ID>xyz.pdf</cbc:ID>
