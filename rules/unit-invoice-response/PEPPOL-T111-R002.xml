@@ -3,7 +3,7 @@
 	configuration="peppolbis-t111-base-3.0">
 	<assert>
 		<description>Verify that clarification code OTH has a description</description>
-		<scope>PEPPOL-T111-base-3-R002</scope>
+		<scope>PEPPOL-T111-R002</scope>
 	</assert>
 
 	<test id="1">

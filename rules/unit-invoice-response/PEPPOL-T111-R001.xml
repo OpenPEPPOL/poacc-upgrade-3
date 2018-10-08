@@ -3,7 +3,7 @@
 	configuration="peppolbis-t111-base-3.0">
 	<assert>
 		<description>Verify that status codes CU, UQ and RE must have a reason code</description>
-		<scope>PEPPOL-T111-base-3-R001</scope>
+		<scope>PEPPOL-T111-R001</scope>
 	</assert>
 	<test id="1">
 		<assert>
@@ -15,7 +15,7 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2">
 
-			<cbc:ResponseCode listID="UNCL4343OpSubset">CU</cbc:ResponseCode>
+			<cbc:ResponseCode listID="UNCL4343OpSubset">CA</cbc:ResponseCode>
 			<cac:Status>
 				<cbc:StatusReasonCode listID="OPStatusReason">LEG</cbc:StatusReasonCode>
 			</cac:Status>
