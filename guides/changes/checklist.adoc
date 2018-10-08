@@ -40,8 +40,8 @@
 		- [x] Order agreement.
 		- [x] Order response.
 		- [x] Despatch.
-		- [ ] Catalogue (Siw)
-		- [ ] Punch out (Siw)
+		- [x] Catalogue (Siw)
+		- [x] Punch out (Siw)
 
 === Georg
 		- [x] Catalogue response.
@@ -53,7 +53,7 @@
     - [ ] No new rules added to 71 77 58, verify (Siw)
     - [ ] In main site of upgrade project there is reviewofalignment.xml (Siw)
     - [x] Inserting new customzation and profile identifiers (Georg)
-	- [ ] Unit code list (Siw)
+	- [x] Unit code list (Siw)
     - [x] BIS, clean up yellow highlighting.
     - [x] Base rules for all transactions have transaction id T01.
     - [x] tir77-011tir77-012 in punchout, error or two tir?
