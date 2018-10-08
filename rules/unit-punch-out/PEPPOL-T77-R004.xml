@@ -6,7 +6,7 @@
 		<scope>PEPPOL-T77-R004</scope>
 	</assert>
 	
-	<test>
+	<test id="1">
 		<assert>
 			<success>PEPPOL-T77-R004</success>
 		</assert>
@@ -28,7 +28,7 @@
 		</Catalogue>
 	</test>
 	
-	<test>
+	<test id="2">
 		<assert>
 			<success>PEPPOL-T77-R004</success>
 		</assert>
@@ -47,7 +47,7 @@
 		</Catalogue>
 	</test>
 	
-	<test>
+	<test id="3">
 		<assert>
 			<success>PEPPOL-T77-R004</success>
 		</assert>
@@ -66,7 +66,7 @@
 		</Catalogue>
 	</test>
 
-	<test>
+	<test id="4">
 		<assert>
 			<error>PEPPOL-T77-R004</error>
 		</assert>
@@ -76,28 +76,6 @@
 			
 			<cac:CatalogueLine>
 				<cac:Item>
-				</cac:Item>
-			</cac:CatalogueLine>
-
-		</Catalogue>
-	</test>
-	
-	<test>
-		<assert>
-			<error>PEPPOL-T77-R004</error>
-		</assert>
-		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
-				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
-				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
-			
-			<cac:CatalogueLine>
-				<cac:Item>
-					<cac:SellersItemIdentification>
-						<cbc:ID></cbc:ID>
-					</cac:SellersItemIdentification>
-					<cac:StandardItemIdentification>
-						<cbc:ID schemeID="0160"></cbc:ID>
-					</cac:StandardItemIdentification>
 				</cac:Item>
 			</cac:CatalogueLine>
 

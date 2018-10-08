@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--BII3-T77-R010-->
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
 	configuration="peppolbis-t77-base-3.0">
 	<assert>
-		<description>Verify shopping cart lines quantities are greater than zero</description>
+		<description>Verify that only one attachment is used for the main image"</description>
 		<scope>PEPPOL-T77-R005</scope>
 	</assert>
 	
@@ -16,14 +15,11 @@
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 			
 			<cac:CatalogueLine>
-				<cac:RequiredItemLocationQuantity>
-					<cac:Price>
-						<cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
-					</cac:Price>
-					<cac:DeliveryUnit>
-						<cbc:BatchQuantity unitCode="C62">1</cbc:BatchQuantity>
-					</cac:DeliveryUnit>
-				</cac:RequiredItemLocationQuantity>
+				<cac:Item>
+					<cac:ItemSpecificationDocumentReference>
+						<cbc:DocumentTypeCode>PRODUCT_IMAGE</cbc:DocumentTypeCode>
+					</cac:ItemSpecificationDocumentReference>
+				</cac:Item>
 			</cac:CatalogueLine>
 
 		</Catalogue>
@@ -31,21 +27,21 @@
 
 	<test>
 		<assert>
-			<error>PEPPOL-T77-R005</error>
+			<success>PEPPOL-T77-R005</success>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
 				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 			
 			<cac:CatalogueLine>
-				<cac:RequiredItemLocationQuantity>
-					<cac:Price>
-						<cbc:BaseQuantity unitCode="C62">0</cbc:BaseQuantity>
-					</cac:Price>
-					<cac:DeliveryUnit>
-						<cbc:BatchQuantity unitCode="C62">0</cbc:BatchQuantity>
-					</cac:DeliveryUnit>
-				</cac:RequiredItemLocationQuantity>
+				<cac:Item>
+					<cac:ItemSpecificationDocumentReference>
+						<cbc:DocumentTypeCode>PRODUCT_IMAGE</cbc:DocumentTypeCode>
+					</cac:ItemSpecificationDocumentReference>
+					<cac:ItemSpecificationDocumentReference>
+						<cbc:DocumentTypeCode>911</cbc:DocumentTypeCode>
+					</cac:ItemSpecificationDocumentReference>
+				</cac:Item>
 			</cac:CatalogueLine>
 
 		</Catalogue>
@@ -53,21 +49,21 @@
 
 	<test>
 		<assert>
-			<error>PEPPOL-T77-R005</error>
+			<error number="1">PEPPOL-T77-R005</error>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
 				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 			
 			<cac:CatalogueLine>
-				<cac:RequiredItemLocationQuantity>
-					<cac:Price>
-						<cbc:BaseQuantity unitCode="C62">-1</cbc:BaseQuantity>
-					</cac:Price>
-					<cac:DeliveryUnit>
-						<cbc:BatchQuantity unitCode="C62">-1</cbc:BatchQuantity>
-					</cac:DeliveryUnit>
-				</cac:RequiredItemLocationQuantity>
+				<cac:Item>
+					<cac:ItemSpecificationDocumentReference>
+						<cbc:DocumentTypeCode>PRODUCT_IMAGE</cbc:DocumentTypeCode>
+					</cac:ItemSpecificationDocumentReference>
+					<cac:ItemSpecificationDocumentReference>
+						<cbc:DocumentTypeCode>PRODUCT_IMAGE</cbc:DocumentTypeCode>
+					</cac:ItemSpecificationDocumentReference>
+				</cac:Item>
 			</cac:CatalogueLine>
 
 		</Catalogue>

@@ -45,7 +45,7 @@
 
 	<test>
 		<assert>
-			<success>PEPPOL-T77-R001</success>
+			<error>PEPPOL-T77-R001</error>
 		</assert>
 		<Catalogue
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
