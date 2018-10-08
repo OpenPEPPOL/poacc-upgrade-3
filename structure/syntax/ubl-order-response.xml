@@ -439,7 +439,7 @@
 				<Element>
 					<Term>cac:Item</Term>
 					<Name>Item information </Name>
-					<Element cardinality="0..1">
+					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Item name</Name>
 						<Description>A short name optionally given to an item, such as a name from
