@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-t111-base-3.0">
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t111-base-3.0">
 	<assert>
 		<description>Verify that status codes CU, UQ and RE must have a reason code</description>
 		<scope>PEPPOL-T111-R001</scope>
@@ -15,11 +14,14 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2">
 
-			<cbc:ResponseCode listID="UNCL4343OpSubset">CA</cbc:ResponseCode>
-			<cac:Status>
-				<cbc:StatusReasonCode listID="OPStatusReason">LEG</cbc:StatusReasonCode>
-			</cac:Status>
-
+			<cac:DocumentResponse>
+				<cac:Response>
+					<cbc:ResponseCode listID="UNCL4343OpSubset">CA</cbc:ResponseCode>
+					<cac:Status>
+						<cbc:StatusReasonCode listID="OPStatusReason">LEG</cbc:StatusReasonCode>
+					</cac:Status>
+				</cac:Response>
+			</cac:DocumentResponse>
 		</ApplicationResponse>
 
 	</test>
@@ -33,11 +35,14 @@
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2">
-
-			<cbc:ResponseCode listID="UNCL4343OpSubset">UQ</cbc:ResponseCode>
-			<cac:Status>
-				<cbc:StatusReasonCode listID="OPStatusReason">LEG</cbc:StatusReasonCode>
-			</cac:Status>
+			<cac:DocumentResponse>
+				<cac:Response>
+					<cbc:ResponseCode listID="UNCL4343OpSubset">UQ</cbc:ResponseCode>
+					<cac:Status>
+						<cbc:StatusReasonCode listID="OPStatusReason">LEG</cbc:StatusReasonCode>
+					</cac:Status>
+				</cac:Response>
+			</cac:DocumentResponse>
 
 		</ApplicationResponse>
 
@@ -52,11 +57,14 @@
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2">
-
-			<cbc:ResponseCode listID="UNCL4343OpSubset">RE</cbc:ResponseCode>
-			<cac:Status>
-				<cbc:StatusReasonCode listID="OPStatusReason">LEG</cbc:StatusReasonCode>
-			</cac:Status>
+			<cac:DocumentResponse>
+				<cac:Response>
+					<cbc:ResponseCode listID="UNCL4343OpSubset">RE</cbc:ResponseCode>
+					<cac:Status>
+						<cbc:StatusReasonCode listID="OPStatusReason">LEG</cbc:StatusReasonCode>
+					</cac:Status>
+				</cac:Response>
+			</cac:DocumentResponse>
 
 		</ApplicationResponse>
 
@@ -72,9 +80,11 @@
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2">
-
-			<cbc:ResponseCode listID="UNCL4343OpSubset">CA</cbc:ResponseCode>
-
+			<cac:DocumentResponse>
+				<cac:Response>
+					<cbc:ResponseCode listID="UNCL4343OpSubset">CA</cbc:ResponseCode>
+				</cac:Response>
+			</cac:DocumentResponse>
 		</ApplicationResponse>
 	</test>
 
@@ -87,13 +97,15 @@
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2">
-
-			<cbc:ResponseCode listID="UNCL4343OpSubset">UQ</cbc:ResponseCode>
-
+			<cac:DocumentResponse>
+				<cac:Response>
+					<cbc:ResponseCode listID="UNCL4343OpSubset">UQ</cbc:ResponseCode>
+				</cac:Response>
+			</cac:DocumentResponse>
 		</ApplicationResponse>
 	</test>
 
-		<test id="6">
+	<test id="6">
 		<assert>
 			<error>PEPPOL-T111-R001</error>
 		</assert>
@@ -102,9 +114,11 @@
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2">
-
-			<cbc:ResponseCode listID="UNCL4343OpSubset">RE</cbc:ResponseCode>
-
+			<cac:DocumentResponse>
+				<cac:Response>
+					<cbc:ResponseCode listID="UNCL4343OpSubset">RE</cbc:ResponseCode>
+				</cac:Response>
+			</cac:DocumentResponse>
 		</ApplicationResponse>
 	</test>
 
