@@ -1012,7 +1012,7 @@
 			</Element>
 			<Element>
 				<Term>cac:Item</Term>
-				<Element cardinality="0..1">
+				<Element>
 					<Term>cbc:Name</Term>
 					<Name>Item name</Name>
 					<Description>A short name for an item.</Description>

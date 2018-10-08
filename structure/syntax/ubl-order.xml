@@ -1976,7 +1976,7 @@
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-133</Reference>
 					</Element>
-					<Element cardinality="0..1">
+					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Item name</Name>
 						<Description>A short name for an item.A short name optionally given to an

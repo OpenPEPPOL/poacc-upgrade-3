@@ -21,8 +21,8 @@
 
 	<rule context="cac:Item">
 		<assert id="PEPPOL-T77-R004"
-				test="cac:SellersItemIdentification or cac:StandardItemIdentification"
-				flag="fatal">An item in a shopping cart SHALL be uniquely identifiable by either "item sellers identifier" or "item standard identifier"</assert>
+				test="(cac:StandardItemIdentification/cbc:ID) or  (cac:SellersItemIdentification/cbc:ID)"
+				flag="fatal">Each item in a shopping cart line SHALL be identifiable by either "item sellers identifier" or "item standard identifier"</assert>
 		<assert id="PEPPOL-T77-R005"
 				test="(count(cac:ItemSpecificationDocumentReference[cbc:DocumentTypeCode = 'main_image']) &lt;= 1)"
 				flag="fatal">Only one attachment may be identified as main image.</assert>
