@@ -52,8 +52,8 @@
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
-        <Path>structure/syntax/ubl-punchout.xml</Path>
-        <Title>PEPPOL BIS Punchout 3.0</Title>
+        <Path>structure/syntax/ubl-shoppingcart.xml</Path>
+        <Title>PEPPOL BIS Shopping Cart 3.0</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
@@ -63,7 +63,7 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-invoiceresponse.xml</Path>
-        <Title>PEPPOL BIS Invoice Response</Title>
+        <Title>PEPPOL BIS Invoice Response 3.0</Title>
     </Resource>
     
     <!-- Rules -->

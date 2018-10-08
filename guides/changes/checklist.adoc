@@ -22,7 +22,7 @@
 
 == Rules
     - [x] Add a rules to ensure that allowance and charge amounts are not negative. (Siw)
-	- [ ] Align rules on name and identifiers (Georg).
+	- [x] Align rules on name and identifiers (Georg).
     - [x] Id's are missing.
 
 == Creation of unit test files.
