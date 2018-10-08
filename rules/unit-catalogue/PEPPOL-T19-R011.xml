@@ -74,7 +74,7 @@
 					<cbc:StartDate>2018-09-01</cbc:StartDate>
 					<cbc:EndDate>2019-08-31</cbc:EndDate>
 				</cac:LineValidityPeriod>
-				<!--not sure about this validation-->
+			
 				<cac:RequiredItemLocationQuantity>
 					<cac:Price>
 						<cac:ValidityPeriod>
@@ -102,10 +102,7 @@
 				</cac:LineValidityPeriod>
 
 				<cac:RequiredItemLocationQuantity>
-					<cac:Price>
-						<cac:ValidityPeriod>
-						</cac:ValidityPeriod>
-					</cac:Price>
+					<cac:Price/>
 				</cac:RequiredItemLocationQuantity>
 
 			</cac:CatalogueLine>
