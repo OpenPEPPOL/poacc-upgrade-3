@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>	
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
-
+	
 	<rule context="ubl:Catalogue">
 		<assert id="PEPPOL-T77-R001"
 				test="(cac:ValidityPeriod/cbc:EndDate) and (number(translate(cac:ValidityPeriod/cbc:EndDate,'-','')) &gt;= number(translate(cbc:IssueDate,'-','')))"
@@ -28,7 +28,7 @@
 				test="(cac:Price/cbc:BaseQuantity/@unitCode) = (cac:DeliveryUnit/cbc:BatchQuantity/@unitCode) or (not(cac:Price/cbc:BaseQuantity)) or (not(cac:DeliveryUnit/cbc:BatchQuantity))"
 				flag="fatal">Unit code for price base quantity SHALL be same as for batch quantity.</assert>
 		<assert id="PEPPOL-T77-R002"
-			test="(number(cac:Price/cbc:BaseQuantity) &gt;=0) and (number(cac:DeliveryUnit/cbc:BatchQuantity/) &gt;=0)"
+			test="(number(cac:Price/cbc:BaseQuantity) &gt;=0) and (number(cac:DeliveryUnit/cbc:BatchQuantity) &gt;=0)"
 			flag="fatal">Shopping cart line quantities SHALL be greater than ZERO.</assert>
 	</rule>
 
@@ -48,3 +48,4 @@
 	</rule>
 	
 </pattern>
+

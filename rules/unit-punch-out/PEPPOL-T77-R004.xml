@@ -68,7 +68,7 @@
 
 	<test>
 		<assert>
-			<error number="1">PEPPOL-T77-R004</error>
+			<error>PEPPOL-T77-R004</error>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
 				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
@@ -84,7 +84,7 @@
 	
 	<test>
 		<assert>
-			<error number="2">PEPPOL-T77-R004</error>
+			<error>PEPPOL-T77-R004</error>
 		</assert>
 		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
 				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
