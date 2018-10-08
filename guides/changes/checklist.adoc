@@ -22,7 +22,7 @@
 
 == Rules
     - [x] Add a rules to ensure that allowance and charge amounts are not negative. (Siw)
-	  - [ ] Align rules on name and identifiers.
+	- [ ] Align rules on name and identifiers (Georg).
     - [x] Id's are missing.
 
 == Creation of unit test files.
@@ -40,24 +40,23 @@
 		- [x] Order agreement.
 		- [x] Order response.
 		- [x] Despatch.
-
+		- [ ] Catalogue (Siw)
+		- [ ] Punch out (Siw)
 === Georg
-		- [ ] Catalogue.
 		- [x] Catalogue response.
-		- [ ] Punch out.
 		- [x] IMR.
 		- [x] Anyone we are missing.
 
 == Other
-    - [ ] Release notes (In Git)
+    - [ ] Release notes (In Git) (Georg)
+    - [ ] No new rules added to 71 77 58, verify (Siw)
+    - [ ] In main site of upgrade project there is reviewofalignment.xml (Siw)
+    - [ ] Inserting new customzation and profile identifiers (Georg)
+	- [ ] Unit code list (Siw)
     - [x] BIS, clean up yellow highlighting.
     - [x] Base rules for all transactions have transaction id T01.
     - [x] tir77-011tir77-012 in punchout, error or two tir?
-    - [ ] No new rules added to 71 77 19 58, verify
-    - [ ] Missing examples on syntax files (low priority)
-    - [ ] Create test files based on syntax files. (Jalini is working on this)
-    - [ ] In main site of upgrade project there is reviewofalignment.xml (Jalini)
-    - [x] Inserting new customzation and profile identifiers
+    - [x] Missing examples on syntax files (Jalini)
     - [x] Add manual rule to order checking for two allowed profile id's
     - [x] Syntax, add tir ids to new business terms "tirnn=pxxx"
 
