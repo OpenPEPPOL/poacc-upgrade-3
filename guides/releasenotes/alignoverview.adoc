@@ -1,4 +1,4 @@
-= PEPPOL BIS3-1.0rc Release notes
+= Overview of alignments
 :doctype: book
 :icons: font
 :toc: left
@@ -8,6 +8,6 @@
 :sectanchors:
 :sectnums:
 
-These are the release notes for, and so on....
+The following has work has been done
 
 
