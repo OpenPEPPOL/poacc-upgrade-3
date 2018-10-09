@@ -223,7 +223,7 @@
 					<cbc:ItemClassificationCode listID="MP" listVersionID="19.0501">12345678</cbc:ItemClassificationCode>
 				</cac:CommodityClassification>
 				<cac:TransactionConditions>
-					<cbc:ID>CT</cbc:ID>
+					<cbc:ActionCode>CT</cbc:ActionCode>
 				</cac:TransactionConditions>
 				<cac:ClassifiedTaxCategory>
 					<cbc:ID>S</cbc:ID>

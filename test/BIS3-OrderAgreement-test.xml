@@ -3,8 +3,8 @@
 <OrderResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2"
                xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
                xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-    <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns110:ver1.0:extended:urn:www.peppol.eu:bis:peppol42a:ver1.0</cbc:CustomizationID>
-    <cbc:ProfileID>urn:www.cenbii.eu:profile:bii42:ver1.0</cbc:ProfileID>
+    <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns110a:order_agreement:bis3-1.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis42a:order_agreement:bis3-1.0</cbc:ProfileID>
     <cbc:ID>54345sg-525gs-sg45435-2435hre</cbc:ID>
     <cbc:SalesOrderID>135445</cbc:SalesOrderID>
     <cbc:IssueDate>2018-02-08</cbc:IssueDate>
@@ -21,7 +21,7 @@
         <cbc:ID>doc-23</cbc:ID>
         <cbc:DocumentType>pdf</cbc:DocumentType>
         <cac:Attachment>
-            <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="hello.pdf">PIJHGAJPG335EFAAEG445</cbc:EmbeddedDocumentBinaryObject>
+            <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="hello.pdf">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</cbc:EmbeddedDocumentBinaryObject>
             <cac:ExternalReference>
                 <cbc:URI>http://howtodo.com/hello.html</cbc:URI>
             </cac:ExternalReference>
@@ -105,7 +105,7 @@
             <cbc:StartDate>2018-02-05</cbc:StartDate>
             <cbc:StartTime>08:30:00</cbc:StartTime>
             <cbc:EndDate>2018-02-10</cbc:EndDate>
-            <cbc:EndDate>15:00:00</cbc:EndDate>
+            <cbc:EndTime>15:00:00</cbc:EndTime>
         </cac:PromisedDeliveryPeriod>
         <cac:DeliveryParty>
             <cac:PartyIdentification>
@@ -156,7 +156,7 @@
         <cbc:AllowanceChargeReasonCode>100</cbc:AllowanceChargeReasonCode>
         <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
         <cbc:MultiplierFactorNumeric>15</cbc:MultiplierFactorNumeric>
-        <cbc:Amount currencyID="EUR">1000.00</cbc:Amount>
+        <cbc:Amount currencyID="EUR">120.00</cbc:Amount>
         <cbc:BaseAmount currencyID="EUR">800.00</cbc:BaseAmount>
         <cac:TaxCategory>
             <cbc:ID>S</cbc:ID>
@@ -168,10 +168,10 @@
     </cac:AllowanceCharge>
 
     <cac:TaxTotal>
-        <cbc:TaxAmount currencyID="EUR">1000.00</cbc:TaxAmount>
+        <cbc:TaxAmount currencyID="EUR">220.00</cbc:TaxAmount>
         <cac:TaxSubtotal>
-            <cbc:TaxableAmount currencyID="EUR">500.00</cbc:TaxableAmount>
-            <cbc:TaxAmount currencyID="EUR">200.00</cbc:TaxAmount>
+            <cbc:TaxableAmount currencyID="EUR">880.00</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="EUR">220.00</cbc:TaxAmount>
             <cac:TaxCategory>
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25.00</cbc:Percent>
@@ -184,14 +184,12 @@
     </cac:TaxTotal>
 
     <cac:LegalMonetaryTotal>
-        <cbc:LineExtensionAmount currencyID="EUR">1200.00</cbc:LineExtensionAmount>
-        <cbc:TaxExclusiveAmount currencyID="EUR">850.00</cbc:TaxExclusiveAmount>
-        <cbc:TaxInclusiveAmount currencyID="EUR">1221.52</cbc:TaxInclusiveAmount>
-        <cbc:AllowanceTotalAmount currencyID="EUR">1000.00</cbc:AllowanceTotalAmount>
-        <cbc:ChargeTotalAmount currencyID="EUR">2.00</cbc:ChargeTotalAmount>
+        <cbc:LineExtensionAmount currencyID="EUR">1000.00</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">880.00</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">1100</cbc:TaxInclusiveAmount>
+        <cbc:AllowanceTotalAmount currencyID="EUR">120.00</cbc:AllowanceTotalAmount>
         <cbc:PrepaidAmount currencyID="EUR">500.00</cbc:PrepaidAmount>
-        <cbc:PayableRoundingAmount currencyID="EUR">0.27</cbc:PayableRoundingAmount>
-        <cbc:PayableAmount currencyID="EUR">500.00</cbc:PayableAmount>
+        <cbc:PayableAmount currencyID="EUR">600.00</cbc:PayableAmount>
     </cac:LegalMonetaryTotal>
 
     <cac:OrderLine>
@@ -232,7 +230,7 @@
                     <cbc:ID>xyz.pdf</cbc:ID>
                     <cbc:DocumentType>Picture of shoes.</cbc:DocumentType>
                     <cac:Attachment>
-                        <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="shoes.pdf">http://www.example.com/shoes.html</cbc:EmbeddedDocumentBinaryObject>
+                        <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="shoes.pdf">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</cbc:EmbeddedDocumentBinaryObject>
                     </cac:Attachment>
                 </cac:ItemSpecificationDocumentReference>
 

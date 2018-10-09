@@ -1008,7 +1008,7 @@
 				<Name>VAT breakdown</Name>
 				<Description>A group of business terms providing information about VAT breakdown by different categories, rates
                     and exemption reasons</Description>
-				<Element cardinality="0..1">
+				<Element>
 					<Term>cbc:TaxableAmount</Term>
 					<Name>VAT category taxable amount</Name>
 					<Description>Sum of all taxable amounts subject to a specific VAT category code
@@ -1593,13 +1593,14 @@
 						<Term>cac:TransactionConditions</Term>
 						<Name>Contracted item</Name>
 						<Element>
-							<Term>cbc:ID</Term>
+							<Term>cbc:ActionCode</Term>
 							<Name>Contracted item indicator</Name>
 							<Description>The code CT indicates that the item is offered in accordance to the referenced contract.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir110-094</Reference>
 							<Value type="FIXED">CT</Value>
 						</Element>
+						
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:ClassifiedTaxCategory</Term>
