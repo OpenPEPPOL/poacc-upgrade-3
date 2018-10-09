@@ -182,19 +182,6 @@
 				</Element>
 			</Element>
 			<Element cardinality="0..1">
-				<Term>cac:PartyName</Term>
-				<Name>Party name</Name>
-				<Element>
-					<Term>cbc:Name</Term>
-					<Name>Provider trading name</Name>
-					<Description>Use in the absence of or in addition to Party
-                        Identifier.</Description>
-					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">tir19-011</Reference>
-					<Value type="EXAMPLE">Provider</Value>
-				</Element>
-			</Element>
-			<Element cardinality="0..1">
 				<Term>cac:PostalAddress</Term>
 				<Name>Provider Postal Address</Name>
 				<Description>A group of business terms providing information about the address of the Catalogue Provider.</Description>
@@ -275,7 +262,7 @@
 					</Element>
 				</Element>
 			</Element>
-			<Element>
+			<Element cardinality="0..1">
 				<Term>cac:PartyLegalEntity</Term>
 				<Name>Party Legal Entity</Name>
 				<Element>
@@ -284,8 +271,8 @@
 					<Description>The name under which the provider is legally
                         registered.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">tir19-p028b</Reference>
-					<Value type="EXAMPLE">Povider legal entity</Value>
+					<Reference type="BUSINESS_TERM">tir19-011</Reference>
+					<Value type="EXAMPLE">Povider Party name</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:CompanyID</Term>
@@ -382,19 +369,6 @@
 				</Element>
 			</Element>
 			<Element cardinality="0..1">
-				<Term>cac:PartyName</Term>
-				<Name>Party name</Name>
-				<Element>
-					<Term>cbc:Name</Term>
-					<Name>Receiver trading name</Name>
-					<Description>Use in the absence of or in addition to Party
-                        Identifier.</Description>
-					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">tir19-014</Reference>
-					<Value type="EXAMPLE">Receiver</Value>
-				</Element>
-			</Element>
-			<Element cardinality="0..1">
 				<Term>cac:PostalAddress</Term>
 				<Name>Postal address</Name>
 				<Reference type="BUSINESS_TERM">tir19-p029</Reference>
@@ -475,7 +449,7 @@
 					</Element>
 				</Element>
 			</Element>
-			<Element>
+			<Element cardinality="0..1">
 				<Term>cac:PartyLegalEntity</Term>
 				<Name>Party legal entity</Name>
 				<Element>
@@ -484,7 +458,7 @@
 					<Description>The name under which the receiver is legally
                         registered.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">tir19-p030b</Reference>
+					<Reference type="BUSINESS_TERM">tir19-014</Reference>
 					<Value type="EXAMPLE">Registration name</Value>
 				</Element>
 				<Element cardinality="0..1">

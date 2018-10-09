@@ -315,7 +315,7 @@
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:PartyLegalEntity</Term>
-					<Name>Seller legal party</Name>
+					<Name>Party name</Name>
 					
 					<Element>
 						<Term>cbc:RegistrationName</Term>
@@ -480,7 +480,7 @@
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:PartyLegalEntity</Term>
-					<Name>Buyer legal party</Name>
+					<Name>Party name</Name>
 					
 					<Element>
 						<Term>cbc:RegistrationName</Term>

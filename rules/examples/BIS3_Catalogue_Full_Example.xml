@@ -35,9 +35,6 @@
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="0088">5790000435951</cbc:ID>
 		</cac:PartyIdentification>
-		<cac:PartyName>
-			<cbc:Name>ABC Supplier Ltd.</cbc:Name>
-		</cac:PartyName>
 		<cac:PostalAddress>
 			<cbc:StreetName>Sinsenveien 40</cbc:StreetName>
 			<cbc:AdditionalStreetName>Oppgang B</cbc:AdditionalStreetName>
@@ -67,9 +64,6 @@
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="0088">5790000435944</cbc:ID>
 		</cac:PartyIdentification>
-		<cac:PartyName>
-			<cbc:Name>DEF Customer Ltd.</cbc:Name>
-		</cac:PartyName>
 		<cac:PostalAddress>
 			<cbc:StreetName>Storgt. 12</cbc:StreetName>
 			<cbc:AdditionalStreetName>4. etasje</cbc:AdditionalStreetName>
