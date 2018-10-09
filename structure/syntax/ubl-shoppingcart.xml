@@ -237,6 +237,14 @@
 
 				<Value type="EXAMPLE">1</Value>
 			</Element>
+			<Element>
+				<Term>cbc:ContractSubdivision</Term>
+				<Name>Contracted item indicator</Name>
+				<Description>Reference to the contract when the item is offered in accordance to an existing contract</Description>
+				<DataType>Identifier</DataType>
+				<Reference type="BUSINESS_TERM">tir77-019</Reference>
+				<Value type="EXAMPLE">ct24342</Value>
+			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:LineValidityPeriod</Term>
 				<Name>Availability date information</Name>

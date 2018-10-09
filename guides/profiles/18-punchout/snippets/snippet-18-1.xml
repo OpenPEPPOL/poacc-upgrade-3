@@ -54,6 +54,10 @@
 	<!-- end::buyer[] -->
 	<cac:CatalogueLine>
 		<cbc:ID>1</cbc:ID>
+		<!-- tag::contract[] -->
+		<cbc:ContractSubdivision>234235</cbc:ContractSubdivision>
+		<!-- end::contract[] -->
+		
 		<!-- tag::availability[] -->
 		<cac:LineValidityPeriod>
 			<cbc:StartDate>2014-12-31</cbc:StartDate>
