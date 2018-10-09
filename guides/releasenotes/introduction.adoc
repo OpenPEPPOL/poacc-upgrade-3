@@ -1,5 +1,4 @@
 = PEPPOL BIS3-1.0rc Release notes
-Draft, OpenPEPPOL AISBL, Post-Award Coordinating Community
 :doctype: book
 :icons: font
 :toc: left
@@ -11,6 +10,4 @@ Draft, OpenPEPPOL AISBL, Post-Award Coordinating Community
 
 These are the release notes for, and so on....
 
-
-:leveloffset: +1
 
