@@ -1,67 +1,9 @@
-<schema xmlns="http://purl.oclc.org/dsdl/schematron"
-	xmlns:u="utils"
-	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-	xmlns:xi="http://www.w3.org/2001/XInclude"
-	schemaVersion="iso"
-	queryBinding="xslt2">
-	
-	<title>Rules for PEPPOL BIS 3.0 Order Agreement</title>
-	
-	<ns uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-		prefix="cbc"/>
-	<ns uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-		prefix="cac"/>
-	<ns uri="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2"
-		prefix="ubl"/>
-	<ns uri="http://www.w3.org/2001/XMLSchema" prefix="xs"/>
-	<ns uri="utils" prefix="u"/>
-	
-	
-	
-	<function xmlns="http://www.w3.org/1999/XSL/Transform"
-		name="u:gln"
-		as="xs:boolean">
-		<param name="val"/>
-		<variable name="length" select="string-length($val) - 1"/>
-		<variable name="digits"
-			select="reverse(for $i in string-to-codepoints(substring($val, 0, $length + 1)) return $i - 48)"/>
-		<variable name="weightedSum"
-			select="sum(for $i in (0 to $length - 1) return $digits[$i + 1] * (1 + ((($i + 1) mod 2) * 2)))"/>
-		<value-of select="10 - ($weightedSum mod 10) = number(substring($val, $length + 1, 1))"/>
-	</function>
-	<function xmlns="http://www.w3.org/1999/XSL/Transform"
-		name="u:slack"
-		as="xs:boolean">
-		<param name="exp" as="xs:decimal"/>
-		<param name="val" as="xs:decimal"/>
-		<param name="slack" as="xs:decimal"/>
-		<value-of select="xs:decimal($exp + $slack) &gt;= $val and xs:decimal($exp - $slack) &lt;= $val"/>
-	</function>
-	<function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:cat2str">
-		<param name="cat"/>
-		<value-of select="concat(normalize-space($cat/cbc:ID), '-', round(xs:decimal($cat/cbc:Percent) * 1000000))"/>
-	</function>
-	
-	
-	
-	<pattern>
-	
-	
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron"
 	
 
 	<let name="taxCategoryPercents" value="for $cat in /ubl:OrderResponse/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory return u:cat2str($cat)"/>
 	<let name="taxCategories" value="for $cat in /ubl:OrderResponse/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory return normalize-space($cat/cbc:ID)"/>		
-		<let name="documentCurrencyCode" value="/ubl:OrderResponse/cbc:DocumentCurrencyCode"/>
-
-
-<!--<rule context="/ubl:OrderResponse">
-	<assert id="PEPPOL-T110-R026"
-		test="((count(//cac:AllowanceCharge/cac:TaxCategory[normalize-space(cbc:ID) = 'S']) + count(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'S'])) &gt; 0 
-		and count(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) = 'S']) &gt; 0) 
-		or ((count(//cac:AllowanceCharge/cac:TaxCategory[normalize-space(cbc:ID) = 'S']) + count(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'S'])) = 0 
-		and count(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) = 'S']) = 0)"
-		flag="fatal">An Order agreement that contains a line, a Document level allowance or charge where the VAT category code is “Standard rated” (S)  shall contain in the VATBReakdown at least one VAT category code equal with "Standard rated" (S).</assert>	
-</rule>-->
+	<let name="documentCurrencyCode" value="/ubl:OrderResponse/cbc:DocumentCurrencyCode"/>
 
 
 	<rule context="cac:Item">
@@ -226,4 +168,3 @@
 	</rule>
 
 </pattern>
-</schema>
