@@ -1,4 +1,3 @@
-
 = Peppol Identifiers
 
 PEPPOL has defined a {policy8} that specifies how to use identifiers in both

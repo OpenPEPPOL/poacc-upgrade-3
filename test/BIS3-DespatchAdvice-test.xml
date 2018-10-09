@@ -226,11 +226,11 @@
                 <cbc:ExtendedID>Item 123= Dry skin</cbc:ExtendedID>
             </cac:SellersItemIdentification>
             <cac:StandardItemIdentification>
-                <cbc:ID schemeID="0088">276354</cbc:ID>
+                <cbc:ID schemeID="0088">7300010000001</cbc:ID>
                 <cbc:ExtendedID>Item= Normal skin</cbc:ExtendedID>
             </cac:StandardItemIdentification>
             <cac:HazardousItem>
-                <cbc:UNDGCode>X</cbc:UNDGCode>
+                <cbc:UNDGCode>ADR</cbc:UNDGCode>
                 <cbc:HazardClassID>Y</cbc:HazardClassID>
             </cac:HazardousItem>
             <cac:AdditionalItemProperty>
@@ -256,7 +256,7 @@
                 <cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
                 <cbc:ShippingMarks>Free text</cbc:ShippingMarks>
                 <cac:MeasurementDimension>
-                    <cbc:AttributeID>654664</cbc:AttributeID>
+                    <cbc:AttributeID>AAB</cbc:AttributeID>
                     <cbc:Measure unitCode="C62">1</cbc:Measure>
                 </cac:MeasurementDimension>
             </cac:TransportHandlingUnit>

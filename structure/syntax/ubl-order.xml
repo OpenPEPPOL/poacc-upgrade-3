@@ -105,11 +105,13 @@
 		<Element cardinality="0..1">
 			<Term>cbc:CustomerReference</Term>
 			<Name>Buyer contact</Name>
-			<Description>Reference to buyer contact, "Your ref."</Description>
+			<Description>The element is used for the reference of who ordered the products/services. 
+				Example being the name of the person ordering, employee number or a code identifying this person or department/group. Also known as "Your reference", and should also be sent in the corresponding invoice.</Description>
 			<DataType>Text</DataType>
 			<Reference type="BUSINESS_TERM">tir01-p002</Reference>
 			<Value type="EXAMPLE">oik987</Value>
 		</Element>
+		
 		<Element cardinality="0..1">
 			<Term>cbc:AccountingCost</Term>
 			<Name>Buyers accounting string</Name>
@@ -137,6 +139,7 @@
 		</Element>
 		<Element cardinality="0..1">
 			<Term>cac:QuotationDocumentReference</Term>
+			<Name>Quotation reference</Name>
 			<Description>Reference to quotation which is basis for the order </Description>
 			<Element>
 				<Term>cbc:ID</Term>
@@ -199,7 +202,9 @@
 				<Element cardinality="0..1">
 					<Term>cbc:EmbeddedDocumentBinaryObject</Term>
 					<Name>Attached binary object</Name>
-					<Description>The attached document embeded as binary object.</Description>
+					<Description>The attached document embeded as binary object, coded as Base64. 
+					The binary object has two supplementary components: a Mime Code, which specifies the Mime type of the attachment and a Filename 
+					that is provided by (or on behalf of) the sender of the document</Description>
 					<DataType>Binary object</DataType>
 					<Reference type="BUSINESS_TERM">tir01-017</Reference>
 					<Attribute>

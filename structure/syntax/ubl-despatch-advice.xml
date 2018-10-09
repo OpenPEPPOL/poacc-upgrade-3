@@ -1198,12 +1198,14 @@
 							<Element>
 								<Term>cbc:AttributeID</Term>
 								<Name>Attribute identifier</Name>
+								<Description>Code to indicate if the measure is gross weight or gross volume</Description>
 								<Reference type="CODE_LIST">UNCL6313-T16</Reference>
+								<Value type="EXAMPLE">AAW</Value>
 							</Element>
 							
 							<Element cardinality="0..1">
 								<Term>cbc:Measure</Term>
-								<Name>Handling unit gross weightHandling unit gross volume</Name>
+								<Name>Handling unit gross weight or handling unit gross volume</Name>
 								<Description>Handling gross weight, including packaging as dispatched
 									by dispatching party.Handling gross volume, including packaging as
 									dispatched by dispatching party.</Description>

@@ -546,8 +546,9 @@
 						<Element cardinality="0..1">
 							<Term>cbc:EmbeddedDocumentBinaryObject</Term>
 							<Name>Attached document/image</Name>
-							<Description>An attached document/image embedded
-                                as binary object.</Description>
+							<Description>The attached document embeded as binary object, coded as Base64. 
+								The binary object has two supplementary components: a Mime Code, which specifies the Mime type of the attachment and a Filename 
+								that is provided by (or on behalf of) the sender of the document</Description>
 							<DataType>Binary object</DataType>
 							<Reference type="BUSINESS_TERM">tir77-038</Reference>
 							<Reference type="BUSINESS_TERM">OP-T77-006</Reference>

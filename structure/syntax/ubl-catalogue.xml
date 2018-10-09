@@ -1474,7 +1474,9 @@
 						<Element cardinality="0..1">
 							<Term>cbc:EmbeddedDocumentBinaryObject</Term>
 							<Name>Attached object</Name>
-							<Description>The attached document embedded as binary object.</Description>
+							<Description>The attached document embeded as binary object, coded as Base64. 
+								The binary object has two supplementary components: a Mime Code, which specifies the Mime type of the attachment and a Filename 
+								that is provided by (or on behalf of) the sender of the document</Description>
 							<DataType>Binary objects</DataType>
 							<Reference type="BUSINESS_TERM">tir19-107</Reference>
 							<Attribute>
@@ -1582,7 +1584,7 @@
 						<Name>Haszardous hazard class Identifier</Name>
 						<Description>Identifies a hazard class applicable to dangerous goods as
 								defined by the relevant regulation authority, such as the IMDG Class
-								Number of the SOLAS Convention ofIMO and the ADR/RID Class Number for
+								Number of the SOLAS Convention of IMO and the ADR/RID Class Number for
 								the road/rail environment.</Description>
 						<!-- <Reference>Identifier</Reference> -->
 						<Reference type="BUSINESS_TERM">tir19-073</Reference>

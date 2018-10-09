@@ -4,7 +4,7 @@
                      xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
                      xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
     <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns111a:invoice_response:bis3-1.0</cbc:CustomizationID>
-    <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis63a:invoice-response:bis3-1.0</cbc:ProfileID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis63a:invoice_response:bis3-1.0</cbc:ProfileID>
     <cbc:ID>imr-id001</cbc:ID>
     <cbc:IssueDate>2018-05-01</cbc:IssueDate>
     <cbc:IssueTime>12:00:00</cbc:IssueTime>
@@ -40,7 +40,7 @@
             <cbc:ResponseCode>RE</cbc:ResponseCode>
             <cbc:EffectiveDate>2018-05-01</cbc:EffectiveDate>
             <cac:Status>
-                <cbc:StatusReasonCode listID="OPStatusAction">CA</cbc:StatusReasonCode>
+                <cbc:StatusReasonCode listID="OPStatusAction">OTH</cbc:StatusReasonCode>
                 <cbc:StatusReason>XXX</cbc:StatusReason>
                 <cac:Condition>
                     <cbc:AttributeID>6461</cbc:AttributeID>
