@@ -1,6 +1,6 @@
 = Accepted changes (RFC)
 
-The following changes were processed and agreed by the team.PB30-38	Validation Artefacts improvements candidates
+The following changes were processed and agreed by the team.PB30-38	Validation Artefacts improvements candidates:
 
 * https://openpeppol.atlassian.net/browse/PB30-1[PB30-1] — Batch/LOT and serial numbers in order 3a and 28a
 * https://openpeppol.atlassian.net/browse/PB30-4[PB30-4] — ID in AdditionalDocumentReference

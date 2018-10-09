@@ -1,5 +1,27 @@
 = Contributions
 
-The following individuals have contributed to this work.
+The following individuals have contributed to this work by participation in work meeting and various develoment and review work between meetings.
+
+* Georg Birgisson
+* Siw Meckelborg
+* Charlotte Dahl Skovhus
+* Iacopop Arduini
+* Thomas Petterson
+* Dirk Willekens
+* Arne Johan Larsen
+* Elisa Bertocchi
+* Sara Facchinetti
+* Jalini Srisgantharajah
+* Martin Forsberg
+* Helena Ask
+* Peter Danko
+* Ole Ellerbæk Madsen
+* Jan Mæröe
+* Erlend Klakegg Bergheim
+* Jerry Dimitriou
+* Serge Libert
+* Andriana Prentza
+* Sören Lennartson
+
 
 
