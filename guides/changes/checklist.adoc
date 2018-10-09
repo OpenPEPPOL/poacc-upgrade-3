@@ -50,10 +50,10 @@
 
 == Other
     - [ ] Release notes (In Git) (Georg)
-    - [ ] No new rules added to 71 77 58, verify (Siw)
     - [ ] In main site of upgrade project there is reviewofalignment.xml (Siw)
+    - [x] No new rules added to 71 77 58, verify (Siw)
     - [x] Inserting new customzation and profile identifiers (Georg)
-	- [x] Unit code list (Siw)
+	- [x] Unit code list (Siw).
     - [x] BIS, clean up yellow highlighting.
     - [x] Base rules for all transactions have transaction id T01.
     - [x] tir77-011tir77-012 in punchout, error or two tir?
@@ -62,8 +62,8 @@
     - [x] Syntax, add tir ids to new business terms "tirnn=pxxx"
 
 == Work schedule
-  - [x] Finish cleaning up schematrons before end Friday - Siw, Georg, Iacopo
-  - [x] Finish unit test files before end Friday - Charlotte, Georg
+  - [x] Finish cleaning up schematrons before end Friday - Siw, Georg, Iacopo.
+  - [x] Finish unit test files before end Friday - Charlotte, Georg.
   - [ ] Verify testing, Monday - Siw, Georg.
-  - [ ] Prepare package for distribution, Tuesday - Siw, Georg
-  - [ ] Initiate review period, Wednesday - Georg
+  - [ ] Prepare package for distribution, Tuesday - Siw, Georg.
+  - [ ] Initiate review period, Wednesday - Georg.

@@ -3,13 +3,12 @@
 
     <Name>PEPPOL BIS Upgrade 3.0</Name>
 
-    <Documentation path="methodology/schematron/">Schematron guideline</Documentation>
-    <Documentation path="changes/rules/">Automatic/manual rules</Documentation>
-    <Documentation path="changes/">Overview and remarks on alignment work</Documentation>
-    <Documentation path="review/">Review of alignments</Documentation>
-    <Documentation path="migration/">Migration plan (copy from Billing)</Documentation>
-
-    <!-- BIS documents --> 
+    <!-- Introduction -->
+    <Documentation path="releasenotes/">BIS3-1.0rc Release notes</Documentation>
+    <Documentation path="changes/">Overview of alignment</Documentation>	
+    <Documentation path="migration/">Migration plan</Documentation>
+	
+    <!-- BIS documents -->
     <Documentation path="profiles/3-order-only/">Order only BIS (Business Interoperability Specifications)</Documentation>
     <Documentation path="profiles/28-ordering/">Ordering BIS (Business Interoperability Specifications)</Documentation>
     <Documentation path="profiles/1-catalogueonly/">Catalogue only BIS (Business Interoperability Specifications)</Documentation>
@@ -19,7 +18,12 @@
     <Documentation path="profiles/36-mlr/">Message Level Response BIS (Business Interoperability Specifications)</Documentation>
     <Documentation path="profiles/63-invoiceresponse/">Invoice Response BIS (Business Interoperability Specifications)</Documentation>
     
-    <!-- Syntax -->
+    <!-- Working documents -->
+    <Documentation path="methodology/schematron/">Schematron guideline</Documentation>
+    <Documentation path="changes/rules/">Automatic/manual rules</Documentation>
+    <Documentation path="review/">Review of alignments</Documentation>
+ 
+   <!-- Syntax -->
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-order.xml</Path>
