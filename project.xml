@@ -5,23 +5,24 @@
 
     <!-- Introduction -->
     <Documentation path="releasenotes/">BIS3-1.0rc Release notes</Documentation>
-    <Documentation path="changes/">Overview of alignment</Documentation>	
+    <Documentation path="changes/">Overview of alignment</Documentation>
     <Documentation path="migration/">Migration plan</Documentation>
 	
     <!-- BIS documents -->
-    <Documentation path="profiles/3-order-only/">Order only BIS (Business Interoperability Specifications)</Documentation>
-    <Documentation path="profiles/28-ordering/">Ordering BIS (Business Interoperability Specifications)</Documentation>
-    <Documentation path="profiles/1-catalogueonly/">Catalogue only BIS (Business Interoperability Specifications)</Documentation>
-    <Documentation path="profiles/30-despatchadvice/">Despatch Advice BIS (Business Interoperability Specifications)</Documentation>
-    <Documentation path="profiles/18-punchout/">Punch Out BIS (Business Interoperability Specifications)</Documentation>
-    <Documentation path="profiles/42-orderagreement/">Order Agreement BIS (Business Interoperability Specifications)</Documentation>
-    <Documentation path="profiles/36-mlr/">Message Level Response BIS (Business Interoperability Specifications)</Documentation>
-    <Documentation path="profiles/63-invoiceresponse/">Invoice Response BIS (Business Interoperability Specifications)</Documentation>
+    <Documentation path="profiles/3-order-only/">BIS03A Order only — BIS3-1.0</Documentation>
+    <Documentation path="profiles/28-ordering/">BIS28A Ordering — BIS3-1.0</Documentation>
+    <Documentation path="profiles/1-catalogueonly/">BIS01A Catalogue only — BIS3-1.0</Documentation>
+    <Documentation path="profiles/30-despatchadvice/">BIS30A Despatch Advice — BIS3-1.0</Documentation>
+    <Documentation path="profiles/18-punchout/">BIS18A Punch Out — BIS3-1.0</Documentation>
+    <Documentation path="profiles/42-orderagreement/">BIS42A Order Agreement — BIS3-1.0</Documentation>
+    <Documentation path="profiles/36-mlr/">BIS36A Message Level Response — BIS3-1.0</Documentation>
+    <Documentation path="profiles/63-invoiceresponse/">BIS63A Invoice Response — BIS3-1.0</Documentation>
     
     <!-- Working documents -->
-    <Documentation path="methodology/schematron/">Schematron guideline</Documentation>
-    <Documentation path="changes/rules/">Automatic/manual rules</Documentation>
+	<Documentation path="work/">Overview and processing of alignments</Documentation>
     <Documentation path="review/">Review of alignments</Documentation>
+    <Documentation path="methodology/schematron/">Schematron guideline</Documentation>
+    <Documentation path="work/rules/">Automatic/manual rules</Documentation>
  
    <!-- Syntax -->
     <Resource>
