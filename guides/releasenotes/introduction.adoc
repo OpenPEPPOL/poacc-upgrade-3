@@ -1,12 +1,4 @@
 = Scope
-:doctype: book
-:icons: font
-:toc: left
-:toclevels: 2
-:source-highlighter: coderay
-:source-language: xml
-:sectanchors:
-:sectnums:
 
 The BIS specifications addressed by this project are the following.
 
@@ -20,12 +12,13 @@ The BIS specifications addressed by this project are the following.
 * PEPPOL BIS 63A Invoice Message Response
 
 In the work on each BIS, the following key tasks are identified.
-1. Aligning with Invoice BIS. (code lists, party information, VAT details, Item details). Ref. Invoice gap analysis for potential gaps.
-1. Changing documentation format from Word to AsciiDoc *.
-1. Processing and adoption of new requirements.
-1. Adopting unit testing for validation objects.
-1. Aligning Syntax bindings between documents.
 
-For further details please refer to the [project mandate](https://openpeppol.atlassian.net/wiki/download/attachments/182616099/Mandate_PEPPOL_PostAward_BIS%203.0%20upgrade.docx?api=v2)
+. Aligning with Invoice BIS. (code lists, party information, VAT details, Item details). Ref. Invoice gap analysis for potential gaps.
+. Changing documentation format from Word to AsciiDoc *.
+. Processing and adoption of new requirements.
+. Adopting unit testing for validation objects.
+. Aligning Syntax bindings between documents.
+
+For further details please refer to the https://openpeppol.atlassian.net/wiki/download/attachments/182616099/Mandate_PEPPOL_PostAward_BIS%203.0%20upgrade.docx?api=v2[project mandate]
 
 

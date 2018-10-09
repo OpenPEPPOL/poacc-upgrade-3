@@ -13,10 +13,15 @@ The OpenPEPPOL BIS3 Upgrade project was started in January 2018. Project was man
 :leveloffset: +1
 
 include::introduction.adoc[]
+
 include::explaindocument.adoc[]
+
 include::reviewtimeline.adoc[]
+
 include::alignoverview.adoc[]
+
 include::rfc.adoc[]
+
 include::credits.adoc[]
 
 :leveloffset: -1

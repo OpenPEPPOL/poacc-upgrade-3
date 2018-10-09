@@ -1,12 +1,4 @@
 = Accepted changes (RFC)
-:doctype: book
-:icons: font
-:toc: left
-:toclevels: 2
-:source-highlighter: coderay
-:source-language: xml
-:sectanchors:
-:sectnums:
 
 The following changes were processed and agreed by the team.
 

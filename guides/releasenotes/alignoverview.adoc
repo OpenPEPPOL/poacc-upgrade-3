@@ -1,14 +1,7 @@
 = Overview of alignments
-:doctype: book
-:icons: font
-:toc: left
-:toclevels: 2
-:source-highlighter: coderay
-:source-language: xml
-:sectanchors:
-:sectnums:
 
 The alignment of the BIS specification to the EN has been done with referenct to the EN 16931 electronc invoice in line with the adoption of that standard into BIS5A Billing. The work is based on the following documents and decisions:
+
 * Peppol invoice to EN 16931 gap analysis that formed basis for the BIS5A Billing.
 https://openpeppol.atlassian.net/wiki/download/attachments/180125738/Gap%20analysis.xlsx?api=v2
 * BIS3 Scope and disposition addressing how gaps identified for the invoice should be adopted into other specifications. https://openpeppol.atlassian.net/wiki/download/attachments/180125738/BIS3%20Scope%20and%20disposition.docx?api=v2
