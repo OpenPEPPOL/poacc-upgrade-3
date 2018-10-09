@@ -3,8 +3,8 @@
 	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 
-	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns016:ver1.0:extended:urn:www.peppol.eu:bis:peppol30a:ver1.0</cbc:CustomizationID>
-	<cbc:ProfileID>urn:www.cenbii.eu:profile:bii30:ver2.0</cbc:ProfileID>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns16a:despatch_advice:bis3-1.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis30a:despatch_advice:bis3-1.0</cbc:ProfileID>
 	<cbc:ID>1234</cbc:ID>
 	<cbc:IssueDate>2013-03-15</cbc:IssueDate>
 	<cbc:IssueTime>08:00:00</cbc:IssueTime>
@@ -19,15 +19,14 @@
 		<cac:Party>
 			<cbc:EndpointID schemeID="DK:CVR">DK87654321</cbc:EndpointID>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="0088">0123456789123</cbc:ID>
+				<cbc:ID schemeID="0088">7300010000001</cbc:ID>
 			</cac:PartyIdentification>
-			<cac:PartyName>
-				<cbc:Name>Sender Company</cbc:Name>
-			</cac:PartyName>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Sender Company</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
 			<cac:Contact>
 				<cbc:Name>John</cbc:Name>
 				<cbc:Telephone>123456789</cbc:Telephone>
-				<cbc:Telefax>8273741728</cbc:Telefax>
 				<cbc:ElectronicMail>John@SenderCompany.dk</cbc:ElectronicMail>
 			</cac:Contact>
 		</cac:Party>
@@ -38,13 +37,9 @@
 		<cac:Party>
 			<cbc:EndpointID schemeID="DK:CVR">DK12345678</cbc:EndpointID>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="0088">0123456789123</cbc:ID>
+				<cbc:ID schemeID="0088">7300010000001</cbc:ID>
 			</cac:PartyIdentification>
-			<cac:PartyName>
-				<cbc:Name>Reciever Company</cbc:Name>
-			</cac:PartyName>
 			<cac:PostalAddress>
-				<cbc:ID>25</cbc:ID>
 				<cbc:StreetName>Reciever Street 1</cbc:StreetName>
 				<cbc:AdditionalStreetName>Reciever Building</cbc:AdditionalStreetName>
 				<cbc:CityName>Reciever City</cbc:CityName>
@@ -61,7 +56,6 @@
 		<cac:DeliveryContact>
 			<cbc:Name>Tim</cbc:Name>
 			<cbc:Telephone>987654321</cbc:Telephone>
-			<cbc:Telefax>4546474849</cbc:Telefax>
 			<cbc:ElectronicMail>Tim@RecieverCompany.dk</cbc:ElectronicMail>
 		</cac:DeliveryContact>
 	</cac:DeliveryCustomerParty>
@@ -90,7 +84,6 @@
 			<cac:Contact>
 				<cbc:Name>Allan</cbc:Name>
 				<cbc:Telephone>43444546</cbc:Telephone>
-				<cbc:Telefax>12345678</cbc:Telefax>
 				<cbc:ElectronicMail>Allan@SellerCompany.dk</cbc:ElectronicMail>
 			</cac:Contact>
 		</cac:Party>
@@ -141,9 +134,13 @@
 		<!-- tag::quantity1[] -->
 		<cbc:DeliveredQuantity unitCode="EA">6</cbc:DeliveredQuantity>
 		<cbc:OutstandingQuantity unitCode="EA">4</cbc:OutstandingQuantity>
+		<cbc:OutstandingReason>Backorder</cbc:OutstandingReason>
 		<!-- end::quantity1[] -->
 		<cac:OrderLineReference>
 			<cbc:LineID>5</cbc:LineID>
+			<cac:OrderReference>
+				<cbc:ID>934234-12</cbc:ID>
+			</cac:OrderReference>
 		</cac:OrderLineReference>
 		<!-- end::ref-orderline1[] -->
 		<!-- tag::item[] -->
@@ -163,10 +160,14 @@
 		<!-- tag::quantity2[] -->
 		<cbc:DeliveredQuantity unitCode="EA">6</cbc:DeliveredQuantity>
 		<cbc:OutstandingQuantity unitCode="EA">0</cbc:OutstandingQuantity>
+		<cbc:OutstandingReason>Out of stock</cbc:OutstandingReason>
 		<!-- end::quantity2[] -->
 		<!-- tag::ref-orderline2[] -->
 		<cac:OrderLineReference>
 			<cbc:LineID>NA</cbc:LineID>
+			<cac:OrderReference>
+				<cbc:ID>3424</cbc:ID>
+			</cac:OrderReference>
 		</cac:OrderLineReference>
 		<!-- end::ref-orderline2[] -->
 		<cac:Item>
@@ -201,9 +202,13 @@
 		<!-- tag::quantity3[] -->
 		<cbc:DeliveredQuantity unitCode="EA">6</cbc:DeliveredQuantity>
 		<cbc:OutstandingQuantity unitCode="EA">3</cbc:OutstandingQuantity>
+		<cbc:OutstandingReason>Production error</cbc:OutstandingReason>
 		<!-- end::quantity3[] -->
 		<cac:OrderLineReference>
 			<cbc:LineID>NA</cbc:LineID>
+			<cac:OrderReference>
+				<cbc:ID>3oe32er</cbc:ID>
+			</cac:OrderReference>
 		</cac:OrderLineReference>
 		<cac:Item>
 			<cbc:Name>Item456</cbc:Name>
@@ -213,6 +218,12 @@
 			<cac:StandardItemIdentification>
 				<cbc:ID schemeID="0160">7622204117051</cbc:ID>
 			</cac:StandardItemIdentification>
+			<!-- tag::itemproperty[] -->	
+			<cac:AdditionalItemProperty>
+				<cbc:Name>NPLId</cbc:Name>
+				<cbc:Value>20300709400050</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<!-- end::itemproperty[] -->
 			<!-- tag::lotid[] -->
 			<cac:ItemInstance>
 				<cac:LotIdentification>
@@ -221,12 +232,8 @@
 				</cac:LotIdentification>
 			</cac:ItemInstance>
 			<!-- end::lotid[] -->
+			
 		</cac:Item>
-		<!-- tag::itemproperty[] -->
-		<cac:cac:AdditionalItemProperty>
-			<cbc:Name>NPLId</cbc:Name>
-			<cbc:Value>20300709400050</cbc:Value>
-		</cac:cac:AdditionalItemProperty>
-		<!-- end::itemproperty[] -->
+		
 	</cac:DespatchLine>
 </DespatchAdvice>

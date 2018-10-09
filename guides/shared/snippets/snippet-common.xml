@@ -2,10 +2,10 @@
 <Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
     xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"> 
-    <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns077:ver2.0:extended:www.peppol.eu:bis:peppol18a:ver1.0</cbc:CustomizationID>   
-    <cbc:ProfileID>urn:www.cenbii.eu:profile:bii18:ver1.0</cbc:ProfileID>
+    <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns77a:shopping_cart:bis3-1.0</cbc:CustomizationID>   
+    <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis18a:punch_out:bis3-1.0</cbc:ProfileID>
     <cbc:ID>1387</cbc:ID>
-	<cbc:ActionCode>Replace</cbc:ActionCode> 
+	<cbc:ActionCode>true</cbc:ActionCode> 
 	<cbc:IssueDate>2016-08-01</cbc:IssueDate>
     <cbc:IssueTime>09:00:00</cbc:IssueTime>
     <cac:ValidityPeriod>
@@ -20,9 +20,9 @@
         <cac:PartyIdentification>
             <cbc:ID schemeID="0184">96567899</cbc:ID>
         </cac:PartyIdentification>
-		<cac:PartyName>
-            <cbc:Name>ABC Supplier Ltd.</cbc:Name>
-        </cac:PartyName>
+		<cac:PartyLegalEntity>
+            <cbc:RegistrationName>ABC Supplier Ltd.</cbc:RegistrationName>
+        </cac:PartyLegalEntity>
     </cac:ProviderParty>
     <cac:ReceiverParty>
         <cbc:EndpointID schemeID="NO:ORGNR">984661185</cbc:EndpointID>
@@ -30,16 +30,15 @@
             <cbc:ID schemeID="0088">5790000435944</cbc:ID>
         </cac:PartyIdentification>
  
-        <cac:PartyName>
-            <cbc:Name>DEF Customer Ltd.</cbc:Name>
-        </cac:PartyName>
+        <cac:PartyLegalEntity>
+            <cbc:RegistrationName>DEF Customer Ltd.</cbc:RegistrationName>
+        </cac:PartyLegalEntity>
         <cac:Contact>
             <cbc:ID>buyers ref no</cbc:ID>
         </cac:Contact>
     </cac:ReceiverParty>
     <cac:CatalogueLine>
         <cbc:ID>1</cbc:ID>
-        <cbc:ContractSubdivision>CRT1387</cbc:ContractSubdivision>
         <cac:LineValidityPeriod>
             <cbc:StartDate>2014-12-31</cbc:StartDate>
         </cac:LineValidityPeriod>
@@ -66,8 +65,7 @@
             </cac:StandardItemIdentification>
             <cac:ItemSpecificationDocumentReference>
                 <cbc:ID>PC01image.jpg</cbc:ID>
-                <cbc:DocumentTypeCode>MAINIMAGE</cbc:DocumentTypeCode><!--1-->
-                <cbc:DocumentType>Picture of the computer</cbc:DocumentType>
+                <cbc:DocumentTypeCode>PRODUCT_IMAGE</cbc:DocumentTypeCode><!--1-->
                 <cac:Attachment>
                     <cbc:EmbeddedDocumentBinaryObject mimeCode="image/jpeg" filename="picture.jpg"
                         >UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
@@ -94,14 +92,14 @@
             </cac:AdditionalItemProperty>
             <cac:AdditionalItemProperty>
                 <cbc:Name>RAM memory</cbc:Name>
-                <cbc:NameCode>Item property classification code</cbc:NameCode>
+                <cbc:NameCode listID="">Item property classification code</cbc:NameCode>
                 <cbc:Value>16 GB</cbc:Value>
                 <cbc:ValueQuantity unitCode="AD"
                     >16000000</cbc:ValueQuantity>
             </cac:AdditionalItemProperty>
             <cac:Certificate>
                 <cbc:ID>EU Ecolabel</cbc:ID>
-                <cbc:CertificateTypeCode>blanc</cbc:CertificateTypeCode>
+                <cbc:CertificateTypeCode listID="">NA</cbc:CertificateTypeCode>
                 <cbc:CertificateType>NA</cbc:CertificateType>
                 <cac:IssuerParty>
                     <cac:PartyName>

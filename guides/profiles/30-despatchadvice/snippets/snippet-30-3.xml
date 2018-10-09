@@ -2,8 +2,8 @@
 <DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2"
 	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns016:ver1.0:extended:urn:www.peppol.eu:bis:peppol30a:ver1.0</cbc:CustomizationID>
-	<cbc:ProfileID>urn:www.cenbii.eu:profile:bii30:ver2.0</cbc:ProfileID>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns16a:despatch_advice:bis3-1.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis30a:despatch_advice:bis3-1.0</cbc:ProfileID>
 	<cbc:ID>1234</cbc:ID>
 	<cbc:IssueDate>2013-03-15</cbc:IssueDate>
 	<cbc:IssueTime>08:00:00</cbc:IssueTime>
@@ -19,10 +19,9 @@
 				<cbc:ID schemeID="0007">5541277711</cbc:ID>
 			</cac:PartyIdentification>
 			<!-- end::partyid-se[] -->
-			
-			<cac:PartyName>
-				<cbc:Name>Sender Company</cbc:Name>
-			</cac:PartyName>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Supplier AB</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
 			<cac:Contact>
 				<cbc:Name>John</cbc:Name>
 				<cbc:Telephone>123456789</cbc:Telephone>
@@ -35,13 +34,9 @@
 		<cac:Party>
 			<cbc:EndpointID schemeID="DK:CVR">DK12345678</cbc:EndpointID>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="0088">0123456789123</cbc:ID>
+				<cbc:ID schemeID="0088">7300010000001</cbc:ID>
 			</cac:PartyIdentification>
-			<cac:PartyName>
-				<cbc:Name>Reciever Company</cbc:Name>
-			</cac:PartyName>
 			<cac:PostalAddress>
-				<cbc:ID>25</cbc:ID>
 				<cbc:StreetName>Reciever Street 1</cbc:StreetName>
 				<cbc:AdditionalStreetName>Reciever Building</cbc:AdditionalStreetName>
 				<cbc:CityName>Reciever City</cbc:CityName>
@@ -55,7 +50,6 @@
 		<cac:DeliveryContact>
 			<cbc:Name>Tim</cbc:Name>
 			<cbc:Telephone>987654321</cbc:Telephone>
-			<cbc:Telefax>4546474849</cbc:Telefax>
 			<cbc:ElectronicMail>Tim@RecieverCompany.dk</cbc:ElectronicMail>
 		</cac:DeliveryContact>
 	</cac:DeliveryCustomerParty>
@@ -84,7 +78,6 @@
 			<cac:Contact>
 				<cbc:Name>Allan</cbc:Name>
 				<cbc:Telephone>43444546</cbc:Telephone>
-				<cbc:Telefax>12345678</cbc:Telefax>
 				<cbc:ElectronicMail>Allan@SellerCompany.dk</cbc:ElectronicMail>
 			</cac:Contact>
 		</cac:Party>
@@ -127,24 +120,16 @@
 				<cbc:ActualDespatchTime>08:00:00</cbc:ActualDespatchTime>
 			</cac:Despatch>
 		</cac:Delivery>
-		<!-- tag::transporthandling[] -->
-		<cac:TransportHandlingUnit>
-			<cbc:ID>123456789012345675</cbc:ID>
-			<cbc:TransportHandlingUnitTypeCode>CT </cbc:TransportHandlingUnitTypeCode>
-			<cbc:ShippingMarks>Free text information that is written/printed on to the transport
-				handling unit </cbc:ShippingMarks>
-			<cac:MeasurementDimension>
-				<cbc:AttributeID>AAB</cbc:AttributeID>
-				<cbc:Measure unitCode="KGM">23.00</cbc:Measure>
-			</cac:MeasurementDimension>
-		</cac:TransportHandlingUnit>
-		<!-- end::transporthandling[] -->
+		
 	</cac:Shipment>
 	<cac:DespatchLine>
 		<cbc:ID>1</cbc:ID>
 		<cbc:DeliveredQuantity unitCode="EA">10</cbc:DeliveredQuantity>
 		<cac:OrderLineReference>
 			<cbc:LineID>1</cbc:LineID>
+			<cac:OrderReference>
+				<cbc:ID>123</cbc:ID>
+			</cac:OrderReference>
 		</cac:OrderLineReference>
 		<cac:Item>
 			<cbc:Name>Item123</cbc:Name>
@@ -158,7 +143,6 @@
 			<!-- tag::bestbefore[] -->
 			<cac:ItemInstance>
 				<cbc:BestBeforeDate>2015-04-15</cbc:BestBeforeDate>
-				<cac:LotIdentification/>
 			</cac:ItemInstance>
 			<!-- end::bestbefore[] -->
 		</cac:Item>
@@ -168,6 +152,9 @@
 		<cbc:DeliveredQuantity unitCode="EA">10</cbc:DeliveredQuantity>
 		<cac:OrderLineReference>
 			<cbc:LineID>2</cbc:LineID>
+			<cac:OrderReference>
+				<cbc:ID>123</cbc:ID>
+			</cac:OrderReference>
 		</cac:OrderLineReference>
 		<cac:Item>
 			<cbc:Name>Item456</cbc:Name>
