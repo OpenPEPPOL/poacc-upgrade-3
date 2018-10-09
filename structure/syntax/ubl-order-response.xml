@@ -72,8 +72,8 @@
 		<Element>
 			<Term>cbc:OrderResponseCode</Term>
 			<Name>Response code</Name>
-			<Description>A code that indicates whether the referenced order as whole is Accepted or
-                Rejected or, alternatively, Accepted with change.If response code is Accept or
+			<Description>A code that indicates whether the referenced order has been received and not yet processed, 
+				or is Accepted or Rejected as whole, alternatively, Accepted with change or already delivered.If response code is Accept or
                 Reject there may not be any response lines.</Description>
 			<DataType>Code</DataType>
 			<Reference type="BUSINESS_TERM">tir76-200</Reference>
@@ -129,8 +129,7 @@
 				<Element>
 					<Term>cbc:EndpointID</Term>
 					<Name>Seller party endpoint identifier</Name>
-					<Description>Identifies the end point of the routing service, e.g., EAN
-                        Location Number, GLN.</Description>
+					<Description>Identifies the Sellers electronic address (Endpoint)</Description>
 					<Reference type="BUSINESS_TERM">tir76-058</Reference>
 					
 					<Attribute>
@@ -220,7 +219,7 @@
 				<Element>
 					<Term>cbc:EndpointID</Term>
 					<Name>Buyer party endpoint identifier</Name>
-					<Description>Identifies the end point of the routing service.</Description>
+					<Description>Identifies the buyers electronic address (Endpoint)</Description>
 					<Reference type="BUSINESS_TERM">tir76-021</Reference>
 					
 					<Attribute>
@@ -322,7 +321,7 @@
 				<Element>
 					<Term>cbc:ID</Term>
 					<Name>Document line identifier</Name>
-					<Description>Identifies the response line.</Description>
+					<Description>Identifies the response line. Each order response line MUST be unique within the order response.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir76-120</Reference>
 					<Reference type="RULE">PEPPOL-T76-R003</Reference>
@@ -367,7 +366,9 @@
 				<Element cardinality="0..1">
 					<Term>cbc:MaximumBackorderQuantity</Term>
 					<Name>Maximum backorder quantity</Name>
-					<Description>The quantity of items that will be delivered at a later time. A unit for the backordered quantity is the same as for the Quantity. If all quantity is backordered the Quantity for the response line should be provided as 0 "zero".</Description>
+					<Description>The quantity of items that will be delivered at a later time. 
+						A unit for the backordered quantity is the same as for the Quantity. 
+						If none of the remaining quantity for the response line is to be delivered, use 0 "zero".</Description>
 					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">OP-T76-005</Reference>
 					<Value type="EXAMPLE">3</Value>
@@ -671,8 +672,7 @@
 					<Term>cbc:LineID</Term>
 					<Name>Order line reference</Name>
 					<Description>Used to reference the initial order line that correspondes to the
-                        response.Each order line may only be referenced once. All order lines should
-                        be stated.</Description>
+						response.All order lines should be stated when an order is changed.</Description>
 					<Reference type="BUSINESS_TERM">tir76-201</Reference>
 					
 					<Value type="EXAMPLE">34</Value>

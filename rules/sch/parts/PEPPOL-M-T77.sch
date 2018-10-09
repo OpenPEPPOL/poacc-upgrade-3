@@ -28,7 +28,7 @@
 				test="(cac:Price/cbc:BaseQuantity/@unitCode) = (cac:DeliveryUnit/cbc:BatchQuantity/@unitCode) or (not(cac:Price/cbc:BaseQuantity)) or (not(cac:DeliveryUnit/cbc:BatchQuantity))"
 				flag="fatal">Unit code for price base quantity SHALL be same as for batch quantity.</assert>
 		<assert id="PEPPOL-T77-R002"
-			test="(number(cac:Price/cbc:BaseQuantity) &gt; 0) and (number(cac:DeliveryUnit/cbc:BatchQuantity) &gt; 0)"
+			test="(number(cac:Price/cbc:BaseQuantity) &gt; 0) and (number(cac:DeliveryUnit/cbc:BatchQuantity) &gt; 0) or (not(cac:Price/cbc:BaseQuantity)) or (not(cac:DeliveryUnit/cbc:BatchQuantity))"
 			flag="fatal">Shopping cart line quantities SHALL be greater than ZERO.</assert>
 	</rule>
 

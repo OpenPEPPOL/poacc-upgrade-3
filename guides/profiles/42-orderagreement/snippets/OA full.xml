@@ -2,15 +2,8 @@
 <OrderResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2"
 	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-
-
-	<!-- tag::customizationid[] -->
-	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns110:ver1.0:extended:urn:www.peppol.eu:bis:peppol42a:ver1.0</cbc:CustomizationID>
-	<!-- end::customizationid[] -->
-
-	<!-- tag::profileid[] -->
-	<cbc:ProfileID>urn:www.cenbii.eu:profile:bii42:ver1.0</cbc:ProfileID>
-	<!-- end::profileid[] -->
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns110a:order_agreement:bis3-1.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis42a:order_agreement:bis3-1.0</cbc:ProfileID>
 
 	<cbc:ID>id123 tir110-001</cbc:ID>
 	<cbc:IssueDate>2016-08-16</cbc:IssueDate>
@@ -52,9 +45,6 @@
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0007">5541277711</cbc:ID>
 			</cac:PartyIdentification>
-			<cac:PartyName>
-				<cbc:Name>Information services</cbc:Name>
-			</cac:PartyName>
 			<cac:PostalAddress>
 				<cbc:StreetName>Apt 56B, Whitehaven Mansions</cbc:StreetName>
 				<cbc:AdditionalStreetName>Sandhurst Sq</cbc:AdditionalStreetName>
@@ -68,7 +58,6 @@
 			<cac:Contact>
 				<cbc:Name>Hercule Poirot</cbc:Name>
 				<cbc:Telephone>123456</cbc:Telephone>
-				<cbc:Telefax>123456</cbc:Telefax>
 				<cbc:ElectronicMail>mail@work.be</cbc:ElectronicMail>
 			</cac:Contact>
 		</cac:Party>
@@ -82,9 +71,6 @@
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0007">5541277711</cbc:ID>
 			</cac:PartyIdentification>
-			<cac:PartyName>
-				<cbc:Name>Information services</cbc:Name>
-			</cac:PartyName>
 			<cac:PostalAddress>
 				<cbc:StreetName>Apt 56B, Whitehaven Mansions</cbc:StreetName>
 				<cbc:AdditionalStreetName>Sandhurst Sq</cbc:AdditionalStreetName>
@@ -95,12 +81,6 @@
 					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
-			<cac:Contact>
-				<cbc:Name>Hercule Poirot</cbc:Name>
-				<cbc:Telephone>123456</cbc:Telephone>
-				<cbc:Telefax>123456</cbc:Telefax>
-				<cbc:ElectronicMail>mail@work.be</cbc:ElectronicMail>
-			</cac:Contact>
 		</cac:Party>
 	</cac:BuyerCustomerParty>
 	<!-- end::buyer[] -->
@@ -147,23 +127,6 @@
 				<cbc:Name>Delivery party name</cbc:Name>
 			</cac:PartyName>
 		</cac:DeliveryParty>
-		<cac:DeliveryTerms>
-			<cbc:ID>EXW</cbc:ID>
-			<cbc:SpecialTerms>Customer pick up</cbc:SpecialTerms>
-			<cac:DeliveryLocation>
-				<cbc:ID>Brussels</cbc:ID>
-				<cac:Address>
-					<cbc:StreetName>Apt 56B, Whitehaven Mansions</cbc:StreetName>
-					<cbc:AdditionalStreetName>Sandhurst Sq</cbc:AdditionalStreetName>
-					<cbc:CityName>Brussels</cbc:CityName>
-					<cbc:PostalZone>1001</cbc:PostalZone>
-					<cbc:CountrySubentity>BE</cbc:CountrySubentity>
-					<cac:Country>
-						<cbc:IdentificationCode>SE</cbc:IdentificationCode>
-					</cac:Country>
-				</cac:Address>
-			</cac:DeliveryLocation>
-		</cac:DeliveryTerms>
 	</cac:Delivery>
 	<!-- end::delivery[] -->
 
@@ -172,6 +135,13 @@
 		<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
 		<cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
 		<cbc:Amount currencyID="EUR">100</cbc:Amount>
+		<cac:TaxCategory>
+			<cbc:ID>S</cbc:ID>
+			<cbc:Percent>15</cbc:Percent>
+			<cac:TaxScheme>
+				<cbc:ID>VAT</cbc:ID>
+			</cac:TaxScheme>
+		</cac:TaxCategory>
 	</cac:AllowanceCharge>
 	<!-- end::allowance[] -->
 
@@ -180,19 +150,25 @@
 		<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 		<cbc:AllowanceChargeReason>Packing cost</cbc:AllowanceChargeReason>
 		<cbc:Amount currencyID="EUR">200</cbc:Amount>
+		<cac:TaxCategory>
+			<cbc:ID>S</cbc:ID>
+			<cbc:Percent>15</cbc:Percent>
+			<cac:TaxScheme>
+				<cbc:ID>VAT</cbc:ID>
+			</cac:TaxScheme>
+		</cac:TaxCategory>
 	</cac:AllowanceCharge>
 	<!-- end::allowance2[] -->
 
 	<!-- tag::taxtotal[] -->
 	<cac:TaxTotal>
-		<cbc:TaxAmount currencyID="EUR">1236</cbc:TaxAmount>
+		<cbc:TaxAmount currencyID="EUR">90</cbc:TaxAmount>
 		<cac:TaxSubtotal>
-			<cbc:TaxableAmount currencyID="EUR">1000</cbc:TaxableAmount>
-			<cbc:TaxAmount currencyID="EUR">236</cbc:TaxAmount>
+			<cbc:TaxableAmount currencyID="EUR">600</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="EUR">90</cbc:TaxAmount>
 			<cac:TaxCategory>
 				<cbc:ID>S</cbc:ID>
-				<cbc:Percent>23.6</cbc:Percent>
-				<cbc:TaxExemptionReason>No reason</cbc:TaxExemptionReason>
+				<cbc:Percent>15</cbc:Percent>
 				<cac:TaxScheme>
 					<cbc:ID>VAT</cbc:ID>
 				</cac:TaxScheme>
@@ -203,14 +179,13 @@
 
 	<!-- tag::LegalMonetaryTotal[] -->
 	<cac:LegalMonetaryTotal>
-		<cbc:LineExtensionAmount currencyID="EUR">1436.50</cbc:LineExtensionAmount>
-		<cbc:TaxExclusiveAmount currencyID="EUR">1436.50</cbc:TaxExclusiveAmount>
-		<cbc:TaxInclusiveAmount currencyID="EUR">1921</cbc:TaxInclusiveAmount>
+		<cbc:LineExtensionAmount currencyID="EUR">500</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="EUR">600</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="EUR">690</cbc:TaxInclusiveAmount>
 		<cbc:AllowanceTotalAmount currencyID="EUR">100</cbc:AllowanceTotalAmount>
 		<cbc:ChargeTotalAmount currencyID="EUR">200</cbc:ChargeTotalAmount>
-		<cbc:PrepaidAmount currencyID="EUR">1000</cbc:PrepaidAmount>
-		<cbc:PayableRoundingAmount currencyID="EUR">0.37</cbc:PayableRoundingAmount>
-		<cbc:PayableAmount currencyID="EUR">921.00</cbc:PayableAmount>
+		<cbc:PrepaidAmount currencyID="EUR">90</cbc:PrepaidAmount>
+		<cbc:PayableAmount currencyID="EUR">600.00</cbc:PayableAmount>
 	</cac:LegalMonetaryTotal>
 	<!-- end::LegalMonetaryTotal[] -->
 
@@ -226,7 +201,7 @@
 
 			<!-- tag::DeliveryLine[] -->
 			<cac:Delivery>
-				<cbc:Quantity unitCode="EUR">12</cbc:Quantity>
+				<cbc:Quantity unitCode="P1">12</cbc:Quantity>
 				<cac:PromisedDeliveryPeriod>
 					<cbc:StartDate>2016-08-20</cbc:StartDate>
 					<cbc:StartTime>12:00:00</cbc:StartTime>
@@ -290,14 +265,14 @@
 
 				<!-- tag::TransactionConditions[] -->
 				<cac:TransactionConditions>
-					<cbc:ID>CT</cbc:ID>
+					<cbc:ActionCode>CT</cbc:ActionCode>
 				</cac:TransactionConditions>
 				<!-- end::TransactionConditions[] -->
 
 				<!-- tag::ClassifiedTaxCategory[] -->
 				<cac:ClassifiedTaxCategory>
 					<cbc:ID>S</cbc:ID>
-					<cbc:Percent>23.6</cbc:Percent>
+					<cbc:Percent>15</cbc:Percent>
 					<cac:TaxScheme>
 						<cbc:ID>S</cbc:ID>
 					</cac:TaxScheme>
@@ -307,7 +282,6 @@
 				<!-- tag::AdditionalItemProperty[] -->
 				<cac:AdditionalItemProperty>
 					<cbc:Name>Property name</cbc:Name>
-					<cbc:NameCode>NameCode</cbc:NameCode>
 					<cbc:Value>Property value</cbc:Value>
 					<cbc:ValueQuantity unitCode="C62">1</cbc:ValueQuantity>
 				</cac:AdditionalItemProperty>
