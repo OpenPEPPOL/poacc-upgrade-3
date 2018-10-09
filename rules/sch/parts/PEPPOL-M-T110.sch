@@ -21,6 +21,19 @@
 				test="ancestor::node()/local-name() = 'Price' or string-length(substring-after(., '.')) &lt;= 2"
 				flag="fatal">Elements of data type amount cannot have more than 2 decimals (I.e. all amounts except unit price amounts)</assert>
 	</rule>
+	
+	
+	<rule context="cac:TaxTotal/cac:TaxSubtotal">
+		<assert id="PEPPOL-T110-R024"
+			test="(round(cac:TaxCategory/xs:decimal(cbc:Percent)) = 0 and (round(xs:decimal(cbc:TaxAmount)) = 0)) or (round(cac:TaxCategory/xs:decimal(cbc:Percent)) != 0 and (xs:decimal(cbc:TaxAmount) = round(xs:decimal(cbc:TaxableAmount) * (cac:TaxCategory/xs:decimal(cbc:Percent) div 100) * 10 * 10) div 100 )) or (not(exists(cac:TaxCategory/xs:decimal(cbc:Percent))) and (round(xs:decimal(cbc:TaxAmount)) = 0))"
+			flag="fatal">VAT category tax amount = VAT category taxable amount  x (VAT category rate  / 100), rounded to two decimals.</assert>
+	</rule>
+	
+	<rule context="/ubl:OrderResponse/cac:TaxTotal[cac:TaxSubtotal]">
+		<assert id="PEPPOL-T110-R025"
+			test="(xs:decimal(child::cbc:TaxAmount)= round((sum(cac:TaxSubtotal/xs:decimal(cbc:TaxAmount)) * 10 * 10)) div 100) or not(cac:TaxSubtotal)"
+			flag="fatal">If VAT breakdown is present, the order agreement VAT total amount  = Σ VAT category tax amount.</assert>
+	</rule>
 
 	<rule context="cac:LegalMonetaryTotal">
 

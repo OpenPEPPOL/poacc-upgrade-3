@@ -38,6 +38,7 @@
 			<Reference type="BUSINESS_TERM">tir19-003</Reference>
 			<Value type="EXAMPLE">Cat-02</Value>
 		</Element>
+		
 		<Element cardinality="0..1">
 			<Term>cbc:ActionCode</Term>
 			<Name>Catalogue action code</Name>
@@ -48,10 +49,10 @@
                 deleted). Default action is to fully replace the source catalogue.</Description>
 			<DataType>Code</DataType>
 			<Reference type="BUSINESS_TERM">tir19-047</Reference>
-
 			<Reference type="CODE_LIST">ActionCode_header</Reference>
 			<Value type="EXAMPLE">Add</Value>
 		</Element>
+		
 		<Element cardinality="0..1">
 			<Term>cbc:Name</Term>
 			<Name>Catalogue name</Name>
@@ -825,6 +826,7 @@
 				<Reference type="BUSINESS_TERM">tir19-032</Reference>
 				<Value type="EXAMPLE">1</Value>
 			</Element>
+			
 			<Element cardinality="0..1">
 				<Term>cbc:ActionCode</Term>
 				<Name>Line action code</Name>
@@ -834,10 +836,10 @@
                     deleted.</Description>
 				<DataType>Code</DataType>
 				<Reference type="BUSINESS_TERM">tir19-033</Reference>
-
 				<Reference type="CODE_LIST">ActionCode_line</Reference>
 				<Value type="EXAMPLE">Update</Value>
 			</Element>
+			
 			<Element cardinality="0..1">
 				<Term>cbc:OrderableIndicator</Term>
 				<Name>Orderable indicator</Name>
@@ -1562,7 +1564,7 @@
 						<Description>The code CT indicates that the item is offered in accordance to the referenced contract.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-p027</Reference>
-						<Value type="EXAMPLE">CT</Value>
+						<Value type="FIXED">CT</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..n">
