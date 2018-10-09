@@ -108,13 +108,13 @@
                     <Value type="EXAMPLE">DK88777654</Value>
                 </Element>
             </Element>
-
+            
             <Element>
-                <Term>cac:PartyName</Term>
+                <Term>cac:PartyLegalEntity</Term>
                 <Name>Party name</Name>
-
+                
                 <Element>
-                    <Term>cbc:Name</Term>
+                    <Term>cbc:RegistrationName</Term>
                     <Name>Sender party name</Name>
                     <Description>The name of the party sending the response.</Description>
                     <DataType>Text</DataType>
@@ -203,18 +203,20 @@
                     <Value type="EXAMPLE">987654321</Value>
                 </Element>
             </Element>
-
             <Element>
-                <Term>cac:PartyName</Term>
+                <Term>cac:PartyLegalEntity</Term>
+                <Name>Party name</Name>
+                
                 <Element>
-                    <Term>cbc:Name</Term>
-                    <Name>Party name</Name>
+                    <Term>cbc:RegistrationName</Term>
+                    <Name>Receiver party name</Name>
                     <Description>The name of the party receiving the response.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">tir111-010</Reference>
                     <Value type="EXAMPLE">AS MerTest</Value>
                 </Element>
             </Element>
+            
 
         </Element>
 

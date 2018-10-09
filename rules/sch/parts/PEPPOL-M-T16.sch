@@ -3,7 +3,7 @@
 
 	<rule context="cac:DeliveryCustomerParty">
 		<assert id="PEPPOL-T16-R001"
-				test="(cac:Party/cac:PartyName/cbc:Name) or (cac:Party/cac:PartyIdentification/cbc:ID)"
+				test="(cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) or (cac:Party/cac:PartyIdentification/cbc:ID)"
 				flag="warning" >A consignee party SHOULD have the party name or a party identifier</assert>
 	</rule>
 
@@ -33,7 +33,7 @@
 
 	<rule context="cac:DespatchSupplierParty">
 		<assert id="PEPPOL-T16-R008"
-				test="(cac:Party/cac:PartyName/cbc:Name)"
+			test="(cac:Party/cac:PartyLegalEntity/cbc:RegistrationName)"
 				flag="warning">A despatching party SHOULD have the despatching party name</assert>
 	</rule>
 </pattern>

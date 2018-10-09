@@ -163,20 +163,22 @@
 						<Value type="EXAMPLE">DK88777654</Value>
 					</Element>
 				</Element>
+				
 				<Element cardinality="0..1">
-					<Term>cac:PartyName</Term>
+					<Term>cac:PartyLegalEntity</Term>
 					<Name>Name of seller</Name>
 					<Reference type="RULE">PEPPOL-T76-R002</Reference>
+					
 					<Element>
-						<Term>cbc:Name</Term>
+						<Term>cbc:RegistrationName</Term>
 						<Name>Seller party name</Name>
 						<Description>The name of the party.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir76-060</Reference>
-						
 						<Value type="EXAMPLE">Seller Inc.</Value>
 					</Element>
 				</Element>
+				
 				<Element cardinality="0..1">
 					<Term>cac:Contact</Term>
 					<Name>Seller contact information </Name>
@@ -251,21 +253,24 @@
 						<Value type="EXAMPLE">DK88777654</Value>
 					</Element>
 				</Element>
+				
 				<Element cardinality="0..1">
-					<Term>cac:PartyName</Term>
+					<Term>cac:PartyLegalEntity</Term>
 					<Name>Party name</Name>
 					<Reference type="RULE">PEPPOL-T76-R001</Reference>
+					
 					<Element>
-						<Term>cbc:Name</Term>
+						<Term>cbc:RegistrationName</Term>
 						<Name>Buyer party name</Name>
 						<Description>The name of the party who ordered the items and receives the
-                            response.</Description>
+							response.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir76-023</Reference>
 						<Reference type="RULE">PEPPOL-T76-R001</Reference>
 						<Value type="EXAMPLE">Buyer name</Value>
 					</Element>
 				</Element>
+				
 				<Element cardinality="0..1">
 					<Term>cac:Contact</Term>
 					<Name>Contact information</Name>

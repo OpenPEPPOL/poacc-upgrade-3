@@ -15,9 +15,9 @@
 					<cac:PartyIdentification>
 						<cbc:ID schemeID="GLN" schemeAgencyID="9">0123456789123</cbc:ID>
 					</cac:PartyIdentification>
-					<cac:PartyName>
-						<cbc:Name>Receiver Company</cbc:Name>
-					</cac:PartyName>
+					<cac:PartyLegalEntity>
+						<cbc:RegistrationName>Receiver Company</cbc:RegistrationName>
+					</cac:PartyLegalEntity>
 				</cac:Party>
 			</cac:DeliveryCustomerParty>
 		</DespatchAdvice>
@@ -30,9 +30,9 @@
 		<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 			<cac:DeliveryCustomerParty>
 				<cac:Party>
-					<cac:PartyName>
-						<cbc:Name>Receiver Company</cbc:Name>
-					</cac:PartyName>
+					<cac:PartyLegalEntity>
+						<cbc:RegistrationName>Receiver Company</cbc:RegistrationName>
+					</cac:PartyLegalEntity>
 				</cac:Party>
 			</cac:DeliveryCustomerParty>
 		</DespatchAdvice>

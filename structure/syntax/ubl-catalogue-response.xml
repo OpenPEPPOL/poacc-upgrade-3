@@ -105,16 +105,18 @@
 					<Value type="EXAMPLE">12345678</Value>
 				</Element>
 			</Element>
-			<Element cardinality="0..n">
-				<Term>cac:PartyName</Term>
+			
+			<Element cardinality="0..1">
+				<Term>cac:PartyLegalEntity</Term>
 				<Name>Party name</Name>
+				
 				<Element>
-					<Term>cbc:Name</Term>
+					<Term>cbc:RegistrationName</Term>
 					<Name>Party name</Name>
 					<Description>The name of the party sending the response.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir58-007</Reference>
-					<Value type="EXAMPLE">TestCompany AS</Value>
+					<Value type="EXAMPLE">Seller company Ltd.</Value>
 				</Element>
 			</Element>
 		</Element>
@@ -159,16 +161,18 @@
 					<Value type="EXAMPLE">12345678</Value>
 				</Element>
 			</Element>
-			<Element cardinality="0..n">
-				<Term>cac:PartyName</Term>
+			
+			<Element cardinality="0..1">
+				<Term>cac:PartyLegalEntity</Term>
 				<Name>Party name</Name>
+				
 				<Element>
-					<Term>cbc:Name</Term>
+					<Term>cbc:RegistrationName</Term>
 					<Name>Party name</Name>
 					<Description>The name of the party receiving the response.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir58-010</Reference>
-					<Value type="EXAMPLE">Goods Supplier Ltd</Value>
+					<Value type="EXAMPLE">Customer AS</Value>
 				</Element>
 			</Element>
 		</Element>

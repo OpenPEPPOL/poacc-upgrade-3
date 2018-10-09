@@ -142,16 +142,16 @@
 				</Element>
 			</Element>
 			<Element>
-				<Term>cac:PartyName</Term>
+				<Term>cac:PartyLegalEntity</Term>
 				<Name>Party name</Name>
+				
 				<Element>
-					<Term>cbc:Name</Term>
+					<Term>cbc:RegistrationName</Term>
 					<Name>Seller name</Name>
 					<Description>The full (formal) name by which the seller is registered in the
-                        national registry of legal entities or persons.</Description>
+						national registry of legal entities or persons.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir77-013</Reference>
-
 					<Value type="EXAMPLE">Seller name</Value>
 				</Element>
 			</Element>
@@ -197,18 +197,18 @@
 				</Element>
 			</Element>
 			<Element>
-				<Term>cac:PartyName</Term>
+				<Term>cac:PartyLegalEntity</Term>
 				<Name>Party name</Name>
+				
 				<Element>
-					<Term>cbc:Name</Term>
+					<Term>cbc:RegistrationName</Term>
 					<Name>Buyer name</Name>
 					<Description>The full name of the buyer.</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">tir77-010</Reference>
-
-					<Value type="EXAMPLE">Buyer name</Value>
+					<Reference type="BUSINESS_TERM">tir77-010</Reference><Value type="EXAMPLE">Buyer name</Value>
 				</Element>
 			</Element>
+			
 			<Element cardinality="0..1">
 				<Term>cac:Contact</Term>
 				<Name>Contact information</Name>

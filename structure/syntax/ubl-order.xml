@@ -411,7 +411,7 @@
 					<Term>cac:PartyLegalEntity</Term>
 					<Name>Buyer legal information</Name>
 
-					<Element>
+					<Element cardinality="0..1">
 						<Term>cbc:RegistrationName</Term>
 						<Name>Buyers legal registration name</Name>
 						<Description>The official name of the party as registered with the relevant
@@ -643,7 +643,7 @@
 					<Term>cac:PartyLegalEntity</Term>
 					<Name>Seller legal information</Name>
 
-					<Element>
+					<Element cardinality="0..1">
 						<Term>cbc:RegistrationName</Term>
 						<Name>Seller legal registration name</Name>
 						<Description>The official name of the party as registered with the relevant

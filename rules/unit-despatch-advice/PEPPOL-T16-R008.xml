@@ -13,28 +13,14 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 			<cac:DespatchSupplierParty>
 				<cac:Party>
-					<cac:PartyName>
-						<cbc:Name>CER MEDICAL SRL</cbc:Name>
-					</cac:PartyName>
+					<cac:PartyLegalEntity>
+						<cbc:RegistrationName>CER MEDICAL SRL</cbc:RegistrationName>
+					</cac:PartyLegalEntity>
 				</cac:Party>
 			</cac:DespatchSupplierParty>
 		</DespatchAdvice>
 	</test>
 
-	<test>
-		<assert>
-			<warning>PEPPOL-T16-R008</warning>
-		</assert>
-		<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2"
-			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-			<cac:DespatchSupplierParty>
-				<cac:Party>
-					<cac:PartyName/> 
-				</cac:Party>
-			</cac:DespatchSupplierParty>
-		</DespatchAdvice>
-	</test>
 
 
 	<test>

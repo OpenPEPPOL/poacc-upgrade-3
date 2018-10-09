@@ -235,20 +235,7 @@
 						<Value type="EXAMPLE">DK88777654</Value>
 					</Element>
 				</Element>
-				<Element cardinality="0..1">
-					<Term>cac:PartyName</Term>
-					<Name>Party name</Name>
-					<Element>
-						<Term>cbc:Name</Term>
-						<Name>Seller party name</Name>
-						<Description>The full (formal) name by which the seller is registered in the
-                            national registry of legal entities or persons.The name of the
-                            party.</Description>
-						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir110-013</Reference>
-						<Value type="EXAMPLE">Seller company Ltd.</Value>
-					</Element>
-				</Element>
+		
 				<Element cardinality="0..1">
 					<Term>cac:PostalAddress</Term>
 					<Name>Postal Address</Name>
@@ -327,6 +314,21 @@
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
+					<Term>cac:PartyLegalEntity</Term>
+					<Name>Seller legal party</Name>
+					
+					<Element>
+						<Term>cbc:RegistrationName</Term>
+						<Name>Sellers legal registration name</Name>
+						<Description>The full (formal) name by which the seller is registered in the
+							national registry of legal entities or persons.The name of the
+							party.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir110-013</Reference>
+						<Value type="EXAMPLE">Seller company Ltd.</Value>
+					</Element>
+				</Element>
+				<Element cardinality="0..1">
 					<Term>cac:Contact</Term>
 					<Name>Contact information</Name>
 					<Element cardinality="0..1">
@@ -398,19 +400,6 @@
 							<Value type="EXAMPLE">0088</Value>
 						</Attribute>
 						<Value type="EXAMPLE">7300010000001</Value>
-					</Element>
-				</Element>
-				<Element cardinality="0..1">
-					<Term>cac:PartyName</Term>
-					<Name>Party name</Name>
-					<Element>
-						<Term>cbc:Name</Term>
-						<Name>Buyer name</Name>
-						<Description>The full name of the buyer.The name of the party who ordered
-                            the items and receives the response.</Description>
-						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir110-010</Reference>
-						<Value type="EXAMPLE">Customer AS</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
@@ -487,6 +476,20 @@
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">NL</Value>
 						</Element>
+					</Element>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:PartyLegalEntity</Term>
+					<Name>Buyer legal party</Name>
+					
+					<Element>
+						<Term>cbc:RegistrationName</Term>
+						<Name>Buyer name</Name>
+						<Description>The full name of the buyer.The name of the party who ordered
+							the items and receives the response.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir110-010</Reference>
+						<Value type="EXAMPLE">Customer AS</Value>
 					</Element>
 				</Element>
 			</Element>
