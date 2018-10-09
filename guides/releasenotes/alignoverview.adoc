@@ -1,3 +1,6 @@
+include::../shared/links.adoc[]
+include::settings.adoc[]
+
 = PEPPOL BIS3-1.0rc Release notes
 Draft, OpenPEPPOL AISBL, Post-Award Coordinating Community
 :doctype: book
@@ -8,6 +11,9 @@ Draft, OpenPEPPOL AISBL, Post-Award Coordinating Community
 :source-language: xml
 :sectanchors:
 :sectnums:
+:CIUS: Core Invoice Usage Specification (CIUS)
+:title-logo-image: ../images/peppol.jpg
+
 
 These are the release notes for, and so on....
 
