@@ -120,7 +120,7 @@
 				<cbc:ActualDespatchTime>08:00:00</cbc:ActualDespatchTime>
 			</cac:Despatch>
 		</cac:Delivery>
-		
+
 	</cac:Shipment>
 	<cac:DespatchLine>
 		<cbc:ID>1</cbc:ID>
@@ -137,8 +137,7 @@
 				<cbc:ID>010120401</cbc:ID>
 			</cac:SellersItemIdentification>
 			<cac:StandardItemIdentification>
-				<cbc:ID schemeID="0160"
-					>7611104117056</cbc:ID>
+				<cbc:ID schemeID="0160">7611104117056</cbc:ID>
 			</cac:StandardItemIdentification>
 			<!-- tag::bestbefore[] -->
 			<cac:ItemInstance>
@@ -162,9 +161,23 @@
 				<cbc:ID>010140403</cbc:ID>
 			</cac:SellersItemIdentification>
 			<cac:StandardItemIdentification>
-				<cbc:ID schemeID="0160"
-					>7622204117051</cbc:ID>
+				<cbc:ID schemeID="0160">7622204117051</cbc:ID>
 			</cac:StandardItemIdentification>
 		</cac:Item>
+		<cac:Shipment>
+			<cbc:ID>1</cbc:ID>
+			<!-- tag::transporthandling[] -->
+			<cac:TransportHandlingUnit>
+				<cbc:ID>5454</cbc:ID>
+				<cbc:TransportHandlingUnitTypeCode>4H</cbc:TransportHandlingUnitTypeCode>
+				<cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
+				<cbc:ShippingMarks>text</cbc:ShippingMarks>
+				<cac:MeasurementDimension>
+					<cbc:AttributeID>AAW</cbc:AttributeID>
+					<cbc:Measure unitCode="C62">1</cbc:Measure>
+				</cac:MeasurementDimension>
+			</cac:TransportHandlingUnit>
+			<!-- end::transporthandling[] -->
+		</cac:Shipment>
 	</cac:DespatchLine>
 </DespatchAdvice>

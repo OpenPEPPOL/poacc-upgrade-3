@@ -2,11 +2,8 @@
 <Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 	xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
-
-	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns077:ver2.0:extended:www.peppol.eu:bis:peppol18a:ver1.0</cbc:CustomizationID>
-	<!-- tag::profile[] -->
-	<cbc:ProfileID>urn:www.cenbii.eu:profile:bii18:ver1.0</cbc:ProfileID>
-	<!-- end::profile[] -->
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns77a:shopping_cart:bis3-1.0</cbc:CustomizationID>   
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis18a:punch_out:bis3-1.0</cbc:ProfileID>
 	<!-- tag::identifier[] -->
 	<cbc:ID>1387</cbc:ID>
 	<!-- end::identifier[] -->
@@ -36,9 +33,9 @@
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="0088">5790000435951</cbc:ID>
 		</cac:PartyIdentification>
-		<cac:PartyName>
-			<cbc:Name>ABC Supplier Ltd.</cbc:Name>
-		</cac:PartyName>
+		<cac:PartyLegalEntity>
+			<cbc:RegistrationName>ABC Supplier Ltd.</cbc:RegistrationName>
+		</cac:PartyLegalEntity>
 	</cac:ProviderParty>
 	<!-- end::seller[] -->
 	<!-- tag::buyer[] -->
@@ -47,9 +44,9 @@
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="0088">5790000435944</cbc:ID>
 		</cac:PartyIdentification>
-		<cac:PartyName>
-			<cbc:Name>DEF Customer Ltd.</cbc:Name>
-		</cac:PartyName>
+		<cac:PartyLegalEntity>
+			<cbc:RegistrationName>DEF Customer Ltd.</cbc:RegistrationName>
+		</cac:PartyLegalEntity>
 		<cac:Contact>
 			<cbc:ID>buyers ref no</cbc:ID>
 		</cac:Contact>
@@ -57,9 +54,6 @@
 	<!-- end::buyer[] -->
 	<cac:CatalogueLine>
 		<cbc:ID>1</cbc:ID>
-		<!-- tag::contract[] -->
-		<cbc:ContractSubdivision>CRT1387</cbc:ContractSubdivision>
-		<!-- end::contract[] -->
 		<!-- tag::availability[] -->
 		<cac:LineValidityPeriod>
 			<cbc:StartDate>2014-12-31</cbc:StartDate>
@@ -97,8 +91,7 @@
 			<!-- tag::main-image[] -->
 			<cac:ItemSpecificationDocumentReference>
 				<cbc:ID>PC01image.jpg</cbc:ID>
-				<cbc:DocumentTypeCode>MAINIMAGE</cbc:DocumentTypeCode><!--1-->
-				<cbc:DocumentType>Picture of the computer</cbc:DocumentType>
+				<cbc:DocumentTypeCode>PRODUCT_IMAGE</cbc:DocumentTypeCode><!--1-->
 				<cac:Attachment>
 					<cbc:EmbeddedDocumentBinaryObject mimeCode="image/jpeg" filename="computer-image.jpg"
 						>UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
@@ -109,7 +102,6 @@
 			<!-- tag::attachment-pdf[] -->
 			<cac:ItemSpecificationDocumentReference>
 				<cbc:ID>PC01specs.pdf</cbc:ID>
-				<cbc:DocumentType>PC detailed specification</cbc:DocumentType>
 				<cac:Attachment>
 					<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="specification.pdf"
 						>UGVyc29uYWwgY29tcHV0ZXIgcHJvZHVjdCBpbmZvcm1hdGlvbg==</cbc:EmbeddedDocumentBinaryObject>
@@ -160,8 +152,8 @@
 			<!-- tag::label[] -->
 			<cac:Certificate>
 				<cbc:ID>EU Ecolabel</cbc:ID>
-				<cbc:CertificateTypeCode>blanc</cbc:CertificateTypeCode>
-				<cbc:CertificateType>NA</cbc:CertificateType>
+				<cbc:CertificateTypeCode>NA</cbc:CertificateTypeCode>
+				<cbc:CertificateType>Social</cbc:CertificateType>
 				<cac:IssuerParty>
 					<cac:PartyName>
 						<cbc:Name>NA</cbc:Name>
@@ -221,7 +213,6 @@
 	</cac:CatalogueLine>
 	<cac:CatalogueLine>
 		<cbc:ID>3</cbc:ID>
-		<cbc:ContractSubdivision>CRT1387</cbc:ContractSubdivision>
 		<cac:RequiredItemLocationQuantity>
 			<cac:Price>
 				<cbc:PriceAmount currencyID="EUR">20.00</cbc:PriceAmount>
