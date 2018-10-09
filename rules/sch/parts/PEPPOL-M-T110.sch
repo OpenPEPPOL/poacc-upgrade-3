@@ -49,7 +49,7 @@
 	
 	<rule context="cac:TaxSubtotal/cac:TaxCategory[cbc:TaxExemptionReason]">
 		<assert id="PEPPOL-T110-R029"
-			test="contains( ' E AE K G O',concat(' ',normalize-space(cbc:ID),' '))"
+			test="contains( ' E AE O K G ',concat(' ',normalize-space(cbc:ID),' '))"
 			flag="fatal">A VATBReakdown with VAT Category codes S, Z, L and M SHALL NOT have a VAT exemption reason text </assert>
 	</rule>
 	
