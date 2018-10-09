@@ -1,4 +1,4 @@
-= PEPPOL BIS3-1.0rc Release notes
+= Review instructions
 :doctype: book
 :icons: font
 :toc: left
@@ -8,6 +8,16 @@
 :sectanchors:
 :sectnums:
 
-These are the release notes for, and so on....
+The deadline for submitting comments to the review is end of Friday October 26.
 
+Comments should be entered into the Comment form in Excel and sent by email to georg@midran.is
 
+Following types of comments are accepted.
+* Comments on how requirements from BIS2 have been migrated to the BIS3. Including but not limited to;
+    - syntax
+	- rules
+	- spelling and edits
+* Comments on the accepted RFC's
+* General comments on the BIS3 upgrade projec including migration plan.
+
+This review does not open up for new RFC's that modify current business requirements or add new ones. Such RFC's will be addressed later as part of the first version upgrade of the BIS3, version 1.1 that can be expected in first half of 2019.
