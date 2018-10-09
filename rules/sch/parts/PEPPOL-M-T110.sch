@@ -41,11 +41,17 @@
 			flag="fatal">If VAT breakdown is present, the order agreement VAT total amount  = Σ VAT category tax amount.</assert>
 	</rule>
 		
-		<rule context="cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory">
-			<assert id="PEPPOL-T110-R028"
-				test="(contains( ' S Z L M ',concat(' ',normalize-space(cbc:ID),' ')) and not(cbc:TaxExemptionReason)) or exists(cbc:TaxExemptionReason)"
-				flag="fatal">A VATBReakdown with VAT Category code E, AE, K, G or O shall have a VAT exemption reason text, codes S, Z, L and M shall not have a VAT exemption reason text </assert>
-		</rule>
+	<rule context="cac:TaxSubtotal/cac:TaxCategory[not(cbc:TaxExemptionReason)]">
+		<assert id="PEPPOL-T110-R028"
+			test="contains( ' S Z L M ',concat(' ',normalize-space(cbc:ID),' '))"
+			flag="fatal">A VATBReakdown with VAT Category codes E, AE, K, G or O SHALL have a VAT exemption reason text </assert>
+	</rule>
+	
+	<rule context="cac:TaxSubtotal/cac:TaxCategory[cbc:TaxExemptionReason]">
+		<assert id="PEPPOL-T110-R029"
+			test="contains( ' E AE K G O',concat(' ',normalize-space(cbc:ID),' '))"
+			flag="fatal">A VATBReakdown with VAT Category codes S, Z, L and M SHALL NOT have a VAT exemption reason text </assert>
+	</rule>
 	
 	<rule context="cac:AllowanceCharge/cac:TaxCategory[cbc:Percent] | cac:Item/cac:ClassifiedTaxCategory[cbc:Percent]">
 		

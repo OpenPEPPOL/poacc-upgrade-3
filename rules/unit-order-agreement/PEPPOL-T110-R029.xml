@@ -3,45 +3,12 @@
 	configuration="peppolbis-t110-base-3.0">
 	<assert>
 		<description>Verify that VAT Breakdown with VAT Category code S, Z, IG, IP shall not have a VAT Exemption reason text, and codes E, AE, IC, G or O must have a VAT Exemption reason text </description>
-		<scope>PEPPOL-T110-R028</scope>
+		<scope>PEPPOL-T110-R029</scope>
 	</assert>
+	
 	<test id="1">
 		<assert>
-			<success>PEPPOL-T110-R028</success>
-		</assert>
-		<OrderResponse
-			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2">
-			<cac:TaxTotal>
-				<cac:TaxSubtotal>
-					<cac:TaxCategory>
-						<cbc:ID>S</cbc:ID>
-					</cac:TaxCategory>
-				</cac:TaxSubtotal>
-				<cac:TaxSubtotal>
-					<cac:TaxCategory>
-						<cbc:ID>Z</cbc:ID>
-					</cac:TaxCategory>
-				</cac:TaxSubtotal>
-				<cac:TaxSubtotal>
-					<cac:TaxCategory>
-						<cbc:ID>L</cbc:ID>
-					</cac:TaxCategory>
-				</cac:TaxSubtotal>
-				<cac:TaxSubtotal>
-					<cac:TaxCategory>
-						<cbc:ID>M</cbc:ID>
-					</cac:TaxCategory>
-				</cac:TaxSubtotal>
-			</cac:TaxTotal>
-			
-		</OrderResponse>
-	</test>
-	
-	<test id="2">
-		<assert>
-			<error number="5">PEPPOL-T110-R028</error>
+			<success>PEPPOL-T110-R029</success>
 		</assert>
 		<OrderResponse
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -51,31 +18,69 @@
 				<cac:TaxSubtotal>
 					<cac:TaxCategory>
 						<cbc:ID>E</cbc:ID>
-<!--						<cbc:TaxExemptionReason>Reverse charge</cbc:TaxExemptionReason>-->
+						<cbc:TaxExemptionReason>Reverse charge</cbc:TaxExemptionReason>
 					</cac:TaxCategory>
 				</cac:TaxSubtotal>
 				<cac:TaxSubtotal>
 					<cac:TaxCategory>
 						<cbc:ID>AE</cbc:ID>
-<!--						<cbc:TaxExemptionReason>Reverse charge</cbc:TaxExemptionReason>-->
+						<cbc:TaxExemptionReason>Reverse charge</cbc:TaxExemptionReason>
 					</cac:TaxCategory>
 				</cac:TaxSubtotal>
 				<cac:TaxSubtotal>
 					<cac:TaxCategory>
 						<cbc:ID>K</cbc:ID>
-<!--						<cbc:TaxExemptionReason>Reverse charge</cbc:TaxExemptionReason>-->
+						<cbc:TaxExemptionReason>Reverse charge</cbc:TaxExemptionReason>
 					</cac:TaxCategory>
 				</cac:TaxSubtotal>
 				<cac:TaxSubtotal>
 					<cac:TaxCategory>
 						<cbc:ID>G</cbc:ID>
-<!--						<cbc:TaxExemptionReason>Reverse charge</cbc:TaxExemptionReason>-->
+						<cbc:TaxExemptionReason>Reverse charge</cbc:TaxExemptionReason>
 					</cac:TaxCategory>
 				</cac:TaxSubtotal>
 				<cac:TaxSubtotal>
 					<cac:TaxCategory>
 						<cbc:ID>O</cbc:ID>
-<!--						<cbc:TaxExemptionReason>Reverse charge</cbc:TaxExemptionReason>-->
+						<cbc:TaxExemptionReason>Reverse charge</cbc:TaxExemptionReason>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+				
+			</cac:TaxTotal>
+			
+		</OrderResponse>
+	</test>
+	<test id="2">
+		<assert>
+			<error number="4">PEPPOL-T110-R029</error>
+		</assert>
+		<OrderResponse
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2">
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cac:TaxCategory>
+						<cbc:ID>S</cbc:ID>
+						<cbc:TaxExemptionReason>Reverse charge</cbc:TaxExemptionReason>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+				<cac:TaxSubtotal>
+					<cac:TaxCategory>
+						<cbc:ID>Z</cbc:ID>
+						<cbc:TaxExemptionReason>Reverse charge</cbc:TaxExemptionReason>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+				<cac:TaxSubtotal>
+					<cac:TaxCategory>
+						<cbc:ID>L</cbc:ID>
+						<cbc:TaxExemptionReason>Reverse charge</cbc:TaxExemptionReason>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+				<cac:TaxSubtotal>
+					<cac:TaxCategory>
+						<cbc:ID>M</cbc:ID>
+						<cbc:TaxExemptionReason>Reverse charge</cbc:TaxExemptionReason>
 					</cac:TaxCategory>
 				</cac:TaxSubtotal>
 				
