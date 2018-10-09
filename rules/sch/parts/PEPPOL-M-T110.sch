@@ -43,8 +43,8 @@
 		
 		<rule context="cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory">
 			<assert id="PEPPOL-T110-R028"
-				test="(contains( ' S Z IG IP ',concat(' ',normalize-space(./cbc:ID),' ')) and not(cbc:TaxExemptionReason)) or exists(cbc:TaxExemptionReason)"
-				flag="fatal">A VATBReakdown with VAT Category code E, AE, IC, G or O shall have a VAT exemption reason text, codes S, Z, IG and IP shall not have a VAT exemption reason text </assert>
+				test="(contains( ' S Z L M ',concat(' ',normalize-space(cbc:ID),' ')) and not(cbc:TaxExemptionReason)) or exists(cbc:TaxExemptionReason)"
+				flag="fatal">A VATBReakdown with VAT Category code E, AE, K, G or O shall have a VAT exemption reason text, codes S, Z, L and M shall not have a VAT exemption reason text </assert>
 		</rule>
 	
 	<rule context="cac:AllowanceCharge/cac:TaxCategory[cbc:Percent] | cac:Item/cac:ClassifiedTaxCategory[cbc:Percent]">
