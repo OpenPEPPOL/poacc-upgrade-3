@@ -196,8 +196,8 @@
 				<cbc:PriceType>AAA</cbc:PriceType>
 				<cbc:OrderableUnitFactorRate>1</cbc:OrderableUnitFactorRate>
 				<cac:ValidityPeriod>
-					<cbc:StartDate>2018-09-01</cbc:StartDate>
-					<cbc:EndDate>2019-08-31</cbc:EndDate>
+					<cbc:StartDate>2018-10-01</cbc:StartDate>
+					<cbc:EndDate>2018-12-31</cbc:EndDate>
 				</cac:ValidityPeriod>
 			</cac:Price>
 		</cac:RequiredItemLocationQuantity>

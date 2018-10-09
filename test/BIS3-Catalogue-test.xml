@@ -156,28 +156,28 @@
 
         <cac:ItemComparison>
             <cbc:PriceAmount currencyID="EUR">80</cbc:PriceAmount>
-            <cbc:Quantity unitCode="CS">1</cbc:Quantity>
+            <cbc:Quantity unitCode="XCS">1</cbc:Quantity>
         </cac:ItemComparison>
 
         <cac:AccessoryRelatedItem>
             <cbc:ID>3431</cbc:ID>
-            <cbc:Quantity unitCode="CS">1</cbc:Quantity>
+            <cbc:Quantity unitCode="XCS">1</cbc:Quantity>
         </cac:AccessoryRelatedItem>
 
         <cac:RequiredRelatedItem>
             <cbc:ID>3451</cbc:ID>
-            <cbc:Quantity unitCode="CS">1</cbc:Quantity>
+            <cbc:Quantity unitCode="XCS">1</cbc:Quantity>
         </cac:RequiredRelatedItem>
 
-        <cac:ReplacementRelatedItem>
+        <cac:ReplacedRelatedItem>
             <cbc:ID>4614</cbc:ID>
-            <cbc:Quantity unitCode="CS">1</cbc:Quantity>
-        </cac:ReplacementRelatedItem>
+            <cbc:Quantity unitCode="XCS">1</cbc:Quantity>
+        </cac:ReplacedRelatedItem>
 
         <cac:RequiredItemLocationQuantity>
-            <cbc:LeadTimeMeasure unitCode="CS">5</cbc:LeadTimeMeasure>
-            <cbc:MinimumQuantity unitCode="CS">1</cbc:MinimumQuantity>
-            <cbc:MaximumQuantity unitCode="CS">50</cbc:MaximumQuantity>
+            <cbc:LeadTimeMeasure unitCode="XCS">5</cbc:LeadTimeMeasure>
+            <cbc:MinimumQuantity unitCode="XCS">1</cbc:MinimumQuantity>
+            <cbc:MaximumQuantity unitCode="XCS">50</cbc:MaximumQuantity>
             <cac:ApplicableTerritoryAddress>
                 <cbc:StreetName>Københavnsgata 3</cbc:StreetName>
                 <cbc:AdditionalStreetName>2nd floor</cbc:AdditionalStreetName>
@@ -193,7 +193,7 @@
             </cac:ApplicableTerritoryAddress>
             <cac:Price>
                 <cbc:PriceAmount currencyID="EUR">80</cbc:PriceAmount>
-                <cbc:BaseQuantity unitCode="CS">1</cbc:BaseQuantity>
+                <cbc:BaseQuantity unitCode="XCS">1</cbc:BaseQuantity>
                 <cbc:PriceType>AAA</cbc:PriceType>
                 <cbc:OrderableUnitFactorRate>1</cbc:OrderableUnitFactorRate>
                 <cac:ValidityPeriod>
@@ -205,7 +205,7 @@
 
         <cac:Item>
             <cbc:Description>Christmas sweater to the kindergarten.</cbc:Description>
-            <cbc:PackQuantity unitCode="CS">10</cbc:PackQuantity>
+            <cbc:PackQuantity unitCode="XCS">10</cbc:PackQuantity>
             <cbc:PackSizeNumeric>5</cbc:PackSizeNumeric>
             <cbc:Name>Christmas sweaters</cbc:Name>
             <cbc:Keyword>Sweater</cbc:Keyword>
@@ -221,10 +221,10 @@
             </cac:StandardItemIdentification>
             <cac:ItemSpecificationDocumentReference>
                 <cbc:ID>6441244</cbc:ID>
-                <cbc:DocumentTypeCode>X</cbc:DocumentTypeCode>
+                <cbc:DocumentTypeCode>482</cbc:DocumentTypeCode>
                 <cbc:DocumentDescription>X</cbc:DocumentDescription>
                 <cac:Attachment>
-                    <cbc:EmbeddedDocumentBinaryObject mimeCode="image/png" filename="image1.png">IPGJAG646etatOSHTGOAT436343634jiogfja</cbc:EmbeddedDocumentBinaryObject>
+                    <cbc:EmbeddedDocumentBinaryObject mimeCode="image/png" filename="image1.png">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</cbc:EmbeddedDocumentBinaryObject>
                     <cac:ExternalReference>
                         <cbc:URI>http://www.supplier.com/image/sweaters.png</cbc:URI>
                     </cac:ExternalReference>
@@ -243,7 +243,7 @@
             </cac:TransactionConditions>
 
             <cac:HazardousItem>
-                <cbc:UNDGCode>X</cbc:UNDGCode>
+                <cbc:UNDGCode>ADR</cbc:UNDGCode>
                 <cbc:HazardClassID>X</cbc:HazardClassID>
             </cac:HazardousItem>
 
@@ -259,7 +259,7 @@
                 <cbc:Name>Size</cbc:Name>
                 <cbc:NameCode listID="NN">X</cbc:NameCode>
                 <cbc:Value>18</cbc:Value>
-                <cbc:ValueQuantity unitCode="KGM">M</cbc:ValueQuantity>
+                <cbc:ValueQuantity unitCode="KGM">10</cbc:ValueQuantity>
                 <cbc:ValueQualifier>X</cbc:ValueQualifier>
             </cac:AdditionalItemProperty>
             
@@ -270,7 +270,7 @@
             </cac:ManufacturerParty>
 
             <cac:ItemInstance>
-                <cbc:BestBeforeDate>None</cbc:BestBeforeDate>
+                <cbc:BestBeforeDate>2018-09-12</cbc:BestBeforeDate>
                 <cac:LotIdentification>
                     <cbc:LotNumberID>1234</cbc:LotNumberID>
                 </cac:LotIdentification>

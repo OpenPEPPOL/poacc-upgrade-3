@@ -228,6 +228,7 @@
 							external document is located.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-018</Reference>
+						<Value type="EXAMPLE">http://www.test.no/image.jpg</Value>
 					</Element>
 				</Element>
 			</Element>

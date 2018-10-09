@@ -46,12 +46,13 @@
                 is ordered.</Description>
 			<DataType>Code</DataType>
 			<Reference type="BUSINESS_TERM">tir77-005</Reference>
+			<Reference type="CODE_LIST">TrueFalse</Reference>
 			<Value type="EXAMPLE">true</Value>
 		</Element>
 		<Element>
 			<Term>cbc:IssueDate</Term>
 			<Name>Shopping cart issue date</Name>
-			<Description>The date when the shopping cart was issued.Format= "YYYY-MM-DD"</Description>
+			<Description>The date when the shopping cart was issued. Format= "YYYY-MM-DD"</Description>
 			<DataType>Date</DataType>
 			<Reference type="BUSINESS_TERM">tir77-002</Reference>
 

@@ -49,7 +49,7 @@
 			<DataType>Code</DataType>
 			<Reference type="BUSINESS_TERM">tir19-047</Reference>
 
-			<Reference type="CODE_LIST">ActionCode</Reference>
+			<Reference type="CODE_LIST">ActionCode_header</Reference>
 			<Value type="EXAMPLE">Add</Value>
 		</Element>
 		<Element cardinality="0..1">
@@ -835,7 +835,7 @@
 				<DataType>Code</DataType>
 				<Reference type="BUSINESS_TERM">tir19-033</Reference>
 
-				<Reference type="CODE_LIST">ActionCode</Reference>
+				<Reference type="CODE_LIST">ActionCode_line</Reference>
 				<Value type="EXAMPLE">Update</Value>
 			</Element>
 			<Element cardinality="0..1">
@@ -1298,7 +1298,8 @@
 					<Element cardinality="0..1">
 						<Term>cbc:PriceType</Term>
 						<Name>Price type</Name>
-						<Description>The type of the item price. The type may be given by using codes from UN/CEFACT code list 5387. When prices are temporary the validity period for the price should be defined by stating the price validity period.</Description>
+						<Description>The type of the item price. The type may be given by using codes from UN/CEFACT code list 5387. 
+							When prices are temporary the validity period for the price should be defined by stating the price validity period.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-093</Reference>
 					</Element>
@@ -1311,6 +1312,7 @@
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-p035</Reference>
 					</Element>
+					
 					<Element cardinality="0..n">
 						<Term>cac:ValidityPeriod</Term>
 						<Name>Price validity period</Name>
@@ -1490,6 +1492,7 @@
 								<Description>The file name of the attached document</Description>
 								<Value type="EXAMPLE">Hours-spent.csv</Value>
 							</Attribute>
+							<Value type="EXAMPLE">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</Value>
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cac:ExternalReference</Term>
@@ -1500,6 +1503,7 @@
 								<Description>URI reference to external item information or
                                     specifications. E.g. web address</Description>
 								<Reference type="BUSINESS_TERM">tir19-086</Reference>
+								<Value type="EXAMPLE">http://www.test.no/image.jpg</Value>
 							</Element>
 						</Element>
 					</Element>
