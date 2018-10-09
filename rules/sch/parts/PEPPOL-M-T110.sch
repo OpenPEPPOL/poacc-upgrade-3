@@ -1,4 +1,4 @@
-<pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron">
 	
 
 	<let name="taxCategoryPercents" value="for $cat in /ubl:OrderResponse/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory return u:cat2str($cat)"/>
