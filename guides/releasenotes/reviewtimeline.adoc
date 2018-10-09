@@ -1,12 +1,4 @@
 = Review instructions
-:doctype: book
-:icons: font
-:toc: left
-:toclevels: 2
-:source-highlighter: coderay
-:source-language: xml
-:sectanchors:
-:sectnums:
 
 The deadline for submitting comments to the review is end of Friday October 26.
 
