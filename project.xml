@@ -4,11 +4,13 @@
     <Name>PEPPOL BIS Upgrade 3.0</Name>
 
     <!-- Introduction -->
+    <Documentation path="">INTRODUCTION</Documentation>	
     <Documentation path="releasenotes/">BIS3-1.0rc Release notes</Documentation>
-    <Documentation path="changes/">Overview of alignment</Documentation>
+    <Documentation path="changes/">Overview of alignments</Documentation>
     <Documentation path="migration/">Migration plan</Documentation>
-	
+
     <!-- BIS documents -->
+    <Documentation path="">BIS Documents</Documentation>	
     <Documentation path="profiles/3-order-only/">BIS03A Order only — BIS3-1.0</Documentation>
     <Documentation path="profiles/28-ordering/">BIS28A Ordering — BIS3-1.0</Documentation>
     <Documentation path="profiles/1-catalogueonly/">BIS01A Catalogue only — BIS3-1.0</Documentation>
@@ -18,11 +20,11 @@
     <Documentation path="profiles/36-mlr/">BIS36A Message Level Response — BIS3-1.0</Documentation>
     <Documentation path="profiles/63-invoiceresponse/">BIS63A Invoice Response — BIS3-1.0</Documentation>
     
-    <!-- Working documents -->
-	<Documentation path="work/">Overview and processing of alignments</Documentation>
-    <Documentation path="review/">Review of alignments</Documentation>
-    <Documentation path="methodology/schematron/">Schematron guideline</Documentation>
-    <Documentation path="work/rules/">Automatic/manual rules</Documentation>
+    Working documents
+	<!-- <Documentation path="work/">Overview and processing of alignments</Documentation> -->
+    <!-- <Documentation path="review/">Review of alignments</Documentation> -->
+    <!-- <Documentation path="methodology/schematron/">Schematron guideline</Documentation> -->
+    <!-- <Documentation path="work/rules/">Automatic/manual rules</Documentation> -->
  
    <!-- Syntax -->
     <Resource>
