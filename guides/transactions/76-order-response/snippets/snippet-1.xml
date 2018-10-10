@@ -124,7 +124,7 @@
   <cac:OrderLine>
     <cac:LineItem>
       <cbc:ID>5</cbc:ID>
-      <cbc:LineStatusCode>7</cbc:LineStatusCode>
+      <cbc:LineStatusCode>1</cbc:LineStatusCode>
       <cbc:Quantity unitCode="EA">12</cbc:Quantity>
       <cac:Delivery>
         <cac:PromisedDeliveryPeriod>
@@ -195,7 +195,7 @@
   <cac:OrderLine>
     <cac:LineItem>
       <cbc:ID>10</cbc:ID>
-      <cbc:LineStatusCode>1</cbc:LineStatusCode>
+      <cbc:LineStatusCode>3</cbc:LineStatusCode>
       <cbc:Quantity unitCode="C62">2</cbc:Quantity>
       <cac:Delivery>
         <cac:PromisedDeliveryPeriod>

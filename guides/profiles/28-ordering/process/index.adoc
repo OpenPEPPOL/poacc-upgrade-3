@@ -12,6 +12,7 @@ The Ordering process flow can be described as follows:
 * A Buyer submits an Order to the Seller requesting for delivery of goods or services
 * An Order may refer to a framework agreement for its terms and conditions; otherwise the Buyer’s terms and conditions apply.
 * An Order may contain items (goods or services) with item identifiers or items with free text description.
+* The Seller may acknowledge that the order is received.
 * The Seller may accept the Order, committing himself to the conditions stated therein by means of an Order Response transaction.
 * Alternatively, the Seller may reject the Order by means of the Order Response transaction.
 * An order rejection may contain reasons for rejection.

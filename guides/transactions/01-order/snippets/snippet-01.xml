@@ -197,14 +197,14 @@
   <!-- end::discount[] -->
   <!-- tag::tax-total[] -->
   <cac:TaxTotal>
-		  <cbc:TaxAmount currencyID="EUR">28.75</cbc:TaxAmount>
+		  <cbc:TaxAmount currencyID="EUR">268.75</cbc:TaxAmount>
   </cac:TaxTotal>
   <!-- end::tax-total[] -->
   <cac:AnticipatedMonetaryTotal>
-    <cbc:LineExtensionAmount currencyID="EUR">643</cbc:LineExtensionAmount>
+    <cbc:LineExtensionAmount currencyID="EUR">1345</cbc:LineExtensionAmount>
     <cbc:AllowanceTotalAmount currencyID="EUR">100</cbc:AllowanceTotalAmount>
     <cbc:ChargeTotalAmount currencyID="EUR">100</cbc:ChargeTotalAmount>
-    <cbc:PayableAmount currencyID="EUR">671.75</cbc:PayableAmount>
+    <cbc:PayableAmount currencyID="EUR">1613.75</cbc:PayableAmount>
   </cac:AnticipatedMonetaryTotal>
   <cac:OrderLine>
     <cac:LineItem>
@@ -248,15 +248,15 @@
     <cac:LineItem>
       <cbc:ID>2</cbc:ID>
       <!-- tag::quantity[] -->
-      <cbc:Quantity unitCode="NAR">6</cbc:Quantity>
+      <cbc:Quantity unitCode="LTR">120</cbc:Quantity>
       <!-- end::quantity[] -->
-      <cbc:LineExtensionAmount currencyID="EUR">18</cbc:LineExtensionAmount>
+      <cbc:LineExtensionAmount currencyID="EUR">720</cbc:LineExtensionAmount>
       <cbc:AccountingCost>MAFO-1</cbc:AccountingCost>
       <!-- tag::quantity[] -->
 
       <cac:Price>
         <cbc:PriceAmount currencyID="EUR">6</cbc:PriceAmount>
-        <cbc:BaseQuantity unitCode="NAR">2</cbc:BaseQuantity>
+        <cbc:BaseQuantity unitCode="LTR">1</cbc:BaseQuantity>
       </cac:Price>
       <!-- end::quantity[] -->
       <!-- tag::name[] -->

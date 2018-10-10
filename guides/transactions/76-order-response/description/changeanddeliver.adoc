@@ -2,6 +2,7 @@
 = Order response replacing items and delivering over time.
 
 An order response may replace items in two ways. If the full quantity of an item is replaced that information can be provided by using the Seller substituted line item element in the invoice response as shown in the following example.
+
 .Example of Replacement item in an Order Response message:
 [source, xml, indent=0]
 ----
@@ -11,7 +12,7 @@ include::../snippets/snippet-1.xml[tags=line-change4]
 
 If the seller replaces part of the quantity or delivers the order quantity at different dates he may need to add lines and/or mark ordered lines as being delivered as demonstrated in the following example.
 
-In the example a seller confirms the first line of an order, provides two delivery dates for second order line of 3 pcs of Product B by adding a new line and then confirms that order line 3 has already been delivered.
+In the example a seller confirms the first line of an order, provides two delivery dates for second order line of 3 pieces of Product B by adding a new line and then confirms that order line 3 has already been delivered.
 
 .Example of adding lines and delivering over time:
 [source, xml, indent=0]
