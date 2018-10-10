@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
-    <Title>UNCL4343 Response type code</Title>
+    <Title>Application Response type code (UNCL4343 Subset)</Title>
     <Identifier>UNCL4343</Identifier>
     <Version>D.17A</Version>
     <Agency>UN/CEFACT</Agency>
