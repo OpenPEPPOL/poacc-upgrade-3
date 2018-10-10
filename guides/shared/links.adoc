@@ -53,8 +53,8 @@
 :UNCL4343: https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred4343.htm[UN/CEFACT code list 4343, D.17A]
 
 //examples
-:order-UC: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/master/guides/rules/use-case-examples/order/examples[Use case example files]
-:order-response-UC: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/master/guides/rules/use-case-examples/order-response/examples[Use case example files]
+:order-UC: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/master/rules/use-case-examples/order[Use case example files]
+:order-response-UC: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/master/guides/rules/use-case-examples/order-response[Use case example files]
 :imr-UC: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/master/examples/use-case-examples/invoice-response[Use case example files]
 
 //internal
