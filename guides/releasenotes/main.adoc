@@ -1,4 +1,4 @@
-= BIS3-1.0 Release notes
+= BIS3-1.0 rc Release notes
 :doctype: book
 :icons: font
 :toc: left
