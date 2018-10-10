@@ -9,9 +9,38 @@
 :sectanchors:
 :sectnums:
 
+The following list give a general overview of the changes made to the BIS2 specifications as part of the alignment with the EN 16931 invoice.
+
+* Exchange rates for VAT currencies removed.
+* Removed type and date from contract references
+* Qualified reference elements added to Order.
+* All addresses changed to include 3 lines insted of two.
+* Customization and profile identifiers made mandatory in all BIS.
+* Party name remapped to party legal name in UBL and made mandatory.
+* Rule madating either sellers or standard item Id added to all except Order.
+* VAT calculation aligned with EN calculation model.
+* Structure of VAT information aligned with EN VAT structure.
+* Internal calculation of allowances and charges.
+* Action code lists aligned between BIS's.
+* Endpoint identifiers restricted to CEF code lists (ICD).
+* Party and item identifiers restricted to ICD code list.
+* Allowance and charge code lists aligned with EN by using 5189 and 7161.
+* Alignment of syntax bindings.
+* Assigning fixed code lists and removing requirements for code attributes.
+* Added validations to prevent use of empty elements.
+* Automated unit testing adopted for all BIS using code snippets instead of full files.
+* Added address information for tax representatives, where appropriate.
+* Use of business terms aligned across BIS specifications.
+* Rules separated into Basic rule and Business rules. Basic rules auto generated.
+* Various redundant rules removed.
+* Validation on elements and calculations aligned with EN.
+* Use of label elements aligned between Order agreement and Punch Out.
+* Contact information aligned across BIS.
+* "Your reference" remapped to Customer reference from Buyer/Contact/Id
+* Allownce and charge classes aligned in terms of use of percentage, reason code and VAT.
+
 :leveloffset: +1
 
 include::amendments.adoc[]
-
 
 :leveloffset: -1
