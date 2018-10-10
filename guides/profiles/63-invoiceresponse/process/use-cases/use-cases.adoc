@@ -12,7 +12,6 @@ Therefore the Buyer must provide an initial response to inform the Seller that t
 Seller
 |Result |Seller is notified within the “Maximum Response Time” that the invoice is being processed. +
 A further Invoice Response will follow.
-|XML example |T111-uc001-Invoice in process.xml ({imr-UC})
 |====
 
 [[uc2a]]
@@ -27,7 +26,6 @@ A further Invoice Response will follow.
 Seller
 |Result |The Seller knows that invoice is in process and that the Buyer received it at a certain date.
 He knows the internal reference used by the Buyer for this invoice.
-|XML example |T111-uc002a-Additional reference data.xml ({imr-UC})
 |====
 
 
@@ -48,7 +46,6 @@ Buyer can re-attempt validation of the invoice (e.g. to allow updating of their 
 |Parties involved |Buyer +
 Seller
 |Result |Seller knows that the invoice is in the queue and the process is stopped until appointed date and then a further attempt will be made to match the Invoice.
-|XML example |T111-uc002b-In process but postponed.xml ({imr-UC})
 |====
 
 [[uc3]]
@@ -62,7 +59,6 @@ Seller
 |Parties involved |Buyer +
 Seller
 |Result |Seller is notified that an invoice has been accepted and will be paid on due date.
-|XML example |T111-uc003-Invoice is accepted.xml ({imr-UC})
 |====
 
 [[uc4a]]
@@ -78,7 +74,6 @@ Buyer doesn't provide any encoded reasoning but provides only textual reason.
 Seller
 |Result |Seller is notified that an invoice has been rejected.
 In case further clarifications are needed, Seller needs to contact the Buyer for further actions (externally).
-|XML example |T111-uc004a-Invoice is rejected.xml ({imr-UC})
 |====
 
 [[uc4b]]
@@ -95,7 +90,6 @@ Seller
 |Result |Seller is notified that an invoice has been rejected because of missing PO reference. +
 Seller needs to add PO number to the Invoice and reissue it.
 How he handles the initial invoice is up to him.
-|XML example |T111-uc004b-Rejected requesting reissue.xml ({imr-UC})
 |====
 
 [[uc4c]]
@@ -119,7 +113,6 @@ Seller
 |Result |The Seller has been informed that the Invoice has been rejected.
 The Seller will proceed to issue a Credit Note for the referenced Invoice and a new Invoice to replace it. +
 The Seller can contact the Buyer using contact details provided in the Invoice Response.
-|XML example |T111-uc004c-Rejected requesting replacement.xml ({imr-UC})
 |====
 
 [[uc5]]
@@ -139,7 +132,6 @@ The clarification includes information on what date the Invoice will be paid.
 Seller
 |Result |Seller is notified that Invoice has been conditionally accepted but will be paid on a date that is different from what was stated in the invoice.
 If the Seller accepts the change, he doesn't need to react, otherwise he must contact the Buyer (externally).
-|XML example |T111-uc005-Invoice is conditionally accepted.xml ({imr-UC})
 |====
 
 [[uc6a]]
@@ -160,7 +152,6 @@ Seller
 |Result |Seller has been notified that data is missing from the Invoice.
 Seller has notified about the date when the Invoice was put under query.
 Seller needs to forward the correct data to the Buyer (externally) to enable the Buyer to process the Invoice further.
-|XML example |T111-uc006a-Under query missing information.xml ({imr-UC})
 |====
 
 [[uc6b]]
@@ -174,7 +165,6 @@ Seller needs to forward the correct data to the Buyer (externally) to enable the
 |Parties involved |Buyer +
 Seller
 |Result |The Seller has been notified that a PO reference is missing from the Invoice and that he must provide it in order for Buyer to continue with processing
-|XML example |T111-uc006a-Missing PO.xml ({imr-UC})
 |====
 
 [[uc6c]]
@@ -190,7 +180,6 @@ The Buyer will hold the processing until a partial Credit Note is received
 |Parties involved |Buyer +
 Seller
 |Result |Seller has been notified that the Invoice has an incorrect Invoice Line and that he needs to issue a partial Credit Note.
-|XML example |T111-uc006c-Wrong detail partial credit.xml ({imr-UC})
 |====
 
 [[uc7]]
@@ -204,7 +193,6 @@ Seller
 |Parties involved |Buyer +
 Seller
 |Result |Seller knows that the payment will be received soon.
-|XML example |T111-uc007-Payment has been initiated.xml ({imr-UC})
 |====
 
 [[uc8]]
@@ -220,5 +208,4 @@ Sending Party differs from Buyer party details.
 Service provider +
 Seller
 |Result |Seller is notified that an Invoice has been accepted and will be paid on due date.
-|XML example |T111-uc008-Invoice is accepted by third party.xml ({imr-UC})
 |====
