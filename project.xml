@@ -4,13 +4,13 @@
     <Name>PEPPOL BIS Upgrade 3.0</Name>
 
     <!-- Introduction -->
-    <Documentation path="">INTRODUCTION</Documentation>	
+    <Documentation path="">   INTRODUCTION</Documentation>	
     <Documentation path="releasenotes/">BIS3-1.0rc Release notes</Documentation>
     <Documentation path="changes/">Overview of alignments</Documentation>
     <Documentation path="migration/">Migration plan</Documentation>
 
     <!-- BIS documents -->
-    <Documentation path="">BIS Documents</Documentation>	
+    <Documentation path="">   BIS DOCUMENTS</Documentation>	
     <Documentation path="profiles/3-order-only/">BIS03A Order only — BIS3-1.0</Documentation>
     <Documentation path="profiles/28-ordering/">BIS28A Ordering — BIS3-1.0</Documentation>
     <Documentation path="profiles/1-catalogueonly/">BIS01A Catalogue only — BIS3-1.0</Documentation>
