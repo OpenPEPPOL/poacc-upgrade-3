@@ -3,8 +3,6 @@
 
     <Name>PEPPOL BIS3 Upgrade, version BIS3-1.0 Rlease Candidate</Name>
 	
-	The following documents are the release candidate for a new, non-backwards compatible, major upgrade of all OpenPEPPOL BIS specifications, other than the BIS3 Billing. The release candidat is open for review comments until October 26. For further details please refer to the release notes.
-
     <!-- Introduction -->
     <Documentation path="">INTRODUCTION</Documentation>	
     <Documentation path="releasenotes/">- BIS3-1.0 rc Release notes</Documentation>
