@@ -84,7 +84,7 @@ PayableRounding Amount = 0.19.
 
 |Sum of line amounts
 |`cbc:LineExtensionAmount`
-|1436.50
+|700
 
 |Allowance on document level
 |`cbc:AllowanceTotalAmount`
@@ -96,11 +96,11 @@ PayableRounding Amount = 0.19.
 
 |Order total amount without VAT
 |`cbc:TaxExclusiveAmount`
-|1536.50
+|800
 
 |VAT total amount
 |`cac:TaxTotal/cbc:TaxAmount`
-|384.13
+|85.63
 
 |Rounding of Order total
 |`cbc:PayableRoundingAmount`
@@ -108,15 +108,15 @@ PayableRounding Amount = 0.19.
 
 |Order total with VAT (value of purchase)
 |`cbc:TaxInclusiveAmount`
-|1921.00
+|885.63
 
 |Paid amounts
 |`cbc:PrepaidAmount`
-| 1000.00
+| 135.00
 
 |Amount expected to be paid
 |`cbc:PayableAmount`
-|921.00
+|751.00
 
 |====
 
