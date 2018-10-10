@@ -1,0 +1,10 @@
+= Clecklist for cleanup
+
+* Exchange rates for VAT currencies removed.
+* Removed type and date from contract references
+* Qualified reference elements added to Order.
+* All addresses include 3 lines
+* Customization and profile identifiers made mandatory in all BIS.
+* Party name remapped to party legal name and made mandatory.
+* VAT calculation aligned with EN calculation model.
+* Structure of VAT information aligned with EN
