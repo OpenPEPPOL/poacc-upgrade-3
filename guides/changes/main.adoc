@@ -11,6 +11,8 @@
 
 The following list give a general overview of the changes made to the specifications as part of the alignment with the EN 16931 invoice. This list does not address the additional RFC that were approved and adopted.
 
+:leveloffset: +1
+
 = Business terms
 
 * Qualified reference elements added to Order.
@@ -59,3 +61,5 @@ The following list give a general overview of the changes made to the specificat
 * Data model and syntax bindings moved from BIS document to browsable data model.
 * Code lists for all BIS maintained jointly and hyperlinked where used.
 * Traceability of changes improved by linking between Jira issues and GitHub updates.
+
+:leveloffset: -1
