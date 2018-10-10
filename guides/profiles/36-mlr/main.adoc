@@ -25,7 +25,7 @@ include::principles/index.adoc[]
 
 include::process/index.adoc[]
 
-include::requirements/index.adoc[]
+//include::requirements/index.adoc[]
 
 include::../../shared/datatypes/index.adoc[]
 
