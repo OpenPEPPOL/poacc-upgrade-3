@@ -28,7 +28,7 @@ To assist with resolution the Buyer might want to provide instructions on what i
 ----
 <cac:DocumentResponse>
   <cac:Response>
-    <cbc:ResponseCode listID="UNCL4343OpSubset">RE</cbc:ResponseCode> <1>
+    <cbc:ResponseCode>RE</cbc:ResponseCode> <1>
     <cbc:EffectiveDate>2016-10-25</cbc:EffectiveDate>
 
       <cac:Status>
