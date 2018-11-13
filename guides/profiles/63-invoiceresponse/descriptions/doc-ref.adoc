@@ -16,7 +16,7 @@ See chapter {link-codelist} for a complete list of all the document types.
 <cac:DocumentReference>
   <cbc:ID>inv021</cbc:ID> <1>
   <cbc:IssueDate>2017-11-30</cbc:IssueDate> <2>
-  <cbc:DocumentTypeCode listID="UNECE1001">380</cbc:DocumentTypeCode> <3>
+  <cbc:DocumentTypeCode>380</cbc:DocumentTypeCode> <3>
 </cac:DocumentReference>
 ----
 <1> Value from the ID element in the invoice for which this response is valid, found in element `cbc:ID` in the received invoice
