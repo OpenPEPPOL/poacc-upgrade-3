@@ -21,9 +21,9 @@
         </cac:Response>
         <!-- end::accept[] -->
         <!-- tag::reference[] -->
-     <cac:DocumentReference>
+		<cac:DocumentReference>
             <cbc:ID>EnvelopeID-12456789</cbc:ID>
-        </cac:DocumentReference>
+		</cac:DocumentReference>
         <!-- end::reference[] -->
     </cac:DocumentResponse>
 
