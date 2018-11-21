@@ -17,7 +17,7 @@ include::../snippets/snippet-18-1.xml[tags=validity]
 ----
 
 The seller may set the condition that the offer made in the shopping cart is only valid if all items in the cart are ordered.
-That is the buyer may not select only certain items or change the quantities of the items listed in the cart.
+This means that the buyer may not select only certain items or change the quantities of the items listed in the cart.
 This is given by the complete cart indicator, using the element `cbc:ActionCode`.
 If the value of the indicator is "true" the buyer must either order all or none of the cart.
 The default value of the indicator is "false" meaning that if the element is not included in the message the buyer may order part of the cart.

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
-	<Term>ShoppingCart</Term>
+	<Term>PunchOut</Term>
 
 	<Property key="sch:prefix">PEPPOL-T77</Property>
 	<Property key="sch:identifier">T77-basic</Property>
@@ -399,7 +399,7 @@
 					<Element cardinality="0..1">
 						<Term>cbc:BaseQuantity</Term>
 						<Name>Item price base quantity</Name>
-						<Description>The number of item units to which the price applies. UOM should be stated by using recommendation 20</Description>
+						<Description>The number of item units to which the price applies. UOM should be stated by using UN/ECE Recommandation 20, including Rec 21 codes - prefixed with X</Description>
 						<DataType>Quantity</DataType>
 						<Reference type="BUSINESS_TERM">tir77-033</Reference>
 						<Attribute>
@@ -426,7 +426,7 @@
 					<Element>
 						<Term>cbc:BatchQuantity</Term>
 						<Name>Shopping cart line quantity</Name>
-						<Description>The number of item units requested by the buyer. UOM should be stated by using recommendation 20</Description>
+						<Description>The number of item units requested by the buyer. UOM should be stated by using UN/ECE Recommandation 20, including Rec 21 codes - prefixed with X</Description>
 						<DataType>Quantity</DataType>
 						<Reference type="BUSINESS_TERM">tir77-017</Reference>
 

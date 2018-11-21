@@ -242,7 +242,7 @@
 			<Description>The Consignee is the person or organization to which the products will be shipped and who is taking possession. The role is carried out by the customer or on behalf of the customer. </Description>
 			<Element>
 				<Term>cac:Party</Term>
-				<Name>Party name</Name>
+				<Name>Party information</Name>
 				<Element cardinality="0..1">
 					<Term>cbc:EndpointID</Term>
 					<Name>Electronic address</Name>
@@ -356,6 +356,19 @@
 						</Element>
 					</Element>
 				</Element>
+				
+				<Element cardinality="0..1">
+					<Term>cac:PartyName</Term>
+					<Name>Party name</Name>
+					<Element>
+						<Term>cbc:Name</Term>
+						<Name>Consignee party name</Name>
+						<Description>The name of the consignee party</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir16-089</Reference>
+					</Element>
+				</Element>
+				
 				<Element cardinality="0..1">
 					<Term>cac:PartyLegalEntity</Term>
 					<Name>Party name</Name><Name>Buyer legal party</Name>
@@ -759,11 +772,11 @@
 				<Reference type="BUSINESS_TERM">tir16-074</Reference>
 				<Attribute>
 					<Term>unitCode</Term>
-					<Name>Ordered quantity unit of measure</Name>
-					<Description>The unit of measure that applies to the ordered quantity.</Description>
+					<Name>Shipment quantity unit of measure</Name>
+					<Description>The unit of measure that applies to the shipment quantity.</Description>
 					<DataType>Code</DataType>
 					<Reference type="CODE_LIST">UNECERec20</Reference>
-					<Value type="EXAMPLE">C62</Value>
+					<Value type="EXAMPLE">CTN</Value>
 				</Attribute>
 			</Element>
 			<Element cardinality="0..1">
@@ -774,11 +787,11 @@
 				<Reference type="BUSINESS_TERM">tir16-075</Reference>
 				<Attribute>
 					<Term>unitCode</Term>
-					<Name>Ordered quantity unit of measure</Name>
-					<Description>The unit of measure that applies to the ordered quantity.</Description>
+					<Name>Shipment volume unit of measure</Name>
+					<Description>The unit of measure that applies to the shipment volume.</Description>
 					<DataType>Code</DataType>
 					<Reference type="CODE_LIST">UNECERec20</Reference>
-					<Value type="EXAMPLE">C62</Value>
+					<Value type="EXAMPLE">M3</Value>
 				</Attribute>
 			</Element>
 			<Element cardinality="0..1">
@@ -816,10 +829,13 @@
 							<Term>cac:IdentityDocumentReference</Term>
 							<Element>
 								<Term>cbc:ID</Term>
+								<Name>Driver information</Name>
+								<Description>Identification about the driver of the vehicle that delivers the despatched shipment.</Description>
 							</Element>
 							<Element cardinality="0..1">
 								<Term>cbc:DocumentType</Term>
 								<Name>Driver identification document type</Name>
+								<Description>The type of document used for identifying the driver, expressed in text.</Description>
 								<Reference type="BUSINESS_TERM">tir16-p009</Reference>
 							</Element>
 						</Element>
@@ -1194,7 +1210,7 @@
 						
 						<Element cardinality="0..n">
 							<Term>cbc:ShippingMarks</Term>
-							<Name>Handing unit shipping marks</Name>
+							<Name>Handling unit shipping marks</Name>
 							<Description>Free-form description of the marks and numbers on a transport
 								unit or package.</Description>
 							<Reference type="BUSINESS_TERM">tir16-064</Reference>
@@ -1219,11 +1235,11 @@
 								<Reference type="BUSINESS_TERM">tir16-086tir16-087</Reference>
 								<Attribute>
 									<Term>unitCode</Term>
-									<Name>Ordered quantity unit of measure</Name>
-									<Description>The unit of measure that applies to the ordered quantity.</Description>
+									<Name>Handling unit gross weight or volume unit of measure</Name>
+									<Description>The unit of measure that applies to the handling unit gross weight or to the handling unit gross volume.</Description>
 									<DataType>Code</DataType>
 									<Reference type="CODE_LIST">UNECERec20</Reference>
-									<Value type="EXAMPLE">C62</Value>
+									<Value type="EXAMPLE">CTN</Value>
 								</Attribute>
 							</Element>
 							

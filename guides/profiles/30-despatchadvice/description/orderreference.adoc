@@ -28,3 +28,6 @@ Or
 ----
 include::../snippets/snippet-30-2.xml[tags=ref-orderlinena]
 ----
+
+It is also possible to refer to more than one order in one single despatch advice.
+In this case there must not be an order reference on header level.

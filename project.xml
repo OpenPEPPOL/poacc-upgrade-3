@@ -60,7 +60,7 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-shoppingcart.xml</Path>
-        <Title>PEPPOL BIS Shopping Cart 3.0</Title>
+        <Title>PEPPOL BIS Punch Out 3.0</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
