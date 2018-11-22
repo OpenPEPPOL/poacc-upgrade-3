@@ -4,6 +4,7 @@ Product identification may be done using the identifiers described below:
 
 * Sellers ID
 * Standard ID, e.g. the GS1 Global Trade Item Number (GTIN)
+* Buyers ID
 
 The order agreement requires that an item has an identifier. This can be either the sellers identifier or a standard identifier. Which identifier to use depends on what is known at the time of the purchase or what is commonly used in the relevant business sector.
 
