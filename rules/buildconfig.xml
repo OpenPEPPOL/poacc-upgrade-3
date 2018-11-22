@@ -11,11 +11,13 @@
   <testfolder>unit-order-response</testfolder>
   <testfolder>unit-punch-out</testfolder>
   
-  <testfolder>snippets/order</testfolder>
+<!--  <testfolder>snippets/order</testfolder>-->
 
   <configuration>
     <identifier>peppolbis-t01-base-3.0</identifier>
     <title>PEPPOL BIS Order (T01) 3.0 </title>
+    <profileId>urn:fdc:peppol.eu:poacc:bis03a:order_only:bis3-1.0</profileId>
+    <customizationId>urn:fdc:peppol.eu:poacc:trns01a:order:bis3-1.0</customizationId>
     <file source="sch/PEPPOLBIS-T01.sch" path="xsl/PEPPOLBIS-T01.xsl"/>
   </configuration>
   <configuration>
@@ -50,3 +52,5 @@
   </configuration>
 
 </buildConfigurations>
+
+
