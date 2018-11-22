@@ -50,9 +50,9 @@
 				<cbc:AdditionalStreetName>Sandhurst Sq</cbc:AdditionalStreetName>
 				<cbc:CityName>Brussels</cbc:CityName>
 				<cbc:PostalZone>1001</cbc:PostalZone>
-				<cbc:CountrySubentity>BE</cbc:CountrySubentity>
+				<cbc:CountrySubentity>Brussels-Capital</cbc:CountrySubentity>
 				<cac:Country>
-					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+					<cbc:IdentificationCode>BE</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
 			<cac:Contact>
