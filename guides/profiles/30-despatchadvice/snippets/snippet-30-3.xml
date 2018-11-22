@@ -174,7 +174,7 @@
 				<cbc:ShippingMarks>text</cbc:ShippingMarks>
 				<cac:MeasurementDimension>
 					<cbc:AttributeID>AAW</cbc:AttributeID>
-					<cbc:Measure unitCode="C62">1</cbc:Measure>
+					<cbc:Measure unitCode="LTR">1</cbc:Measure>
 				</cac:MeasurementDimension>
 			</cac:TransportHandlingUnit>
 			<!-- end::transporthandling[] -->

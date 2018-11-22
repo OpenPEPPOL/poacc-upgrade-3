@@ -8,7 +8,7 @@ IMPORTANT: Each cart line MUST have an item name and an identifier.
 Product identification must be done using one or both of the identifiers described below:
 
 * Sellers ID
-* Standard ID, e.g. the GS1 Global Trade Item Number (GTIN) used by the seller [GS1]
+* Standard ID, e.g. the GS1 Global Trade Item Number (GTIN) used by the seller
 
 Manufacturers item identification can not be used alone to identify a product.
 
