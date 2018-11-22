@@ -1591,14 +1591,14 @@
 								<Name>Item classification identifier identification scheme identifier</Name>
 								<Description>The identification scheme identifier of the Item classification identifier</Description>
 								<Reference type="CODE_LIST">UNCL7143</Reference>
-								<Value type="EXAMPLE">STI</Value>
+								<Value type="EXAMPLE">MP</Value>
 							</Attribute>
 							<Attribute usage="Optional">
 								<Term>listVersionID</Term>
 								<Name>Item classification identifier version identification scheme identifier</Name>
 								<Description>The identification scheme version identifier of the Item classification identifier</Description>
 							</Attribute>
-							<Value type="EXAMPLE">9873242</Value>
+							<Value type="EXAMPLE">16B</Value>
 						</Element>
 					</Element>
 					<Element cardinality="0..1">

@@ -612,7 +612,7 @@
 							<Name>Item classification identifier identification scheme identifier</Name>
 							<Description>The identification scheme identifier of the Item classification identifier</Description>
 							<Reference type="CODE_LIST">UNCL7143</Reference>
-							<Value type="EXAMPLE">STI</Value>
+							<Value type="EXAMPLE">16B</Value>
 						</Attribute>
 						<Attribute usage="Optional">
 							<Term>listVersionID</Term>

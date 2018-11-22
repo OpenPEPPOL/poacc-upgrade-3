@@ -11,6 +11,12 @@
 	<cbc:Note>Textual note with the order agreement</cbc:Note>
 	<cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
 
+	<!-- tag::classification[] -->
+	<cac:CommodityClassification>
+		<cbc:ItemClassificationCode listID="MP" listVersionID="20.0601">14111511</cbc:ItemClassificationCode>
+	</cac:CommodityClassification>
+	<!-- end::classification[] -->	
+	
 	<!-- tag::CustomerReference[] -->
 	<cbc:CustomerReference>Buyer reference id</cbc:CustomerReference>
 	<!-- end::CustomerReference[] -->
