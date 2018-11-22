@@ -78,5 +78,5 @@ include::{snippet-response-dir}/snippet-1.xml[tags=response-header]
 .Example of Response code on Line level in an Order Response message:
 [source, xml, indent=0]
 ----
-include::.{snippet-response-dir}/snippet-1.xml[tags=response-line]
+include::{snippet-response-dir}/snippet-1.xml[tags=response-line]
 ----

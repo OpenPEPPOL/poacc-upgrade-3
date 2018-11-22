@@ -15,7 +15,7 @@
   <!-- snippet folders -->
   <testfolder>snippets/order</testfolder>
   <testfolder>snippets/order-response</testfolder>
-  <testfolder>snippets/order-agreemment</testfolder>
+  <testfolder>snippets/order-agreement</testfolder>
 
 <!-- base config -->
   <configuration>
