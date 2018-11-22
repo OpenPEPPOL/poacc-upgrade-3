@@ -127,6 +127,10 @@
 				<cbc:Name>Delivery party name</cbc:Name>
 			</cac:PartyName>
 		</cac:DeliveryParty>
+		<cac:DeliveryTerms>
+			<cbc:ID>1</cbc:ID>
+			<cbc:SpecialTerms>Customer pick up</cbc:SpecialTerms>
+		</cac:DeliveryTerms>
 	</cac:Delivery>
 	<!-- end::delivery[] -->
 
