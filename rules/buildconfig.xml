@@ -16,8 +16,6 @@
   <configuration>
     <identifier>peppolbis-t01-base-3.0</identifier>
     <title>PEPPOL BIS Order (T01) 3.0 </title>
-    <profileId>urn:fdc:peppol.eu:poacc:bis03a:order_only:bis3-1.0</profileId>
-    <customizationId>urn:fdc:peppol.eu:poacc:trns01a:order:bis3-1.0</customizationId>
     <file source="sch/PEPPOLBIS-T01.sch" path="xsl/PEPPOLBIS-T01.xsl"/>
   </configuration>
   <configuration>
@@ -49,6 +47,15 @@
     <identifier>peppolbis-t111-base-3.0</identifier>
     <title>PEPPOL BIS Invoice Response (T111) 3.0 </title>
     <file source="sch/PEPPOLBIS-T111.sch" path="xsl/PEPPOLBIS-T111.xsl"/>
+  </configuration>
+  
+  <configuration>
+    <identifier>peppolbis-order-only</identifier>
+    <title>PEPPOL BIS Order Only 3.0 </title>
+    <profileId>urn:fdc:peppol.eu:poacc:bis03a:order_only:bis3-1.0</profileId>
+    <customizationId>urn:fdc:peppol.eu:poacc:trns01a:order:bis3-1.0</customizationId>
+    <file source="sch/PEPPOLBIS-T01.sch" path="xsl/PEPPOLBIS-T01.xsl"/>
+    <inherit>peppolbis-t01-base-3.0</inherit>
   </configuration>
 
 </buildConfigurations>
