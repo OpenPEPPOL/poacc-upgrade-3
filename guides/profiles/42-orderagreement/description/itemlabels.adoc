@@ -5,7 +5,7 @@ Information about the items environmental, social, ethical and quality type of l
 .Example
 [source, xml, indent=0]
 ----
-include::../snippets/OA full.xml[tags=Certificate]
+include::{snippet-dir}/OA full.xml[tags=Certificate]
 ----
 
 = Contracted item
@@ -15,5 +15,5 @@ If the purchased item is offered in accordance to an existing contract, this sho
 .Example
 [source, xml, indent=0]
 ----
-include::../snippets/OA full.xml[tags=TransactionConditions]
+include::{snippet-dir}/OA full.xml[tags=TransactionConditions]
 ----

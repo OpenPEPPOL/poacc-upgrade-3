@@ -12,7 +12,7 @@ The order agreement requires that an item has an identifier. This can be either 
 .Example of an PEPPOL BIS Order Agreement item using both Sellers ID and Standard ID (GTIN)
 [source, xml, indent=0]
 ----
-include::../snippets/OA full.xml[tags=ItemIdentifiers]
+include::{snippet-dir}/OA full.xml[tags=ItemIdentifiers]
 ----
 
 = Product name and description
@@ -25,5 +25,5 @@ The Product name is often sent in the order agreement from the buyer to the sell
 .Example in an PEPPOL BIS Order Agreement message
 [source, xml, indent=0]
 ----
-include::../snippets/OA full.xml[tags=ItemDescription]
+include::{snippet-dir}/OA full.xml[tags=ItemDescription]
 ----
