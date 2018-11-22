@@ -6,5 +6,5 @@ It is possible to state the tax amount of the order, on the header level (tax to
 .Example of tax total (header level)
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-01.xml[tags=tax-total]
+include::{snippet-dir}/snippet-01.xml[tags=tax-total]
 ----

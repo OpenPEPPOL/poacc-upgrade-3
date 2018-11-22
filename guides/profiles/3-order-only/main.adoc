@@ -13,7 +13,7 @@ v3.0.0
 :sectanchors:
 :sectnums:
 :transaction-path: ../../transactions/01-order
-
+:snippet-dir: ../../../../rules/snippets/order
 
 {description}
 

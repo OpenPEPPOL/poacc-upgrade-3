@@ -1,4 +1,4 @@
-[[calculation-of-totals-anticipatedmonetarytotals]]
+[[totals]]
 = Calculation of totals (AnticipatedMonetaryTotals)
 
 The following elements show the anticipated monetary totals for an order:
@@ -124,5 +124,5 @@ PayableRounding Amount = 0.19.
 .The above example is presented in the order in the following way:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-02.xml[tags=totals]
+include::{snippet-dir}/snippet-02.xml[tags=totals]
 ----

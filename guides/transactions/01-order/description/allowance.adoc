@@ -1,43 +1,51 @@
-[[allowances-and-charges]]
-= Allowances and charges
 
-[[general-rules]]
-== General rules
+= Allowances and Charges
 
-Elements for allowance and charges are found on two levels:
 
-1.  The header level applies to the whole order and is included in the calculation of the order total amount.
-2.  The line level Price element.
-Data on this level may be provided to inform the buyer how the price is calculated.
-The price itself is always the net price, i.e. the Price Amount reduced/increased with allowancecharge/amount.
+The order transaction has elements for Allowance/charge on 2 levels.
 
-* Several allowances and charges may be supplied on header-level.
-For the Price-element only one occurrence of the Allowance and Charge element can be present.
-The element AllowanceCharge with sub element ChargeIndicator indicates whether the instance is a charge (true) or an allowance (false).
-* The sum of all allowances and charges on the header level must be specified in AllowanceTotalAmount and ChargeTotalAmount respectively.
-* Allowances and charges related to Price is for information only and not part of any other calculations.
-* Allowances and charges related to Price may specify amount (AllowanceCharge/Amount) and base amount
+The element `cac:AllowanceCharge` with sub element `cbc:ChargeIndicator` indicates whether the instance is a charge (true) or an allowance (false).
 
-[[allowance-and-charges-on-header-level.]]
-== Allowance and Charges on header level.
+The header level:: _Applies to the whole order and is included in the calculation of the order total amount (if specified)._
+* Several allowances and charges may be supplied
+* Specification of VAT for allowances and charges, `cac:TaxCategory` with sub elements, shall be supplied
+* The sum of all allowances and charges on the header level shall be specified in `cbc:AllowanceTotalAmount` and `cbc:ChargeTotalAmount` respectively. See <<totals>>
 
-.Example showing a charge related to packing costs:
+The line level Price element:: _The price itself shall always be the net price, i.e. the base amount reduced with a discount (allowance)._
+* Only one occurrence of allowance (discount) is allowed.
+* Specification of VAT for allowance shall not be specified
+* Allowance related to Price shall not be part of any other calculations.
+* Allowance related to Price may specify amount and the base amount.
+
+
+[allowance-calc]]
+== Calculation of allowance/charge amount
+
+Allowance and charge on document level consists of elements carrying information on the allowance/charge base amount
+and the allowance/charge percentage. These are, if present in the invoice instance, used for calculating the allowance/charge amount.
+
+If base amount is present, the percentage shall also be present, and if percentage is present, the base amount shall also be present,
+and the calculation of the amount shall be:
+
+====
+stem:["Amount" =  "Base amount" times ("Percentage" div 100)]
+====
+
+
+.UBL example of Allowances and Charges on the document level
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-01.xml[tags=packing]
+include::{snippet-dir}/snippet-01.xml[tags=allowance]
 ----
+<1> ChargeIndicator = true to indicate a charge
+<2> ChargeIndicator = false to indicate an allowance
+<3> Base amount, to be used with the percentage to calculate the amount
+<4> Charge percentage
+<5> stem:["Amount" = "Base amount" times ("Percentage" div 100)]
 
-.Example showing an allowance related to a discount on the order:
+
+.UBL example showing a discount on price of EUR 10:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-01.xml[tags=discount]
-----
-
-[[allowance-and-charges-related-to-price]]
-== Allowance and Charges related to price
-
-.Example showing a discount on price of EUR 10:
-[source, xml, indent=0]
-----
-include::../snippets/snippet-01.xml[tags=price-discount]
+include::{snippet-dir}/snippet-01.xml[tags=allowance]
 ----
