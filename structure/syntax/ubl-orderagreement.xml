@@ -58,8 +58,7 @@
 		<Element cardinality="0..1">
 			<Term>cbc:IssueTime</Term>
 			<Name>Order agreement issue time</Name>
-			<Description>The time of the day when the order agreement was issued.The time assigned
-                by the buyer on which the transaction was issued. Format = "hh:mm:ss"</Description>
+			<Description>The time of the day when the order agreement was issued. Format = "hh:mm:ss"</Description>
 			<DataType>Time</DataType>
 			<Reference type="BUSINESS_TERM">tir110-003</Reference>
 			<Value type="EXAMPLE">12:10:35</Value>
