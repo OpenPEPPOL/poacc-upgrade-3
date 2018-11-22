@@ -38,7 +38,7 @@
 			<Reference type="BUSINESS_TERM">tir19-003</Reference>
 			<Value type="EXAMPLE">Cat-02</Value>
 		</Element>
-		
+
 		<Element cardinality="0..1">
 			<Term>cbc:ActionCode</Term>
 			<Name>Catalogue action code</Name>
@@ -52,7 +52,7 @@
 			<Reference type="CODE_LIST">ActionCode_header</Reference>
 			<Value type="EXAMPLE">Add</Value>
 		</Element>
-		
+
 		<Element cardinality="0..1">
 			<Term>cbc:Name</Term>
 			<Name>Catalogue name</Name>
@@ -155,7 +155,7 @@
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
 					<Description>Scheme identifier for Electronic address</Description>
-
+					<Reference type="CODE_LIST">eaid</Reference>
 					<Value type="EXAMPLE">0088</Value>
 				</Attribute>
 				<Value type="EXAMPLE">7300010000001</Value>
@@ -342,7 +342,7 @@
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
 					<Description>Scheme identifier for Electronic address</Description>
-
+					<Reference type="CODE_LIST">eaid</Reference>
 					<Value type="EXAMPLE">0088</Value>
 				</Attribute>
 				<Value type="EXAMPLE">923654321</Value>
@@ -800,7 +800,7 @@
 				<Reference type="BUSINESS_TERM">tir19-032</Reference>
 				<Value type="EXAMPLE">1</Value>
 			</Element>
-			
+
 			<Element cardinality="0..1">
 				<Term>cbc:ActionCode</Term>
 				<Name>Line action code</Name>
@@ -813,7 +813,7 @@
 				<Reference type="CODE_LIST">ActionCode_line</Reference>
 				<Value type="EXAMPLE">Update</Value>
 			</Element>
-			
+
 			<Element cardinality="0..1">
 				<Term>cbc:OrderableIndicator</Term>
 				<Name>Orderable indicator</Name>
@@ -1274,10 +1274,11 @@
 					<Element cardinality="0..1">
 						<Term>cbc:PriceType</Term>
 						<Name>Price type</Name>
-						<Description>The type of the item price. The type may be given by using codes from UN/CEFACT code list 5387. 
+						<Description>The type of the item price. The type may be given by using codes from UN/CEFACT code list 5387.
 							When prices are temporary the validity period for the price should be defined by stating the price validity period.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-093</Reference>
+						<Reference type="CODE_LIST">UNCL5387</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:OrderableUnitFactorRate</Term>
@@ -1288,7 +1289,7 @@
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-p035</Reference>
 					</Element>
-					
+
 					<Element cardinality="0..n">
 						<Term>cac:ValidityPeriod</Term>
 						<Name>Price validity period</Name>
@@ -1376,6 +1377,18 @@
 					<Reference type="BUSINESS_TERM">tir19-p018</Reference>
 				</Element>
 				<Element cardinality="0..1">
+					<Term>cac:BuyersItemIdentification</Term>
+					<Name>Buyer item identification</Name>
+					<Element>
+						<Term>cbc:ID</Term>
+						<Name>Buyers item identifier</Name>
+						<Description>The buyers identifier for the item.</Description>
+						<DataType>Identifier</DataType>
+						<Reference type="BUSINESS_TERM">tir19-091</Reference>
+						<Value type="EXAMPLE">111111</Value>
+					</Element>
+				</Element>
+				<Element cardinality="0..1">
 					<Term>cac:SellersItemIdentification</Term>
 					<Name>Seller item identification</Name>
 					<Element>
@@ -1450,8 +1463,8 @@
 						<Element cardinality="0..1">
 							<Term>cbc:EmbeddedDocumentBinaryObject</Term>
 							<Name>Attached object</Name>
-							<Description>The attached document embeded as binary object, coded as Base64. 
-								The binary object has two supplementary components: a Mime Code, which specifies the Mime type of the attachment and a Filename 
+							<Description>The attached document embeded as binary object, coded as Base64.
+								The binary object has two supplementary components: a Mime Code, which specifies the Mime type of the attachment and a Filename
 								that is provided by (or on behalf of) the sender of the document</Description>
 							<DataType>Binary objects</DataType>
 							<Reference type="BUSINESS_TERM">tir19-107</Reference>
@@ -1519,14 +1532,14 @@
 							<Name>Item classification identifier identification scheme identifier</Name>
 							<Description>The identification scheme identifier of the Item classification identifier</Description>
 							<Reference type="CODE_LIST">UNCL7143</Reference>
-							<Value type="EXAMPLE">STI</Value>
+							<Value type="EXAMPLE">MP</Value>
 						</Attribute>
 						<Attribute usage="Optional">
 							<Term>listVersionID</Term>
 							<Name>Item classification identifier version identification scheme identifier</Name>
 							<Description>The identification scheme version identifier of the Item classification identifier</Description>
 						</Attribute>
-						<Value type="EXAMPLE">123456</Value>
+						<Value type="EXAMPLE">20.0601</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
@@ -1647,12 +1660,12 @@
 						<Attribute>
 							<Term>unitCode</Term>
 							<Name>Value quantity units</Name>
-							<Description>The quantity units for value quantity. The value shoud be a valid UOM code like CS for case.</Description>
+							<Description>The quantity units for value quantity. The value shoud be a valid UOM code like XCS for case.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">20</Reference>
 
 							<Reference type="CODE_LIST">UNECERec20</Reference>
-							<Value type="EXAMPLE">KGM</Value>
+							<Value type="EXAMPLE">XCS</Value>
 						</Attribute>
 						<Value type="EXAMPLE">5</Value>
 					</Element>
@@ -1781,25 +1794,23 @@
 					<Element>
 						<Term>cbc:AttributeID</Term>
 						<Name>Attribute Id</Name>
-						<Description>Description of requirments that relate to the transport of the
-                            item itself or the orderable unit in which it is
-                            contained.</Description>
+						<Description>
+												Height - The vertical height of the orderable unit.
+												Length - The horizontal measure of the longer site of the orderable unit.
+												Width - The horizontal measure of the shorter side of the orderable unit.
+												Weight - The weight of the orderable unit incuding its packaging.
+												Package Net weight approximately.
+												Package Net weight exact.
+												Package volume.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-104</Reference>
-
+						<Reference type="CODE_LIST">UNCL6313</Reference>
+						<Value type="EXAMPLE">LN</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:Measure</Term>
 						<Name>Measure</Name>
-						<Description>
-						Height - The vertical height of the orderable unit
-						Length - The horizontal measure of the longer site of the orderable unit
-						Width - The horizontal measure of the shorter side of the orderable unit.
-						Weight - The weight of the orderable unit incuding its packaging.
-						Package Net weight approximately
-						Package Net weight exact
-						Package volume
-						</Description>
+						<Description>The measure for the dimension attribute</Description>
 						<Reference type="BUSINESS_TERM">tir19-098</Reference>
 						<Reference type="BUSINESS_TERM">tir19-099</Reference>
 						<Reference type="BUSINESS_TERM">tir19-100</Reference>
@@ -1811,9 +1822,11 @@
 						<Attribute>
 							<Term>unitCode</Term>
 							<Name>Measure unit code</Name>
-							<Description>The unit code of the measurement of the orderable unit</Description>
+							<Description>The unit code of the measurement</Description>
 							<DataType>Code</DataType>
-							<Reference type="CODE_LIST">UNCL6313</Reference>
+							<Reference type="BUSINESS_TERM">20</Reference>
+							<Reference type="CODE_LIST">UNECERec20</Reference>
+							<Value type="EXAMPLE">CMT</Value>
 						</Attribute>
 					</Element>
 					<Element cardinality="0..n">
@@ -1836,7 +1849,9 @@
 							<Name>Measure unit code</Name>
 							<Description>The unit code of the minimum storage humidity or temperature</Description>
 							<DataType>Code</DataType>
-							<Reference type="CODE_LIST">UNCL6313</Reference>
+							<Reference type="BUSINESS_TERM">20</Reference>
+							<Reference type="CODE_LIST">UNECERec20</Reference>
+							<Value type="EXAMPLE">CMT</Value>
 						</Attribute>
 					</Element>
 					<Element cardinality="0..1">
@@ -1851,7 +1866,9 @@
 							<Name>Measure unit code</Name>
 							<Description>The unit code of the maximum storage humidity or temperature</Description>
 							<DataType>Code</DataType>
-							<Reference type="CODE_LIST">UNCL6313</Reference>
+							<Reference type="BUSINESS_TERM">20</Reference>
+							<Reference type="CODE_LIST">UNECERec20</Reference>
+							<Value type="EXAMPLE">CMT</Value>
 						</Attribute>
 					</Element>
 				</Element>

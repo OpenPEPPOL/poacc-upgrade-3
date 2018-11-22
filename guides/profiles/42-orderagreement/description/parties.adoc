@@ -9,7 +9,7 @@ The seller is the legal person or organization acting on behalf of the supplier 
 .Example
 [source, xml, indent=0]
 ----
-include::../snippets/OA full.xml[tags=seller]
+include::{snippet-dir}/OA full.xml[tags=seller]
 ----
 
 == BuyerCustomerParty (Buyer)
@@ -19,7 +19,7 @@ The buyer is the legal person or organization acting on behalf of the customer a
 .Example
 [source, xml, indent=0]
 ----
-include::../snippets/OA full.xml[tags=buyer]
+include::{snippet-dir}/OA full.xml[tags=buyer]
 ----
 
 == OriginatorCustomerParty (Originator)
@@ -29,7 +29,7 @@ The unit initiating or requesting the ordered items. Most often the end user. Th
 .Example
 [source, xml, indent=0]
 ----
-include::../snippets/OA full.xml[tags=originator]
+include::{snippet-dir}/OA full.xml[tags=originator]
 ----
 
 == AccountingCustomerParty (Invoicee)
@@ -39,5 +39,5 @@ The invoicee is the legal person or organization acting on behalf of the custome
 .Example
 [source, xml, indent=0]
 ----
-include::../snippets/OA full.xml[tags=customer]
+include::{snippet-dir}/OA full.xml[tags=customer]
 ----

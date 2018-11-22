@@ -9,5 +9,5 @@ The Product name is often sent in the order from buyer to seller.
 .Example in an PEPPOL BIS Order message:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-01.xml[tags=name]
+include::{snippet-dir}/snippet-01.xml[tags=name]
 ----

@@ -16,7 +16,7 @@ The table below lists quantities and units in the format. To all quantities ther
 .Example of an order agreement line with a quantity of 120 pieces (cbc:Quantity) and price is given per 12 items. When calculating the line amount the price is applied pr 12 pieces, that is 120/12x50 = €500
 [source, xml, indent=0]
 ----
-include::../snippets/OA full.xml[tags=LineItem]
+include::{snippet-dir}/OA full.xml[tags=LineItem]
 <!-- code omitted for clarity -->
-include::../snippets/OA full.xml[tags=price]
+include::{snippet-dir}//OA full.xml[tags=price]
 ----

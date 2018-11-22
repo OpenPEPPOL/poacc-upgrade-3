@@ -41,7 +41,7 @@
 	<!-- tag::seller[] -->
 	<cac:SellerSupplierParty>
 		<cac:Party>
-			<cbc:EndpointID schemeID="GLN">5790000436095</cbc:EndpointID>
+			<cbc:EndpointID schemeID="0088">5790000436095</cbc:EndpointID>
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0007">5541277711</cbc:ID>
 			</cac:PartyIdentification>
@@ -50,9 +50,9 @@
 				<cbc:AdditionalStreetName>Sandhurst Sq</cbc:AdditionalStreetName>
 				<cbc:CityName>Brussels</cbc:CityName>
 				<cbc:PostalZone>1001</cbc:PostalZone>
-				<cbc:CountrySubentity>BE</cbc:CountrySubentity>
+				<cbc:CountrySubentity>Brussels-Capital</cbc:CountrySubentity>
 				<cac:Country>
-					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+					<cbc:IdentificationCode>BE</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
 			<cac:Contact>
@@ -67,7 +67,7 @@
 	<!-- tag::buyer[] -->
 	<cac:BuyerCustomerParty>
 		<cac:Party>
-			<cbc:EndpointID schemeID="GLN">5790000436095</cbc:EndpointID>
+			<cbc:EndpointID schemeID="0088">5790000436095</cbc:EndpointID>
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0007">5541277711</cbc:ID>
 			</cac:PartyIdentification>
@@ -127,9 +127,14 @@
 				<cbc:Name>Delivery party name</cbc:Name>
 			</cac:PartyName>
 		</cac:DeliveryParty>
+	
 	</cac:Delivery>
+	
+	<cac:DeliveryTerms>
+		<cbc:ID>1</cbc:ID>
+		<cbc:SpecialTerms>Customer pick up</cbc:SpecialTerms>
+	</cac:DeliveryTerms>
 	<!-- end::delivery[] -->
-
 	<!-- tag::allowance[] -->
 	<cac:AllowanceCharge>
 		<cbc:ChargeIndicator>false</cbc:ChargeIndicator>

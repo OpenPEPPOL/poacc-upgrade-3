@@ -13,7 +13,7 @@ Valid codes can be found in {link-codelist}.
 .Example of attachment as an embedded, binary object
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-01.xml[tags=attachment]
+include::{snippet-dir}/snippet-01.xml[tags=attachment]
 ----
 <1> It is recommended to use element `cac:AdditionalDocumentReference/cbc:DocumentType` to send a short description of the content of the attachment.
 <2> File name and extension should be sent in the filename attribute to the `cbc:EmbeddedDocumentBinaryObject` element.  

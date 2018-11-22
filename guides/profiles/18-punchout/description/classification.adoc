@@ -1,7 +1,7 @@
 [[item-classification-and-labelling]]
 = Item classification and labelling
 
-A shopping cart line may give information about the classification of items
+A shopping cart line may give information about the classification of items eg. UNSPSC code
 
 .Example of classification code
 [source, xml, indent=0]

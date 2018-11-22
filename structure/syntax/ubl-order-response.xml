@@ -79,7 +79,7 @@
 			<Reference type="BUSINESS_TERM">tir76-200</Reference>
 			<Reference type="CODE_LIST">UNCL4343-T76</Reference>
 			
-			<Value type="EXAMPLE">27</Value>
+			<Value type="EXAMPLE">AP</Value>
 		</Element>
 		<Element cardinality="0..1">
 			<Term>cbc:Note</Term>
@@ -136,7 +136,7 @@
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
 						<Description>Scheme identifier for electronic address</Description>
-						<Reference type="CODE_LIST">Not available</Reference>
+						<Reference type="CODE_LIST">eaid</Reference>
 						<Value type="EXAMPLE">0088</Value>
 					</Attribute>
 					<Value type="EXAMPLE">7300010000001</Value>
@@ -226,7 +226,7 @@
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
 						<Description>Scheme identifier for electronic address</Description>
-						<Reference type="CODE_LIST">Not available</Reference>
+						<Reference type="CODE_LIST">eaid</Reference>
 						<Value type="EXAMPLE">0088</Value>
 					</Attribute>
 					<Value type="EXAMPLE">7300010000001</Value>

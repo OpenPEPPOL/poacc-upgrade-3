@@ -12,7 +12,7 @@ IMPORTANT: Attachments should be used for additional information and not as orde
 .Example of attachment as an embedded, binary object in an PEPPOL BIS Order Agreement message
 [source, xml, indent=0]
 ----
-include::../snippets/OA full.xml[tags=AdditionalDocumentReference]
+include::{snippet-dir}/OA full.xml[tags=AdditionalDocumentReference]
 ----
 
 = Attachments and document references on line level
@@ -23,12 +23,12 @@ Non-XML documents can be sent as attachments to the PEPPOL BIS Order Agreement o
 .Example of attachment as an embedded, binary object in an PEPPOL BIS Order Agreement message on line level.
 [source, xml, indent=0]
 ----
-include::../snippets/OA full.xml[tags=ItemSpecificationDocumentReference]
+include::{snippet-dir}/OA full.xml[tags=ItemSpecificationDocumentReference]
 ----
 
 
 .Example of a Link to a downloadable ticket
 [source, xml, indent=0]
 ----
-include::../snippets/OA full.xml[tags=ItemSpecificationDocumentReference2]
+include::{snippet-dir}/OA full.xml[tags=ItemSpecificationDocumentReference2]
 ----

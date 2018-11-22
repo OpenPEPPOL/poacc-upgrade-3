@@ -74,6 +74,7 @@
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
 					<Description>Scheme identifier for electronic address</Description>
+					<Reference type="CODE_LIST">eaid</Reference>
 					<Value type="EXAMPLE">0088</Value>
 				</Attribute>
 				<Value type="EXAMPLE">7300010000001</Value>
@@ -96,6 +97,7 @@
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
 					<Description>Scheme identifier for electronic address</Description>
+					<Reference type="CODE_LIST">eaid</Reference>
 					<Value type="EXAMPLE">0088</Value>
 				</Attribute>
 				<Value type="EXAMPLE">7300010000001</Value>

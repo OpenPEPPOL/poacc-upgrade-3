@@ -115,7 +115,7 @@
 				<cbc:ID schemeID="0160">1234567890123</cbc:ID>
 			</cac:StandardItemIdentification>
 			<!-- end::product-id[] -->
-		
+
 			<cac:ItemSpecificationDocumentReference>
 				<cbc:ID>PC01image.jpg</cbc:ID>
 				<cbc:DocumentTypeCode>3</cbc:DocumentTypeCode><!--1-->
@@ -138,7 +138,7 @@
 			<!-- end::coo[] -->
 			<!-- tag::classification[] -->
 			<cac:CommodityClassification>
-				<cbc:ItemClassificationCode listID="STI">43211508</cbc:ItemClassificationCode>
+				<cbc:ItemClassificationCode listID="MP" listVersionID="20.0601">14111511</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
 			<!-- end::classification[] -->
 			<!-- tag::hazardous[] -->
@@ -205,11 +205,11 @@
 			<!-- tag::dimension[] -->
 			<cac:Dimension>
 				<cbc:AttributeID>HT</cbc:AttributeID>
-				<cbc:Measure unitCode="HT">270</cbc:Measure>
+				<cbc:Measure unitCode="CMT">270</cbc:Measure>
 			</cac:Dimension>
 			<cac:Dimension>
 				<cbc:AttributeID>LN</cbc:AttributeID>
-				<cbc:Measure unitCode="LN">300</cbc:Measure>
+				<cbc:Measure unitCode="CMT">300</cbc:Measure>
 			</cac:Dimension>
 			<!-- end::dimension[] -->
 		</cac:Item>
