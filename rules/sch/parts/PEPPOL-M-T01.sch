@@ -181,5 +181,21 @@
                     test="number(cac:AllowanceCharge/cbc:Amount) &gt;= 0 or not(exists(cac:AllowanceCharge/cbc:Amount))"
                     flag="fatal">Allowance or charge amounts SHALL NOT be negative.</assert>
     </rule>
+        
+        <rule context="cac:AllowanceCharge[cbc:ChargeIndicator = 'false']/cbc:AllowanceChargeReasonCode">
+                <assert id="PEPPOL-T01-CL001"
+                        test="
+                        some $code in $clUNCL5189
+                        satisfies normalize-space(text()) = $code"
+                        flag="fatal">Reason code MUST be according to subset of UNCL 5189 D.16B.</assert>
+        </rule>
+        
+        <rule context="cac:AllowanceCharge[cbc:ChargeIndicator = 'true']/cbc:AllowanceChargeReasonCode">
+                <assert id="PEPPOL-T01-CL002"
+                        test="
+                        some $code in $clUNCL7161
+                        satisfies normalize-space(text()) = $code"
+                        flag="fatal">Reason code MUST be according to UNCL 7161 D.16B.</assert>
+        </rule>
 
 </pattern>

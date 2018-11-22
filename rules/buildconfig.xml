@@ -15,6 +15,7 @@
   <!-- snippet folders -->
   <testfolder>snippets/order</testfolder>
   <testfolder>snippets/order-response</testfolder>
+  <testfolder>snippets/order-agreemment</testfolder>
 
 <!-- base config -->
   <configuration>
@@ -89,6 +90,14 @@
     <profileId>urn:fdc:peppol.eu:poacc:bis28a:ordering:bis3-1.0</profileId>
     <customizationId>urn:fdc:peppol.eu:poacc:trns76a:order_response:bis3-1.0</customizationId>
     <inherit>peppolbis-t76-base-3.0</inherit>
+  </configuration>
+  
+  <configuration>
+    <identifier>peppolbis-42</identifier>
+    <title>PEPPOL BIS 42 Order agreement 3.0 </title>
+    <profileId>urn:fdc:peppol.eu:poacc:bis42a:order_agreement:bis3-1.0</profileId>
+    <customizationId>urn:fdc:peppol.eu:poacc:trns110a:order_agreement:bis3-1.0</customizationId>
+    <inherit>peppolbis-t110-base-3.0</inherit>
   </configuration>
 </buildConfigurations>
 

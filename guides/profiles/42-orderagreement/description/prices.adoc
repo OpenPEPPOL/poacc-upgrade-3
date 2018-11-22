@@ -10,5 +10,5 @@ Prices includes allowances and/or charges but exclude VAT amounts
 .Example of price information in an Order Agreement message
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-oa.xml[tags=price]
+include::{snippet-dir}/snippet-oa.xml[tags=price]
 ----

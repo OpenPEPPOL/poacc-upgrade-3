@@ -16,5 +16,5 @@ The delivery information is optional in the PEPPOL BIS Order Agreement message.
 .Example
 [source, xml, indent=0]
 ----
-include::../snippets/OA full.xml[tags=delivery]
+include::{snippet-dir}/OA full.xml[tags=delivery]
 ----
