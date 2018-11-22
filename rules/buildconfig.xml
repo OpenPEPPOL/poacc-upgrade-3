@@ -11,7 +11,7 @@
   <testfolder>unit-order-response</testfolder>
   <testfolder>unit-punch-out</testfolder>
   
-<!--  <testfolder>snippets/order</testfolder>-->
+  <testfolder>snippets/order</testfolder>
 
   <configuration>
     <identifier>peppolbis-t01-base-3.0</identifier>
