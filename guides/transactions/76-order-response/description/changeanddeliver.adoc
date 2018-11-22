@@ -6,7 +6,7 @@ An order response may replace items in two ways. If the full quantity of an item
 .Example of Replacement item in an Order Response message:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-1.xml[tags=line-change4]
+include::{snippet-response-dir}/snippet-1.xml[tags=line-change4]
 ----
 <1> Information on the replacement item is sent in `cac:SellerSubstitutedLineItem`
 
@@ -17,5 +17,5 @@ In the example a seller confirms the first line of an order, provides two delive
 .Example of adding lines and delivering over time:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-1.xml[tags=line-change5]
+include::{snippet-response-dir}/snippet-1.xml[tags=line-change5]
 ----
