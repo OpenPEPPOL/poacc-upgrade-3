@@ -47,5 +47,5 @@ include::{snippet-dir}/snippet-01.xml[tags=allowance]
 .UBL example showing a discount on price of EUR 10:
 [source, xml, indent=0]
 ----
-include::{snippet-dir}/snippet-01.xml[tags=allowance]
+include::{snippet-dir}/snippet-01.xml[tags=price-discount]
 ----

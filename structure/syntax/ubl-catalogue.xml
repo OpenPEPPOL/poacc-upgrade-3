@@ -1278,6 +1278,7 @@
 							When prices are temporary the validity period for the price should be defined by stating the price validity period.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-093</Reference>
+						<Reference type="CODE_LIST">UNCL5387</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:OrderableUnitFactorRate</Term>
