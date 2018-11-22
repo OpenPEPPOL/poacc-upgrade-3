@@ -84,9 +84,9 @@
 		<Element cardinality="0..1">
 			<Term>cbc:CustomerReference</Term>
 			<Name>Buyer reference identifier</Name>
-			<Description>An identifier assigned by the Buyer used for internal routing purposes.The
+			<Description>An identifier assigned by the Buyer used for internal routing purposes. The
                 identifier is defined by the buyer (contact ID, department, office id, project
-                code), but provided by the seller in the invoice.</Description>
+                code), but provided by the seller in the order agreement and later in the invoice.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir110-044</Reference>
 			<Value type="EXAMPLE">abc123</Value>
