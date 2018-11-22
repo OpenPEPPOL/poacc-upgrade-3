@@ -1266,8 +1266,7 @@
 				<Element>
 					<Term>cbc:Quantity</Term>
 					<Name>Ordered quantity</Name>
-					<Description>The number of item units that are ordered. UOM should be stated by
-                        using recommendation 20"</Description>
+					<Description>The number of item units that are ordered.</Description>
 					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir110-093</Reference>
 					<Attribute>
@@ -1305,8 +1304,7 @@
 					<Element cardinality="0..1">
 						<Term>cbc:Quantity</Term>
 						<Name>Accepted quantity</Name>
-						<Description>The number of item units that are delivered. UOM should be
-                            stated by using recommendation 20.</Description>
+						<Description>The number of item units that are delivered.</Description>
 						<DataType>Quantity</DataType>
 						<Reference type="BUSINESS_TERM">tir110-028</Reference>
 						<Attribute>
@@ -1381,8 +1379,7 @@
 					<Element cardinality="0..1">
 						<Term>cbc:BaseQuantity</Term>
 						<Name>Item price base quantity</Name>
-						<Description>The number of item units to which the price applies. UOM should
-                            be stated by using recommendation 20.</Description>
+						<Description>The number of item units to which the price applies.</Description>
 						<DataType>Quantity</DataType>
 						<Reference type="BUSINESS_TERM">tir110-027</Reference>
 						<Attribute usage="Optional">
