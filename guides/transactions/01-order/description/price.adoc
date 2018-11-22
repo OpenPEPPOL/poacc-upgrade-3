@@ -12,5 +12,5 @@ Price sent is related to the articles or services within this order.
 .Example of price information in an Order message:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-01.xml[tags=price]
+include::{snippet-dir}/snippet-01.xml[tags=price]
 ----

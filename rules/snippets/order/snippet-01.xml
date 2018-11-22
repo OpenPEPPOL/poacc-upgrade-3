@@ -167,11 +167,15 @@
       </cac:Contact>
     </cac:DeliveryParty>
   </cac:Delivery>
-  <!-- tag::packing[] -->
+ 
+  <!-- tag::allowance[] -->
   <cac:AllowanceCharge>
-    <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
-    <cbc:AllowanceChargeReason>Packing cost</cbc:AllowanceChargeReason>
-    <cbc:Amount currencyID="EUR">100</cbc:Amount>
+    <cbc:ChargeIndicator>true</cbc:ChargeIndicator><!--1-->
+    <cbc:AllowanceChargeReasonCode>FC</cbc:AllowanceChargeReasonCode>
+    <cbc:AllowanceChargeReason>Freight service</cbc:AllowanceChargeReason>
+    <cbc:MultiplierFactorNumeric>2</cbc:MultiplierFactorNumeric><!--4-->
+    <cbc:Amount currencyID="EUR">20</cbc:Amount> <!--5-->
+    <cbc:BaseAmount currencyID="EUR">1000</cbc:BaseAmount><!--3-->
     <cac:TaxCategory>
       <cbc:ID>S</cbc:ID>
       <cbc:Percent>25</cbc:Percent>
@@ -180,12 +184,11 @@
       </cac:TaxScheme>
     </cac:TaxCategory>
   </cac:AllowanceCharge>
-  <!-- end::packing[] -->
-  <!-- tag::discount[] -->
   <cac:AllowanceCharge>
-    <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-    <cbc:AllowanceChargeReason>Agreed discount</cbc:AllowanceChargeReason>
-    <cbc:Amount currencyID="EUR">100</cbc:Amount>
+    <cbc:ChargeIndicator>false</cbc:ChargeIndicator><!--2-->
+    <cbc:AllowanceChargeReasonCode>65</cbc:AllowanceChargeReasonCode>
+    <cbc:AllowanceChargeReason>Production error discount</cbc:AllowanceChargeReason>
+    <cbc:Amount currencyID="EUR">10</cbc:Amount>
     <cac:TaxCategory>
       <cbc:ID>S</cbc:ID>
       <cbc:Percent>25</cbc:Percent>
@@ -194,7 +197,9 @@
       </cac:TaxScheme>
     </cac:TaxCategory>
   </cac:AllowanceCharge>
-  <!-- end::discount[] -->
+  <!-- end::allowance[] -->
+
+
   <!-- tag::tax-total[] -->
   <cac:TaxTotal>
 		  <cbc:TaxAmount currencyID="EUR">268.75</cbc:TaxAmount>
@@ -202,9 +207,9 @@
   <!-- end::tax-total[] -->
   <cac:AnticipatedMonetaryTotal>
     <cbc:LineExtensionAmount currencyID="EUR">1345</cbc:LineExtensionAmount>
-    <cbc:AllowanceTotalAmount currencyID="EUR">100</cbc:AllowanceTotalAmount>
-    <cbc:ChargeTotalAmount currencyID="EUR">100</cbc:ChargeTotalAmount>
-    <cbc:PayableAmount currencyID="EUR">1613.75</cbc:PayableAmount>
+    <cbc:AllowanceTotalAmount currencyID="EUR">10</cbc:AllowanceTotalAmount>
+    <cbc:ChargeTotalAmount currencyID="EUR">20</cbc:ChargeTotalAmount>
+    <cbc:PayableAmount currencyID="EUR">1623.75</cbc:PayableAmount>
   </cac:AnticipatedMonetaryTotal>
   <cac:OrderLine>
     <cac:LineItem>
