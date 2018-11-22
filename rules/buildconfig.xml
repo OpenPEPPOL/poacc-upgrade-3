@@ -50,7 +50,7 @@
   </configuration>
   
   <configuration>
-    <identifier>peppolbis-order-only</identifier>
+    <identifier>peppolbis-03-order</identifier>
     <title>PEPPOL BIS Order Only 3.0 </title>
     <profileId>urn:fdc:peppol.eu:poacc:bis03a:order_only:bis3-1.0</profileId>
     <customizationId>urn:fdc:peppol.eu:poacc:trns01a:order:bis3-1.0</customizationId>
@@ -58,13 +58,20 @@
   </configuration>
   
   <configuration>
-    <identifier>peppolbis-ordering</identifier>
-    <title>PEPPOL BIS Orderering 3.0 </title>
+    <identifier>peppolbis-28-order</identifier>
+    <title>PEPPOL BIS 28 Order 3.0 </title>
     <profileId>urn:fdc:peppol.eu:poacc:bis28a:ordering:bis3-1.0</profileId>
     <customizationId>urn:fdc:peppol.eu:poacc:trns01a:order:bis3-1.0</customizationId>
     <inherit>peppolbis-t01-base-3.0</inherit>
   </configuration>
 
+  <configuration>
+    <identifier>peppolbis-28-order-reponse</identifier>
+    <title>PEPPOL BIS 28 Order response 3.0 </title>
+    <profileId>urn:fdc:peppol.eu:poacc:bis28a:ordering:bis3-1.0</profileId>
+    <customizationId>urn:fdc:peppol.eu:poacc:trns76a:order_response:bis3-1.0</customizationId>
+    <inherit>peppolbis-t76-base-3.0</inherit>
+  </configuration>
 </buildConfigurations>
 
 
