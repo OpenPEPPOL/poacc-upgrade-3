@@ -17,7 +17,9 @@ The Ordering process flow can be described as follows:
 * Alternatively, the Seller may reject the Order by means of the Order Response transaction.
 * An order rejection may contain reasons for rejection.
 * If contractually agreed, the Seller also may respond to the order, changing details that are acceptable by the Buyer.
-* If the order was accepted or accepted with change, a contract is concluded.
+** If an order is accepted with change, the buyer and seller need to have an agreement between them regarding the processing of the changed order,
+ i.e when is a contract concluded and when can the items be shipped.
+* If the order was accepted a contract is concluded.
 If the order was rejected, no contract and no residual obligations exist.
 * After the receipt of an Order Response that rejects the order, the Buyer may start a new ordering process, taking into account the reasons for the rejection by the Seller.
 
