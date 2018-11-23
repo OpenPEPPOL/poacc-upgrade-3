@@ -11,5 +11,5 @@ original document and should have the value: *NA* (“Not Applicable”, must be
 .Example:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-3.xml[tags=line-response]
+include::{snippet-dir}/snippet-3.xml[tags=line-response]
 ----

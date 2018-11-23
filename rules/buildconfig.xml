@@ -18,7 +18,9 @@
   <testfolder>snippets/order-agreement</testfolder>
   <testfolder>snippets/catalogue</testfolder>
   <testfolder>snippets/punchout</testfolder>
-
+  <testfolder>snippets/despatch</testfolder>
+  <testfolder>snippets/mlr</testfolder>
+  
 <!-- base config -->
   <configuration>
     <identifier>peppolbis-t01-base-3.0</identifier>
@@ -67,6 +69,11 @@
     <title>PEPPOL BIS Invoice Response (T111) 3.0 </title>
     <inherit>ubl-applicationresponse-2.1</inherit>
     <file source="sch/PEPPOLBIS-T111.sch" path="xsl/PEPPOLBIS-T111.xsl"/>
+  </configuration>
+  <identifier>peppolbis-t71-base-3.0</identifier>
+  <title>PEPPOL BIS MLR (T71) 3.0 </title>
+  <inherit>ubl-applicationresponse-2.1</inherit>
+  <file source="sch/PEPPOLBIS-T71.sch" path="xsl/PEPPOLBIS-T71.xsl"/>
   </configuration>
   
   <!-- profile config -->
@@ -124,6 +131,22 @@
     <profileId>urn:fdc:peppol.eu:poacc:bis30a:despatch_advice:bis3-1.0</profileId>
     <customizationId>urn:fdc:peppol.eu:poacc:trns16a:despatch_advice:bis3-1.0</customizationId>
     <inherit>peppolbis-t16-base-3.0</inherit>
+  </configuration>
+  
+  <configuration>
+    <identifier>peppolbis-63</identifier>
+    <title>PEPPOL BIS 63 Invoice response 3.0 </title>
+    <profileId>urn:fdc:peppol.eu:poacc:bis63a:invoice_response:bis3-1.0</profileId>
+    <customizationId>urn:fdc:peppol.eu:poacc:trns111a:invoice_response:bis3-1.0</customizationId>
+    <inherit>peppolbis-t111-base-3.0</inherit>
+  </configuration>
+  
+  <configuration>
+    <identifier>peppolbis-36</identifier>
+    <title>PEPPOL BIS 36 Message level response 3.0 </title>
+    <profileId>urn:fdc:peppol.eu:poacc:bis36a:mlr:bis3-1.0</profileId>
+    <customizationId>urn:fdc:peppol.eu:poacc:trns71a:mlr:bis3-1.0</customizationId>
+    <inherit>peppolbis-t71-base-3.0</inherit>
   </configuration>
 </buildConfigurations>
 
