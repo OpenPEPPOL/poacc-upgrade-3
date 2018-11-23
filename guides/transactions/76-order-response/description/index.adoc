@@ -6,7 +6,7 @@ The following rules applies to the PEPPOL BIS Order Response:
 
 * The Order response must refer to an Order.
 * Seller may accept or reject the entire Order.
-* The Order response should contain a reason for rejection.
+* If the order or any order line is rejected the Order response should contain a reason for rejection.
 * Seller may accept or reject the separate order lines.
 * If Seller accepts or rejects order lines, *_all_* order lines must be sent in the Order response. This applies even for order lines that has been delivered completely or partially.
 * The following information may be changed in the Order response:

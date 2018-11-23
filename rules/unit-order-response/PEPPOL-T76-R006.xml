@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+	configuration="peppolbis-t76-base-3.0">
+	<assert>
+		<description>Verify that each order response line MUST have an item identifier and/or an item name </description>
+		<scope>PEPPOL-T76-R006</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>PEPPOL-T76-R006</success>
+		</assert>
+		<OrderResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2">
+
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cac:Item>
+						<cbc:Name>Wet tissues</cbc:Name>
+						<cac:SellersItemIdentification>
+							<cbc:ID>SItemNo011</cbc:ID>
+						</cac:SellersItemIdentification>
+					</cac:Item>
+				</cac:LineItem>
+			</cac:OrderLine>
+
+		</OrderResponse>
+	</test>
+
+	<test>
+		<assert>
+			<success>PEPPOL-T76-R006</success>
+		</assert>
+		<OrderResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2">
+
+
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cac:Item>
+						<cbc:Name>Wet tissues</cbc:Name>
+						<cac:StandardItemIdentification>
+							<cbc:ID>SItemNo011</cbc:ID>
+						</cac:StandardItemIdentification>
+					</cac:Item>
+				</cac:LineItem>
+			</cac:OrderLine>
+
+		</OrderResponse>
+	</test>
+
+	<test>
+		<assert>
+			<success>PEPPOL-T76-R006</success>
+		</assert>
+		<OrderResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2">
+
+
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cac:Item>
+						<cbc:Name>Wet tissues</cbc:Name>
+						<cac:StandardItemIdentification>
+							<cbc:ID>SItemNo011</cbc:ID>
+						</cac:StandardItemIdentification>
+						<cac:SellersItemIdentification>
+							<cbc:ID>SItemNo011</cbc:ID>
+						</cac:SellersItemIdentification>
+					</cac:Item>
+				</cac:LineItem>
+			</cac:OrderLine>
+
+		</OrderResponse>
+	</test>
+
+	<test>
+		<assert>
+			<success>PEPPOL-T76-R006</success>
+		</assert>
+		<OrderResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2">
+
+
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cac:Item>
+						<cbc:Name>Wet tissues</cbc:Name>
+						<!--<cac:StandardItemIdentification>
+						<cbc:ID>SItemNo011</cbc:ID>
+					</cac:StandardItemIdentification>
+					<cac:SellersItemIdentification>
+						<cbc:ID>SItemNo011</cbc:ID>
+					</cac:SellersItemIdentification>-->
+					</cac:Item>
+				</cac:LineItem>
+			</cac:OrderLine>
+
+		</OrderResponse>
+	</test>
+	<test>
+		<assert>
+			<success>PEPPOL-T76-R006</success>
+		</assert>
+		<OrderResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2">
+
+
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cac:Item>
+						<!--	<cbc:Name>Wet tissues</cbc:Name>-->
+						<cac:StandardItemIdentification>
+							<cbc:ID>SItemNo011</cbc:ID>
+						</cac:StandardItemIdentification>
+						<!--<cac:SellersItemIdentification>
+						<cbc:ID>SItemNo011</cbc:ID>
+					</cac:SellersItemIdentification>-->
+					</cac:Item>
+				</cac:LineItem>
+			</cac:OrderLine>
+
+		</OrderResponse>
+	</test>
+
+	<test>
+		<assert>
+			<success>PEPPOL-T76-R006</success>
+		</assert>
+		<OrderResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2">
+
+
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cac:Item>
+						<!--	<cbc:Name>Wet tissues</cbc:Name>
+						<cac:StandardItemIdentification>
+						<cbc:ID>SItemNo011</cbc:ID>
+					</cac:StandardItemIdentification>-->
+						<cac:SellersItemIdentification>
+							<cbc:ID>SItemNo011</cbc:ID>
+						</cac:SellersItemIdentification>
+					</cac:Item>
+				</cac:LineItem>
+			</cac:OrderLine>
+
+		</OrderResponse>
+	</test>
+	
+	
+	<test>
+		<assert>
+			<error>PEPPOL-T76-R006</error>
+		</assert>
+		<OrderResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2">
+			
+			
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cac:Item>
+						<!--	<cbc:Name>Wet tissues</cbc:Name>
+						<cac:StandardItemIdentification>
+						<cbc:ID>SItemNo011</cbc:ID>
+					</cac:StandardItemIdentification>
+						<cac:SellersItemIdentification>
+							<cbc:ID>SItemNo011</cbc:ID>
+						</cac:SellersItemIdentification>-->
+					</cac:Item>
+				</cac:LineItem>
+			</cac:OrderLine>
+			
+		</OrderResponse>
+	</test>
+
+	
+</testSet>

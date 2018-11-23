@@ -50,3 +50,4 @@ The effect of the two Order response lines above should be interpreted as follow
 include::{snippet-response-dir}/snippet-1.xml[tags=line-change4]
 ----
 <1> Information on the replacement item is sent in `cac:SellerSubstitutedLineItem`
+<2> Attribute `listID`="MP" indicates UNSPSC, and the attribute `listVersionID` is used to indicate the version of UNSPSC that is used.
