@@ -48,7 +48,7 @@
 			<Name>Sales order reference</Name>
 			<Description>An identifier of a referenced sales order, issued by the Seller.</Description>
 			<DataType>Document Reference</DataType>
-			<Reference type="BUSINESS_TERM">tir76-p001</Reference>
+			<Reference type="BUSINESS_TERM">tir76-p007</Reference>
 			<Value type="EXAMPLE">112233</Value>
 		</Element>
 		<Element>
@@ -63,7 +63,8 @@
 		<Element cardinality="0..1">
 			<Term>cbc:IssueTime</Term>
 			<Name>Order response issue time</Name>
-			<Description>The time on which the transaction instance was issued.</Description>
+			<Description>The time assigned by the buyer on which the transaction was
+                issued.</Description>
 			<DataType>Time</DataType>
 			<Reference type="BUSINESS_TERM">tir76-005</Reference>
 			<Value type="EXAMPLE">09:23:56</Value>
@@ -96,12 +97,12 @@
 			<Reference type="CODE_LIST">ISO4217</Reference>
 			<Value type="EXAMPLE">EUR</Value>
 		</Element>
-		<Element cardinality="0..1">
+		<Element>
 			<Term>cbc:CustomerReference</Term>
 			<Name>Buyer reference identifier</Name>
 			<Description>An identifier assigned by the Buyer used for internal routing purposes.The
             identifier is defined by the buyer (contact ID, department, office id, project
-            code), but provided by the seller in the order response.</Description>
+            code), but provided by the seller in the invoice.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir110-044</Reference>
 			<Value type="EXAMPLE">abc123</Value>
@@ -269,6 +270,18 @@
 					</Element>
 				</Element>
 				
+				<Element cardinality="0..1">
+					<Term>cac:Contact</Term>
+					<Name>Contact information</Name>
+					<Element>
+						<Term>cbc:Name</Term>
+						<Name>Contact identifier</Name>
+						<Description>An identifier for the buyers contsct</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir76-p001</Reference>
+						<Value type="EXAMPLE">123</Value>
+					</Element>
+				</Element>
 			</Element>
 		</Element>
 		<Element cardinality="0..1">
@@ -357,7 +370,7 @@
 						A unit for the backordered quantity is the same as for the Quantity. 
 						If none of the remaining quantity for the response line is to be delivered, use 0 "zero".</Description>
 					<DataType>Quantity</DataType>
-					<Reference type="BUSINESS_TERM">OP-T76-005</Reference>
+					<Reference type="BUSINESS_TERM">tir76-p005</Reference>
 					<Value type="EXAMPLE">3</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -432,7 +445,7 @@
 				<Element>
 					<Term>cac:Item</Term>
 					<Name>Item information </Name>
-					<Element cardinality="0..1">
+					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Item name</Name>
 						<Description>A short name optionally given to an item, such as a name from
@@ -448,7 +461,7 @@
 							<Term>cbc:ID</Term>
 							<Name>Buyers item identifier</Name>
 							<Description>The BuyerCustomerParty identifier for the item.</Description>
-							<Reference type="BUSINESS_TERM">OP-T76-006</Reference>
+							<Reference type="BUSINESS_TERM">tir76-p006</Reference>
 						</Element>
 					</Element>
 					<Element cardinality="0..1">
@@ -557,16 +570,16 @@
 							<Attribute>
 								<Term>listID</Term>
 								<Name>Item classification identifier identification scheme identifier</Name>
-								<Description>The identification scheme identifier of the Item classification identifier. Use code "MP" to indicate UNSPSC</Description>
+								<Description>The identification scheme identifier of the Item classification identifier</Description>
 								<Reference type="CODE_LIST">UNCL7143</Reference>
-								<Value type="EXAMPLE">MP</Value>
+								<Value type="EXAMPLE">STI</Value>
 							</Attribute>
 							<Attribute usage="Optional">
 								<Term>listVersionID</Term>
 								<Name>Item classification identifier version identification scheme identifier</Name>
-								<Description>The identification scheme version identifier of the Item classification identifier, often used to indicate the version of the classification scheme used.</Description>
+								<Description>The identification scheme version identifier of the Item classification identifier</Description>
 							</Attribute>
-							<Value type="EXAMPLE">20.0601</Value>
+							<Value type="EXAMPLE">9873242</Value>
 						</Element>
 					</Element>
 					<Element cardinality="0..1">
@@ -606,6 +619,7 @@
 					<Element cardinality="0..n">
 						<Term>cac:AdditionalItemProperty</Term>
 						<Name>Additional item property information</Name>
+						<Description>A group of business terms providing information about properties of the goods and services invoiced.</Description>
 						<Element>
 							<Term>cbc:Name</Term>
 							<Name>Item property name</Name>
@@ -615,6 +629,18 @@
 							<DataType>Text</DataType>
 							<Reference type="BUSINESS_TERM">tir76-138</Reference>
 							<Value type="EXAMPLE">Color</Value>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:NameCode</Term>
+							<Name>Item property code</Name>
+							<Description>Code for the item property according to a property code system.</Description>
+							<DataType>Code</DataType>
+							<Reference type="BUSINESS_TERM">tir76-p004</Reference>
+							<Attribute>
+								<Term>listID</Term>
+								<Name>Name code list id.</Name>
+								<Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
+							</Attribute>
 						</Element>
 						<Element>
 							<Term>cbc:Value</Term>
@@ -631,7 +657,7 @@
                                 if relevant. May not be relevant when properties are
                                 descriptive.</Description>
 							<DataType>Quantity</DataType>
-							<Reference type="BUSINESS_TERM">OP-T76-002</Reference>
+							<Reference type="BUSINESS_TERM">tir76-p008</Reference>
 							
 							<Attribute>
 								<Term>unitCode</Term>
@@ -643,11 +669,12 @@
 							</Attribute>
 							<Value type="EXAMPLE">2</Value>
 						</Element>
-						<Element>
+						<Element cardinality="0..1">
 							<Term>cbc:ValueQualifier</Term>
-							<Name>Qualification of qty</Name>
-							<Description>Description of the quantity</Description>
-							<Reference type="BUSINESS_TERM">OP-T76-003</Reference>
+							<Name>Property classification</Name>
+							<DataType>Text</DataType>
+							<Description>Standardized and predefined classification of items properties.</Description>
+							<Reference type="BUSINESS_TERM">tir76-p009</Reference>
 						</Element>
 					</Element>
 				</Element>
