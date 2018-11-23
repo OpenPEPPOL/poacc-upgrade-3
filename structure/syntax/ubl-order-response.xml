@@ -48,7 +48,7 @@
 			<Name>Sales order reference</Name>
 			<Description>An identifier of a referenced sales order, issued by the Seller.</Description>
 			<DataType>Document Reference</DataType>
-			<Reference type="BUSINESS_TERM">tir76-p001</Reference>
+			<Reference type="BUSINESS_TERM">tir76-p007</Reference>
 			<Value type="EXAMPLE">112233</Value>
 		</Element>
 		<Element>
@@ -278,7 +278,7 @@
 						<Name>Contact identifier</Name>
 						<Description>An identifier for the buyers contsct</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">OP-T76-001</Reference>
+						<Reference type="BUSINESS_TERM">tir76-p001</Reference>
 						<Value type="EXAMPLE">123</Value>
 					</Element>
 				</Element>
@@ -370,7 +370,7 @@
 						A unit for the backordered quantity is the same as for the Quantity. 
 						If none of the remaining quantity for the response line is to be delivered, use 0 "zero".</Description>
 					<DataType>Quantity</DataType>
-					<Reference type="BUSINESS_TERM">OP-T76-005</Reference>
+					<Reference type="BUSINESS_TERM">tir76-p005</Reference>
 					<Value type="EXAMPLE">3</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -461,7 +461,7 @@
 							<Term>cbc:ID</Term>
 							<Name>Buyers item identifier</Name>
 							<Description>The BuyerCustomerParty identifier for the item.</Description>
-							<Reference type="BUSINESS_TERM">OP-T76-006</Reference>
+							<Reference type="BUSINESS_TERM">tir76-p006</Reference>
 						</Element>
 					</Element>
 					<Element cardinality="0..1">
@@ -657,7 +657,7 @@
                                 if relevant. May not be relevant when properties are
                                 descriptive.</Description>
 							<DataType>Quantity</DataType>
-							<Reference type="BUSINESS_TERM">OP-T76-002</Reference>
+							<Reference type="BUSINESS_TERM">tir76-p008</Reference>
 							
 							<Attribute>
 								<Term>unitCode</Term>
@@ -674,7 +674,7 @@
 							<Name>Property classification</Name>
 							<DataType>Text</DataType>
 							<Description>Standardized and predefined classification of items properties.</Description>
-							<Reference type="BUSINESS_TERM">OP-T76-003</Reference>
+							<Reference type="BUSINESS_TERM">tir76-p009</Reference>
 						</Element>
 					</Element>
 				</Element>
