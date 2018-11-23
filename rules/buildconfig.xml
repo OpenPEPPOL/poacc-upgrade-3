@@ -70,6 +70,7 @@
     <inherit>ubl-applicationresponse-2.1</inherit>
     <file source="sch/PEPPOLBIS-T111.sch" path="xsl/PEPPOLBIS-T111.xsl"/>
   </configuration>
+  <configuration>
   <identifier>peppolbis-t71-base-3.0</identifier>
   <title>PEPPOL BIS MLR (T71) 3.0 </title>
   <inherit>ubl-applicationresponse-2.1</inherit>
