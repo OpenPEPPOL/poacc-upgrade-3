@@ -1345,7 +1345,7 @@
 						<Name>Buyers item identifier</Name>
 						<Description>The buyers identifier for the item.</Description>
 						<DataType>Identifier</DataType>
-						<Reference type="BUSINESS_TERM">tir19-091</Reference>
+						<Reference type="BUSINESS_TERM">tir19-p040</Reference>
 						<Value type="EXAMPLE">111111</Value>
 					</Element>
 				</Element>
