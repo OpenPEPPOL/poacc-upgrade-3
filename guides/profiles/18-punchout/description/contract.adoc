@@ -12,5 +12,5 @@ An example of line level contract reference is as follows. "Contracted item indi
 .Example of line reference to a contract
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-18-1.xml[tags=contract]
+include::{snippet-dir}/snippet-18-1.xml[tags=contract]
 ----

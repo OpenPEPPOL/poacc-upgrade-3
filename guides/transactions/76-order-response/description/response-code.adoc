@@ -52,7 +52,7 @@ include::{snippet-response-dir}/snippet-1.xml[tags=response-header]
 .UBL example of an order response using response code "AB" (order is received
 [source, xml, indent=0]
 ----
-include::{snippet-response-dir}/snippet-2.xml[tags=reseived]
+include::{snippet-response-dir}/snippet-2.xml[tags=received]
 ----
 <1> Response code AB indicates only that the order has been received, but is not yet processed
 <2> No order lines are sent in this response.

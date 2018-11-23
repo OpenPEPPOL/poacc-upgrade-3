@@ -17,6 +17,7 @@
   <testfolder>snippets/order-response</testfolder>
   <testfolder>snippets/order-agreement</testfolder>
   <testfolder>snippets/catalogue</testfolder>
+  <testfolder>snippets/punchout</testfolder>
 
 <!-- base config -->
   <configuration>
@@ -107,6 +108,14 @@
     <profileId>urn:fdc:peppol.eu:poacc:bis01a:catalogue_only:bis3-1.0</profileId>
     <customizationId>urn:fdc:peppol.eu:poacc:trns19a:catalogue:bis3-1.0</customizationId>
     <inherit>peppolbis-t19-base-3.0</inherit>
+  </configuration>
+  
+  <configuration>
+    <identifier>peppolbis-18</identifier>
+    <title>PEPPOL BIS 18 Punch Out 3.0 </title>
+    <profileId>urn:fdc:peppol.eu:poacc:bis18a:punch_out:bis3-1.0</profileId>
+    <customizationId>urn:fdc:peppol.eu:poacc:trns77a:shopping_cart:bis3-1.0</customizationId>
+    <inherit>peppolbis-t77-base-3.0</inherit>
   </configuration>
 </buildConfigurations>
 

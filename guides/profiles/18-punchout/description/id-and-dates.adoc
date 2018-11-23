@@ -11,7 +11,7 @@ The issue date and time must not be in the future.
 .Example of cart identifier and issue date and time
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-18-1.xml[tags=identifier]
+include::{snippet-dir}/snippet-18-1.xml[tags=identifier]
 ----
 
 

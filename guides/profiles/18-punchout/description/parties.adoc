@@ -14,7 +14,7 @@ The following parties/roles may be specified in the message:
 .Example of seller information
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-18-1.xml[tags=seller]
+include::{snippet-dir}/snippet-18-1.xml[tags=seller]
 ----
 
 
@@ -29,5 +29,5 @@ The buyer must be identified with his name but may additionally be identified wi
 .Example of buyer information
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-18-1.xml[tags=buyer]
+include::{snippet-dir}/snippet-18-1.xml[tags=buyer]
 ----
