@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
-    <Title>UNCL6313 Measured attribute code for despatch advice</Title>
+    <Title>Measured attribute code for despatch advice (UNCL6313 Subset)</Title>
     <Identifier>UNCL6313-T16</Identifier>
     <Version>D.17A</Version>
     <Agency>UN/CEFACT</Agency>
     <Subset>openPEPPOL</Subset>
- 
-    
+
+
     <Code>
         <Id>AAB</Id>
         <Name>Goods item gross weight</Name>
@@ -20,6 +20,6 @@
         <Description> The volume unadjusted for factors such as temperature or
             gravity.</Description>
     </Code>
-    
-   
+
+
 </CodeList>

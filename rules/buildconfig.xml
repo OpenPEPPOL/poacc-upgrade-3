@@ -121,6 +121,14 @@
   </configuration>
   
   <configuration>
+    <identifier>peppolbis-1-response</identifier>
+    <title>PEPPOL BIS 1 CatalogueResponse 3.0 </title>
+    <profileId>urn:fdc:peppol.eu:poacc:bis01a:catalogue_only:bis3-1.0</profileId>
+    <customizationId>urn:fdc:peppol.eu:poacc:trns58a:catalogue_response:bis3-1.0</customizationId>
+    <inherit>peppolbis-t58-base-3.0</inherit>
+  </configuration>
+  
+  <configuration>
     <identifier>peppolbis-18</identifier>
     <title>PEPPOL BIS 18 Punch Out 3.0 </title>
     <profileId>urn:fdc:peppol.eu:poacc:bis18a:punch_out:bis3-1.0</profileId>

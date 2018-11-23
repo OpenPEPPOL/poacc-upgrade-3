@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
-
     <Name>PEPPOL BIS3 Upgrade, version BIS3-1.0 Rlease Candidate</Name>
-	
     <!-- Introduction -->
-    <Documentation path="">INTRODUCTION</Documentation>	
+    <Documentation path="">INTRODUCTION</Documentation>
     <Documentation path="releasenotes/">- BIS3-1.0 rc Release notes</Documentation>
     <Documentation path="changes/">- Overview of alignments</Documentation>
     <Documentation path="migration/">- Migration plan</Documentation>
-
     <!-- BIS documents -->
-    <Documentation path="">BIS DOCUMENTS</Documentation>	
+    <Documentation path="">BIS DOCUMENTS</Documentation>
     <Documentation path="profiles/3-order-only/">- BIS03A Order only — BIS3-1.0</Documentation>
     <Documentation path="profiles/28-ordering/">- BIS28A Ordering — BIS3-1.0</Documentation>
-    <Documentation path="profiles/1-catalogueonly/">- BIS01A Catalogue only — BIS3-1.0</Documentation>
-    <Documentation path="profiles/30-despatchadvice/">- BIS30A Despatch Advice — BIS3-1.0</Documentation>
+    <Documentation path="profiles/1-catalogueonly/">- BIS01A Catalogue only —
+        BIS3-1.0</Documentation>
+    <Documentation path="profiles/30-despatchadvice/">- BIS30A Despatch Advice —
+        BIS3-1.0</Documentation>
     <Documentation path="profiles/18-punchout/">- BIS18A Punch Out — BIS3-1.0</Documentation>
-    <Documentation path="profiles/42-orderagreement/">- BIS42A Order Agreement — BIS3-1.0</Documentation>
-    <Documentation path="profiles/36-mlr/">- BIS36A Message Level Response — BIS3-1.0</Documentation>
-    <Documentation path="profiles/63-invoiceresponse/">- BIS63A Invoice Response — BIS3-1.0</Documentation>
-    
-    Working documents
-	<!-- <Documentation path="work/">Overview and processing of alignments</Documentation> -->
+    <Documentation path="profiles/42-orderagreement/">- BIS42A Order Agreement —
+        BIS3-1.0</Documentation>
+    <Documentation path="profiles/36-mlr/">- BIS36A Message Level Response —
+        BIS3-1.0</Documentation>
+    <Documentation path="profiles/63-invoiceresponse/">- BIS63A Invoice Response —
+        BIS3-1.0</Documentation> Working documents <!-- <Documentation path="work/">Overview and processing of alignments</Documentation> -->
     <!-- <Documentation path="review/">Review of alignments</Documentation> -->
     <!-- <Documentation path="methodology/schematron/">Schematron guideline</Documentation> -->
     <!-- <Documentation path="work/rules/">Automatic/manual rules</Documentation> -->
- 
-   <!-- Syntax -->
+    <!-- Syntax -->
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-order.xml</Path>
@@ -72,7 +70,6 @@
         <Path>structure/syntax/ubl-invoiceresponse.xml</Path>
         <Title>PEPPOL BIS Invoice Response 3.0</Title>
     </Resource>
-    
     <!-- Rules -->
     <Resource>
         <Identifier>common</Identifier>
@@ -122,15 +119,34 @@
         <Path>rules/sch/parts/PEPPOL-M-T111.sch</Path>
         <Title>Business rules for PEPPOL BIS Invoice Response 3.0</Title>
     </Resource>
-
     <!-- Code lists -->
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/ICD.xml</Path>
+        <Path>structure/codelist/UNCL1229.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/eaid.xml</Path>
+        <Path>structure/codelist/UNCL5189.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL4343.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/TrueFalse.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ActionCode_header.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ActionCode_line.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL7161.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
@@ -138,7 +154,71 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
+        <Path>structure/codelist/ClarificationListID.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
         <Path>structure/codelist/ISO4217_2015.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL8273.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL1001.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL5305.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/eaid.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ICD.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/Image.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL4343-T111.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL7143.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL6313.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL6313-T16.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/MimeCode.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL4343-T76.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL1001_T01.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/GS17009.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL5387.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
@@ -150,86 +230,7 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL5305.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL4343.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL4343-T111.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL4343-T76.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL5189.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL7143.xml</Path>
-        <Title>Item classification code</Title>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL7161.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL1001.xml</Path>
-    </Resource> 
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL1001_T01.xml</Path>
-    </Resource> 
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL1229.xml</Path>
-    </Resource> 
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL5387.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL8273.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL6313.xml</Path>
-    </Resource>
-    
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL6313-T16.xml</Path>
-    </Resource>
-    
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/MimeCode.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/TrueFalse.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/StatusReason.xml</Path>
-    </Resource>
-      <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/ActionCode_header.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/ActionCode_line.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/GS17009.xml</Path>
+        <Path>structure/codelist/OPStatusAction.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
@@ -237,17 +238,8 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/OPStatusAction.xml</Path>
+        <Path>structure/codelist/StatusReason.xml</Path>
     </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/ClarificationListID.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/Image.xml</Path>
-    </Resource>
-
     <!-- Files -->
     <Resource>
         <Type>native:File</Type>
@@ -263,7 +255,6 @@
         <Property key="download">PEPPOLBIS-Upgrade-Schematron.zip</Property>
         <Property key="filename">PEPPOLBIS-Upgrade-Schematron.zip</Property>
     </Resource>
-
     <!-- Namespaces -->
     <Resource>
         <Type>Namespace-1</Type>
@@ -293,5 +284,4 @@
         <Type>Namespace-1</Type>
         <Path>structure/namespace/ubl-cbc.xml</Path>
     </Resource>
-
 </Project>

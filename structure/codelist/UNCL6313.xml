@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
-    <Title>UNCL6313 Measured attribute code</Title>
+    <Title>Measured attribute code (UNCL6313)</Title>
     <Identifier>UNCL6313</Identifier>
     <Version>D.17A</Version>
     <Agency>UN/CEFACT</Agency>
     <Subset>openPEPPOL</Subset>
- 
-    
+
+
     <Code>
         <Id>ABJ</Id>
         <Name>Volume</Name>
@@ -62,7 +62,7 @@
             Degree of moisture
         </Description>
     </Code>
-    
-   
-   
+
+
+
 </CodeList>

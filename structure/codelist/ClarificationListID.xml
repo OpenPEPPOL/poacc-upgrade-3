@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
-    <Title>OPClarification list identifier</Title>
+    <Title>Clarification list identifier (openPEPPOL)</Title>
     <Identifier>ClarificationListID</Identifier>
     <Version>1.0</Version>
     <Agency>OpenPEPPOL</Agency>
@@ -17,5 +17,5 @@
         <Name>Status reason</Name>
         <Description>Reasons for the given status</Description>
     </Code>
-   
+
 </CodeList>
