@@ -1649,6 +1649,7 @@
 					<Element cardinality="0..n">
 						<Term>cac:AdditionalItemProperty</Term>
 						<Name>Additional item property information</Name>
+						<Description>A group of business terms providing information about properties of the goods and services invoiced.</Description>
 						<Element>
 							<Term>cbc:Name</Term>
 							<Name>Item property name</Name>
@@ -1662,8 +1663,7 @@
 						<Element cardinality="0..1">
 							<Term>cbc:NameCode</Term>
 							<Name>Item property code</Name>
-							<Description>Code for the item property according to a property code
-                                system</Description>
+							<Description>Code for the item property according to a property code system.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir110-101</Reference>
 							<Attribute>

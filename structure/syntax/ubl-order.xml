@@ -2130,6 +2130,7 @@
 					<Element cardinality="0..n">
 						<Term>cac:AdditionalItemProperty</Term>
 						<Name>Additional item property information</Name>
+						<Description>A group of business terms providing information about properties of the goods and services invoiced.</Description>
 						<Element>
 							<Term>cbc:Name</Term>
 							<Name>Item property name</Name>
