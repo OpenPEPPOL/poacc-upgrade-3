@@ -2160,7 +2160,7 @@
 							<DataType>Quantity</DataType>
 							<Reference type="BUSINESS_TERM">tir01-p020</Reference>
 
-							<Attribute usage="Optional">
+							<Attribute>
 								<Term>unitCode</Term>
 								<Name>Value quantity unit of measure</Name>
 								<Description>The unit of measure that applies to the value

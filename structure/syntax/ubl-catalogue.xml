@@ -1638,7 +1638,7 @@
 
 						</Attribute>
 					</Element>
-					<Element cardinality="0..1">
+					<Element>
 						<Term>cbc:Value</Term>
 						<Name>Item property value</Name>
 						<Description>The value of the item property.</Description>
@@ -1656,7 +1656,7 @@
 						<Reference type="BUSINESS_TERM">tir19-070</Reference>
 						<Attribute>
 							<Term>unitCode</Term>
-							<Name>Value quantity units</Name>
+							<Name>Value quantity unit of measure</Name>
 							<Description>The unit of measure that applies to the value quantity.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">20</Reference>

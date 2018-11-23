@@ -697,7 +697,7 @@
 
 						</Attribute>
 					</Element>
-					<Element cardinality="0..1">
+					<Element>
 						<Term>cbc:Value</Term>
 						<Name>Item property value</Name>
 						<Description>The value of the item property.</Description>
