@@ -22,7 +22,7 @@ IMPORTANT: The use of the attributes is specified for each information element.
 |Scheme identifier
 |Conditional
 |String
-|GLN
+|0088
 
 |Scheme version identifier
 |Conditional

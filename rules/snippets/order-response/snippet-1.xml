@@ -167,7 +167,7 @@
           <cbc:ID schemeID="0160">05704368643453</cbc:ID>
         </cac:StandardItemIdentification>
         <cac:CommodityClassification>
-          <cbc:ItemClassificationCode listID="STI">675634</cbc:ItemClassificationCode>
+          <cbc:ItemClassificationCode listID="MP" listVersionID="20.0601">14111511</cbc:ItemClassificationCode><!--2-->
         </cac:CommodityClassification>
       </cac:Item>
     </cac:SellerSubstitutedLineItem>
