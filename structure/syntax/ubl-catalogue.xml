@@ -1664,11 +1664,10 @@
 						</Attribute>
 						<Value type="EXAMPLE">5</Value>
 					</Element>
-					<Element cardinality="0..n">
+					<Element cardinality="0..1">
 						<Term>cbc:ValueQualifier</Term>
 						<Name>Property classification</Name>
-						<Description>Standardized and predefined classification of items
-                            properties.</Description>
+						<Description>Standardized and predefined classification of items properties.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-103</Reference>
 						<Value type="EXAMPLE">Allergen</Value>

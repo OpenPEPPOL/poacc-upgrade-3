@@ -1697,6 +1697,13 @@
 								<Reference type="CODE_LIST">UNECERec20</Reference>
 							</Attribute>
 						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:ValueQualifier</Term>
+							<Name>Property classification</Name>
+							<DataType>Text</DataType>
+							<Description>Standardized and predefined classification of items properties.</Description>
+							<Reference type="BUSINESS_TERM">tir110-p004</Reference>
+						</Element>
 					</Element>
 					<Element cardinality="0..n">
 						<Term>cac:Certificate</Term>
