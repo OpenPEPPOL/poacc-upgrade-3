@@ -7,6 +7,8 @@ include::parties.adoc[]
 
 include::attachments.adoc[]
 
+include::originator-ref.adoc[]
+
 include::product-id.adoc[]
 
 include::product-name.adoc[]

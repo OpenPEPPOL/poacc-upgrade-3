@@ -8,5 +8,5 @@ Products can also be classified according to regulatory schemes or classificatio
 .Example:
 [source, xml, indent=0]
 ----
-include::../snippets/Snippet-1-1.xml[tags=classification]
+include::{snippet-dir}/Snippet-1-1.xml[tags=classification]
 ----

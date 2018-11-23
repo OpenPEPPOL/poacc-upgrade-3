@@ -10,5 +10,5 @@ Example of a series of line identifiers is 1, 2, 3, 4, 5 ... or any other struct
 .Example of a line identifier
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-18-1.xml[tags=line]
+include::{snippet-dir}/snippet-18-1.xml[tags=line]
 ----

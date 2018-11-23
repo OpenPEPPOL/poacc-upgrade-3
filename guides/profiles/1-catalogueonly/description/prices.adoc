@@ -16,5 +16,5 @@ Commonly used for fruit, vegetables, fresh fish etc.
 .Example:
 [source, xml, indent=0]
 ----
-include::../snippets/Snippet-1-1.xml[tags=prices]
+include::{snippet-dir}/Snippet-1-1.xml[tags=prices]
 ----

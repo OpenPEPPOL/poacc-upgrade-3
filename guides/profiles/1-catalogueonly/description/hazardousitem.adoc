@@ -6,5 +6,5 @@ If an item is classified as Hazardous item, a reference to the relevant UNDG-cod
 .Example:
 [source, xml, indent=0]
 ----
-include::../snippets/Snippet-1-1.xml[tags=hazardous]
+include::{snippet-dir}/Snippet-1-1.xml[tags=hazardous]
 ----

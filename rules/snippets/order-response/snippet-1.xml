@@ -9,7 +9,7 @@
   <cbc:IssueDate>2013-07-01</cbc:IssueDate>
   <cbc:IssueTime>06:10:10</cbc:IssueTime>
   <!-- tag::response-header[] -->
-  <cbc:OrderResponseCode>AP</cbc:OrderResponseCode>
+  <cbc:OrderResponseCode>CA</cbc:OrderResponseCode>
   <!-- end::response-header[] -->
   <cbc:Note>Response message with amendments in the details</cbc:Note>
   <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>

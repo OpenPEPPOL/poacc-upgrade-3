@@ -5,5 +5,5 @@ If each of the delivered items is marked with an individual serial number, these
 
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-30-1.xml[tags=serialid]
+include::{snippet-dir}/snippet-30-1.xml[tags=serialid]
 ----

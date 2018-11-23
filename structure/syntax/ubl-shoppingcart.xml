@@ -239,7 +239,7 @@
 
 				<Value type="EXAMPLE">1</Value>
 			</Element>
-			<Element>
+			<Element cardinality="0..1">
 				<Term>cbc:ContractSubdivision</Term>
 				<Name>Contracted item indicator</Name>
 				<Description>Reference to the contract when the item is offered in accordance to an existing contract</Description>

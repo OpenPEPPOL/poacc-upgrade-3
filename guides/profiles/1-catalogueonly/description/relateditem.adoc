@@ -14,5 +14,5 @@ Types of relations:
 .Example, The current item consists of 6 of Sellers article number 7690211, and 5 of article 523467:
 [source, xml, indent=0]
 ----
-include::../snippets/Snippet-1-1.xml[tags=relateditem]
+include::{snippet-dir}/Snippet-1-1.xml[tags=relateditem]
 ----

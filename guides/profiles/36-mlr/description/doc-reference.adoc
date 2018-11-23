@@ -9,5 +9,5 @@ identifier of the envelope of the original business document.
 .Example:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-2.xml[tags=reference]
+include::{snippet-dir}/snippet-2.xml[tags=reference]
 ----
