@@ -2142,6 +2142,18 @@
 
 							<Value type="EXAMPLE">Color</Value>
 						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:NameCode</Term>
+							<Name>Item property code</Name>
+							<Description>Code for the item property according to a property code system.</Description>
+							<DataType>Code</DataType>
+							<Reference type="BUSINESS_TERM">tir01-p024</Reference>
+							<Attribute>
+								<Term>listID</Term>
+								<Name>Name code list id.</Name>
+								<Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
+							</Attribute>
+						</Element>
 						<Element>
 							<Term>cbc:Value</Term>
 							<Name>Item property value</Name>
@@ -2189,7 +2201,7 @@
 							<Name>Item serial identification</Name>
 							<Description>An identifier that is specific to the items in the order
 								line.</Description>
-							<Reference type="BUSINESS_TERM">tir01-p021</Reference>
+							<Reference type="BUSINESS_TERM">tir01-p023</Reference>
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cac:LotIdentification</Term>

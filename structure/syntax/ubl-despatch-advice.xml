@@ -1111,6 +1111,18 @@
 						<Reference type="BUSINESS_TERM">tir16-p039</Reference>
 						<Value type="EXAMPLE">NPLId</Value>
 					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:NameCode</Term>
+						<Name>Item property code</Name>
+						<Description>Code for the item property according to a property code system.</Description>
+						<DataType>Code</DataType>
+						<Reference type="BUSINESS_TERM">tir16-p042</Reference>
+						<Attribute>
+							<Term>listID</Term>
+							<Name>Name code list id.</Name>
+							<Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
+						</Attribute>
+					</Element>
 					<Element>
 						<Term>cbc:Value</Term>
 						<Name>Item property value</Name>
