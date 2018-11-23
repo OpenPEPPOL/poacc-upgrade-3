@@ -12,7 +12,8 @@
   <testfolder>unit-order-response</testfolder>
   <testfolder>unit-punch-out</testfolder>
   
-  <!-- snippet folders -->
+  <!-- example and snippet folders -->
+  <testfolder>examples</testfolder>
   <testfolder>snippets/order</testfolder>
   <testfolder>snippets/order-response</testfolder>
   <testfolder>snippets/order-agreement</testfolder>
@@ -70,6 +71,7 @@
     <inherit>ubl-applicationresponse-2.1</inherit>
     <file source="sch/PEPPOLBIS-T111.sch" path="xsl/PEPPOLBIS-T111.xsl"/>
   </configuration>
+  
   <configuration>
   <identifier>peppolbis-t71-base-3.0</identifier>
   <title>PEPPOL BIS MLR (T71) 3.0 </title>
