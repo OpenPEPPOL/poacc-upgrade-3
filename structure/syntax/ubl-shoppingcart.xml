@@ -697,7 +697,7 @@
 
 						</Attribute>
 					</Element>
-					<Element>
+					<Element>	
 						<Term>cbc:Value</Term>
 						<Name>Item property value</Name>
 						<Description>The value of the item property.</Description>
@@ -716,7 +716,6 @@
 							<Name>Item property unit of measure</Name>
 							<Description>The unit of measure that applies to the value quantity.</Description>
 							<DataType>Code</DataType>
-							<Reference type="BUSINESS_TERM">tir77-041</Reference>
 							<Reference type="CODE_LIST">UNECERec20</Reference>
 							<Value type="EXAMPLE">KWH</Value>
 						</Attribute>

@@ -1132,6 +1132,24 @@
 						<Value type="EXAMPLE">20300709400050</Value>
 					</Element>
 				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:ValueQuantity</Term>
+					<Name>Item property unit of measure</Name>
+					<Description>The unit of measure in which the property value is stated, if
+						relevant. May not be relevant when properties are
+						descriptive.</Description>
+					<DataType>Quantity</DataType>
+					<Reference type="BUSINESS_TERM">tir16-p043</Reference>
+					<Attribute>
+						<Term>unitCode</Term>
+						<Name>Value quantity unit of measure</Name>
+						<Description>The unit of measure that applies to the value quantity.</Description>
+						<DataType>Code</DataType>
+						<Reference type="CODE_LIST">UNECERec20</Reference>
+						<Value type="EXAMPLE">XCS</Value>
+					</Attribute>
+					<Value type="EXAMPLE">5</Value>
+				</Element>
 				<Element cardinality="0..n">
 					<Term>cac:ItemInstance</Term>
 					<Element cardinality="0..1">

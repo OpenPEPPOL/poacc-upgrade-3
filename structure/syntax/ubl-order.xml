@@ -2171,7 +2171,6 @@
 								descriptive.</Description>
 							<DataType>Quantity</DataType>
 							<Reference type="BUSINESS_TERM">tir01-p020</Reference>
-
 							<Attribute>
 								<Term>unitCode</Term>
 								<Name>Value quantity unit of measure</Name>

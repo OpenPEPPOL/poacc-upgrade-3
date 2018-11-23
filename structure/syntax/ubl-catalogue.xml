@@ -1659,8 +1659,6 @@
 							<Name>Value quantity unit of measure</Name>
 							<Description>The unit of measure that applies to the value quantity.</Description>
 							<DataType>Code</DataType>
-							<Reference type="BUSINESS_TERM">20</Reference>
-
 							<Reference type="CODE_LIST">UNECERec20</Reference>
 							<Value type="EXAMPLE">XCS</Value>
 						</Attribute>
