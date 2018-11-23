@@ -1,7 +1,7 @@
 [[order-response-with-changes]]
 = Order response with changes
 
-* When Seller accepts an order with changes, the response code «30» must be sent on header level.
+* When Seller accepts an order with changes, the response code «CA» must be sent on header level.
 * On line level there may be a mix of different response codes.
 * Some lines may have been accepted without amendments (line response code 5), some not accepted (line response code 7) and some changed (line response code 3).
 

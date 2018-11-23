@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!--
-                Content:
-                This file contains a Full BIS3 PEPPOL UBL PunchOut
 
-                Errors:
-                None
-                
-                Warnings:
-                None
-				
--->
 <Catalogue xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"
 		   xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 		   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
@@ -27,7 +17,7 @@
 		<cbc:ID>CRT1387</cbc:ID>
 	</cac:ReferencedContract>
 	<cac:ProviderParty>
-		<cbc:EndpointID schemeID="0082">9656789960</cbc:EndpointID>
+		<cbc:EndpointID schemeID="0192">987654321</cbc:EndpointID>
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="0088">5790000435951</cbc:ID>
 		</cac:PartyIdentification>
@@ -36,7 +26,7 @@
 		</cac:PartyLegalEntity>
 	</cac:ProviderParty>
 	<cac:ReceiverParty>
-		<cbc:EndpointID schemeID="0082">9846611850</cbc:EndpointID>
+		<cbc:EndpointID schemeID="0192">999888777</cbc:EndpointID>
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="0088">5790000435944</cbc:ID>
 		</cac:PartyIdentification>
