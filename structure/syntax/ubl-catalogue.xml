@@ -38,7 +38,6 @@
 			<Reference type="BUSINESS_TERM">tir19-003</Reference>
 			<Value type="EXAMPLE">Cat-02</Value>
 		</Element>
-
 		<Element cardinality="0..1">
 			<Term>cbc:ActionCode</Term>
 			<Name>Catalogue action code</Name>
@@ -52,7 +51,6 @@
 			<Reference type="CODE_LIST">ActionCode_header</Reference>
 			<Value type="EXAMPLE">Add</Value>
 		</Element>
-
 		<Element cardinality="0..1">
 			<Term>cbc:Name</Term>
 			<Name>Catalogue name</Name>
@@ -150,7 +148,6 @@
                     message.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">tir19-009</Reference>
-
 				<Attribute>
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
@@ -443,7 +440,6 @@
 							representation.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-p031f</Reference>
-
 						<Reference type="CODE_LIST">ISO3166</Reference>
 						<Value type="EXAMPLE">DK</Value>
 					</Element>
@@ -502,7 +498,6 @@
 								representation.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir19-p030d</Reference>
-
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">SE</Value>
 						</Element>
@@ -527,12 +522,10 @@
                         message.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-015</Reference>
-
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
 						<Description>Scheme identifier for Electronic address identifier</Description>
-
 						<Value type="EXAMPLE">0088</Value>
 					</Attribute>
 					<Value type="EXAMPLE">123456789</Value>
@@ -851,8 +844,6 @@
 					<Name>Item net quantity unit of measure</Name>
 					<Description>The unit of measure that applies to the item net quantity</Description>
 					<DataType>Code</DataType>
-					<Reference type="BUSINESS_TERM">20</Reference>
-
 					<Reference type="CODE_LIST">UNECERec20</Reference>
 					<Value type="EXAMPLE">C62</Value>
 				</Attribute>
@@ -877,8 +868,6 @@
 					<Name>Minimum order quantity unit of measure</Name>
 					<Description>The unit of measure that applies to the minimum order quantity</Description>
 					<DataType>code</DataType>
-					<Reference type="BUSINESS_TERM">20</Reference>
-
 					<Reference type="CODE_LIST">UNECERec20</Reference>
 					<Value type="EXAMPLE">C62</Value>
 				</Attribute>
@@ -896,8 +885,6 @@
 					<Name>Maximum order quantity unit of measure</Name>
 					<Description>The unit of measure that applies to the maximum order quantity</Description>
 					<DataType>Code</DataType>
-					<Reference type="BUSINESS_TERM">20</Reference>
-
 					<Reference type="CODE_LIST">UNECERec20</Reference>
 					<Value type="EXAMPLE">C62</Value>
 				</Attribute>
@@ -917,7 +904,6 @@
 				<Description>The packing level of the catalogue line.</Description>
 				<DataType>Code</DataType>
 				<Reference type="BUSINESS_TERM">tir19-102</Reference>
-
 				<Reference type="CODE_LIST">GS17009</Reference>
 				<Value type="EXAMPLE">TU</Value>
 			</Element>
@@ -953,36 +939,28 @@
 				<Element cardinality="0..1">
 					<Term>cbc:PriceAmount</Term>
 					<Name>Standardized unit price</Name>
-					<Description>The item price based on a standarized unit. E.g. Price of each
-                        liter.See guideline on Items and packing units in a catalogue.</Description>
+					<Description>The item price based on a standarized unit. E.g. Price of each liter.</Description>
 					<DataType>Price Amount</DataType>
 					<Reference type="BUSINESS_TERM">tir19-043</Reference>
 					<Attribute>
 						<Term>currencyID</Term>
 						<Name>Currency identifier</Name>
 						<Description>Mandatory attribute</Description>
-
 						<Reference type="CODE_LIST">ISO4217</Reference>
 						<Value type="EXAMPLE">EUR</Value>
 					</Attribute>
 				</Element>
 				<Element cardinality="0..1">
-					<Term>cbc:Quantity</Term>
+					<Term>cbc:Quantity</Term> 
 					<Name>Standard unit quantity</Name>
-					<Description>The quantity of standard units that are in each consumable unit.
-                        E.g. if consumable units are bottles and each bottle contains 0,333 liters
-                        the standard unit quantity is 0,333See guideline on Items and packing units
-                        in a catalogue.</Description>
+					<Description>The quantity of standard units that are in each consumable unit.</Description>
 					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir19-044</Reference>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Standard unit of measure</Name>
-						<Description>The standar unit of measure used to enable comparison of item
-                            price to other items.See guideline on Items and packing units in a
-                            catalogue.</Description>
+						<Description>The standard unit of measure used to enable comparison of item price to other items.See guideline on Items and packing units in a catalogue.</Description>
 						<Reference type="BUSINESS_TERM">tir19-085</Reference>
-
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 					</Attribute>
 				</Element>
@@ -1012,7 +990,6 @@
                             The value shoud be a valid UOM code like CS for case.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-065</Reference>
-
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">CS</Value>
 					</Attribute>
@@ -1039,8 +1016,6 @@
 						<Name>Related item unit</Name>
 						<Description>The packaging unit for related items. The value shoud be a valid UOM code like CS for case.</Description>
 						<DataType>Code</DataType>
-						<Reference type="BUSINESS_TERM">20</Reference>
-
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">CS</Value>
 					</Attribute>
@@ -1067,8 +1042,6 @@
 						<Name>Required item units</Name>
 						<Description>The packaging unit for required related items. The value shoud be a valid UOM code like CS for case.</Description>
 						<DataType>Code</DataType>
-						<Reference type="BUSINESS_TERM">20</Reference>
-
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">CS</Value>
 					</Attribute>
@@ -1095,8 +1068,6 @@
 						<Name>Replaced item units</Name>
 						<Description>The packaging unit for replaced items. The value shoud be a valid UOM code like CS for case.</Description>
 						<DataType>Code</DataType>
-						<Reference type="BUSINESS_TERM">20</Reference>
-
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">CS</Value>
 					</Attribute>
@@ -1116,8 +1087,6 @@
 						<Name>Lead time units</Name>
 						<Description>The lead time units for price lead time. The value shoud be a valid UOM code like DAY for days.</Description>
 						<DataType>Code</DataType>
-						<Reference type="BUSINESS_TERM">20</Reference>
-
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">CS</Value>
 					</Attribute>
@@ -1133,8 +1102,6 @@
 						<Name>Quantity threshold units</Name>
 						<Description>The quantity units for minimum quantity. The value shoud be a valid UOM code like CS for case.</Description>
 						<DataType>Code</DataType>
-						<Reference type="BUSINESS_TERM">20</Reference>
-
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">CS</Value>
 					</Attribute>
@@ -1150,8 +1117,6 @@
 						<Name>Quantity ceiling units</Name>
 						<Description>The quantity units for ceiling quantity. The value shoud be a valid UOM code like CS for case.</Description>
 						<DataType>Code</DataType>
-						<Reference type="BUSINESS_TERM">20</Reference>
-
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">CS</Value>
 					</Attribute>
@@ -1264,8 +1229,6 @@
 							<Name>Item price base quantity unit of measure code</Name>
 							<Description>The unit of measure that applies to the Item price base quantity.</Description>
 							<DataType>Code</DataType>
-							<Reference type="BUSINESS_TERM">20</Reference>
-
 							<Reference type="CODE_LIST">UNECERec20</Reference>
 							<Value type="EXAMPLE">CS</Value>
 						</Attribute>
@@ -1337,8 +1300,6 @@
 						<Term>unitCode</Term>
 						<Name>Packed quantity unit of measure code</Name>
 						<Description>The unit of measure that applies to the packed quantity.</Description>
-						<Reference type="BUSINESS_TERM">20</Reference>
-
 						<Reference type="CODE_LIST">UNECERec20</Reference>
 						<Value type="EXAMPLE">CS</Value>
 					</Attribute>
@@ -1818,7 +1779,6 @@
 							<Name>Measure unit code</Name>
 							<Description>The unit code of the measurement</Description>
 							<DataType>Code</DataType>
-							<Reference type="BUSINESS_TERM">20</Reference>
 							<Reference type="CODE_LIST">UNECERec20</Reference>
 							<Value type="EXAMPLE">CMT</Value>
 						</Attribute>
@@ -1843,7 +1803,6 @@
 							<Name>Measure unit code</Name>
 							<Description>The unit code of the minimum storage humidity or temperature</Description>
 							<DataType>Code</DataType>
-							<Reference type="BUSINESS_TERM">20</Reference>
 							<Reference type="CODE_LIST">UNECERec20</Reference>
 							<Value type="EXAMPLE">CMT</Value>
 						</Attribute>
@@ -1860,7 +1819,6 @@
 							<Name>Measure unit code</Name>
 							<Description>The unit code of the maximum storage humidity or temperature</Description>
 							<DataType>Code</DataType>
-							<Reference type="BUSINESS_TERM">20</Reference>
 							<Reference type="CODE_LIST">UNECERec20</Reference>
 							<Value type="EXAMPLE">CMT</Value>
 						</Attribute>
