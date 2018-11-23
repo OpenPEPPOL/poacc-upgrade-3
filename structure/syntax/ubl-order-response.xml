@@ -63,8 +63,7 @@
 		<Element cardinality="0..1">
 			<Term>cbc:IssueTime</Term>
 			<Name>Order response issue time</Name>
-			<Description>The time assigned by the buyer on which the transaction was
-                issued.</Description>
+			<Description>The time on which the transaction instance was issued</Description>
 			<DataType>Time</DataType>
 			<Reference type="BUSINESS_TERM">tir76-005</Reference>
 			<Value type="EXAMPLE">09:23:56</Value>
@@ -97,12 +96,12 @@
 			<Reference type="CODE_LIST">ISO4217</Reference>
 			<Value type="EXAMPLE">EUR</Value>
 		</Element>
-		<Element>
+		<Element cardinality="0..1">
 			<Term>cbc:CustomerReference</Term>
 			<Name>Buyer reference identifier</Name>
 			<Description>An identifier assigned by the Buyer used for internal routing purposes.The
             identifier is defined by the buyer (contact ID, department, office id, project
-            code), but provided by the seller in the invoice.</Description>
+            code), but provided by the seller in the order response.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir110-044</Reference>
 			<Value type="EXAMPLE">abc123</Value>
@@ -269,19 +268,7 @@
 						<Value type="EXAMPLE">Buyer name</Value>
 					</Element>
 				</Element>
-				
-				<Element cardinality="0..1">
-					<Term>cac:Contact</Term>
-					<Name>Contact information</Name>
-					<Element>
-						<Term>cbc:Name</Term>
-						<Name>Contact identifier</Name>
-						<Description>An identifier for the buyers contsct</Description>
-						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir76-p001</Reference>
-						<Value type="EXAMPLE">123</Value>
-					</Element>
-				</Element>
+			
 			</Element>
 		</Element>
 		<Element cardinality="0..1">
@@ -445,7 +432,7 @@
 				<Element>
 					<Term>cac:Item</Term>
 					<Name>Item information </Name>
-					<Element>
+					<Element cardinality="0..1">
 						<Term>cbc:Name</Term>
 						<Name>Item name</Name>
 						<Description>A short name optionally given to an item, such as a name from
@@ -572,14 +559,14 @@
 								<Name>Item classification identifier identification scheme identifier</Name>
 								<Description>The identification scheme identifier of the Item classification identifier</Description>
 								<Reference type="CODE_LIST">UNCL7143</Reference>
-								<Value type="EXAMPLE">STI</Value>
+								<Value type="EXAMPLE">MP</Value>
 							</Attribute>
 							<Attribute usage="Optional">
 								<Term>listVersionID</Term>
 								<Name>Item classification identifier version identification scheme identifier</Name>
 								<Description>The identification scheme version identifier of the Item classification identifier</Description>
 							</Attribute>
-							<Value type="EXAMPLE">9873242</Value>
+							<Value type="EXAMPLE">20.0601</Value>
 						</Element>
 					</Element>
 					<Element cardinality="0..1">
