@@ -150,11 +150,11 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/ISO3166-1_Alpha2.xml</Path>
+        <Path>structure/codelist/ClarificationListID.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/ClarificationListID.xml</Path>
+        <Path>structure/codelist/ISO3166-1_Alpha2.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
@@ -223,10 +223,6 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNECERec20-11e.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNECERec21-9e.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
