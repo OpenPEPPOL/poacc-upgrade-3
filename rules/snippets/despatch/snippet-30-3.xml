@@ -2,27 +2,25 @@
 <DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2"
 	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-
 	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns16a:despatch_advice:bis3-1.0</cbc:CustomizationID>
 	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis30a:despatch_advice:bis3-1.0</cbc:ProfileID>
 	<cbc:ID>1234</cbc:ID>
 	<cbc:IssueDate>2013-03-15</cbc:IssueDate>
 	<cbc:IssueTime>08:00:00</cbc:IssueTime>
 	<cbc:Note>Free text note relating to the Despatch Advice</cbc:Note>
-	<!-- tag::ref-order[] -->
 	<cac:OrderReference>
 		<cbc:ID>4321</cbc:ID>
 	</cac:OrderReference>
-	<!-- end::ref-order[] -->
-	<!-- tag::despatchsupplier[] -->
 	<cac:DespatchSupplierParty>
 		<cac:Party>
-			<cbc:EndpointID schemeID="DK:CVR">DK87654321</cbc:EndpointID>
+			<cbc:EndpointID schemeID="0184">DK87654321</cbc:EndpointID>
+			<!-- tag::partyid-se[] -->
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="0088">7300010000001</cbc:ID>
+				<cbc:ID schemeID="0007">5541277711</cbc:ID>
 			</cac:PartyIdentification>
+			<!-- end::partyid-se[] -->
 			<cac:PartyLegalEntity>
-				<cbc:RegistrationName>Sender Company</cbc:RegistrationName>
+				<cbc:RegistrationName>Supplier AB</cbc:RegistrationName>
 			</cac:PartyLegalEntity>
 			<cac:Contact>
 				<cbc:Name>John</cbc:Name>
@@ -31,11 +29,10 @@
 			</cac:Contact>
 		</cac:Party>
 	</cac:DespatchSupplierParty>
-	<!-- end::despatchsupplier[] -->
 	<!-- tag::deliverycustomer[] -->
 	<cac:DeliveryCustomerParty>
 		<cac:Party>
-			<cbc:EndpointID schemeID="DK:CVR">DK12345678</cbc:EndpointID>
+			<cbc:EndpointID schemeID="0184">DK12345678</cbc:EndpointID>
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0088">7300010000001</cbc:ID>
 			</cac:PartyIdentification>
@@ -45,9 +42,6 @@
 				<cbc:CityName>Reciever City</cbc:CityName>
 				<cbc:PostalZone>9000</cbc:PostalZone>
 				<cbc:CountrySubentity>Region A</cbc:CountrySubentity>
-				<cac:AddressLine>
-					<cbc:Line>Gate 34</cbc:Line>
-				</cac:AddressLine>
 				<cac:Country>
 					<cbc:IdentificationCode>DK</cbc:IdentificationCode>
 				</cac:Country>
@@ -101,12 +95,11 @@
 		</cac:Party>
 	</cac:OriginatorCustomerParty>
 	<!-- end::originator[] -->
-	<!-- tag::shipment[] -->
 	<cac:Shipment>
 		<cbc:ID>NA</cbc:ID>
-		<cbc:Information>Free text information relating to the Shipment</cbc:Information>
-		<cbc:GrossWeightMeasure unitCode="KGM">23</cbc:GrossWeightMeasure>
-		<cbc:GrossVolumeMeasure unitCode="MTQ">27</cbc:GrossVolumeMeasure>
+		<cbc:Information>The shipment is Despatched on schedule</cbc:Information>
+		<cbc:GrossWeightMeasure unitCode="KGM">10.00</cbc:GrossWeightMeasure>
+		<cbc:GrossVolumeMeasure unitCode="MTQ">25.00</cbc:GrossVolumeMeasure>
 		<cac:Consignment>
 			<cbc:ID>12345</cbc:ID>
 			<cac:CarrierParty>
@@ -127,23 +120,17 @@
 				<cbc:ActualDespatchTime>08:00:00</cbc:ActualDespatchTime>
 			</cac:Despatch>
 		</cac:Delivery>
+
 	</cac:Shipment>
-	<!-- end::shipment[] -->
 	<cac:DespatchLine>
 		<cbc:ID>1</cbc:ID>
-		<!-- tag::quantity1[] -->
-		<cbc:DeliveredQuantity unitCode="EA">6</cbc:DeliveredQuantity>
-		<cbc:OutstandingQuantity unitCode="EA">4</cbc:OutstandingQuantity>
-		<cbc:OutstandingReason>Backorder</cbc:OutstandingReason>
-		<!-- end::quantity1[] -->
+		<cbc:DeliveredQuantity unitCode="EA">10</cbc:DeliveredQuantity>
 		<cac:OrderLineReference>
-			<cbc:LineID>5</cbc:LineID>
+			<cbc:LineID>1</cbc:LineID>
 			<cac:OrderReference>
-				<cbc:ID>934234-12</cbc:ID>
+				<cbc:ID>123</cbc:ID>
 			</cac:OrderReference>
 		</cac:OrderLineReference>
-		<!-- end::ref-orderline1[] -->
-		<!-- tag::item[] -->
 		<cac:Item>
 			<cbc:Name>Item123</cbc:Name>
 			<cac:SellersItemIdentification>
@@ -152,62 +139,20 @@
 			<cac:StandardItemIdentification>
 				<cbc:ID schemeID="0160">7611104117056</cbc:ID>
 			</cac:StandardItemIdentification>
+			<!-- tag::bestbefore[] -->
+			<cac:ItemInstance>
+				<cbc:BestBeforeDate>2015-04-15</cbc:BestBeforeDate>
+			</cac:ItemInstance>
+			<!-- end::bestbefore[] -->
 		</cac:Item>
-		<!-- end::item[] -->
 	</cac:DespatchLine>
 	<cac:DespatchLine>
 		<cbc:ID>2</cbc:ID>
-		<!-- tag::quantity2[] -->
-		<cbc:DeliveredQuantity unitCode="EA">6</cbc:DeliveredQuantity>
-		<cbc:OutstandingQuantity unitCode="EA">0</cbc:OutstandingQuantity>
-		<cbc:OutstandingReason>Out of stock</cbc:OutstandingReason>
-		<!-- end::quantity2[] -->
-		<!-- tag::ref-orderline2[] -->
+		<cbc:DeliveredQuantity unitCode="EA">10</cbc:DeliveredQuantity>
 		<cac:OrderLineReference>
-			<cbc:LineID>NA</cbc:LineID>
+			<cbc:LineID>2</cbc:LineID>
 			<cac:OrderReference>
-				<cbc:ID>3424</cbc:ID>
-			</cac:OrderReference>
-		</cac:OrderLineReference>
-		<!-- end::ref-orderline2[] -->
-		<cac:Item>
-			<cbc:Name>Item456</cbc:Name>
-			<cac:SellersItemIdentification>
-				<cbc:ID>010140403</cbc:ID>
-			</cac:SellersItemIdentification>
-			<cac:StandardItemIdentification>
-				<cbc:ID schemeID="0160">7622204117051</cbc:ID>
-			</cac:StandardItemIdentification>
-			<!-- tag::hazardous[] -->
-			<cac:HazardousItem>
-				<cbc:UNDGCode>ADR</cbc:UNDGCode>
-				<cbc:HazardClassID>2.3</cbc:HazardClassID>
-			</cac:HazardousItem>
-			<!-- end::hazardous[] -->
-			<!-- tag::serialid[] -->
-			<cac:ItemInstance>
-				<cbc:SerialID>OR250RHZ444</cbc:SerialID>
-			</cac:ItemInstance>
-			<cac:ItemInstance>
-				<cbc:SerialID>OR250RHZ4445</cbc:SerialID>
-			</cac:ItemInstance>
-			<cac:ItemInstance>
-				<cbc:SerialID>OR250RHZ4446</cbc:SerialID>
-			</cac:ItemInstance>
-			<!-- end::serialid[] -->
-		</cac:Item>
-	</cac:DespatchLine>
-	<cac:DespatchLine>
-		<cbc:ID>3</cbc:ID>
-		<!-- tag::quantity3[] -->
-		<cbc:DeliveredQuantity unitCode="EA">6</cbc:DeliveredQuantity>
-		<cbc:OutstandingQuantity unitCode="EA">3</cbc:OutstandingQuantity>
-		<cbc:OutstandingReason>Production error</cbc:OutstandingReason>
-		<!-- end::quantity3[] -->
-		<cac:OrderLineReference>
-			<cbc:LineID>NA</cbc:LineID>
-			<cac:OrderReference>
-				<cbc:ID>3oe32er</cbc:ID>
+				<cbc:ID>123</cbc:ID>
 			</cac:OrderReference>
 		</cac:OrderLineReference>
 		<cac:Item>
@@ -218,22 +163,21 @@
 			<cac:StandardItemIdentification>
 				<cbc:ID schemeID="0160">7622204117051</cbc:ID>
 			</cac:StandardItemIdentification>
-			<!-- tag::itemproperty[] -->	
-			<cac:AdditionalItemProperty>
-				<cbc:Name>NPLId</cbc:Name>
-				<cbc:Value>20300709400050</cbc:Value>
-			</cac:AdditionalItemProperty>
-			<!-- end::itemproperty[] -->
-			<!-- tag::lotid[] -->
-			<cac:ItemInstance>
-				<cac:LotIdentification>
-					<cbc:LotNumberID>898A129</cbc:LotNumberID>
-					<cbc:ExpiryDate>2015-07-01</cbc:ExpiryDate>
-				</cac:LotIdentification>
-			</cac:ItemInstance>
-			<!-- end::lotid[] -->
-			
 		</cac:Item>
-		
+		<cac:Shipment>
+			<cbc:ID>1</cbc:ID>
+			<!-- tag::transporthandling[] -->
+			<cac:TransportHandlingUnit>
+				<cbc:ID>5454</cbc:ID>
+				<cbc:TransportHandlingUnitTypeCode>4H</cbc:TransportHandlingUnitTypeCode>
+				<cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
+				<cbc:ShippingMarks>text</cbc:ShippingMarks>
+				<cac:MeasurementDimension>
+					<cbc:AttributeID>AAW</cbc:AttributeID>
+					<cbc:Measure unitCode="C62">1</cbc:Measure>
+				</cac:MeasurementDimension>
+			</cac:TransportHandlingUnit>
+			<!-- end::transporthandling[] -->
+		</cac:Shipment>
 	</cac:DespatchLine>
 </DespatchAdvice>

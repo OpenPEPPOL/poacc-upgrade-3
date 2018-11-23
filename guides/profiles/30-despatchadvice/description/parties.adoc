@@ -13,7 +13,7 @@ The role is carried out by the supplier or on behalf of the supplier. (Despatch 
 Example:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-30-1.xml[tags=despatchsupplier]
+include::{snippet-dir}/snippet-30-1.xml[tags=despatchsupplier]
 ----
 
 [[consignee-deliverycustomerparty]]
@@ -26,7 +26,7 @@ The Consignee is mandatory information in the Despatch Advice message.
 Example:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-30-1.xml[tags=deliverycustomer]
+include::{snippet-dir}/snippet-30-1.xml[tags=deliverycustomer]
 ----
 
 [[buyer-buyercustomerparty]]
@@ -40,7 +40,7 @@ The Buyer is optional information in the Despatch Advice message.
 Example:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-30-1.xml[tags=buyer]
+include::{snippet-dir}/snippet-30-1.xml[tags=buyer]
 ----
 
 
@@ -54,7 +54,7 @@ The Seller is optional information in the Despatch Advice message.
 Example:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-30-1.xml[tags=seller]
+include::{snippet-dir}/snippet-30-1.xml[tags=seller]
 ----
 
 
@@ -68,5 +68,5 @@ Example:
 
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-30-1.xml[tags=originator]
+include::{snippet-dir}/snippet-30-1.xml[tags=originator]
 ----

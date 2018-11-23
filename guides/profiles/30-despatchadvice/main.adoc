@@ -14,6 +14,7 @@ v3.0.0
 :sectanchors:
 :sectnums:
 :title-logo-image: ../images/peppol.jpg
+:snippet-dir: ../../../../rules/snippets/despatch
 
 
 :leveloffset: +1

@@ -117,6 +117,14 @@
     <customizationId>urn:fdc:peppol.eu:poacc:trns77a:shopping_cart:bis3-1.0</customizationId>
     <inherit>peppolbis-t77-base-3.0</inherit>
   </configuration>
+  
+  <configuration>
+    <identifier>peppolbis-30</identifier>
+    <title>PEPPOL BIS 30 Despatch Advice 3.0 </title>
+    <profileId>urn:fdc:peppol.eu:poacc:bis30a:despatch_advice:bis3-1.0</profileId>
+    <customizationId>urn:fdc:peppol.eu:poacc:trns16a:despatch_advice:bis3-1.0</customizationId>
+    <inherit>peppolbis-t16-base-3.0</inherit>
+  </configuration>
 </buildConfigurations>
 
 

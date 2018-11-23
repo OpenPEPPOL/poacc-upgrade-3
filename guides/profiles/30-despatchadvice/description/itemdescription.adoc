@@ -4,9 +4,8 @@
 Each despatch line contains elements for description and identification of the item.
 Normally only one of the identifiers is needed in the message.
 
-Example:
-
+.Example:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-30-1.xml[tags=item]
+include::{snippet-dir}/snippet-30-1.xml[tags=item]
 ----
