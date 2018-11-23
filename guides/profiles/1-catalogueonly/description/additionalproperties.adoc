@@ -17,12 +17,12 @@ Legal values: True, False
 .Example simple:
 [source, xml, indent=0]
 ----
-include::../snippets/Snippet-1-1.xml[tags=color]
+include::{snippet-dir}/Snippet-1-1.xml[tags=color]
 ----
 
 
 .Example showing code properties:
 [source, xml, indent=0]
 ----
-include::../snippets/Snippet-1-1.xml[tags=allergen]
+include::{snippet-dir}/Snippet-1-1.xml[tags=allergen]
 ----

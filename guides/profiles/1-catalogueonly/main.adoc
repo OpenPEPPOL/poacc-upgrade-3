@@ -12,6 +12,7 @@ v3.0.0
 :source-language: xml
 :sectanchors:
 :sectnums:
+:snippet-dir: ../../../../rules/snippets/catalogue
 
 {description}
 

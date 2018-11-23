@@ -18,5 +18,5 @@ For the higher level Packed Quantity should be used.
 .Example:
 [source, xml, indent=0]
 ----
-include::../snippets/Snippet-1-1.xml[tags=packlevel]
+include::{snippet-dir}/Snippet-1-1.xml[tags=packlevel]
 ----

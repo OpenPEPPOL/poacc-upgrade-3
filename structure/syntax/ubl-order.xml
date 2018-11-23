@@ -171,7 +171,7 @@
 				<Term>cbc:ID</Term>
 				<Name>Originator document reference</Name>
 				<Description>A reference to Originator Document. To be able to give a reference to
-					the internal requesition on the buyer site on which the order is
+					the internal requisition on the buyer site on which the order is
 					based.</Description>
 				<DataType>Document reference</DataType>
 				<Reference type="BUSINESS_TERM">tir01-012</Reference>
