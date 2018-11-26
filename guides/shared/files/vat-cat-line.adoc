@@ -11,5 +11,5 @@ Each line shall have the item VAT information including category code and percen
 include::../snippets/snippet-common.xml[tags=vat-line]
 ----
 <1> VAT category according to codelist {vat-codes}
-<2> VAT percentage, must be present unless VAT category code is O.("Out of scope for VAT")
+<2> VAT percentage, must be present unless VAT category code is O.(the value "O" means "Out of scope for VAT")
 <3> Value must be VAT
