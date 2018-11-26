@@ -365,7 +365,7 @@
 						<Name>Consignee party name</Name>
 						<Description>The name of the consignee party</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir16-089</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p045</Reference>
 					</Element>
 				</Element>
 				
