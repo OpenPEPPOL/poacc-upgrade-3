@@ -1450,14 +1450,6 @@
 				<Element>
 					<Term>cac:Item</Term>
 					<Name>Item information</Name>
-					<Element cardinality="0..1">
-						<Term>cbc:Description</Term>
-						<Name>Item description as text</Name>
-						<Description>A free text detailed description of an item.</Description>
-						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir110-095</Reference>
-						<Value type="EXAMPLE">Window 23", double glass</Value>
-					</Element>
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Item name</Name>
@@ -1467,6 +1459,14 @@
 						<Reference type="BUSINESS_TERM">tir110-032</Reference>
 						<Reference type="RULE">PEPPOL-T110-R003</Reference>
 						<Value type="EXAMPLE">Window</Value>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:Description</Term>
+						<Name>Item description as text</Name>
+						<Description>A free text detailed description of an item.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir110-095</Reference>
+						<Value type="EXAMPLE">Window 23", double glass</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:BuyersItemIdentification</Term>

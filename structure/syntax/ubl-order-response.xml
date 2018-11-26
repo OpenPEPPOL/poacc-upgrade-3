@@ -431,7 +431,7 @@
 				</Element>
 				<Element>
 					<Term>cac:Item</Term>
-					<Name>Item information </Name>
+					<Name>Item information</Name>
 					<Element cardinality="0..1">
 						<Term>cbc:Name</Term>
 						<Name>Item name</Name>

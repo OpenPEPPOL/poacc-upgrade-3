@@ -446,17 +446,7 @@
 			</Element>
 			<Element>
 				<Term>cac:Item</Term>
-				<Name>Shopping cart item information</Name>
-				<Element cardinality="0..1">
-					<Term>cbc:Description</Term>
-					<Name>Item description as text</Name>
-					<Description>A free text detailed description of an item.</Description>
-					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">tir77-039</Reference>
-
-					<Value type="EXAMPLE">Tissue paper, white, pack of 100</Value>
-				</Element>
-				<!-- </Element> -->
+				<Name>Item information</Name>
 				<Element>
 					<Term>cbc:Name</Term>
 					<Name>Item name</Name>
@@ -464,9 +454,18 @@
                         provided.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir77-021</Reference>
-
 					<Value type="EXAMPLE">100 tissue paper, white</Value>
 				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:Description</Term>
+					<Name>Item description as text</Name>
+					<Description>A free text detailed description of an item.</Description>
+					<DataType>Text</DataType>
+					<Reference type="BUSINESS_TERM">tir77-039</Reference>
+					<Value type="EXAMPLE">Tissue paper, white, pack of 100</Value>
+				</Element>
+				<!-- </Element> -->
+
 				<Element cardinality="0..1">
 					<Term>cac:SellersItemIdentification</Term>
 					<Name>Sellers item identification</Name>

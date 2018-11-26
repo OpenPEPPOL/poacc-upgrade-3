@@ -1278,7 +1278,15 @@
 			</Element>
 			<Element>
 				<Term>cac:Item</Term>
-				<Name>Item</Name>
+				<Name>Item information</Name>
+				<Element>
+					<Term>cbc:Name</Term>
+					<Name>Item name</Name>
+					<Description>A short name for an item.</Description>
+					<DataType>Text</DataType>
+					<Reference type="BUSINESS_TERM">tir19-078</Reference>
+					<Value type="EXAMPLE">Office chair</Value>
+				</Element>
 				<Element cardinality="0..n">
 					<Term>cbc:Description</Term>
 					<Name>Item description</Name>
@@ -1288,6 +1296,7 @@
 					<Reference type="BUSINESS_TERM">tir19-067</Reference>
 					<Value type="EXAMPLE">Office chair by John Doe.</Value>
 				</Element>
+
 				<Element cardinality="0..1">
 					<Term>cbc:PackQuantity</Term>
 					<Name>Packed quantity</Name>
@@ -1312,14 +1321,6 @@
                         orderable unit.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-036</Reference>
-				</Element>
-				<Element>
-					<Term>cbc:Name</Term>
-					<Name>Item name</Name>
-					<Description>A short name for an item.</Description>
-					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">tir19-078</Reference>
-					<Value type="EXAMPLE">Office chair</Value>
 				</Element>
 				<Element cardinality="0..n">
 					<Term>cbc:Keyword</Term>

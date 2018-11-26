@@ -1035,6 +1035,7 @@
 			</Element>
 			<Element>
 				<Term>cac:Item</Term>
+				<Name>Item information</Name>
 				<Element>
 					<Term>cbc:Name</Term>
 					<Name>Item name</Name>
