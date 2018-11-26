@@ -118,11 +118,11 @@
 		</Element>
 		<Element cardinality="0..n">
 			<Term>cac:AdditionalDocumentReference</Term>
-			<Name>Additional document reference</Name>
+			<Name>Additional document</Name>
 			<Element>
 				<Term>cbc:ID</Term>
 				<Name>Document identifier</Name>
-				<Description>Identifier of a document</Description>
+				<Description>An identifier for the referenced document.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">tir110-045</Reference>
 				<Value type="EXAMPLE">doc-34</Value>
@@ -164,14 +164,15 @@
 				<Element cardinality="0..1">
 					<Term>cac:ExternalReference</Term>
 					<Name>External reference</Name>
-					<Element cardinality="0..1">
+					<Description>Reference to external document </Description>
+					<Element>
 						<Term>cbc:URI</Term>
 						<Name>External document URI</Name>
 						<Description>The Uniform Resource Identifier (URI) that identifies where the
                             external document is located.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir110-047</Reference>
-						<Value type="EXAMPLE">http://www.example.com/index.html</Value>
+						<Value type="EXAMPLE">http://www.test.eu/image.jpg</Value>
 					</Element>
 				</Element>
 			</Element>

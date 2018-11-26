@@ -18,7 +18,7 @@
 		<Term>ubl:Order</Term>
 		<Element>
 			<Term>cbc:CustomizationID</Term>
-			<Name>Customization identifier</Name>
+			<Name>Specification identification</Name>
 			<Description>Identifies the specification of content and rules that apply to the
 				transaction.</Description>
 			<DataType>Identifier</DataType>
@@ -184,22 +184,22 @@
 				<Name>Document identifier</Name>
 				<Description>An identifier for the referenced document.</Description>
 				<Reference type="BUSINESS_TERM">tir01-154</Reference>
-				<Value type="EXAMPLE">testid123</Value>
+				<Value type="EXAMPLE">doc-34</Value>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cbc:DocumentType</Term>
 				<Name>Document description</Name>
-				<Description>A short description of the document type.</Description>
+				<Description>Textual description of the document.</Description>
 				<DataType>Text</DataType>
 				<Reference type="BUSINESS_TERM">tir01-016</Reference>
-				<Value type="EXAMPLE">test example</Value>
+				<Value type="EXAMPLE">Timesheet</Value>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:Attachment</Term>
 				<Name>Attachment(s)</Name>
 				<Element cardinality="0..1">
 					<Term>cbc:EmbeddedDocumentBinaryObject</Term>
-					<Name>Attached binary object</Name>
+					<Name>Attached document</Name>
 					<Description>The attached document embeded as binary object, coded as Base64. 
 					The binary object has two supplementary components: a Mime Code, which specifies the Mime type of the attachment and a Filename 
 					that is provided by (or on behalf of) the sender of the document</Description>
@@ -207,14 +207,14 @@
 					<Reference type="BUSINESS_TERM">tir01-017</Reference>
 					<Attribute>
 						<Term>mimeCode</Term>
-						<Name>Mime code</Name>
+						<Name>Attached document Mime code</Name>
 						<Description>The mime code of the attached document.</Description>
 						<Reference type="CODE_LIST">MimeCode</Reference>
 						<Value type="EXAMPLE">text/csv</Value>
 					</Attribute>
 					<Attribute>
 						<Term>filename</Term>
-						<Name>Filename</Name>
+						<Name>Attached document filename</Name>
 						<Description>The file name of the attached document</Description>
 						<Value type="EXAMPLE">Hours-spent.csv</Value>
 					</Attribute>
@@ -231,7 +231,7 @@
 							external document is located.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-018</Reference>
-						<Value type="EXAMPLE">http://www.test.no/image.jpg</Value>
+						<Value type="EXAMPLE">http://www.test.eu/image.jpg</Value>
 					</Element>
 				</Element>
 			</Element>
