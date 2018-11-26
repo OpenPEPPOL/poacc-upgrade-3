@@ -14,7 +14,7 @@
 
         <Element>
             <Term>cbc:CustomizationID</Term>
-            <Name>Customization identifier</Name>
+            <Name>Specification identification</Name>
             <Description>Identifies the specification of content and rules that apply to the
                 transaction.</Description>
             <DataType>Identifier</DataType>
