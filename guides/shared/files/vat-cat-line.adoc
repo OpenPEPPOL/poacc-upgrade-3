@@ -3,7 +3,7 @@
 
 VAT information on line level is provided in the class `cac:ClassifiedTaxCategory`.
 
-Each line shall have the item VAT information including category code and rate. A VAT rate of zero is applied for items "Not subject to VAT" (Category E, Z, G, O, K).
+Each line shall have the item VAT information including category code and percentage rate except when the invoice is "Not subject to VAT" (VAT category code on document level =O) then percentage shall not be given on line level.
 
 .UBL example of line VAT category
 [source, xml, indent=0]
