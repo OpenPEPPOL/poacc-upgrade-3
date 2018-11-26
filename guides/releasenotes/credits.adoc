@@ -22,5 +22,6 @@ The following individuals have contributed to this work by participation in team
 * Jerry Dimitriou, Unipi
 * Serge Libert, BOSA
 * Andriana Prentza, Unipi
+* Manuel Gozzi, Emilia Romagna
 
 
