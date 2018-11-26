@@ -13,7 +13,7 @@ NOTE: This code list is still not available. Use PEPPOL Policy for identifiers u
 [source,xml, indent="0"]
 ----
 
-	<cbc:EndpointID schemeID="DK:CVR">DK87654321</cbc:EndpointID> <1>
+	<cbc:EndpointID schemeID="0184">DK87654321</cbc:EndpointID> <1>
 
 ----
 <1> schemeID attribute is mandatory

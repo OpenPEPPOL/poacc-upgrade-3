@@ -16,6 +16,12 @@ v3.0.0
 
 {description}
 
+
+= Link to main site of documentation
+
+{main-site}
+
+
 :leveloffset: +1
 
 include::introduction/index.adoc[]
