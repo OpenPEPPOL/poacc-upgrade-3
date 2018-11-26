@@ -27,7 +27,7 @@
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
-			<Name>Profile identifier</Name>
+			<Name>Business process type identifier</Name>
 			<Description>Identifies the BII profile or business process context in which the
 				transaction appears. Values to be used are either urn:fdc:peppol.eu:poacc:bis03a:order_only:bis3-1.0 
 				or urn:fdc:peppol.eu:poacc:bis28a:ordering_only:bis3-1.0</Description>

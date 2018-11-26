@@ -22,7 +22,7 @@
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
-			<Name>Profile identifier</Name>
+			<Name>Business process type identifier</Name>
 			<Description>Identifies the BII profile or business process context in which the
                 transaction appears.</Description>
 			<DataType>Identifier</DataType>

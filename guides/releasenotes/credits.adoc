@@ -4,8 +4,8 @@ The following individuals have contributed to this work by participation in team
 
 * Georg Birgisson, DIGG/Midran Ltd.
 * Siw Meckelborg, DIFI/Edisys
-* Charlotte Dahl Skovhus, MySupply
-* Iacopop Arduini, Emilia Romagna
+* Charlotte Dahl, Skovhus, MySupply
+* Arduini Iacopo, Emilia Romagna
 * Thomas Petterson, SFTI/Psk consult
 * Dirk Willekens, BOSA
 * Arne Johan Larsen, Equinor
