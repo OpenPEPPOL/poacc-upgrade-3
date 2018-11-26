@@ -22,7 +22,7 @@ The order will be ONLY on Item PC01.
 .Example of configured products
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-18-2.xml[tags=config]
+include::{snippet-dir}/snippet-18-2.xml[tags=config]
 ----
 
 NOTE: The sum of the price multiplied by quantity of the items contained in the configured item does not have to equal the price of the configured product. The price of the contained items may show the pr.

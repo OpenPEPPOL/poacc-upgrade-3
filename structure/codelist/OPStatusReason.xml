@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
-    
-    <Title>OpenPEPPOL Status Clarification Reason</Title>
+
+    <Title>Status Clarification Reason (OpenPEPPOL)</Title>
     <Identifier>OPStatusReason</Identifier>
     <Version>1.0</Version>
     <Agency>OpenPEPPOL</Agency>
-    
-    
+
+
     <Code>
         <Id>NON</Id>
         <Name>	No Issue</Name>
@@ -41,7 +41,7 @@
         <Id>PRI</Id>
         <Name>Prices incorrect</Name>
         <Description>Prices not according to previous expectation.</Description>
-    </Code> 
+    </Code>
     <Code>
         <Id>QTY</Id>
         <Name>Quantity incorrect</Name>
@@ -51,7 +51,7 @@
         <Id>ITM</Id>
         <Name>Items incorrect</Name>
         <Description>Items not according to previous expectation.</Description>
-    </Code> 
+    </Code>
     <Code>
         <Id>PAY</Id>
         <Name>Payment terms incorrect</Name>
@@ -61,19 +61,17 @@
         <Id>UNR</Id>
         <Name>Not recognized</Name>
         <Description>Commercial transaction not recognized.</Description>
-    </Code> 
+    </Code>
     <Code>
         <Id>FIN</Id>
         <Name>Finance incorrect</Name>
         <Description>Finance terms not according to previous expectation.</Description>
     </Code>
-    
+
     <Code>
         <Id>OTH</Id>
         <Name>Other</Name>
         <Description>Reason for status is not defined by code.</Description>
     </Code>
-    
+
 </CodeList>
-
-

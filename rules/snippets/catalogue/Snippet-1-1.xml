@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+	xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 	<!-- tag::customizationid[] -->
-	<cbc:CustomizationID>
-		urn:fdc:peppol.eu:poacc:trns19a:catalogue:bis3-1.0
-	</cbc:CustomizationID>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns19a:catalogue:bis3-1.0</cbc:CustomizationID>
 	<!-- end::customizationid[] -->
 	<!-- tag::profile[] -->
 	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis01a:catalogue_only:bis3-1.0</cbc:ProfileID>
@@ -29,7 +29,7 @@
 	<!-- end::ref-contract[] -->
 	<!-- tag::seller[] -->
 	<cac:ProviderParty>
-		<cbc:EndpointID schemeID="NO:ORGNR">965678996</cbc:EndpointID>
+		<cbc:EndpointID schemeID="0192">965678996</cbc:EndpointID>
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="0088">5790000435951</cbc:ID>
 		</cac:PartyIdentification>
@@ -37,7 +37,7 @@
 	<!-- end::seller[] -->
 	<!-- tag::buyer[] -->
 	<cac:ReceiverParty>
-		<cbc:EndpointID schemeID="NO:ORGNR">984661185</cbc:EndpointID>
+		<cbc:EndpointID schemeID="0192">984661185</cbc:EndpointID>
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="0088">5790000435944</cbc:ID>
 		</cac:PartyIdentification>
@@ -101,7 +101,8 @@
 			</cac:Price>
 		</cac:RequiredItemLocationQuantity>
 		<cac:Item>
-			<cbc:Description> Ballpoint pen, comes in different colours and tip sizes</cbc:Description>
+			<cbc:Description> Ballpoint pen, comes in different colours and tip
+				sizes</cbc:Description>
 			<cbc:PackQuantity unitCode="XCT">10</cbc:PackQuantity>
 			<cbc:Name> Ballpoint pen. Blue colour 0.7 mm</cbc:Name>
 			<!-- tag::product-id[] -->
@@ -118,16 +119,20 @@
 
 			<cac:ItemSpecificationDocumentReference>
 				<cbc:ID>PC01image.jpg</cbc:ID>
-				<cbc:DocumentTypeCode>3</cbc:DocumentTypeCode><!--1-->
+				<cbc:DocumentTypeCode>3</cbc:DocumentTypeCode>
+				<!--1-->
 				<cac:Attachment>
-					<cbc:EmbeddedDocumentBinaryObject mimeCode="image/jpeg" filename="mainimage.jpg">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
+					<cbc:EmbeddedDocumentBinaryObject mimeCode="image/jpeg" filename="mainimage.jpg"
+						>UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
 				</cac:Attachment>
 			</cac:ItemSpecificationDocumentReference>
 			<!-- tag::attachment-pdf[] -->
 			<cac:ItemSpecificationDocumentReference>
 				<cbc:ID>PC01specs.pdf</cbc:ID>
 				<cac:Attachment>
-					<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="specification.pdf">UGVyc29uYWwgY29tcHV0ZXIgcHJvZHVjdCBpbmZvcm1hdGlvbg==</cbc:EmbeddedDocumentBinaryObject>
+					<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf"
+						filename="specification.pdf"
+						>UGVyc29uYWwgY29tcHV0ZXIgcHJvZHVjdCBpbmZvcm1hdGlvbg==</cbc:EmbeddedDocumentBinaryObject>
 				</cac:Attachment>
 			</cac:ItemSpecificationDocumentReference>
 			<!-- end::attachment-pdf[] -->
@@ -138,7 +143,8 @@
 			<!-- end::coo[] -->
 			<!-- tag::classification[] -->
 			<cac:CommodityClassification>
-				<cbc:ItemClassificationCode listID="MP" listVersionID="20.0601">14111511</cbc:ItemClassificationCode>
+				<cbc:ItemClassificationCode listID="MP" listVersionID="20.0601"
+					>14111511</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
 			<!-- end::classification[] -->
 			<!-- tag::hazardous[] -->
@@ -309,7 +315,8 @@
 		</cac:RequiredItemLocationQuantity>
 		<!-- tag::itemnamedesc[] -->
 		<cac:Item>
-			<cbc:Description> Ballpoint pen, comes in different colours and tip sizes</cbc:Description>
+			<cbc:Description> Ballpoint pen, comes in different colours and tip
+				sizes</cbc:Description>
 			<cbc:PackQuantity unitCode="XCT">10</cbc:PackQuantity>
 			<cbc:Name> Ballpoint pen. Blue colour 0.7 mm</cbc:Name>
 			<cac:SellersItemIdentification>
@@ -369,7 +376,8 @@
 		</cac:RequiredItemLocationQuantity>
 		<!-- end::prices[] -->
 		<cac:Item>
-			<cbc:Description> Ballpoint pen, comes in different colours and tip sizes</cbc:Description>
+			<cbc:Description> Ballpoint pen, comes in different colours and tip
+				sizes</cbc:Description>
 			<cbc:PackQuantity unitCode="XCT">10</cbc:PackQuantity>
 			<cbc:Name> Ballpoint pen. Blue colour 0.7 mm</cbc:Name>
 			<!-- tag::keyword[] -->

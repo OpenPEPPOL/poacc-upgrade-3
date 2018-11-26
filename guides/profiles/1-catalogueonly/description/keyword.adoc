@@ -12,11 +12,11 @@ Example of a separator can be the %-sign, as this is not used anywhere else.
 .Example of several keywords by using several <KeyWord>-tags:
 [source, xml, indent=0]
 ----
-include::../snippets/Snippet-1-1.xml[tags=keywords]
+include::{snippet-dir}/Snippet-1-1.xml[tags=keywords]
 ----
 
 .Example of several keywords using “%” as separator:
 [source, xml, indent=0]
 ----
-include::../snippets/Snippet-1-1.xml[tags=keyword]
+include::{snippet-dir}/Snippet-1-1.xml[tags=keyword]
 ----

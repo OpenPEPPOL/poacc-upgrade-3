@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
-    <Title>ISO 3166-1:Alpha2 Country codes</Title>
+    <Title>Country codes (ISO 3166-1:Alpha2)</Title>
     <Identifier>ISO3166</Identifier>
     <Version>2013</Version>
     <Agency>ISO</Agency>

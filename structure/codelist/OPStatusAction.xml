@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
-    
-    <Title>OpenPEPPOL Status Clarification Action</Title>
+
+    <Title>Status Clarification Action (OpenPEPPOL)</Title>
     <Identifier>OPStatusAction</Identifier>
     <Version>1.0</Version>
     <Agency>OpenPEPPOL</Agency>
-  
-    
+
+
     <Code>
         <Id>NOA</Id>
         <Name>No action required</Name>
@@ -42,5 +42,5 @@
         <Name>Other</Name>
         <Description>Requested action is not defined by code</Description>
     </Code>
-    
+
 </CodeList>

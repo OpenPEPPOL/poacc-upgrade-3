@@ -8,25 +8,22 @@ The reference to Order Line-ID is required in the UBL syntax.
 To cater for scenarios where no order line reference exist a dummy value must be applied.
 The dummy value must consist of the characters **NA**.
 
-Example header level:
-
+.Example header level
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-30-2.xml[tags=ref-order]
+include::{snippet-dir}/snippet-30-2.xml[tags=ref-order]
 ----
 
-Example Line level:
-
+.Example 1 of Line level
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-30-2.xml[tags=ref-orderline]
+include::{snippet-dir}/snippet-30-2.xml[tags=ref-orderline]
 ----
 
-Or
-
+.Example 2 of Line level
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-30-2.xml[tags=ref-orderlinena]
+include::{snippet-dir}/snippet-30-2.xml[tags=ref-orderlinena]
 ----
 
 It is also possible to refer to more than one order in one single despatch advice.

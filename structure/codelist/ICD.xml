@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Codelist xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
-    <Title>ISO 6523 ICD list</Title>
+    <Title>ICD list (ISO 6523) </Title>
     <Identifier>ICD</Identifier>
     <Agency>The International Organization for Standardization (ISO)</Agency>
     <Code>
@@ -1572,8 +1572,8 @@
     <Code>
         <Id>0191</Id>
         <Name>Company Code (Estonia)</Name>
-        <Description>Company code is major and only unique identifier of all institutions and organisations in Estonia. This code is widely used for various purposes, including electronic commerce. Usage of company code is required in communication between institutions and also in communication between private and public organisations. 
-            For use in EDI or other B2B (B2C) exchanges to identify private and public organisations. 
+        <Description>Company code is major and only unique identifier of all institutions and organisations in Estonia. This code is widely used for various purposes, including electronic commerce. Usage of company code is required in communication between institutions and also in communication between private and public organisations.
+            For use in EDI or other B2B (B2C) exchanges to identify private and public organisations.
             Issuing agency: Centre of Registers and Information Systems of the Ministry of Justice, Lõkke 4, 19081 Tallinn, Estonia
             E-mail: rik@just.ee
         </Description>

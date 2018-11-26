@@ -12,5 +12,5 @@ Example:
 
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-30-3.xml[tags=transporthandling]
+include::{snippet-dir}/snippet-30-3.xml[tags=transporthandling]
 ----

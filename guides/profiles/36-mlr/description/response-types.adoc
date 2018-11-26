@@ -13,18 +13,18 @@ In case the document is rejected, the `cbc:Description` element MUST be set.
 .Example for acceptance:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-2.xml[tags=accept]
+include::{snippet-dir}/snippet-2.xml[tags=accept]
 ----
 
 
 .Example for acknowledging:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-1.xml[tags=ack]
+include::{snippet-dir}/snippet-1.xml[tags=ack]
 ----
 
 .Example for rejection:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-3.xml[tags=reject]
+include::{snippet-dir}/snippet-3.xml[tags=reject]
 ----

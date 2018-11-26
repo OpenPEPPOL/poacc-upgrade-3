@@ -6,9 +6,8 @@ This is done by informing the dangerous regulation code for example ADR (Road tr
 When the UNDG code has been declared the Hazard class is declared.
 The Hazard class corresponds to the hazardous class of the item for example class 2.3 which indicates Poisonous Gas.
 
-See beneath for an example of declaring hazardous items.
-
+.UBL example of declaring hazardous items.
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-30-1.xml[tags=hazardous]
+include::{snippet-dir}/snippet-30-1.xml[tags=hazardous]
 ----

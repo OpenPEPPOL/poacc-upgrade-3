@@ -7,5 +7,5 @@ Replaced item is used to identify an existing item being replaced by an item in 
 .Example:
 [source, xml, indent=0]
 ----
-include::../snippets/Snippet-1-1.xml[tags=replaceitem]
+include::{snippet-dir}/Snippet-1-1.xml[tags=replaceitem]
 ----

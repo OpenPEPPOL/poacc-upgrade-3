@@ -1116,6 +1116,7 @@
 				<Element cardinality="0..n">
 					<Term>cac:AdditionalItemProperty</Term>
 					<Name>Additional item property information</Name>
+					<Description>A group of business terms providing information about properties of the goods and services invoiced.</Description>
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Item property name</Name>
@@ -1126,6 +1127,18 @@
 						<Reference type="BUSINESS_TERM">tir16-p039</Reference>
 						<Value type="EXAMPLE">NPLId</Value>
 					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:NameCode</Term>
+						<Name>Item property code</Name>
+						<Description>Code for the item property according to a property code system.</Description>
+						<DataType>Code</DataType>
+						<Reference type="BUSINESS_TERM">tir16-p042</Reference>
+						<Attribute>
+							<Term>listID</Term>
+							<Name>Name code list id.</Name>
+							<Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
+						</Attribute>
+					</Element>
 					<Element>
 						<Term>cbc:Value</Term>
 						<Name>Item property value</Name>
@@ -1134,6 +1147,31 @@
 						<Reference type="BUSINESS_TERM">tir16-p040</Reference>
 						<Value type="EXAMPLE">20300709400050</Value>
 					</Element>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:ValueQuantity</Term>
+					<Name>Item property unit of measure</Name>
+					<Description>The unit of measure in which the property value is stated, if
+						relevant. May not be relevant when properties are
+						descriptive.</Description>
+					<DataType>Quantity</DataType>
+					<Reference type="BUSINESS_TERM">tir16-p043</Reference>
+					<Attribute>
+						<Term>unitCode</Term>
+						<Name>Value quantity unit of measure</Name>
+						<Description>The unit of measure that applies to the value quantity.</Description>
+						<DataType>Code</DataType>
+						<Reference type="CODE_LIST">UNECERec20</Reference>
+						<Value type="EXAMPLE">XCS</Value>
+					</Attribute>
+					<Value type="EXAMPLE">5</Value>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:ValueQualifier</Term>
+					<Name>Property classification</Name>
+					<DataType>Text</DataType>
+					<Description>Standardized and predefined classification of items properties.</Description>
+					<Reference type="BUSINESS_TERM">tir16-p044</Reference>
 				</Element>
 				<Element cardinality="0..n">
 					<Term>cac:ItemInstance</Term>

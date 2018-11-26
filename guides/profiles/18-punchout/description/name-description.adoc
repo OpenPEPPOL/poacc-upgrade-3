@@ -11,5 +11,5 @@ A description allows for longer text that describes the item in detail.
 .Example of item name and description
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-18-1.xml[tags=name]
+include::{snippet-dir}/snippet-18-1.xml[tags=name]
 ----

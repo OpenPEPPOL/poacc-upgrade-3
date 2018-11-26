@@ -2,16 +2,15 @@
 <ApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
     xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-    <cbc:CustomizationID
-        >urn:www.cenbii.eu:transaction:biitrns071:ver2.0:extended:urn:www.peppol.eu:bis:peppol36a:ver2.0</cbc:CustomizationID>
-    <cbc:ProfileID>urn:www.cenbii.eu:profile:bii36a:ver2.0</cbc:ProfileID>
+    <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns71a:mlr:bis3-1.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis36a:mlr:bis3-1.0</cbc:ProfileID>
     <cbc:ID>TheMLR-ID123</cbc:ID>
     <cbc:IssueDate>2016-08-15</cbc:IssueDate>
     <cac:SenderParty>
-        <cbc:EndpointID schemeID="NO:ORGNR">981915550</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">981915550</cbc:EndpointID>
     </cac:SenderParty>
     <cac:ReceiverParty>
-        <cbc:EndpointID schemeID="GLN">7315458756324</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0088">7315458756324</cbc:EndpointID>
     </cac:ReceiverParty>
   
     <cac:DocumentResponse>

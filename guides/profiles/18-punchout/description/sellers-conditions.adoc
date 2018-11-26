@@ -13,7 +13,7 @@ The seller may also set validity time for individual lines.
 .Example of validity end date and time
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-18-1.xml[tags=validity]
+include::{snippet-dir}/snippet-18-1.xml[tags=validity]
 ----
 
 The seller may set the condition that the offer made in the shopping cart is only valid if all items in the cart are ordered.
@@ -25,7 +25,7 @@ The default value of the indicator is "false" meaning that if the element is not
 .Example of complete cart indicator
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-18-1.xml[tags=actioncode]
+include::{snippet-dir}/snippet-18-1.xml[tags=actioncode]
 ----
 
 The seller may reference a contract that governs the offer made in the shopping cart.
@@ -34,7 +34,7 @@ The terms and conditions of a referenced contract supersedes the information giv
 .Example of a referenced contract
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-18-1.xml[tags=ref-contract]
+include::{snippet-dir}/snippet-18-1.xml[tags=ref-contract]
 ----
 
 Further information on contracts and reference to contract on line can be found in <<contract-reference>>

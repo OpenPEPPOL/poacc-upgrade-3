@@ -6,5 +6,5 @@ Information about the items environmental, social, ethical and quality type of l
 .Example:
 [source, xml, indent=0]
 ----
-include::../snippets/Snippet-1-1.xml[tags=label]
+include::{snippet-dir}/Snippet-1-1.xml[tags=label]
 ----

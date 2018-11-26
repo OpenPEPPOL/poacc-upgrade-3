@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
-    <Title>Mime code</Title>
+    <Title>Mime code (IANA Subset)</Title>
     <Identifier>MimeCode</Identifier>
     <Version>1.0</Version>
     <Agency>IANA</Agency>
@@ -44,15 +44,14 @@
         <Id>drawing/dwg</Id>
         <Name>drawing/dwg</Name>
     </Code>
-    
+
     <Code>
         <Id>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</Id>
         <Name>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</Name>
     </Code>
-    
+
     <Code>
         <Id>application/vnd.oasis.opendocument.spreadsheet</Id>
         <Name>application/vnd.oasis.opendocument.spreadsheet</Name>
     </Code>
 </CodeList>
-

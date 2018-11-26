@@ -8,7 +8,7 @@ The availability of all items in the cart ends when the validity period of the c
 .Example of availability date for an item
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-18-1.xml[tags=availability]
+include::{snippet-dir}/snippet-18-1.xml[tags=availability]
 ----
 
 A shopping cart line may state the lead time for the item. This is the maximum number of working days that may pass from the day the seller receives an order until the day the item is shipped from the seller. The seller may ship earlier.
@@ -18,7 +18,7 @@ A lead day of one (1) means that an item will be shipped no later than the end o
 .Example of delivery lead time
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-18-1.xml[tags=leadtime]
+include::{snippet-dir}/snippet-18-1.xml[tags=leadtime]
 ----
 
 When an availability start date is earlier than the end of the lead time the seller may ship at or before the end of the lead time.

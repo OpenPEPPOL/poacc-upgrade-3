@@ -18,7 +18,7 @@ Outstanding quantity: 4
 
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-30-1.xml[tags=quantity1]
+include::{snippet-dir}/snippet-30-1.xml[tags=quantity1]
 ----
 
 
@@ -35,7 +35,7 @@ Outstanding quantity: 0
 
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-30-1.xml[tags=quantity2]
+include::{snippet-dir}/snippet-30-1.xml[tags=quantity2]
 ----
 
 
@@ -52,7 +52,7 @@ Outstanding quantity: 3
 
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-30-1.xml[tags=quantity3]
+include::{snippet-dir}/snippet-30-1.xml[tags=quantity3]
 ----
 
 Ref.

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
-    <Title>Image code</Title>
+    <Title>Image code (openPEPPOL)</Title>
     <Identifier>Image</Identifier>
     <Version>1.0</Version>
     <Agency>OpenPEPPOL</Agency>
@@ -14,6 +14,5 @@
         <Name>Main image for an item</Name>
     </Code>
 
-   
-</CodeList>
 
+</CodeList>

@@ -17,6 +17,8 @@ include::productid.adoc[]
 
 include::itemlabels.adoc[]
 
+include::classification.adoc[]
+
 include::quantity.adoc[]
 
 include::prices.adoc[]

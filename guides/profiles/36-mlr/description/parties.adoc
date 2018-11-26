@@ -8,7 +8,7 @@ receiver of the original envelope.
 .Example:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-1.xml[tags=sender]
+include::{snippet-dir}/snippet-1.xml[tags=sender]
 ----
 
 
@@ -19,5 +19,5 @@ sender of the original envelope.
 .Example:
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-1.xml[tags=receiver]
+include::{snippet-dir}/snippet-1.xml[tags=receiver]
 ----

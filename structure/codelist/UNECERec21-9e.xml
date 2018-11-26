@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Codelist xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
-    
-    <Title>UN/ECE Recommandation 21</Title>
+
+    <Title>Recommandation 21 (UN/ECE)</Title>
     <Identifier>UNECERec21</Identifier>
     <Version>Revision 9e-2012</Version>
     <Agency>UN/ECE</Agency>
-    
+
     <Code>
         <Id>1A</Id>
         <Name>Drum, steel</Name>

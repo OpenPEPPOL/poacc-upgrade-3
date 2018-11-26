@@ -16,7 +16,7 @@ Valid codes can be found in {mime-codes}.
 .Example of attachment as an embedded, binary object in an PEPPOL BIS Shopping Cart.
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-18-1.xml[tags=attachment-pdf]
+include::{snippet-dir}/snippet-18-1.xml[tags=attachment-pdf]
 ----
 
 
@@ -25,6 +25,6 @@ When sending an object that is the main image for the item the following example
 .Example of attaching the main image
 [source, xml, indent=0]
 ----
-include::../snippets/snippet-18-1.xml[tags=main-image]
+include::{snippet-dir}/snippet-18-1.xml[tags=main-image]
 ----
 <1> `cbc:DocumentTypeCode` MAINIMAGE identifies this as the main image for the item.

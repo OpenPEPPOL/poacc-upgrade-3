@@ -40,8 +40,9 @@ The originator information is optional in the PEPPOL BIS Order message.
 include::{snippet-dir}/snippet-01.xml[tags=originator]
 ----
 
+
 [[accountingcustomerparty-invoicee]]
-=== AccountingCustomerParty (Invoicee)
+== AccountingCustomerParty (Invoicee)
 
 The invoicee is the legal person or organization acting on behalf of the customer and who receives the invoice for the order.
 The invoicee information is optional in the PEPPOL BIS Order message.
