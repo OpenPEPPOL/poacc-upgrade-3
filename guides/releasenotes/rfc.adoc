@@ -2,22 +2,22 @@
 
 The following changes were processed and agreed by the team.PB30-38	Validation Artefacts improvements candidates:
 
-* https://openpeppol.atlassian.net/browse/PB30-1[PB30-1] — Batch/LOT and serial numbers in order 3a and 28a
-* https://openpeppol.atlassian.net/browse/PB30-4[PB30-4] — ID in AdditionalDocumentReference
-* https://openpeppol.atlassian.net/browse/PB30-5[PB30-5] — Change to DespatchAdvice BIS 30A, SFTI 20170622.xlsx
-* https://openpeppol.atlassian.net/browse/PB30-7[PB30-7] — Questions about PEPPOL BIS in post-award
-* https://openpeppol.atlassian.net/browse/PB30-11[PB30-11] — Request the OpenPEPPOL Post-Award CC to include the BuyersItemIdentification element in the BIS 28A Ordering and 30A Despatch Advice messages.
-* https://openpeppol.atlassian.net/browse/PB30-14[PB30-14] — Despatch Advice (BIS 30A), add postal Address informations and Person information
-* https://openpeppol.atlassian.net/browse/PB30-16[PB30-16] — Despatch Advice (BIS 30A), extension of cardinality for order reference ID
-* https://openpeppol.atlassian.net/browse/PB30-23[PB30-23] — General - enable price types for price is all transactions, other than Invoice
-* https://openpeppol.atlassian.net/browse/PB30-24[PB30-24] — General - harmonize Contracted Item Indicator and reference to contract
-* https://openpeppol.atlassian.net/browse/PB30-26[PB30-26] — Order Response - Use code list 1229 instead of 1225 as status code on line level
-* https://openpeppol.atlassian.net/browse/PB30-30[PB30-30] — Order Response - Introduce the use of line status code to indicate already delivered items
-* https://openpeppol.atlassian.net/browse/PB30-32[PB30-32] — Order Response - Introduce a document status code to confirm order reception
-* https://openpeppol.atlassian.net/browse/PB30-33[PB30-33] — Punch Out - Add delivery address and validity period on line level
-* https://openpeppol.atlassian.net/browse/PB30-34[PB30-34] — Punch Out - Introduce support for reserving goods
-* https://openpeppol.atlassian.net/browse/PB30-35[PB30-35] — Catalogue - Enable the use of standard item numbers to reference between related items
-* https://openpeppol.atlassian.net/browse/PB30-37[PB30-37] — Question for documentation on PEPPOL_BIS-18A.pdf, “Punch out”.
+* Batch/LOT and serial numbers in order 3a and 28a [PB30-1].
+* ID in AdditionalDocumentReference [PB30-4].
+* Change to DespatchAdvice BIS 30A, SFTI 20170622.xlsx [PB30-5].
+* Questions about PEPPOL BIS in post-award [PB30-7].
+* Request the OpenPEPPOL Post-Award CC to include the BuyersItemIdentification element in the BIS 28A Ordering and 30A Despatch Advice messages. [PB30-11].
+* Despatch Advice (BIS 30A), add postal Address informations and Person information [PB30-14].
+* Despatch Advice (BIS 30A), extension of cardinality for order reference ID [PB30-16].
+* General - enable price types for price is all transactions, other than Invoice [PB30-23].
+* General - harmonize Contracted Item Indicator and reference to contract [PB30-24].
+* Order Response - Use code list 1229 instead of 1225 as status code on line level [PB30-26].
+* Order Response - Introduce the use of line status code to indicate already delivered items [PB30-30].
+* Order Response - Introduce a document status code to confirm order reception [PB30-32].
+* Punch Out - Add delivery address and validity period on line level [PB30-33].
+* Punch Out - Introduce support for reserving goods [PB30-34].
+* Catalogue - Enable the use of standard item numbers to reference between related items [PB30-35].
+* Question for documentation on PEPPOL_BIS-18A.pdf, “Punch out” [PB30-37].
 
 
 
