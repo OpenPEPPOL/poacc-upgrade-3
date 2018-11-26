@@ -1,6 +1,6 @@
 = Scope
 
-The BIS specifications addressed by this project are the following.
+The current BIS specifications addressed by this project are the following.
 
 * PEPPOL BIS 1A Catalogue Only
 * PEPPOL BIS 3A Order Only

@@ -43,7 +43,6 @@
 				that are part of the same process.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir01-003</Reference>
-
 			<Value type="EXAMPLE">0-123</Value>
 		</Element>
 		<Element cardinality="0..1">
@@ -61,7 +60,6 @@
 			<Description>The date on which the transaction instance was issued.</Description>
 			<DataType>Date</DataType>
 			<Reference type="BUSINESS_TERM">tir01-004</Reference>
-
 			<Value type="EXAMPLE">2018-06-01</Value>
 		</Element>
 		<Element cardinality="0..1">
