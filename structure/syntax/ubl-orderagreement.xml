@@ -1470,7 +1470,7 @@
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:BuyersItemIdentification</Term>
-						<Name>Buyer item identification</Name>
+						<Name>Buyers item identification</Name>
 						<Element>
 							<Term>cbc:ID</Term>
 							<Name>Buyers item identifier</Name>
@@ -1485,7 +1485,7 @@
 						<Name>Sellers item identification</Name>
 						<Element>
 							<Term>cbc:ID</Term>
-							<Name>Sellers item identifier</Name>
+							<Name>The Sellers item identifier</Name>
 							<Description>An identifier, assigned by the seller, for the
                                 item. Associates the item with its identification according to the
                                 seller's system. </Description>

@@ -444,10 +444,11 @@
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:BuyersItemIdentification</Term>
+						<Name>Buyer item identification</Name>
 						<Element>
 							<Term>cbc:ID</Term>
 							<Name>Buyers item identifier</Name>
-							<Description>The BuyerCustomerParty identifier for the item.</Description>
+							<Description>The Buyers identifier for the item.</Description>
 							<Reference type="BUSINESS_TERM">tir76-p006</Reference>
 						</Element>
 					</Element>
@@ -456,7 +457,7 @@
 						<Name>Sellers item identification</Name>
 						<Element>
 							<Term>cbc:ID</Term>
-							<Name>Sellers item identifier</Name>
+							<Name>The Sellers item identifier</Name>
 							<Description>An identifier, assigned by the seller, for the
                                 item. Associates the item with its identification according to the
                                 seller's system. </Description>
@@ -467,7 +468,7 @@
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:StandardItemIdentification</Term>
-						<Name>Standard item identification</Name>
+						<Name>Item standard identifier</Name>
 						<Element>
 							<Term>cbc:ID</Term>
 							<Name>Item standard identifier</Name>

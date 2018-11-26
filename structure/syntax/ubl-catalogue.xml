@@ -1355,7 +1355,7 @@
 					<Name>Seller item identification</Name>
 					<Element>
 						<Term>cbc:ID</Term>
-						<Name>Sellers item identifier</Name>
+						<Name>The Sellers item identifier</Name>
 						<Description>The sellers identifier for the item.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-091</Reference>
@@ -1379,7 +1379,7 @@
 					<Name>Standard item identification</Name>
 					<Element>
 						<Term>cbc:ID</Term>
-						<Name>Items standard identifier</Name>
+						<Name>Item standard identifier</Name>
 						<Description>A item identifier based on a registered schema.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-092</Reference>

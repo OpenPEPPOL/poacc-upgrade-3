@@ -1045,10 +1045,11 @@
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:BuyersItemIdentification</Term>
+					<Name>Buyer item identification</Name>
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Buyers item identifier</Name>
-						<Description>The BuyerCustomerParty identifier for the item.</Description>
+						<Description>The Buyers identifier for the item.</Description>
 						<Reference type="BUSINESS_TERM">tir16-p041</Reference>
 					</Element>
 				</Element>
@@ -1056,14 +1057,14 @@
 					<Term>cac:SellersItemIdentification</Term>
 					<Element>
 						<Term>cbc:ID</Term>
-						<Name>Item sellers identifier</Name>
+						<Name>The Sellers item identifier</Name>
 						<Description>The sellers identifier for the item.</Description>
 						<Reference type="BUSINESS_TERM">tir16-053</Reference>
 						<Reference type="RULE">PEPPOL-T16-R003</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:ExtendedID</Term>
-						<Name>Item sellers extended identifier</Name>
+						<Name>The sellers extended item identifier</Name>
 						<Description>An extended identifier for the item that identifies the item
                             with specific properties, e.g., Item 123 = Chair / Item 123 Ext 45 =
                             brown chair.</Description>

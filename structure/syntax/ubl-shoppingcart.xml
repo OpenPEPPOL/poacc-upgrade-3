@@ -468,7 +468,7 @@
 
 				<Element cardinality="0..1">
 					<Term>cac:SellersItemIdentification</Term>
-					<Name>Sellers item identification</Name>
+					<Name>The Sellers item identifier</Name>
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Item sellers identifier</Name>
@@ -495,7 +495,7 @@
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:StandardItemIdentification</Term>
-					<Name>Standard item identification</Name>
+					<Name>Item standard identifier</Name>
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Item standard identifier</Name>
