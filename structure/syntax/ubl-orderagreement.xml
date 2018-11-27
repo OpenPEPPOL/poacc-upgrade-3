@@ -151,13 +151,13 @@
 						<Name>Attached document Mime code</Name>
 						<Description>The mime code of the attached document.</Description>
 						<Reference type="CODE_LIST">MimeCode</Reference>
-						<Value type="EXAMPLE">text/csv</Value>
+						<Value type="EXAMPLE">application/pdf</Value>
 					</Attribute>
 					<Attribute>
 						<Term>filename</Term>
 						<Name>Attached document Filename</Name>
 						<Description>The file name of the attached document</Description>
-						<Value type="EXAMPLE">Hours-spent.csv</Value>
+						<Value type="EXAMPLE">Hours-spent.pdf</Value>
 					</Attribute>
 					<Value type="EXAMPLE">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</Value>
 				</Element>
@@ -1450,31 +1450,37 @@
 				<Element>
 					<Term>cac:Item</Term>
 					<Name>Item information</Name>
+					
+					<Element cardinality="0..1">
+						<Term>cbc:Description</Term>
+						<Name>Item description</Name>
+						<Description>Free-form field that can be used to give a text description of
+							the item. A detailed description of the item.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir110-095</Reference>
+						<Value type="EXAMPLE">Window 23", double glass</Value>
+					</Element>
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Item name</Name>
-						<Description>A name for an item. One of, Item name, Item identifier or Item
-                            description shall be provided.</Description>
+						<Description>A name for an item. A short name given to an
+							item, such as a name from a Catalogue, as distinct from a
+							description.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir110-032</Reference>
 						<Reference type="RULE">PEPPOL-T110-R003</Reference>
 						<Value type="EXAMPLE">Window</Value>
 					</Element>
-					<Element cardinality="0..1">
-						<Term>cbc:Description</Term>
-						<Name>Item description as text</Name>
-						<Description>A free text detailed description of an item.</Description>
-						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir110-095</Reference>
-						<Value type="EXAMPLE">Window 23", double glass</Value>
-					</Element>
+					
 					<Element cardinality="0..1">
 						<Term>cac:BuyersItemIdentification</Term>
 						<Name>Buyers item identification</Name>
 						<Element>
 							<Term>cbc:ID</Term>
 							<Name>Buyers item identifier</Name>
-							<Description>The buyers identifier for the item.</Description>
+							<Description>An identifier, assigned by the buyer, for the
+								item. Associates the item with its identification according to the
+								buyer's system. </Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir19-091</Reference>
 							<Value type="EXAMPLE">111111</Value>
@@ -1483,6 +1489,7 @@
 					<Element cardinality="0..1">
 						<Term>cac:SellersItemIdentification</Term>
 						<Name>Sellers item identification</Name>
+						<Reference type="RULE">PEPPOL-T110-R002</Reference>
 						<Element>
 							<Term>cbc:ID</Term>
 							<Name>The Sellers item identifier</Name>
@@ -1491,13 +1498,14 @@
                                 seller's system. </Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir110-033</Reference>
-							<Reference type="RULE">PEPPOL-T110-R002</Reference>
+						
 							<Value type="EXAMPLE">3249834</Value>
 						</Element>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:StandardItemIdentification</Term>
 						<Name>Standard item identification</Name>
+						<Reference type="RULE">PEPPOL-T110-R002</Reference>
 						<Element>
 							<Term>cbc:ID</Term>
 							<Name>Item standard identifier</Name>
@@ -1505,7 +1513,7 @@
                                 the item with its identification according to a standard system.</Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir110-034</Reference>
-							<Reference type="RULE">PEPPOL-T110-R002</Reference>
+							
 							<Attribute>
 								<Term>schemeID</Term>
 								<Name>Item standard identifier identification scheme identifier</Name>
@@ -1513,6 +1521,7 @@
 								<Reference type="CODE_LIST">ICD</Reference>
 								<Value type="EXAMPLE">0160</Value>
 							</Attribute>
+							<Value type="EXAMPLE">05704066204093</Value>
 						</Element>
 					</Element>
 					<Element cardinality="0..1">
@@ -1550,14 +1559,15 @@
 									<Name>Attached document Mime code</Name>
 									<Description>The mime code of the attached document.</Description>
 									<Reference type="CODE_LIST">MimeCode</Reference>
-									<Value type="EXAMPLE">text/csv</Value>
+									<Value type="EXAMPLE">application/pdf</Value>
 								</Attribute>
 								<Attribute>
 									<Term>filename</Term>
 									<Name>Attached document Filename</Name>
 									<Description>The file name of the attached document</Description>
-									<Value type="EXAMPLE">Hours-spent.csv</Value>
+									<Value type="EXAMPLE">Hours-spent.pdf</Value>
 								</Attribute>
+								<Value type="EXAMPLE">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</Value>
 							</Element>
 							<Element cardinality="0..1">
 								<Term>cac:ExternalReference</Term>

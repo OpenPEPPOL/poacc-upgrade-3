@@ -10,9 +10,6 @@
 		<assert id= "PEPPOL-T110-R002"
 				test="(cac:StandardItemIdentification/cbc:ID) or  (cac:SellersItemIdentification/cbc:ID)"
 				flag="fatal">Each item in an Order agreement line SHALL be identifiable by either “item sellers identifier” or “item standard identifier”</assert>
-		<assert id= "PEPPOL-T110-R003"
-				test="(cbc:Name)"
-				flag="fatal">Each Order agreement line SHALL contain the item name</assert>
 	</rule>
 
 	<rule context="cbc:Amount | cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:PriceAmount | cbc:BaseAmount | cac:LegalMonetaryTotal/cbc:*">

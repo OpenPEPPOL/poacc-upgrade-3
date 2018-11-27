@@ -210,13 +210,13 @@
 						<Name>Attached document Mime code</Name>
 						<Description>The mime code of the attached document.</Description>
 						<Reference type="CODE_LIST">MimeCode</Reference>
-						<Value type="EXAMPLE">text/csv</Value>
+						<Value type="EXAMPLE">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</Value>
 					</Attribute>
 					<Attribute>
 						<Term>filename</Term>
 						<Name>Attached document filename</Name>
 						<Description>The file name of the attached document</Description>
-						<Value type="EXAMPLE">Hours-spent.csv</Value>
+						<Value type="EXAMPLE">Hours-spent.xsl</Value>
 					</Attribute>
 					<Value type="EXAMPLE">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</Value>
 				</Element>
@@ -1973,22 +1973,20 @@
 				<Element>
 					<Term>cac:Item</Term>
 					<Name>Item information</Name>
-					<Element cardinality="0..1">
+					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Item name</Name>
-						<Description>A short name for an item.A short name optionally given to an
+						<Description>A short name for an item. A short name given to an
 							item, such as a name from a Catalogue, as distinct from a
 							description.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-135</Reference>
-						<Reference type="RULE">PEPPOL-T01-R012</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:Description</Term>
 						<Name>Item description</Name>
 						<Description>Free-form field that can be used to give a text description of
-							the item. A detailed description of the item. Use one description per
-							language.Test text for capturing notes</Description>
+							the item. A detailed description of the item.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-133</Reference>
 					</Element>
@@ -1998,8 +1996,10 @@
 						<Element>
 							<Term>cbc:ID</Term>
 							<Name>Buyers item identifier</Name>
-							<Description>The Buyers identifier for the
-								item.</Description>
+							<Description>An identifier, assigned by the buyer, for the
+								item. Associates the item with its identification according to the
+								buyer's system. </Description>
+							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir01-p022</Reference>
 							<Value type="EXAMPLE">abc32432</Value>
 						</Element>
@@ -2010,39 +2010,37 @@
 						<Element>
 							<Term>cbc:ID</Term>
 							<Name>The Sellers item identifier</Name>
-							<Description>An identifier, assigned by the seller, for the item.
-								Associates the item with its identification according to the
+							<Description>An identifier, assigned by the seller, for the
+								item. Associates the item with its identification according to the
 								seller's system. </Description>
 							<DataType>Identifier</DataType>
-
-							<Reference type="RULE">PEPPOL-T01-R012</Reference>
 							<Reference type="BUSINESS_TERM">tir01-p020</Reference>
+							
 							<Value type="EXAMPLE">3249834</Value>
 						</Element>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:StandardItemIdentification</Term>
-						<Name>Item standard identifier</Name>
+						<Name>Standard item identification</Name>
 						<Element>
 							<Term>cbc:ID</Term>
 							<Name>Item standard identifier</Name>
 							<Description>An item identifier based on a registered scheme. Associates
-								the item with its identification according to a standard
-								system.</Description>
+								the item with its identification according to a standard system.</Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir01-136</Reference>
-							<Reference type="RULE">PEPPOL-T01-R012</Reference>
+							
 							<Attribute>
 								<Term>schemeID</Term>
-								<Name>Item standard identifier identification scheme
-									identifier</Name>
-								<Description>The identification scheme identifier of the Item
-									standard identifier</Description>
+								<Name>Item standard identifier identification scheme identifier</Name>
+								<Description>The identification scheme identifier of the Item standard identifier</Description>
 								<Reference type="CODE_LIST">ICD</Reference>
 								<Value type="EXAMPLE">0160</Value>
 							</Attribute>
+							<Value type="EXAMPLE">05704066204093</Value>
 						</Element>
 					</Element>
+					
 					<Element cardinality="0..n">
 						<Term>cac:ItemSpecificationDocumentReference</Term>
 						<Name>Item specification reference</Name>

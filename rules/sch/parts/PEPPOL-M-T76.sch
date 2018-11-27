@@ -42,8 +42,8 @@
     <!-- Item -->
     <rule context="cac:Item">
         <assert id= "PEPPOL-T76-R006"
-            test="(cbc:Name) or (cac:StandardItemIdentification/cbc:ID) or  (cac:SellersItemIdentification/cbc:ID)"
-            flag="fatal">Each order line SHALL have an item identifier and/or an item name</assert>
+            test="(cac:StandardItemIdentification/cbc:ID) or  (cac:SellersItemIdentification/cbc:ID)"
+            flag="fatal">Each item in an Order response line SHALL be identifiable by either “item sellers identifier” or “item standard identifier”</assert>
     </rule>
 
 </pattern>

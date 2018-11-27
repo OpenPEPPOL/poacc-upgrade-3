@@ -447,39 +447,61 @@
 			<Element>
 				<Term>cac:Item</Term>
 				<Name>Item information</Name>
-				<Element>
-					<Term>cbc:Name</Term>
-					<Name>Item name</Name>
-					<Description>A name for an item. One of, Item name, Item identifier or Item description shall be
-                        provided.</Description>
-					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">tir77-021</Reference>
-					<Value type="EXAMPLE">100 tissue paper, white</Value>
-				</Element>
+				
 				<Element cardinality="0..1">
 					<Term>cbc:Description</Term>
-					<Name>Item description as text</Name>
-					<Description>A free text detailed description of an item.</Description>
+					<Name>Item description</Name>
+					<Description>Free-form field that can be used to give a text description of
+						the item. A detailed description of the item.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir77-039</Reference>
 					<Value type="EXAMPLE">Tissue paper, white, pack of 100</Value>
 				</Element>
-				<!-- </Element> -->
-
+				
+				<Element>
+					<Term>cbc:Name</Term>
+					<Name>Item name</Name>
+					<Description>A name for an item. A short name given to an
+						item, such as a name from a Catalogue, as distinct from a
+						description.</Description>
+					<DataType>Text</DataType>
+					<Reference type="BUSINESS_TERM">tir77-021</Reference>
+					<Value type="EXAMPLE">100 tissue paper, white</Value>
+				</Element>
+		
+				
 				<Element cardinality="0..1">
-					<Term>cac:SellersItemIdentification</Term>
-					<Name>The Sellers item identifier</Name>
+					<Term>cac:BuyersItemIdentification</Term>
+					<Name>Buyer item identification</Name>
 					<Element>
 						<Term>cbc:ID</Term>
-						<Name>Item sellers identifier</Name>
+						<Name>Buyers item identifier</Name>
+						<Description>An identifier, assigned by the buyer, for the
+							item. Associates the item with its identification according to the
+							buyer's system. </Description>
+						<DataType>Identifier</DataType>
+						<Reference type="BUSINESS_TERM">tir77-p002</Reference>
+						<Value type="EXAMPLE">111111</Value>
+					</Element>
+				</Element>
+			
+				<Element cardinality="0..1">
+					<Term>cac:SellersItemIdentification</Term>
+					<Name>Sellers item identification</Name>
+					<Reference type="RULE">PEPPOL-T77-R004</Reference>
+					<Element>
+						<Term>cbc:ID</Term>
+						<Name>The Sellers item identifier</Name>
 						<Description>An identifier, assigned by the seller, for the
-                            item.</Description>
+							item. Associates the item with its identification according to the
+							seller's system. </Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir77-022</Reference>
-
+						
 						<Value type="EXAMPLE">3249834</Value>
 					</Element>
 				</Element>
+				
 				<Element cardinality="0..1">
 					<Term>cac:ManufacturersItemIdentification</Term>
 					<Name>Manufacturers item identification</Name>
@@ -495,22 +517,24 @@
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:StandardItemIdentification</Term>
-					<Name>Item standard identifier</Name>
+					<Name>Standard item identification</Name>
+					<Reference type="RULE">PEPPOL-T77-R004</Reference>
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Item standard identifier</Name>
 						<Description>An item identifier based on a registered scheme. Associates
-                            the item with its identification according to a standard system.</Description>
+							the item with its identification according to a standard system.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir77-023</Reference>
-
+						
 						<Attribute>
 							<Term>schemeID</Term>
 							<Name>Item standard identifier identification scheme identifier</Name>
 							<Description>The identification scheme identifier of the Item standard identifier</Description>
 							<Reference type="CODE_LIST">ICD</Reference>
-							<Value type="EXAMPLE">0088</Value>
+							<Value type="EXAMPLE">0160</Value>
 						</Attribute>
+						<Value type="EXAMPLE">05704066204093</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..n">
@@ -536,7 +560,7 @@
 						<Reference type="CODE_LIST">Image</Reference>
 						<Reference type="BUSINESS_TERM">tir77-044</Reference>
 						<Reference type="BUSINESS_TERM">OP-T77-005</Reference>
-						<Value type="EXAMPLE">858</Value>
+						<Value type="EXAMPLE">6</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:DocumentDescription</Term>
@@ -574,6 +598,7 @@
 								<Description>The file name of the attached document</Description>
 								<Value type="EXAMPLE">Hours-spent.csv</Value>
 							</Attribute>
+							<Value type="EXAMPLE">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</Value>
 						</Element>
 					</Element>
 				</Element>
@@ -591,6 +616,7 @@
 						<DataType>Code</DataType>
 						<Reference type="CODE_LIST">ISO3166</Reference>
 						<Reference type="BUSINESS_TERM">tir77-029</Reference>
+						<Value type="EXAMPLE">CN</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..n">
@@ -611,14 +637,15 @@
 							<Name>Item classification identifier identification scheme identifier</Name>
 							<Description>The identification scheme identifier of the Item classification identifier</Description>
 							<Reference type="CODE_LIST">UNCL7143</Reference>
-							<Value type="EXAMPLE">16B</Value>
+							<Value type="EXAMPLE">MP</Value>
 						</Attribute>
 						<Attribute usage="Optional">
 							<Term>listVersionID</Term>
 							<Name>Item classification identifier version identification scheme identifier</Name>
 							<Description>The identification scheme version identifier of the Item classification identifier</Description>
-							<Value type="EXAMPLE">12</Value>
+							<Value type="EXAMPLE">20.0602</Value>
 						</Attribute>
+						<Value type="EXAMPLE">9873242</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
@@ -693,8 +720,9 @@
 							<Term>listID</Term>
 							<Name>Name code list id.</Name>
 							<Description>An identifier for the code list used for the Name code, this is bilaterally agreed.</Description>
-
+							<Value type="EXAMPLE">eClass</Value>
 						</Attribute>
+						<Value type="EXAMPLE">2397824</Value>
 					</Element>
 					<Element>	
 						<Term>cbc:Value</Term>

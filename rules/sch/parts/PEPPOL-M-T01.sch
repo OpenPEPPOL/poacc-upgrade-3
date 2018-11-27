@@ -154,13 +154,6 @@
     </rule>
 
 
-    <!-- Item -->
-    <rule context="cac:Item">
-        <assert id= "PEPPOL-T01-R012"
-                test="(cbc:Name) or (cac:StandardItemIdentification/cbc:ID) or  (cac:SellersItemIdentification/cbc:ID)"
-                flag="fatal">Each order line SHALL have an item identifier and/or an item name</assert>
-    </rule>
-
     <!-- Allowance (price level) -->
     <rule context="cac:Price/cac:AllowanceCharge">
         <assert id="PEPPOL-T01-R019"

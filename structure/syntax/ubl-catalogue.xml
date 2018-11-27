@@ -314,7 +314,7 @@
 							<Reference type="BUSINESS_TERM">tir19-p028d</Reference>
 
 							<Reference type="CODE_LIST">ISO3166</Reference>
-							<Value type="EXAMPLE">UK</Value>
+							<Value type="EXAMPLE">GB</Value>
 						</Element>
 					</Element>
 				</Element>
@@ -987,11 +987,11 @@
 						<Description>The prepacking the article is available in inside the
                             orderable unit (next lower level packing), and which contains the number
                             of unit described in PackSizeNumeric. Unit desciption to PackQuantity.
-                            The value shoud be a valid UOM code like CS for case.</Description>
+                            The value shoud be a valid UOM code like XCS for case.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-065</Reference>
 						<Reference type="CODE_LIST">UNECERec20</Reference>
-						<Value type="EXAMPLE">CS</Value>
+						<Value type="EXAMPLE">XCS</Value>
 					</Attribute>
 				</Element>
 			</Element>
@@ -1014,10 +1014,10 @@
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Related item unit</Name>
-						<Description>The packaging unit for related items. The value shoud be a valid UOM code like CS for case.</Description>
+						<Description>The packaging unit for related items. The value shoud be a valid UOM code like XCS for case.</Description>
 						<DataType>Code</DataType>
 						<Reference type="CODE_LIST">UNECERec20</Reference>
-						<Value type="EXAMPLE">CS</Value>
+						<Value type="EXAMPLE">XCS</Value>
 					</Attribute>
 				</Element>
 			</Element>
@@ -1040,10 +1040,10 @@
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Required item units</Name>
-						<Description>The packaging unit for required related items. The value shoud be a valid UOM code like CS for case.</Description>
+						<Description>The packaging unit for required related items. The value shoud be a valid UOM code like XCS for case.</Description>
 						<DataType>Code</DataType>
 						<Reference type="CODE_LIST">UNECERec20</Reference>
-						<Value type="EXAMPLE">CS</Value>
+						<Value type="EXAMPLE">XCS</Value>
 					</Attribute>
 				</Element>
 			</Element>
@@ -1066,10 +1066,10 @@
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Replaced item units</Name>
-						<Description>The packaging unit for replaced items. The value shoud be a valid UOM code like CS for case.</Description>
+						<Description>The packaging unit for replaced items. The value shoud be a valid UOM code like XCS for case.</Description>
 						<DataType>Code</DataType>
 						<Reference type="CODE_LIST">UNECERec20</Reference>
-						<Value type="EXAMPLE">CS</Value>
+						<Value type="EXAMPLE">XCS</Value>
 					</Attribute>
 				</Element>
 			</Element>
@@ -1088,7 +1088,7 @@
 						<Description>The lead time units for price lead time. The value shoud be a valid UOM code like DAY for days.</Description>
 						<DataType>Code</DataType>
 						<Reference type="CODE_LIST">UNECERec20</Reference>
-						<Value type="EXAMPLE">CS</Value>
+						<Value type="EXAMPLE">XCS</Value>
 					</Attribute>
 				</Element>
 				<Element cardinality="0..1">
@@ -1100,10 +1100,10 @@
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Quantity threshold units</Name>
-						<Description>The quantity units for minimum quantity. The value shoud be a valid UOM code like CS for case.</Description>
+						<Description>The quantity units for minimum quantity. The value shoud be a valid UOM code like XCS for case.</Description>
 						<DataType>Code</DataType>
 						<Reference type="CODE_LIST">UNECERec20</Reference>
-						<Value type="EXAMPLE">CS</Value>
+						<Value type="EXAMPLE">XCS</Value>
 					</Attribute>
 				</Element>
 				<Element cardinality="0..1">
@@ -1115,10 +1115,10 @@
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Quantity ceiling units</Name>
-						<Description>The quantity units for ceiling quantity. The value shoud be a valid UOM code like CS for case.</Description>
+						<Description>The quantity units for ceiling quantity. The value shoud be a valid UOM code like XCS for case.</Description>
 						<DataType>Code</DataType>
 						<Reference type="CODE_LIST">UNECERec20</Reference>
-						<Value type="EXAMPLE">CS</Value>
+						<Value type="EXAMPLE">XCS</Value>
 					</Attribute>
 				</Element>
 				<Element cardinality="0..n">
@@ -1230,7 +1230,7 @@
 							<Description>The unit of measure that applies to the Item price base quantity.</Description>
 							<DataType>Code</DataType>
 							<Reference type="CODE_LIST">UNECERec20</Reference>
-							<Value type="EXAMPLE">CS</Value>
+							<Value type="EXAMPLE">XCS</Value>
 						</Attribute>
 						<Value type="EXAMPLE">1</Value>
 					</Element>
@@ -1279,24 +1279,16 @@
 			<Element>
 				<Term>cac:Item</Term>
 				<Name>Item information</Name>
-				<Element>
-					<Term>cbc:Name</Term>
-					<Name>Item name</Name>
-					<Description>A short name for an item.</Description>
-					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">tir19-078</Reference>
-					<Value type="EXAMPLE">Office chair</Value>
-				</Element>
 				<Element cardinality="0..n">
 					<Term>cbc:Description</Term>
 					<Name>Item description</Name>
-					<Description>A detailed description of the item. Use one description pr.
-                        language</Description>
+					<Description>Free-form field that can be used to give a text description of
+						the item. A detailed description of the item.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-067</Reference>
 					<Value type="EXAMPLE">Office chair by John Doe.</Value>
 				</Element>
-
+		
 				<Element cardinality="0..1">
 					<Term>cbc:PackQuantity</Term>
 					<Name>Packed quantity</Name>
@@ -1304,13 +1296,13 @@
                         the orderable unit is a pallet that contains 30 boxes then the packed units
                         are BOX and the packed quantity is 30.</Description>
 					<DataType>Quantity</DataType>
-					<Reference type="BUSINESS_TERM">tir19-066tir19-066</Reference>
+					<Reference type="BUSINESS_TERM">tir19-066</Reference>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Packed quantity unit of measure code</Name>
 						<Description>The unit of measure that applies to the packed quantity.</Description>
 						<Reference type="CODE_LIST">UNECERec20</Reference>
-						<Value type="EXAMPLE">CS</Value>
+						<Value type="EXAMPLE">XCS</Value>
 					</Attribute>
 					<Value type="EXAMPLE">30</Value>
 				</Element>
@@ -1321,6 +1313,14 @@
                         orderable unit.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-036</Reference>
+				</Element>
+				<Element>
+					<Term>cbc:Name</Term>
+					<Name>Item name</Name>
+					<Description>A short name for an item.</Description>
+					<DataType>Text</DataType>
+					<Reference type="BUSINESS_TERM">tir19-078</Reference>
+					<Value type="EXAMPLE">Office chair</Value>
 				</Element>
 				<Element cardinality="0..n">
 					<Term>cbc:Keyword</Term>
@@ -1344,24 +1344,32 @@
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Buyers item identifier</Name>
-						<Description>The buyers identifier for the item.</Description>
+						<Description>An identifier, assigned by the buyer, for the
+							item. Associates the item with its identification according to the
+							buyer's system. </Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-p040</Reference>
 						<Value type="EXAMPLE">111111</Value>
 					</Element>
 				</Element>
+				
 				<Element cardinality="0..1">
 					<Term>cac:SellersItemIdentification</Term>
-					<Name>Seller item identification</Name>
+					<Name>Sellers item identification</Name>
+					<Reference type="RULE">PEPPOL-T19-R012</Reference>
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>The Sellers item identifier</Name>
-						<Description>The sellers identifier for the item.</Description>
+						<Description>An identifier, assigned by the seller, for the
+							item. Associates the item with its identification according to the
+							seller's system. </Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-091</Reference>
-						<Value type="EXAMPLE">222222</Value>
+						
+						<Value type="EXAMPLE">3249834</Value>
 					</Element>
 				</Element>
+				
 				<Element cardinality="0..1">
 					<Term>cac:ManufacturersItemIdentification</Term>
 					<Name>Manufacturer item identification</Name>
@@ -1377,12 +1385,15 @@
 				<Element cardinality="0..1">
 					<Term>cac:StandardItemIdentification</Term>
 					<Name>Standard item identification</Name>
+					<Reference type="RULE">PEPPOL-T19-R012</Reference>
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Item standard identifier</Name>
-						<Description>A item identifier based on a registered schema.</Description>
+						<Description>An item identifier based on a registered scheme. Associates
+							the item with its identification according to a standard system.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-092</Reference>
+						
 						<Attribute>
 							<Term>schemeID</Term>
 							<Name>Item standard identifier identification scheme identifier</Name>
@@ -1390,7 +1401,7 @@
 							<Reference type="CODE_LIST">ICD</Reference>
 							<Value type="EXAMPLE">0160</Value>
 						</Attribute>
-						<Value type="EXAMPLE">7330869106661</Value>
+						<Value type="EXAMPLE">05704066204093</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..n">
@@ -1403,6 +1414,7 @@
                             unique identifier.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-105</Reference>
+						<Value type="EXAMPLE">12</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:DocumentTypeCode</Term>
@@ -1437,13 +1449,13 @@
 								<DataType>Code</DataType>
 
 								<Reference type="CODE_LIST">MimeCode</Reference>
-								<Value type="EXAMPLE">text/csv</Value>
+								<Value type="EXAMPLE">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</Value>
 							</Attribute>
 							<Attribute>
 								<Term>filename</Term>
 								<Name>Attached document Filename</Name>
 								<Description>The file name of the attached document</Description>
-								<Value type="EXAMPLE">Hours-spent.csv</Value>
+								<Value type="EXAMPLE">Hours-spent.xls</Value>
 							</Attribute>
 							<Value type="EXAMPLE">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</Value>
 						</Element>

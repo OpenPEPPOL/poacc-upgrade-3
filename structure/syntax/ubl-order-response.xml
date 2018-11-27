@@ -432,10 +432,10 @@
 				<Element>
 					<Term>cac:Item</Term>
 					<Name>Item information</Name>
-					<Element cardinality="0..1">
+					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Item name</Name>
-						<Description>A short name optionally given to an item, such as a name from
+						<Description>A short name given to an item, such as a name from
                             a Catalogue, as distinct from a description. A short name for the
                             item.</Description>
 						<DataType>Text</DataType>
@@ -445,37 +445,47 @@
 					<Element cardinality="0..1">
 						<Term>cac:BuyersItemIdentification</Term>
 						<Name>Buyer item identification</Name>
+						
 						<Element>
 							<Term>cbc:ID</Term>
 							<Name>Buyers item identifier</Name>
-							<Description>The Buyers identifier for the item.</Description>
+							<Description>An identifier, assigned by the buyer, for the
+								item. Associates the item with its identification according to the
+								buyer's system. </Description>
+							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir76-p006</Reference>
+							<Value type="EXAMPLE">111111</Value>
 						</Element>
 					</Element>
+					
 					<Element cardinality="0..1">
 						<Term>cac:SellersItemIdentification</Term>
 						<Name>Sellers item identification</Name>
+						<Reference type="RULE">PEPPOL-T76-R006</Reference>
 						<Element>
 							<Term>cbc:ID</Term>
 							<Name>The Sellers item identifier</Name>
 							<Description>An identifier, assigned by the seller, for the
-                                item. Associates the item with its identification according to the
-                                seller's system. </Description>
+								item. Associates the item with its identification according to the
+								seller's system. </Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir76-206</Reference>
+							
 							<Value type="EXAMPLE">3249834</Value>
 						</Element>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:StandardItemIdentification</Term>
-						<Name>Item standard identifier</Name>
+						<Name>Standard item identification</Name>
+						<Reference type="RULE">PEPPOL-T76-R006</Reference>
 						<Element>
 							<Term>cbc:ID</Term>
 							<Name>Item standard identifier</Name>
 							<Description>An item identifier based on a registered scheme. Associates
-                                the item with its identification according to a standard system.</Description>
+								the item with its identification according to a standard system.</Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir76-207</Reference>
+							
 							<Attribute>
 								<Term>schemeID</Term>
 								<Name>Item standard identifier identification scheme identifier</Name>
@@ -483,8 +493,10 @@
 								<Reference type="CODE_LIST">ICD</Reference>
 								<Value type="EXAMPLE">0160</Value>
 							</Attribute>
+							<Value type="EXAMPLE">05704066204093</Value>
 						</Element>
 					</Element>
+					
 				</Element>
 			</Element>
 			<Element cardinality="0..1">

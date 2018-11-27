@@ -280,6 +280,17 @@
 						<Value type="EXAMPLE">DK88777654</Value>
 					</Element>
 				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:PartyName</Term>
+					<Name>Party name</Name>
+					<Element>
+						<Term>cbc:Name</Term>
+						<Name>Consignee party name</Name>
+						<Description>The name of the consignee party</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir16-p045</Reference>
+					</Element>
+				</Element>
 		
 				<Element cardinality="0..1">
 					<Term>cac:PostalAddress</Term>
@@ -357,17 +368,7 @@
 					</Element>
 				</Element>
 				
-				<Element cardinality="0..1">
-					<Term>cac:PartyName</Term>
-					<Name>Party name</Name>
-					<Element>
-						<Term>cbc:Name</Term>
-						<Name>Consignee party name</Name>
-						<Description>The name of the consignee party</Description>
-						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir16-p045</Reference>
-					</Element>
-				</Element>
+	
 				
 				<Element cardinality="0..1">
 					<Term>cac:PartyLegalEntity</Term>
@@ -1043,58 +1044,75 @@
 					<Reference type="BUSINESS_TERM">tir16-052</Reference>
 					<Reference type="RULE">PEPPOL-T16-R004</Reference>
 				</Element>
+				
 				<Element cardinality="0..1">
 					<Term>cac:BuyersItemIdentification</Term>
-					<Name>Buyer item identification</Name>
+					<Name>Buyers item identification</Name>
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Buyers item identifier</Name>
-						<Description>The Buyers identifier for the item.</Description>
+						<Description>An identifier, assigned by the buyer, for the
+							item. Associates the item with its identification according to the
+							buyer's system. </Description>
+						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir16-p041</Reference>
+						<Value type="EXAMPLE">111111</Value>
 					</Element>
-				</Element>
+				</Element>				
 				<Element cardinality="0..1">
 					<Term>cac:SellersItemIdentification</Term>
+					<Name>Sellers item identification</Name>
+					<Reference type="RULE">PEPPOL-T16-R003</Reference>
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>The Sellers item identifier</Name>
-						<Description>The sellers identifier for the item.</Description>
+						<Description>An identifier, assigned by the seller, for the
+							item. Associates the item with its identification according to the
+							seller's system. </Description>
+						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir16-053</Reference>
-						<Reference type="RULE">PEPPOL-T16-R003</Reference>
+						
+						<Value type="EXAMPLE">3249834</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:ExtendedID</Term>
 						<Name>The sellers extended item identifier</Name>
 						<Description>An extended identifier for the item that identifies the item
-                            with specific properties, e.g., Item 123 = Chair / Item 123 Ext 45 =
-                            brown chair.</Description>
+							with specific properties, e.g., Item 123 = Chair / Item 123 Ext 45 =
+							brown chair.</Description>
 						<Reference type="BUSINESS_TERM">tir16-054</Reference>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:StandardItemIdentification</Term>
+					<Name>Standard item identification</Name>
+					<Reference type="RULE">PEPPOL-T16-R003</Reference>
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Item standard identifier</Name>
-						<Description>A item identifier based on a registered schema.</Description>
+						<Description>An item identifier based on a registered scheme. Associates
+							the item with its identification according to a standard system.</Description>
+						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir16-055</Reference>
-						<Reference type="RULE">PEPPOL-T16-R003</Reference>
+						
 						<Attribute>
 							<Term>schemeID</Term>
 							<Name>Item standard identifier identification scheme identifier</Name>
 							<Description>The identification scheme identifier of the Item standard identifier</Description>
 							<Reference type="CODE_LIST">ICD</Reference>
-							<Value type="EXAMPLE">0088</Value>
+							<Value type="EXAMPLE">0160</Value>
 						</Attribute>
+						<Value type="EXAMPLE">05704066204093</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:ExtendedID</Term>
 						<Name>Item standard extended identifier</Name>
 						<Description>with specific properties, e.g., Item 123 = Chair / Item 123
-                            Ext 45 = brown chair.</Description>
+							Ext 45 = brown chair.</Description>
 						<Reference type="BUSINESS_TERM">tir16-056</Reference>
 					</Element>
 				</Element>
+				
 				<Element cardinality="0..n">
 					<Term>cac:HazardousItem</Term>
 					<Element cardinality="0..1">
