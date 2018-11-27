@@ -484,20 +484,16 @@
 						<Value type="EXAMPLE">111111</Value>
 					</Element>
 				</Element>
-			
 				<Element cardinality="0..1">
 					<Term>cac:SellersItemIdentification</Term>
 					<Name>Sellers item identification</Name>
 					<Reference type="RULE">PEPPOL-T77-R004</Reference>
 					<Element>
 						<Term>cbc:ID</Term>
-						<Name>The Sellers item identifier</Name>
-						<Description>An identifier, assigned by the seller, for the
-							item. Associates the item with its identification according to the
-							seller's system. </Description>
+						<Name>Item sellers identifier</Name>
+						<Description>An identifier, assigned by the seller, for the item.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir77-022</Reference>
-						
 						<Value type="EXAMPLE">3249834</Value>
 					</Element>
 				</Element>
@@ -511,7 +507,6 @@
 						<Description>The manufacturer's identifier for the item.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir77-024</Reference>
-
 						<Value type="EXAMPLE">m97965</Value>
 					</Element>
 				</Element>
@@ -526,7 +521,6 @@
 							the item with its identification according to a standard system.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir77-023</Reference>
-						
 						<Attribute>
 							<Term>schemeID</Term>
 							<Name>Item standard identifier identification scheme identifier</Name>
