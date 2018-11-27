@@ -6,7 +6,7 @@ The following individuals have contributed to this work by participation in team
 * Siw Meckelborg, DIFI/Edisys
 * Charlotte Dahl, Skovhus, MySupply
 * Arduini Iacopo, Emilia Romagna
-* Thomas Petterson, SFTI/Psk consult
+* Thomas Pettersson, SFTI/PSK Konsult
 * Dirk Willekens, BOSA
 * Arne Johan Larsen, Equinor
 * Elisa Bertocchi, Emilia Romagna
