@@ -1468,7 +1468,6 @@
 							description.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir110-032</Reference>
-						<Reference type="RULE">PEPPOL-T110-R003</Reference>
 						<Value type="EXAMPLE">Window</Value>
 					</Element>
 					
@@ -1498,7 +1497,6 @@
                                 seller's system. </Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir110-033</Reference>
-						
 							<Value type="EXAMPLE">3249834</Value>
 						</Element>
 					</Element>
