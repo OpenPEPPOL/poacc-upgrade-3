@@ -491,7 +491,9 @@
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Item sellers identifier</Name>
-						<Description>An identifier, assigned by the seller, for the item.</Description>
+						<Description>An identifier, assigned by the seller, for the
+							item. Associates the item with its identification according to the
+							seller's system. </Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir77-022</Reference>
 						<Value type="EXAMPLE">3249834</Value>
