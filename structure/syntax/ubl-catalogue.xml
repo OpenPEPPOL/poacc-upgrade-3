@@ -1296,7 +1296,6 @@
 					<Reference type="BUSINESS_TERM">tir19-067</Reference>
 					<Value type="EXAMPLE">Office chair by John Doe.</Value>
 				</Element>
-
 				<Element cardinality="0..1">
 					<Term>cbc:PackQuantity</Term>
 					<Name>Packed quantity</Name>

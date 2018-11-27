@@ -2014,7 +2014,6 @@
 								Associates the item with its identification according to the
 								seller's system. </Description>
 							<DataType>Identifier</DataType>
-
 							<Reference type="RULE">PEPPOL-T01-R012</Reference>
 							<Reference type="BUSINESS_TERM">tir01-p020</Reference>
 							<Value type="EXAMPLE">3249834</Value>
@@ -2136,7 +2135,6 @@
 								with the property unit of measure when relevant.</Description>
 							<DataType>Text</DataType>
 							<Reference type="BUSINESS_TERM">tir01-138</Reference>
-
 							<Value type="EXAMPLE">Color</Value>
 						</Element>
 						<Element cardinality="0..1">
@@ -2157,7 +2155,6 @@
 							<Description>The value of the item property.</Description>
 							<DataType>Text</DataType>
 							<Reference type="BUSINESS_TERM">tir01-139</Reference>
-
 							<Value type="EXAMPLE">Red</Value>
 						</Element>
 						<Element cardinality="0..1">
@@ -2177,7 +2174,6 @@
 								<Reference type="CODE_LIST">UNECERec20</Reference>
 								<Value type="EXAMPLE">C62</Value>
 							</Attribute>
-
 							<Value type="EXAMPLE">10</Value>
 						</Element>
 						<Element cardinality="0..1">

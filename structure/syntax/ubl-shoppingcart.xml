@@ -450,8 +450,7 @@
 				<Element>
 					<Term>cbc:Name</Term>
 					<Name>Item name</Name>
-					<Description>A name for an item. One of, Item name, Item identifier or Item description shall be
-                        provided.</Description>
+					<Description>A name for an item. One of, Item name, Item identifier or Item description shall be provided.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir77-021</Reference>
 					<Value type="EXAMPLE">100 tissue paper, white</Value>
@@ -464,19 +463,15 @@
 					<Reference type="BUSINESS_TERM">tir77-039</Reference>
 					<Value type="EXAMPLE">Tissue paper, white, pack of 100</Value>
 				</Element>
-				<!-- </Element> -->
-
 				<Element cardinality="0..1">
 					<Term>cac:SellersItemIdentification</Term>
 					<Name>The Sellers item identifier</Name>
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Item sellers identifier</Name>
-						<Description>An identifier, assigned by the seller, for the
-                            item.</Description>
+						<Description>An identifier, assigned by the seller, for the item.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir77-022</Reference>
-
 						<Value type="EXAMPLE">3249834</Value>
 					</Element>
 				</Element>
@@ -489,7 +484,6 @@
 						<Description>The manufacturer's identifier for the item.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir77-024</Reference>
-
 						<Value type="EXAMPLE">m97965</Value>
 					</Element>
 				</Element>
@@ -503,7 +497,6 @@
                             the item with its identification according to a standard system.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir77-023</Reference>
-
 						<Attribute>
 							<Term>schemeID</Term>
 							<Name>Item standard identifier identification scheme identifier</Name>
