@@ -461,7 +461,6 @@
 					<Element cardinality="0..1">
 						<Term>cac:SellersItemIdentification</Term>
 						<Name>Sellers item identification</Name>
-						<Reference type="RULE">PEPPOL-T76-R006</Reference>
 						<Element>
 							<Term>cbc:ID</Term>
 							<Name>The Sellers item identifier</Name>
@@ -477,7 +476,6 @@
 					<Element cardinality="0..1">
 						<Term>cac:StandardItemIdentification</Term>
 						<Name>Standard item identification</Name>
-						<Reference type="RULE">PEPPOL-T76-R006</Reference>
 						<Element>
 							<Term>cbc:ID</Term>
 							<Name>Item standard identifier</Name>

@@ -39,11 +39,5 @@
                 flag="fatal">Each order response line SHALL have a document line identifier that is unique within the order.</assert>
     </rule>
 
-    <!-- Item -->
-    <rule context="cac:Item">
-        <assert id= "PEPPOL-T76-R006"
-            test="(cac:StandardItemIdentification/cbc:ID) or  (cac:SellersItemIdentification/cbc:ID)"
-            flag="fatal">Each item in an Order response line SHALL be identifiable by either “item sellers identifier” or “item standard identifier”</assert>
-    </rule>
-
+ 
 </pattern>
