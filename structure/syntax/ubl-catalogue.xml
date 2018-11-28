@@ -94,6 +94,7 @@
                     the period.</Description>
 				<DataType>Date</DataType>
 				<Reference type="BUSINESS_TERM">tir19-007</Reference>
+				<Reference type="RULE">PEPPOL-T19-R001</Reference>
 				<Value type="EXAMPLE">2018-05-31</Value>
 			</Element>
 			<Element cardinality="0..1">
@@ -103,6 +104,7 @@
                     period.</Description>
 				<DataType>Date</DataType>
 				<Reference type="BUSINESS_TERM">tir19-008</Reference>
+				<Reference type="RULE">PEPPOL-T19-R001</Reference>
 				<Value type="EXAMPLE">2019-05-31</Value>
 			</Element>
 		</Element>
@@ -993,6 +995,8 @@
                         part of the period.</Description>
 					<DataType>Date</DataType>
 					<Reference type="BUSINESS_TERM">tir19-041</Reference>
+					<Reference type="RULE">PEPPOL-T19-R007</Reference>
+					<Reference type="RULE">PEPPOL-T19-R013</Reference>
 					<Value type="EXAMPLE">2018-05-31</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -1002,6 +1006,8 @@
                         the period.</Description>
 					<DataType>Date</DataType>
 					<Reference type="BUSINESS_TERM">tir19-042</Reference>
+					<Reference type="RULE">PEPPOL-T19-R007</Reference>
+					<Reference type="RULE">PEPPOL-T19-R013</Reference>
 					<Value type="EXAMPLE">2019-05-31</Value>
 				</Element>
 			</Element>
@@ -1014,6 +1020,7 @@
 					<Description>The item price based on a standarized unit. E.g. Price of each liter.</Description>
 					<DataType>Price Amount</DataType>
 					<Reference type="BUSINESS_TERM">tir19-043</Reference>
+					<Reference type="RULE">PEPPOL-T19-R006</Reference>
 					<Attribute>
 						<Term>currencyID</Term>
 						<Name>Currency identifier</Name>
@@ -1169,6 +1176,8 @@
 					<Description>Used to indicate the threshold quantity for the given price</Description>
 					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir19-p025</Reference>
+					<Reference type="RULE">PEPPOL-T19-R009</Reference>
+					<Reference type="RULE">PEPPOL-T19-R010</Reference>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Quantity threshold units</Name>
@@ -1184,6 +1193,8 @@
 					<Description>Used to indicate maximum quantity for given price.</Description>
 					<DataType>Quantity</DataType>
 					<Reference type="BUSINESS_TERM">tir19-p026</Reference>
+					<Reference type="RULE">PEPPOL-T19-R008</Reference>
+					<Reference type="RULE">PEPPOL-T19-R010</Reference>
 					<Attribute>
 						<Term>unitCode</Term>
 						<Name>Quantity ceiling units</Name>
@@ -1282,6 +1293,7 @@
                             given for each orderable unit.</Description>
 						<DataType>Price amount</DataType>
 						<Reference type="BUSINESS_TERM">tir19-051</Reference>
+						<Reference type="RULE">PEPPOL-T19-R006</Reference>
 						<Attribute>
 							<Term>currencyID</Term>
 							<Description>Mandatory attribute</Description>
@@ -1334,6 +1346,8 @@
 							<Description>The date on which the period starts. The start dates counts as part of the period.</Description>
 							<DataType>Date</DataType>
 							<Reference type="BUSINESS_TERM">tir19-056</Reference>
+							<Reference type="RULE">PEPPOL-T19-R011</Reference>
+							<Reference type="RULE">PEPPOL-T19-R016</Reference>
 							<Value type="EXAMPLE">2018-05-31</Value>
 						</Element>
 						<Element cardinality="0..1">
@@ -1343,6 +1357,8 @@
                                 part of the period.</Description>
 							<DataType>Date</DataType>
 							<Reference type="BUSINESS_TERM">tir19-057</Reference>
+							<Reference type="RULE">PEPPOL-T19-R011</Reference>
+							<Reference type="RULE">PEPPOL-T19-R016</Reference>
 							<Value type="EXAMPLE">2019-05-31</Value>
 						</Element>
 					</Element>
@@ -1646,6 +1662,8 @@
                             specific trade reasons apply such as exemptions.</Description>
 						<DataType>Percentage</DataType>
 						<Reference type="BUSINESS_TERM">tir19-050</Reference>
+						<Reference type="RULE">PEPPOL-T19-R014</Reference>
+						<Reference type="RULE">PEPPOL-T19-R015</Reference>
 						<Value type="EXAMPLE">25</Value>
 					</Element>
 					<Element>

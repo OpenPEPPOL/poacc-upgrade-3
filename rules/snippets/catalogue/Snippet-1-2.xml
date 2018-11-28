@@ -24,13 +24,18 @@
             <cbc:ID schemeID="0088">5790000435951</cbc:ID>
         </cac:PartyIdentification>
 		<!-- end::partyid-gln[] -->
-		
+        <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Supplier ASA</cbc:RegistrationName>
+        </cac:PartyLegalEntity>
     </cac:ProviderParty>
     <cac:ReceiverParty>
         <cbc:EndpointID schemeID="0192">984661185</cbc:EndpointID>
         <cac:PartyIdentification>
             <cbc:ID schemeID="0088">5790000435944</cbc:ID>
         </cac:PartyIdentification>
+        <cac:PartyLegalEntity>
+            <cbc:RegistrationName>DEF Customer Ltd.</cbc:RegistrationName>
+        </cac:PartyLegalEntity>
     </cac:ReceiverParty>
     <!-- tag::config[] -->
     <cac:CatalogueLine>
