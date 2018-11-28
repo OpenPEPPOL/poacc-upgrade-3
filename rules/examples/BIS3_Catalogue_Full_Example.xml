@@ -80,7 +80,7 @@
 	</cac:ReceiverParty>
 	<cac:SellerSupplierParty>
 		<cac:Party>
-			<cbc:EndpointID schemeID="0082">938752655</cbc:EndpointID>
+			<cbc:EndpointID schemeID="0192">938752655</cbc:EndpointID>
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0088">5790000435951</cbc:ID>
 			</cac:PartyIdentification>
@@ -109,7 +109,7 @@
 	</cac:SellerSupplierParty>
 	<cac:ContractorCustomerParty>
 		<cac:Party>
-			<cbc:EndpointID schemeID="0082">938752655</cbc:EndpointID>
+			<cbc:EndpointID schemeID="0192">938752655</cbc:EndpointID>
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0088">5790000435951</cbc:ID>
 			</cac:PartyIdentification>

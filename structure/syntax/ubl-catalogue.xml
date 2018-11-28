@@ -256,7 +256,7 @@
 					</Element>
 				</Element>
 			</Element>
-			<Element cardinality="0..1">
+			<Element>
 				<Term>cac:PartyLegalEntity</Term>
 				<Name>Party Legal Entity</Name>
 				<Element>
@@ -438,7 +438,7 @@
 					</Element>
 				</Element>
 			</Element>
-			<Element cardinality="0..1">
+			<Element>
 				<Term>cac:PartyLegalEntity</Term>
 				<Name>Party legal entity</Name>
 				<Element>
@@ -526,6 +526,7 @@
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
 					<Name>Party identification</Name>
+					<Reference type="RULE">PEPPOL-T19-R004</Reference>
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Catalogue supplier identifier</Name>
@@ -547,6 +548,7 @@
 				<Element cardinality="0..1">
 					<Term>cac:PartyName</Term>
 					<Name>Party name</Name>
+					<Reference type="RULE">PEPPOL-T19-R004</Reference>
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Catalogue supplier trading name</Name>
@@ -693,6 +695,7 @@
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
 					<Name>Party identification</Name>
+					<Reference type="RULE">PEPPOL-T19-R005</Reference>
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Catalogue customer identifier</Name>
@@ -714,6 +717,7 @@
 				<Element cardinality="0..1">
 					<Term>cac:PartyName</Term>
 					<Name>Party name</Name>
+					<Reference type="RULE">PEPPOL-T19-R005</Reference>
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Catalogue customer trading name</Name>
@@ -722,6 +726,84 @@
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir19-079</Reference>
 						<Value type="EXAMPLE">Customer</Value>
+					</Element>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:PostalAddress</Term>
+					<Name>Postal address</Name>
+					<Element cardinality="0..1">
+						<Term>cbc:StreetName</Term>
+						<Name>Address line 1</Name>
+						<Description>The main address line in a postal address usually the street
+							name and number.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir19-021</Reference>
+						<Value type="EXAMPLE">Storgata 1</Value>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:AdditionalStreetName</Term>
+						<Name>Address line 2</Name>
+						<Description>An additional address line in a postal address that can be
+							used to give further details supplementing the main line. Common use are
+							secondary house number in a complex or in a building.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir19-022</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:CityName</Term>
+						<Name>City</Name>
+						<Description>The common name of the city where the postal address is. The
+							name is written in full rather than as a code.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir19-023</Reference>
+						<Value type="EXAMPLE">Oslo</Value>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:PostalZone</Term>
+						<Name>Post code</Name>
+						<Description>The identifier for an addressable group of properties
+							according to the relevant national postal service, such as a ZIP code or
+							Post Code.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir19-024</Reference>
+						<Value type="EXAMPLE">0612</Value>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:CountrySubentity</Term>
+						<Name>Country subdivision</Name>
+						<Description>For specifying a region, county, state, province etc. within a
+							country by using text.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir19-025</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cac:AddressLine</Term>
+						<Name>Address Line</Name>
+						<Element cardinality="0..1">
+							<Term>cbc:Line</Term>
+							<Name>Address line 3</Name>
+							<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+							<DataType>Text</DataType>
+							<Value type="EXAMPLE">3rd line</Value>
+						</Element>
+					</Element>
+					<Element>
+						<Term>cac:Country</Term>
+						<Name>Country</Name>
+						<Element>
+							<Term>cbc:IdentificationCode</Term>
+							<Name>Country code</Name>
+							<Description>A code that identifies the country.The lists of valid
+								countries are registered with the ISO 3166-1 Maintenance agency,
+								"Codes for the representation of names of countries and their
+								subdivisions". Codes must be according to the alpha-2
+								representation.</Description>
+							<DataType>Code</DataType>
+							<Reference type="BUSINESS_TERM">tir19-026</Reference>
+							
+							<Reference type="CODE_LIST">ISO3166</Reference>
+							<Value type="EXAMPLE">NO</Value>
+						</Element>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">

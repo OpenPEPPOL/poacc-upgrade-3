@@ -123,11 +123,6 @@
 					<cbc:IdentificationCode>GB</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
-			<cac:Contact>
-				<cbc:Name>John Doe</cbc:Name>
-				<cbc:Telephone>55447788</cbc:Telephone>
-				<cbc:ElectronicMail>jd@IYT.com</cbc:ElectronicMail>
-			</cac:Contact>
 		</cac:Party>
 	</cac:SellerSupplierParty>
 	<cac:OriginatorCustomerParty>

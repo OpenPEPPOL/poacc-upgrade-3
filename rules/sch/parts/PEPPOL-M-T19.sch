@@ -10,18 +10,6 @@
                 flag="fatal">A validity period end date SHALL be later or equal to a validity period start date</assert>
     </rule>
 
-    <rule context="cac:ProviderParty">
-        <assert id="PEPPOL-T19-R002"
-                test="(cac:PartyName/cbc:Name) or (cac:PartyIdentification/cbc:ID)"
-                flag="fatal">A catalogue provider SHALL contain the full name or an identifier</assert>
-    </rule>
-
-    <rule context="cac:ReceiverParty">
-        <assert id="PEPPOL-T19-R003"
-                test="(cac:PartyName/cbc:Name) or (cac:PartyIdentification/cbc:ID)"
-                flag="fatal">A catalogue receiver SHALL contain the full name or an identifier</assert>
-    </rule>
-
     <rule context="cac:SellerSupplierParty">
         <assert id="PEPPOL-T19-R004"
                 test="(cac:Party/cac:PartyName/cbc:Name) or (cac:Party/cac:PartyIdentification/cbc:ID)"
