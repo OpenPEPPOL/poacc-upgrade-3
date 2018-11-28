@@ -176,37 +176,7 @@
 						<Value type="EXAMPLE">Seller Inc.</Value>
 					</Element>
 				</Element>
-				
-				<Element cardinality="0..1">
-					<Term>cac:Contact</Term>
-					<Name>Seller contact information </Name>
-					<Element cardinality="0..1">
-						<Term>cbc:Name</Term>
-						<Name>Contact person name</Name>
-						<Description>The name of the contact person.</Description>
-						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir76-074</Reference>
-						<Value type="EXAMPLE">John Doe</Value>
-					</Element>
-					<Element cardinality="0..1">
-						<Term>cbc:Telephone</Term>
-						<Name>Contact telephone number</Name>
-						<Description>A phone number for the contact person. If the person has a
-                            direct number, this is that number.</Description>
-						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir76-077</Reference>
-						<Value type="EXAMPLE">545-232321</Value>
-					</Element>
-					<Element cardinality="0..1">
-						<Term>cbc:ElectronicMail</Term>
-						<Name>Contact email address</Name>
-						<Description>The e-mail address for the contact person. If the person has a
-                            direct e-mail this is that email.</Description>
-						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir76-076</Reference>
-						<Value type="EXAMPLE">jd@testcompany.dk</Value>
-					</Element>
-				</Element>
+
 			</Element>
 		</Element>
 		<Element>

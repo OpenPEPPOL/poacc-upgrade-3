@@ -279,7 +279,6 @@
 						<Name>Buyer party identification</Name>
 						<Description>An identification for the buyer party.</Description>
 						<Reference type="BUSINESS_TERM">tir01-022</Reference>
-						<Reference type="RULE">PEPPOL-T01-R014</Reference>
 						<Attribute usage="optional">
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
@@ -405,18 +404,17 @@
 						</Element>
 					</Element>
 				</Element>
-				<Element cardinality="0..1">
+				<Element>
 					<Term>cac:PartyLegalEntity</Term>
 					<Name>Buyer legal information</Name>
 
-					<Element cardinality="0..1">
+					<Element>
 						<Term>cbc:RegistrationName</Term>
 						<Name>Buyers legal registration name</Name>
 						<Description>The official name of the party as registered with the relevant
 							fiscal authority.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-044</Reference>
-						<Reference type="RULE">PEPPOL-T01-R014</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CompanyID</Term>
@@ -529,7 +527,6 @@
 						<Description>Identifies a party.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir01-059</Reference>
-						<Reference type="RULE">PEPPOL-T01-R015</Reference>
 
 						<Attribute usage="optional">
 							<Term>schemeID</Term>
@@ -635,11 +632,11 @@
 					</Element>
 				</Element>
 
-				<Element cardinality="0..1">
+				<Element>
 					<Term>cac:PartyLegalEntity</Term>
 					<Name>Seller legal information</Name>
 
-					<Element cardinality="0..1">
+					<Element>
 						<Term>cbc:RegistrationName</Term>
 						<Name>Seller legal registration name</Name>
 						<Description>The official name of the party as registered with the relevant
@@ -739,6 +736,7 @@
 					<Term>cac:PartyIdentification</Term>
 					<Name>Party identification</Name>
 					<Description>Identification of the originator </Description>
+					<Reference type="RULE">PEPPOL-T01-R014</Reference>
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Originator identifier</Name>
@@ -756,10 +754,11 @@
 						<Value type="EXAMPLE">7300010000001</Value>
 					</Element>
 				</Element>
-				<Element>
+				<Element cardinality="0..1">
 					<Term>cac:PartyName</Term>
 					<Name>Party name</Name>
 					<Description>Name of the originator </Description>
+					<Reference type="RULE">PEPPOL-T01-R014</Reference>
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Originator name</Name>
@@ -1030,12 +1029,29 @@
 				<Element cardinality="0..1">
 					<Term>cac:Contact</Term>
 					<Name>Contact</Name>
-					<Element>
-						<Term>cbc:ID</Term>
-						<Name>Invoicee's contact identifier</Name>
-						<Description>Reference to invoicee contact</Description>
+					<Description>Invoicee contact information </Description>
+					<Element cardinality="0..1">
+						<Term>cbc:Name</Term>
+						<Name>Contact person name</Name>
+						<Description>The name of the contact person.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir01-p019</Reference>
+						<Reference type="BUSINESS_TERM">tir01-p025</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:Telephone</Term>
+						<Name>Contact telephone number</Name>
+						<Description>A phone number for the contact person. If the person has a
+							direct number, this is that number.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-p026</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:ElectronicMail</Term>
+						<Name>Contact email address</Name>
+						<Description>The e-mail address for the contact person. If the person has a
+							direct e-mail this is that email.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-p027</Reference>
 					</Element>
 				</Element>
 			</Element>

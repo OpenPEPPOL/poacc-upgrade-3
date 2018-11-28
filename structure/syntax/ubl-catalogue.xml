@@ -739,7 +739,7 @@
 						<Description>The main address line in a postal address usually the street
 							name and number.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir19-021</Reference>
+						<Reference type="BUSINESS_TERM">tir19-p041</Reference>
 						<Value type="EXAMPLE">Storgata 1</Value>
 					</Element>
 					<Element cardinality="0..1">
@@ -749,7 +749,7 @@
 							used to give further details supplementing the main line. Common use are
 							secondary house number in a complex or in a building.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir19-022</Reference>
+						<Reference type="BUSINESS_TERM">tir19-p042</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
@@ -757,7 +757,7 @@
 						<Description>The common name of the city where the postal address is. The
 							name is written in full rather than as a code.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir19-023</Reference>
+						<Reference type="BUSINESS_TERM">tir19-p043</Reference>
 						<Value type="EXAMPLE">Oslo</Value>
 					</Element>
 					<Element cardinality="0..1">
@@ -767,7 +767,7 @@
 							according to the relevant national postal service, such as a ZIP code or
 							Post Code.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir19-024</Reference>
+						<Reference type="BUSINESS_TERM">tir19-p044</Reference>
 						<Value type="EXAMPLE">0612</Value>
 					</Element>
 					<Element cardinality="0..1">
@@ -776,7 +776,7 @@
 						<Description>For specifying a region, county, state, province etc. within a
 							country by using text.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir19-025</Reference>
+						<Reference type="BUSINESS_TERM">tir19-p045</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:AddressLine</Term>
@@ -786,6 +786,7 @@
 							<Name>Address line 3</Name>
 							<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
 							<DataType>Text</DataType>
+							<Reference type="BUSINESS_TERM">tir19-p047</Reference>
 							<Value type="EXAMPLE">3rd line</Value>
 						</Element>
 					</Element>
@@ -801,7 +802,7 @@
 								subdivisions". Codes must be according to the alpha-2
 								representation.</Description>
 							<DataType>Code</DataType>
-							<Reference type="BUSINESS_TERM">tir19-026</Reference>
+							<Reference type="BUSINESS_TERM">tir19-p046</Reference>
 							
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">NO</Value>

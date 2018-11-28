@@ -31,18 +31,12 @@
                 flag="warning">An order SHOULD provide information about its validity end date.</assert>
     </rule>
 
-    <!-- Buyer party -->
-    <rule context="cac:BuyerCustomerParty/cac:Party">
-        <assert id="PEPPOL-T01-R014"
-                test="cac:PartyLegalEntity/cbc:RegistrationName or cac:PartyIdentification/cbc:ID"
-                flag="fatal">An order SHALL have the buyer party official name or a buyer party identifier</assert>
-    </rule>
 
-    <!-- Seller party -->
-    <rule context="cac:SellerSupplierParty/cac:Party">
-        <assert id="PEPPOL-T01-R015"
-                test="cac:PartyLegalEntity/cbc:RegistrationName or cac:PartyIdentification/cbc:ID"
-                flag="fatal">An order SHALL have the seller party official name or a seller party identifier</assert>
+    <!-- Originator party -->
+    <rule context="cac:OriginatorCustomerParty/cac:Party">
+        <assert id="PEPPOL-T01-R014"
+                test="cac:PartyName/cbc:Name or cac:PartyIdentification/cbc:ID"
+                flag="fatal">An order SHALL have the originator party name or an identifier</assert>
     </rule>
 
     <rule context="cac:PartyTaxScheme[cac:TaxScheme/cbc:ID='VAT']">
