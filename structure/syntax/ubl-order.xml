@@ -258,15 +258,14 @@
 				<Name>Party information</Name>
 				<Element>
 					<Term>cbc:EndpointID</Term>
-					<Name>Buyer electronic address identifier</Name>
-					<Description>Identifies the Buyers's electronic address (Endpoint)</Description>
+					<Name>Buyer party electronic address</Name>
+					<Description>Identifies the buyer party's electronic address</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir01-021</Reference>
-
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
-						<Description>Scheme identifier for electronic address</Description>
+						<Description>Scheme identifier for the electronic address</Description>
 						<Reference type="CODE_LIST">eaid</Reference>
 						<Value type="EXAMPLE">0088</Value>
 					</Attribute>
@@ -363,7 +362,7 @@
 							<Value type="EXAMPLE">Gate 34</Value>
 						</Element>
 					</Element>
-					<Element cardinality="0..1">
+					<Element>
 						<Term>cac:Country</Term>
 						<Name>Country</Name>
 						<Element>
@@ -406,7 +405,7 @@
 						</Element>
 					</Element>
 				</Element>
-				<Element>
+				<Element cardinality="0..1">
 					<Term>cac:PartyLegalEntity</Term>
 					<Name>Buyer legal information</Name>
 
@@ -505,24 +504,21 @@
 			<Element>
 				<Term>cac:Party</Term>
 				<Name>Party information</Name>
-
 				<Element>
 					<Term>cbc:EndpointID</Term>
-					<Name>Seller party electronic address identifier</Name>
-					<Description>Identifies the Seller's electronic address (Endpoint)</Description>
+					<Name>Seller party electronic address</Name>
+					<Description>Identifies the seller party's electronic address</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir01-058</Reference>
-
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
-						<Description>Scheme identifier for electronic address</Description>
+						<Description>Scheme identifier for the electronic address</Description>
 						<Reference type="CODE_LIST">eaid</Reference>
 						<Value type="EXAMPLE">0088</Value>
 					</Attribute>
 					<Value type="EXAMPLE">7300010000001</Value>
 				</Element>
-
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
 					<Name>Party identification</Name>
@@ -639,7 +635,7 @@
 					</Element>
 				</Element>
 
-				<Element>
+				<Element cardinality="0..1">
 					<Term>cac:PartyLegalEntity</Term>
 					<Name>Seller legal information</Name>
 
@@ -812,25 +808,21 @@
 				<Term>cac:Party</Term>
 				<Name>Party information</Name>
 				<Description>Description of the invoicee party</Description>
-
-				<Element>
+				<Element cardinality="0..1">
 					<Term>cbc:EndpointID</Term>
-					<Name>Invoicee party electronic address identifier</Name>
-					<Description>Identifies the Invoicee's electronic address
-						(Endpoint)</Description>
+					<Name>Invoicee party electronic address</Name>
+					<Description>Identifies the invoicee party's electronic address</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir01-157</Reference>
-
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
-						<Description>Scheme identifier for electronic address</Description>
+						<Description>Scheme identifier for the electronic address</Description>
 						<Reference type="CODE_LIST">eaid</Reference>
 						<Value type="EXAMPLE">0088</Value>
 					</Attribute>
 					<Value type="EXAMPLE">7300010000001</Value>
 				</Element>
-
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
 					<Name>Party identification</Name>

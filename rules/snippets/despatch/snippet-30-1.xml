@@ -52,6 +52,9 @@
 					<cbc:IdentificationCode>DK</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Consignee Company</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
 		</cac:Party>
 		<cac:DeliveryContact>
 			<cbc:Name>Tim</cbc:Name>
@@ -81,11 +84,6 @@
 			<cac:PartyName>
 				<cbc:Name>Seller Company</cbc:Name>
 			</cac:PartyName>
-			<cac:Contact>
-				<cbc:Name>Allan</cbc:Name>
-				<cbc:Telephone>43444546</cbc:Telephone>
-				<cbc:ElectronicMail>Allan@SellerCompany.dk</cbc:ElectronicMail>
-			</cac:Contact>
 		</cac:Party>
 	</cac:SellerSupplierParty>
 	<!-- end::seller[] -->

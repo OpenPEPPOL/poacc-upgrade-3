@@ -64,16 +64,14 @@
 			<Description>The party sending an electronic message level response message back to the sending party of the business document.</Description>
 			<Element>
 				<Term>cbc:EndpointID</Term>
-				<Name>Electronic address</Name>
-				<Description>A response may contain the party electronic address. The address can be
-                    of any format and the format should be identified in the message.</Description>
+				<Name>Sender party electronic address</Name>
+				<Description>Identifies the sender party's electronic address</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">tir71-009</Reference>
-				
 				<Attribute>
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
-					<Description>Scheme identifier for electronic address</Description>
+					<Description>Scheme identifier for the electronic address</Description>
 					<Reference type="CODE_LIST">eaid</Reference>
 					<Value type="EXAMPLE">0088</Value>
 				</Attribute>
@@ -87,16 +85,14 @@
                 This is the same party as the sender of the business document.</Description>
 			<Element>
 				<Term>cbc:EndpointID</Term>
-				<Name>Electronic address</Name>
-				<Description>A response may contain the party electronic address. The address can be
-                    of any format and the format should be identified in the message.</Description>
+				<Name>Reciever party electronic address</Name>
+				<Description>Identifies the receiver party's electronic address</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">tir71-012</Reference>
-				
 				<Attribute>
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
-					<Description>Scheme identifier for electronic address</Description>
+					<Description>Scheme identifier for the electronic address</Description>
 					<Reference type="CODE_LIST">eaid</Reference>
 					<Value type="EXAMPLE">0088</Value>
 				</Attribute>

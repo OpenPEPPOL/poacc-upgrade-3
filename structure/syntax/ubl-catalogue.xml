@@ -139,19 +139,16 @@
 			<Name>Catalogue provider</Name>
 			<Description>The party that sends the catalogue. The seller or a catalogue
                 repository.</Description>
-			<Reference type="BUSINESS_TERM">3</Reference>
 			<Element>
 				<Term>cbc:EndpointID</Term>
-				<Name>Electronic address ID</Name>
-				<Description>A catalogue may contain the providing party electronic address. The
-                    address can be of any format and the format should be identified in the
-                    message.</Description>
+				<Name>Provider party electronic address</Name>
+				<Description>Identifies the provider party's electronic address</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">tir19-009</Reference>
 				<Attribute>
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
-					<Description>Scheme identifier for Electronic address</Description>
+					<Description>Scheme identifier for the electronic address</Description>
 					<Reference type="CODE_LIST">eaid</Reference>
 					<Value type="EXAMPLE">0088</Value>
 				</Attribute>
@@ -240,7 +237,7 @@
 						<Value type="EXAMPLE">Use gate 34</Value>
 					</Element>
 				</Element>
-				<Element cardinality="0..1">
+				<Element>
 					<Term>cac:Country</Term>
 					<Name>Country</Name>
 					<Element>
@@ -325,24 +322,20 @@
 			<Name>Catalogue receiver</Name>
 			<Description>The party to which the catalogue is sent. Buyer or a catalogue repository
                 on his behalf.</Description>
-			<Reference type="BUSINESS_TERM">4</Reference>
-			<Element cardinality="0..1">
+			<Element>
 				<Term>cbc:EndpointID</Term>
-				<Name>Electronic address ID</Name>
-				<Description>A catalogue may contain the receiving party electronic address. The
-                    address can be of any format and the format should be identified in the
-                    message.</Description>
+				<Name>Reciever party electronic address</Name>
+				<Description>Identifies the receiver party's electronic address</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">tir19-012</Reference>
-
 				<Attribute>
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
-					<Description>Scheme identifier for Electronic address</Description>
+					<Description>Scheme identifier for the electronic address</Description>
 					<Reference type="CODE_LIST">eaid</Reference>
 					<Value type="EXAMPLE">0088</Value>
 				</Attribute>
-				<Value type="EXAMPLE">923654321</Value>
+				<Value type="EXAMPLE">7300010000001</Value>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:PartyIdentification</Term>
@@ -427,7 +420,7 @@
 						<Value type="EXAMPLE">Building 1</Value>
 					</Element>
 				</Element>
-				<Element cardinality="0..1">
+				<Element>
 					<Term>cac:Country</Term>
 					<Name>Country</Name>
 					<Element>
@@ -516,20 +509,20 @@
 				<Name>Party</Name>
 				<Element cardinality="0..1">
 					<Term>cbc:EndpointID</Term>
-					<Name>Electronic address ID</Name>
-					<Description>A catalogue may contain the receiving party electronic address.
-                        The address can be of any format and the format should be identified in the
-                        message.</Description>
+					<Name>Supplier party electronic address</Name>
+					<Description>Identifies the supplier party's electronic address</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-015</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
-						<Description>Scheme identifier for Electronic address identifier</Description>
+						<Description>Scheme identifier for the electronic address</Description>
+						<Reference type="CODE_LIST">eaid</Reference>
 						<Value type="EXAMPLE">0088</Value>
 					</Attribute>
-					<Value type="EXAMPLE">123456789</Value>
+					<Value type="EXAMPLE">7300010000001</Value>
 				</Element>
+				
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
 					<Name>Party identification</Name>
@@ -623,7 +616,7 @@
 							<Value type="EXAMPLE">3rd line</Value>
 						</Element>
 					</Element>
-					<Element cardinality="0..1">
+					<Element>
 						<Term>cac:Country</Term>
 						<Name>Country</Name>
 						<Element>
@@ -684,21 +677,18 @@
 				<Name>Party</Name>
 				<Element cardinality="0..1">
 					<Term>cbc:EndpointID</Term>
-					<Name>Electronic address ID</Name>
-					<Description>A catalogue may contain the catalogue customer electronic address.
-                        The address can be of any format and the format should be identified in the
-                        message.</Description>
+					<Name>Customer party electronic address</Name>
+					<Description>Identifies the customer party's electronic address</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir19-054</Reference>
-
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
-						<Description>Scheme identifier for Electronic address identifier</Description>
-
-						<Value type="EXAMPLE">0184</Value>
+						<Description>Scheme identifier for the electronic address</Description>
+						<Reference type="CODE_LIST">eaid</Reference>
+						<Value type="EXAMPLE">0088</Value>
 					</Attribute>
-					<Value type="EXAMPLE">DK9234873</Value>
+					<Value type="EXAMPLE">7300010000001</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>

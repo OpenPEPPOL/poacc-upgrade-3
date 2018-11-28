@@ -127,14 +127,14 @@
 				<Name>Description of seller</Name>
 				<Element>
 					<Term>cbc:EndpointID</Term>
-					<Name>Seller party endpoint identifier</Name>
-					<Description>Identifies the Sellers electronic address (Endpoint)</Description>
+					<Name>Seller party electronic address</Name>
+					<Description>Identifies the seller party's electronic address</Description>
+					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir76-058</Reference>
-					
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
-						<Description>Scheme identifier for electronic address</Description>
+						<Description>Scheme identifier for the electronic address</Description>
 						<Reference type="CODE_LIST">eaid</Reference>
 						<Value type="EXAMPLE">0088</Value>
 					</Attribute>
@@ -217,14 +217,14 @@
 				<Name>Description of buyer</Name>
 				<Element>
 					<Term>cbc:EndpointID</Term>
-					<Name>Buyer party endpoint identifier</Name>
-					<Description>Identifies the buyers electronic address (Endpoint)</Description>
+					<Name>Buyer party electronic address</Name>
+					<Description>Identifies the buyer party's electronic address</Description>
+					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir76-021</Reference>
-					
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
-						<Description>Scheme identifier for electronic address</Description>
+						<Description>Scheme identifier for the electronic address</Description>
 						<Reference type="CODE_LIST">eaid</Reference>
 						<Value type="EXAMPLE">0088</Value>
 					</Attribute>

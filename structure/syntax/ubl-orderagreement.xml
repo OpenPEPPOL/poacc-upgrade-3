@@ -199,16 +199,14 @@
 				<Name>Party information</Name>
 				<Element>
 					<Term>cbc:EndpointID</Term>
-					<Name>Seller electronic address</Name>
-					<Description>Identifies the seller's electronic address to which a business
-                        document may be delivered.Identifies the end point of the routing service,
-                        e.g., EAN Location Number, GLN.</Description>
+					<Name>Seller party electronic address</Name>
+					<Description>Identifies the seller party's electronic address</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir110-015</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
-						<Description>Scheme identifier for electronic address</Description>
+						<Description>Scheme identifier for the electronic address</Description>
 						<Reference type="CODE_LIST">eaid</Reference>
 						<Value type="EXAMPLE">0088</Value>
 					</Attribute>
@@ -295,7 +293,7 @@
 							<Value type="EXAMPLE">Gate 34</Value>
 						</Element>
 					</Element>
-					<Element cardinality="0..1">
+					<Element>
 						<Term>cac:Country</Term>
 						<Name>Country</Name>
 						<Element>
@@ -367,16 +365,14 @@
 				<Name>Party information</Name>
 				<Element>
 					<Term>cbc:EndpointID</Term>
-					<Name>Buyer electronic address</Name>
-					<Description>Identifies the buyers electronic address to which the business
-                        document should be delivered.Identifies the end point of the routing
-                        service.</Description>
+					<Name>Buyer party electronic address</Name>
+					<Description>Identifies the buyer party's electronic address</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir110-012</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
-						<Description>Scheme identifier for electronic address</Description>
+						<Description>Scheme identifier for the electronic address</Description>
 						<Reference type="CODE_LIST">eaid</Reference>
 						<Value type="EXAMPLE">0088</Value>
 					</Attribute>
@@ -461,7 +457,7 @@
 							<Value type="EXAMPLE">Gate 34</Value>
 						</Element>
 					</Element>
-					<Element cardinality="0..1">
+					<Element>
 						<Term>cac:Country</Term>
 						<Name>Country</Name>
 						<Element>

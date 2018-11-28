@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>    
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
 
-	<rule context="cac:DeliveryCustomerParty">
-		<assert id="PEPPOL-T16-R001"
-				test="(cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) or (cac:Party/cac:PartyIdentification/cbc:ID)"
-				flag="warning" >A consignee party SHOULD have the party name or a party identifier</assert>
-	</rule>
 
 	<rule context="ubl:DespatchAdvice">
 		<assert id="PEPPOL-T16-R002"
 				test="(cac:OrderReference/cbc:ID)"
 				flag="warning">A despatch advice SHOULD have an order identifier</assert>
 	</rule>
-
+	
+	<rule context="cac:BuyerCustomerParty">
+		<assert id="PEPPOL-T16-R008"
+			test="(cac:Party/cac:PartyName/cbc:Name) or (cac:Party/cac:PartyIdentification/cbc:ID)"
+			flag="fatal">A despatch advice buyer party SHALL contain the name or an identifier</assert>
+	</rule>
+	
+	<rule context="cac:SellerSupplierParty">
+		<assert id="PEPPOL-T16-R009"
+			test="(cac:Party/cac:PartyName/cbc:Name) or (cac:Party/cac:PartyIdentification/cbc:ID)"
+			flag="fatal">A despatch advice buyer party SHALL contain the name or an identifier</assert>
+	</rule>
+	<rule context="cac:OriginatorCustomerParty">
+		<assert id="PEPPOL-T16-R010"
+			test="(cac:Party/cac:PartyName/cbc:Name) or (cac:Party/cac:PartyIdentification/cbc:ID)"
+			flag="fatal">A despatch advice buyer party SHALL contain the name or an identifier</assert>
+	</rule>
+	
 	<rule context="cac:DespatchLine">
 		<assert id="PEPPOL-T16-R003"
 				test="(cac:Item/cac:StandardItemIdentification/cbc:ID) or  (cac:Item/cac:SellersItemIdentification/cbc:ID)"
@@ -31,9 +43,5 @@
 				flag="warning">An outstanding quantity reason SHOULD be provided if the despatch line contains an outstanding quantity</assert>
 	</rule>
 
-	<rule context="cac:DespatchSupplierParty">
-		<assert id="PEPPOL-T16-R008"
-			test="(cac:Party/cac:PartyLegalEntity/cbc:RegistrationName)"
-				flag="warning">A despatching party SHOULD have the despatching party name</assert>
-	</rule>
+
 </pattern>
