@@ -33,9 +33,9 @@
 
 
     <!-- Originator party -->
-    <rule context="cac:OriginatorCustomerParty/cac:Party">
+    <rule context="cac:OriginatorCustomerParty">
         <assert id="PEPPOL-T01-R014"
-                test="cac:PartyName/cbc:Name or cac:PartyIdentification/cbc:ID"
+                test="cac:Party/cac:PartyName/cbc:Name or cac:Party/cac:PartyIdentification/cbc:ID"
                 flag="fatal">An order SHALL have the originator party name or an identifier</assert>
     </rule>
 

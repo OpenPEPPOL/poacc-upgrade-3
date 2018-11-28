@@ -183,9 +183,6 @@
 					</cac:Country>
 				</cac:RegistrationAddress>
 			</cac:PartyLegalEntity>
-			<cac:Contact>
-				<cbc:ID>post@helse.no</cbc:ID>
-			</cac:Contact>
 		</cac:Party>
 	</cac:AccountingCustomerParty>
 	<cac:Delivery>

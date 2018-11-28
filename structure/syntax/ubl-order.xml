@@ -643,7 +643,6 @@
 							fiscal authority.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-044</Reference>
-						<Reference type="RULE">PEPPOL-T01-R015</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CompanyID</Term>
