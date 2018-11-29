@@ -44,6 +44,9 @@
 					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Supplier Works</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
 			<cac:Contact>
 				<cbc:Name>Hercule Poirot</cbc:Name>
 				<cbc:Telephone>123456</cbc:Telephone>
@@ -67,6 +70,9 @@
 					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Buyer Ltd</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
 		</cac:Party>
 		<cac:DeliveryContact>
 			<cbc:Name>Hercule Poirot</cbc:Name>
