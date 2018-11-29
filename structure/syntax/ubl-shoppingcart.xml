@@ -17,7 +17,7 @@
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir77-007</Reference>
 
-			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns77a:shopping_cart:bis3-1.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns77a:punch_out:bis3-1.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
