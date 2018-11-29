@@ -16,6 +16,7 @@ v3.0.0
 
 {description}
 
+include::../../shared/copyright.adoc[]
 
 = Link to main site of documentation
 
