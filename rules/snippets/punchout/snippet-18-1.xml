@@ -2,7 +2,7 @@
 <Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 	xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
-	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns77a:shopping_cart:bis3-1.0</cbc:CustomizationID>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns77a:punch_out:bis3-1.0</cbc:CustomizationID>
 	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis18a:punch_out:bis3-1.0</cbc:ProfileID>
 	<!-- tag::identifier[] -->
 	<cbc:ID>1387</cbc:ID>
