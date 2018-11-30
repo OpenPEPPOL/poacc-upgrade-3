@@ -14,6 +14,8 @@
   
   <!-- example and snippet folders -->
   <testfolder>examples</testfolder>
+  <testfolder>use-case-examples/order</testfolder>
+  <testfolder>use-case-examples/order-response</testfolder>
   <testfolder>snippets/order</testfolder>
   <testfolder>snippets/order-response</testfolder>
   <testfolder>snippets/order-agreement</testfolder>

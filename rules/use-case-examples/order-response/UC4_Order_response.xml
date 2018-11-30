@@ -18,11 +18,6 @@
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0192">222333222</cbc:ID>
 			</cac:PartyIdentification>
-			<cac:Contact>
-				<cbc:Name>Öystein</cbc:Name>
-				<cbc:Telephone>+47555444333</cbc:Telephone>
-				<cbc:ElectronicMail>oystein@codliveroil.no</cbc:ElectronicMail>
-			</cac:Contact>
 		</cac:Party>
 	</cac:SellerSupplierParty>
 	<cac:BuyerCustomerParty>
