@@ -75,10 +75,6 @@
         <Name>Nepalese Rupee</Name>
     </Code>
     <Code>
-        <Id>XPF</Id>
-        <Name>CFP Franc</Name>
-    </Code>
-    <Code>
         <Id>NZD</Id>
         <Name>New Zealand Dollar</Name>
     </Code>
@@ -135,10 +131,6 @@
         <Name>Philippine Piso</Name>
     </Code>
     <Code>
-        <Id>NZD</Id>
-        <Name>New Zealand Dollar</Name>
-    </Code>
-    <Code>
         <Id>PLN</Id>
         <Name>Zloty</Name>
     </Code>
@@ -163,18 +155,6 @@
         <Name>Saint Helena Pound</Name>
     </Code>
     <Code>
-        <Id>XCD</Id>
-        <Name>East Caribbean Dollar</Name>
-    </Code>
-    <Code>
-        <Id>XCD</Id>
-        <Name>East Caribbean Dollar</Name>
-    </Code>
-    <Code>
-        <Id>XCD</Id>
-        <Name>East Caribbean Dollar</Name>
-    </Code>
-    <Code>
         <Id>WST</Id>
         <Name>Tala</Name>
     </Code>
@@ -185,10 +165,6 @@
     <Code>
         <Id>SAR</Id>
         <Name>Saudi Riyal</Name>
-    </Code>
-    <Code>
-        <Id>XOF</Id>
-        <Name>CFA Franc BCEAO</Name>
     </Code>
     <Code>
         <Id>RSD</Id>
@@ -223,10 +199,6 @@
         <Name>Somali Shilling</Name>
     </Code>
     <Code>
-        <Id>ZAR</Id>
-        <Name>Rand</Name>
-    </Code>
-    <Code>
         <Id>SSP</Id>
         <Name>South Sudanese Pound</Name>
     </Code>
@@ -241,10 +213,6 @@
     <Code>
         <Id>SRD</Id>
         <Name>Surinam Dollar</Name>
-    </Code>
-    <Code>
-        <Id>NOK</Id>
-        <Name>Norwegian Krone</Name>
     </Code>
     <Code>
         <Id>SZL</Id>
@@ -315,10 +283,6 @@
         <Name>Turkmenistan New Manat</Name>
     </Code>
     <Code>
-        <Id>AUD</Id>
-        <Name>Australian Dollar</Name>
-    </Code>
-    <Code>
         <Id>UGX</Id>
         <Name>Uganda Shilling</Name>
     </Code>
@@ -365,10 +329,6 @@
     <Code>
         <Id>XPF</Id>
         <Name>CFP Franc</Name>
-    </Code>
-    <Code>
-        <Id>MAD</Id>
-        <Name>Moroccan Dirham</Name>
     </Code>
     <Code>
         <Id>YER</Id>
