@@ -134,7 +134,7 @@
     <identifier>peppolbis-18</identifier>
     <title>PEPPOL BIS 18 Punch Out 3.0 </title>
     <profileId>urn:fdc:peppol.eu:poacc:bis18a:punch_out:bis3-1.0</profileId>
-    <customizationId>urn:fdc:peppol.eu:poacc:trns77a:shopping_cart:bis3-1.0</customizationId>
+    <customizationId>urn:fdc:peppol.eu:poacc:trns77a:punch_out:bis3-1.0</customizationId>
     <inherit>peppolbis-t77-base-3.0</inherit>
   </configuration>
   
