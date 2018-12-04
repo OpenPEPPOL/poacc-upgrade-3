@@ -128,6 +128,7 @@
 				<Element cardinality="0..1">
 					<Term>cac:PostalAddress</Term>
 					<Name>Postal address</Name>
+					<Description>Postal address of the depatching party</Description>
 					<Element cardinality="0..1">
 						<Term>cbc:StreetName</Term>
 						<Name>Address line 1</Name>
@@ -217,6 +218,7 @@
 
 				<Element cardinality="0..1">
 					<Term>cac:Contact</Term>
+					<Name>Contact information</Name>
 					<Element cardinality="0..1">
 						<Term>cbc:Name</Term>
 						<Name>Contact person name</Name>
@@ -291,6 +293,7 @@
 				<Element cardinality="0..1">
 					<Term>cac:PostalAddress</Term>
 					<Name>Postal address</Name>
+					<Description>Postal address of the consignee</Description>
 					<Element cardinality="0..1">
 						<Term>cbc:StreetName</Term>
 						<Name>Address line 1</Name>
@@ -455,6 +458,7 @@
 				<Element cardinality="0..1">
 					<Term>cac:PostalAddress</Term>
 					<Name>Postal address</Name>
+					<Description>Postal address of the customer</Description>
 					<Element cardinality="0..1">
 						<Term>cbc:StreetName</Term>
 						<Name>Address line 1</Name>
@@ -572,6 +576,7 @@
 				<Element cardinality="0..1">
 					<Term>cac:PostalAddress</Term>
 					<Name>Postal address</Name>
+					<Description>Postal address of the supplier</Description>
 					<Element cardinality="0..1">
 						<Term>cbc:StreetName</Term>
 						<Name>Address line 1</Name>
@@ -649,10 +654,13 @@
 		</Element>
 		<Element cardinality="0..1">
 			<Term>cac:OriginatorCustomerParty</Term>
+			<Name>Originator customer party</Name>
 			<Element>
 				<Term>cac:Party</Term>
+				<Name>Party information</Name>
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
+					<Name>Party identification</Name>
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Originating party identifier</Name>
@@ -670,6 +678,7 @@
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:PartyName</Term>
+					<Name>Party name</Name>
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Originating party name</Name>
@@ -680,6 +689,7 @@
 				<Element cardinality="0..1">
 					<Term>cac:PostalAddress</Term>
 					<Name>Postal address</Name>
+					<Description>Postal address of the originator</Description>
 					<Element cardinality="0..1">
 						<Term>cbc:StreetName</Term>
 						<Name>Address line 1</Name>
@@ -757,6 +767,7 @@
 		</Element>
 		<Element cardinality="0..1">
 			<Term>cac:Shipment</Term>
+			<Name>Shipment information</Name>
 			<Element>
 				<Term>cbc:ID</Term>
 				<Name>Shipment identifier</Name>
@@ -810,6 +821,7 @@
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:Consignment</Term>
+				<Name>Consignment information</Name>
 				<Element>
 					<Term>cbc:ID</Term>
 					<Name>Consignment identifier</Name>
@@ -822,8 +834,10 @@
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:CarrierParty</Term>
+					<Name>Carrier party</Name>
 					<Element cardinality="0..1">
 						<Term>cac:PartyName</Term>
+						<Name>Party name</Name>
 						<Element>
 							<Term>cbc:Name</Term>
 							<Name>Carrier name</Name>
@@ -836,6 +850,7 @@
 						<Term>cac:Person</Term>
 						<Element cardinality="1..n">
 							<Term>cac:IdentityDocumentReference</Term>
+							<Name>Person identity document reference</Name>
 							<Element>
 								<Term>cbc:ID</Term>
 								<Name>Driver information</Name>
@@ -855,6 +870,7 @@
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:Delivery</Term>
+				<Name>Delivery information</Name>
 				<Element cardinality="0..1">
 					<Term>cbc:TrackingID</Term>
 					<Name>Delivery tracking identifier</Name>
@@ -864,6 +880,7 @@
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:EstimatedDeliveryPeriod</Term>
+					<Name>Estimated delivery period</Name>
 					<Element cardinality="0..1">
 						<Term>cbc:StartDate</Term>
 						<Name>Period start date</Name>
@@ -891,6 +908,7 @@
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:Despatch</Term>
+					<Name>Actual or expected despatch period</Name>
 					<Element cardinality="0..1">
 						<Term>cbc:ActualDespatchDate</Term>
 						<Name>Shipment dispatch date</Name>
@@ -907,32 +925,46 @@
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:DespatchAddress</Term>
+						<Name>Despatch address</Name>
 						<Element cardinality="0..1">
 							<Term>cbc:ID</Term>
+							<Name>Identifier</Name>
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cbc:StreetName</Term>
 							<Name>Address line 1</Name>
+							<Description>The main address line in a postal address usually the street
+							name and number.</Description>
 							<Reference type="BUSINESS_TERM">tir16-p003</Reference>
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cbc:AdditionalStreetName</Term>
 							<Name>Address line 2</Name>
+							<Description>An additional address line in a postal address that can be used
+							to give further details supplementing the main line. Common use are
+							secondary house number in a complex or in a building.</Description>
 							<Reference type="BUSINESS_TERM">tir16-p004</Reference>
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cbc:CityName</Term>
 							<Name>City</Name>
+							<Description>The common name of the city where the postal address is. The
+							name is written in full rather than as a code.</Description>
 							<Reference type="BUSINESS_TERM">tir16-p005</Reference>
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cbc:PostalZone</Term>
 							<Name>Post code</Name>
+							<Description>The identifier for an addressable group of properties according
+							to the relevant national postal service, such as a ZIP code or Post
+							Code.</Description>
 							<Reference type="BUSINESS_TERM">tir16-p006</Reference>
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cbc:CountrySubentity</Term>
 							<Name>Country subdivision</Name>
+							<Description>For specifying a region, county, state, province etc. within a
+							country by using text.</Description>
 							<Reference type="BUSINESS_TERM">tir16-p007</Reference>
 						</Element>
 						<Element cardinality="0..1">
@@ -950,6 +982,7 @@
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cac:Country</Term>
+							<Name>Country</Name>
 							<Element>
 								<Term>cbc:IdentificationCode</Term>
 								<Name>Country code</Name>
@@ -970,6 +1003,7 @@
 		</Element>
 		<Element cardinality="1..n">
 			<Term>cac:DespatchLine</Term>
+			<Name>Despatch advice line</Name>
 			<Element>
 				<Term>cbc:ID</Term>
 				<Name>Dispatch line identifier</Name>
@@ -1028,9 +1062,10 @@
 			</Element>
 			<Element>
 				<Term>cac:OrderLineReference</Term>
+				<Name>Order line reference</Name>
 				<Element>
 					<Term>cbc:LineID</Term>
-					<Name>Orde line reference</Name>
+					<Name>Order line identifier</Name>
 					<Description>To uniquely identify the line of the order that is being
 						despatched.</Description>
 					<Reference type="BUSINESS_TERM">tir16-051</Reference>
@@ -1129,6 +1164,7 @@
 
 				<Element cardinality="0..n">
 					<Term>cac:HazardousItem</Term>
+					<Name>Hazardous item information</Name>
 					<Element cardinality="0..1">
 						<Term>cbc:UNDGCode</Term>
 						<Name>Hazardous item UNDG code</Name>
@@ -1213,6 +1249,7 @@
 				</Element>
 				<Element cardinality="0..n">
 					<Term>cac:ItemInstance</Term>
+					<Name>Item instance information</Name>
 					<Element cardinality="0..1">
 						<Term>cbc:ManufactureDate</Term>
 						<Name>Item manufactured date</Name>
@@ -1236,6 +1273,7 @@
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:LotIdentification</Term>
+						<Name>Lot identifictation</Name>
 						<Element cardinality="0..1">
 							<Term>cbc:LotNumberID</Term>
 							<Name>Item batch number</Name>
@@ -1256,11 +1294,13 @@
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:Shipment</Term>
+				<Name>Shipment information</Name>
 				<Element>
 					<Term>cbc:ID</Term>
 				</Element>
 				<Element cardinality="0..n">
 					<Term>cac:TransportHandlingUnit</Term>
+					<Name>Transport handling unit information</Name>
 					<Element cardinality="0..1">
 						<Term>cbc:ID</Term>
 						<Name>Handling unit identifier</Name>
@@ -1294,6 +1334,7 @@
 
 					<Element cardinality="0..n">
 						<Term>cac:MeasurementDimension</Term>
+						<Name>Measurement dimentions</Name>
 						<Element>
 							<Term>cbc:AttributeID</Term>
 							<Name>Attribute identifier</Name>
