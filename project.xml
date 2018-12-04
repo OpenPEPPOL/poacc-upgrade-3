@@ -3,7 +3,7 @@
     <Name>PEPPOL BIS3 Upgrade, version BIS3-1.0 Rlease Candidate</Name>
     <!-- Introduction -->
     <Documentation path="">INTRODUCTION</Documentation>
-    <Documentation path="releasenotes/">- BIS3-1.0 rc Release notes</Documentation>
+    <Documentation path="releasenotes/">- BIS3-1.0 Release notes</Documentation>
     <Documentation path="changes/">- Overview of alignments</Documentation>
     <Documentation path="migration/">- Migration plan</Documentation>
     <!-- BIS documents -->
@@ -174,7 +174,7 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/eaid.xml</Path>
+        <Path>structure/codelist/eas.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
