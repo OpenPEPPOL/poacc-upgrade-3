@@ -27,7 +27,7 @@ These are rules that are automatically generated based on the syntax datamodel. 
 
 Each basic rule has an identifier that include the transaction id and a sequential number starting with a B. As example "PEPPOL-T01-B00101"
 
-=== Business rules
+==== Business rules
 There are business rules that can not be automatically generated from the data model. These are mainly rules that concern relations between elements, such as:
 
 * Conditional values (IF-THEN)
