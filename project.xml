@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
-    <Name>PEPPOL BIS3 Upgrade, version BIS3-1.0 Rlease Candidate</Name>
+    <Name>PEPPOL BIS 3.0 Release</Name>
     <!-- Introduction -->
     <Documentation path="">INTRODUCTION</Documentation>
-    <Documentation path="releasenotes/">- BIS3-1.0 Release notes</Documentation>
+    <Documentation path="releasenotes/">- BIS 3.0 Release notes</Documentation>
     <Documentation path="changes/">- Overview of alignments</Documentation>
     <Documentation path="migration/">- Migration plan</Documentation>
     <!-- BIS documents -->
     <Documentation path="">BIS DOCUMENTS</Documentation>
-    <Documentation path="profiles/3-order-only/">- BIS03A Order only — BIS3-1.0</Documentation>
-    <Documentation path="profiles/28-ordering/">- BIS28A Ordering — BIS3-1.0</Documentation>
-    <Documentation path="profiles/1-catalogueonly/">- BIS01A Catalogue only —
-        BIS3-1.0</Documentation>
-    <Documentation path="profiles/30-despatchadvice/">- BIS30A Despatch Advice —
-        BIS3-1.0</Documentation>
-    <Documentation path="profiles/18-punchout/">- BIS18A Punch Out — BIS3-1.0</Documentation>
-    <Documentation path="profiles/42-orderagreement/">- BIS42A Order Agreement —
-        BIS3-1.0</Documentation>
-    <Documentation path="profiles/36-mlr/">- BIS36A Message Level Response —
-        BIS3-1.0</Documentation>
-    <Documentation path="profiles/63-invoiceresponse/">- BIS63A Invoice Response —
-        BIS3-1.0</Documentation> Working documents <!-- <Documentation path="work/">Overview and processing of alignments</Documentation> -->
+    <Documentation path="profiles/3-order-only/">- PEPPOL BIS Order only 3.0</Documentation>
+    <Documentation path="profiles/28-ordering/">- PEPPOL BIS Ordering 3.0</Documentation>
+    <Documentation path="profiles/1-catalogueonly/">- PEPPOL BIS Catalogue only 3.0</Documentation>
+    <Documentation path="profiles/30-despatchadvice/">- PEPPOL BIS Despatch Advice 3.0</Documentation>
+    <Documentation path="profiles/18-punchout/">- PEPPOL BIS Punch Out 3.0</Documentation>
+    <Documentation path="profiles/42-orderagreement/">- PEPPOL BIS Order Agreement 3.0</Documentation>
+    <Documentation path="profiles/36-mlr/">- PEPPOL BIS Message Level Response 3.0</Documentation>
+    <Documentation path="profiles/63-invoiceresponse/">- PEPPOL BIS Invoice Response 3.0</Documentation> Working documents <!-- <Documentation path="work/">Overview and processing of alignments</Documentation> -->
     <!-- <Documentation path="review/">Review of alignments</Documentation> -->
     <!-- <Documentation path="methodology/schematron/">Schematron guideline</Documentation> -->
     <!-- <Documentation path="work/rules/">Automatic/manual rules</Documentation> -->
