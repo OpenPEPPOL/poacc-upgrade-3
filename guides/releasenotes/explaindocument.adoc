@@ -8,7 +8,7 @@ For each Business Interoperability Specification (BIS) there are the following p
 The specification of a business process. The document describes the business process that it supports and provides details on how individual elements that are exchanged in transactions are to be used and understood. It provides business examples and syntax examples where needed. Defines rules that govern the data as well as code list that must be used.
 
 === Syntax
-The syntax document lists the data model of a transaction inluding what elements it contains, their cardinality and allowed values. The datamodel also contains examples of data. In this doeument the datamodel is mapped to the UBL 2.1 syntax.
+The syntax document lists the data model of a transaction inluding what elements it contains, their cardinality and allowed values. The datamodel also contains examples of data. In this document the datamodel is mapped to the UBL 2.1 syntax.
 
 === Rules
 For each BIS there are three sets of rules.
