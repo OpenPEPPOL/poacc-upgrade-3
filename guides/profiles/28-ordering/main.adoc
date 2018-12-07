@@ -1,6 +1,6 @@
 include::../../shared/links.adoc[]
 
-= image:../../shared/images/peppol.png[float="right"]BIS Ordering - 28
+= image:../../shared/images/peppol.png[float="right"]BIS Ordering 3.0
 OpenPEPPOL AISBL, Post-Award Coordinating Community
 v3.0.0
 :doctype: book

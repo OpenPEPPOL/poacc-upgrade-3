@@ -1,6 +1,6 @@
 include::../../shared/links.adoc[]
 
-= image:../../shared/images/peppol.png[float="right"]BIS Order only - 3A
+= image:../../shared/images/peppol.png[float="right"]BIS Order only 3.0
 {author}
 v3.0.0
 :doctype: book

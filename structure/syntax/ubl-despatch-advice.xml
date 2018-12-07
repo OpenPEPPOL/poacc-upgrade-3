@@ -848,6 +848,7 @@
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:Person</Term>
+						<Name>Information about the driver</Name>
 						<Element cardinality="1..n">
 							<Term>cac:IdentityDocumentReference</Term>
 							<Name>Person identity document reference</Name>
