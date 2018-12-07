@@ -9,7 +9,7 @@
 :migration-policy: https://github.com/OpenPEPPOL/documentation/blob/master/LifecycleManagement/ReleaseManagement/Migration%20Policy%20-%20Common%20Document%202014-02-24%20rev%202014-08-27.pdf[OpenPEPPOL Migration Policy]
 :peppol-transport: https://peppol.eu/downloads/the-peppol-edelivery-network-specifications/[PEPPOL eDelivery Network Specifications]
 :peppol-billing: http://docs.peppol.eu/poacc/billing/3.0/[PEPPOL BIS Billing 3.0]
-:main-site: http://test-docs.peppol.eu/poacc/upgrade-3/[Main documentation site]
+:main-site: link:/poacc/upgrade-3/[Main documentation site]
 
 //CEN
 :CEN: https://www.cen.eu/Pages/default.aspx[CEN]
@@ -59,7 +59,7 @@
 :imr-UC: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/master/examples/use-case-examples/invoice-response[Use case example files]
 
 //internal
-:link-codelist: http://test-docs.peppol.eu/poacc/upgrade-3/codelist/[Code list section]
-:codelist-ICD: http://test-docs.peppol.eu/poacc/upgrade-3/codelist/ICD/[ICD codes]
-:vat-codes: http://test-docs.peppol.eu/poacc/upgrade-3/codelist/UNCL5305/[Code list UNCL5305]
-:mime-codes: http://test-docs.peppol.eu/poacc/upgrade-3/codelist/MimeCode/[Mime codes]
+:link-codelist: link:/poacc/upgrade-3/codelist/[Code list section]
+:codelist-ICD: link:/poacc/upgrade-3/codelist/ICD/[ICD codes]
+:vat-codes: link:/poacc/upgrade-3/codelist/UNCL5305/[Code list UNCL5305]
+:mime-codes: link:/poacc/upgrade-3/codelist/MimeCode/[Mime codes]
