@@ -23,47 +23,47 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-order.xml</Path>
-        <Title>PEPPOL Order transaction 3.0</Title>
+        <Title>PEPPOL Order transaction 3.0 (T01)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-order-response.xml</Path>
-        <Title>PEPPOL Order Response transaction 3.0</Title>
+        <Title>PEPPOL Order Response transaction 3.0 (T79)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-orderagreement.xml</Path>
-        <Title>PEPPOL Order Agreement transaction 3.0</Title>
+        <Title>PEPPOL Order Agreement transaction 3.0 (T110)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-catalogue.xml</Path>
-        <Title>PEPPOL Catalogue transaction 3.0</Title>
+        <Title>PEPPOL Catalogue transaction 3.0 (T19)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-catalogue-response.xml</Path>
-        <Title>PEPPOL Catalogue Response transaction 3.0</Title>
+        <Title>PEPPOL Catalogue Response transaction 3.0 (T58)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-despatch-advice.xml</Path>
-        <Title>PEPPOL Despatch Advice transaction 3.0</Title>
+        <Title>PEPPOL Despatch Advice transaction 3.0 (T16)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-shoppingcart.xml</Path>
-        <Title>PEPPOL Punch Out transaction 3.0</Title>
+        <Title>PEPPOL Punch Out transaction 3.0 (T77)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-mlr.xml</Path>
-        <Title>PEPPOL Message Level Response 3.0</Title>
+        <Title>PEPPOL Message Level Response 3.0 (T71)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-invoiceresponse.xml</Path>
-        <Title>PEPPOL Invoice Response transaction 3.0</Title>
+        <Title>PEPPOL Invoice Response transaction 3.0 (T111)</Title>
     </Resource>
     <!-- Rules -->
     <Resource>
@@ -76,7 +76,7 @@
         <Identifier>T01</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T01.sch</Path>
-        <Title>Business rules for PEPPOL Order transaction 3.0</Title>
+        <Title>Business rules for PEPPOL Order transaction 3.0 </Title>
     </Resource>
     <Resource>
         <Identifier>T16</Identifier>
