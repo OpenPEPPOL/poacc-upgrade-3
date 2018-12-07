@@ -829,7 +829,7 @@
 						assigned to goods, both for import and export.</Description>
 					<Reference type="BUSINESS_TERM">tir16-040</Reference>
 				</Element>
-				<Element cardinality="0..n">
+				<Element cardinality="0..1">
 					<Term>cbc:Information</Term>
 				</Element>
 				<Element cardinality="0..1">
@@ -1298,6 +1298,9 @@
 				<Name>Shipment information</Name>
 				<Element>
 					<Term>cbc:ID</Term>
+					<Name>Shipment identifier</Name>
+					<Description>Element is mandated by syntax structure use value NA</Description>
+					<Value type="FIXED">NA</Value>
 				</Element>
 				<Element cardinality="0..n">
 					<Term>cac:TransportHandlingUnit</Term>
