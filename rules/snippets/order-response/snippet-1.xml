@@ -3,8 +3,8 @@
   xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2"
   xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-  <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns76a:order_response:bis3-1.0</cbc:CustomizationID>
-  <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis28a:ordering:bis3-1.0</cbc:ProfileID>
+  <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:order_response:3</cbc:CustomizationID>
+  <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:ordering:3</cbc:ProfileID>
   <cbc:ID>101</cbc:ID>
   <cbc:IssueDate>2013-07-01</cbc:IssueDate>
   <cbc:IssueTime>06:10:10</cbc:IssueTime>

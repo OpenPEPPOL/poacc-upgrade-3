@@ -12,7 +12,7 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
 
-			<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis03a:order_only:bis3-1.0</cbc:ProfileID>
+			<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:order_only:3</cbc:ProfileID>
 			
 		</Order>
 	</test>
@@ -26,7 +26,7 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
 			
-			<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis28a:ordering:bis3-1.0</cbc:ProfileID>
+			<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:ordering:3</cbc:ProfileID>
 			
 		</Order>
 	</test>
@@ -39,7 +39,7 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
 			
-			<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis36a:mlr:bis3-1.0</cbc:ProfileID>
+			<cbc:ProfileID>urn:fdc:peppol.eu:poacc:trns:mlr:3</cbc:ProfileID>
 			
 		</Order>
 	</test>

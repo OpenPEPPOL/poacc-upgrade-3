@@ -92,7 +92,7 @@
   
   <configuration>
     <identifier>peppolbis-28-order</identifier>
-    <title>PEPPOL BIS 28 Order 3.0 </title>
+    <title>PEPPOL BIS Ordering 3.0 </title>
     <profileId>urn:fdc:peppol.eu:poacc:bis28a:ordering:bis3-1.0</profileId>
     <customizationId>urn:fdc:peppol.eu:poacc:trns01a:order:bis3-1.0</customizationId>
     <inherit>peppolbis-t01-base-3.0</inherit>

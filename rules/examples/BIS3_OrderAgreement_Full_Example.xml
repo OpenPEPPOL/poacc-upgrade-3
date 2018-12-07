@@ -13,8 +13,8 @@
 <OrderResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2"
 			   xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns110a:order_agreement:bis3-1.0</cbc:CustomizationID>
-	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis42a:order_agreement:bis3-1.0</cbc:ProfileID>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:order_agreement:3</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:order_agreement:3</cbc:ProfileID>
 	<cbc:ID>0263bf48-9a55-4d15-adf5-2c2921036d1c</cbc:ID>
 	<cbc:SalesOrderID>101-111</cbc:SalesOrderID>
 	<cbc:IssueDate>2013-07-01</cbc:IssueDate>

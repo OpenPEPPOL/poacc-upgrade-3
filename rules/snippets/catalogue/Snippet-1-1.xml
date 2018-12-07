@@ -3,10 +3,10 @@
 	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 	xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 	<!-- tag::customizationid[] -->
-	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns19a:catalogue:bis3-1.0</cbc:CustomizationID>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:catalogue:3</cbc:CustomizationID>
 	<!-- end::customizationid[] -->
 	<!-- tag::profile[] -->
-	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis01a:catalogue_only:bis3-1.0</cbc:ProfileID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:catalogue_only:3</cbc:ProfileID>
 	<!-- end::profile[] -->
 	<!-- tag::identifier[] -->
 	<cbc:ID>1387</cbc:ID>
