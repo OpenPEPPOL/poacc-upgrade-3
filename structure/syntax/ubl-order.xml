@@ -23,7 +23,7 @@
 				transaction.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir01-001</Reference>
-			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns01a:order:bis3-1.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns:order:3</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
@@ -33,7 +33,7 @@
 				or urn:fdc:peppol.eu:poacc:bis28a:ordering_only:bis3-1.0</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir01-002</Reference>
-			<Value type="EXAMPLE">urn:fdc:peppol.eu:poacc:bis03a:order_only:bis3-1.0</Value>
+			<Value type="EXAMPLE">urn:fdc:peppol.eu:poacc:bis:order_only:3 or urn:fdc:peppol.eu:poacc:bis:ordering:3</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>

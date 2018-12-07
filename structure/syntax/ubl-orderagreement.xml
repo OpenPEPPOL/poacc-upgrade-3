@@ -19,7 +19,7 @@
                 version of the specification as well as any customizations applied.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir110-009</Reference>
-			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns110a:order_agreement:bis3-1.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns:order_agreement:3</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
@@ -28,7 +28,7 @@
                 It enables the buyer to process the document in an appropriate way.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir110-008</Reference>
-			<Value type="FIXED">urn:fdc:peppol.eu:poacc:bis42a:order_agreement:bis3-1.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:bis:order_agreement:3</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>

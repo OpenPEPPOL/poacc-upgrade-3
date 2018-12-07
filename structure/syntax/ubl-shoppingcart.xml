@@ -17,7 +17,7 @@
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir77-007</Reference>
 
-			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns77a:punch_out:bis3-1.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns:punch_out:3</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
@@ -27,7 +27,7 @@
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir77-006</Reference>
 
-			<Value type="FIXED">urn:fdc:peppol.eu:poacc:bis18a:punch_out:bis3-1.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:bis:punch_out:3</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>

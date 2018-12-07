@@ -18,7 +18,7 @@
                 transaction.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir71-006</Reference>
-			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns71a:mlr:bis3-1.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns:mlr:3</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
@@ -28,7 +28,7 @@
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir71-005</Reference>
 			
-			<Value type="FIXED">urn:fdc:peppol.eu:poacc:bis36a:mlr:bis3-1.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:bis:mlr:3</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>

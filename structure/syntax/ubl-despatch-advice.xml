@@ -21,7 +21,7 @@
 				transaction.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir16-002</Reference>
-			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns16a:despatch_advice:bis3-1.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns:despatch_advice:3</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
@@ -30,7 +30,7 @@
 				transaction appears.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir16-001</Reference>
-			<Value type="FIXED">urn:fdc:peppol.eu:poacc:bis30a:despatch_advice:bis3-1.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:bis:despatch_advice:3</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>
