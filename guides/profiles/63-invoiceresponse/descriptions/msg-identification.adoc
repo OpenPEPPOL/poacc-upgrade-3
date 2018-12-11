@@ -6,8 +6,8 @@ The first section of the message is concerned with identifying the message and d
 .UBL example:
 [source, xml]
 ----
-<cbc:CustomizationID>urn:www.peppol.eu:transaction:biitrns111:ver1.0</cbc:CustomizationID> <1>
-<cbc:ProfileID>urn:www.peppol.eu:profile:bis63:ver1.0</cbc:ProfileID> <2>
+<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:invoice_response:3</cbc:CustomizationID> <1>
+<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:invoice_response:3</cbc:ProfileID> <2>
 <cbc:ID>imrid001</cbc:ID> <3>
 <cbc:IssueDate>2016-10-26</cbc:IssueDate> <4>
 <cbc:IssueTime>12:00:00</cbc:IssueTime> <4>
