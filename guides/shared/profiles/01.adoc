@@ -12,6 +12,10 @@ In the table below you will find the values to be used as the specification iden
 
 
 | Catalogue (Trdm19)
-| urn:fdc:peppol.eu:poacc:bis01a:catalogue_only:bis3-1.0
-| urn:fdc:peppol.eu:poacc:trns19a:catalogue:bis3-1.0
+| urn:fdc:peppol.eu:poacc:trns:catalogue:3
+.2+.^| urn:fdc:peppol.eu:poacc:bis:catalogue_only:3
+
+| Catalogue response (Trdm58)
+| urn:fdc:peppol.eu:poacc:trns:catalogue_response:3
+|
 |===

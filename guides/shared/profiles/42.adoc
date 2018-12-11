@@ -12,6 +12,6 @@ In the table below you will find the values to be used as the specification iden
 
 
 | Order Agreement (Trdm110)
-| urn:fdc:peppol.eu:poacc:trns110a:order_agreement:bis3-1.0
-| urn:fdc:peppol.eu:poacc:bis42a:order_agreement:bis3-1.0
+| urn:fdc:peppol.eu:poacc:trns:order_agreement:3
+| urn:fdc:peppol.eu:poacc:bis:order_agreement:3
 |===

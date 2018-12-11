@@ -13,6 +13,6 @@ In the table below you will find the values to be used as the specification iden
 
 
 | Invoice message response (Trns111)
-| urn:fdc:peppol.eu:poacc:trns111a:invoice_response:bis3-1.0
-| urn:fdc:peppol.eu:poacc:bis63a:invoice_response:bis3-1.0
+| urn:fdc:peppol.eu:poacc:trns:invoice_response:3
+| urn:fdc:peppol.eu:poacc:bis:invoice_response:3
 |===
