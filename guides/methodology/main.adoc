@@ -3,7 +3,6 @@ include::links.adoc[]
 = image:../shared/images/peppol.png[float="right"]PEPPOL Documentation Methodology
 OpenPEPPOL AISBL, Post-Award Coordinating Community
 v0.1.0
-:description: This document describes the documentation methodology for PEPPOL BIS documents.
 :doctype: book
 :icons: font
 :stem:
@@ -13,9 +12,7 @@ v0.1.0
 :source-language: xml
 :sectanchors:
 :sectnums:
-:title-logo-image: ../../shared/images/peppol.png
 
-{description}
 
 :leveloffset: +1
 
@@ -24,5 +21,7 @@ include::introduction.adoc[]
 include::asciidoc/index.adoc[]
 
 include::structure/index.adoc[]
+
+include::schematron/index.adoc[]
 
 :leveloffset: -1

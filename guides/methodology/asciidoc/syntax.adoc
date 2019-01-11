@@ -24,13 +24,13 @@ AsciiDoc gives the opportunity to get specific lines of a file, and also to get 
 .Example showing AsciiDoc syntax
 [indent=0]
 ----
-    [source, xml, indent=0] <1>
+    [indent=0] <1>
     ----
     include::snippets/snippet-01.xml[tags=price]<2>
     ----
 ----
 
-<1> Setting source to xml, and also setting indent to 0, allowing the leading block indent to be stripped
+<1> Setting indent to 0, allowing the leading block indent to be stripped
 <2> The file and explicit tags to fetch
 
 
@@ -40,5 +40,6 @@ AsciiDoc gives the opportunity to get specific lines of a file, and also to get 
 include::../snippets/snippet-01.xml[tags=price]
 ----
 
-
 The xml file used to extract this snippet, can be found here link:snippets/snippet-01.xml[snippet-01.xml]
+
+<<<

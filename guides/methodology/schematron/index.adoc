@@ -1,4 +1,4 @@
-= Introduction
+= Schematron design
 
 As several people are involved in the development of the schematron artefacts, this small guideline has been created in order to align how the schematrons are written/developed.
 
@@ -8,7 +8,7 @@ The design rules have been developed in order to achieve
 * good performance
 * readability for technical and non-technical staff
 
-For furhter information on the schematron syntax, please refer to http://schematron.com/[the schematron website].
+For further information on the schematron syntax, please refer to http://schematron.com/[the schematron website].
 
 :leveloffset: +1
 

@@ -30,3 +30,5 @@ Further information on include directive can be found here: https://asciidoctor.
 <3> Allways have one empty line between the include statements
 <4> Including a shared file (a file used by more than one BIS document)
 <5> Setting leveloffset back  (See <<header-levels>>)
+
+<<<
