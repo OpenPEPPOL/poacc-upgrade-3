@@ -13,6 +13,8 @@ v3.0.0
 :sectanchors:
 :sectnums:
 :snippet-dir: ../../../../rules/snippets/catalogue
+:catalogue-path: ../../transactions/19-catalogue
+:response-path: ../../transactions/58-catalogue-response
 
 {description}
 
@@ -31,13 +33,11 @@ include::principles/index.adoc[]
 
 include::process/index.adoc[]
 
-// include::requirements/index.adoc[]
-
 include::../../shared/datatypes/index.adoc[]
 
 include::../../shared/codes/index.adoc[]
 
-include::description/index.adoc[]
+include::{catalogue-path}/description/index.adoc[]
 
 include::profile/index.adoc[]
 

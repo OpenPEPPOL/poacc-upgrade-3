@@ -9,32 +9,15 @@ It is intended to support transmission of electronic catalogue-messages for proc
 The BIS mandates no procurement related data but supports different ways of referring to products and services.
 By selective use of such references it can be used as basis for automated processing of ordering and invoicing.
 
-The intended scope for this BIS is:
+include::../../../shared/files/scope.adoc[]
 
-* B2B and B2G
-* Common business processes for cross industry and cross border procurement
-* Regional procurement within EU and EEA
-* For supporting purchase of goods and services and/or services that can be itemized.
-
-This PEPPOL BIS supports a set of “common use cases / process”. These are processes that are used widely or understood as being relevant for most companies.
-
-The main activities supported by this BIS are:
-
-* Description of goods and services
-* Maintaining content of framework contract
-* Item comparison
-* Item dependency and composition
-* Description of packaging and storage requirements
-* VAT classification
-* Item instance description
-* Maintenance of catalogue
-
-This PEPPOL BIS supports requirements by providing elements for information needed to meet the requirement.
-This BIS also provides a set of business rules to clarify content and implementers can use them as basis for validation where it provides business value.
 
 :leveloffset: +1
 
 include::benefits.adoc[]
+
 include::parties.adoc[]
+
+include::../../../shared/files/interoperability.adoc[]
 
 :leveloffset: -1
