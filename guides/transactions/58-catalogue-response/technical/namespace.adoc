@@ -1,4 +1,4 @@
-The catalogue response data model bound to {ubl} document type {ubl-appl-resp}.
+The catalogue response data model is bound to {ubl} document type {ubl-appl-resp}.
 
 ====
 The target namespace for the catalogue response is::
