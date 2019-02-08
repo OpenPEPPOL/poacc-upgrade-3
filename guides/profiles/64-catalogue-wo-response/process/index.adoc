@@ -14,9 +14,13 @@ Any further processing is outside scope of this BIS, and is in most cases done i
 :leveloffset: +1
 
 include::usecase1.adoc[]
+
 include::usecase2.adoc[]
+
 include::usecase3.adoc[]
+
 include::usecase4.adoc[]
+
 include::usecase5.adoc[]
 
 :leveloffset: -1

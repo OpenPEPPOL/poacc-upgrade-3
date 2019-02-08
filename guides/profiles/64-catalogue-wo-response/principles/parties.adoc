@@ -35,5 +35,3 @@ The following diagram links the business processes to the roles performed by the
 
 
 include::../{catalogue-path}/roles/roles.adoc[]
-
-include::../{response-path}/roles/roles.adoc[]
