@@ -4,6 +4,15 @@
         <let name="CatalogueValidityStart" value="if(exists(/ubl:Catalogue/cac:ValidityPeriod/cbc:StartDate)) then number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:StartDate,'-','')) else 0"/>
         <let name="CatalogueValidityEnd" value="if(exists(/ubl:Catalogue/cac:ValidityPeriod/cbc:EndDate)) then number(translate(/ubl:Catalogue/cac:ValidityPeriod/cbc:EndDate,'-','')) else 99999999"/>
 
+
+
+    <rule context="cbc:ProfileID">
+        <assert id="PEPPOL-T19-R017"
+            test="some $p in tokenize('urn:fdc:peppol.eu:poacc:bis:catalogue_only:3 urn:fdc:peppol.eu:poacc:bis:catalogue_wo_response:3', '\s') satisfies $p = normalize-space(.)"
+            flag="fatal">An order transaction SHALL use profile catalogue only or catalogue without response.</assert>
+    </rule>
+    
+    
     <rule context="/ubl:Catalogue/cac:ValidityPeriod">
         <assert id="PEPPOL-T19-R001"
                 test="$CatalogueValidityEnd &gt;= $CatalogueValidityStart"
