@@ -63,6 +63,6 @@
 //internal
 :link-codelist: link:/poacc/upgrade-3/codelist/[Code list section]
 :codelist-ICD: link:/poacc/upgrade-3/codelist/ICD/[ICD codes]
-:codelist-EAS: link:/poacc/upgrade-3/codelist/eas/[ICD codes]
+:codelist-EAS: link:/poacc/upgrade-3/codelist/eas/[EAS codes]
 :vat-codes: link:/poacc/upgrade-3/codelist/UNCL5305/[Code list UNCL5305]
 :mime-codes: link:/poacc/upgrade-3/codelist/MimeCode/[Mime codes]
