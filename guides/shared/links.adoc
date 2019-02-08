@@ -52,6 +52,8 @@
 :UNCL7143: http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7143.htm[UN/CEFACT code list 7143, D.16B]
 :UNCL1001: https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred1001.htm[UN/CEFACT code list 1001, D.17A]
 :UNCL4343: https://www.unece.org/fileadmin/DAM/trade/untdid/d17a/tred/tred4343.htm[UN/CEFACT code list 4343, D.17A]
+:cef-codelists: https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/Code+lists#Codelists-1[CEF Code lists]
+
 
 //examples
 :order-UC: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/master/rules/use-case-examples/order[Use case example files]
@@ -61,5 +63,6 @@
 //internal
 :link-codelist: link:/poacc/upgrade-3/codelist/[Code list section]
 :codelist-ICD: link:/poacc/upgrade-3/codelist/ICD/[ICD codes]
+:codelist-EAS: link:/poacc/upgrade-3/codelist/eas/[ICD codes]
 :vat-codes: link:/poacc/upgrade-3/codelist/UNCL5305/[Code list UNCL5305]
 :mime-codes: link:/poacc/upgrade-3/codelist/MimeCode/[Mime codes]
