@@ -7,7 +7,6 @@ The status code can be supplemented with a clarification or an action code or te
 
 The codes in the Invoice Response are given in the following structure.
 
-#Should the list include the xPaths for technical clarification?#
 ====
 * Invoice Status (1..1) 'cac:DocumentResponse/Response/cbc:ResponseCode'
 ** Clarification (0..n)
