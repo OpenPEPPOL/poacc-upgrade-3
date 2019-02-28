@@ -63,5 +63,4 @@ c.  The transport handling units
 d.  The items
 e.  The delivered quantity/weight
 
-|*XML example file* |See Annex A for a sample file illustrating Use Case 4.
 |====

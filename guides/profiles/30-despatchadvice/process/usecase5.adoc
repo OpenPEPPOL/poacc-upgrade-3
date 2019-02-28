@@ -75,5 +75,4 @@ image:images/image10.png[image,width=143,height=94]
 ..  The articles
 ..  The delivered quantity/weight
 
-|*XML example file* |See Annex A for a sample file illustrating Use Case 5.
 |====

@@ -14,6 +14,7 @@ The following section and diagrams show the choreography of the business process
 :leveloffset: +1
 
 include::simpleprocess.adoc[]
+
 include::advancedprocess.adoc[]
 
 :leveloffset: -1
@@ -24,9 +25,13 @@ include::advancedprocess.adoc[]
 :leveloffset: +1
 
 include::usecase1.adoc[]
+
 include::usecase2.adoc[]
+
 include::usecase3.adoc[]
+
 include::usecase4.adoc[]
+
 include::usecase5.adoc[]
 
 :leveloffset: -1

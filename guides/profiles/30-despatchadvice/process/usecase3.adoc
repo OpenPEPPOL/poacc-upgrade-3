@@ -38,7 +38,7 @@ Buyer (In UBL: BuyerCustomerParty)
 +
 _Relationship between the GTIN and the SSCC keys_
 +
-image:images/image7.emf[image,width=271,height=93]
+image:images/gtin-scss.png[image,width=271,height=93]
 
 |*The flow* a|
 The Seller has accepted the order without changes.

@@ -42,5 +42,4 @@ b.  The order lines
 c.  The articles
 d.  The delivered quantity
 
-|*XML example file* |See Annex A for a sample file illustrating Use Case 1.
 |====

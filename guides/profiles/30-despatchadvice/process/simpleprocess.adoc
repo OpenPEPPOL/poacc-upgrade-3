@@ -5,4 +5,4 @@
 Following the establishment of a contract for purchase the Supplier, in the role of Despatch party, delivers or provides the contracted goods or services to the customer, who has the role of a consignee.
 
 
-image:images/image5.emf[image,width=662,height=422]
+image:images/bpmn-simple.png[image,width=662,height=422]
