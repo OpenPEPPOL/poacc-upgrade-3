@@ -33,5 +33,5 @@ Catalogue Receiver (same legal entity as the Customer/Buyer in this use case).
 |*Result* a|
 1.  The Buyer can no longer make an order to the supplier from this catalogue.
 
-|*XML example file* |See Annex A for sample Catalogue illustrating Use Case 4.
+|*XML example file* |See {examples-zip} for sample Catalogue illustrating Use Case 4.
 |====

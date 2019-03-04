@@ -38,5 +38,5 @@ c.  One article is deleted.
 1.  The Buyer did not insert the changes in the ERP-system.
 2.  The Seller needs to correct the information in his ERP-system.
 
-|*XML example file* |See Annex A for sample Catalogue illustrating Use Case 2.
+|*XML example file* |See {examples-zip} for sample Catalogue illustrating Use Case 2.
 |====

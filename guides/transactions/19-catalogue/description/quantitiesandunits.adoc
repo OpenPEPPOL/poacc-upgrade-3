@@ -3,7 +3,7 @@
 
 The table below lists quantities and units in the format.
 To all quantities there must be a legal Unit according to the Code list.
-For xml-examples for quantities and units, we refer to appendix A, test files.
+For xml-examples for quantities and units, we refer to {examples-zip}.
 
 [cols=",",options="header",]
 |====

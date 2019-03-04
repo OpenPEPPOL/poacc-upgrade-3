@@ -36,5 +36,5 @@ Customer/Buyer.
 _Please note that the ordering prosess is not part of this BIS.
 For ordering, please see PEPPOL BIS 3A._
 
-|*XML example file* |See Annex A for sample Catalogue illustrating Use Case 5.
+|*XML example file* |See {examples-zip} for sample Catalogue illustrating Use Case 5.
 |====
