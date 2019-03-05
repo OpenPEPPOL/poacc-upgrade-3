@@ -87,9 +87,9 @@
 
 
 		<let name="taxTotal" value="xs:decimal(if (/ubl:OrderResponse/cac:TaxTotal/cbc:TaxAmount) then (/ubl:OrderResponse/cac:TaxTotal/cbc:TaxAmount) else 0)"/>
-		<let name="allowanceTotal" value="xs:decimal(sum(/ubl:OrderResponse/cac:AllowanceCharge[cbc:ChargeIndicator='false']/cbc:Amount))"/>
-		<let name="chargeTotal" value="xs:decimal(sum(/ubl:OrderResponse/cac:AllowanceCharge[cbc:ChargeIndicator='true']/cbc:Amount))"/>
-		<let name="lineExtensionTotal" value="xs:decimal(sum(//cac:OrderLine/cac:LineItem/cbc:LineExtensionAmount))"/>
+		<let name="allowanceTotal" value="xs:decimal(round(sum(/ubl:OrderResponse/cac:AllowanceCharge[cbc:ChargeIndicator='false']/cbc:Amount)* 10 * 10) div 100)"/>
+		<let name="chargeTotal" value="xs:decimal(round(sum(/ubl:OrderResponse/cac:AllowanceCharge[cbc:ChargeIndicator='true']/cbc:Amount) * 10 * 10) div 100)"/>
+		<let name="lineExtensionTotal" value="xs:decimal(round(sum(//cac:OrderLine/cac:LineItem/cbc:LineExtensionAmount) * 10 * 10) div 100)"/>
 
 		<assert id="PEPPOL-T110-R014"
 				test="count(//cac:OrderLine) = count(//cac:LineItem/cbc:LineExtensionAmount)"
