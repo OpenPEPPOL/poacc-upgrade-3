@@ -13,9 +13,7 @@ This release from openPEPPOL includes changes to the BIS document as well as the
 ====
 
 == Changes to BIS document and validation artifacts
-
 * Message Level Response document lifecycle clarified	POACC-152
-* Linebreaks and other whitespace inside rule statements removed for the PEPPOL-rules (not country specific)	POACC-158
 * Review comment removed in Invoice Response BIS 3	POACC-161
 * Namespace added for catalogue response	POACC-163
 * Parties image in Despatch Advice BIS added	POACC-183
