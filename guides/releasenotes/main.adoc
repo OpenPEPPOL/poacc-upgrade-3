@@ -1,27 +1,33 @@
-= BIS3-1.0 Release notes
-:doctype: book
+= Release notes for PEPPOL BIS document other than Billing v3.0.1
+openPEPPOL AISBL <http://www.peppol.eu/>
+2019-03-12
 :icons: font
-:toc: left
-:toclevels: 2
 :source-highlighter: coderay
-:source-language: xml
-:sectanchors:
-:sectnums:
+:sourcedir: .
+:imagesdir: images
+:title-logo-image: peppol.png
 
-This release is a new non-backwards compatible major upgrade of all OpenPEPPOL BIS specifications, other than the BIS Billing 3.0.
+[NOTE]
+====
+This release from openPEPPOL includes changes to the BIS document as well as the validation artifacts (VA's).
+====
 
-The OpenPEPPOL BIS 3.0 upgrade project was started in January 2018. Project was mandated to upgrade the PEPPOL BIS specifications so that they are aligned with the PEPPOL BIS Billing 3.0 specification that is based on the CEN/EN 16931 eInvoicing standard.
 
-:leveloffset: +1
+== Changes to BIS document
 
-include::introduction.adoc[]
+* Correct calculation formula in chapter 9.1.1, see link:https://github.com/OpenPEPPOL/peppol-bis-invoice-3/issues/46[Github issue 46]
 
-include::explaindocument.adoc[]
+== Changes to syntax mapping tables
 
-include::alignoverview.adoc[]
+* Correct the structure of the `cac:Taxtotal` element in the syntax mapping.
+* Add EN16931 rules to syntax mapping.
+* Cardinality set to mandatory for element `cac:InvoiceDocumentReference` as this is the only element in `cac:BillingReference`
+* Cardinality set to mandatory for element `cbc:URI` as this is the only element in `cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference`
+* Change description text from "Document level..." to "Line level..." for allowance/charge elements on line level in the syntax mapping table.
 
-include::rfc.adoc[]
+== Changes to validation artefacts
 
-include::credits.adoc[]
+IMPORTANT: Changes apply to both UBL and CII validation rules.
 
-:leveloffset: -1
+* Removed rule "PEPPOL-EN16931-R050 - Tax exemption reason code MUST NOT be used"
+* Incorporated updated validation artifacts from TC434 (amongst other, adding new ICD values).
