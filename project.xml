@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
-    <Name>PEPPOL BIS 3.0 Release</Name>
+    <Name>PEPPOL BIS 3.0.1 Release</Name>
     <!-- Introduction -->
     <Documentation path="">INTRODUCTION</Documentation>
-    <Documentation path="releasenotes/">- BIS 3.0 Release notes</Documentation>
+    <Documentation path="releasenotes/">- BIS 3.0.1 Release notes</Documentation>
     <Documentation path="changes/">- Overview of alignments</Documentation>
     <Documentation path="migration/">- Migration plan</Documentation>
     <!-- BIS documents -->
