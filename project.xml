@@ -29,7 +29,7 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-order-response.xml</Path>
-        <Title>PEPPOL Order Response transaction 3.0 (T79)</Title>
+        <Title>PEPPOL Order Response transaction 3.0 (T76)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
