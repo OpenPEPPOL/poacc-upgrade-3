@@ -240,7 +240,7 @@
 			</cac:ItemInstance>
 		</cac:Item>
 			<cac:Shipment>
-				<cbc:ID>1</cbc:ID>
+				<cbc:ID>NA</cbc:ID>
 				<cac:TransportHandlingUnit>
 					<cbc:ID>5454</cbc:ID>
 					<cbc:TransportHandlingUnitTypeCode>4H</cbc:TransportHandlingUnitTypeCode>
