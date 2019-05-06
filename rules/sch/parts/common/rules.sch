@@ -19,5 +19,10 @@
                 test="matches(., '^[0-9]+$') and u:gln(.)"
                 flag="warning">Invalid GLN number provided.</assert>
     </rule>
+    <rule context="cbc:EndpointID[@schemeID = '0192'] | cac:PartyIdentification/cbc:ID[@schemeID = '0192'] | cbc:CompanyID[@schemeID = '0192']">
+        <assert id="PEPPOL-COMMON-R041"
+                test="matches(., '^[0-9]{9}$') and u:mod11(.)"
+                flag="fatal">Invalid Norwegian organization number provided.</assert>
+    </rule>
 
 </pattern>

@@ -10,10 +10,10 @@
     <cbc:IssueDate>2016-08-15</cbc:IssueDate>
     <!-- tag::sender[] -->
     <cac:SenderParty>
-        <cbc:EndpointID schemeID="0192">981915550</cbc:EndpointID>
-    </cac:SenderParty>  
+        <cbc:EndpointID schemeID="0192">987654325</cbc:EndpointID>
+    </cac:SenderParty>
     <!-- end::sender[] -->
-    
+
     <!-- tag::receiver[] -->
     <cac:ReceiverParty>
         <cbc:EndpointID schemeID="0088">7315458756324</cbc:EndpointID>

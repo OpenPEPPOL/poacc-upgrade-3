@@ -25,9 +25,9 @@
   </cac:SellerSupplierParty>
    <cac:BuyerCustomerParty>
     <cac:Party>
-      <cbc:EndpointID schemeID="0192">987654321</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0192">987654325</cbc:EndpointID>
       <cac:PartyIdentification>
-        <cbc:ID schemeID="0192">987654321</cbc:ID>
+        <cbc:ID schemeID="0192">987654325</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyLegalEntity>
         <cbc:RegistrationName>City Hospital</cbc:RegistrationName>
@@ -52,12 +52,12 @@
 			<cac:StandardItemIdentification>
 			  <cbc:ID schemeID="0160">05432167890984</cbc:ID>
 			</cac:StandardItemIdentification>
-		</cac:Item>		
+		</cac:Item>
       </cac:LineItem>
       <cac:OrderLineReference>
 		  <cbc:LineID>1</cbc:LineID>
       </cac:OrderLineReference>
-  </cac:OrderLine> 
+  </cac:OrderLine>
   <cac:OrderLine>
     <cac:LineItem>
       <cbc:ID>2</cbc:ID>
@@ -70,10 +70,10 @@
 			<cac:StandardItemIdentification>
 			  <cbc:ID schemeID="0160">05476154389097</cbc:ID>
 			</cac:StandardItemIdentification>
-		</cac:Item>		
+		</cac:Item>
       </cac:LineItem>
       <cac:OrderLineReference>
 		  <cbc:LineID>2</cbc:LineID>
       </cac:OrderLineReference>
-  </cac:OrderLine> 
+  </cac:OrderLine>
   </OrderResponse>

@@ -7,12 +7,12 @@
     <cbc:ID>TheMLR-ID123</cbc:ID>
     <cbc:IssueDate>2016-08-15</cbc:IssueDate>
     <cac:SenderParty>
-        <cbc:EndpointID schemeID="0192">981915550</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">987654325</cbc:EndpointID>
     </cac:SenderParty>
     <cac:ReceiverParty>
         <cbc:EndpointID schemeID="0088">7315458756324</cbc:EndpointID>
     </cac:ReceiverParty>
-  
+
     <cac:DocumentResponse>
         <!-- tag::accept[] -->
         <cac:Response>

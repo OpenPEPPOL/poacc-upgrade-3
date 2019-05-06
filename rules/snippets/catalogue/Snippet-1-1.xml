@@ -29,7 +29,7 @@
 	<!-- end::ref-contract[] -->
 	<!-- tag::seller[] -->
 	<cac:ProviderParty>
-		<cbc:EndpointID schemeID="0192">965678996</cbc:EndpointID>
+		<cbc:EndpointID schemeID="0192">987654325</cbc:EndpointID>
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="0088">5790000435951</cbc:ID>
 		</cac:PartyIdentification>
@@ -40,7 +40,7 @@
 	<!-- end::seller[] -->
 	<!-- tag::buyer[] -->
 	<cac:ReceiverParty>
-		<cbc:EndpointID schemeID="0192">984661185</cbc:EndpointID>
+		<cbc:EndpointID schemeID="0192">123456785</cbc:EndpointID>
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="0088">5790000435944</cbc:ID>
 		</cac:PartyIdentification>

@@ -8,7 +8,7 @@
   <cbc:ID>4552</cbc:ID>
   <cbc:IssueDate>2013-07-01</cbc:IssueDate>
   <cbc:IssueTime>06:10:10</cbc:IssueTime>
-  <cbc:OrderResponseCode>RE</cbc:OrderResponseCode> 
+  <cbc:OrderResponseCode>RE</cbc:OrderResponseCode>
   <cbc:Note>No available translators</cbc:Note>
   <cbc:DocumentCurrencyCode listID="ISO4217">EUR</cbc:DocumentCurrencyCode>
   <cbc:CustomerReference>123abc</cbc:CustomerReference>
@@ -17,9 +17,9 @@
   </cac:OrderReference>
   <cac:SellerSupplierParty>
     <cac:Party>
-      <cbc:EndpointID schemeID="0192">NO111555444</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0192">987654325</cbc:EndpointID>
       <cac:PartyIdentification>
-        <cbc:ID schemeID="0192">NO111555444</cbc:ID>
+        <cbc:ID schemeID="0192">987654325</cbc:ID>
       </cac:PartyIdentification>
     </cac:Party>
   </cac:SellerSupplierParty>
