@@ -9,6 +9,7 @@
   <ns uri="utils" prefix="u"/>
 
   <include href="function/gln.xml"/>
+  <include href="function/mod11.xml"/>
 
   <include href="common/empty-elements.sch"/>
   <include href="common/rules.sch"/>

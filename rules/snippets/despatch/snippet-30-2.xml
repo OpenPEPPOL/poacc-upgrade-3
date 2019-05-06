@@ -23,7 +23,7 @@
 			<!-- end::partyid-se[] -->
 			<!-- tag::partyid-no[] -->
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="0192">987654321</cbc:ID>
+				<cbc:ID schemeID="0192">987654325</cbc:ID>
 			</cac:PartyIdentification>
 			<!-- end::partyid-no[] -->
 			<!-- tag::partyid-dk[] -->

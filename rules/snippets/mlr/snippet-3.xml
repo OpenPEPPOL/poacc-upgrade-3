@@ -7,8 +7,8 @@
     <cbc:ID>TheMLR-ID123</cbc:ID>
     <cbc:IssueDate>2016-08-15</cbc:IssueDate>
     <cac:SenderParty>
-        <cbc:EndpointID schemeID="0192">981915550</cbc:EndpointID>
-    </cac:SenderParty>    
+        <cbc:EndpointID schemeID="0192">987654325</cbc:EndpointID>
+    </cac:SenderParty>
     <cac:ReceiverParty>
         <cbc:EndpointID schemeID="0088">7315458756324</cbc:EndpointID>
     </cac:ReceiverParty>
@@ -60,8 +60,8 @@
                 <!-- The human readable response text -->
                 <cbc:Description>Document level amounts cannot have more than 2 decimals</cbc:Description>
                 <cac:Status>
-                    <!-- Must be one of "SV" (syntax violation), 
-                         "RVF" (rule violation fatal) or 
+                    <!-- Must be one of "SV" (syntax violation),
+                         "RVF" (rule violation fatal) or
                          "RVW" (rule violation warning) -->
                     <cbc:StatusReasonCode>BV</cbc:StatusReasonCode>
                 </cac:Status>

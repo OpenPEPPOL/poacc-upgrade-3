@@ -5,6 +5,7 @@
 
 <!-- unit testing -->
   <testfolder>unit-catalogue</testfolder>
+  <testfolder>unit-common</testfolder>
   <testfolder>unit-despatch-advice</testfolder>
   <testfolder>unit-invoice-response</testfolder>
   <testfolder>unit-order</testfolder>

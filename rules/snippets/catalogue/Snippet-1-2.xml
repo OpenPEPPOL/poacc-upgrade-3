@@ -6,7 +6,7 @@
     <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:catalogue_only:3</cbc:ProfileID>
     <cbc:ID>1387</cbc:ID>
 	<!-- tag::actioncode[] -->
-	<cbc:ActionCode>Replace</cbc:ActionCode> 
+	<cbc:ActionCode>Replace</cbc:ActionCode>
 	<!-- end::actioncode[] -->
 	<cbc:IssueDate>2016-08-01</cbc:IssueDate>
     <cac:ValidityPeriod>
@@ -29,7 +29,7 @@
         </cac:PartyLegalEntity>
     </cac:ProviderParty>
     <cac:ReceiverParty>
-        <cbc:EndpointID schemeID="0192">984661185</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">987654325</cbc:EndpointID>
         <cac:PartyIdentification>
             <cbc:ID schemeID="0088">5790000435944</cbc:ID>
         </cac:PartyIdentification>
@@ -45,9 +45,9 @@
             <cbc:StartDate>2014-12-31</cbc:StartDate>
         </cac:LineValidityPeriod>
         <!-- tag::config[] -->
-        
+
         <!-- Code omitted for clarity -->
-        
+
         <cac:RequiredItemLocationQuantity>
             <cac:Price>
                 <cbc:PriceAmount currencyID="EUR">1000.00</cbc:PriceAmount>
@@ -59,9 +59,9 @@
             <cbc:Description>One Personal Computer package with a monitor and setup service</cbc:Description>
             <cbc:Name>PC computer package</cbc:Name>
             <!-- tag::config[] -->
-            
+
             <!-- Code omitted for clarity -->
-            
+
             <cac:SellersItemIdentification>
                 <cbc:ID>PC01</cbc:ID>
             </cac:SellersItemIdentification>
@@ -115,14 +115,14 @@
                 </cac:IssuerParty>
             </cac:Certificate>
             <!-- tag::config[] -->
-            
+
             <!-- Code omitted for clarity -->
-            
+
         </cac:Item>
     </cac:CatalogueLine>
-   
+
     <!-- An item that is part of the configured product -->
-    <cac:CatalogueLine>        
+    <cac:CatalogueLine>
         <cbc:ID>2</cbc:ID>
         <cac:RequiredItemLocationQuantity>
             <cac:Price>
@@ -135,9 +135,9 @@
             <cbc:Description>21 inch monitor.</cbc:Description>
             <cbc:Name>Monitor</cbc:Name>
             <!-- tag::config[] -->
-            
+
             <!-- Code omitted for clarity -->
-            
+
             <cac:SellersItemIdentification>
                 <cbc:ID>12345</cbc:ID>
             </cac:SellersItemIdentification>
@@ -159,18 +159,18 @@
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
             <!-- tag::config[] -->
-            
+
             <!-- Code omitted for clarity -->
-            
+
             <cac:AdditionalItemProperty>
                 <cbc:Name>PartOf</cbc:Name>
                 <cbc:Value>PC01</cbc:Value>
             </cac:AdditionalItemProperty>
         </cac:Item>
     </cac:CatalogueLine>
-    
+
     <!-- Another item, two of which are part of the configured product -->
-    <cac:CatalogueLine>  
+    <cac:CatalogueLine>
         <cbc:ID>3</cbc:ID>
         <cac:RequiredItemLocationQuantity>
             <cac:Price>
@@ -182,9 +182,9 @@
             <cbc:Description>Linux installation service.</cbc:Description>
             <cbc:Name>Installation service</cbc:Name>
             <!-- tag::config[] -->
-          
+
             <!-- Code omitted for clarity -->
-            
+
             <cac:SellersItemIdentification>
                 <cbc:ID>6789</cbc:ID>
             </cac:SellersItemIdentification>
@@ -197,16 +197,16 @@
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
             <!-- tag::config[] -->
-           
+
             <!-- Code omitted for clarity -->
-            
+
             <cac:AdditionalItemProperty>
                 <cbc:Name>PartOf</cbc:Name>
                 <cbc:Value>PC01</cbc:Value>
             </cac:AdditionalItemProperty>
-            
+
             <!-- Code omitted for clarity -->
-            
+
             <!-- end::config[] -->
             <cac:AdditionalItemProperty>
                 <cbc:Name>ServiceIndicator</cbc:Name>
@@ -215,4 +215,3 @@
         </cac:Item>
     </cac:CatalogueLine>
 </Catalogue>
-

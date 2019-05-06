@@ -16,6 +16,7 @@
     <xi:include href="parts/function/gln.xml"/>
     <xi:include href="parts/function/slack.xml"/>
     <xi:include href="parts/function/cat2str.xml"/>
+    <xi:include href="parts/function/mod11.xml"/>
 
     <!-- Rules -->
 
