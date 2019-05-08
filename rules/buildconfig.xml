@@ -132,6 +132,14 @@
   </configuration>
   
   <configuration>
+    <identifier>peppolbis-1</identifier>
+    <title>PEPPOL BIS wo Catalogue  3.0</title>
+    <profileId>urn:fdc:peppol.eu:poacc:bis:catalogue_wo_response:3</profileId>
+    <customizationId>urn:fdc:peppol.eu:poacc:trns:catalogue:3</customizationId>
+    <inherit>peppolbis-t19-base-3.0</inherit>
+  </configuration>
+    
+  <configuration>
     <identifier>peppolbis-18</identifier>
     <title>PEPPOL BIS Punch Out 3.0</title>
     <profileId>urn:fdc:peppol.eu:poacc:bis:punch_out:3</profileId>
