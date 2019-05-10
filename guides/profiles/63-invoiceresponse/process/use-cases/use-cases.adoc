@@ -156,7 +156,7 @@ Seller needs to forward the correct data to the Buyer (externally) to enable the
 
 [[uc6b]]
 .Use case 6b — Invoice is under query because of missing PO reference.
-[cols=",",options="header",]
+[cols="1h,5",options="header",]
 |====
 |Use Case number |6b
 |Use Case Name |Invoice is under query because for example of missing PO reference.
