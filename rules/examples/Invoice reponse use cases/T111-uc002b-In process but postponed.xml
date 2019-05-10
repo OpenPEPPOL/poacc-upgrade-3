@@ -13,23 +13,22 @@
                 None
 				
 -->
-<ApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2 C:\Users\Georg\Documents\Upplýsingar\Standards\UBL\UBL-2.1\xsd\maindoc\UBL-ApplicationResponse-2.1.xsd">
-	<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+<ApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:invoice_response:3</cbc:CustomizationID>
 	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:invoice_response:3</cbc:ProfileID>
 	<cbc:ID>imrid001</cbc:ID>
 	<cbc:IssueDate>2017-12-02</cbc:IssueDate>
 	<cac:SenderParty>
-		<cbc:EndpointID schemeID="IS:KT">6963495890</cbc:EndpointID>
-		<cac:PartyName>
-			<cbc:Name>Buyer organization</cbc:Name>
-		</cac:PartyName>
+		<cbc:EndpointID schemeID="0196">6963495890</cbc:EndpointID>
+		<cac:PartyLegalEntity>
+			<cbc:RegistrationName>Buyer organization</cbc:RegistrationName>
+		</cac:PartyLegalEntity>
 	</cac:SenderParty>
 	<cac:ReceiverParty>
-		<cbc:EndpointID schemeID="IS:KT">6841569459</cbc:EndpointID>
-		<cac:PartyName>
-			<cbc:Name>Seller company</cbc:Name>
-		</cac:PartyName>
+		<cbc:EndpointID schemeID="0196">6841569459</cbc:EndpointID>
+		<cac:PartyLegalEntity>
+			<cbc:RegistrationName>Seller company</cbc:RegistrationName>
+		</cac:PartyLegalEntity>
 	</cac:ReceiverParty>
 	<cac:DocumentResponse>
 		<cac:Response>
