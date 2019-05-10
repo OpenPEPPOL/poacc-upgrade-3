@@ -32,7 +32,8 @@
 		<cac:Response>
 			<cbc:ResponseCode listID="UNCL4343OpSubset">RE</cbc:ResponseCode>
 			<cac:Status>
-				<cbc:StatusReason>A textual explanation for why the invoice is being rejected.</cbc:StatusReason>
+				<cbc:StatusReasonCode listID="OPStatusReason">REF</cbc:StatusReasonCode>
+				<cbc:StatusReason>A textual explanation for why the invoice is being rejected. E.g. PO reference is missing.</cbc:StatusReason>
 			</cac:Status>
 		</cac:Response>
 		<cac:DocumentReference>
