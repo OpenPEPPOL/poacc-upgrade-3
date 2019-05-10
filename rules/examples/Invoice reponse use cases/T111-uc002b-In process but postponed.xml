@@ -4,8 +4,6 @@
                 This file contains a PEPPOL Invoice Message Response, profile 63.
 				It demonstrates Use Case 2b — Invoice is in process but processing is postponed.
 				
-				Invoice is in processing but the processing is on hold until future date. This is communicated by showing an as status effective date in the future.
-				
                 Errors:
                 None
                 
@@ -33,11 +31,11 @@
 	<cac:DocumentResponse>
 		<cac:Response>
 			<cbc:ResponseCode listID="UNCL4343OpSubset">IP</cbc:ResponseCode>
-			<!-- <cbc:EffectiveDate>2017-12-15</cbc:EffectiveDate> -->
+			<cbc:EffectiveDate>2017-12-15</cbc:EffectiveDate>
+			<cac:Status>
+				<cbc:StatusReason>Shipment has not yet been received. Invoice processing will be attempted later.</cbc:StatusReason>
+			</cac:Status>
 		</cac:Response>
-		<cac:Status>
-			<cbc:StatusReason>Shipment has not yet been received. Invoice processing will be attempted later.</cbc:StatusReason>
-		</cac:Status>
 		<cac:DocumentReference>
 			<cbc:ID>inv021</cbc:ID>
 			<cbc:DocumentTypeCode listID="UNCL1001">380</cbc:DocumentTypeCode>
