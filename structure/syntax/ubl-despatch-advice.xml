@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 	<Term>DespatchAdvice</Term>
-
 	<Property key="sch:prefix">PEPPOL-T16</Property>
 	<Property key="sch:identifier">T16-basic</Property>
-
-
-	<Namespace prefix="ubl"
-		>urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2</Namespace>
-	<Namespace prefix="cac"
-		>urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
-	<Namespace prefix="cbc"
-		>urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2</Namespace>
+	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
+	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 	<Document>
 		<Term>ubl:DespatchAdvice</Term>
 		<Element>
@@ -103,8 +97,6 @@
 					</Attribute>
 					<Value type="EXAMPLE">7300010000001</Value>
 				</Element>
-
-
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
 					<Name>Party identification</Name>
@@ -124,7 +116,6 @@
 						<Value type="EXAMPLE">DK88777654</Value>
 					</Element>
 				</Element>
-
 				<Element cardinality="0..1">
 					<Term>cac:PostalAddress</Term>
 					<Name>Postal address</Name>
@@ -202,11 +193,9 @@
 						</Element>
 					</Element>
 				</Element>
-
 				<Element>
 					<Term>cac:PartyLegalEntity</Term>
 					<Name>Party Name</Name>
-
 					<Element>
 						<Term>cbc:RegistrationName</Term>
 						<Name>Dispatching party name</Name>
@@ -215,7 +204,6 @@
 						<Reference type="BUSINESS_TERM">tir16-007</Reference>
 					</Element>
 				</Element>
-
 				<Element cardinality="0..1">
 					<Term>cac:Contact</Term>
 					<Name>Contact information</Name>
@@ -269,7 +257,6 @@
 					</Attribute>
 					<Value type="EXAMPLE">7300010000001</Value>
 				</Element>
-				
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
 					<Name>Party identification</Name>
@@ -289,7 +276,6 @@
 						<Value type="EXAMPLE">DK88777654</Value>
 					</Element>
 				</Element>
-
 				<Element cardinality="0..1">
 					<Term>cac:PostalAddress</Term>
 					<Name>Postal address</Name>
@@ -367,14 +353,10 @@
 						</Element>
 					</Element>
 				</Element>
-
-
-
 				<Element>
 					<Term>cac:PartyLegalEntity</Term>
 					<Name>Party name</Name>
 					<Name>Buyer legal party</Name>
-
 					<Element>
 						<Term>cbc:RegistrationName</Term>
 						<Name>Consignee party name</Name>
@@ -1097,7 +1079,6 @@
 					<Reference type="BUSINESS_TERM">tir16-052</Reference>
 					<Reference type="RULE">PEPPOL-T16-R004</Reference>
 				</Element>
-
 				<Element cardinality="0..1">
 					<Term>cac:BuyersItemIdentification</Term>
 					<Name>Buyers item identification</Name>
@@ -1122,7 +1103,6 @@
 							the item with its identification according to the seller's system. </Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir16-053</Reference>
-
 						<Value type="EXAMPLE">3249834</Value>
 					</Element>
 					<Element cardinality="0..1">
@@ -1146,7 +1126,6 @@
 							system.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir16-055</Reference>
-
 						<Attribute>
 							<Term>schemeID</Term>
 							<Name>Item standard identifier identification scheme identifier</Name>
@@ -1165,7 +1144,6 @@
 						<Reference type="BUSINESS_TERM">tir16-056</Reference>
 					</Element>
 				</Element>
-
 				<Element cardinality="0..n">
 					<Term>cac:HazardousItem</Term>
 					<Name>Hazardous item information</Name>
@@ -1224,32 +1202,32 @@
 						<Reference type="BUSINESS_TERM">tir16-p040</Reference>
 						<Value type="EXAMPLE">20300709400050</Value>
 					</Element>
-				</Element>
-				<Element cardinality="0..1">
-					<Term>cbc:ValueQuantity</Term>
-					<Name>Item property unit of measure</Name>
-					<Description>The unit of measure in which the property value is stated, if
+					<Element cardinality="0..1">
+						<Term>cbc:ValueQuantity</Term>
+						<Name>Item property unit of measure</Name>
+						<Description>The unit of measure in which the property value is stated, if
 						relevant. May not be relevant when properties are descriptive.</Description>
-					<DataType>Quantity</DataType>
-					<Reference type="BUSINESS_TERM">tir16-p043</Reference>
-					<Attribute>
-						<Term>unitCode</Term>
-						<Name>Value quantity unit of measure</Name>
-						<Description>The unit of measure that applies to the value
+						<DataType>Quantity</DataType>
+						<Reference type="BUSINESS_TERM">tir16-p043</Reference>
+						<Attribute>
+							<Term>unitCode</Term>
+							<Name>Value quantity unit of measure</Name>
+							<Description>The unit of measure that applies to the value
 							quantity.</Description>
-						<DataType>Code</DataType>
-						<Reference type="CODE_LIST">UNECERec20</Reference>
-						<Value type="EXAMPLE">XCS</Value>
-					</Attribute>
-					<Value type="EXAMPLE">5</Value>
-				</Element>
-				<Element cardinality="0..1">
-					<Term>cbc:ValueQualifier</Term>
-					<Name>Property classification</Name>
-					<DataType>Text</DataType>
-					<Description>Standardized and predefined classification of items
+							<DataType>Code</DataType>
+							<Reference type="CODE_LIST">UNECERec20</Reference>
+							<Value type="EXAMPLE">XCS</Value>
+						</Attribute>
+						<Value type="EXAMPLE">5</Value>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:ValueQualifier</Term>
+						<Name>Property classification</Name>
+						<DataType>Text</DataType>
+						<Description>Standardized and predefined classification of items
 						properties.</Description>
-					<Reference type="BUSINESS_TERM">tir16-p044</Reference>
+						<Reference type="BUSINESS_TERM">tir16-p044</Reference>
+					</Element>
 				</Element>
 				<Element cardinality="0..n">
 					<Term>cac:ItemInstance</Term>
@@ -1294,7 +1272,6 @@
 						</Element>
 					</Element>
 				</Element>
-
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:Shipment</Term>
@@ -1322,7 +1299,6 @@
 						<Reference type="BUSINESS_TERM">tir16-085</Reference>
 						<Reference type="CODE_LIST">UNECERec21</Reference>
 					</Element>
-
 					<Element cardinality="0..1">
 						<Term>cbc:HazardousRiskIndicator</Term>
 						<Name>Handling unit hazardous indicator</Name>
@@ -1330,7 +1306,6 @@
 							materials.</Description>
 						<Reference type="BUSINESS_TERM">tir16-062</Reference>
 					</Element>
-
 					<Element cardinality="0..n">
 						<Term>cbc:ShippingMarks</Term>
 						<Name>Handling unit shipping marks</Name>
@@ -1338,7 +1313,6 @@
 							unit or package.</Description>
 						<Reference type="BUSINESS_TERM">tir16-064</Reference>
 					</Element>
-
 					<Element cardinality="0..n">
 						<Term>cac:MeasurementDimension</Term>
 						<Name>Measurement dimentions</Name>
@@ -1350,7 +1324,6 @@
 							<Reference type="CODE_LIST">UNCL6313-T16</Reference>
 							<Value type="EXAMPLE">AAW</Value>
 						</Element>
-
 						<Element cardinality="0..1">
 							<Term>cbc:Measure</Term>
 							<Name>Handling unit gross weight or handling unit gross volume</Name>
@@ -1368,10 +1341,7 @@
 								<Value type="EXAMPLE">CTN</Value>
 							</Attribute>
 						</Element>
-
 					</Element>
-
-
 				</Element>
 			</Element>
 		</Element>
