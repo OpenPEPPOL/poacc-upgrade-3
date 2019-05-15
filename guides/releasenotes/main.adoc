@@ -26,8 +26,8 @@ This release applies the following changes to the previosly published BIS 3.0 do
 * Various minor text corrections and minor bug fixes.
 
 
-== New BIS for Catalogue witout response
-This release includes a new BIS document for a Catalogue without a response. This new BIS contains the same Catalogue transaction (T19) as the Cataloge only BIS but without the Catalogue Response transaction (T58). This new BIS can be used for sending catalogues to buyers with requiring them to implment the capability for responding, and thus simplifying the implementation while sacrificing some of the functionality provided by the Catalogue Only BIS.
+== New BIS for Catalogue without Response
+This release includes a new BIS document for a Catalogue without response. This new BIS contains the same Catalogue transaction (T19) as the Cataloge only BIS but without the Catalogue Response transaction (T58). This new BIS can be used for sending catalogues to buyers with requiring them to implment the capability for responding, and thus simplifying the implementation while sacrificing some of the functionality provided by the Catalogue Only BIS.
 
 The version number of this new BIS is set as 3.0.1 to keep it aligned with other BIS documents.
 
