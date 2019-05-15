@@ -163,7 +163,7 @@
 			</cac:StandardItemIdentification>
 		</cac:Item>
 		<cac:Shipment>
-			<cbc:ID>1</cbc:ID>
+			<cbc:ID>NA</cbc:ID>
 			<!-- tag::transporthandling[] -->
 			<cac:TransportHandlingUnit>
 				<cbc:ID>5454</cbc:ID>
