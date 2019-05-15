@@ -14,14 +14,15 @@
                 flag="fatal">A date must be formatted YYYY-MM-DD.</assert>
     </rule>
 
-    <rule context="cbc:ID[@schemeID = '0088']">
+    <!-- Validation of ICD -->
+    <rule context="cbc:EndpointID[@schemeID = '0088'] | cac:PartyIdentification/cbc:ID[@schemeID = '0088'] | cbc:CompanyID[@schemeID = '0088']">
         <assert id="PEPPOL-COMMON-R040"
-                test="matches(., '^[0-9]+$') and u:gln(.)"
+                test="matches(normalize-space(), '^[0-9]+$') and u:gln(normalize-space())"
                 flag="warning">Invalid GLN number provided.</assert>
     </rule>
     <rule context="cbc:EndpointID[@schemeID = '0192'] | cac:PartyIdentification/cbc:ID[@schemeID = '0192'] | cbc:CompanyID[@schemeID = '0192']">
         <assert id="PEPPOL-COMMON-R041"
-                test="matches(., '^[0-9]{9}$') and u:mod11(.)"
+                test="matches(normalize-space(), '^[0-9]{9}$') and u:mod11(normalize-space())"
                 flag="fatal">Invalid Norwegian organization number provided.</assert>
     </rule>
 
