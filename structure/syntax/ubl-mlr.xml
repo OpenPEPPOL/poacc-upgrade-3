@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 	<Term>MLR</Term>
-	
+
 	<Property key="sch:prefix">PEPPOL-T71</Property>
 	<Property key="sch:identifier">T71-basic</Property>
-	
-	
+
+
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2</Namespace>
-	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
+	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
 	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 	<Document>
 		<Term>ubl:ApplicationResponse</Term>
@@ -27,7 +27,7 @@
                 transaction appears.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir71-005</Reference>
-			
+
 			<Value type="FIXED">urn:fdc:peppol.eu:poacc:bis:mlr:3</Value>
 		</Element>
 		<Element>
@@ -38,7 +38,7 @@
                 referencing between transactions that are part of the same process.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir71-001</Reference>
-			
+
 			<Value type="EXAMPLE">23</Value>
 		</Element>
 		<Element>
@@ -47,7 +47,7 @@
 			<Description>The date on which the transaction instance was issued.Format "YYYY-MM-DD"</Description>
 			<DataType>Date</DataType>
 			<Reference type="BUSINESS_TERM">tir71-002</Reference>
-			
+
 			<Value type="EXAMPLE">2018-05-18</Value>
 		</Element>
 		<Element cardinality="0..1">
@@ -116,7 +116,7 @@
                         issues.</Description>
 					<DataType>Code</DataType>
 					<Reference type="BUSINESS_TERM">tir71-014</Reference>
-					
+
 					<Reference type="CODE_LIST">UNCL4343</Reference>
 					<Value type="EXAMPLE">RE</Value>
 				</Element>
@@ -134,7 +134,7 @@
 			<Element>
 				<Term>cac:DocumentReference</Term>
 				<Name>Document reference</Name>
-				<Description>The document reference is used to provide a reference to the envelope of the business document on which the message level response is based. The message level response message may only cover exactly one business document. 
+				<Description>The document reference is used to provide a reference to the envelope of the business document on which the message level response is based. The message level response message may only cover exactly one business document.
                     The element 'cac:DocumentResponse/cac:DocumentReference/cbc:ID' MUST contain the instance identifier of the envelope of the original business document.</Description>
 				<Element>
 					<Term>cbc:ID</Term>
@@ -142,7 +142,7 @@
 					<Description>Identifies the document on which the message level response is based.</Description>
 					<DataType>Document reference</DataType>
 					<Reference type="BUSINESS_TERM">tir71-018</Reference>
-					
+
 					<Value type="EXAMPLE">EnvelopeID-12345</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -219,7 +219,7 @@
                                 violation, etc.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir71-016</Reference>
-							
+
 							<Reference type="CODE_LIST">StatusReason</Reference>
 							<Value type="EXAMPLE">BV</Value>
 						</Element>

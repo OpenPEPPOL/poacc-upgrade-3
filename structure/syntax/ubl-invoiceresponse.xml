@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
     <Term>InvoiceResponse</Term>
-    
+
     <Property key="sch:prefix">PEPPOL-T111</Property>
     <Property key="sch:identifier">T111-basic</Property>
-    
-    
+
+
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2</Namespace>
-    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
+    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
     <Document>
         <Term>ubl:ApplicationResponse</Term>
@@ -82,7 +82,7 @@
                     <Value type="EXAMPLE">0088</Value>
                 </Attribute>
                 <Value type="EXAMPLE">7300010000001</Value>
-            </Element>         
+            </Element>
             <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
                 <Name>Party identification</Name>
@@ -105,11 +105,11 @@
                     <Value type="EXAMPLE">DK88777654</Value>
                 </Element>
             </Element>
-            
+
             <Element>
                 <Term>cac:PartyLegalEntity</Term>
                 <Name>Party name</Name>
-                
+
                 <Element>
                     <Term>cbc:RegistrationName</Term>
                     <Name>Sender party name</Name>
@@ -131,7 +131,7 @@
                         regarding this message.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">tir111-026</Reference>
-                   
+
                     <Value type="EXAMPLE">Jens Jensen</Value>
                 </Element>
 
@@ -141,7 +141,7 @@
                     <Description>Then telephone for the sending party´s contact point for
                         communication regarding this message.</Description>
                     <Reference type="BUSINESS_TERM">tir111-028</Reference>
-                    
+
                     <Value type="EXAMPLE">23 23 23 23</Value>
                 </Element>
 
@@ -151,8 +151,8 @@
                     <Description>Then email for the sending party´s contact point for communication
                         regarding this message.</Description>
                     <Reference type="BUSINESS_TERM">tir111-027</Reference>
-                    
-                   
+
+
                     <Value type="EXAMPLE">jj@test-company.dk</Value>
                 </Element>
 
@@ -176,7 +176,7 @@
                     <Value type="EXAMPLE">0088</Value>
                 </Attribute>
                 <Value type="EXAMPLE">7300010000001</Value>
-            </Element>   
+            </Element>
             <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
                 <Name>Party identification</Name>
@@ -187,7 +187,7 @@
                     <Description>It should be possible to specify the identifier or identifiers for
                         the party.</Description>
                     <Reference type="BUSINESS_TERM">tir111-011</Reference>
-                    
+
                     <Attribute usage="optional">
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
@@ -201,7 +201,7 @@
             <Element>
                 <Term>cac:PartyLegalEntity</Term>
                 <Name>Party name</Name>
-                
+
                 <Element>
                     <Term>cbc:RegistrationName</Term>
                     <Name>Receiver party name</Name>
@@ -211,18 +211,18 @@
                     <Value type="EXAMPLE">AS MerTest</Value>
                 </Element>
             </Element>
-            
+
 
         </Element>
 
         <Element>
             <Term>cac:DocumentResponse</Term>
             <Name>Document response</Name>
-            
+
             <Element>
                 <Term>cac:Response</Term>
                 <Name>Response</Name>
-                
+
                 <Element>
                     <Term>cbc:ResponseCode</Term>
                     <Name>Invoice status</Name>
@@ -233,7 +233,7 @@
                     <Reference type="CODE_LIST">UNCL4343-T111</Reference>
                     <Value type="EXAMPLE">RE</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cbc:EffectiveDate</Term>
                     <Name>Status date</Name>
@@ -242,12 +242,12 @@
                     <Reference type="BUSINESS_TERM">tir111-014</Reference>
                     <Value type="EXAMPLE">2018-08-02</Value>
                 </Element>
-                
+
                 <Element cardinality="0..unbounded">
                     <Term>cac:Status</Term>
                     <Name>Clarification information</Name>
                     <Description>Clarification is mandatory when the status is UQ-Under query, RE - Rejected and CA - Conditionally accepted. Clarification may be given as a code, a description or both. If both are used, they must indicate the same clarification.</Description>
-                    
+
                     <Element cardinality="0..1">
                         <Term>cbc:StatusReasonCode</Term>
                         <Name>Clarification code</Name>
@@ -255,7 +255,7 @@
                             status.</Description>
                         <DataType>Code</DataType>
                         <Reference type="BUSINESS_TERM">tir111-015</Reference>
-                        <Reference type="CODE_LIST">OPStatusReason</Reference>    
+                        <Reference type="CODE_LIST">OPStatusReason</Reference>
                         <Reference type="CODE_LIST">OPStatusAction</Reference>
                         <Attribute>
                             <Term>listID</Term>
@@ -265,7 +265,7 @@
                             <Value type="EXAMPLE">OPStatusAction</Value>
                         </Attribute>
                     </Element>
-                    
+
                     <Element cardinality="0..1">
                         <Term>cbc:StatusReason</Term>
                         <Name>Clarification description</Name>
@@ -275,11 +275,11 @@
                         <Reference type="BUSINESS_TERM">tir111-016</Reference>
                         <Value type="EXAMPLE">VAT Reference not found</Value>
                     </Element>
-                    
+
                     <Element cardinality="0..unbounded">
                         <Term>cac:Condition</Term>
                         <Name>Condition</Name>
-                        
+
                         <Element>
                             <Term>cbc:AttributeID</Term>
                             <Name>Detail type code</Name>
@@ -288,7 +288,7 @@
                             <Reference type="BUSINESS_TERM">tir111-017</Reference>
                             <Value type="EXAMPLE">BT-48</Value>
                         </Element>
-                        
+
                         <Element cardinality="0..1">
                             <Term>cbc:Description</Term>
                             <Name>Detail value</Name>
@@ -300,11 +300,11 @@
                     </Element>
                 </Element>
             </Element>
-           
+
             <Element>
                 <Term>cac:DocumentReference</Term>
                 <Name>Document reference</Name>
-                
+
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Invoice identifier</Name>
@@ -315,7 +315,7 @@
                     <Reference type="BUSINESS_TERM">tir111-020</Reference>
                     <Value type="EXAMPLE">inv-99876</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cbc:IssueDate</Term>
                     <Name>Invoice issue date</Name>
@@ -326,7 +326,7 @@
                     <Reference type="BUSINESS_TERM">tir111-019</Reference>
                     <Value type="EXAMPLE">2018-08-01</Value>
                 </Element>
-                
+
                 <Element>
                     <Term>cbc:DocumentTypeCode</Term>
                     <Name>Identifier Type code</Name>
@@ -339,7 +339,7 @@
             <Element cardinality="0..1">
                 <Term>cac:IssuerParty</Term>
                 <Name>Seller party information</Name>
-                
+
                 <Element cardinality="0..1">
                     <Term>cac:PartyIdentification</Term>
                     <Name>Party identification</Name>
@@ -350,7 +350,7 @@
                             the party.</Description>
                         <DataType>Identifier</DataType>
                         <Reference type="BUSINESS_TERM">tir111-023</Reference>
-                        
+
                         <Attribute usage="optional">
                             <Term>schemeID</Term>
                             <Name>Scheme identifier</Name>
@@ -358,11 +358,11 @@
                             <Reference type="CODE_LIST">ICD</Reference>
                             <Value type="EXAMPLE">0192</Value>
                         </Attribute>
-                        
+
                         <Value type="EXAMPLE">987654321</Value>
                     </Element>
                 </Element>
-                
+
                 <Element>
                     <Term>cac:PartyName</Term>
                     <Name>Party name information</Name>
@@ -375,12 +375,12 @@
                         <Value type="EXAMPLE">AS MerTest</Value>
                     </Element>
                 </Element>
-                
+
             </Element>
             <Element cardinality="0..1">
                 <Term>cac:RecipientParty</Term>
                 <Name>Buyer party information</Name>
-                
+
                 <Element cardinality="0..1">
                     <Term>cac:PartyIdentification</Term>
                     <Name>Party identification</Name>
@@ -391,7 +391,7 @@
                             the party.</Description>
                         <DataType>Identifier</DataType>
                         <Reference type="BUSINESS_TERM">tir111-025</Reference>
-                        
+
                         <Attribute usage="optional">
                             <Term>schemeID</Term>
                             <Name>Scheme identifier</Name>
@@ -399,11 +399,11 @@
                             <Reference type="CODE_LIST">ICD</Reference>
                             <Value type="EXAMPLE">0192</Value>
                         </Attribute>
-                        
+
                         <Value type="EXAMPLE">999888777</Value>
                     </Element>
                 </Element>
-                
+
                 <Element>
                     <Term>cac:PartyName</Term>
                     <Name>Party name</Name>
@@ -416,10 +416,10 @@
                         <Value type="EXAMPLE">Test company AS</Value>
                     </Element>
                 </Element>
-                
+
             </Element>
         </Element>
-        
-     
+
+
     </Document>
 </Structure>

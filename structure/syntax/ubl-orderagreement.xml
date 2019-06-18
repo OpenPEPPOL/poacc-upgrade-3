@@ -6,7 +6,7 @@
 	<Property key="sch:identifier">T110-basic</Property>
 
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2</Namespace>
-	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
+	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
 	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 	<Document>
 		<Term>ubl:OrderResponse</Term>
@@ -1446,7 +1446,7 @@
 				<Element>
 					<Term>cac:Item</Term>
 					<Name>Item information</Name>
-					
+
 					<Element cardinality="0..1">
 						<Term>cbc:Description</Term>
 						<Name>Item description</Name>
@@ -1466,7 +1466,7 @@
 						<Reference type="BUSINESS_TERM">tir110-032</Reference>
 						<Value type="EXAMPLE">Window</Value>
 					</Element>
-					
+
 					<Element cardinality="0..1">
 						<Term>cac:BuyersItemIdentification</Term>
 						<Name>Buyers item identification</Name>
@@ -1480,7 +1480,7 @@
 							<Reference type="BUSINESS_TERM">tir19-091</Reference>
 							<Value type="EXAMPLE">111111</Value>
 						</Element>
-					</Element>				
+					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:SellersItemIdentification</Term>
 						<Name>Sellers item identification</Name>
@@ -1507,7 +1507,7 @@
                                 the item with its identification according to a standard system.</Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir110-034</Reference>
-							
+
 							<Attribute>
 								<Term>schemeID</Term>
 								<Name>Item standard identifier identification scheme identifier</Name>

@@ -6,7 +6,7 @@
 	<Property key="sch:identifier">T19-basic</Property>
 
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2</Namespace>
-	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
+	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
 	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 	<Document>
 		<Term>ubl:Catalogue</Term>
@@ -23,7 +23,7 @@
 			<Term>cbc:ProfileID</Term>
 			<Name>Business process type identifier</Name>
 			<Description>Identifies the BII profile or business process context in which the
-				transaction appears. Values to be used are either urn:fdc:peppol.eu:poacc:bis:catalogue_only:3 
+				transaction appears. Values to be used are either urn:fdc:peppol.eu:poacc:bis:catalogue_only:3
 				or urn:fdc:peppol.eu:poacc:bis:catalogue_wo_response:3</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir19-001</Reference>
@@ -526,7 +526,7 @@
 					</Attribute>
 					<Value type="EXAMPLE">7300010000001</Value>
 				</Element>
-				
+
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
 					<Name>Party identification</Name>
@@ -805,7 +805,7 @@
 								representation.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir19-p046</Reference>
-							
+
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">NO</Value>
 						</Element>
@@ -1033,7 +1033,7 @@
 					</Attribute>
 				</Element>
 				<Element cardinality="0..1">
-					<Term>cbc:Quantity</Term> 
+					<Term>cbc:Quantity</Term>
 					<Name>Standard unit quantity</Name>
 					<Description>The quantity of standard units that are in each consumable unit.</Description>
 					<DataType>Quantity</DataType>
@@ -1379,7 +1379,7 @@
 					<Reference type="BUSINESS_TERM">tir19-067</Reference>
 					<Value type="EXAMPLE">Office chair by John Doe.</Value>
 				</Element>
-		
+
 				<Element cardinality="0..1">
 					<Term>cbc:PackQuantity</Term>
 					<Name>Packed quantity</Name>
@@ -1443,7 +1443,7 @@
 						<Value type="EXAMPLE">111111</Value>
 					</Element>
 				</Element>
-				
+
 				<Element cardinality="0..1">
 					<Term>cac:SellersItemIdentification</Term>
 					<Name>Sellers item identification</Name>
@@ -1456,11 +1456,11 @@
 							seller's system. </Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-091</Reference>
-						
+
 						<Value type="EXAMPLE">3249834</Value>
 					</Element>
 				</Element>
-				
+
 				<Element cardinality="0..1">
 					<Term>cac:ManufacturersItemIdentification</Term>
 					<Name>Manufacturer item identification</Name>
@@ -1484,7 +1484,7 @@
 							the item with its identification according to a standard system.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir19-092</Reference>
-						
+
 						<Attribute>
 							<Term>schemeID</Term>
 							<Name>Item standard identifier identification scheme identifier</Name>

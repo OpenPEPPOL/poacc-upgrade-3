@@ -8,10 +8,8 @@
 
 
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Order-2</Namespace>
-	<Namespace prefix="cac"
-		>urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
-	<Namespace prefix="cbc"
-		>urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
+	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 
 
 	<Document>
@@ -29,7 +27,7 @@
 			<Term>cbc:ProfileID</Term>
 			<Name>Business process type identifier</Name>
 			<Description>Identifies the BII profile or business process context in which the
-				transaction appears. Values to be used are either urn:fdc:peppol.eu:poacc:bis:order_only:3 
+				transaction appears. Values to be used are either urn:fdc:peppol.eu:poacc:bis:order_only:3
 				or urn:fdc:peppol.eu:poacc:bis:ordering:3</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir01-002</Reference>
@@ -103,13 +101,13 @@
 		<Element cardinality="0..1">
 			<Term>cbc:CustomerReference</Term>
 			<Name>Buyer contact</Name>
-			<Description>The element is used for the reference of who ordered the products/services. 
+			<Description>The element is used for the reference of who ordered the products/services.
 				Example being the name of the person ordering, employee number or a code identifying this person or department/group. Also known as "Your reference", and should also be sent in the corresponding invoice.</Description>
 			<DataType>Text</DataType>
 			<Reference type="BUSINESS_TERM">tir01-p002</Reference>
 			<Value type="EXAMPLE">oik987</Value>
 		</Element>
-		
+
 		<Element cardinality="0..1">
 			<Term>cbc:AccountingCost</Term>
 			<Name>Buyers accounting string</Name>
@@ -200,8 +198,8 @@
 				<Element cardinality="0..1">
 					<Term>cbc:EmbeddedDocumentBinaryObject</Term>
 					<Name>Attached document</Name>
-					<Description>The attached document embeded as binary object, coded as Base64. 
-					The binary object has two supplementary components: a Mime Code, which specifies the Mime type of the attachment and a Filename 
+					<Description>The attached document embeded as binary object, coded as Base64.
+					The binary object has two supplementary components: a Mime Code, which specifies the Mime type of the attachment and a Filename
 					that is provided by (or on behalf of) the sender of the document</Description>
 					<DataType>Binary object</DataType>
 					<Reference type="BUSINESS_TERM">tir01-017</Reference>
@@ -2022,7 +2020,7 @@
 								seller's system. </Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir01-p020</Reference>
-							
+
 							<Value type="EXAMPLE">3249834</Value>
 						</Element>
 					</Element>
@@ -2036,7 +2034,7 @@
 								the item with its identification according to a standard system.</Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir01-136</Reference>
-							
+
 							<Attribute>
 								<Term>schemeID</Term>
 								<Name>Item standard identifier identification scheme identifier</Name>
@@ -2047,7 +2045,7 @@
 							<Value type="EXAMPLE">05704066204093</Value>
 						</Element>
 					</Element>
-					
+
 					<Element cardinality="0..n">
 						<Term>cac:ItemSpecificationDocumentReference</Term>
 						<Name>Item specification reference</Name>

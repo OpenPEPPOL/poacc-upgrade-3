@@ -6,7 +6,7 @@
 	<Property key="sch:identifier">T77-basic</Property>
 
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2</Namespace>
-	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
+	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
 	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 	<Document>
 		<Term>ubl:Catalogue</Term>
@@ -145,7 +145,7 @@
 			<Element>
 				<Term>cac:PartyLegalEntity</Term>
 				<Name>Party name</Name>
-				
+
 				<Element>
 					<Term>cbc:RegistrationName</Term>
 					<Name>Seller name</Name>
@@ -201,7 +201,7 @@
 			<Element>
 				<Term>cac:PartyLegalEntity</Term>
 				<Name>Party name</Name>
-				
+
 				<Element>
 					<Term>cbc:RegistrationName</Term>
 					<Name>Buyer name</Name>
@@ -210,7 +210,7 @@
 					<Reference type="BUSINESS_TERM">tir77-010</Reference><Value type="EXAMPLE">Buyer name</Value>
 				</Element>
 			</Element>
-			
+
 			<Element cardinality="0..1">
 				<Term>cac:Contact</Term>
 				<Name>Contact information</Name>
@@ -447,7 +447,7 @@
 			<Element>
 				<Term>cac:Item</Term>
 				<Name>Item information</Name>
-				
+
 				<Element cardinality="0..1">
 					<Term>cbc:Description</Term>
 					<Name>Item description</Name>
@@ -457,7 +457,7 @@
 					<Reference type="BUSINESS_TERM">tir77-039</Reference>
 					<Value type="EXAMPLE">Tissue paper, white, pack of 100</Value>
 				</Element>
-				
+
 				<Element>
 					<Term>cbc:Name</Term>
 					<Name>Item name</Name>
@@ -468,8 +468,8 @@
 					<Reference type="BUSINESS_TERM">tir77-021</Reference>
 					<Value type="EXAMPLE">100 tissue paper, white</Value>
 				</Element>
-		
-				
+
+
 				<Element cardinality="0..1">
 					<Term>cac:BuyersItemIdentification</Term>
 					<Name>Buyer item identification</Name>
@@ -499,7 +499,7 @@
 						<Value type="EXAMPLE">3249834</Value>
 					</Element>
 				</Element>
-				
+
 				<Element cardinality="0..1">
 					<Term>cac:ManufacturersItemIdentification</Term>
 					<Name>Manufacturers item identification</Name>
@@ -575,8 +575,8 @@
 						<Element cardinality="0..1">
 							<Term>cbc:EmbeddedDocumentBinaryObject</Term>
 							<Name>Attached document/image</Name>
-							<Description>The attached document embeded as binary object, coded as Base64. 
-								The binary object has two supplementary components: a Mime Code, which specifies the Mime type of the attachment and a Filename 
+							<Description>The attached document embeded as binary object, coded as Base64.
+								The binary object has two supplementary components: a Mime Code, which specifies the Mime type of the attachment and a Filename
 								that is provided by (or on behalf of) the sender of the document</Description>
 							<DataType>Binary object</DataType>
 							<Reference type="BUSINESS_TERM">tir77-038</Reference>
@@ -625,7 +625,7 @@
                             allow grouping of similar items for a various purposes e.g. public
                             procurement (CPV), e-Commerce (UNSPSC) etc.</Description>
 						<DataType>Code</DataType>
-						
+
 						<Reference type="BUSINESS_TERM">tir77-028</Reference>
 
 						<Attribute>
@@ -720,7 +720,7 @@
 						</Attribute>
 						<Value type="EXAMPLE">2397824</Value>
 					</Element>
-					<Element>	
+					<Element>
 						<Term>cbc:Value</Term>
 						<Name>Item property value</Name>
 						<Description>The value of the item property.</Description>

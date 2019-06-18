@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 	<Term>CatalogueResponse</Term>
-	
+
 	<Property key="sch:prefix">PEPPOL-T58</Property>
 	<Property key="sch:identifier">T58-basic</Property>
-	
-	
+
+
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2</Namespace>
-	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
+	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
 	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 	<Document>
 		<Term>ubl:ApplicationResponse</Term>
@@ -92,7 +92,7 @@
                         the party.</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir58-008</Reference>
-					
+
 					<Attribute usage="Optional">
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
@@ -103,11 +103,11 @@
 					<Value type="EXAMPLE">12345678</Value>
 				</Element>
 			</Element>
-			
+
 			<Element cardinality="0..1">
 				<Term>cac:PartyLegalEntity</Term>
 				<Name>Party name</Name>
-				
+
 				<Element>
 					<Term>cbc:RegistrationName</Term>
 					<Name>Party name</Name>
@@ -157,11 +157,11 @@
 					<Value type="EXAMPLE">12345678</Value>
 				</Element>
 			</Element>
-			
+
 			<Element cardinality="0..1">
 				<Term>cac:PartyLegalEntity</Term>
 				<Name>Party name</Name>
-				
+
 				<Element>
 					<Term>cbc:RegistrationName</Term>
 					<Name>Party name</Name>
@@ -186,7 +186,7 @@
                         code</Description>
 					<DataType>Code</DataType>
 					<Reference type="BUSINESS_TERM">tir58-014</Reference>
-					
+
 					<Reference type="CODE_LIST">UNCL4343</Reference>
 					<Value type="EXAMPLE">AP</Value>
 				</Element>
