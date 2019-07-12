@@ -2,3 +2,4 @@ target
 *.html
 *.pdf
 .idea
+/.project
