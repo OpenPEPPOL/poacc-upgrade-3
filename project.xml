@@ -16,7 +16,8 @@
     <Documentation path="profiles/18-punchout/">- PEPPOL BIS Punch Out 3.0</Documentation>
     <Documentation path="profiles/42-orderagreement/">- PEPPOL BIS Order Agreement 3.0</Documentation>
     <Documentation path="profiles/36-mlr/">- PEPPOL BIS Message Level Response 3.0</Documentation>
-    <Documentation path="profiles/63-invoiceresponse/">- PEPPOL BIS Invoice Response 3.0</Documentation> Working documents <!-- <Documentation path="work/">Overview and processing of alignments</Documentation> -->
+    <Documentation path="profiles/63-invoiceresponse/">- PEPPOL BIS Invoice Response 3.0</Documentation>
+    <!-- <Documentation path="work/">Overview and processing of alignments</Documentation> -->
     <!-- <Documentation path="review/">Review of alignments</Documentation> -->
     <!-- <Documentation path="methodology/schematron/">Schematron guideline</Documentation> -->
     <!-- <Documentation path="work/rules/">Automatic/manual rules</Documentation> -->

@@ -355,7 +355,6 @@
 				</Element>
 				<Element>
 					<Term>cac:PartyLegalEntity</Term>
-					<Name>Party name</Name>
 					<Name>Buyer legal party</Name>
 					<Element>
 						<Term>cbc:RegistrationName</Term>
@@ -1223,9 +1222,9 @@
 					<Element cardinality="0..1">
 						<Term>cbc:ValueQualifier</Term>
 						<Name>Property classification</Name>
+            <Description>Standardized and predefined classification of items
+            properties.</Description>
 						<DataType>Text</DataType>
-						<Description>Standardized and predefined classification of items
-						properties.</Description>
 						<Reference type="BUSINESS_TERM">tir16-p044</Reference>
 					</Element>
 				</Element>
