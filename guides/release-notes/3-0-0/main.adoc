@@ -1,4 +1,4 @@
-= BIS3-1.0 Release notes
+= Version 3.0.0
 :doctype: book
 :icons: font
 :toc: left
@@ -6,7 +6,7 @@
 :source-highlighter: coderay
 :source-language: xml
 :sectanchors:
-:sectnums:
+
 
 This release is a new non-backwards compatible major upgrade of all OpenPEPPOL BIS specifications, other than the BIS Billing 3.0.
 

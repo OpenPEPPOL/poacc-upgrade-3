@@ -2,7 +2,8 @@ include::../../shared/links.adoc[]
 
 = image:../../shared/images/peppol.png[float="right"]BIS Message Level Response 3.0
 OpenPEPPOL AISBL, Post-Award Coordinating Community
-v3.0.0
+{author}
+v{version}
 :doctype: book
 :icons: font
 :stem:

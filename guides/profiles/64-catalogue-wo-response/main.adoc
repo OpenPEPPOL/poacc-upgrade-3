@@ -2,7 +2,7 @@ include::../../shared/links.adoc[]
 
 = image:../../shared/images/peppol.png[float="right"]PEPPOL BIS Catalogue without response 3.0
 {author}
-v3.0.0
+v{version}
 :doctype: book
 :icons: font
 :stem:

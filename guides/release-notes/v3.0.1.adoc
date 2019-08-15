@@ -1,11 +1,6 @@
-= Release notes for PEPPOL BIS 3.0 documents, other than PEPPOL BIS Billing 3.0
-openPEPPOL AISBL <http://www.peppol.eu/>
-2019-05-15
-:icons: font
-:source-highlighter: coderay
-:sourcedir: .
-:imagesdir: images
-:title-logo-image: peppol.png
+= Version 3.0.1
+[horizontal]
+Release date:: 2019-05-15
 
 [NOTE]
 ====
@@ -30,4 +25,3 @@ This release applies the following changes to the previosly published BIS 3.0 do
 This release includes a new BIS document for a Catalogue without response. This new BIS contains the same Catalogue transaction (T19) as the Cataloge only BIS but without the Catalogue Response transaction (T58). This new BIS can be used for sending catalogues to buyers with requiring them to implment the capability for responding, and thus simplifying the implementation while sacrificing some of the functionality provided by the Catalogue Only BIS.
 
 The version number of this new BIS is set as 3.0.1 to keep it aligned with other BIS documents.
-

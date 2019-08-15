@@ -3,7 +3,7 @@
     <Name>PEPPOL BIS 3.0.1 Release</Name>
     <!-- Introduction -->
     <Documentation path="">INTRODUCTION</Documentation>
-    <Documentation path="releasenotes/">- BIS 3.0.1 Release notes</Documentation>
+    <Documentation path="release-notes/">Release notes</Documentation>
     <Documentation path="changes/">- Overview of alignments</Documentation>
     <Documentation path="migration/">- Migration plan</Documentation>
     <!-- BIS documents -->
