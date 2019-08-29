@@ -3,3 +3,4 @@ target
 *.pdf
 .idea
 /.project
+/.settings/
