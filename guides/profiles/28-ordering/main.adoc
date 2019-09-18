@@ -1,9 +1,4 @@
 include::../../shared/links.adoc[]
-
-= image:../../shared/images/peppol.png[float="right"]BIS Ordering 3.0
-OpenPEPPOL AISBL, Post-Award Coordinating Community
-{author}
-v{version}
 :doctype: book
 :icons: font
 :stem:
@@ -18,6 +13,12 @@ v{version}
 :order-resp: ../../transactions/76-order-response
 :snippet-dir: ../../../../rules/snippets/order
 :snippet-response-dir: ../../../../rules/snippets/order-response
+
+= image:../../shared/images/peppol.png[float="right"]BIS Ordering 3.0
+OpenPEPPOL AISBL, Post-Award Coordinating Community
+{author}
+v{version}
+
 
 {description}
 

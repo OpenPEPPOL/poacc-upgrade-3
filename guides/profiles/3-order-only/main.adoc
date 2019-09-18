@@ -1,8 +1,4 @@
 include::../../shared/links.adoc[]
-
-= image:../../shared/images/peppol.png[float="right"]BIS Order only 3.0
-{author}
-v{version}
 :doctype: book
 :icons: font
 :stem:
@@ -14,6 +10,10 @@ v{version}
 :sectnums:
 :transaction-path: ../../transactions/01-order
 :snippet-dir: ../../../../rules/snippets/order
+
+= image:../../shared/images/peppol.png[float="right"]BIS Order only 3.0
+{author}
+v{version}
 
 {description}
 

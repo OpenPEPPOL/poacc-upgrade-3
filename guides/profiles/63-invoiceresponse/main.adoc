@@ -1,9 +1,4 @@
 include::../../shared/links.adoc[]
-
-= image:../../shared/images/peppol.png[float="right"]BIS Invoice Response 3.0
-OpenPEPPOL AISBL, Post-Award Coordinating Community
-{author}
-v{version}
 :doctype: book
 :icons: font
 :stem:
@@ -16,10 +11,14 @@ v{version}
 :title-logo-image: ../../shared/images/peppol.png
 :snippet-dir: ../../../../rules/snippets/imr
 
+= image:../../shared/images/peppol.png[float="right"]BIS Invoice Response 3.0
+OpenPEPPOL AISBL, Post-Award Coordinating Community
+{author}
+v{version}
+
 {description}
 
 include::../../shared/copyright.adoc[]
-
 
 = Link to main site of documentation
 
