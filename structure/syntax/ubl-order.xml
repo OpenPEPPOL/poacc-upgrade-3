@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 	<Term>Order</Term>
-
-
 	<Property key="sch:prefix">PEPPOL-T01</Property>
 	<Property key="sch:identifier">T01-basic</Property>
-
-
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Order-2</Namespace>
 	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
 	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
-
-
 	<Document>
 		<Term>ubl:Order</Term>
 		<Element>
@@ -93,11 +87,9 @@
 			<Description>The default currency for the order.</Description>
 			<DataType>Code</DataType>
 			<Reference type="BUSINESS_TERM">tir01-007</Reference>
-
 			<Reference type="CODE_LIST">ISO4217</Reference>
 			<Value type="EXAMPLE">NOK</Value>
 		</Element>
-
 		<Element cardinality="0..1">
 			<Term>cbc:CustomerReference</Term>
 			<Name>Buyer contact</Name>
@@ -107,7 +99,6 @@
 			<Reference type="BUSINESS_TERM">tir01-p002</Reference>
 			<Value type="EXAMPLE">oik987</Value>
 		</Element>
-
 		<Element cardinality="0..1">
 			<Term>cbc:AccountingCost</Term>
 			<Name>Buyers accounting string</Name>
@@ -372,7 +363,6 @@
 								representation.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir01-033</Reference>
-
 							<Reference type="CODE_LIST">ISO3166</Reference>
 							<Value type="EXAMPLE">NL</Value>
 						</Element>
@@ -405,7 +395,6 @@
 				<Element>
 					<Term>cac:PartyLegalEntity</Term>
 					<Name>Buyer legal information</Name>
-
 					<Element>
 						<Term>cbc:RegistrationName</Term>
 						<Name>Buyers legal registration name</Name>
@@ -456,7 +445,6 @@
 									representation.</Description>
 								<DataType>Code</DataType>
 								<Reference type="BUSINESS_TERM">tir01-046</Reference>
-
 								<Reference type="CODE_LIST">ISO3166</Reference>
 								<Value type="EXAMPLE">NL</Value>
 							</Element>
@@ -518,14 +506,12 @@
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
 					<Name>Party identification</Name>
-
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Seller party identification</Name>
 						<Description>Identifies a party.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir01-059</Reference>
-
 						<Attribute usage="optional">
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
@@ -541,7 +527,6 @@
 					<Name>Party name</Name>
 					<Description>Name of seller</Description>
 					<Reference type="BUSINESS_TERM">tir01-060</Reference>
-
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Seller party trading name</Name>
@@ -610,7 +595,6 @@
 							<Value type="EXAMPLE">Gate 34</Value>
 						</Element>
 					</Element>
-
 					<Element>
 						<Term>cac:Country</Term>
 						<Name>Country</Name>
@@ -629,11 +613,9 @@
 						</Element>
 					</Element>
 				</Element>
-
 				<Element>
 					<Term>cac:PartyLegalEntity</Term>
 					<Name>Seller legal information</Name>
-
 					<Element>
 						<Term>cbc:RegistrationName</Term>
 						<Name>Seller legal registration name</Name>
@@ -728,7 +710,6 @@
 				<Term>cac:Party</Term>
 				<Name>Party information</Name>
 				<Description>Description of the originator party </Description>
-
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
 					<Name>Party identification</Name>
@@ -740,7 +721,6 @@
 						<Description>Identifies a party.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir01-081</Reference>
-
 						<Attribute usage="optional">
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
@@ -829,7 +809,6 @@
 						<Description>An identifer for the invoicee party.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir01-156</Reference>
-
 						<Attribute usage="optional">
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
@@ -843,7 +822,6 @@
 				<Element cardinality="0..1">
 					<Term>cac:PartyName</Term>
 					<Name>Party name</Name>
-
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Invoicee name</Name>
@@ -854,12 +832,10 @@
 						<Value type="EXAMPLE">Invoicee name</Value>
 					</Element>
 				</Element>
-
 				<Element>
 					<Term>cac:PostalAddress</Term>
 					<Name>Postal address</Name>
 					<Description>Postal address of the invoicee</Description>
-
 					<Element cardinality="0..1">
 						<Term>cbc:StreetName</Term>
 						<Name>Address line 1</Name>
@@ -964,7 +940,6 @@
 					<Term>cac:PartyLegalEntity</Term>
 					<Name>Party legal entity</Name>
 					<Description>Legal information of the invoicee party</Description>
-
 					<Element>
 						<Term>cbc:RegistrationName</Term>
 						<Name>Invoicee's Legal registration name</Name>
@@ -994,7 +969,6 @@
 					<Element cardinality="0..1">
 						<Term>cac:RegistrationAddress</Term>
 						<Name>Legal registration address</Name>
-
 						<Element cardinality="0..1">
 							<Term>cbc:CityName</Term>
 							<Name>City name</Name>
@@ -1056,11 +1030,9 @@
 		<Element cardinality="0..1">
 			<Term>cac:Delivery</Term>
 			<Name>Delivery information </Name>
-
 			<Element cardinality="0..1">
 				<Term>cac:DeliveryLocation</Term>
 				<Name>Delivery location </Name>
-
 				<Element cardinality="0..1">
 					<Term>cbc:ID</Term>
 					<Name>Delivery location ID</Name>
@@ -1078,11 +1050,18 @@
 					</Attribute>
 					<Value type="EXAMPLE">7300010000001</Value>
 				</Element>
-
+				<Element cardinality="0..1">
+					<Term>cbc:Name</Term>
+					<Name>Delivery location name</Name>
+					<Description>A name of the location to where the ordered items should be
+						delivered.</Description>
+					<DataType>Text</DataType>
+					<Reference type="BUSINESS_TERM">tir01-p028</Reference>
+					<Value type="EXAMPLE">South side dock</Value>
+				</Element>
 				<Element>
 					<Term>cac:Address</Term>
 					<Name>Delivery address</Name>
-
 					<Element cardinality="0..1">
 						<Term>cbc:StreetName</Term>
 						<Name>Address line 1</Name>
@@ -1141,7 +1120,6 @@
 					<Element>
 						<Term>cac:Country</Term>
 						<Name>Country</Name>
-
 						<Element>
 							<Term>cbc:IdentificationCode</Term>
 							<Name>Country code</Name>
@@ -1158,7 +1136,6 @@
 					</Element>
 				</Element>
 			</Element>
-
 			<Element cardinality="0..1">
 				<Term>cac:RequestedDeliveryPeriod</Term>
 				<Name>Requested delivery period </Name>
@@ -1179,11 +1156,9 @@
 					<Reference type="BUSINESS_TERM">tir01-100</Reference>
 				</Element>
 			</Element>
-
 			<Element cardinality="0..1">
 				<Term>cac:DeliveryParty</Term>
 				<Name>Delivery party </Name>
-
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
 					<Name>Party identification</Name>
@@ -1195,7 +1170,6 @@
 							items.In this BIS: The identifier of the party that should receive the
 							ordered items</Description>
 						<Reference type="BUSINESS_TERM">tir01-101</Reference>
-
 						<Attribute usage="Optional">
 							<Term>schemeID</Term>
 							<Name>Deliver party registration identifier identification scheme
@@ -1250,12 +1224,88 @@
 						<Reference type="BUSINESS_TERM">tir01-106</Reference>
 					</Element>
 				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:PostalAddress</Term>
+					<Name>Ultimate Delivery address</Name>
+					<Description>The ultimate address for the delivery</Description>
+					<Element cardinality="0..1">
+						<Term>cbc:StreetName</Term>
+						<Name>Address line 1</Name>
+						<Description>The main address line in a postal address usually the street
+								name and number.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-p029</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:AdditionalStreetName</Term>
+						<Name>Address line 2</Name>
+						<Description>An additional address line in a postal address that can be used
+								to give further details supplementing the main line. Common use are
+								secondary house number in a complex or in a building.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-p030</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:CityName</Term>
+						<Name>City</Name>
+						<Description>The common name of the city where the postal address is. The
+								name is written in full rather than as a code.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-p031</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:PostalZone</Term>
+						<Name>Post code</Name>
+						<Description>The identifier for an addressable group of properties according
+								to the relevant national postal service, such as a ZIP code or Post
+								Code.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-p032</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:CountrySubentity</Term>
+						<Name>Country subdivision</Name>
+						<Description>For specifying a region, county, state, province etc. within a
+								country by using text.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-p033</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cac:AddressLine</Term>
+						<Name>Address line</Name>
+						<Element>
+							<Term>cbc:Line</Term>
+							<Name>Address line 3</Name>
+							<Description>An additional address line in an address that can be used
+									to give further details supplementing the main line.</Description>
+							<DataType>Text</DataType>
+							<Reference type="BUSINESS_TERM">tir01-p034</Reference>
+							<Value type="EXAMPLE">Gate 34</Value>
+						</Element>
+					</Element>
+					<Element>
+						<Term>cac:Country</Term>
+						<Name>Country</Name>
+						<Element>
+							<Term>cbc:IdentificationCode</Term>
+							<Name>Country code</Name>
+							<Description>A code that identifies the country.The lists of valid
+									countries are registered with the ISO 3166-1 Maintenance agency,
+									"Codes for the representation of names of countries and their
+									subdivisions". Codes must be according to the alpha-2
+									representation.</Description>
+							<DataType>Code</DataType>
+							<Reference type="BUSINESS_TERM">tir01-p035</Reference>
+							<Reference type="CODE_LIST">ISO3166</Reference>
+							<Value type="EXAMPLE">NL</Value>
+						</Element>
+					</Element>
+				</Element>
 			</Element>
 		</Element>
 		<Element cardinality="0..1">
 			<Term>cac:DeliveryTerms</Term>
 			<Name>Terms of delivery</Name>
-
 			<Element cardinality="0..1">
 				<Term>cbc:ID</Term>
 				<Name>Delivery terms identifier</Name>
@@ -1289,7 +1339,6 @@
 		<Element cardinality="0..1">
 			<Term>cac:PaymentTerms</Term>
 			<Name>Payment terms</Name>
-
 			<Element>
 				<Term>cbc:Note</Term>
 				<Name>Payment terms</Name>
@@ -1298,12 +1347,10 @@
 				<Reference type="BUSINESS_TERM">tir01-p010</Reference>
 			</Element>
 		</Element>
-
 		<Element cardinality="0..n">
 			<Term>cac:AllowanceCharge</Term>
 			<Name>Allowance and charge information</Name>
 			<Description>Allowances and charges for the order</Description>
-
 			<Element>
 				<Term>cbc:ChargeIndicator</Term>
 				<Name>AllowanceChargeIndicator</Name>
@@ -1314,7 +1361,6 @@
 				<Reference type="CODE_LIST">TrueFalse</Reference>
 				<Value type="EXAMPLE">false</Value>
 			</Element>
-
 			<Element cardinality="0..1">
 				<Term>cbc:AllowanceChargeReasonCode</Term>
 				<Name>Document level allowance or charge reason code</Name>
@@ -1330,7 +1376,6 @@
 				<Reference type="BUSINESS_TERM">tir01-p008</Reference>
 				<Value type="EXAMPLE">95</Value>
 			</Element>
-
 			<Element>
 				<Term>cbc:AllowanceChargeReason</Term>
 				<Name>Allowance and charges reason</Name>
@@ -1341,7 +1386,6 @@
 				<Reference type="RULE">PEPPOL-T01-R023</Reference>
 				<Reference type="BUSINESS_TERM">tir01-112</Reference>
 			</Element>
-
 			<Element cardinality="0..1">
 				<Term>cbc:MultiplierFactorNumeric</Term>
 				<Name>Document level allowance or charge percentage</Name>
@@ -1353,7 +1397,6 @@
 				<Reference type="BUSINESS_TERM">tir01-p009</Reference>
 				<Value type="EXAMPLE">20</Value>
 			</Element>
-
 			<Element>
 				<Term>cbc:Amount</Term>
 				<Name>Allowance and charge amount</Name>
@@ -1374,7 +1417,6 @@
 				</Attribute>
 				<Value type="EXAMPLE">200</Value>
 			</Element>
-
 			<Element cardinality="0..1">
 				<Term>cbc:BaseAmount</Term>
 				<Name>Document level allowance or charge base amount</Name>
@@ -1385,7 +1427,6 @@
 				<Reference type="RULE">PEPPOL-T01-R020</Reference>
 				<Reference type="RULE">PEPPOL-T01-R028</Reference>
 				<Reference type="BUSINESS_TERM">tir01-p010</Reference>
-
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, value must be the same as what is used in
@@ -1394,11 +1435,8 @@
 					<Reference type="RULE">PEPPOL-T01-R003</Reference>
 					<Value type="EXAMPLE">EUR</Value>
 				</Attribute>
-
 				<Value type="EXAMPLE">1000</Value>
-
 			</Element>
-
 			<Element cardinality="0..1">
 				<Term>cac:TaxCategory</Term>
 				<Name>Tax category</Name>
@@ -1424,7 +1462,6 @@
 					<Reference type="RULE">PEPPOL-T01-R030</Reference>
 					<Reference type="BUSINESS_TERM">tir01-p012</Reference>
 					<Value type="EXAMPLE">25.00</Value>
-
 				</Element>
 				<Element>
 					<Term>cac:TaxScheme</Term>
@@ -1439,7 +1476,6 @@
 				</Element>
 			</Element>
 		</Element>
-
 		<Element cardinality="0..1">
 			<Term>cac:TaxTotal</Term>
 			<Name>Tax total</Name>
@@ -1453,7 +1489,6 @@
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir01-114</Reference>
 				<Reference type="RULE">PEPPOL-T01-R028</Reference>
-
 				<Attribute>
 					<Term>currencyID</Term>
 					<Description>Currency identifier, value must be the same as what is used in
@@ -1777,15 +1812,11 @@
 						</Element>
 					</Element>
 				</Element>
-
 				<Element cardinality="0..n">
-
 					<Term>cac:AllowanceCharge</Term>
 					<Name>Order line allowance and charges</Name>
 					<Description>A group of business terms providing information about allowances or
 						charges applicable to the individual order line. </Description>
-
-
 					<Element>
 						<Term>cbc:ChargeIndicator</Term>
 						<Description> Use “true” when informing about Charges and “false” when
@@ -1793,8 +1824,6 @@
 						<Reference type="BUSINESS_TERM">tir01-p014</Reference>
 						<Value type="EXAMPLE">false</Value>
 					</Element>
-
-
 					<Element cardinality="0..1">
 						<Term>cbc:AllowanceChargeReasonCode</Term>
 						<Name>Line level allowance or charge reason code</Name>
@@ -1810,7 +1839,6 @@
 						<Reference type="BUSINESS_TERM">tir01-p015</Reference>
 						<Value type="EXAMPLE">95</Value>
 					</Element>
-
 					<Element cardinality="0..1">
 						<Term>cbc:AllowanceChargeReason</Term>
 						<Name>Line level allowance or charge reason</Name>
@@ -1821,9 +1849,7 @@
 						<Reference type="RULE">PEPPOL-T01-R023</Reference>
 						<Reference type="BUSINESS_TERM">tir01-p016</Reference>
 						<Value type="EXAMPLE">Discount</Value>
-
 					</Element>
-
 					<Element cardinality="0..1">
 						<Term>cbc:MultiplierFactorNumeric</Term>
 						<Name>Line level allowance or charge percentage</Name>
@@ -1835,7 +1861,6 @@
 						<Reference type="BUSINESS_TERM">tir01-p017</Reference>
 						<Value type="EXAMPLE">20</Value>
 					</Element>
-
 					<Element>
 						<Term>cbc:Amount</Term>
 						<Name>Line level allowance or charge amount</Name>
@@ -1845,7 +1870,6 @@
 						<Reference type="RULE">PEPPOL-T01-R022</Reference>
 						<Reference type="RULE">PEPPOL-T01-R028</Reference>
 						<Reference type="BUSINESS_TERM">tir01-p018</Reference>
-
 						<Attribute>
 							<Term>currencyID</Term>
 							<Description>Currency identifier, value must be the same as what is used
@@ -1856,7 +1880,6 @@
 						</Attribute>
 						<Value type="EXAMPLE">200</Value>
 					</Element>
-
 					<Element cardinality="0..1">
 						<Term>cbc:BaseAmount</Term>
 						<Name>Line level allowance or charge base amount</Name>
@@ -1867,7 +1890,6 @@
 						<Reference type="RULE">PEPPOL-T01-R020</Reference>
 						<Reference type="RULE">PEPPOL-T01-R028</Reference>
 						<Reference type="BUSINESS_TERM">tir01-p019</Reference>
-
 						<Attribute>
 							<Term>currencyID</Term>
 							<Description>Currency identifier, value must be the same as what is used
@@ -1875,11 +1897,8 @@
 							<Reference type="CODE_LIST">ISO4217</Reference>
 							<Reference type="RULE">PEPPOL-T01-R003</Reference>
 							<Value type="EXAMPLE">EUR</Value>
-
 						</Attribute>
-
 						<Value type="EXAMPLE">1000</Value>
-
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
@@ -1904,7 +1923,6 @@
 							<Reference type="CODE_LIST">ISO4217</Reference>
 							<Reference type="RULE">PEPPOL-T01-R003</Reference>
 							<Value type="EXAMPLE">EUR</Value>
-
 						</Attribute>
 						<Value type="EXAMPLE">211.124</Value>
 					</Element>
@@ -1944,7 +1962,6 @@
 							<Description>Discount amount connected to the price</Description>
 							<DataType>Price amount</DataType>
 							<Reference type="BUSINESS_TERM">tir01-p006</Reference>
-
 							<Attribute>
 								<Term>currencyID</Term>
 								<Description>Currency identifier, value must be the same as what is
@@ -2020,7 +2037,6 @@
 								seller's system. </Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir01-p020</Reference>
-
 							<Value type="EXAMPLE">3249834</Value>
 						</Element>
 					</Element>
@@ -2034,7 +2050,6 @@
 								the item with its identification according to a standard system.</Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir01-136</Reference>
-
 							<Attribute>
 								<Term>schemeID</Term>
 								<Name>Item standard identifier identification scheme identifier</Name>
@@ -2045,7 +2060,6 @@
 							<Value type="EXAMPLE">05704066204093</Value>
 						</Element>
 					</Element>
-
 					<Element cardinality="0..n">
 						<Term>cac:ItemSpecificationDocumentReference</Term>
 						<Name>Item specification reference</Name>
@@ -2100,7 +2114,6 @@
 							<Description>The VAT category code for the item.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir01-150</Reference>
-
 							<Reference type="CODE_LIST">UNCL5305</Reference>
 							<Value type="EXAMPLE">S</Value>
 						</Element>
@@ -2211,7 +2224,6 @@
 								<Description>An identifier for the production lot which the order
 									line items come from.</Description>
 								<Reference type="BUSINESS_TERM">tir01-p022</Reference>
-
 							</Element>
 						</Element>
 					</Element>
