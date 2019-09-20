@@ -18,12 +18,12 @@
     <rule context="cbc:EndpointID[@schemeID = '0088'] | cac:PartyIdentification/cbc:ID[@schemeID = '0088'] | cbc:CompanyID[@schemeID = '0088']">
         <assert id="PEPPOL-COMMON-R040"
                 test="matches(normalize-space(), '^[0-9]+$') and u:gln(normalize-space())"
-                flag="warning">Invalid GLN number provided.</assert>
+                flag="warning">GLN must have a valid format according to GS1 rules.</assert>
     </rule>
     <rule context="cbc:EndpointID[@schemeID = '0192'] | cac:PartyIdentification/cbc:ID[@schemeID = '0192'] | cbc:CompanyID[@schemeID = '0192']">
         <assert id="PEPPOL-COMMON-R041"
                 test="matches(normalize-space(), '^[0-9]{9}$') and u:mod11(normalize-space())"
-                flag="fatal">Invalid Norwegian organization number provided.</assert>
+                flag="fatal">Norwegian organization number must be stated in the correct format.</assert>
     </rule>
 
 </pattern>

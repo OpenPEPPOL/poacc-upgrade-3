@@ -1,9 +1,4 @@
 include::../../shared/links.adoc[]
-
-= image:../../shared/images/peppol.png[float="right"]BIS Message Level Response 3.0
-OpenPEPPOL AISBL, Post-Award Coordinating Community
-{author}
-v{version}
 :doctype: book
 :icons: font
 :stem:
@@ -15,7 +10,10 @@ v{version}
 :sectnums:
 :title-logo-image: ../../shared/images/peppol.png
 :snippet-dir: ../../../../rules/snippets/mlr
-
+= image:../../shared/images/peppol.png[float="right"]BIS Message Level Response 3.0
+OpenPEPPOL AISBL, Post-Award Coordinating Community
+{author}
+v{version}
 
 {description}
 
