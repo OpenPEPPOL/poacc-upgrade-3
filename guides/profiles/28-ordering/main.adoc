@@ -14,7 +14,7 @@ include::../../shared/links.adoc[]
 :snippet-dir: ../../../../rules/snippets/order
 :snippet-response-dir: ../../../../rules/snippets/order-response
 
-= image:../../shared/images/peppol.png[float="right"]BIS Ordering 3.0
+= image:../../shared/images/peppol.png[float="right"]BIS Ordering 3.1
 OpenPEPPOL AISBL, Post-Award Coordinating Community
 {author}
 v{version}
