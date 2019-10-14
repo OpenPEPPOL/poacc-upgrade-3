@@ -14,6 +14,6 @@ Release date:: 2019-11-01
 
 == Changes to code lists and validation artefacts
 
-* Update in link:/poacc/billing/3.0/codelist/ICD/[ICD] code list, addition of codes: 0203 and 0204
+* Update in link:/poacc/billing/3.0/codelist/eas/[EAS] code list, addition of codes: 0130 and 204, and deprecating of code 9917 and 9921.
 * An error in a common structural validation of GLN numbers, rule PEPPOL-COMMON-R040, corrected.
 * Changed implementation of empty element-test. Rule updated so that it also fails on whitespace only content.
