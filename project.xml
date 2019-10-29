@@ -8,8 +8,8 @@
     <Documentation path="migration/">- Migration plan</Documentation>
     <!-- BIS documents -->
     <Documentation path="">BIS DOCUMENTS</Documentation>
-    <Documentation path="profiles/3-order-only/">- PEPPOL BIS Order only 3.0</Documentation>
-    <Documentation path="profiles/28-ordering/">- PEPPOL BIS Ordering 3.0</Documentation>
+    <Documentation path="profiles/3-order-only/">- PEPPOL BIS Order only 3.1</Documentation>
+    <Documentation path="profiles/28-ordering/">- PEPPOL BIS Ordering 3.1</Documentation>
     <Documentation path="profiles/1-catalogueonly/">- PEPPOL BIS Catalogue only 3.0</Documentation>
     <Documentation path="profiles/64-catalogue-wo-response/">- PEPPOL BIS Catalogue without response 3.0</Documentation>
     <Documentation path="profiles/30-despatchadvice/">- PEPPOL BIS Despatch Advice 3.0</Documentation>
@@ -25,7 +25,7 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-order.xml</Path>
-        <Title>PEPPOL Order transaction 3.0 (T01)</Title>
+        <Title>PEPPOL Order transaction 3.1 (T01)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
