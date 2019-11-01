@@ -15,7 +15,6 @@ include::../../shared/links.adoc[]
 :snippet-response-dir: ../../../../rules/snippets/order-response
 
 = image:../../shared/images/peppol.png[float="right"]BIS Ordering 3.1
-OpenPEPPOL AISBL, Post-Award Coordinating Community
 {author}
 v{ord_version}
 

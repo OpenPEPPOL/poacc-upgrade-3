@@ -12,7 +12,6 @@ include::../../shared/links.adoc[]
 :snippet-dir: ../../../../rules/snippets/imr
 
 = image:../../shared/images/peppol.png[float="right"]BIS Invoice Response 3.0
-OpenPEPPOL AISBL, Post-Award Coordinating Community
 {author}
 v{version}
 
