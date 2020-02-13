@@ -1993,6 +1993,14 @@
 				<Element>
 					<Term>cac:Item</Term>
 					<Name>Item information</Name>
+					<Element cardinality="0..1">
+						<Term>cbc:Description</Term>
+						<Name>Item description</Name>
+						<Description>Free-form field that can be used to give a text description of
+							the item. A detailed description of the item.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-133</Reference>
+					</Element>
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Item name</Name>
@@ -2001,14 +2009,6 @@
 							description.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-135</Reference>
-					</Element>
-					<Element cardinality="0..1">
-						<Term>cbc:Description</Term>
-						<Name>Item description</Name>
-						<Description>Free-form field that can be used to give a text description of
-							the item. A detailed description of the item.</Description>
-						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir01-133</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:BuyersItemIdentification</Term>
