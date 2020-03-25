@@ -146,7 +146,7 @@
 			<!-- end::coo[] -->
 			<!-- tag::classification[] -->
 			<cac:CommodityClassification>
-				<cbc:ItemClassificationCode listID="MP" listVersionID="20.0601"
+				<cbc:ItemClassificationCode listID="TST" listVersionID="20.0601"
 					>14111511</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
 			<!-- end::classification[] -->
