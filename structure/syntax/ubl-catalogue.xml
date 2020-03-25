@@ -1513,6 +1513,7 @@
 						<Description>A functional description of the attachment/image expressed as code</Description>
 						<DataType>Code</DataType>
 						<Reference type="CODE_LIST">UNCL1001</Reference>
+						<Reference type="CODE_LIST">Image</Reference>
 						<Reference type="BUSINESS_TERM">tir19-086a</Reference>
 					</Element>
 					<Element cardinality="0..n">
