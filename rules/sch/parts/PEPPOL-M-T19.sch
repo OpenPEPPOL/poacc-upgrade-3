@@ -88,7 +88,7 @@
     <rule context="cac:Item">
         <assert id="PEPPOL-T19-R012"
                 test="(cac:StandardItemIdentification/cbc:ID) or (cac:SellersItemIdentification/cbc:ID)"
-                flag="fatal">Each item in a Catalogue line SHALL be identifiable by either “item sellers identifier” or “item standard identifier”</assert>
+                flag="fatal">Each item in a Catalogue line SHALL be identifiable by either "item sellers identifier" or "item standard identifier"</assert>
     </rule>
 
 
