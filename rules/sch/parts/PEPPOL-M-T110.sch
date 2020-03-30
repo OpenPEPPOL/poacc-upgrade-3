@@ -55,7 +55,7 @@
 		<let name="category" value="u:cat2str(.)"/>
 		
 		<assert id="PEPPOL-T110-R026"
-			test="some $cat in $taxCategoryPercents satisfies $cat = $category"
+			test="some $cat in $taxCategoryPercents satisfies $cat = $category and exists(/ubl:OrderResponse/cac:TaxTotal)"
 			flag="fatal">Tax categories MUST match provided tax categories on document level.</assert>
 	</rule>
 		
