@@ -50,12 +50,12 @@
 			flag="fatal">A VATBReakdown with VAT Category codes S, Z, L and M SHALL NOT have a VAT exemption reason text </assert>
 	</rule>
 	
-	<rule context="cac:AllowanceCharge/cac:TaxCategory[cbc:Percent] | cac:Item/cac:ClassifiedTaxCategory[cbc:Percent]">
+	<rule context="cac:AllowanceCharge/cac:TaxCategory[cbc:Percent and //cac:TaxTotal] | cac:Item/cac:ClassifiedTaxCategory[cbc:Percent and //cac:TaxTotal]">
 		
 		<let name="category" value="u:cat2str(.)"/>
 		
 		<assert id="PEPPOL-T110-R026"
-			test="some $cat in $taxCategoryPercents satisfies $cat = $category or not(exists(/ubl:OrderResponse/cac:TaxTotal))"
+			test="some $cat in $taxCategoryPercents satisfies $cat = $category"
 			flag="fatal">Tax categories MUST match provided tax categories on document level.</assert>
 	</rule>
 		
