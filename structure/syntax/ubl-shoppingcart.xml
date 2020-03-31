@@ -641,6 +641,12 @@
 							<Description>The identification scheme version identifier of the Item classification identifier</Description>
 							<Value type="EXAMPLE">20.0602</Value>
 						</Attribute>
+						<Attribute usage="Optional">
+							<Term>name</Term>
+							<Name>Clear text name equivalent of classification code</Name>
+							<Description>The textual equivalent of the code value</Description>
+							<Value type="EXAMPLE">Office furniture</Value>	
+						</Attribute>						
 						<Value type="EXAMPLE">9873242</Value>
 					</Element>
 				</Element>
