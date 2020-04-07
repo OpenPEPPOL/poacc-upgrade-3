@@ -18,7 +18,7 @@ Document level allowance/charge is stated using the UBL element `cac:AllowanceCh
 
 Each document level charge or allowance must have the Document level allowance or charge TAX category code, and for all TAX categories except when tax category indicates that the invoice is not subject to TAX (e.g. (O) in EU), then the TAX rate shall be provided.
 
-.UBL Example of a charge with tax category information where the TAX is VAT.
+.UBL Example of a charge with tax category information, when the TAX is VAT.
 [source, xml, indent=0]
 ----
 include::../snippets/snippet-oa-vat.xml[tags=vat-allowance]

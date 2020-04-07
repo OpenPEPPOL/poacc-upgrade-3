@@ -35,7 +35,7 @@ Line 2 has category code = S and VAT rate = *25.00* +
 This should result in only one VAT Breakdown.
 ====
 
-.UBL Example of tax total and tax breakdown
+.UBL Example of tax total and tax breakdown, when TAX is VAT.
 [source, xml, indent=0]
 ----
 include::../../snippets/snippet-oa-vat.xml[tags=taxtotal]

@@ -9,7 +9,7 @@ _Information on allowance and/or charges applies to the whole order agreement an
 
 
 * Several allowances and charges may be supplied
-* Specification of VAT for allowances and charges, `cac:TaxCategory` with sub elements, shall be supplied
+* Specification of TAX for allowances and charges, `cac:TaxCategory` with sub elements, shall be supplied
 * The sum of all allowances and charges on the header level shall be specified in `cbc:AllowanceTotalAmount` and `cbc:ChargeTotalAmount` respectively. See <<totals>>
 
 
@@ -27,7 +27,7 @@ stem:["Amount" =  "Base amount" times ("Percentage" div 100)]
 ====
 
 
-.UBL example of Allowances and Charges on the document level
+.UBL example of Allowances and Charges on the document level, when TAX is VAT.
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/snippet-oa.xml[tags=allowance]
