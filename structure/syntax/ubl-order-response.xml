@@ -370,7 +370,7 @@
                             provide reference to an appropriate source from which the price can be
                             identified such as a contract, catalogue or a quote.. The price amount.
                             The net price of the item including all allowances, charges and taxes
-                            but exluding VAT.</Description>
+                            but exluding TAX.</Description>
 						<DataType>Price amount</DataType>
 						<Reference type="BUSINESS_TERM">tir76-130</Reference>
 						<Attribute>
@@ -559,11 +559,11 @@
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:ClassifiedTaxCategory</Term>
-						<Name>Line VAT information</Name>
+						<Name>Line TAX information</Name>
 						<Element>
 							<Term>cbc:ID</Term>
-							<Name>Item VAT category code</Name>
-							<Description>The VAT category code for the item.</Description>
+							<Name>Item TAX category code</Name>
+							<Description>The TAX category code for the item.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir76-150</Reference>
 
@@ -572,8 +572,8 @@
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cbc:Percent</Term>
-							<Name>Line VAT rate</Name>
-							<Description>The VAT percentage rate that applies to the line
+							<Name>Line TAX rate</Name>
+							<Description>The TAX percentage rate that applies to the line
                                 amount.</Description>
 							<DataType>Percentage</DataType>
 							<Reference type="BUSINESS_TERM">tir04-170</Reference>
@@ -584,10 +584,10 @@
 							<Name>Tax scheme information</Name>
 							<Element>
 								<Term>cbc:ID</Term>
-								<Description>Tax scheme. Use “VAT”</Description>
+								<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
 								<DataType>Identifier</DataType>
 								<Reference type="BUSINESS_TERM">tir76-p003</Reference>
-								<Value type="DEFAULT">VAT</Value>
+								<Value type="EXAMPLE">VAT</Value>
 							</Element>
 						</Element>
 					</Element>

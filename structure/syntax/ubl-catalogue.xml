@@ -1657,8 +1657,8 @@
 					<Name>Classified tax category</Name>
 					<Element>
 						<Term>cbc:ID</Term>
-						<Name>Item VAT category code</Name>
-						<Description>The VAT code that indicates what VAT details apply to the
+						<Name>Item TAX category code</Name>
+						<Description>The TAX code that indicates what TAX details apply to the
                             item.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-094</Reference>
@@ -1668,8 +1668,8 @@
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:Percent</Term>
-						<Name>Item VAT precentage</Name>
-						<Description>The VAT percentage rate that applies to the item unless
+						<Name>Item TAX precentage</Name>
+						<Description>The TAX percentage rate that applies to the item unless
                             specific trade reasons apply such as exemptions.</Description>
 						<DataType>Percentage</DataType>
 						<Reference type="BUSINESS_TERM">tir19-050</Reference>
@@ -1682,8 +1682,8 @@
 						<Name>Tax scheme information</Name>
 						<Element>
 							<Term>cbc:ID</Term>
-							<Description>Tax scheme. Use “VAT”</Description>
-							<Value type="DEFAULT">VAT</Value>
+							<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
+							<Value type="EXAMPLE">VAT</Value>
 						</Element>
 					</Element>
 				</Element>

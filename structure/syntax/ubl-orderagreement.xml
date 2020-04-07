@@ -958,16 +958,16 @@
 				<Name>TAX CATEGORY</Name>
 				<Element>
 					<Term>cbc:ID</Term>
-					<Name>Document level allowance or charge VAT category code</Name>
-					<Description>A coded identification of what VAT category applies to the document level allowance or charge.</Description>
+					<Name>Document level allowance or charge TAX category code</Name>
+					<Description>A coded identification of what TAX category applies to the document level allowance or charge.</Description>
 					<DataType>Code</DataType>
 					<Reference type="CODE_LIST">UNCL5305</Reference>
 					<Value type="EXAMPLE">S</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:Percent</Term>
-					<Name>Document level allowance or charge VAT rate</Name>
-					<Description>The VAT rate, represented as percentage that applies to the document level allowance or charge.</Description>
+					<Name>Document level allowance or charge TAX rate</Name>
+					<Description>The TAX rate, represented as percentage that applies to the document level allowance or charge.</Description>
 					<DataType>Percentage</DataType>
 					<Value type="EXAMPLE">25.00</Value>
 				</Element>
@@ -976,9 +976,9 @@
 					<Name>Tax scheme information</Name>
 					<Element>
 						<Term>cbc:ID</Term>
-						<Description>Tax scheme. Use “VAT”</Description>
+						<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
 						<DataType>Identifier</DataType>
-						<Value type="DEFAULT">VAT</Value>
+						<Value type="EXAMPLE">VAT</Value>
 					</Element>
 				</Element>
 			</Element>
@@ -988,8 +988,8 @@
 			<Name>Tax total information</Name>
 			<Element>
 				<Term>cbc:TaxAmount</Term>
-				<Name>VAT total amount</Name>
-				<Description>The total VAT amount.The sum of all VAT category tax
+				<Name>TAX total amount</Name>
+				<Description>The total TAX amount.The sum of all TAX category tax
                     amounts.</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir110-112</Reference>
@@ -1005,16 +1005,16 @@
 			</Element>
 			<Element cardinality="0..n">
 				<Term>cac:TaxSubtotal</Term>
-				<Name>VAT breakdown</Name>
-				<Description>A group of business terms providing information about VAT breakdown by different categories, rates
+				<Name>TAX breakdown</Name>
+				<Description>A group of business terms providing information about TAX breakdown by different categories, rates
                     and exemption reasons</Description>
 				<Element>
 					<Term>cbc:TaxableAmount</Term>
-					<Name>VAT category taxable amount</Name>
-					<Description>Sum of all taxable amounts subject to a specific VAT category code
-                        and VAT category rate (if the VAT category rate is applicable). The sum of
+					<Name>TAX category taxable amount</Name>
+					<Description>Sum of all taxable amounts subject to a specific TAX category code
+                        and TAX category rate (if the TAX category rate is applicable). The sum of
                         line net amounts minus allowances plus charges on document level which are
-                        subject to a specific VAT categorycode and VAT category rate (if the VAT
+                        subject to a specific TAX categorycode and TAX category rate (if the TAX
                         category rate is applicable).</Description>
 					<DataType>Amount</DataType>
 					<Reference type="BUSINESS_TERM">OP-110-003</Reference>
@@ -1029,10 +1029,10 @@
 				</Element>
 				<Element>
 					<Term>cbc:TaxAmount</Term>
-					<Name>VAT category tax amount</Name>
-					<Description>The total VAT amount for a given VAT category.Calculated by
-                        multiplying the VAT category taxable amount with the VAT category rate for
-                        the relevant VAT category.</Description>
+					<Name>TAX category tax amount</Name>
+					<Description>The total TAX amount for a given TAX category.Calculated by
+                        multiplying the TAX category taxable amount with the TAX category rate for
+                        the relevant TAX category.</Description>
 					<DataType>Amount</DataType>
 					<Reference type="BUSINESS_TERM">OP-110-004</Reference>
 					<Reference type="RULE">PEPPOL-T110-R004</Reference>
@@ -1046,11 +1046,11 @@
 				</Element>
 				<Element>
 					<Term>cac:TaxCategory</Term>
-					<Name>VAT category information</Name>
+					<Name>TAX category information</Name>
 					<Element>
 						<Term>cbc:ID</Term>
-						<Name>VAT category code</Name>
-						<Description>Coded identification of a VAT category.</Description>
+						<Name>TAX category code</Name>
+						<Description>Coded identification of a TAX category.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">OP-110-005</Reference>
 						<Reference type="CODE_LIST">UNCL5305</Reference>
@@ -1058,19 +1058,19 @@
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:Percent</Term>
-						<Name>VAT category rate</Name>
-						<Description>The VAT rate, represented as percentage that applies for the
-                            relevant VAT category.A VAT rate of 0% is applied for calculation
-                            purposes, even if the item is outside the scope of VAT.</Description>
+						<Name>TAX category rate</Name>
+						<Description>The TAX rate, represented as percentage that applies for the
+                            relevant TAX category.A TAX rate of 0% is applied for calculation
+                            purposes, even if the item is outside the scope of TAX.</Description>
 						<DataType>Percentage</DataType>
 						<Reference type="BUSINESS_TERM">OP-110-006</Reference>
 						<Value type="EXAMPLE">25</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:TaxExemptionReason</Term>
-						<Name>VAT exemption reason text</Name>
+						<Name>TAX exemption reason text</Name>
 						<Description>A textual statement of the reason for why the base amount is
-                            exempted from VAT.</Description>
+                            exempted from TAX.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">OP-110-007</Reference>
 						<Value type="EXAMPLE">Exempt</Value>
@@ -1080,9 +1080,9 @@
 						<Name>Tax scheme information</Name>
 						<Element>
 							<Term>cbc:ID</Term>
-							<Description>Tax scheme. Use “VAT”</Description>
+							<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
 							<DataType>Identifier</DataType>
-							<Value type="DEFAULT">VAT</Value>
+							<Value type="EXAMPLE">VAT</Value>
 						</Element>
 					</Element>
 				</Element>
@@ -1110,8 +1110,8 @@
 			</Element>
 			<Element>
 				<Term>cbc:TaxExclusiveAmount</Term>
-				<Name>Total amount without VAT</Name>
-				<Description>The total amount of the document without VAT including all line net
+				<Name>Total amount without TAX</Name>
+				<Description>The total amount of the document without TAX including all line net
                     amounts minus sum of allowance amount on document level plus sum of charges on
                     document level.</Description>
 				<DataType>Amount</DataType>
@@ -1129,9 +1129,9 @@
 			</Element>
 			<Element>
 				<Term>cbc:TaxInclusiveAmount</Term>
-				<Name>Total amount with VAT</Name>
-				<Description>The total amount of the document with VAT. The total amount with VAT is
-                    the Total amount without VAT plus the Total VAT amount. The Total amount shall
+				<Name>Total amount with TAX</Name>
+				<Description>The total amount of the document with TAX. The total amount with TAX is
+                    the Total amount without TAX plus the Total TAX amount. The Total amount shall
                     be equal or greater than zero.</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir110-088</Reference>
@@ -1203,7 +1203,7 @@
 			<Element cardinality="0..1">
 				<Term>cbc:PayableRoundingAmount</Term>
 				<Name>Rounding of document total</Name>
-				<Description>Any rounding of the "Document total including VAT"</Description>
+				<Description>Any rounding of the "Document total including TAX"</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">OP-110-010</Reference>
 				<Reference type="RULE">PEPPOL-T110-R004</Reference>
@@ -1220,8 +1220,8 @@
 				<Term>cbc:PayableAmount</Term>
 				<Name>Amount due for payment</Name>
 				<Description>The outstanding amount that is requested to be paid.This amount is the
-                    "document total amount with VAT" minus the "Paid amount" that has been paid
-                    a-priori. The amount will be zero in case the document total amount with VAT is
+                    "document total amount with TAX" minus the "Paid amount" that has been paid
+                    a-priori. The amount will be zero in case the document total amount with TAX is
                     fully paid .</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir110-090</Reference>
@@ -1280,7 +1280,7 @@
 					<Term>cbc:LineExtensionAmount</Term>
 					<Name>Order agreeement line amount</Name>
 					<Description>Order agreeement line amountThe total amount for the order
-                        agreement line, including all taxes except VAT.</Description>
+                        agreement line, including all taxes except TAX.</Description>
 					<DataType>Amount</DataType>
 					<Reference type="BUSINESS_TERM">tir110-092</Reference>
 					<Reference type="RULE">PEPPOL-T110-R004</Reference>
@@ -1358,7 +1358,7 @@
 					<Element>
 						<Term>cbc:PriceAmount</Term>
 						<Name>Item net price</Name>
-						<Description>The price of an item, exclusive of VAT, after subtracting item
+						<Description>The price of an item, exclusive of TAX, after subtracting item
                             price discount."The net price has to be equal with the gross price less
                             the item price discount.</Description>
 						<DataType>Price Amount</DataType>
@@ -1628,11 +1628,11 @@
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:ClassifiedTaxCategory</Term>
-						<Name>Line VAT information</Name>
+						<Name>Line TAX information</Name>
 						<Element>
 							<Term>cbc:ID</Term>
-							<Name>Item VAT category code</Name>
-							<Description>The VAT category code for the item.</Description>
+							<Name>Item TAX category code</Name>
+							<Description>The TAX category code for the item.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir110-106</Reference>
 							<Reference type="CODE_LIST">UNCL5305</Reference>
@@ -1640,8 +1640,8 @@
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cbc:Percent</Term>
-							<Name>Line VAT rate</Name>
-							<Description>The VAT percentage rate that applies to the line
+							<Name>Line TAX rate</Name>
+							<Description>The TAX percentage rate that applies to the line
                                 amount.</Description>
 							<DataType>Percentage</DataType>
 							<Reference type="BUSINESS_TERM">tir110-107</Reference>
@@ -1652,9 +1652,9 @@
 							<Name>Tax scheme information</Name>
 							<Element>
 								<Term>cbc:ID</Term>
-								<Description>Tax scheme. Use “VAT”</Description>
+								<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
 								<DataType>Identifier</DataType>
-								<Value type="DEFAULT">VAT</Value>
+								<Value type="EXAMPLE">VAT</Value>
 							</Element>
 						</Element>
 					</Element>

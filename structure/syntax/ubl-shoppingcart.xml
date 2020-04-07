@@ -385,7 +385,7 @@
 						<Term>cbc:PriceAmount</Term>
 						<Name>Item price</Name>
 						<Description>The net price has to be equal with the gross price less the
-							item price discount. The price of an item, exclusive of VAT, after
+							item price discount. The price of an item, exclusive of TAX, after
 							subtracting item price discount.</Description>
 						<DataType>Price amount</DataType>
 						<Reference type="BUSINESS_TERM">tir77-032</Reference>
@@ -664,11 +664,11 @@
 				</Element>
 				<Element>
 					<Term>cac:ClassifiedTaxCategory</Term>
-					<Name>Line VAT information</Name>
+					<Name>Line TAX information</Name>
 					<Element>
 						<Term>cbc:ID</Term>
-						<Name>Item VAT category code</Name>
-						<Description>The VAT category code for the item.</Description>
+						<Name>Item TAX category code</Name>
+						<Description>The TAX category code for the item.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir77-034</Reference>
 
@@ -677,9 +677,9 @@
 					</Element>
 					<Element>
 						<Term>cbc:Percent</Term>
-						<Name>Item VAT rate</Name>
-						<Description>A VAT rate of zero percent is applied for calculation purposes
-                            even if the item is outside the scope of VAT. The VAT rate, represented
+						<Name>Item TAX rate</Name>
+						<Description>A TAX rate of zero percent is applied for calculation purposes
+                            even if the item is outside the scope of TAX. The TAX rate, represented
                             as percentage that applies to the item.</Description>
 						<DataType>Percentage</DataType>
 						<Reference type="BUSINESS_TERM">tir77-035</Reference>
@@ -691,8 +691,8 @@
 						<Name>Tax scheme information</Name>
 						<Element>
 							<Term>cbc:ID</Term>
-							<Description>Tax scheme. Use “VAT”</Description>
-							<Value type="DEFAULT">VAT</Value>
+							<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
+							<Value type="EXAMPLE">VAT</Value>
 						</Element>
 					</Element>
 				</Element>
