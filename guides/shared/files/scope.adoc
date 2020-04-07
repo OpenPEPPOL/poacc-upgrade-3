@@ -15,7 +15,7 @@ The main activities supported by this BIS are:
 * Item comparison
 * Item dependency and composition
 * Description of packaging and storage requirements
-* VAT classification
+* TAX classification (e.g. for VAT, GST and Sales Tax)
 * Item instance description
 * Maintenance of catalogue
 

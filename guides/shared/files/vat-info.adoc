@@ -1,9 +1,9 @@
 
-= Value added tax (VAT)
+= TAX information (TAX)
 
-The chapters below describe the different VAT informations that can be provided in this BIS.
+The chapters below describe the different TAX informations that can be provided in this BIS. In this context the term TAX applies to taxes such as VAT, GST and Sales Tax.
 
-Please also see {vat-codes} for details on the VAT category code list, and <<vat-calc>> for detailed explanation and example on how to perform the calculations for VAT Breakdown.
+Please also see {vat-codes} for details on the TAX category code list, and <<vat-calc>> for detailed explanation and example on how to perform the calculations for TAX Breakdown.
 
 :leveloffset: +1
 
@@ -12,17 +12,17 @@ include::../../shared/files/vat-cat-line.adoc[]
 :leveloffset: -1
 
 [[vat-allowance]]
-== VAT info for allowance or charge
+== TAX info for allowance or charge
 
 Document level allowance/charge is stated using the UBL element `cac:AllowanceCharge`. Further details on allowance and charge can be found in <<allowance>>.
 
-Each document level charge or allowance must have the Document level allowance or charge VAT category code, and for all VAT categories except "Not subject to VAT" (O), the VAT rate shall be provided.
+Each document level charge or allowance must have the Document level allowance or charge TAX category code, and for all TAX categories except when tax category indicates that the invoice is not subject to TAX (e.g. (O) in EU), then the TAX rate shall be provided.
 
-.UBL Example of a charge with tax category information
+.UBL Example of a charge with tax category information where the TAX is VAT.
 [source, xml, indent=0]
 ----
 include::../snippets/snippet-oa-vat.xml[tags=vat-allowance]
 ----
 <1> The class `cac:TaxCategory` is used for tax category information
-<2> VAT category according to codelist {vat-codes}
-<3> VAT rate
+<2> TAX category according to codelist {vat-codes}
+<3> TAX rate

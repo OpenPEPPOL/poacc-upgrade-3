@@ -18,7 +18,7 @@ Similar business reason (for example missing order number) may trigger different
 == Detail type codes and values
 
 For each clarification code the Buyer can provide details to assist in the correction.
-For example, if an invoice contains the wrong Buyers VAT number then the Buyer can provide the correct number in the Invoice Response.
+For example, if an invoice contains the wrong Buyers TAX number then the Buyer can provide the correct number in the Invoice Response.
 When a textual clarification that includes information about the correct values is not sufficient, but the correct values need to be provided in a structured way that information can be given by providing a type code that identifies the information type and the correct value.
 
 The detail type code for each data type shall be the business term identifier of the referenced document that shall be corrected, and the detail value shall be the value that the Buyer proposes as the correct one.
@@ -28,10 +28,10 @@ Example:
 A Buyer receives a PEPPOL invoice where the following is true
 
 * The invoice complies to PEPPOL Billing specification
-* The Buyer‘s VAT number in the invoice is incorrect and should be EU12345
-* The Buyer requests the Seller to send a credit note to cancel the incorrect invoice and issue a new invoice with the correct VAT number.
+* The Buyer‘s TAX number in the invoice is incorrect and should be EU12345
+* The Buyer requests the Seller to send a credit note to cancel the incorrect invoice and issue a new invoice with the correct TAX number.
 
-In the Billing specification for an invoice (See {peppol-billing}) the business term identifier for the Buyers VAT number is BT-48.
+In the Billing specification for an invoice (See {peppol-billing}) the business term identifier for the Buyers TAX number is BT-48.
 
 To inform and assist in resolution of the issue the Buyer sends an Invoice Response to the Seller as follows:
 
