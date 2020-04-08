@@ -3,7 +3,7 @@
 	<assert>
 		<scope>PEPPOL-COMMON-R040</scope>
 	</assert>
-	<test>
+	<test id="1">
 		<assert>
 			<success>PEPPOL-COMMON-R040</success>
 		</assert>
@@ -13,13 +13,13 @@
 
 			<cac:BuyerCustomerParty>
 				<cac:Party>
-					<cbc:EndpointID schemeID="0088">9429041098400</cbc:EndpointID>
+					<cbc:EndpointID schemeID="0088">5790000435951</cbc:EndpointID>
 				</cac:Party>
 			</cac:BuyerCustomerParty>
 
 		</Order>
 	</test>
-	<test>
+	<test id="2">
 		<assert>
 			<error>PEPPOL-COMMON-R040</error>
 		</assert>
@@ -29,7 +29,7 @@
 
 			<cac:BuyerCustomerParty>
 				<cac:Party>
-					<cbc:EndpointID schemeID="0088">9429041098401</cbc:EndpointID>
+					<cbc:EndpointID schemeID="0088">5790000435954</cbc:EndpointID>
 				</cac:Party>
 			</cac:BuyerCustomerParty>
 
