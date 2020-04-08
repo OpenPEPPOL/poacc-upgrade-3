@@ -27,13 +27,8 @@
         <cac:LineResponse>
             <cac:LineReference>
                 <cbc:LineID>NA</cbc:LineID>
-                <cac:DocumentReference>
-                    <cbc:ID>NA</cbc:ID>
-                    <cbc:XPath>Invoice/cac:LegalMonetaryTotal/cbc:TaxExclusiveAmount</cbc:XPath>
-                </cac:DocumentReference>
             </cac:LineReference>
             <cac:Response>
-                <cbc:ReferenceID>BIIRULE-T10-R012</cbc:ReferenceID>
                 <cbc:Description>Invoice tax exclusive amount MUST equal the sum of lines plus allowances and charges on header level</cbc:Description>
                 <cac:Status>
                     <cbc:StatusReasonCode>BV</cbc:StatusReasonCode>
@@ -45,18 +40,9 @@
             <cac:LineReference>
                 <!-- LineID is a mandatory field and the constant "NA" means "not applicable" meaning that
                      no line ID is available. -->
-                <cbc:LineID>NA</cbc:LineID>
-                <cac:DocumentReference>
-                    <!-- DocumentReference/ID is a mandatory field and the constant "NA" means "not applicable" meaning that
-                         no ID is available. -->
-                    <cbc:ID>NA</cbc:ID>
-                    <!-- the (optional) XPath that was e.g. extracted from the Schematron SVRL -->
-                    <cbc:XPath>Invoice/cac:TaxTotal/cac:TaxSubtotal/</cbc:XPath>
-                </cac:DocumentReference>
+                <cbc:LineID>Invoice/cac:TaxTotal/cac:TaxSubtotal/</cbc:LineID>
             </cac:LineReference>
             <cac:Response>
-                <!-- The ID of the failed rule (optional) -->
-                <cbc:ReferenceID>EUGEN-T10-R051</cbc:ReferenceID>
                 <!-- The human readable response text -->
                 <cbc:Description>Document level amounts cannot have more than 2 decimals</cbc:Description>
                 <cac:Status>
