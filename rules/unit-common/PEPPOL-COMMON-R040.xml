@@ -3,7 +3,7 @@
 	<assert>
 		<scope>PEPPOL-COMMON-R040</scope>
 	</assert>
-	<test>
+	<test id="1">
 		<assert>
 			<success>PEPPOL-COMMON-R040</success>
 		</assert>
@@ -19,7 +19,7 @@
 
 		</Order>
 	</test>
-	<test>
+	<test id="2">
 		<assert>
 			<error>PEPPOL-COMMON-R040</error>
 		</assert>
