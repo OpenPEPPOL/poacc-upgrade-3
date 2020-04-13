@@ -1222,7 +1222,7 @@
 					<Element cardinality="0..1">
 						<Term>cbc:ValueQualifier</Term>
 						<Name>Property classification</Name>
-            <Description>Standardized and predefined classification of items
+						<Description>Standardized and predefined classification of items
             properties.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir16-p044</Reference>
@@ -1339,6 +1339,24 @@
 								<Reference type="CODE_LIST">UNECERec20</Reference>
 								<Value type="EXAMPLE">CTN</Value>
 							</Attribute>
+						</Element>
+					</Element>
+					<Element cardinality="0..n">
+						<Term>cac:Package</Term>
+						<Name>Package information</Name>
+						<Element cardinality="1..1">
+							<Term>cbc:ID</Term>
+							<Name>Package identifier</Name>
+							<Description>An identifier for this package</Description>
+							<Reference type="BUSINESS_TERM">tir16-089</Reference>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:PackagingTypeCode</Term>
+							<Name>Packaging type code</Name>
+							<Description>The type of packaging used, such as
+							box, pallet, container etx.</Description>
+							<Reference type="BUSINESS_TERM">tir16-090</Reference>
+							<Reference type="CODE_LIST">UNECERec21</Reference>
 						</Element>
 					</Element>
 				</Element>

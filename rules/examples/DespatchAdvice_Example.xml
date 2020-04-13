@@ -10,9 +10,7 @@
                 None
 				
 -->
-<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2"
-				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-				xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
 	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:despatch_advice:3</cbc:CustomizationID>
 	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:despatch_advice:3</cbc:ProfileID>
 	<cbc:ID>565899</cbc:ID>
@@ -148,7 +146,6 @@
 			</cac:PostalAddress>
 		</cac:Party>
 	</cac:OriginatorCustomerParty>
-
 	<cac:Shipment>
 		<cbc:ID>1</cbc:ID>
 		<cbc:Information>text</cbc:Information>
@@ -239,18 +236,26 @@
 				</cac:LotIdentification>
 			</cac:ItemInstance>
 		</cac:Item>
-			<cac:Shipment>
-				<cbc:ID>NA</cbc:ID>
-				<cac:TransportHandlingUnit>
-					<cbc:ID>5454</cbc:ID>
-					<cbc:TransportHandlingUnitTypeCode>4H</cbc:TransportHandlingUnitTypeCode>
-					<cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
-					<cbc:ShippingMarks>text</cbc:ShippingMarks>
-					<cac:MeasurementDimension>
-						<cbc:AttributeID>AAW</cbc:AttributeID>
-						<cbc:Measure unitCode="C62">1</cbc:Measure>
-					</cac:MeasurementDimension>
-				</cac:TransportHandlingUnit>
-			</cac:Shipment>
+		<cac:Shipment>
+			<cbc:ID>NA</cbc:ID>
+			<cac:TransportHandlingUnit>
+				<cbc:ID>5454</cbc:ID>
+				<cbc:TransportHandlingUnitTypeCode>4H</cbc:TransportHandlingUnitTypeCode>
+				<cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
+				<cbc:ShippingMarks>text</cbc:ShippingMarks>
+				<cac:MeasurementDimension>
+					<cbc:AttributeID>AAW</cbc:AttributeID>
+					<cbc:Measure unitCode="C62">1</cbc:Measure>
+				</cac:MeasurementDimension>
+				<cac:Package>
+					<cbc:ID>126</cbc:ID>
+					<cbc:PackageTypeCode>BX</cbc:PackageTypeCode>
+				</cac:Package>
+				<cac:Package>
+					<cbc:ID>667</cbc:ID>
+					<cbc:PackageTypeCode>BX</cbc:PackageTypeCode>
+				</cac:Package>
+			</cac:TransportHandlingUnit>
+		</cac:Shipment>
 	</cac:DespatchLine>
 </DespatchAdvice>
