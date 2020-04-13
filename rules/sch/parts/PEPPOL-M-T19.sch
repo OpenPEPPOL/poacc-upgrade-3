@@ -31,20 +31,11 @@
                 flag="fatal">A catalogue customer SHALL contain the full name or an identifier</assert>
     </rule>
 
-    <rule context="cac:RequiredItemLocationQuantity/cac:Price">
-        <assert id="PEPPOL-T19-R006"
-                test="number(cbc:PriceAmount) &gt;=0"
-                flag="fatal">Prices of items SHALL not be negative</assert>
-    </rule>
-        
 	
     <rule context="cac:CatalogueLine">
         
         <let name="CatalogueLineValidityStart" value="if(exists(cac:LineValidityPeriod/cbc:StartDate)) then number(translate(cac:LineValidityPeriod/cbc:StartDate,'-','')) else $CatalogueValidityStart"/>
         <let name="CatalogueLineValidityEnd" value="if(exists(cac:LineValidityPeriod/cbc:EndDate)) then number(translate(cac:LineValidityPeriod/cbc:EndDate,'-','')) else $CatalogueValidityEnd"/>
-        <let name="CataloguePriceValidityStart" value="if(exists(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:StartDate)) then number(translate(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:StartDate,'-','')) else $CatalogueLineValidityStart"/>
-        <let name="CataloguePriceValidityEnd" value="if(exists(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:EndDate)) then number(translate(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:EndDate,'-','')) else $CatalogueLineValidityEnd"/>
-        
         
         <assert id="PEPPOL-T19-R008"
                 test="not(cbc:MaximumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= 0"
@@ -66,6 +57,19 @@
             test="($CatalogueLineValidityStart &lt;= $CatalogueLineValidityEnd)"
             flag="fatal">A line validity period end date SHALL be later or equal to the line validity period start date
         </assert>
+    </rule>
+    
+    <rule context="cac:RequiredItemLocationQuantity">
+        
+        <let name="CatalogueLineValidityStart" value="if(exists(../cac:LineValidityPeriod/cbc:StartDate)) then number(translate(../cac:LineValidityPeriod/cbc:StartDate,'-','')) else $CatalogueValidityStart"/>
+        <let name="CatalogueLineValidityEnd" value="if(exists(../cac:LineValidityPeriod/cbc:EndDate)) then number(translate(../cac:LineValidityPeriod/cbc:EndDate,'-','')) else $CatalogueValidityEnd"/>
+        <let name="CataloguePriceValidityStart" value="if(exists(cac:Price/cac:ValidityPeriod/cbc:StartDate)) then number(translate(cac:Price/cac:ValidityPeriod/cbc:StartDate,'-','')) else $CatalogueLineValidityStart"/>
+        <let name="CataloguePriceValidityEnd" value="if(exists(cac:Price/cac:ValidityPeriod/cbc:EndDate)) then number(translate(cac:Price/cac:ValidityPeriod/cbc:EndDate,'-','')) else $CatalogueLineValidityEnd"/>
+
+        <assert id="PEPPOL-T19-R006"
+                test="number(cac:Price/cbc:PriceAmount) &gt;=0"
+                flag="fatal">Prices of items SHALL not be negative</assert>
+        
         <assert id="PEPPOL-T19-R011"
             test="($CataloguePriceValidityStart &gt;= $CatalogueLineValidityStart) and ($CataloguePriceValidityStart &lt;= $CatalogueLineValidityEnd) 
             and ($CataloguePriceValidityEnd &lt;= $CatalogueLineValidityEnd) and ($CataloguePriceValidityEnd &gt;= $CatalogueLineValidityStart)"        
