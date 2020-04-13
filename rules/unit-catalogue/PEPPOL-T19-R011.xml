@@ -29,6 +29,16 @@
 						</cac:ValidityPeriod>
 					</cac:Price>
 				</cac:RequiredItemLocationQuantity>
+				
+				<!-- multiple prices allowed -->
+				<cac:RequiredItemLocationQuantity>
+					<cac:Price>
+						<cac:ValidityPeriod>
+							<cbc:StartDate>2018-09-01</cbc:StartDate>
+							<cbc:EndDate>2019-08-31</cbc:EndDate>
+						</cac:ValidityPeriod>
+					</cac:Price>
+				</cac:RequiredItemLocationQuantity>
 
 			</cac:CatalogueLine>
 		</Catalogue>
@@ -182,6 +192,42 @@
 						<cac:ValidityPeriod>
 							<cbc:StartDate>2018-08-10</cbc:StartDate>
 							<cbc:EndDate>2019-09-20</cbc:EndDate>
+						</cac:ValidityPeriod>
+					</cac:Price>
+				</cac:RequiredItemLocationQuantity>
+
+			</cac:CatalogueLine>
+		</Catalogue>
+	</test>
+	
+		<test id="7">
+		<assert>
+			<error>PEPPOL-T19-R011</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+				xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+
+			<cac:CatalogueLine>
+				<cac:LineValidityPeriod>
+					<cbc:StartDate>2018-08-01</cbc:StartDate>
+					<cbc:EndDate>2019-09-31</cbc:EndDate>
+				</cac:LineValidityPeriod>
+
+				<cac:RequiredItemLocationQuantity>
+					<cac:Price>
+						<cac:ValidityPeriod>
+							<cbc:StartDate>2018-08-10</cbc:StartDate>
+							<cbc:EndDate>2019-09-20</cbc:EndDate>
+						</cac:ValidityPeriod>
+					</cac:Price>
+				</cac:RequiredItemLocationQuantity>
+				
+				<cac:RequiredItemLocationQuantity>
+					<cac:Price>
+						<cac:ValidityPeriod>
+							<cbc:StartDate>2017-08-10</cbc:StartDate>
+							<cbc:EndDate>2020-09-20</cbc:EndDate>
 						</cac:ValidityPeriod>
 					</cac:Price>
 				</cac:RequiredItemLocationQuantity>
