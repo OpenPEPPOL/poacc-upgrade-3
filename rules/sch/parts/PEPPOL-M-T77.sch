@@ -41,10 +41,10 @@
 	<rule context="cac:ClassifiedTaxCategory">
 		<assert id="PEPPOL-T77-R008"
 			test="cbc:Percent or (normalize-space(cbc:ID)='O')"
-			flag="fatal">Each Tax Category SHALL have a VAT category rate, except if the shopping cart is not subject to VAT.</assert>
+			flag="fatal">Each Tax Category SHALL have a TAX category rate, except if the shopping cart is not subject to TAX.</assert>
 		<assert id="PEPPOL-T77-R009"
 			test="not(normalize-space(cbc:ID)='S') or (cbc:Percent) &gt; 0"
-			flag="fatal">When VAT category code is "Standard rated" (S) the VAT rate SHALL be greater than zero.</assert>
+			flag="fatal">When TAX category code is "Standard rated" (S) the TAX rate SHALL be greater than zero.</assert>
 	</rule>
 	
 </pattern>

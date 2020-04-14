@@ -5,7 +5,7 @@
     <let name="sumLineExtensionAmount" value="if (/ubl:Order/cac:OrderLine/cac:LineItem/cbc:LineExtensionAmount) then round(sum(/ubl:Order/cac:OrderLine/cac:LineItem/cbc:LineExtensionAmount/xs:decimal(.)) * 10 * 10) div 100 else 0"/>
     <let name="sumAllowance" value="if (/ubl:Order/cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']) then round(sum(/ubl:Order/cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']/cbc:Amount/xs:decimal(.)) * 10 * 10) div 100 else 0"/>
     <let name="sumCharge" value="if (/ubl:Order/cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']) then round(sum(/ubl:Order/cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']/cbc:Amount/xs:decimal(.)) * 10 * 10) div 100 else 0"/>
-    <let name="VATamount" value="if(/ubl:Order/cac:TaxTotal/cbc:TaxAmount) then xs:decimal(/ubl:Order/cac:TaxTotal/cbc:TaxAmount) else 0"/>
+    <let name="TAXamount" value="if(/ubl:Order/cac:TaxTotal/cbc:TaxAmount) then xs:decimal(/ubl:Order/cac:TaxTotal/cbc:TaxAmount) else 0"/>
 
         <rule context="cbc:ProfileID">
                 <assert id="PEPPOL-T01-R031"
@@ -42,7 +42,7 @@
     <rule context="cac:PartyTaxScheme[cac:TaxScheme/cbc:ID='VAT']">
         <assert id="PEPPOL-T01-R026"
                 test="( contains( 'AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BL BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH EL ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW',substring(cbc:CompanyID,1,2) ) )"
-                flag="fatal">Party VAT identifiers SHALL have a prefix in accordance with ISO code ISO 3166-1 alpha-2 by which the country of issue may be identified. Nevertheless, Greece may use the prefix ‘EL’.</assert>
+                flag="fatal">When TAX is VAT then Party VAT identifiers SHALL have a prefix in accordance with ISO code ISO 3166-1 alpha-2 by which the country of issue may be identified. Nevertheless, Greece may use the prefix ‘EL’.</assert>
     </rule>
 
     <!-- Document total amounts -->
@@ -76,13 +76,13 @@
 
         <assert id="PEPPOL-T01-R011"
                 test="$taxexclusiveAmount = $lineEtensionAmount - $allowanceTotalAmount + $chargeTotalAmount"
-                flag="fatal">Expected total amount without VAT = Expected total sum of line amounts - Sum of allowances on document level + Sum of charges on document level</assert>
+                flag="fatal">Expected total amount without TAX = Expected total sum of line amounts - Sum of allowances on document level + Sum of charges on document level</assert>
         <assert id="PEPPOL-T01-R016"
                 test="if ($taxinclusiveAmount) then ($payableAmount = $taxinclusiveAmount - $prepaidAmount + $roundingAmount) else 1"
-                flag="fatal">Amount due for payment = Invoice total amount with VAT - Paid amount + Rounding amount.</assert>
+                flag="fatal">Amount due for payment = Invoice total amount with TAX - Paid amount + Rounding amount.</assert>
         <assert id="PEPPOL-T01-R017"
-                test="if($taxinclusiveAmount and /ubl:Order/cac:TaxTotal) then ($taxinclusiveAmount = $taxexclusiveAmount + $VATamount) else 1"
-                flag="fatal">Expected total amount with VAT = Expected total amount without VAT + Order total VAT amount.</assert>
+                test="if($taxinclusiveAmount and /ubl:Order/cac:TaxTotal) then ($taxinclusiveAmount = $taxexclusiveAmount + $TAXamount) else 1"
+                flag="fatal">Expected total amount with TAX = Expected total amount without TAX + Order total TAX amount.</assert>
     </rule>
 
 
@@ -114,10 +114,10 @@
     <rule context="cac:TaxCategory | cac:ClassifiedTaxCategory">
     <assert id="PEPPOL-T01-R029"
             test="cbc:Percent or (normalize-space(cbc:ID)='O')"
-            flag="fatal">Each Tax Category SHALL have a VAT category rate, except if the order is not subject to VAT.</assert>
+            flag="fatal">Each Tax Category SHALL have a TAX category rate, except if the order is not subject to TAX.</assert>
     <assert id="PEPPOL-T01-R030"
             test="not(normalize-space(cbc:ID)='S') or (cbc:Percent) &gt; 0"
-            flag="fatal">When VAT category code is "Standard rated" (S) the VAT rate SHALL be greater than zero.</assert>
+            flag="fatal">When TAX category code is "Standard rated" (S) the TAX rate SHALL be greater than zero.</assert>
     </rule>
 
     <!-- Line level -->
