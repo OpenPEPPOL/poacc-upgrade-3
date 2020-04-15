@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>	
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
 	
+	<rule>
+			<assert id="PEPPOL-T77-R010" 
+					test="starts-with(normalize-space(cbc:CustomizationID/text()), 'urn:fdc:peppol.eu:poacc:trns:punch_out:3')" 
+					flag="fatal">Specification identifier SHALL start with the value 'urn:fdc:peppol.eu:poacc:trns:punch_out:3'.</assert>
+	</rule>
+
 	<rule context="ubl:Catalogue">
 		<assert id="PEPPOL-T77-R001"
 				test="(cac:ValidityPeriod/cbc:EndDate) and (number(translate(cac:ValidityPeriod/cbc:EndDate,'-','')) &gt;= number(translate(cbc:IssueDate,'-','')))"

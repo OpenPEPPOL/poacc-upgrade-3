@@ -16,9 +16,10 @@
 			<Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir77-007</Reference>
-
-			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns:punch_out:3</Value>
+			
+			<Value type="EXAMPLE">urn:fdc:peppol.eu:poacc:trns:punch_out:3</Value>
 		</Element>
+
 		<Element>
 			<Term>cbc:ProfileID</Term>
 			<Name>Business process type identifier</Name>

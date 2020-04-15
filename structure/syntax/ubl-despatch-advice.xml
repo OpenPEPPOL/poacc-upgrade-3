@@ -15,7 +15,7 @@
 				transaction.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir16-002</Reference>
-			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns:despatch_advice:3</Value>
+			<Value type="EXAMPLE">urn:fdc:peppol.eu:poacc:trns:despatch_advice:3</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>

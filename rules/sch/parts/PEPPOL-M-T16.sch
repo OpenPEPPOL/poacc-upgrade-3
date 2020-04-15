@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>    
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
 
-
+	<rule>
+			<assert id="PEPPOL-T16-R011" 
+					test="starts-with(normalize-space(cbc:CustomizationID/text()), 'urn:fdc:peppol.eu:poacc:trns:despatch_advice:3')" 
+					flag="fatal">Specification identifier SHALL start with the value 'urn:fdc:peppol.eu:poacc:trns:despatch_advice:3'.</assert>
+	</rule>
+	
 	<rule context="ubl:DespatchAdvice">
 		<assert id="PEPPOL-T16-R002"
 				test="(cac:OrderReference/cbc:ID)"

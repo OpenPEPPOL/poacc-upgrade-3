@@ -11,7 +11,12 @@
             test="some $p in tokenize('urn:fdc:peppol.eu:poacc:bis:catalogue_only:3 urn:fdc:peppol.eu:poacc:bis:catalogue_wo_response:3', '\s') satisfies $p = normalize-space(.)"
             flag="fatal">An order transaction SHALL use profile catalogue only or catalogue without response.</assert>
     </rule>
-    
+
+	<rule>
+			<assert id="PEPPOL-T19-R018" 
+					test="starts-with(normalize-space(cbc:CustomizationID/text()), 'urn:fdc:peppol.eu:poacc:trns:catalogue:3')" 
+					flag="fatal">Specification identifier SHALL start with the value 'urn:fdc:peppol.eu:poacc:trns:catalogue:3'.</assert>
+	</rule>    
     
     <rule context="/ubl:Catalogue/cac:ValidityPeriod">
         <assert id="PEPPOL-T19-R001"

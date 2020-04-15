@@ -19,7 +19,7 @@
                 version of the specification as well as any customizations applied.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir110-009</Reference>
-			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns:order_agreement:3</Value>
+			<Value type="EXAMPLE">urn:fdc:peppol.eu:poacc:trns:order_agreement:3</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>

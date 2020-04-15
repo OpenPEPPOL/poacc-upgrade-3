@@ -23,6 +23,6 @@
     <include href="parts/common/empty-elements.sch"/>
     <include href="parts/common/rules.sch"/>
     <include href="../../target/generated/T71-basic.sch"/>
-    
+    <include href="parts/PEPPOL-M-T71.sch"/>    
 
 </schema>
