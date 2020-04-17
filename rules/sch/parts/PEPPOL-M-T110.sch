@@ -7,9 +7,9 @@
 	<let name="taxCategories" value="for $cat in /ubl:OrderResponse/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory return normalize-space($cat/cbc:ID)"/>		
 	<let name="documentCurrencyCode" value="/ubl:OrderResponse/cbc:DocumentCurrencyCode"/>
 
-	<rule>
+	<rule context="cbc:CustomizationID">
 			<assert id="PEPPOL-T110-R030" 
-					test="starts-with(normalize-space(cbc:CustomizationID/text()), 'urn:fdc:peppol.eu:poacc:trns:order_agreement:3')" 
+					test="starts-with(normalize-space(.), 'urn:fdc:peppol.eu:poacc:trns:order_agreement:3')"
 					flag="fatal">Specification identifier SHALL start with the value 'urn:fdc:peppol.eu:poacc:trns:order_agreement:3'.</assert>
 	</rule>
 

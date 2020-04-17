@@ -13,9 +13,9 @@
                         flag="fatal">An order transaction SHALL use profile order only or ordering.</assert>
         </rule>
  
-		<rule>
+		<rule context="cbc:CustomizationID">
 				<assert id="PEPPOL-T01-R034" 
-						test="starts-with(normalize-space(cbc:CustomizationID/text()), 'urn:fdc:peppol.eu:poacc:trns:order:3')" 
+						test="starts-with(normalize-space(.), 'urn:fdc:peppol.eu:poacc:trns:order:3')"
 						flag="fatal">Specification identifier SHALL start with the value 'urn:fdc:peppol.eu:poacc:trns:order:3'.</assert>
 		</rule>
 
