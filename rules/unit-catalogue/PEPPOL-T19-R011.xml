@@ -200,7 +200,7 @@
 		</Catalogue>
 	</test>
 	
-		<test id="7">
+		<test id="8">
 		<assert>
 			<error>PEPPOL-T19-R011</error>
 		</assert>
