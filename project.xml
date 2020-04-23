@@ -10,9 +10,9 @@
     <Documentation path="">BIS DOCUMENTS</Documentation>
     <Documentation path="profiles/3-order-only/">- PEPPOL BIS Order only 3.1</Documentation>
     <Documentation path="profiles/28-ordering/">- PEPPOL BIS Ordering 3.1</Documentation>
-    <Documentation path="profiles/1-catalogueonly/">- PEPPOL BIS Catalogue only 3.0</Documentation>
-    <Documentation path="profiles/64-catalogue-wo-response/">- PEPPOL BIS Catalogue without response 3.0</Documentation>
-    <Documentation path="profiles/30-despatchadvice/">- PEPPOL BIS Despatch Advice 3.0</Documentation>
+    <Documentation path="profiles/1-catalogueonly/">- PEPPOL BIS Catalogue only 3.1</Documentation>
+    <Documentation path="profiles/64-catalogue-wo-response/">- PEPPOL BIS Catalogue without response 3.1</Documentation>
+    <Documentation path="profiles/30-despatchadvice/">- PEPPOL BIS Despatch Advice 3.1</Documentation>
     <Documentation path="profiles/18-punchout/">- PEPPOL BIS Punch Out 3.0</Documentation>
     <Documentation path="profiles/42-orderagreement/">- PEPPOL BIS Order Agreement 3.0</Documentation>
     <Documentation path="profiles/36-mlr/">- PEPPOL BIS Message Level Response 3.0</Documentation>
@@ -40,7 +40,7 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-catalogue.xml</Path>
-        <Title>PEPPOL Catalogue transaction 3.0 (T19)</Title>
+        <Title>PEPPOL Catalogue transaction 3.1 (T19)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
@@ -50,7 +50,7 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-despatch-advice.xml</Path>
-        <Title>PEPPOL Despatch Advice transaction 3.0 (T16)</Title>
+        <Title>PEPPOL Despatch Advice transaction 3.1 (T16)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
