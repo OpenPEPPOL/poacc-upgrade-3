@@ -21,13 +21,13 @@ The following elements show the anticipated monetary totals for an order:
 | stem:[sum("cac:AllowanceCharge[ChargeIndicator='false'$$]$$/cbc:Amount")]
 
 | <cbc:TaxExclusiveAmount>
-| Order total amount without VAT
+| Order total amount without TAX
 | stem:[\ \ \ \ "cac:LegalMonetaryTotal/cbc:LineExtensionAmount"] +
 stem:[– \ "cac:LegalMonetaryTotal/cbc:AllowanceTotalAmount"] +
 stem:[+ \ "cac:LegalMonetaryTotal/cbc:ChargeTotalAmount"]
 
 | <cbc:TaxInclusiveAmount>
-| Order total amount included VAT
+| Order total amount included TAX
 | stem:[\ \ \ \ "cac:LegalMonetaryTotal/cbc:TaxExclusiveAmount"] +
 stem:[+ \ "cac:TaxTotal/cbc:TaxAmount"]
 
@@ -94,11 +94,11 @@ PayableRounding Amount = 0.19.
 |`cbc:ChargeTotalAmount`
 |200.00
 
-|Order total amount without VAT
+|Order total amount without TAX
 |`cbc:TaxExclusiveAmount`
 |800
 
-|VAT total amount
+|TAX total amount
 |`cac:TaxTotal/cbc:TaxAmount`
 |85.63
 
@@ -106,7 +106,7 @@ PayableRounding Amount = 0.19.
 |`cbc:PayableRoundingAmount`
 |0.37
 
-|Order total with VAT (value of purchase)
+|Order total with TAX (value of purchase)
 |`cbc:TaxInclusiveAmount`
 |885.63
 

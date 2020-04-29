@@ -22,7 +22,7 @@
 		<cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
 	</cac:SenderParty>
 	<cac:ReceiverParty>
-		<cbc:EndpointID schemeID="0088">7315458756324</cbc:EndpointID>
+		<cbc:EndpointID schemeID="0088">7315458756328</cbc:EndpointID>
 	</cac:ReceiverParty>
 	<cac:DocumentResponse>
 		<cac:Response>

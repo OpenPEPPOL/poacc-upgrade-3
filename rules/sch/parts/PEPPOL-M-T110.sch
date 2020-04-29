@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
 	
 
@@ -5,11 +7,17 @@
 	<let name="taxCategories" value="for $cat in /ubl:OrderResponse/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory return normalize-space($cat/cbc:ID)"/>		
 	<let name="documentCurrencyCode" value="/ubl:OrderResponse/cbc:DocumentCurrencyCode"/>
 
+	<rule context="cbc:CustomizationID">
+			<assert id="PEPPOL-T110-R030" 
+					test="starts-with(normalize-space(.), 'urn:fdc:peppol.eu:poacc:trns:order_agreement:3')"
+					flag="fatal">Specification identifier SHALL start with the value 'urn:fdc:peppol.eu:poacc:trns:order_agreement:3'.</assert>
+	</rule>
+
 
 	<rule context="cac:Item">
 		<assert id= "PEPPOL-T110-R002"
 				test="(cac:StandardItemIdentification/cbc:ID) or  (cac:SellersItemIdentification/cbc:ID)"
-				flag="fatal">Each item in an Order agreement line SHALL be identifiable by either “item sellers identifier” or “item standard identifier”</assert>
+				flag="fatal">Each item in an Order agreement line SHALL be identifiable by either "item sellers identifier" or "item standard identifier"</assert>
 	</rule>
 
 	<rule context="cbc:Amount | cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:PriceAmount | cbc:BaseAmount | cac:LegalMonetaryTotal/cbc:*">
@@ -22,35 +30,35 @@
 	</rule>
 	
 	
-<!-- VAT rules -->
+<!-- TAX rules -->
 	
 	<rule context="cac:TaxTotal/cac:TaxSubtotal">
 			
 		<assert id="PEPPOL-T110-R024"
 			test="(round(cac:TaxCategory/xs:decimal(cbc:Percent)) = 0 and (round(xs:decimal(cbc:TaxAmount)) = 0)) or (round(cac:TaxCategory/xs:decimal(cbc:Percent)) != 0 and (xs:decimal(cbc:TaxAmount) = round(xs:decimal(cbc:TaxableAmount) * (cac:TaxCategory/xs:decimal(cbc:Percent) div 100) * 10 * 10) div 100 )) or (not(exists(cac:TaxCategory/xs:decimal(cbc:Percent))) and (round(xs:decimal(cbc:TaxAmount)) = 0))"
-			flag="fatal">VAT category tax amount = VAT category taxable amount  x (VAT category rate  / 100), rounded to two decimals.</assert>
+			flag="fatal">TAX category tax amount = TAX category taxable amount  x (TAX category rate  / 100), rounded to two decimals.</assert>
 		
 	</rule>	
 	
 	<rule context="/ubl:OrderResponse/cac:TaxTotal[cac:TaxSubtotal]">
 		<assert id="PEPPOL-T110-R025"
 			test="(xs:decimal(child::cbc:TaxAmount)= round((sum(cac:TaxSubtotal/xs:decimal(cbc:TaxAmount)) * 10 * 10)) div 100) or not(cac:TaxSubtotal)"
-			flag="fatal">If VAT breakdown is present, the order agreement VAT total amount  = Σ VAT category tax amount.</assert>
+			flag="fatal">If TAX breakdown is present, the order agreement TAX total amount  = Σ TAX category tax amount.</assert>
 	</rule>
 		
 	<rule context="cac:TaxSubtotal/cac:TaxCategory[not(cbc:TaxExemptionReason)]">
 		<assert id="PEPPOL-T110-R028"
 			test="contains( ' S Z L M ',concat(' ',normalize-space(cbc:ID),' '))"
-			flag="fatal">A VATBReakdown with VAT Category codes E, AE, K, G or O SHALL have a VAT exemption reason text </assert>
+			flag="fatal">A TAX breakdown with TAX Category codes E, AE, K, G or O SHALL have a TAX exemption reason text </assert>
 	</rule>
 	
 	<rule context="cac:TaxSubtotal/cac:TaxCategory[cbc:TaxExemptionReason]">
 		<assert id="PEPPOL-T110-R029"
 			test="contains( ' E AE O K G ',concat(' ',normalize-space(cbc:ID),' '))"
-			flag="fatal">A VATBReakdown with VAT Category codes S, Z, L and M SHALL NOT have a VAT exemption reason text </assert>
+			flag="fatal">A TAX breakdown with TAX Category codes S, Z, L and M SHALL NOT have a TAX exemption reason text </assert>
 	</rule>
 	
-	<rule context="cac:AllowanceCharge/cac:TaxCategory[cbc:Percent] | cac:Item/cac:ClassifiedTaxCategory[cbc:Percent]">
+	<rule context="cac:AllowanceCharge/cac:TaxCategory[cbc:Percent and //cac:TaxTotal] | cac:Item/cac:ClassifiedTaxCategory[cbc:Percent and //cac:TaxTotal]">
 		
 		<let name="category" value="u:cat2str(.)"/>
 		
@@ -65,10 +73,10 @@
 			flag="fatal">Tax categories MUST match provided tax categories on document level.</assert>
 		<assert id="PEPPOL-T110-R019"
 			test="cbc:Percent or (normalize-space(cbc:ID)='O')"
-			flag="fatal">Each Tax Category SHALL have a VAT category rate, except if the order is not subject to VAT.</assert>
+			flag="fatal">Each Tax Category SHALL have a TAX category rate, except if the order is not subject to TAX.</assert>
 		<assert id="PEPPOL-T110-R020"
 			test="not(normalize-space(cbc:ID)='S') or (cbc:Percent) &gt; 0"
-			flag="fatal">When VAT category code is "Standard rated" (S) the VAT rate SHALL be greater than zero.</assert>
+			flag="fatal">When TAX category code is "Standard rated" (S) the TAX rate SHALL be greater than zero.</assert>
 	</rule>
 
 

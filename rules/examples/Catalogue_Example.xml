@@ -214,7 +214,7 @@
 				<cbc:IdentificationCode>NO</cbc:IdentificationCode>
 			</cac:OriginCountry>
 			<cac:CommodityClassification>
-				<cbc:ItemClassificationCode listID="MP" listVersionID="19.0501">20101601</cbc:ItemClassificationCode>
+				<cbc:ItemClassificationCode listID="MP" listVersionID="19.0501" name="Office furniture">20101601</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
 			<cac:TransactionConditions>
 				<cbc:ActionCode>CT</cbc:ActionCode>

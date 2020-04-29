@@ -8,12 +8,12 @@ The element `cac:AllowanceCharge` with sub element `cbc:ChargeIndicator` indicat
 
 The header level:: _Applies to the whole order and is included in the calculation of the order total amount (if specified)._
 * Several allowances and charges may be supplied
-* Specification of VAT for allowances and charges, `cac:TaxCategory` with sub elements, shall be supplied
+* Specification of TAX for allowances and charges, `cac:TaxCategory` with sub elements, shall be supplied
 * The sum of all allowances and charges on the header level shall be specified in `cbc:AllowanceTotalAmount` and `cbc:ChargeTotalAmount` respectively. See <<totals>>
 
 The line level Price element:: _The price itself shall always be the net price, i.e. the base amount reduced with a discount (allowance)._
 * Only one occurrence of allowance (discount) is allowed.
-* Specification of VAT for allowance shall not be specified
+* Specification of TAX for allowance shall not be specified
 * Allowance related to Price shall not be part of any other calculations.
 * Allowance related to Price may specify amount and the base amount.
 
@@ -32,7 +32,7 @@ stem:["Amount" =  "Base amount" times ("Percentage" div 100)]
 ====
 
 
-.UBL example of Allowances and Charges on the document level
+.UBL example of Allowances and Charges on the document level where TAX = VAT.
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/snippet-01.xml[tags=allowance]

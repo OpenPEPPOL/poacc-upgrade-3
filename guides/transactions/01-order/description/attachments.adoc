@@ -1,5 +1,5 @@
 [[attachements]]
-= Attachements
+= Attachments
 
 Non-XML documents can be sent as attachments to the PEPPOL BIS Order.
 This could be drawings or time sheets or other documents relevant for the order.

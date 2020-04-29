@@ -22,8 +22,6 @@
     <include href="parts/common/empty-elements.sch"/>
     <include href="parts/common/rules.sch"/>
     <include href="../../target/generated/T58-basic.sch"/>
-  <!-- No manual rules for catalogue response  
-      <include href="parts/PEPPOL-M-T58.sch"/>
-  -->
+    <include href="parts/PEPPOL-M-T58.sch"/>
 
 </schema>

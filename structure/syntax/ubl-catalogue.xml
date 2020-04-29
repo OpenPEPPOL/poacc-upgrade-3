@@ -17,7 +17,7 @@
                 transaction.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir19-002</Reference>
-			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns:catalogue:3</Value>
+			<Value type="EXAMPLE">urn:fdc:peppol.eu:poacc:trns:catalogue:3</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
@@ -1513,6 +1513,7 @@
 						<Description>A functional description of the attachment/image expressed as code</Description>
 						<DataType>Code</DataType>
 						<Reference type="CODE_LIST">UNCL1001</Reference>
+						<Reference type="CODE_LIST">Image</Reference>
 						<Reference type="BUSINESS_TERM">tir19-086a</Reference>
 					</Element>
 					<Element cardinality="0..n">
@@ -1603,8 +1604,15 @@
 							<Term>listVersionID</Term>
 							<Name>Item classification identifier version identification scheme identifier</Name>
 							<Description>The identification scheme version identifier of the Item classification identifier</Description>
+							<Value type="EXAMPLE">20.0601</Value>						
 						</Attribute>
-						<Value type="EXAMPLE">20.0601</Value>
+						<Attribute usage="Optional">
+							<Term>name</Term>
+							<Name>Clear text name equivalent of classification code</Name>
+							<Description>The textual equivalent of the code value</Description>
+							<Value type="EXAMPLE">Office furniture</Value>	
+						</Attribute>
+
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
@@ -1649,8 +1657,8 @@
 					<Name>Classified tax category</Name>
 					<Element>
 						<Term>cbc:ID</Term>
-						<Name>Item VAT category code</Name>
-						<Description>The VAT code that indicates what VAT details apply to the
+						<Name>Item TAX category code</Name>
+						<Description>The TAX code that indicates what TAX details apply to the
                             item.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-094</Reference>
@@ -1660,8 +1668,8 @@
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:Percent</Term>
-						<Name>Item VAT precentage</Name>
-						<Description>The VAT percentage rate that applies to the item unless
+						<Name>Item TAX precentage</Name>
+						<Description>The TAX percentage rate that applies to the item unless
                             specific trade reasons apply such as exemptions.</Description>
 						<DataType>Percentage</DataType>
 						<Reference type="BUSINESS_TERM">tir19-050</Reference>
@@ -1674,8 +1682,8 @@
 						<Name>Tax scheme information</Name>
 						<Element>
 							<Term>cbc:ID</Term>
-							<Description>Tax scheme. Use “VAT”</Description>
-							<Value type="DEFAULT">VAT</Value>
+							<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
+							<Value type="EXAMPLE">VAT or GST</Value>
 						</Element>
 					</Element>
 				</Element>

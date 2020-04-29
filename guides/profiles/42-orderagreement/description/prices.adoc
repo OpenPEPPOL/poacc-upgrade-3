@@ -4,7 +4,7 @@ Prices must be exchanged in the Order Agreement transaction. The price may be 0 
 
 Price sent is related to the articles or services within this order agreement
 
-Prices includes allowances and/or charges but exclude VAT amounts
+Prices includes allowances and/or charges but exclude TAX amounts
 
 
 .Example of price information in an Order Agreement message

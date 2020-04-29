@@ -10,7 +10,7 @@ include::../../shared/links.adoc[]
 :sectnums:
 :title-logo-image: ../images/peppol.jpg
 :snippet-dir: ../../../../rules/snippets/despatch
-= image:../../shared/images/peppol.png[float="right"]PEPPOL BIS Despatch Advice 3.0
+= image:../../shared/images/peppol.png[float="right"]PEPPOL BIS Despatch Advice 3.1
 {author}
 v{version}
 

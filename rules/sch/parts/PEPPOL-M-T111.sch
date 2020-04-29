@@ -12,6 +12,12 @@
 				test="exists(cbc:StatusReason)"
 				flag="warning">If Clarification code is OTH then Clarification reason SHOULD be provided.</assert>
 	</rule>
+	
+	<rule context="cbc:CustomizationID">
+		<assert id="PEPPOL-T111-R003" 
+				test="starts-with(normalize-space(.), 'urn:fdc:peppol.eu:poacc:trns:invoice_response:3')"
+				flag="fatal">Specification identifier SHALL start with the value 'urn:fdc:peppol.eu:poacc:trns:invoice_response:3'.</assert>
+	</rule>
 
 </pattern>
 

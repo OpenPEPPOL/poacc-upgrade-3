@@ -15,7 +15,7 @@
 				transaction.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir01-001</Reference>
-			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns:order:3</Value>
+			<Value type="EXAMPLE">urn:fdc:peppol.eu:poacc:trns:order:3</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
@@ -373,7 +373,7 @@
 					<Description>Buyer tax information </Description>
 					<Element>
 						<Term>cbc:CompanyID</Term>
-						<Name>Buyer VAT identifier</Name>
+						<Name>Buyer TAX identifier</Name>
 						<Description>The buyers registered Value Added Tax identifier. To be stated
 							in case reverse charge is to apply to the purchase.</Description>
 						<DataType>Identifier</DataType>
@@ -385,10 +385,10 @@
 						<Name>Tax scheme</Name>
 						<Element>
 							<Term>cbc:ID</Term>
-							<Description>Mandatory element. Use = "VAT"</Description>
+							<Description>Mandatory element. E.g. "VAT" or "GST"</Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir01-p004</Reference>
-							<Value type="FIXED">VAT</Value>
+							<Value type="EXAMPLE">VAT or GST</Value>
 						</Element>
 					</Element>
 				</Element>
@@ -917,7 +917,7 @@
 					<Description>Tax information of the invoicee party</Description>
 					<Element>
 						<Term>cbc:CompanyID</Term>
-						<Name>Invoicee VAT identifier</Name>
+						<Name>Invoicee TAX identifier</Name>
 						<Description>The invoicees registered Value Added Tax
 							identifier</Description>
 						<DataType>Identifier</DataType>
@@ -929,10 +929,10 @@
 						<Name>Tax scheme</Name>
 						<Element>
 							<Term>cbc:ID</Term>
-							<Description>Tax scheme identifier. Use = "VAT"</Description>
+							<Description>Tax scheme identifier. E.g. "VAT" or "GST"</Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir01-p003</Reference>
-							<Value type="FIXED">VAT</Value>
+							<Value type="EXAMPLE">VAT or GST</Value>
 						</Element>
 					</Element>
 				</Element>
@@ -1399,7 +1399,7 @@
 				<Term>cbc:Amount</Term>
 				<Name>Allowance and charge amount</Name>
 				<Description>The net amount of the allowance or the charge exluding
-					VAT.</Description>
+					TAX.</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir01-113</Reference>
 				<Reference type="RULE">PEPPOL-T01-R022</Reference>
@@ -1440,8 +1440,8 @@
 				<Name>Tax category</Name>
 				<Element>
 					<Term>cbc:ID</Term>
-					<Name>VAT category code</Name>
-					<Description>The VAT category code that applies to the document level allowance
+					<Name>TAX category code</Name>
+					<Description>The TAX category code that applies to the document level allowance
 						or charge.</Description>
 					<DataType>Code</DataType>
 					<Reference type="CODE_LIST">UNCL5305</Reference>
@@ -1450,8 +1450,8 @@
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:Percent</Term>
-					<Name>VAT rate</Name>
-					<Description>The VAT rate, represented as percentage that applies to the
+					<Name>TAX rate</Name>
+					<Description>The TAX rate, represented as percentage that applies to the
 						document level allowance or charge. As this element is of data type
 						percentage, please note that no %-sign should be used. To state 25 %, use
 						value 25.00</Description>
@@ -1466,10 +1466,10 @@
 					<Name>Tax scheme information</Name>
 					<Element>
 						<Term>cbc:ID</Term>
-						<Description>Tax scheme identifier. Use “VAT”</Description>
+						<Description>Tax scheme identifier. E.g. “VAT” or “GST”</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p013</Reference>
-						<Value type="FIXED">VAT</Value>
+						<Value type="EXAMPLE">VAT or GST</Value>
 					</Element>
 				</Element>
 			</Element>
@@ -1480,9 +1480,9 @@
 			<Description>Specification of expected tax amount</Description>
 			<Element>
 				<Term>cbc:TaxAmount</Term>
-				<Name>VAT total amount</Name>
-				<Description>The total VAT amount that is "added to the document total w/o VAT".
-					This is the sum of all VAT subcategory amounts. The expected Tax Total in the
+				<Name>TAX total amount</Name>
+				<Description>The total TAX amount that is "added to the document total w/o TAX".
+					This is the sum of all TAX subcategory amounts. The expected Tax Total in the
 					corresponding invoice.</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir01-114</Reference>
@@ -1525,7 +1525,7 @@
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cbc:TaxExclusiveAmount</Term>
-				<Name>Document total without VAT</Name>
+				<Name>Document total without TAX</Name>
 				<Description>The "Sum of line amounts" plus "sum of allowances on document level"
 					plus "sum of charges on document level". Must be rounded to maximum 2
 					decimals.</Description>
@@ -1545,8 +1545,8 @@
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cbc:TaxInclusiveAmount</Term>
-				<Name>Document total including VAT</Name>
-				<Description>The total value including VAT. Must be rounded to maximum 2
+				<Name>Document total including TAX</Name>
+				<Description>The total value including TAX. Must be rounded to maximum 2
 					decimals.</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir01-147</Reference>
@@ -1710,7 +1710,7 @@
 					<Term>cbc:LineExtensionAmount</Term>
 					<Name>Order line amount</Name>
 					<Description>The total amount for the Line Item, including Allowance Charges but
-						net of taxes. The expected line amount excluding VAT but inclusive of other
+						net of taxes. The expected line amount excluding TAX but inclusive of other
 						charges, allowances and taxes.</Description>
 					<DataType>Amount</DataType>
 					<Reference type="BUSINESS_TERM">tir01-128</Reference>
@@ -1862,7 +1862,7 @@
 					<Element>
 						<Term>cbc:Amount</Term>
 						<Name>Line level allowance or charge amount</Name>
-						<Description>The amount of an allowance or a charge, without VAT. Must be
+						<Description>The amount of an allowance or a charge, without TAX. Must be
 							rounded to maximum 2 decimals</Description>
 						<DataType>Amount</DataType>
 						<Reference type="RULE">PEPPOL-T01-R022</Reference>
@@ -1906,7 +1906,7 @@
 						<Term>cbc:PriceAmount</Term>
 						<Name>Item price</Name>
 						<Description>The net price of the item including all allowances, charges and
-							taxes but exluding VAT. Although price is an optional element in an
+							taxes but exluding TAX. Although price is an optional element in an
 							order it recommended as best practice to either state the price or
 							provide reference to an appropriate source from which the price can be
 							identified such as a contract, catalogue or a quote.</Description>
@@ -1993,6 +1993,14 @@
 				<Element>
 					<Term>cac:Item</Term>
 					<Name>Item information</Name>
+					<Element cardinality="0..1">
+						<Term>cbc:Description</Term>
+						<Name>Item description</Name>
+						<Description>Free-form field that can be used to give a text description of
+							the item. A detailed description of the item.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-133</Reference>
+					</Element>
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Item name</Name>
@@ -2001,14 +2009,6 @@
 							description.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-135</Reference>
-					</Element>
-					<Element cardinality="0..1">
-						<Term>cbc:Description</Term>
-						<Name>Item description</Name>
-						<Description>Free-form field that can be used to give a text description of
-							the item. A detailed description of the item.</Description>
-						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir01-133</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:BuyersItemIdentification</Term>
@@ -2099,17 +2099,24 @@
 									identifier</Name>
 								<Description>The identification scheme version identifier of the
 									Item classification identifier</Description>
+								<Value type="EXAMPLE">20.0602</Value>
+							</Attribute>
+							<Attribute usage="Optional">
+								<Term>name</Term>
+								<Name>Clear text name equivalent of classification code</Name>
+								<Description>The textual equivalent of the code value</Description>
+								<Value type="EXAMPLE">Office furniture</Value>	
 							</Attribute>
 							<Value type="EXAMPLE">9873242</Value>
 						</Element>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:ClassifiedTaxCategory</Term>
-						<Name>Line VAT information</Name>
+						<Name>Line TAX information</Name>
 						<Element>
 							<Term>cbc:ID</Term>
-							<Name>Item VAT category code</Name>
-							<Description>The VAT category code for the item.</Description>
+							<Name>Item TAX category code</Name>
+							<Description>The TAX category code for the item.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir01-150</Reference>
 							<Reference type="CODE_LIST">UNCL5305</Reference>
@@ -2117,8 +2124,8 @@
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cbc:Percent</Term>
-							<Name>Line VAT rate</Name>
-							<Description>The VAT percentage rate that applies to the line
+							<Name>Line TAX rate</Name>
+							<Description>The TAX percentage rate that applies to the line
 								amount.</Description>
 							<DataType>Percentage</DataType>
 							<Reference type="BUSINESS_TERM">tir01-170</Reference>
@@ -2131,10 +2138,10 @@
 							<Name>Tax scheme information</Name>
 							<Element>
 								<Term>cbc:ID</Term>
-								<Description>Tax scheme. Use “VAT”</Description>
+								<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
 								<DataType>Identifier</DataType>
 								<Reference type="BUSINESS_TERM">tir01-p021</Reference>
-								<Value type="FIXED">VAT</Value>
+								<Value type="EXAMPLE">VAT or GST</Value>
 							</Element>
 						</Element>
 					</Element>

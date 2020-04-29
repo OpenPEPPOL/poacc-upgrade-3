@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>    
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
 
-
+	<rule context="cbc:CustomizationID">
+			<assert id="PEPPOL-T16-R011" 
+					test="starts-with(normalize-space(.), 'urn:fdc:peppol.eu:poacc:trns:despatch_advice:3')"
+					flag="fatal">Specification identifier SHALL start with the value 'urn:fdc:peppol.eu:poacc:trns:despatch_advice:3'.</assert>
+	</rule>
+	
 	<rule context="ubl:DespatchAdvice">
 		<assert id="PEPPOL-T16-R002"
 				test="(cac:OrderReference/cbc:ID)"
@@ -28,7 +33,7 @@
 	<rule context="cac:DespatchLine">
 		<assert id="PEPPOL-T16-R003"
 				test="(cac:Item/cac:StandardItemIdentification/cbc:ID) or  (cac:Item/cac:SellersItemIdentification/cbc:ID)"
-				flag="fatal" >Each item in a Despatch Advice line SHALL be identifiable by either “item sellers identifier” or “item standard identifier”</assert>
+				flag="fatal" >Each item in a Despatch Advice line SHALL be identifiable by either "item sellers identifier" or "item standard identifier"</assert>
 		<assert id="PEPPOL-T16-R004"
 				test="(cac:Item/cbc:Name)"
 				flag="fatal" >Each Despatch Advice SHALL contain the item name</assert>

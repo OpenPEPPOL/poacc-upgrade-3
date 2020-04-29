@@ -16,9 +16,10 @@
 			<Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir77-007</Reference>
-
-			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns:punch_out:3</Value>
+			
+			<Value type="EXAMPLE">urn:fdc:peppol.eu:poacc:trns:punch_out:3</Value>
 		</Element>
+
 		<Element>
 			<Term>cbc:ProfileID</Term>
 			<Name>Business process type identifier</Name>
@@ -385,7 +386,7 @@
 						<Term>cbc:PriceAmount</Term>
 						<Name>Item price</Name>
 						<Description>The net price has to be equal with the gross price less the
-							item price discount. The price of an item, exclusive of VAT, after
+							item price discount. The price of an item, exclusive of TAX, after
 							subtracting item price discount.</Description>
 						<DataType>Price amount</DataType>
 						<Reference type="BUSINESS_TERM">tir77-032</Reference>
@@ -641,6 +642,12 @@
 							<Description>The identification scheme version identifier of the Item classification identifier</Description>
 							<Value type="EXAMPLE">20.0602</Value>
 						</Attribute>
+						<Attribute usage="Optional">
+							<Term>name</Term>
+							<Name>Clear text name equivalent of classification code</Name>
+							<Description>The textual equivalent of the code value</Description>
+							<Value type="EXAMPLE">Office furniture</Value>	
+						</Attribute>						
 						<Value type="EXAMPLE">9873242</Value>
 					</Element>
 				</Element>
@@ -658,11 +665,11 @@
 				</Element>
 				<Element>
 					<Term>cac:ClassifiedTaxCategory</Term>
-					<Name>Line VAT information</Name>
+					<Name>Line TAX information</Name>
 					<Element>
 						<Term>cbc:ID</Term>
-						<Name>Item VAT category code</Name>
-						<Description>The VAT category code for the item.</Description>
+						<Name>Item TAX category code</Name>
+						<Description>The TAX category code for the item.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir77-034</Reference>
 
@@ -671,9 +678,9 @@
 					</Element>
 					<Element>
 						<Term>cbc:Percent</Term>
-						<Name>Item VAT rate</Name>
-						<Description>A VAT rate of zero percent is applied for calculation purposes
-                            even if the item is outside the scope of VAT. The VAT rate, represented
+						<Name>Item TAX rate</Name>
+						<Description>A TAX rate of zero percent is applied for calculation purposes
+                            even if the item is outside the scope of TAX. The TAX rate, represented
                             as percentage that applies to the item.</Description>
 						<DataType>Percentage</DataType>
 						<Reference type="BUSINESS_TERM">tir77-035</Reference>
@@ -685,8 +692,8 @@
 						<Name>Tax scheme information</Name>
 						<Element>
 							<Term>cbc:ID</Term>
-							<Description>Tax scheme. Use “VAT”</Description>
-							<Value type="DEFAULT">VAT</Value>
+							<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
+							<Value type="EXAMPLE">VAT or GST</Value>
 						</Element>
 					</Element>
 				</Element>

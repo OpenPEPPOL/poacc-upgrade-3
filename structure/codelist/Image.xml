@@ -6,13 +6,16 @@
     <Version>1.0</Version>
     <Agency>OpenPEPPOL</Agency>
 
-
+<!-- The code values in this list are based on the GS1 GDD list for ReferencedFileTypeCode -->
 
 
     <Code>
         <Id>PRODUCT_IMAGE</Id>
         <Name>Main image for an item</Name>
     </Code>
-
+    <Code>
+        <Id>TRADE_ITEM_DESCRIPTION</Id>
+        <Name>Trade Item Description</Name>
+    </Code>
 
 </CodeList>

@@ -3,6 +3,13 @@
     
     <let name="documentCurrencyCode" value="/ubl:OrderResponse/cbc:DocumentCurrencyCode"/>
     
+    <!-- CustomzationID -->
+	<rule context="cbc:CustomizationID">
+			<assert id="PEPPOL-T76-R006" 
+					test="starts-with(normalize-space(.), 'urn:fdc:peppol.eu:poacc:trns:order_response:3')"
+					flag="fatal">Specification identifier SHALL start with the value 'urn:fdc:peppol.eu:poacc:trns:order_response:3'.</assert>
+	</rule>
+    
     <!-- Price -->
     <rule context="cbc:PriceAmount">
         <assert id="PEPPOL-T76-R005"

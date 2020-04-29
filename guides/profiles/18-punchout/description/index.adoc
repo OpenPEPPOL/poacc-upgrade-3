@@ -14,7 +14,7 @@ a.  A line identifier.
 b.  The line quantity.
 c.  The name of the item.
 d.  The price of the item.
-e.  The VAT category and percentage rate for the item.
+e.  The TAX category and percentage rate for the item.
 
 In addition to the mandatory information the shopping cart may optionally contain additional information details.
 The following sections detail how different parts of the shopping cart message are used.

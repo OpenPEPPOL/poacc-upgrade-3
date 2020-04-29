@@ -23,7 +23,7 @@ The clarification may further give the instructions regarding actions expected f
 To assist with resolution the Buyer might want to provide instructions on what is the correct data.
 
 
-.UBL example:
+.UBL example where TAX is VAT:
 [source, xml]
 ----
 <cac:DocumentResponse>
@@ -54,8 +54,8 @@ To assist with resolution the Buyer might want to provide instructions on what i
 ----
 <1> An invoice is rejected using the status code RE.
 <2> The reason code for this rejection is LEG indicating that the invoice does not fulfil legal requirements
-<3> In text it is stated that the VAT reference is not found
-<4> Further reference is given to the element BT-48 in the Invoice (Buyers VAT number)
+<3> In text it is stated that the TAX reference is not found
+<4> Further reference is given to the element BT-48 in the Invoice (Buyers TAX number)
 <5> Expected value in BT-48 is EU123456789
 <6> The Buyer expects the Seller to issue a Credit Note that fully cancels the rejected Invoice
 <7> The Buyer also expects the Seller to issue a new Invoice with corrected information.

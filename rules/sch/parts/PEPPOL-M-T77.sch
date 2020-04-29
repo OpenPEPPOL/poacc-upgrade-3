@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>	
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
 	
+	<rule context="cbc:CustomizationID">
+			<assert id="PEPPOL-T77-R010" 
+					test="starts-with(normalize-space(.), 'urn:fdc:peppol.eu:poacc:trns:punch_out:3')"
+					flag="fatal">Specification identifier SHALL start with the value 'urn:fdc:peppol.eu:poacc:trns:punch_out:3'.</assert>
+	</rule>
+
 	<rule context="ubl:Catalogue">
 		<assert id="PEPPOL-T77-R001"
 				test="(cac:ValidityPeriod/cbc:EndDate) and (number(translate(cac:ValidityPeriod/cbc:EndDate,'-','')) &gt;= number(translate(cbc:IssueDate,'-','')))"
@@ -41,10 +47,10 @@
 	<rule context="cac:ClassifiedTaxCategory">
 		<assert id="PEPPOL-T77-R008"
 			test="cbc:Percent or (normalize-space(cbc:ID)='O')"
-			flag="fatal">Each Tax Category SHALL have a VAT category rate, except if the shopping cart is not subject to VAT.</assert>
+			flag="fatal">Each Tax Category SHALL have a TAX category rate, except if the shopping cart is not subject to TAX.</assert>
 		<assert id="PEPPOL-T77-R009"
 			test="not(normalize-space(cbc:ID)='S') or (cbc:Percent) &gt; 0"
-			flag="fatal">When VAT category code is "Standard rated" (S) the VAT rate SHALL be greater than zero.</assert>
+			flag="fatal">When TAX category code is "Standard rated" (S) the TAX rate SHALL be greater than zero.</assert>
 	</rule>
 	
 </pattern>
