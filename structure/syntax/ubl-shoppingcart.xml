@@ -693,7 +693,7 @@
 						<Element>
 							<Term>cbc:ID</Term>
 							<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
-							<Value type="EXAMPLE">VAT</Value>
+							<Value type="EXAMPLE">VAT or GST</Value>
 						</Element>
 					</Element>
 				</Element>

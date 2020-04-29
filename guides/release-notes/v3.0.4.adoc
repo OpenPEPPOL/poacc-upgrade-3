@@ -10,7 +10,7 @@ Release date:: 2020-05-01
 ** Text in guidelines generalized from VAT to GST
 ** Element names and descriptions that had VAT in them generalized as TAX
 ** Rules requesting Tax type ID as VAT removed to allow for GST. VAT now given as example.
-** Added new code list for allowed TaxScheme Identifiers. Code list now allows VAT and GST.
+** Added new code for allowed TaxScheme Identifiers. Now allows VAT or GST.
 * Updated the link “Peppol Identifiers” of all the BIS DOCUMENTS in https://docs.peppol.eu/poacc/upgrade-3/ to reflect the newest version of “Policy for use of identifiers”[POACC-188]
 
 == Changes to syntax

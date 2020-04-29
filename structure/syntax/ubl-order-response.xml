@@ -587,7 +587,7 @@
 								<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
 								<DataType>Identifier</DataType>
 								<Reference type="BUSINESS_TERM">tir76-p003</Reference>
-								<Value type="EXAMPLE">VAT</Value>
+								<Value type="EXAMPLE">VAT or GST</Value>
 							</Element>
 						</Element>
 					</Element>

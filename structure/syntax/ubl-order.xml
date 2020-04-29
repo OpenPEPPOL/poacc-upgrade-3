@@ -388,7 +388,7 @@
 							<Description>Mandatory element. E.g. "VAT" or "GST"</Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir01-p004</Reference>
-							<Value type="EXAMPLE">VAT</Value>
+							<Value type="EXAMPLE">VAT or GST</Value>
 						</Element>
 					</Element>
 				</Element>
@@ -932,7 +932,7 @@
 							<Description>Tax scheme identifier. E.g. "VAT" or "GST"</Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir01-p003</Reference>
-							<Value type="EXAMPLE">VAT</Value>
+							<Value type="EXAMPLE">VAT or GST</Value>
 						</Element>
 					</Element>
 				</Element>
@@ -1469,7 +1469,7 @@
 						<Description>Tax scheme identifier. E.g. “VAT” or “GST”</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p013</Reference>
-						<Value type="EXAMPLE">VAT</Value>
+						<Value type="EXAMPLE">VAT or GST</Value>
 					</Element>
 				</Element>
 			</Element>
@@ -2141,7 +2141,7 @@
 								<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
 								<DataType>Identifier</DataType>
 								<Reference type="BUSINESS_TERM">tir01-p021</Reference>
-								<Value type="EXAMPLE">VAT</Value>
+								<Value type="EXAMPLE">VAT or GST</Value>
 							</Element>
 						</Element>
 					</Element>

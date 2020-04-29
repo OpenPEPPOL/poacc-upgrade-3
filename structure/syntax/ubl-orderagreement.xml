@@ -978,7 +978,7 @@
 						<Term>cbc:ID</Term>
 						<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
 						<DataType>Identifier</DataType>
-						<Value type="EXAMPLE">VAT</Value>
+						<Value type="EXAMPLE">VAT or GST</Value>
 					</Element>
 				</Element>
 			</Element>
@@ -1082,7 +1082,7 @@
 							<Term>cbc:ID</Term>
 							<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
 							<DataType>Identifier</DataType>
-							<Value type="EXAMPLE">VAT</Value>
+							<Value type="EXAMPLE">VAT or GST</Value>
 						</Element>
 					</Element>
 				</Element>
@@ -1654,7 +1654,7 @@
 								<Term>cbc:ID</Term>
 								<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
 								<DataType>Identifier</DataType>
-								<Value type="EXAMPLE">VAT</Value>
+								<Value type="EXAMPLE">VAT or GST</Value>
 							</Element>
 						</Element>
 					</Element>

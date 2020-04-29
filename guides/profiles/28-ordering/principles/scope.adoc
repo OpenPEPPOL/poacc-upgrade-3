@@ -23,7 +23,7 @@ TAX reporting::
 TAX reporting is not a general requirement on orders. In this context the term TAX is used as a generalization of taxes such as VAT, GST or Sales Tax.
 The level of support in orders is to
 
-* Enable TAX reporting in invoices by providing TAX number of buyer. As example in case of reverse charges in EU.
+* Enable TAX reporting in invoices by providing TAX number of buyer. As an example in case of reverse charges in EU.
 * TAX can be stated as an estimate to enable buyers to state expected value of order. +
 This can be helpful in automated matching of orders and invoices. +
 TAX information is informative and does not affect the terms of trade.
