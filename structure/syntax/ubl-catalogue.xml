@@ -1340,7 +1340,7 @@
 						<Reference type="BUSINESS_TERM">tir19-p035</Reference>
 					</Element>
 
-					<Element cardinality="0..n">
+					<Element cardinality="0..1">
 						<Term>cac:ValidityPeriod</Term>
 						<Name>Price validity period</Name>
 						<Element cardinality="0..1">
