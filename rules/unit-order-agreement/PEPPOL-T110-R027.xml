@@ -37,6 +37,26 @@
 	</test>
 	<test id="2">
 		<assert>
+			<success>PEPPOL-T110-R027</success>
+		</assert>
+		<OrderResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2">
+
+			<cac:OrderLine>
+				<cac:LineItem>
+				<cac:Item>
+					<cac:ClassifiedTaxCategory>
+						<cbc:ID>AA</cbc:ID>
+					</cac:ClassifiedTaxCategory>
+				</cac:Item>
+					</cac:LineItem>
+			</cac:OrderLine>
+
+		</OrderResponse>
+	</test>
+	<test id="3">
+		<assert>
 			<error>PEPPOL-T110-R027</error>
 		</assert>
 		<OrderResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -63,8 +83,8 @@
 			</cac:OrderLine>
 
 		</OrderResponse>
-	</test>
-	<test id="3">
+	</test>	
+	<test id="4">
 		<assert>
 			<success>PEPPOL-T110-R027</success>
 		</assert>
@@ -89,7 +109,7 @@
 
 		</OrderResponse>
 	</test>
-	<test id="4">
+	<test id="5">
 		<assert>
 			<error>PEPPOL-T110-R027</error>
 		</assert>
