@@ -65,12 +65,12 @@
 		<assert id="PEPPOL-T110-R026"
 			test="some $cat in $taxCategoryPercents satisfies $cat = $category"
 			flag="fatal">Tax categories MUST match provided tax categories on document level.</assert>
-	</rule>
-		
-	<rule context="cac:AllowanceCharge/cac:TaxCategory | cac:Item/cac:ClassifiedTaxCategory">
 		<assert id="PEPPOL-T110-R027"
 			test="some $cat in $taxCategories satisfies $cat = cbc:ID"
 			flag="fatal">Tax categories MUST match provided tax categories on document level.</assert>
+	</rule>
+		
+	<rule context="cac:AllowanceCharge/cac:TaxCategory | cac:Item/cac:ClassifiedTaxCategory">
 		<assert id="PEPPOL-T110-R019"
 			test="cbc:Percent or (normalize-space(cbc:ID)='O')"
 			flag="fatal">Each Tax Category SHALL have a TAX category rate, except if the order is not subject to TAX.</assert>
