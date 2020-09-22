@@ -11,7 +11,7 @@
     <Documentation path="">BIS DOCUMENTS</Documentation>
     <Documentation path="profiles/3-order-only/">- PEPPOL BIS Order only 3.1</Documentation>
     <Documentation path="profiles/28-ordering/">- PEPPOL BIS Ordering 3.1</Documentation>
-    <Documentation path="profiles/1-catalogueonly/">- PEPPOL BIS Catalogue only 3.1</Documentation>
+    <Documentation path="profiles/1-catalogueonly/">- PEPPOL BIS Catalogue with response 3.1</Documentation>
     <Documentation path="profiles/64-catalogue-wo-response/">- PEPPOL BIS Catalogue without response 3.1</Documentation>
     <Documentation path="profiles/30-despatchadvice/">- PEPPOL BIS Despatch Advice 3.1</Documentation>
     <Documentation path="profiles/18-punchout/">- PEPPOL BIS Punch Out 3.0</Documentation>

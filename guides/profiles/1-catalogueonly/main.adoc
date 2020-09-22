@@ -1,6 +1,6 @@
 include::../../shared/links.adoc[]
 
-= image:../../shared/images/peppol.png[float="right"]PEPPOL BIS Catalogue Only 3.1
+= image:../../shared/images/peppol.png[float="right"]PEPPOL BIS Catalogue with response 3.1
 {author}
 v{version}
 :doctype: book
