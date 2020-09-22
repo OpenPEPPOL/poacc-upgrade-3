@@ -58,12 +58,12 @@
 			flag="fatal">A TAX breakdown with TAX Category codes S, Z, L and M SHALL NOT have a TAX exemption reason text </assert>
 	</rule>
 	
-	<rule context="cac:AllowanceCharge/cac:TaxCategory[cbc:Percent and //cac:TaxTotal] | cac:Item/cac:ClassifiedTaxCategory[cbc:Percent and //cac:TaxTotal]">
+	<rule context="cac:AllowanceCharge/cac:TaxCategory[//cac:TaxTotal] | cac:Item/cac:ClassifiedTaxCategory[//cac:TaxTotal]">
 		
 		<let name="category" value="u:cat2str(.)"/>
 		
 		<assert id="PEPPOL-T110-R026"
-			test="some $cat in $taxCategoryPercents satisfies $cat = $category"
+			test="not(cbc:Percent) or (some $cat in $taxCategoryPercents satisfies $cat = $category)"
 			flag="fatal">Tax categories MUST match provided tax categories on document level.</assert>
 		<assert id="PEPPOL-T110-R027"
 			test="some $cat in $taxCategories satisfies $cat = cbc:ID"
