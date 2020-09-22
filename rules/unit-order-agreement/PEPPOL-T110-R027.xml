@@ -107,8 +107,8 @@
 		</OrderResponse>
 	</test>	
 	<test id="5">
-		<assert>
-			<error>PEPPOL-T110-R027</error>
+		<assert><!-- this is ok according to this rule, but not R019 -->
+			<success>PEPPOL-T110-R027</success>
 		</assert>
 		<OrderResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -184,7 +184,7 @@
 	</test>
 	<test id="8">
 		<assert>
-			<error>PEPPOL-T110-R027</error>
+			<success>PEPPOL-T110-R027</success> <!-- error in percent, but not for this rule -->
 		</assert>
 		<OrderResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
