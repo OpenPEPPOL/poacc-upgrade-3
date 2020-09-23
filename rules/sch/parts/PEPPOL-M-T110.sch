@@ -58,26 +58,29 @@
 			flag="fatal">A TAX breakdown with TAX Category codes S, Z, L and M SHALL NOT have a TAX exemption reason text </assert>
 	</rule>
 	
-	<rule context="cac:AllowanceCharge/cac:TaxCategory[cbc:Percent and //cac:TaxTotal] | cac:Item/cac:ClassifiedTaxCategory[cbc:Percent and //cac:TaxTotal]">
+	<rule context="cac:AllowanceCharge/cac:TaxCategory | cac:Item/cac:ClassifiedTaxCategory">
 		
 		<let name="category" value="u:cat2str(.)"/>
-		
+		 <!-- Note: Only when Percent is present and TaxTotal is present on header level -->
 		<assert id="PEPPOL-T110-R026"
-			test="some $cat in $taxCategoryPercents satisfies $cat = $category"
-			flag="fatal">Tax categories MUST match provided tax categories on document level.</assert>
-	</rule>
-		
-	<rule context="cac:AllowanceCharge/cac:TaxCategory | cac:Item/cac:ClassifiedTaxCategory">
+			test="not(cbc:Percent) or not(//cac:TaxTotal) or (some $cat in $taxCategoryPercents satisfies $cat = $category)"
+			flag="fatal">Tax category rates MUST match provided tax categories on document level when such exists.</assert>
+
+    <!-- Note: Only  TaxTotal is present on header level -->
 		<assert id="PEPPOL-T110-R027"
-			test="some $cat in $taxCategories satisfies $cat = cbc:ID"
-			flag="fatal">Tax categories MUST match provided tax categories on document level.</assert>
+			test="not(//cac:TaxTotal) or (some $cat in $taxCategories satisfies $cat = cbc:ID)"
+			flag="fatal">Tax categories MUST match provided tax categories on document level when such exists.</assert>
+			
+
 		<assert id="PEPPOL-T110-R019"
 			test="cbc:Percent or (normalize-space(cbc:ID)='O')"
 			flag="fatal">Each Tax Category SHALL have a TAX category rate, except if the order is not subject to TAX.</assert>
 		<assert id="PEPPOL-T110-R020"
 			test="not(normalize-space(cbc:ID)='S') or (cbc:Percent) &gt; 0"
 			flag="fatal">When TAX category code is "Standard rated" (S) the TAX rate SHALL be greater than zero.</assert>
+			
 	</rule>
+		
 
 
 <!-- Document totals -->
