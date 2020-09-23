@@ -19,3 +19,4 @@ Release date:: 2020-11-01
 * EAS code list, added code 0209, removed code 9958. Peppol rule updated accordingly.
 * ICD code list, added code 0205, 0206, 0207, 0208, 0209. 
 * Duplicate currency codes removed from ISO4217 code list. Issue: [POACC-339]
+* OrderAgreement - Rule T110-R027 (verifies structure of tax categories) changed so that the rule is triggered only when it should be. [POACC-330]
