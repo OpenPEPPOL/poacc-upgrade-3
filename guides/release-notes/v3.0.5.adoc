@@ -7,6 +7,7 @@ Release date:: 2020-11-01
 * BIS "Catalogue only" renamed to "Catalogue with response". Issue: [POACC-357]
 * Added new business term to PunchOut for External attachment reference as tir77-p003 to align with text in BIS [POACC-354]
 * Migration plan from BIS2 to BIS3 removed. Is completed.
+* Updated text in section 6.2. Order reference in the Despatch Advice specification to clarify the use of OrderReference [POACC-347]
 
 == Changes to syntax
 * For the Catalogue (T19) cbc:PriceType/cac:ValidityPeriod (tir19-056/057) is marked as unbounded in the syntax description while the validation rules and BIS description expects maximum 1. Cardinality changed to 0..1 to align with requirements and business rules. [POACC-340]
