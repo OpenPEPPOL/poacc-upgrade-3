@@ -241,7 +241,7 @@
     <Resource>
         <Type>native:File</Type>
         <Path>project.xml</Path>
-        <Title>Example files</Title>
+        <Title>Example files (Appendix A)</Title>
         <Property key="download">PEPPOLBIS-Examples.zip</Property>
         <Property key="filename">PEPPOLBIS-Examples.zip</Property>
     </Resource>
