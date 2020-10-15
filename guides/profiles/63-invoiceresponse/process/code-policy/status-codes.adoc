@@ -62,7 +62,7 @@ Although it can be used also for rejection for commercial reasons (invoice not c
 |PD |Paid |Indicates that the referenced document or transaction has been paid. |Status is used only when the Buyer has initiated the payment of the invoice. |NO |NO |NO |YES
 |PD + PPD * |Partially Paid |Indicates that the referenced document or transaction has been partially paid. |Status is used only when the Buyer has initiated the payment of the invoice without having paid the accepted amount in full. |NO |NO |NO |NO|====
 
-PD + PPD is the case when the status is PD accompanied with a Clarification reason code PPD. In this case the status is that an invoice is partially paid with the intention of paying the full invoice amount that was accepted.
+Status PD together with Clarification reason PPD is the case when the status is PD accompanied with a Clarification reason code PPD. In this case the status is that an invoice is partially paid with the intention of paying the full invoice amount that was accepted.
 
 The sequence of the status codes is fixed to allow the Seller, as receiver of the Invoice Response message, to advance the status of the invoice in his systems in an orderly way. See <<invoice-response-process-rules>>.
 This requires the Buyer to be conservative in reporting status and only advance an invoice when the status is reasonably certain.
