@@ -12,6 +12,8 @@ Release date:: 2020-11-01
 
 == Changes to syntax
 * For the Catalogue (T19) cbc:PriceType/cac:ValidityPeriod (tir19-056/057) is marked as unbounded in the syntax description while the validation rules and BIS description expects maximum 1. Cardinality changed to 0..1 to align with requirements and business rules. [POACC-340]
+* For the Order (T01). New optional business term added on line level "Shipping label" as tir01-p036. [POACC-283]
+* For the Order (T01). New optional business term added on document level "Delivery location ID" as tir01-p037. [POACC-320]
 
 == Changes to supporting documents
 

@@ -1300,6 +1300,22 @@
 					</Element>
 				</Element>
 			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:Shipment</Term>
+				<Name>Shipment</Name>
+				<Element cardinality="0..1">
+					<Term>cac:TransportHandlingUnit</Term>
+					<Name>Transport handling unit</Name>
+					<Element cardinality="0..1">
+						<Term>cbc:ShippingMarks</Term>
+						<Name>Packing label</Name>
+						<Description>A text that the buyer requests to be printed on the packing labels.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-p036</Reference>
+						<Value type="EXAMPLE">Receiving instructions.</Value>
+					</Element>
+				</Element>
+			</Element>
 		</Element>
 		<Element cardinality="0..1">
 			<Term>cac:DeliveryTerms</Term>
@@ -1748,6 +1764,21 @@
 					<Term>cac:Delivery</Term>
 					<Name>Line delivery information</Name>
 					<Description>Delivery information for the order line </Description>
+					<Element cardinality="0..1">
+						<Term>cbc:ID</Term>
+						<Name>Delivery location ID</Name>
+						<Description>An identifer for the location to where the ordered line item should be delivered.</Description>
+						<DataType>Identifier</DataType>
+						<Reference type="BUSINESS_TERM">tir01-p037</Reference>
+						<Attribute usage="Optional">
+							<Term>schemeID</Term>
+							<Name>Deliver to location identifier identification scheme identifier</Name>
+							<Description>The identification scheme identifier of the Deliver to location identifier.</Description>
+							<Reference type="CODE_LIST">ICD</Reference>
+							<Value type="EXAMPLE">0088</Value>
+						</Attribute>
+						<Value type="EXAMPLE">7300010000001</Value>
+					</Element>
 					<Element>
 						<Term>cac:RequestedDeliveryPeriod</Term>
 						<Name>Order line requested delivery period </Name>
