@@ -223,3 +223,4 @@ Service provider +
 Seller
 |Result |The Seller is notified that a payment has been initiated as partial payment and that he can expect the invoice to be paid as accepted with a later payment.
 |====
+
