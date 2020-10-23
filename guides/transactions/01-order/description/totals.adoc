@@ -14,11 +14,11 @@ The following elements show the anticipated monetary totals for an order:
 
 | <cbc:AllowanceTotalAmount>
 |Allowances on document level
-| stem:[sum("cac:AllowanceCharge[ChargeIndicator='true'$$]$$/cbc:Amount")]
+| stem:[sum("cac:AllowanceCharge[ChargeIndicator='false'$$]$$/cbc:Amount")]
 
 | <cbc:ChargeTotalAmount>
 |Charges on document level
-| stem:[sum("cac:AllowanceCharge[ChargeIndicator='false'$$]$$/cbc:Amount")]
+| stem:[sum("cac:AllowanceCharge[ChargeIndicator='true'$$]$$/cbc:Amount")]
 
 | <cbc:TaxExclusiveAmount>
 | Order total amount without TAX
