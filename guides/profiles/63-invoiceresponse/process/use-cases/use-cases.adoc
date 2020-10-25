@@ -217,7 +217,7 @@ Seller
 |Use Case number |9
 |Use Case Name |Partial payment.
 |Assumption and description |The Buyer previously accepted the invoice but needs to pay it in more than one payments, either by previous agreement or for another reason. The invoice will be paid fully as accepted.
-|The flow |Invoice response is send with Status "Paid" and Clarification Reasons as PPD (Partially paid).
+|The flow |Invoice response is send with Status PD (Paid) and Clarification Reasons as PPD (Partially paid).
 |Parties involved |Buyer +
 Service provider +
 Seller

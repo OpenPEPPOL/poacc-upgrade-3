@@ -32,7 +32,7 @@
 	</cac:ReceiverParty>
 	<cac:DocumentResponse>
 		<cac:Response>
-			<cbc:ResponseCode listID="UNCL4343OpSubset">AP</cbc:ResponseCode>
+			<cbc:ResponseCode listID="UNCL4343OpSubset">PD</cbc:ResponseCode>
 			<cac:Status>
 				<cbc:StatusReasonCode listID="OPStatusReason">PPD</cbc:StatusReasonCode>
 				<cbc:StatusReason>My dog ate my wallet.</cbc:StatusReason>
