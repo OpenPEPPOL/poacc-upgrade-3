@@ -68,6 +68,7 @@
         <Element>
             <Term>cac:SenderParty</Term>
             <Name>Sender party</Name>
+			<Description>The party who sends the Invoice Response.</Description>
             <Element>
                 <Term>cbc:EndpointID</Term>
                 <Name>Sender party electronic address</Name>
@@ -162,6 +163,7 @@
         <Element>
             <Term>cac:ReceiverParty</Term>
             <Name>Receiver party</Name>
+			<Description>The party who receives the Invoice Response.</Description>
             <Element>
                 <Term>cbc:EndpointID</Term>
                 <Name>Reciever party electronic address</Name>
@@ -301,18 +303,16 @@
                 </Element>
             </Element>
 
-            <Element>
+            <Element cardinality="1..2">
                 <Term>cac:DocumentReference</Term>
                 <Name>Document reference</Name>
 
                 <Element>
                     <Term>cbc:ID</Term>
-                    <Name>Invoice identifier</Name>
-                    <Description>An identifier for the invoice that the status applies to. Rules At
-                        least one and only one invoice identifier must be of the main invoice number
-                        that appears in the invoice itself.</Description>
+                    <Name>Invoice identifier, Payment Identifier</Name>
+                    <Description>An identifier for the invoice (tir111-020) that the status applies to. Rules At least one and only one invoice identifier must be of the main invoice number that appears in the invoice itself. An identifier for the payment (tir111-0029) transaction as issued by the buyers bank and which can be used by the seller to reconcile the payment to the invoice.</Description>
                     <DataType>Identifier</DataType>
-                    <Reference type="BUSINESS_TERM">tir111-020</Reference>
+                    <Reference type="BUSINESS_TERM">tir111-020, tir111-029</Reference>
                     <Value type="EXAMPLE">inv-99876</Value>
                 </Element>
 
@@ -333,13 +333,13 @@
                     <DataType>Code</DataType>
                     <Reference type="BUSINESS_TERM">tir111-021</Reference>
                     <Reference type="CODE_LIST">UNCL1001</Reference>
-                    <Value type="EXAMPLE">380</Value>
+                    <Value type="EXAMPLE">380 for invoice reference and 481 for payment reference</Value>
                 </Element>
             </Element>
             <Element cardinality="0..1">
                 <Term>cac:IssuerParty</Term>
                 <Name>Seller party information</Name>
-
+				<Description>The party who issued the Invoice that the response references, that is, the Seller.</Description>
                 <Element cardinality="0..1">
                     <Term>cac:PartyIdentification</Term>
                     <Name>Party identification</Name>
@@ -380,7 +380,7 @@
             <Element cardinality="0..1">
                 <Term>cac:RecipientParty</Term>
                 <Name>Buyer party information</Name>
-
+				<Description>The party who received Invoice that the response references, that is, the Buyer.</Description>
                 <Element cardinality="0..1">
                     <Term>cac:PartyIdentification</Term>
                     <Name>Party identification</Name>
