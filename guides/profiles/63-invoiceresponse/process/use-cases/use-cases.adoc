@@ -209,18 +209,3 @@ Service provider +
 Seller
 |Result |Seller is notified that an Invoice has been accepted and will be paid on due date.
 |====
-
-[[uc9]]
-.Use case 9 — Invoice is partially paid.
-[cols="1h,5",options="header"]
-|====
-|Use Case number |9
-|Use Case Name |Partial payment.
-|Assumption and description |The Buyer previously accepted the invoice but needs to pay it in more than one payments, either by previous agreement or for another reason. The invoice will be paid fully as accepted.
-|The flow |Invoice response is send with Status PD (Paid) and Clarification Reasons as PPD (Partially paid).
-|Parties involved |Buyer +
-Service provider +
-Seller
-|Result |The Seller is notified that a payment has been initiated as partial payment and that he can expect the invoice to be paid as accepted with a later payment.
-|====
-

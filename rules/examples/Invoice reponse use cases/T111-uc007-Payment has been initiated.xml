@@ -40,8 +40,4 @@
 			<cbc:DocumentTypeCode listID="UNCL1001">380</cbc:DocumentTypeCode>
 		</cac:DocumentReference>
 	</cac:DocumentResponse>
-	<cac:DocumentReference>
-		<cbc:ID>PaymentReference</cbc:ID>
-		<cbc:DocumentTypeCode listID="UNCL1001">481</cbc:DocumentTypeCode>
-	</cac:DocumentReference>
 </ApplicationResponse>
