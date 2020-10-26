@@ -19,11 +19,5 @@
 				flag="fatal">Specification identifier SHALL start with the value 'urn:fdc:peppol.eu:poacc:trns:invoice_response:3'.</assert>
 	</rule>
 
-	<rule context="cac:Status[cbc:StatusReasonCode='PPD']">
-		<assert id="PEPPOL-T111-R004"
-				test="exists(cbc:StatusReason)"
-				flag="warning">If Clarification code is PPD, indicating partial payment, then Clarification reason SHALL be provided.</assert>
-	</rule>
-
 </pattern>
 
