@@ -57,6 +57,11 @@
         <Name>Payment terms incorrect</Name>
         <Description>Payment terms not according to previous expectation.</Description>
     </Code>
+	<Code>
+        <Id>PPD</Id>
+        <Name>Partially paid</Name>
+        <Description>The paid amount represents a partial payment towards the approved amount.</Description>
+    </Code>
     <Code>
         <Id>UNR</Id>
         <Name>Not recognized</Name>
