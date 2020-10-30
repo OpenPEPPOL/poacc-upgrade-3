@@ -22,7 +22,7 @@
 	<rule context="cac:Status[cbc:StatusReasonCode='PPD']">
 		<assert id="PEPPOL-T111-R004"
 				test="exists(cbc:StatusReason)"
-				flag="warning">If Clarification code is PPD, indicating partial payment, then Clarification reason SHALL be provided.</assert>
+				flag="fatal">If Clarification code is PPD, indicating partial payment, then Clarification reason SHALL be provided.</assert>
 	</rule>
 	
 	<rule context="cac:Status[cbc:StatusReasonCode='PPD']">
