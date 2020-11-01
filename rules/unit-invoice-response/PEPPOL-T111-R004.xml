@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t111-base-3.0">
 	<assert>
-		<description>Verify that clarification code OTH has a description</description>
+		<description>Verify that clarification code PPD has a description</description>
 		<scope>PEPPOL-T111-R004</scope>
 	</assert>
 
