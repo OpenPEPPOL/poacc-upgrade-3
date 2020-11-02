@@ -22,5 +22,6 @@
     <include href="parts/common/rules.sch"/>
     <include href="../../target/generated/T111-basic.sch"/>
     <include href="parts/PEPPOL-M-T111.sch"/>
+    <include href="parts/PEPPOL-M-T111-2.sch"/>
 
 </schema>
