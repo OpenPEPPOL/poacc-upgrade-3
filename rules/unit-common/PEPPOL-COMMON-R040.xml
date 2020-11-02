@@ -21,7 +21,7 @@
 	</test>
 	<test id="2">
 		<assert>
-			<warning>PEPPOL-COMMON-R040</warning>
+			<error>PEPPOL-COMMON-R040</error>
 		</assert>
 		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"

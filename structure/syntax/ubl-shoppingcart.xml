@@ -545,7 +545,6 @@
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir77-036</Reference>
 						<Reference type="BUSINESS_TERM">OP-T77-003</Reference>
-
 						<Value type="EXAMPLE">23423</Value>
 					</Element>
 					<Element cardinality="0..1">
@@ -596,6 +595,18 @@
 								<Value type="EXAMPLE">Hours-spent.csv</Value>
 							</Attribute>
 							<Value type="EXAMPLE">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</Value>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cac:ExternalReference</Term>
+							<Name>External reference</Name>
+							<Element>
+								<Term>cbc:URI</Term>
+								<Name>External item specifications</Name>
+								<Description>URI reference to external item information or
+                                    specifications. E.g. web address</Description>
+								<Reference type="BUSINESS_TERM">tir77-p003</Reference>
+								<Value type="EXAMPLE">http://www.test.no/image.jpg</Value>
+							</Element>
 						</Element>
 					</Element>
 				</Element>
