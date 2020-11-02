@@ -3,6 +3,9 @@
 	<assert>
 		<description>Verify that clarification code PPD has a description</description>
 		<scope>PEPPOL-T111-R004</scope>
+		<scope>PEPPOL-T111-R006</scope>
+		<scope>PEPPOL-T111-R005</scope>
+		<scope>PEPPOL-T111-R007</scope>
 	</assert>
 
 	<test id="1">
@@ -28,7 +31,7 @@
 
 	<test id="2">
 		<assert>
-			<error>PEPPOL-T111-R004</error>
+			<error>PEPPOL-T111-R006</error>
 		</assert>
 
 		<ApplicationResponse
@@ -38,7 +41,6 @@
 			<cac:DocumentResponse>
 				<cac:Response>
 					<cac:Status>
-
 						<cbc:StatusReasonCode listID="OPStatusAction">PPD</cbc:StatusReasonCode>
 						<cbc:StatusReason>Description of partial payment</cbc:StatusReason>
 					</cac:Status>

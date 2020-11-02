@@ -23,25 +23,9 @@
 		<assert id="PEPPOL-T111-R004"
 				test="exists(cbc:StatusReason)"
 				flag="fatal">If Clarification code is PPD, indicating partial payment, then Clarification reason SHALL be provided.</assert>
-	</rule>
-	
-	<rule context="cac:Status[cbc:StatusReasonCode='PPD']">
-		<assert id="PEPPOL-T111-R005"
+				<assert id="PEPPOL-T111-R005"
 				test="exists(/cbc:ResponseCode='PD')"
 				flag="fatal">Clarification Reason "PPD" SHALL only be used in compination with Status "PD".</assert>
 	</rule>
 
-	<rule context="cac:Status[cbc:StatusReasonCode/@SchemeID='OPStatusReason']">
-		<assert id="PEPPOL-T111-R006"
-				test="((not(contains(normalize-space(.), ' ')) and contains(' NOA PIN NIN CNF CNP CNA OTH ', concat(' ', normalize-space(.), ' '))))"
-				flag="fatal">Clarification Reason code shall exist in the OPStatusReason code lists as identified by SchemeID.</assert>
-	</rule>
-
-	<rule context="cac:Status[cbc:StatusReasonCode/@SchemeID='OPStatusAction']">
-		<assert id="PEPPOL-T111-R007"
-				test="((not(contains(normalize-space(.), ' ')) and contains(' NON REF LEG REC QUA DEL PRI QTY ITM PAY PPD UNR FIN OTH ', concat(' ', normalize-space(.), ' '))))"
-				flag="fatal">Clarification Reason code shall exist in the OPStatusAction code lists as identified by SchemeID.</assert>
-	</rule>
-	
 </pattern>
-
