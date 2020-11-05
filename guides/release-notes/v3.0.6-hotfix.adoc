@@ -1,0 +1,12 @@
+= Version 3.0.6 - hotfix
+[horizontal]
+Release date:: 2019-11-09
+
+== Changes to syntax
+
+* Changed cardinality of cac:DespatchLine/cac:OrderLineReference/cac:OrderLine to 0..1 instead of 1..1 in Despatch Advice.[POACC-347]
+
+== Changes to previous Release Notes
+
+* A release note in version 3.0.5 was incorrect, the correct release note shall state:
+* For the Catalogue (T19) cac:Price/cac:ValidityPeriod (tir19-056/057) is marked as unbounded in the syntax description while the validation rules and BIS description expects maximum 1. Cardinality changed to 0..1 to align with requirements and business rules. [POACC-340]
