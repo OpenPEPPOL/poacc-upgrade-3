@@ -1055,7 +1055,7 @@
 						despatched.</Description>
 					<Reference type="BUSINESS_TERM">tir16-051</Reference>
 				</Element>
-				<Element>
+				<Element cardinality="0..1">
 					<Term>cac:OrderReference</Term>
 					<Name>Order reference</Name>
 					<Element>
