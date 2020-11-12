@@ -3,7 +3,7 @@
 Release date:: 2019-11-09
 
 == Changes to syntax
-* Changed cardinality of cac:DespatchLine/cac:OrderLineReference/cac:OrderLine to 0..1 instead of 1..1 in Despatch Advice.[POACC-347]
+* Corrected cardinality of cac:DespatchLine/cac:OrderLineReference/cac:OrderLine to 0..1 instead of 1..1 in Despatch Advice in line with BIS specification.[POACC-347]
 
 == Changes to code lists and validation artefacts
 * Removed rule PEPPOL-T16-R002 that triggered a warning when cac:OrderReference/cbc:ID in DespatchAdvice was absent [POACC-347]
