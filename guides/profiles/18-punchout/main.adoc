@@ -10,9 +10,8 @@ include::../../shared/links.adoc[]
 :sectnums:
 :title-logo-image: ../../shared/images/peppol.png
 :snippet-dir: ../../../../rules/snippets/punchout
-= image:../../shared/images/peppol.png[float="right"]BIS Punch Out 3.0
+= image:../../shared/images/peppol.png[float="right"]BIS Punch Out 3.1
 {author}
-v{version}
 
 {description}
 

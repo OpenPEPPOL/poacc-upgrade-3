@@ -12,7 +12,6 @@ include::../../shared/links.adoc[]
 :snippet-dir: ../../../../rules/snippets/mlr
 = image:../../shared/images/peppol.png[float="right"]BIS Message Level Response 3.0
 {author}
-v{version}
 
 {description}
 
