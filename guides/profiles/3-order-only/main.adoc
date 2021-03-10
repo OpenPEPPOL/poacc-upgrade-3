@@ -13,7 +13,6 @@ include::../../shared/links.adoc[]
 
 = image:../../shared/images/peppol.png[float="right"]BIS Order only 3.2
 {author}
-v{ord_version}
 
 {description}
 

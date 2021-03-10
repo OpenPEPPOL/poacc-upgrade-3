@@ -94,7 +94,7 @@
 			<Term>cbc:CustomerReference</Term>
 			<Name>Buyer contact</Name>
 			<Description>The element is used for the reference of who ordered the products/services.
-				Example being the name of the person ordering, employee number or a code identifying this person or department/group. Also known as "Your reference", and should also be sent in the corresponding invoice.</Description>
+				Example being the name of the person ordering, employee number or a code identifying this person or department/group. Also known as "Buyer reference", and should also be sent in the corresponding invoice.</Description>
 			<DataType>Text</DataType>
 			<Reference type="BUSINESS_TERM">tir01-p002</Reference>
 			<Value type="EXAMPLE">oik987</Value>
@@ -1195,34 +1195,6 @@
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
-					<Term>cac:Contact</Term>
-					<Name>Contact information</Name>
-					<Description>Contact information for the delivery party </Description>
-					<Element cardinality="0..1">
-						<Term>cbc:Name</Term>
-						<Name>Contact person name</Name>
-						<Description>The name of the contact person.</Description>
-						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir01-103</Reference>
-					</Element>
-					<Element cardinality="0..1">
-						<Term>cbc:Telephone</Term>
-						<Name>Contact telephone number</Name>
-						<Description>A phone number for the contact person. If the person has a
-							direct number, this is that number.</Description>
-						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir01-104</Reference>
-					</Element>
-					<Element cardinality="0..1">
-						<Term>cbc:ElectronicMail</Term>
-						<Name>Contact email address</Name>
-						<Description>The e-mail address for the contact person. If the person has a
-							direct e-mail this is that email.</Description>
-						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir01-106</Reference>
-					</Element>
-				</Element>
-				<Element cardinality="0..1">
 					<Term>cac:PostalAddress</Term>
 					<Name>Final Delivery address</Name>
 					<Description>The final address for the delivery</Description>
@@ -1299,6 +1271,34 @@
 						</Element>
 					</Element>
 				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:Contact</Term>
+					<Name>Contact information</Name>
+					<Description>Contact information for the delivery party </Description>
+					<Element cardinality="0..1">
+						<Term>cbc:Name</Term>
+						<Name>Contact person name</Name>
+						<Description>The name of the contact person.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-103</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:Telephone</Term>
+						<Name>Contact telephone number</Name>
+						<Description>A phone number for the contact person. If the person has a
+							direct number, this is that number.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-104</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:ElectronicMail</Term>
+						<Name>Contact email address</Name>
+						<Description>The e-mail address for the contact person. If the person has a
+							direct e-mail this is that email.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-106</Reference>
+					</Element>
+				</Element>				
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:Shipment</Term>
@@ -1307,7 +1307,6 @@
 					<Term>cbc:ID</Term>
 					<Name>Shipment identifier</Name>
 					<Description>Element is mandated by syntax structure use value NA</Description>
-					<Value type="FIXED">NA</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:TransportHandlingUnit</Term>
