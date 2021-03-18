@@ -5,6 +5,8 @@ Release date:: 2021-05-03
 == Changes to BIS document
 * The version numbers used in the BIS-documentation were inconsistant with the actual version numbers listed on the main documentation page. Version numbers should now be aligned. [POACC-391]
 
+*Changes in the documentation of Despatch Advice transaction 3.1. rule T16-R009 and T16-R010 is now reffering to seller party instead of buyer party [POACC-377].
+
 == Changes to syntax
 * An element which is mandatory in UBL was missing in the syntax description for the Order Transaction. The element (cac:Shipment/cbc:ID) is now added and with a fixed value "NA". A validation rule is also included which verifies that that the charactar NA are used when providing the element. The change was considered a bug-fix as the previous documentation would result in invalid UBL instances. [POACC-389 and POACC-380]
 

@@ -16,12 +16,12 @@
 	<rule context="cac:SellerSupplierParty">
 		<assert id="PEPPOL-T16-R009"
 			test="(cac:Party/cac:PartyName/cbc:Name) or (cac:Party/cac:PartyIdentification/cbc:ID)"
-			flag="fatal">A despatch advice buyer party SHALL contain the name or an identifier</assert>
+			flag="fatal">A despatch advice seller party SHALL contain the name or an identifier</assert>
 	</rule>
 	<rule context="cac:OriginatorCustomerParty">
 		<assert id="PEPPOL-T16-R010"
 			test="(cac:Party/cac:PartyName/cbc:Name) or (cac:Party/cac:PartyIdentification/cbc:ID)"
-			flag="fatal">A despatch advice buyer party SHALL contain the name or an identifier</assert>
+			flag="fatal">A despatch advice originator customer party SHALL contain the name or an identifier</assert>
 	</rule>
 	
 	<rule context="cac:DespatchLine">
