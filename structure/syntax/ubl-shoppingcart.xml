@@ -219,8 +219,8 @@
 					<Term>cbc:ID</Term>
 					<Name>Buyer reference identifier</Name>
 					<Description> An identifier assigned by the Buyer used for internal routing
-                        purposes.The identifier is defined by the buyer (contact ID, department,
-                        office id, project code), but provided by the seller in the invoice.</Description>
+                        purposes. 
+                        This reference should be placed in the order which may follow after the PunchOut transaction is received by the Buyer(contact ID, department, office id, project code)</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="BUSINESS_TERM">tir77-045</Reference>
 					<Value type="EXAMPLE">abc234</Value>
