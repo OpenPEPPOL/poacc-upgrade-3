@@ -23,5 +23,9 @@ Release date:: 2021-05-03
 
 *ICD code list details edited to remove contact information [POACC-388]
 
+*ICD code list. Added 0210, 0211, 0212, 0213 [POACC-407]
+
+*EAS code list. Added 0210, 0211, 0212, 0213. Removed 9956 [POACC-407]
+
 == Changes to previous release notes
 * The date for the hotfix published in november 2020 was incorrectly dated to 2019. This date is corrected in this release.
