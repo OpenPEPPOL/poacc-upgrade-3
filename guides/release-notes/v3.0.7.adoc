@@ -9,6 +9,9 @@ Release date:: 2021-05-03
 
 *Clarification on the syntax documentation of Buyer reference identifier (ReceiverParty/Contact/ID) in Punch Out transaction 3.1 [POACC-363].
 
+*Peppol logo updated to new design [POACC-375]
+
+
 == Changes to syntax
 * An element which is mandatory in UBL was missing in the syntax description for the Order Transaction. The element (cac:Shipment/cbc:ID) is now added and with a fixed value "NA". A validation rule is also included which verifies that that the charactar NA are used when providing the element. The change was considered a bug-fix as the previous documentation would result in invalid UBL instances. [POACC-389 and POACC-380]
 
@@ -18,6 +21,7 @@ Release date:: 2021-05-03
 
 == Changes to code lists and validation artefacts
 
+*ICD code list details edited to remove contact information [POACC-388]
 
 == Changes to previous release notes
 * The date for the hotfix published in november 2020 was incorrectly dated to 2019. This date is corrected in this release.
