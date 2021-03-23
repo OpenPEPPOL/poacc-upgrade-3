@@ -22,13 +22,13 @@ The following elements show the anticipated monetary totals for an order:
 
 | <cbc:TaxExclusiveAmount>
 | Order total amount without TAX
-| stem:[\ \ \ \ "cac:LegalMonetaryTotal/cbc:LineExtensionAmount"] +
-stem:[– \ "cac:LegalMonetaryTotal/cbc:AllowanceTotalAmount"] +
-stem:[+ \ "cac:LegalMonetaryTotal/cbc:ChargeTotalAmount"]
+| stem:[\ \ \ \ "cac:AnticipatedMonetaryTotal/cbc:LineExtensionAmount"] +
+stem:[– \ "cac:AnticipatedMonetaryTotal/cbc:AllowanceTotalAmount"] +
+stem:[+ \ "cac:AnticipatedMonetaryTotal/cbc:ChargeTotalAmount"]
 
 | <cbc:TaxInclusiveAmount>
 | Order total amount included TAX
-| stem:[\ \ \ \ "cac:LegalMonetaryTotal/cbc:TaxExclusiveAmount"] +
+| stem:[\ \ \ \ "cac:AnticipatedMonetaryTotal/cbc:TaxExclusiveAmount"] +
 stem:[+ \ "cac:TaxTotal/cbc:TaxAmount"]
 
 | <cbc:PrepaidAmount>
@@ -41,9 +41,9 @@ stem:[+ \ "cac:TaxTotal/cbc:TaxAmount"]
 
 | <cbc:PayableAmount>
 | The amount that is expected to be paid
-| stem:[\ \ \ \ "cac:LegalMonetaryTotal/cbc:TaxInclusiveAmount"] +
-stem:[- \ "cac:LegalMonetaryTotal/cbc:PrepaidAmount"] +
-stem:[+ \ "cac:LegalMonetaryTotal/cbc:PayableRoundingAmount"]
+| stem:[\ \ \ \ "cac:AnticipatedMonetaryTotal/cbc:TaxInclusiveAmount"] +
+stem:[- \ "cac:AnticipatedMonetaryTotal/cbc:PrepaidAmount"] +
+stem:[+ \ "cac:AnticipatedMonetaryTotal/cbc:PayableRoundingAmount"]
 |===
 
 

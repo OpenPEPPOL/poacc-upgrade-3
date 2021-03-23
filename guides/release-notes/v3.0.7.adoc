@@ -13,6 +13,8 @@ Release date:: 2021-05-03
 
 *In Order Agreement BIS. Duplicated headings and intro text 3.3 and 3.3.1 removed. Later sections renumbered accordingly. [POACC-393]
 
+*Description of calculation of totals in Order Only BIS corrected so that class is shown as cac:AnticipatedMonetaryTotal instead of cac:LegalMonetaryTotal. No affect on functionality. [POACC-397]
+
 
 == Changes to syntax
 * An element which is mandatory in UBL was missing in the syntax description for the Order Transaction. The element (cac:Shipment/cbc:ID) is now added and with a fixed value "NA". A validation rule is also included which verifies that that the charactar NA are used when providing the element. The change was considered a bug-fix as the previous documentation would result in invalid UBL instances. [POACC-389 and POACC-380]
