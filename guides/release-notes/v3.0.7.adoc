@@ -5,15 +5,17 @@ Release date:: 2021-05-03
 == Changes to BIS document
 * The version numbers used in the BIS-documentation were inconsistant with the actual version numbers listed on the main documentation page. Version numbers should now be aligned. [POACC-391]
 
-*Changes in the documentation of Despatch Advice transaction 3.1. rule T16-R009 and T16-R010 is now reffering to seller party and originator customer party instead of buyer party [POACC-377].
+* Changes in the documentation of Despatch Advice transaction 3.1. rule T16-R009 and T16-R010 is now reffering to seller party and originator customer party instead of buyer party [POACC-377].
 
-*Clarification on the syntax documentation of Buyer reference identifier (ReceiverParty/Contact/ID) in Punch Out transaction 3.1 [POACC-363].
+* Clarification on the syntax documentation of Buyer reference identifier (ReceiverParty/Contact/ID) in Punch Out transaction 3.1 [POACC-363].
 
-*Peppol logo updated to new design [POACC-375]
+* Peppol logo updated to new design [POACC-375]
 
-*In Order Agreement BIS. Duplicated headings and intro text 3.3 and 3.3.1 removed. Later sections renumbered accordingly. [POACC-393]
+* In Order Agreement BIS. Duplicated headings and intro text 3.3 and 3.3.1 removed. Later sections renumbered accordingly. [POACC-393]
 
-*Description of calculation of totals in Order Only BIS corrected so that class is shown as cac:AnticipatedMonetaryTotal instead of cac:LegalMonetaryTotal. No affect on functionality. [POACC-397]
+* Description of calculation of totals in Order Only BIS corrected so that class is shown as cac:AnticipatedMonetaryTotal instead of cac:LegalMonetaryTotal. No affect on functionality. [POACC-397]
+
+* Order Agreement, added to description for Previous order Identifier that it is an optional business term but is a required element in the UBL syntax so if no previous order identifier is available use NA. [POACC-361]
 
 
 == Changes to syntax
@@ -24,6 +26,8 @@ Release date:: 2021-05-03
 * An editorial change has been made in the description of the element Order/CustomerReference in the Order Transaction. Previous wording "Your reference" is changed to "Buyer reference" aligning the description with the business term used in the Invoice. [POACC-364]
 
 * Despatch Advice transcation, business term DespatchAddress/ID given description and tir id [POACC-368]
+
+* Missing tir id for cac:TaxScheme/cbc:ID added to OrderAgreement, PunchOut and Catalogue [POACC-373)
 
 == Changes to code lists and validation artefacts
 
