@@ -704,7 +704,8 @@
 						<Element>
 							<Term>cbc:ID</Term>
 							<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
-							<Value type="EXAMPLE">VAT or GST</Value>
+						<Reference type="BUSINESS_TERM">tir77-p004</Reference>
+						<Value type="EXAMPLE">VAT or GST</Value>
 						</Element>
 					</Element>
 				</Element>
