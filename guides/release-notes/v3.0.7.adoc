@@ -23,6 +23,8 @@ Release date:: 2021-05-03
 
 * An editorial change has been made in the description of the element Order/CustomerReference in the Order Transaction. Previous wording "Your reference" is changed to "Buyer reference" aligning the description with the business term used in the Invoice. [POACC-364]
 
+* Despatch Advice transcation, business term DespatchAddress/ID given description and tir id [POACC-368]
+
 == Changes to code lists and validation artefacts
 
 *ICD code list details edited to remove contact information [POACC-388]
