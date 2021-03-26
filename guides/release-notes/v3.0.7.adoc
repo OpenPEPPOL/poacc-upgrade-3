@@ -19,6 +19,8 @@ Release date:: 2021-05-03
 
 * Update of links to Use Case examples [POACC-383]
 
+* Catalogue BIS, both with and without response, the desciption for quantities and units in section 6.8 edited by adding tir numbers to the examples and to the business terms and the description of the business terms aligned with their desciption in the catalogue transaction data model. [POACC-374]
+
 
 == Changes to syntax
 * An element which is mandatory in UBL was missing in the syntax description for the Order Transaction. The element (cac:Shipment/cbc:ID) is now added and with a fixed value "NA". A validation rule is also included which verifies that that the charactar NA are used when providing the element. The change was considered a bug-fix as the previous documentation would result in invalid UBL instances. [POACC-389 and POACC-380]
