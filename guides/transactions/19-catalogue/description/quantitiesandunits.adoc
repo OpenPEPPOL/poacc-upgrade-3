@@ -29,7 +29,7 @@ image:images/image7.png[image,width=146,height=127]
 ||||
 |*Consumable unit quantity* (tir19-036) |1 |6 |108
 ||||
-|*ItemNetQuantity* (tir19-091) |250 |1500 |27000
+|*ItemNetQuantity* (tir19-061) |250 |1500 |27000
 |*-Unit* |MLT |MLT |MLT
 ||||
 |*MinimumOrderQuantity* (tir19-038) |1 |1 |1
@@ -79,12 +79,12 @@ Following table shows the definition of the business terms shown in the example 
 |tir19-035|The unit in which the item described in this catalogue line can be ordered. The same item can be described in more than one catalogue line with different orderble units. E.g. catalogue line 1 describes item X that can be ordered in boxes at a given price. Line 2 may describe the same item X as orderable in pallets where the price is lower.|/cac:CatalogueLine/cbc:OrderableUnit
 |tir19-102|The packing level of the catalogue line.| cac:CatalogueLine/cbc:PackLevelCode
 |tir19-066|The number of packed units that are in the orderable unit. E.g. if the orderable unit is a pallet that contains 30 boxes then the packed units are BOX and the packed quantity is 30.|/cac:CatalogueLine/cac:Item/cbc:PackQuantity
-|attribute|The prepacking the article is available in inside the orderable unit (next lower level packing), and which contains the number of unit described in PackSizeNumeric. Unit desciption to PackQuantity. The value shoud be a valid UOM code like XCS for case.|/cac:CatalogueLine/cac:Item/cbc:PackQuantity/@unitCode
+|UOM|The prepacking the article is available in inside the orderable unit (next lower level packing), and which contains the number of unit described in PackSizeNumeric. Unit desciption to PackQuantity. The value shoud be a valid UOM code like XCS for case.|/cac:CatalogueLine/cac:Item/cbc:PackQuantity/@unitCode
 |tir19-036|Specifies the number of consumable units that are in each orderable unit.|/cac:CatalogueLine/cac:Item/cbc:PackSizeNumeric 
 |tir19-061|The net quantity of the item that is contained in each consumable unit, excluding any packaging materials.|/cac:CatalogueLine/cbc:ContentUnitQuantity 
-|attribute|The unit of measure that applies to the item net quantity|cac:CatalogueLine cbc:ContentUnitQuantity @unitCode
+|UOM|The unit of measure that applies to the item net quantity|cac:CatalogueLine cbc:ContentUnitQuantity @unitCode
 |tir19-038|The minimum number of orderable units that can be ordered according to details provided in the catalogue line, such as price.|/cac:CatalogueLine/cbc:MinimumOrderQuantity 
-|attribute|The unit of measure that applies to the minimum order quantity|/cac:CatalogueLine/cbc:MinimumOrderQuantity/@unitCode
+|UOM|The unit of measure that applies to the minimum order quantity|/cac:CatalogueLine/cbc:MinimumOrderQuantity/@unitCode
 |tir19-045|The sellers identifier for the related item.|cac:CatalogueLine/cac:ComponentRelatedItem/cbc:ID
 |tir19-046|The quantity that applies to the relationship.|cac:CatalogueLine/cac:ComponentRelatedItem/cbc:Quantity
 
