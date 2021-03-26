@@ -21,15 +21,20 @@ image:images/image7.png[image,width=146,height=127]
 |*Supplier Item identifier* (tir19-091) |1111 |111 |11
 |*Item Name* (tir19-078) |Shampoo 250 ml |6x250 ml Shampoo |Shampoo
 |*Orderable unit* (tir19-035) |EA |CS |PF
-^|*Packaging level* (tir19-102) |CU |TU |DU
+| | | |
+|*Packaging level* (tir19-102) |CU |TU |DU
 |*Packed units* (tir19-0??) |  |EA |CS
 |*Packed quantity* (tir19-066) |  |6 |18
+||||
 |*Consumable unit* (tir19-0??) |EA |EA |EA
 |*Consumable unit quantity* (tir19-036) |1 |6 |108
+||||
 |*ItemNetQuantity* (tir19-091) |250 |1500 |27000
 |*-Unit* |MLT |MLT |MLT
+||||
 |*MinimumOrderQuantity* (tir19-038) |1 |1 |1
 |*-Unit* |EA |EA |EA
+||||
 |*Component related item Identifier* (tir19-045) |  |1111 |111
 |*Component related item quantity* (tir19-046) |  |6 |18
 |====
@@ -58,19 +63,17 @@ image:images/image7.png[image,width=146,height=127]
 |*Component related item quantity* |  |5 |18
 |====
 
-[cols=",",options="header",]
+[cols=",,",options="header",]
 |====
-|Id|*Element /xPath* |*Description*
-|tir19-000|/cac:CatalogueLine/cbc:OrderableUnit |Unit code for the line item.
-Mandatory if the item is orderable.
-Code according to Code list
-|tir19-000|/cac:CatalogueLine/cbc:ContentUnitQuantity |Quantity in consumable unit E.g. millilitre in bottle of shampoo.
-|tir19-000|/cac:CatalogueLine/cbc:OrderQuantityIncrementNumeric |Possible limitation to the number of articles that can be ordered.
+|Id|*Description* |*Element /xPath*
+|tir19-035|Unit code for the line item. Mandatory if the item is orderable. Code according to Code list.|/cac:CatalogueLine/cbc:OrderableUnit
+|tir19-061|/cac:CatalogueLine/cbc:ContentUnitQuantity |Quantity in consumable unit E.g. millilitre in bottle of shampoo.
+|tir19-037|/cac:CatalogueLine/cbc:OrderQuantityIncrementNumeric |Possible limitation to the number of articles that can be ordered.
 If the Quantity increment is 6 the article must be ordered in a quantity of 6, 12, 18 etc.
-|tir19-000|/cac:CatalogueLine/cbc:MinimumOrderQuantity |The smallest number of items that can be ordered (most often 1).
-|tir19-000|/cac:CatalogueLine/cbc:MaximumOrderQuantity |The largest number of items that can be ordered (most often not used).
-|tir19-000|/cac:CatalogueLine/cac:ItemComparison/cbc:Quantity |Quantity related to Price comparison.
-|tir19-000|/cac:CatalogueLine/cac:Item/cbc:PackQuantity |Number of items on next lower level, e.g. number of Consumer units in a Trading unit.
-|tir19-000|/cac:CatalogueLine/cac:Item/cbc:PackSizeNumeric |Number of Consumer units.
+|tir19-038|/cac:CatalogueLine/cbc:MinimumOrderQuantity |The smallest number of items that can be ordered (most often 1).
+|tir19-039|/cac:CatalogueLine/cbc:MaximumOrderQuantity |The largest number of items that can be ordered (most often not used).
+|tir19-044|/cac:CatalogueLine/cac:ItemComparison/cbc:Quantity |Quantity related to Price comparison.
+|tir19-066|/cac:CatalogueLine/cac:Item/cbc:PackQuantity |Number of items on next lower level, e.g. number of Consumer units in a Trading unit.
+|tir19-036|/cac:CatalogueLine/cac:Item/cbc:PackSizeNumeric |Number of Consumer units.
 E.g. number of bottles on a Pallet.
 |====
