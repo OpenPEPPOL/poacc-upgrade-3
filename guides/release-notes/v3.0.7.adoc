@@ -23,9 +23,9 @@ Release date:: 2021-05-03
 
 
 == Changes to syntax
-* An element which is mandatory in UBL was missing in the syntax description for the Order Transaction. The element (cac:Shipment/cbc:ID) is now added and with a fixed value "NA". The change was considered a bug-fix as the previous documentation would result in invalid UBL instances. [POACC-389 and POACC-380]
+* Order Transaction - an element which is mandatory in UBL was missing in the syntax description. The element (cac:Shipment/cbc:ID) is now added and with a fixed value "NA". The change was considered a bug-fix as the previous documentation would result in invalid UBL instances. [POACC-389 and POACC-380]
 
-* The XML Elements for DeliveryParty Contact was incorrectly located under the DeliveryParty. The Contact element has been located correctly according to the UBL-schema.  The change was considered a bug-fix as the previous documentation would result in invalid UBL instances. [POACC-379]
+* Order Transaction - the XML Elements for DeliveryParty Contact was incorrectly located under the DeliveryParty. The Contact element has been located correctly according to the UBL-schema.  The change was considered a bug-fix as the previous documentation would result in invalid UBL instances. [POACC-379]
 
 * An editorial change has been made in the description of the element Order/CustomerReference in the Order Transaction. Previous wording "Your reference" is changed to "Buyer reference" aligning the description with the business term used in the Invoice. [POACC-364]
 
