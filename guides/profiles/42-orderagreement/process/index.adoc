@@ -17,12 +17,6 @@ The order agreement process flow can be described as follows:
 
 An Order Agreement may refer to a framework agreement for its terms and conditions; otherwise the Buyer’s terms and conditions apply.
 
-== Business process Diagram
-
-=== Legend for BPMN diagrams
-
-The diagrams are expressed in the BPMN notation. The diagram below serves as an explanation for the diagrams used in the process descriptions.
-
 :leveloffset: +1
 
 include::../../../shared/bpmn/bpmn-legend.adoc[]

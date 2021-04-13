@@ -6,13 +6,7 @@
 					test="starts-with(normalize-space(.), 'urn:fdc:peppol.eu:poacc:trns:despatch_advice:3')"
 					flag="fatal">Specification identifier SHALL start with the value 'urn:fdc:peppol.eu:poacc:trns:despatch_advice:3'.</assert>
 	</rule>
-	
-	<rule context="ubl:DespatchAdvice">
-		<assert id="PEPPOL-T16-R002"
-				test="(cac:OrderReference/cbc:ID)"
-				flag="warning">A despatch advice SHOULD have an order identifier</assert>
-	</rule>
-	
+		
 	<rule context="cac:BuyerCustomerParty">
 		<assert id="PEPPOL-T16-R008"
 			test="(cac:Party/cac:PartyName/cbc:Name) or (cac:Party/cac:PartyIdentification/cbc:ID)"
@@ -22,12 +16,12 @@
 	<rule context="cac:SellerSupplierParty">
 		<assert id="PEPPOL-T16-R009"
 			test="(cac:Party/cac:PartyName/cbc:Name) or (cac:Party/cac:PartyIdentification/cbc:ID)"
-			flag="fatal">A despatch advice buyer party SHALL contain the name or an identifier</assert>
+			flag="fatal">A despatch advice seller party SHALL contain the name or an identifier</assert>
 	</rule>
 	<rule context="cac:OriginatorCustomerParty">
 		<assert id="PEPPOL-T16-R010"
 			test="(cac:Party/cac:PartyName/cbc:Name) or (cac:Party/cac:PartyIdentification/cbc:ID)"
-			flag="fatal">A despatch advice buyer party SHALL contain the name or an identifier</assert>
+			flag="fatal">A despatch advice originator customer party SHALL contain the name or an identifier</assert>
 	</rule>
 	
 	<rule context="cac:DespatchLine">

@@ -1683,6 +1683,7 @@
 						<Element>
 							<Term>cbc:ID</Term>
 							<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
+						<Reference type="BUSINESS_TERM">tir19-p048</Reference>
 							<Value type="EXAMPLE">VAT or GST</Value>
 						</Element>
 					</Element>
