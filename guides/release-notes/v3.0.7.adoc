@@ -34,6 +34,10 @@ Release date:: 2021-05-03
 
 == Changes to code lists and validation artefacts
 
+* Edits to status code for Invoice Response to clarify additions made in last release [POACC-370]
+
+* Incorrect special characters removed from IT and SE country rules [POACC-398]
+
 * ICD code list details edited to remove contact information [POACC-388]
 
 * Code lists updated to align with EN 16931 and BIS Billing [POACC-407]
