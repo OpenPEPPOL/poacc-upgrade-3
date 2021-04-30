@@ -914,7 +914,8 @@
 						<Element cardinality="0..1">
 							<Term>cbc:ID</Term>
 							<Name>Identifier</Name>
-						</Element>
+							<Description>An identifier for the location to which the goods and services are despatched.</Description>
+							<Reference type="BUSINESS_TERM">tir16-p046</Reference></Element>
 						<Element cardinality="0..1">
 							<Term>cbc:StreetName</Term>
 							<Name>Address line 1</Name>

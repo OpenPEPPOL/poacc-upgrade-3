@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
-    <Title>Recommandation 20, including Recommondation 21 codes - prefixed with X (UN/ECE)</Title>
+    <Title>Recommendation 20, including Recommendation 21 codes - prefixed with X (UN/ECE)</Title>
     <Identifier>UNECERec20</Identifier>
     <Version>Revision 11e</Version>
     <Agency>UN/ECE</Agency>
 
+	<!-- START of Recommendation 20 -->
     <Code>
         <Id>10</Id>
         <Name>group</Name>
@@ -2384,6 +2385,14 @@
             water content of the product.</Description>
     </Code>
     <Code>
+       <Id>DBM</Id>
+        <Name>Decibel-milliwatts</Name>
+    </Code>
+    <Code>
+       <Id>DBW</Id>
+        <Name>Decibel watt</Name>
+    </Code>
+    <Code>
         <Id>DD</Id>
         <Name>degree [unit of angle]</Name>
         <Description/>
@@ -3558,6 +3567,10 @@
             small flattish fragment).</Description>
     </Code>
     <Code>
+       <Id>FNU</Id>
+        <Name>Formazin nephelometric unit</Name>
+    </Code>	
+    <Code>
         <Id>FOT</Id>
         <Name>foot</Name>
         <Description/>
@@ -4694,6 +4707,10 @@
         <Description>A unit of length, typically for yarn.</Description>
     </Code>
     <Code>
+       <Id>HAD</Id>
+        <Name>Piece Day</Name>
+    </Code>
+    <Code>
         <Id>HBA</Id>
         <Name>hectobar</Name>
         <Description/>
@@ -4755,6 +4772,10 @@
         <Description/>
     </Code>
     <Code>
+       <Id>HMO</Id>
+        <Name>Piece Month</Name>
+    </Code>
+    <Code>
         <Id>HMQ</Id>
         <Name>million cubic metre</Name>
         <Description>A unit of volume equal to one million cubic metres.</Description>
@@ -4778,7 +4799,11 @@
         <Id>HUR</Id>
         <Name>hour</Name>
         <Description/>
+     <Code>
+       <Id>HWE</Id>
+        <Name>Piece Week</Name>
     </Code>
+	</Code>
     <Code>
         <Id>IA</Id>
         <Name>inch pound (pound inch)</Name>
@@ -5971,6 +5996,10 @@
         <Description/>
     </Code>
     <Code>
+       <Id>KWY</Id>
+        <Name>kilowatt year</Name>
+    </Code>
+    <Code>
         <Id>KX</Id>
         <Name>millilitre per kilogram</Name>
         <Description/>
@@ -7143,8 +7172,19 @@
     <Code>
         <Id>MIU</Id>
         <Name>million international unit</Name>
-        <Description>A unit of count defining the number of international units in multiples of
-            10⁶.</Description>
+        <Description>A unit of count defining the number of international units in multiples of 10.</Description>
+    </Code>
+    <Code>
+       <Id>MKD</Id>
+        <Name>Square Metre Day</Name>
+    </Code>
+    <Code>
+       <Id>MKM</Id>
+        <Name>Square Metre Month</Name>
+    </Code>
+    <Code>
+       <Id>MKW</Id>
+        <Name>Square Metre Week</Name>
     </Code>
     <Code>
         <Id>MLD</Id>
@@ -7178,6 +7218,10 @@
             water content of the product.</Description>
     </Code>
     <Code>
+       <Id>MNJ</Id>
+        <Name>Mega Joule per Normalised cubic Metre</Name>
+    </Code>
+    <Code>
         <Id>MON</Id>
         <Name>month</Name>
         <Description>Unit of time equal to 1/12 of a year of 365,25 days.</Description>
@@ -7188,14 +7232,38 @@
         <Description/>
     </Code>
     <Code>
+       <Id>MQD</Id>
+        <Name>Cubic Metre Day</Name>
+    </Code>
+    <Code>
         <Id>MQH</Id>
         <Name>cubic metre per hour</Name>
         <Description/>
     </Code>
     <Code>
+       <Id>MQM</Id>
+        <Name>Cubic Metre Month</Name>
+    </Code>
+    <Code>
         <Id>MQS</Id>
         <Name>cubic metre per second</Name>
         <Description/>
+    </Code>
+    <Code>
+       <Id>MQW</Id>
+        <Name>Cubic Metre Week</Name>
+    </Code>
+    <Code>
+       <Id>MRD</Id>
+        <Name>Metre Day</Name>
+    </Code>
+    <Code>
+       <Id>MRM</Id>
+        <Name>Metre Month</Name>
+    </Code>
+    <Code>
+       <Id>MRW</Id>
+        <Name>Metre Week</Name>
     </Code>
     <Code>
         <Id>MSK</Id>
@@ -7221,6 +7289,10 @@
         <Id>MTS</Id>
         <Name>metre per second</Name>
         <Description/>
+    </Code>
+    <Code>
+       <Id>MTZ</Id>
+        <Name>milihertz</Name>
     </Code>
     <Code>
         <Id>MVA</Id>
@@ -7875,6 +7947,10 @@
             Convention on tonnage measurement of Ships.</Description>
     </Code>
     <Code>
+       <Id>NTU</Id>
+        <Name>Nephelometric turbidity unit</Name>
+    </Code>
+	<Code>
         <Id>NU</Id>
         <Name>newton metre</Name>
         <Description/>
@@ -9199,6 +9275,10 @@
         <Description>A unit of count defining the number of hanging containers.</Description>
     </Code>
     <Code>
+       <Id>Z9</Id>
+        <Name>nanomole</Name>
+    </Code>
+    <Code>
         <Id>ZP</Id>
         <Name>page</Name>
         <Description>A unit of count defining the number of pages.</Description>
@@ -9209,7 +9289,9 @@
         <Description>A unit of measure as agreed in common between two or more
             parties.</Description>
     </Code>
-
+	<!-- END of Recommendation 20 -->
+	
+	<!-- START of Recommendation 21, prefixed with X -->
     <Code>
         <Id>X1A</Id>
         <Name>Drum, steel</Name>
@@ -10062,6 +10144,42 @@
         <Name>Net, tube, textile</Name>
     </Code>
     <Code>
+       <Id>XO1</Id>
+        <Name>Two sided cage on wheels with fixing strap</Name>
+    </Code>
+    <Code>
+       <Id>XO2</Id>
+        <Name>Trolley</Name>
+    </Code>
+    <Code>
+       <Id>XO3</Id>
+        <Name>Oneway pallet ISO 0 - 1/2 EURO Pallet</Name>
+    </Code>
+    <Code>
+       <Id>XO4</Id>
+        <Name>Oneway pallet ISO 1 - 1/1 EURO Pallet</Name>
+    </Code>
+    <Code>
+       <Id>XO5</Id>
+        <Name>Oneway pallet ISO 2 - 2/1 EURO Pallet</Name>
+    </Code>
+    <Code>
+       <Id>XO6</Id>
+        <Name>Pallet with exceptional dimensions</Name>
+    </Code>
+    <Code>
+       <Id>XO7</Id>
+        <Name>Wooden pallet  40 cm x 80 cm</Name>
+    </Code>
+    <Code>
+       <Id>XO8</Id>
+        <Name>Plastic pallet SRS 60 cm x 80 cm</Name>
+    </Code>
+    <Code>
+       <Id>XO9</Id>
+        <Name>Plastic pallet SRS 80 cm x 120 cm</Name>
+    </Code>
+    <Code>
         <Id>XOA</Id>
         <Name>Pallet, CHEP 40 cm x 60 cm</Name>
         <Description>Commonwealth Handling Equipment Pool (CHEP) standard pallet of dimensions 40
@@ -10098,10 +10216,62 @@
             weight.</Description>
     </Code>
     <Code>
+       <Id>XOG</Id>
+        <Name>Pallet ISO 0 - 1/2 EURO Pallet</Name>
+    </Code>
+    <Code>
+       <Id>XOH</Id>
+        <Name>Pallet ISO 1 - 1/1 EURO Pallet</Name>
+    </Code>
+    <Code>
+       <Id>XOI</Id>
+        <Name>Pallet ISO 2 – 2/1 EURO Pallet</Name>
+    </Code>
+    <Code>
         <Id>XOK</Id>
         <Name>Block</Name>
         <Description>A solid piece of a hard substance, such as granite, having one or more flat
             sides.</Description>
+    </Code>
+    <Code>
+       <Id>XOJ</Id>
+        <Name>1/4 EURO Pallet</Name>
+    </Code>
+    <Code>
+       <Id>XOL</Id>
+        <Name>1/8 EURO Pallet</Name>
+    </Code>
+    <Code>
+       <Id>XOM</Id>
+        <Name>Synthetic pallet ISO 1</Name>
+    </Code>
+    <Code>
+       <Id>XON</Id>
+        <Name>Synthetic pallet ISO 2</Name>
+    </Code>
+    <Code>
+       <Id>XOP</Id>
+        <Name>Wholesaler pallet</Name>
+    </Code>
+    <Code>
+       <Id>XOQ</Id>
+        <Name>Pallet 80 X 100 cm</Name>
+    </Code>
+    <Code>
+       <Id>XOR</Id>
+        <Name>Pallet 60 X 100 cm</Name>
+    </Code>
+    <Code>
+       <Id>XOS</Id>
+        <Name>Oneway pallet</Name>
+    </Code>
+    <Code>
+       <Id>XOV</Id>
+        <Name>Returnable pallet</Name>
+    </Code>
+    <Code>
+       <Id>XOW</Id>
+        <Name>Large bag, pallet sized</Name>
     </Code>
     <Code>
         <Id>XOT</Id>
@@ -10116,9 +10286,33 @@
             otherwise specified as transport equipment.</Description>
     </Code>
     <Code>
+       <Id>XOX</Id>
+        <Name>A wheeled pallet with raised rim (81 x 67 x 135)</Name>
+    </Code>
+    <Code>
+       <Id>XOY</Id>
+        <Name>A Wheeled pallet with raised rim (81 x 72 x 135)</Name>
+    </Code>
+    <Code>
+       <Id>XOZ</Id>
+        <Name>Wheeled pallet with raised rim ( 81 x 60 x 16)</Name>
+    </Code>
+    <Code>
+       <Id>XP1</Id>
+        <Name>CHEP pallet 60 cm x 80 cm </Name>
+    </Code>
+    <Code>
         <Id>XP2</Id>
         <Name>Pan</Name>
         <Description>A shallow, wide, open container, usually of metal.</Description>
+    </Code>
+    <Code>
+       <Id>XP3</Id>
+        <Name>LPR pallet 60 cm x 80 cm</Name>
+    </Code>
+    <Code>
+       <Id>XP4</Id>
+        <Name>LPR pallet 80 cm x 120 cm</Name>
     </Code>
     <Code>
         <Id>XPA</Id>
@@ -10396,6 +10590,10 @@
         <Name>Shrinkwrapped</Name>
         <Description>Goods retained in a transparent plastic film that has been wrapped around and
             then shrunk tightly on to the goods.</Description>
+    </Code>
+    <Code>
+       <Id>XSX</Id>
+        <Name>Set</Name>
     </Code>
     <Code>
         <Id>XSY</Id>
@@ -10859,7 +11057,7 @@
         <Name>Intermediate bulk container, reconstituted wood</Name>
     </Code>
 
-
+	<!-- END of Recommendation 21 -->
 
 
 </CodeList>

@@ -99,7 +99,7 @@
 				<Name>Previous order agreement identifier</Name>
 				<Description>A reference to a previous identifier for an order agreement. Used to
                     indicatete that this agreement is a change to a previous
-                    agreement.</Description>
+                    agreement. This is an optional business term but is a required element in the UBL syntax so if no previous order identifier is available use NA.</Description>
 				<DataType>Document reference</DataType>
 				<Reference type="BUSINESS_TERM">tir110-042</Reference>
 				<Value type="EXAMPLE">O-1234</Value>
@@ -978,7 +978,8 @@
 						<Term>cbc:ID</Term>
 						<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
 						<DataType>Identifier</DataType>
-						<Value type="EXAMPLE">VAT or GST</Value>
+							<Reference type="BUSINESS_TERM">tir110-p007</Reference>
+							<Value type="EXAMPLE">VAT or GST</Value>
 					</Element>
 				</Element>
 			</Element>
@@ -1082,7 +1083,8 @@
 							<Term>cbc:ID</Term>
 							<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
 							<DataType>Identifier</DataType>
-							<Value type="EXAMPLE">VAT or GST</Value>
+						<Reference type="BUSINESS_TERM">tir110-p005</Reference>
+						<Value type="EXAMPLE">VAT or GST</Value>
 						</Element>
 					</Element>
 				</Element>
@@ -1431,7 +1433,7 @@
 							<Description>The gross price of the item before subtracting discounts.
 								E.g. list price.</Description>
 							<DataType>Price amount</DataType>
-							<Reference type="BUSINESS_TERM">tir116-p003</Reference>
+							<Reference type="BUSINESS_TERM">tir110-p003</Reference>
 							<Reference type="RULE">PEPPOL-T110-R004</Reference>
 							<Attribute>
 								<Term>currencyID</Term>
@@ -1654,7 +1656,8 @@
 								<Term>cbc:ID</Term>
 								<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
 								<DataType>Identifier</DataType>
-								<Value type="EXAMPLE">VAT or GST</Value>
+							<Reference type="BUSINESS_TERM">tir110-p006</Reference>
+							<Value type="EXAMPLE">VAT or GST</Value>
 							</Element>
 						</Element>
 					</Element>

@@ -67,6 +67,11 @@
         <Name>Finance incorrect</Name>
         <Description>Finance terms not according to previous expectation.</Description>
     </Code>
+	<Code>
+        <Id>PPD</Id>
+        <Name>Partially Paid</Name>
+        <Description>Payment is partially but not fully paid.</Description>
+    </Code>
 
     <Code>
         <Id>OTH</Id>
