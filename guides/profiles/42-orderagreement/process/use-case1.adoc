@@ -1,5 +1,5 @@
 [[use-case-1-web-store-used-for-booking-tickets]]
-== Use case 1 – Web store used for booking tickets
+= Use case 1 – Web store used for booking tickets
 
 This use case describes the process where a customer/buyer orders tickets.
 

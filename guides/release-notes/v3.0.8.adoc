@@ -1,0 +1,13 @@
+= Version 3.0.8
+[horizontal]
+Release date:: 2021-11-15
+
+== Changes to BIS document
+
+* BIS Order Agreement - editorial changes in the sub-numbering of a chapters for use cases. [POACC-401]
+
+== Changes to syntax
+
+* Catalogue transaction - Clarified description of the business term Cataloge identifier. Changed wording "positive referencing" to uniquely referencing [POACC-406].
+
+== Changes to code lists and validation artefacts
