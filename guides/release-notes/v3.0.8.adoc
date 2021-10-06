@@ -6,6 +6,7 @@ Release date:: 2021-11-15
 
 * BIS Order Agreement - editorial changes in the sub-numbering of a chapters for use cases. [POACC-401]
 * BIS Order Only - editorial update to section 6.10 regarding Tax total [POACC-413]
+* BIS Order Only, BIS Ordering, BIS Order Agreement - Editorial update to the description of tax usage on line level [POACC-440][POACC-441][POACC-442] 
 
 == Changes to syntax
 
