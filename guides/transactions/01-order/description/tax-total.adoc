@@ -1,7 +1,7 @@
 [[tax-total]]
 = Tax total
 
-It is possible to state the tax amount of the order, on the header level (tax total) and also on line level.
+It is possible to state the tax information of the order, on the header level (tax total) and also on line level (taxCategory and rate).
 
 .Example of tax total (header level)
 [source, xml, indent=0]
