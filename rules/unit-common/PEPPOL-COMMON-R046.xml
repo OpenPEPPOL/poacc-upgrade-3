@@ -14,7 +14,7 @@
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
 			<cac:BuyerCustomerParty>
 				<cac:Party>
-					<cbc:EndpointID schemeID="9907">0739484052</cbc:EndpointID>
+					<cbc:EndpointID schemeID="9907">97735020584</cbc:EndpointID>
 				</cac:Party>
 			</cac:BuyerCustomerParty>
 		</Order>

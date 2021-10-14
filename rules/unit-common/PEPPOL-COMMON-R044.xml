@@ -16,7 +16,7 @@
 				<cac:Party>
 					<cac:PartyLegalEntity>
 						<cbc:RegistrationName>Duvel</cbc:RegistrationName>
-						<cbc:CompanyID schemeID="0201">0739484052</cbc:CompanyID>
+						<cbc:CompanyID schemeID="0201">F7VRDL</cbc:CompanyID>
 					</cac:PartyLegalEntity>
 				</cac:Party>
 			</cac:BuyerCustomerParty>
@@ -32,31 +32,13 @@
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
 			<cac:BuyerCustomerParty>
 				<cac:Party>
-					<cbc:EndpointID schemeID="0201">0739484052</cbc:EndpointID>
+					<cbc:EndpointID schemeID="0201">F7VRDL</cbc:EndpointID>
 				</cac:Party>
 			</cac:BuyerCustomerParty>
 		</Order>
 	</test>
 	
-    
-    <test>
-		<assert>
-			<success>PEPPOL-COMMON-R044</success>
-		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
-			<cac:BuyerCustomerParty>
-				<cac:Party>
-					<cac:PartyLegalEntity>
-						<cbc:RegistrationName>Duvel</cbc:RegistrationName>
-						<cbc:CompanyID schemeID="0201">0739484052</cbc:CompanyID>
-					</cac:PartyLegalEntity>
-				</cac:Party>
-			</cac:BuyerCustomerParty>
-		</Order>
-	</test>
-    
+        
    
     <test>
 		<assert>
