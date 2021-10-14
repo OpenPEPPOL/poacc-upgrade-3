@@ -313,6 +313,11 @@
                         that appears in the invoice itself.</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">tir111-020</Reference>
+                    <Reference type="Rule">PEPPOL-T111-R001</Reference>
+                    <Reference type="Rule">PEPPOL-T111-R002</Reference>
+                    <Reference type="Rule">PEPPOL-T111-R003</Reference>
+                    <Reference type="Rule">PEPPOL-T111-R004</Reference>
+                    <Reference type="Rule">PEPPOL-T111-R005</Reference>
                     <Value type="EXAMPLE">inv-99876</Value>
                 </Element>
 
