@@ -18,6 +18,7 @@
     <xi:include href="parts/function/gln.xml"/>
     <xi:include href="parts/function/slack.xml"/>
     <xi:include href="parts/function/mod11.xml"/>
+	<xi:include href="parts/function/checkCodiceIPA.xml"/>
 	<xi:include href="parts/function/addPIVA.xml"/>
 	<xi:include href="parts/function/checkCF.xml"/>
 	<xi:include href="parts/function/checkCF16.xml"/>
