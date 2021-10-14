@@ -858,6 +858,42 @@
         <Name>Net, tube, textile</Name>
     </Code>
     <Code>
+        <Id>O1</Id>
+        <Name>Two sided cage on wheels with fixing strap</Name>
+    </Code>
+    <Code>
+        <Id>O2</Id>
+        <Name>Trolley</Name>
+    </Code>
+    <Code>
+        <Id>O3</Id>
+        <Name>Oneway pallet ISO 0 - 1/2 EURO Pallet</Name>
+    </Code>
+    <Code>
+        <Id>O4</Id>
+        <Name>Oneway pallet ISO 1 - 1/1 EURO Pallet</Name>
+    </Code>
+    <Code>
+        <Id>O5</Id>
+        <Name>Oneway pallet ISO 2 - 2/1 EURO Pallet</Name>
+    </Code>
+    <Code>
+        <Id>O6</Id>
+        <Name>Pallet with exceptional dimensions</Name>
+    </Code>
+    <Code>
+        <Id>O7</Id>
+        <Name>Wooden pallet  40 cm x 80 cm</Name>
+    </Code>
+    <Code>
+        <Id>O8</Id>
+        <Name>Plastic pallet SRS 60 cm x 80 cm</Name>
+    </Code>
+    <Code>
+        <Id>O9</Id>
+        <Name>Plastic pallet SRS 80 cm x 120 cm</Name>
+    </Code>
+    <Code>
         <Id>OA</Id>
         <Name>Pallet, CHEP 40 cm x 60 cm</Name>
         <Description>Commonwealth Handling Equipment Pool (CHEP) standard pallet of dimensions 40
@@ -893,11 +929,55 @@
         <Description>A pallet equivalent shipping platform of unknown dimensions or unknown
             weight.</Description>
     </Code>
+     <Code>
+        <Id>OG</Id>
+        <Name>Pallet ISO 0 - 1/2 EURO Pallet</Name>
+    </Code>
     <Code>
+        <Id>OH</Id>
+        <Name>Pallet ISO 1 - 1/1 EURO Pallet</Name>
+    </Code>
+    <Code>
+        <Id>OI</Id>
+        <Name>Pallet ISO 2 – 2/1 EURO Pallet</Name>
+    </Code>
+    <Code>
+        <Id>OJ</Id>
+        <Name>1/4 EURO Pallet</Name>
+    </Code>
+	<Code>
         <Id>OK</Id>
         <Name>Block</Name>
         <Description>A solid piece of a hard substance, such as granite, having one or more flat
             sides.</Description>
+    </Code>
+    <Code>
+        <Id>OL</Id>
+        <Name>1/8 EURO Pallet</Name>
+    </Code>
+    <Code>
+        <Id>OM</Id>
+        <Name>Synthetic pallet ISO 1</Name>
+    </Code>
+    <Code>
+        <Id>ON</Id>
+        <Name>Synthetic pallet ISO 2</Name>
+    </Code>
+    <Code>
+        <Id>OP</Id>
+        <Name>Wholesaler pallet</Name>
+    </Code>
+    <Code>
+        <Id>OQ</Id>
+        <Name>Pallet 80 X 100 cm</Name>
+    </Code>
+    <Code>
+        <Id>OR</Id>
+        <Name>Pallet 60 X 100 cm</Name>
+    </Code>
+    <Code>
+        <Id>OS</Id>
+        <Name>Oneway pallet</Name>
     </Code>
     <Code>
         <Id>OT</Id>
@@ -912,9 +992,41 @@
             otherwise specified as transport equipment.</Description>
     </Code>
     <Code>
+        <Id>OV</Id>
+        <Name>Returnable pallet</Name>
+    </Code>
+    <Code>
+        <Id>OW</Id>
+        <Name>Large bag, pallet sized</Name>
+    </Code>
+    <Code>
+        <Id>OX</Id>
+        <Name>A wheeled pallet with raised rim (81 x 67 x 135)</Name>
+    </Code>
+    <Code>
+        <Id>OY</Id>
+        <Name>A Wheeled pallet with raised rim (81 x 72 x 135)</Name>
+    </Code>
+    <Code>
+        <Id>OZ</Id>
+        <Name>Wheeled pallet with raised rim ( 81 x 60 x 16)</Name>
+    </Code>
+    <Code>
+        <Id>P1</Id>
+        <Name>CHEP pallet 60 cm x 80 cm </Name>
+    </Code>
+    <Code>
         <Id>P2</Id>
         <Name>Pan</Name>
         <Description>A shallow, wide, open container, usually of metal.</Description>
+    </Code>
+    <Code>
+        <Id>P3</Id>
+        <Name>LPR pallet 60 cm x 80 cm</Name>
+    </Code>
+    <Code>
+        <Id>P4</Id>
+        <Name>LPR pallet 80 cm x 120 cm</Name>
     </Code>
     <Code>
         <Id>PA</Id>
@@ -1192,6 +1304,10 @@
         <Name>Shrinkwrapped</Name>
         <Description>Goods retained in a transparent plastic film that has been wrapped around and
             then shrunk tightly on to the goods.</Description>
+    </Code>
+    <Code>
+        <Id>SX</Id>
+        <Name>Set</Name>
     </Code>
     <Code>
         <Id>SY</Id>
@@ -1657,9 +1773,5 @@
     <Code>
         <Id>ZZ</Id>
         <Name>Mutually defined</Name>
-    </Code>
-    <Code>
-        <Id/>
-        <Name/>
     </Code>
 </CodeList>
