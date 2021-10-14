@@ -12,7 +12,11 @@ Release date:: 2021-11-15
 
 * Catalogue transaction - Clarified description of the business term Cataloge identifier. Changed wording "positive referencing" to uniquely referencing [POACC-406].
 * Order Response - Editorial update to cac:Party for SellerSupplierParty to be mandatory instead of optional [POACC-428]
-* Invoice Response - Removed trailing note left in description of DocumentReference/ID and DocumentReference/issueDate [POACC-419]
+* Invoice Response - Removed trailing note left in description of DocumentReference/ID and DocumentReference/issueDate [POACC-447]
 
 
 == Changes to code lists and validation artefacts
+
+* Added rule (severity warning) for validation of format for Belgian organisation numbers (ICD:0208). Rule is planned to be changed to severity fatal in 2022 spring release. [POACC-408]
+
+* Added rule (severity warning) for validation of format for Italian identifiers (ICD:0201, 0210, 0211 and EAS 9906 and 9907). Rules are planned to be changed to severity fatal in 2022 spring release. [POACC-423]

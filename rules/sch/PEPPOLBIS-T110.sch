@@ -17,7 +17,13 @@
     <xi:include href="parts/function/slack.xml"/>
     <xi:include href="parts/function/cat2str.xml"/>
     <xi:include href="parts/function/mod11.xml"/>
-
+	<xi:include href="parts/function/checkCodiceIPA.xml"/>
+	<xi:include href="parts/function/addPIVA.xml"/>
+	<xi:include href="parts/function/checkCF.xml"/>
+	<xi:include href="parts/function/checkCF16.xml"/>
+	<xi:include href="parts/function/checkPIVA.xml"/>
+	<xi:include href="parts/function/checkPIVAseIT.xml"/>
+	<xi:include href="parts/function/mod97-0208.xml"/>
     <!-- Rules -->
 
     <include href="parts/common/empty-elements.sch"/>
