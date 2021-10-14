@@ -10,6 +10,12 @@
 
   <include href="function/gln.xml"/>
   <include href="function/mod11.xml"/>
+  <include href="function/addPIVA.xml"/>
+  <include href="function/checkCF.xml"/>
+  <include href="function/checkCF16.xml"/>
+  <include href="function/checkPIVA.xml"/>
+  <include href="function/checkPIVAseIT.xml"/>
+  <include href="function/mod97-0208.xml"/>
 
   <include href="common/empty-elements.sch"/>
   <include href="common/rules.sch"/>
