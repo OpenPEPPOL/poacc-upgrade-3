@@ -622,7 +622,7 @@
 						<Description>The official name of the party as registered with the relevant
 							fiscal authority.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir01-044</Reference>
+						<Reference type="BUSINESS_TERM">tir01-p038</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:CompanyID</Term>
@@ -630,7 +630,7 @@
 						<Description>Identifies a company as registered with the company
 							registration scheme.</Description>
 						<DataType>Identifier</DataType>
-						<Reference type="BUSINESS_TERM">tir01-043</Reference>
+						<Reference type="BUSINESS_TERM">tir01-p039</Reference>
 						<Attribute usage="Optional">
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
@@ -651,7 +651,7 @@
 								a Corporate Registration Scheme. The name of a city, town, or
 								village.</Description>
 							<DataType>Text</DataType>
-							<Reference type="BUSINESS_TERM">tir01-045</Reference>
+							<Reference type="BUSINESS_TERM">tir01-p040</Reference>
 						</Element>
 						<Element>
 							<Term>cac:Country</Term>
@@ -665,7 +665,7 @@
 									subdivisions". Codes must be according to the alpha-2
 									representation.</Description>
 								<DataType>Code</DataType>
-								<Reference type="BUSINESS_TERM">tir01-046</Reference>
+								<Reference type="BUSINESS_TERM">tir01-p041</Reference>
 								<Reference type="CODE_LIST">ISO3166</Reference>
 								<Value type="EXAMPLE">NL</Value>
 							</Element>

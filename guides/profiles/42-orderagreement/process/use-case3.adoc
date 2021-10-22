@@ -1,5 +1,5 @@
 [[use-case-3-telephone-and-e-mail-is-used-to-order-items]]
-== Use case 3 – Telephone and e-mail is used to order items
+= Use case 3 – Telephone and e-mail is used to order items
 
 [cols="1h,5",]
 |====

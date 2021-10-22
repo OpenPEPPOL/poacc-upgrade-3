@@ -3,7 +3,7 @@
 
 TAX information on line level is provided in the class `cac:ClassifiedTaxCategory`.
 
-Each line shall have the item TAX information including category code and percentage rate except when the invoice as a whole is not subject to TAX, in which case the percentage shall not be given on line level.
+Each line may have the item TAX information including category code and percentage.
 
 .UBL example of line TAX category, when TAX is VAT
 [source, xml, indent=0]
@@ -11,5 +11,4 @@ Each line shall have the item TAX information including category code and percen
 include::../snippets/snippet-common.xml[tags=vat-line]
 ----
 <1> TAX category according to codelist {vat-codes}
-<2> TAX percentage. For EN must be present unless TAX category code is O (the value "O" means "Out of scope for TAX").
-<3> Value must identify the correct tax type. For example VAT, GST or sales tax.
+<2> Value must identify the correct tax type. For example VAT, GST or sales tax.
