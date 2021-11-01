@@ -122,7 +122,7 @@
 		<Element>
 			<Term>cac:SellerSupplierParty</Term>
 			<Name>Seller information </Name>
-			<Element cardinality="0..1">
+			<Element cardinality="1..1">
 				<Term>cac:Party</Term>
 				<Name>Description of seller</Name>
 				<Element>

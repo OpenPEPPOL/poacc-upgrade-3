@@ -33,9 +33,7 @@
 		<Element>
 			<Term>cbc:ID</Term>
 			<Name>Catalogue identifier</Name>
-			<Description>An catalogue instance must contain an identifier. The identifier enables
-                positive referencing the document instance for various purposes including
-                referencing between transactions that are part of the same process.</Description>
+			<Description>A catalogue instance must contain an identifier which enables the document instance to be uniquely referenced for various purposes including referencing between transactions that are part of the same process.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir19-003</Reference>
 			<Value type="EXAMPLE">Cat-02</Value>
