@@ -14,7 +14,7 @@ IMPORTANT: Changes in code lists are also reflected by changes in the validation
 
 :leveloffset: +1
 
-include::v3.0.9-hotfix.adoc[]
+include::v3.0.9.adoc[]
 
 include::v3.0.8.adoc[]
 
