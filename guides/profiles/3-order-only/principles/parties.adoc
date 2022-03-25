@@ -40,7 +40,7 @@ s|Description
 
 |Consignee +
 `cac:Delivery/cac:DeliveryLocation`	
-|A location to where the seller, or a despatching party on behalf of the seller, delivers the goods.
+|A person or unit to where the seller, or a despatching party on behalf of the seller, delivers the goods.
 
 |Delivery party +
 `cac:Delivery/cac:DeliveryParty`	
