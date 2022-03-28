@@ -11,7 +11,7 @@ Delivery special terms may be used to inform how the the goods or service is del
 * A ticket may be delivered as a pdf in mail - “Mail”.
 * Goods may have been collected at the store – “Customer pick up“
 
-The delivery information is optional in the PEPPOL BIS Order Agreement message.
+The delivery information is optional in the Peppol BIS Order Agreement message.
 
 .Example
 [source, xml, indent=0]

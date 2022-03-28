@@ -35,7 +35,7 @@ Customer/Buyer
 1.  The Buyer have the articles and the contracted prices in the ERP-system and may start ordering
 
 _Please note that the ordering prosess is not part of this BIS.
-For ordering, please see PEPPOL BIS 3A._
+For ordering, please see Peppol BIS 3A._
 
 |*XML example file* |See Annex A for sample Catalogue and catalogue response files illustrating Use Case 5.
 |====

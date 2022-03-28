@@ -1,6 +1,6 @@
 = Quantities and units
 
-Various Quantities and Units can be stated in the PEPPOL BIS Order Agreement. These are both related to the ordering process and the logistics process.
+Various Quantities and Units can be stated in the Peppol BIS Order Agreement. These are both related to the ordering process and the logistics process.
 
 The table below lists quantities and units in the format. To all quantities there must be a valid Unit of measure according to the Code list.
 

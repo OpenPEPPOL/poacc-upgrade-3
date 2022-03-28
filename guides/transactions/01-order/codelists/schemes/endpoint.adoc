@@ -4,7 +4,7 @@
 
 Electronic address identifiers (Endpoint identification) use of a code list to be maintained by CEF.
 
-#This code list is still not available. Use PEPPOL Policy for identifiers#
+#This code list is still not available. Use Peppol Policy for identifiers#
 
 [cols="2,3,3", options="header"]
 |===

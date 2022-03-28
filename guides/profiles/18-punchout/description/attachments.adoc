@@ -1,7 +1,7 @@
 [[attached-item-specifications-and-main-image]]
 = Attached Item Specifications and main image
 
-Non-XML documents can be sent as attachments to the PEPPOL BIS Shopping Cart to further specify the item.
+Non-XML documents can be sent as attachments to the Peppol BIS Shopping Cart to further specify the item.
 This could be pictures, drawings or time sheets or other documents relevant for the order.
 The attachment can either be sent as a binary object encoded in Base64 embedded in the message or as a URI to an external address as a link.
 
@@ -13,7 +13,7 @@ It is recommended to send attachments as embedded, binary objects and not as ext
 Valid codes can be found in {mime-codes}.
 
 
-.Example of attachment as an embedded, binary object in an PEPPOL BIS Shopping Cart.
+.Example of attachment as an embedded, binary object in an Peppol BIS Shopping Cart.
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/snippet-18-1.xml[tags=attachment-pdf]

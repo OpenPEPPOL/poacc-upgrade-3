@@ -26,9 +26,9 @@ The following rules apply to the order agreement transaction as it is used in th
 |BII3-T110-R021|An Order agreement line MUST contain a quantity and it should not be 0|tir110-093|fatal
 |====
 
-== PEPPOL Order Agreement transaction business rules
+== Peppol Order Agreement transaction business rules
 
-Following rules have been defined by OpenPeppol in addition to the rules adopted from the BII specifications. These rules apply in all implementations that follow this PEPPOL BIS.
+Following rules have been defined by OpenPeppol in addition to the rules adopted from the BII specifications. These rules apply in all implementations that follow this Peppol BIS.
 
 [cols="1s,2,2,1",options="header",]
 |====

@@ -1,7 +1,7 @@
 [[quantities-and-units]]
 = Quantities and units
 
-Various quantities and units can be stated in the PEPPOL BIS Order.
+Various quantities and units can be stated in the Peppol BIS Order.
 These are both related to the ordering process and the logistics process.
 
 The table below lists quantities and units in the format.

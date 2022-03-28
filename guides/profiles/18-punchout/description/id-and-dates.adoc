@@ -18,7 +18,7 @@ include::{snippet-dir}/snippet-18-1.xml[tags=identifier]
 The shopping cart also includes two identifiers that identify the process that the shopping cart is used in.
 The specification that define how the shopping cart message is structured and how its information shall be processed is stated with the customization ID. The process it self is the Punch Out process as defined in this BIS specification, and is stated in the Profile ID element.
 
-These ID's is always the same for all shopping cart messages that comply to this version of PEPPOL BIS 18A.
+These ID's is always the same for all shopping cart messages that comply to this version of Peppol BIS 18A.
 Each shopping cart message must comply to the specification referenced.
 
 Details on valid values for both customization ID and profile ID can be found in <<prof-18>>

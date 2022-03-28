@@ -3,7 +3,7 @@
 
 Reference to the related order must be done on Header level.
 
-.Example of order reference on header level in a PEPPOL BIS Order Response
+.Example of order reference on header level in a Peppol BIS Order Response
 [source, xml, indent=0]
 ----
 include::{snippet-response-dir}/snippet-1.xml[tags=order-ref]
