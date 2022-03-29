@@ -8,7 +8,7 @@ The Peppol BIS BIS is specified independent of a transport network but it is des
 == The Peppol network
 
 The Peppol transport network is a four corner transport network that allows senders end receivers to exchange messages from one service provider to another by using a single identifier for the parties.
-Details about the Peppol network can be found at [PEPPOLTransp]
+Details about the Peppol network can be found at [PeppolTransp]
 
 [[synchronous-message-transfer]]
 == Synchronous message transfer
