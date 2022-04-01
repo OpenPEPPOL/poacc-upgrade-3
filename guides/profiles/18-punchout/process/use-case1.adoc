@@ -30,5 +30,5 @@ The buyer then follows the normal order approval procedure, and places an order 
 |The buyer has received information about the items that he selected into his cart in a message that is structured like a catalogue that can be imported into his purchasing system and used as basis for an order.
 
 |XML example file
-|See Annex A for a sample file illustrating Use Case 1 in the download section on the main page.
+|See Appendix A for a sample file illustrating Use Case 1 in the download section on the main page.
 |====

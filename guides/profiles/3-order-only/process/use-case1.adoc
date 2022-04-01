@@ -33,5 +33,5 @@ The seller receives the order.
 If the invoice has an order reference, the invoice can be matched automatically.
 
 |XML example file
-|See Annex A for a sample file illustrating Use Case 1 in the download section on the main page.
+|See Appendix A for a sample file illustrating Use Case 1 in the download section on the main page.
 |====
