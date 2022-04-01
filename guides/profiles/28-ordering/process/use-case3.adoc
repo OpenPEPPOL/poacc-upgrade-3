@@ -30,5 +30,5 @@ The seller rejects the order.
 |The buyer and the seller has not reached any agreement.
 
 |XML example file
-|{order-response-UC}
+|See Annex A for a sample file illustrating Use Case 3 in the download section on the main page.
 |====

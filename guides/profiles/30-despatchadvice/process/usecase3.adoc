@@ -63,7 +63,7 @@ The Seller has accepted the order without changes.
 ..  The delivered quantity
 ..  The parties involved in the process
 
-|*XML example file* |See Annex A for a sample file illustrating Use Case 3.
+|*XML example file* |See Annex A for a sample file illustrating Use Case 3 in the download section on the main page.
 |====
 
 The following provides additional details and clarifications about the various keys and identifiers used in this Use Case, as well as the benefits implementers can obtain when using them.

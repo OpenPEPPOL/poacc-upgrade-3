@@ -56,5 +56,5 @@ c.  The items
 d.  The delivered quantity
 e.  The outstanding quantity to be delivered at a later time
 f.  The outstanding quantity which will never be delivered
-
+|*XML example file* |See Annex A for a sample file illustrating Use Case 2 in the download section on the main page.
 |====

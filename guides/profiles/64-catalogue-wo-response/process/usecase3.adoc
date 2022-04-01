@@ -40,5 +40,5 @@ c.  Three more new articles are added. Shampoo presented in a hierarchy.
 _Please note that the ordering process is not part of this BIS.
 For ordering, please see Peppol BIS 3A._
 
-|*XML example file* |See {examples-zip} for sample Catalogue illustrating Use Case 3.
+|*XML example file* |See Annex A for a sample file illustrating Use Case 3 in the download section on the main page.
 |====
