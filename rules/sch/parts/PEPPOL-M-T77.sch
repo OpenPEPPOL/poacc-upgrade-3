@@ -13,7 +13,6 @@
 				flag="fatal">The validity period end date SHALL NOT be earlier than the issue date.</assert>
 	</rule>
 
-
 	<rule context="cac:RequiredItemLocationQuantity/cac:Price">
 		<assert id="PEPPOL-T77-R003"
 				test="number(cbc:PriceAmount) &gt;=0"

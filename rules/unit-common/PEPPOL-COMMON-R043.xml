@@ -31,7 +31,7 @@
     
     <test>
 		<assert>
-			<warning number="3">PEPPOL-COMMON-R043</warning>
+			<error number="3">PEPPOL-COMMON-R043</error>
 		</assert>
 		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
