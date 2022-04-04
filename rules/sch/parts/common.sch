@@ -17,7 +17,7 @@
   <include href="function/checkPIVAseIT.xml"/>
   <include href="function/mod97-0208.xml"/>
   <include href="function/checkCodiceIPA.xml"/>
-  
+  <include href="function/abn.xml"/>  
 
   <include href="common/empty-elements.sch"/>
   <include href="common/rules.sch"/>
