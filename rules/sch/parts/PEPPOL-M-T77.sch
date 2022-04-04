@@ -7,9 +7,9 @@
 					flag="fatal">Specification identifier SHALL start with the value 'urn:fdc:peppol.eu:poacc:trns:punch_out:3'.</assert>
 	</rule>
 
-	<rule context="ubl:Catalogue">
+	<rule context="ubl:Catalogue/cac:ValidityPeriod">
 		<assert id="PEPPOL-T77-R001"
-				test="(cac:ValidityPeriod/cbc:EndDate) and (number(translate(cac:ValidityPeriod/cbc:EndDate,'-','')) &gt;= number(translate(cbc:IssueDate,'-','')))"
+				test="(cbc:EndDate) and (number(translate(cbc:EndDate,'-','')) &gt;= number(translate(../cbc:IssueDate,'-','')))"
 				flag="fatal">The validity period end date SHALL NOT be earlier than the issue date.</assert>
 	</rule>
 
