@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-  <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:abn" as="xs:boolean">
+<function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:abn" as="xs:boolean">
     <param name="val"/>
     <value-of select="(
 ((string-to-codepoints(substring($val,1,1)) - 49) * 10) +
@@ -14,4 +13,4 @@
 ((string-to-codepoints(substring($val,10,1)) - 48) * 17) +
 ((string-to-codepoints(substring($val,11,1)) - 48) * 19)) mod 89 = 0
 "/>
-  </function>
+</function>
