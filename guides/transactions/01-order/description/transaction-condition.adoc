@@ -1,0 +1,16 @@
+[[transaction-condition]]
+= Transaction condition
+
+Transaction condition may be used on order lines by entering a value in:
+
+* TransactionConditions/ActionCode
+
+The action code is a free text field, but must indicate the urgency to which the line article must be delivered
+
+Transaction condition may be entered on all or selected order lines.
+
+.Example of an PEPPOL BIS Order using Transaction condition:
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-01.xml[tags=transactioncondition]
+----

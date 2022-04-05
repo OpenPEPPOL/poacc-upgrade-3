@@ -309,6 +309,11 @@
         <cac:StandardItemIdentification>
           <cbc:ID schemeID="0160">08722700577584</cbc:ID>
         </cac:StandardItemIdentification>
+         <!-- tag::transactioncondition[] -->
+         <cac:TransactionConditions>
+           <cbc:ActionCode>ASAP</cbc:ActionCode>
+         </cac:TransactionConditions>
+         <!-- end::transactioncondition[] -->
         <cac:ClassifiedTaxCategory>
           <cbc:ID>S</cbc:ID>
           <cbc:Percent>25</cbc:Percent>
