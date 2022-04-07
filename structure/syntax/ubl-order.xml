@@ -1298,7 +1298,7 @@
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-106</Reference>
 					</Element>
-				</Element>				
+				</Element>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:Shipment</Term>
@@ -2141,9 +2141,20 @@
 								<Term>name</Term>
 								<Name>Clear text name equivalent of classification code</Name>
 								<Description>The textual equivalent of the code value</Description>
-								<Value type="EXAMPLE">Office furniture</Value>	
+								<Value type="EXAMPLE">Office furniture</Value>
 							</Attribute>
 							<Value type="EXAMPLE">9873242</Value>
+						</Element>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cac:TransactionConditions</Term>
+						<Name>Contracted item</Name>
+						<Element>
+							<Term>cbc:ActionCode</Term>
+							<Name>Contracted item indicator</Name>
+							<Description>The action code is a free text field, but must indicate the urgency to which the line article must be delivered.</Description>
+							<DataType>Code</DataType>
+							<Value type="EXAMPLE">ASAP</Value>
 						</Element>
 					</Element>
 					<Element cardinality="0..1">
