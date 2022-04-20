@@ -14,4 +14,6 @@ Release date:: 2022-05-15
 
 * Added rule to check format for Australian ABN  (ICD/EAS 0151) with severity warning, will be changed to fatal in future release.
 
+* Added test file for Catalogue wo response Use case 5
+
 
