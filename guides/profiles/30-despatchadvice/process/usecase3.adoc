@@ -88,11 +88,7 @@ Consignee - Endpoint identification
 
 Buyer - Organizational identification.
 
-Buyer - Endpoint identification.
-
 Seller - Organizational identification
-
-Seller - Endpoint identification.
 
 a|
 **SSCC**:
