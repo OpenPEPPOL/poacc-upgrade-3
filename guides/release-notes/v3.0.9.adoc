@@ -16,4 +16,8 @@ Release date:: 2022-05-15
 
 * Added test file for Catalogue wo response Use case 5
 
+* Added codes 0214, 0215 and 0216 to the ICD code list and support added in validation artefacts. [505]
 
+* Added codes 0147, 0170, 0188, 0215 and 0216 to the EAS code list and support added in validation artefacts. [481,473,505,506]
+
+* Double entry of code TSP removed from code list UNCL7143. [488]
