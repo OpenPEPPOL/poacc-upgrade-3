@@ -2,7 +2,7 @@
 [[codelist]]
 = Code lists
 
-The following chapters give an overview of the codes that is used in this PEPPOL BIS.
+The following chapters give an overview of the codes that is used in this Peppol BIS.
 
 :leveloffset: +1
 

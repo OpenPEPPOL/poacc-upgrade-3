@@ -11,7 +11,7 @@ The party that sends the Invoice Response.
 This may be the Buyer who received the invoice, or it may be a service provider processing the invoice on behalf of the Buyer.
 If the Invoice Response is issued by a service provider the name of the actual Buyer may be given with the invoice reference.
 
-The information given for the sender is his EndpointID which is his PEPPOL Participant Identifier (PPID). The party identifier may be given as well and the schema that the identifier is based on.
+The information given for the sender is his EndpointID which is his Peppol Participant Identifier (PPID). The party identifier may be given as well and the schema that the identifier is based on.
 The name of the sender is then provided.
 
 Contact information for the sender (Buyer) is the person that the receiver (Seller) can contact when resolving an issue reported in the Invoice Response.

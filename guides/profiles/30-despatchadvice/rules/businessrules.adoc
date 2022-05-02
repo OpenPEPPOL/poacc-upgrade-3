@@ -26,7 +26,7 @@
 |OP-T16-R002 |A unit code attribute MUST have a unit code list identifier attribute “UNECERec20” |despatch advice |fatal
 |OP-T16-R003 |A UNDG code MUST have a list identifier attribute “UNCL8273” |despatch advice |fatal
 |OP-T16-R004 |A transport handling unit type code MUST have a list identifier attribute “UNECERec21”. |despatch advice |fatal
-|OP-T16-R005 |An Endpoint Identifier Scheme MUST be from the list of PEPPOL Party Identifiers. |despatch advice |Fatal
-|OP-T16-R006 |A Party Identifier Scheme MUST be from the list of PEPPOL Party Identifiers |despatch advice |fatal
+|OP-T16-R005 |An Endpoint Identifier Scheme MUST be from the list of Peppol Party Identifiers. |despatch advice |Fatal
+|OP-T16-R006 |A Party Identifier Scheme MUST be from the list of Peppol Party Identifiers |despatch advice |fatal
 |OP-T16-R007 |The handling unit measure AttributeID MUST be of value "AAB" for Unit gross weight or "AAW" for Gross volume |Handling unit |fatal
 |====

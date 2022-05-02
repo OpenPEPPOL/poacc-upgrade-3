@@ -1,5 +1,5 @@
 [[specific-openpeppol-requirements]]
-= Specific OpenPEPPOL requirements
+= Specific OpenPeppol requirements
 
 An order agreement should support the calculation of expected totals structured in an identical way to the order and the invoice message. To enable this the following needs to be added to the CENBII Order Agreement transaction.
 

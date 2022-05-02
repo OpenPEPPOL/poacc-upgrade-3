@@ -7,7 +7,7 @@ In the main folder of the BIS document, a file named `main.adoc` is used to set 
 ----
       include::../../shared/links.adoc[] <1>
 
-      = image:../../shared/images/peppol.png[float="right"]PEPPOL BIS Catalogue Only 3.0 <2>
+      = image:../../shared/images/peppol.png[float="right"]Peppol BIS Catalogue Only 3.0 <2>
       v3.0.0 <3>
       :doctype: book <4>
       :icons: font <5>
@@ -50,7 +50,7 @@ In the main folder of the BIS document, a file named `main.adoc` is used to set 
       :leveloffset: -1
 ----
 <1> Include a shared file of links
-<2> Title including PEPPOL-image
+<2> Title including Peppol-image
 <3> Version number
 <4> Doctype must always be book
 <5> Use font for icons, this is what provides the admonitions

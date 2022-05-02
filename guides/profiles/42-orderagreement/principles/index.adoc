@@ -2,7 +2,7 @@
 [[principles]]
 = Principles and prerequisites
 
-This chapter describes the principles and assumptions that underlie the use of PEPPOL Order Agreement.
+This chapter describes the principles and assumptions that underlie the use of Peppol Order Agreement.
 It is based on the {bii} 42 Order Agreement.
 
 This profile identifies, explains and justifies the business requirements for the Order agreement process.

@@ -19,7 +19,7 @@
 			)
 			else
 			(
-				if(($arg castable as xsd:integer)) then true() else false()
+				if(($arg castable as xs:integer)) then true() else false()
 		
 			)
 		)

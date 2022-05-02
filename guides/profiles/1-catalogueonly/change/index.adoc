@@ -1,5 +1,5 @@
 [[differences-between-peppol-bis-version-3-and-version-4]]
-= Differences between PEPPOL BIS version 3 and version 4
+= Differences between Peppol BIS version 3 and version 4
 
 :leveloffset: +1
 

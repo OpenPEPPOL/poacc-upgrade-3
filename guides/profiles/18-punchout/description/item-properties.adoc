@@ -23,4 +23,4 @@ Additionally the seller may give a property code, using an identified code list,
 include::{snippet-dir}/snippet-18-1.xml[tags=property]
 ----
 
-The name "ServiceIndicator" in `cac:AdditionalItemProperty` has dedicated meaning in the PEPPOL PunchOut message.
+The name "ServiceIndicator" in `cac:AdditionalItemProperty` has dedicated meaning in the Peppol PunchOut message.

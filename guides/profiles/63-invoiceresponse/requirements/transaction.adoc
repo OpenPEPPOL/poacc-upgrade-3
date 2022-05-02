@@ -26,7 +26,7 @@ This controls how the data model, code lists and transaction rules are designed.
 |An Invoice Response SHALL support coded expressions of status and clarifications in a way that supports automation of the message processing by the Seller.
 
 |tbr111-009
-|An Invoice Response SHALL support message exchange through the PEPPOL message transport network.
+|An Invoice Response SHALL support message exchange through the Peppol message transport network.
 
 |tbr111-010
 |An Invoice Response SHALL be able to clearly indicate the status of an invoice in the Buyers processing.

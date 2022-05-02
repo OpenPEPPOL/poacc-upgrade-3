@@ -1,5 +1,5 @@
 [[specific-openpeppol-requirements]]
-= Specific OpenPEPPOL requirements
+= Specific OpenPeppol requirements
 
 [cols="1,2,3",options="header",]
 |====

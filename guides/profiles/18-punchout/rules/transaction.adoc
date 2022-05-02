@@ -50,7 +50,7 @@ tir77-035
 = Peppol specific transaction rules
 
 Following rules have been defined by OpenPeppol in addition to the rules adopted from the BII specifications.
-These rules apply in all implementations that follow this PEPPOL BIS.
+These rules apply in all implementations that follow this Peppol BIS.
 
 [cols="2,6,2,2",options="header"]
 |====

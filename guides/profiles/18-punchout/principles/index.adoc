@@ -2,7 +2,7 @@
 [[principles]]
 = Principles and prerequisites
 
-This chapter describes the principles and assumptions that underlie the use of this PEPPOL BIS Punch out.
+This chapter describes the principles and assumptions that underlie the use of this Peppol BIS Punch out.
 It is based on the {bii} 18 Punch out.
 
 This document identifies, explains and justifies the business requirements for the Punch Out-process.

@@ -10,7 +10,7 @@ Further information on include directive can be found here: https://asciidoctor.
 ----
     = Principles and prerequisites
 
-    This chapter describes the principles and assumptions that underlie the use of PEPPOL Ordering.
+    This chapter describes the principles and assumptions that underlie the use of Peppol Ordering.
     It is based on the {bii-order}
 
     :leveloffset: +1 <1>

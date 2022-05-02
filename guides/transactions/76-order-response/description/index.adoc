@@ -2,7 +2,7 @@
 = Description of selected parts of the order response message
 
 The Order response message is sent from the Seller to the Buyer stating the sellers ability to fulfil the order.
-The following rules applies to the PEPPOL BIS Order Response:
+The following rules applies to the Peppol BIS Order Response:
 
 * The Order response must refer to an Order.
 * Seller may accept or reject the entire Order.

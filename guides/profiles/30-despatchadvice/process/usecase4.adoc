@@ -62,5 +62,5 @@ b.  The order lines
 c.  The transport handling units
 d.  The items
 e.  The delivered quantity/weight
-
+|*XML example file* |See Appendix A for a sample file illustrating Use Case 4 in the download section on the main page.
 |====

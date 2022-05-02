@@ -1,7 +1,7 @@
 [[principles-and-prerequisites]]
 = Principles and prerequisites
 
-This chapter describes the principles and assumptions that underlie the use of the PEPPOL Despatch Advice.
+This chapter describes the principles and assumptions that underlie the use of the Peppol Despatch Advice.
 It is based on the CEN BII 30 Dispatch only profile.
 
 [[despatch-advice-message-in-general]]

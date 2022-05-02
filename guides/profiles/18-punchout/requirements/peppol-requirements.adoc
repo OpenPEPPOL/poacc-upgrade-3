@@ -1,8 +1,8 @@
 [[specific-openpeppol-requirements]]
-= Specific OpenPEPPOL requirements
+= Specific OpenPeppol requirements
 
 [cols="1,2,3",options="header"]
-.Specific openPEPPOL requirements
+.Specific openPeppol requirements
 |====
 |ID:
 |Business term:
@@ -12,7 +12,7 @@
 
 |OP-T77-001
 |ProviderParty/EndpointID
-|The seller should be identified with an end point identifier.footnote:[In a Punch Out profile the shopping cart transaction may be exchanged by other means than through the PEPPOL network and does not require the identification of the endpoint.
+|The seller should be identified with an end point identifier.footnote:[In a Punch Out profile the shopping cart transaction may be exchanged by other means than through the Peppol network and does not require the identification of the endpoint.
 It is nevertheless recommented to provide the endpoint ID for parties.]
 
 |OP-T77-002

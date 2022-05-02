@@ -37,5 +37,5 @@ From the procurement system, the buyer follows the normal ordering procedures wh
 |The buyer has retrieved information about a configured item.
 
 |XML example file
-|See Appendix A for a sample file illustrating Use Case 4.
+|None specific for this use case.
 |====

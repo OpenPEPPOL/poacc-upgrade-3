@@ -308,9 +308,7 @@
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Invoice identifier</Name>
-                    <Description>An identifier for the invoice that the status applies to. At
-                        least one and only one invoice identifier must be of the main invoice number
-                        that appears in the invoice itself.</Description>
+                    <Description>An identifier for the invoice that the status applies to. The invoice identifier must be of the main invoice number that appears in the invoice itself.</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">tir111-020</Reference>
                     <Value type="EXAMPLE">inv-99876</Value>
@@ -319,9 +317,7 @@
                 <Element cardinality="0..1">
                     <Term>cbc:IssueDate</Term>
                     <Name>Invoice issue date</Name>
-                    <Description>The date on which the referenced invoice was issued. An
-                        invoice issue date may only be given once even if more than one identifier
-                        is used for the invoice.</Description>
+                    <Description>The date on which the referenced invoice was issued.</Description>
                     <DataType>Date</DataType>
                     <Reference type="BUSINESS_TERM">tir111-019</Reference>
                     <Value type="EXAMPLE">2018-08-01</Value>

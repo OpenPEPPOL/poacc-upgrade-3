@@ -38,5 +38,5 @@ The buyer has updated the order information based on the response. +
 If the invoice has an order reference, the invoice can be matched automatically.
 
 |XML example file
-|{order-response-UC}
+|See Appendix A for a sample file illustrating Use Case 1 in the download section on the main page.
 |====
