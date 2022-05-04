@@ -4,7 +4,7 @@
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:u="utils"
         schemaVersion="iso" queryBinding="xslt2"> <!--1-->
 
-  <title>Rules for PEPPOL BIS 3.0 Billing</title> <!--2-->
+  <title>Rules for Peppol BIS 3.0 Billing</title> <!--2-->
   <!-- end::schema[] -->
   
   <ns uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" prefix="cbc"/>

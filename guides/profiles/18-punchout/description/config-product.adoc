@@ -14,7 +14,7 @@ IMPORTANT: A shopping cart line that is part of a configured product can not be 
 
 To indicate that an item that is part of a configured product, `cac:AdditionalItemProperty` is used.
 
-The name "PartOf" in `cac:AdditionalItemProperty` has dedicated meaning in the PEPPOL PunchOut message.
+The name "PartOf" in `cac:AdditionalItemProperty` has dedicated meaning in the Peppol PunchOut message.
 
 Example below shows that Item PC01 is configured by 1 of item 12345 and 2 of item 6789.
 The order will be ONLY on Item PC01.

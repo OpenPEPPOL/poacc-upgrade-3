@@ -16,7 +16,7 @@ If a label has no levels it is recommended to set the type as active.
 
 Due to UBL syntax requirements (see {ubl-catalogue}) the tags `cbc:CertificateTypeCode` and `cac:IssuerParty` must also be included when the certificate class is used.
 
-These elements are not required by this PEPPOL BIS but in order to comply with the syntax requirement it is recommended to fill in the elements with the word "NA".
+These elements are not required by this Peppol BIS but in order to comply with the syntax requirement it is recommended to fill in the elements with the word "NA".
 
 .Example of label
 [source, xml, indent=0]

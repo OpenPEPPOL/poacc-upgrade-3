@@ -1,7 +1,7 @@
 [[additional-properties]]
 == Additional properties
 
-Additional properties are meant for product properties that cannot be sent in any of the defined elements in this PEPPOL BIS.
+Additional properties are meant for product properties that cannot be sent in any of the defined elements in this Peppol BIS.
 Additional properties consist of the Name of the property and the actual Value. +
 Example of additional properties:
 

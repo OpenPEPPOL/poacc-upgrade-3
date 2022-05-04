@@ -5,8 +5,8 @@ The following changes were processed and agreed by the team.PB30-38	Validation A
 * Batch/LOT and serial numbers in order 3a and 28a [PB30-1].
 * ID in AdditionalDocumentReference [PB30-4].
 * Change to DespatchAdvice BIS 30A, SFTI 20170622.xlsx [PB30-5].
-* Questions about PEPPOL BIS in post-award [PB30-7].
-* Request the OpenPEPPOL Post-Award CC to include the BuyersItemIdentification element in the BIS 28A Ordering and 30A Despatch Advice messages. [PB30-11].
+* Questions about Peppol BIS in post-award [PB30-7].
+* Request the OpenPeppol Post-Award CC to include the BuyersItemIdentification element in the BIS 28A Ordering and 30A Despatch Advice messages. [PB30-11].
 * Despatch Advice (BIS 30A), add postal Address informations and Person information [PB30-14].
 * Despatch Advice (BIS 30A), extension of cardinality for order reference ID [PB30-16].
 * General - enable price types for price is all transactions, other than Invoice [PB30-23].

@@ -35,7 +35,7 @@ include::../snippets/schematron.sch[tags=functions]
 
 = Rules
 
-In PEPPOL we only use assertions, not report when creating the rules.
+In Peppol we only use assertions, not report when creating the rules.
 
 All asserts must have an `id` attribute with the identifier of the rule
 IMPORTANT: this must be unique within one schematron file

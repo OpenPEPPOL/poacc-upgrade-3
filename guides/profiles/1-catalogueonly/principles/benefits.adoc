@@ -1,6 +1,6 @@
 
 [[peppol-bis-1a---benefits]]
-= PEPPOL BIS 1A - Benefits
+= Peppol BIS 1A - Benefits
 
 Catalogues are used as basis for maintenance of information about products and services that are part of a contract, like a framework agreement.
 
@@ -10,4 +10,4 @@ Catalogues are used as basis for maintenance of information about products and s
 * Implementation of a catalogue can be the first step in automating the purchasing process followed by an order and an invoice, leading to entire purchasing process running from sourcing, ordering and invoicing to payment.
 * Buyers can accept or reject the catalogue using a catalogue response
 
-This PEPPOL BIS is based on the CEN/ISSS WS/BII Profile BII01 specification, see [BII_Catalogue].
+This Peppol BIS is based on the CEN/ISSS WS/BII Profile BII01 specification, see [BII_Catalogue].

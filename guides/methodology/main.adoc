@@ -1,7 +1,7 @@
 include::links.adoc[]
 
-= image:../shared/images/peppol.png[float="right"]PEPPOL Documentation Methodology
-OpenPEPPOL AISBL, Post-Award Coordinating Community
+= image:../shared/images/peppol.png[float="right"]Peppol Documentation Methodology
+OpenPeppol AISBL, Post-Award Coordinating Community
 v0.1.0
 :doctype: book
 :icons: font

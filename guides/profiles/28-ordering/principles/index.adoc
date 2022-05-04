@@ -1,7 +1,7 @@
 [[principles-and-prerequisites]]
 = Principles and prerequisites
 
-This chapter describes the principles and assumptions that underlie the use of PEPPOL Ordering.
+This chapter describes the principles and assumptions that underlie the use of Peppol Ordering.
 It is based on the {bii-ordering}
 
 

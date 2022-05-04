@@ -25,9 +25,9 @@ The detail type code for each data type shall be the business term identifier of
 
 Example:
 
-A Buyer receives a PEPPOL invoice where the following is true
+A Buyer receives a Peppol invoice where the following is true
 
-* The invoice complies to PEPPOL Billing specification
+* The invoice complies to Peppol Billing specification
 * The Buyer‘s TAX number in the invoice is incorrect and should be EU12345
 * The Buyer requests the Seller to send a credit note to cancel the incorrect invoice and issue a new invoice with the correct TAX number.
 

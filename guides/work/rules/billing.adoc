@@ -1,5 +1,5 @@
 
-= Rules to consider from PEPPOL BIS Billing 3.0
+= Rules to consider from Peppol BIS Billing 3.0
 
 == From EN16931
 
@@ -23,7 +23,7 @@
 * VAT rules
 
 
-== From PEPPOL BIS Billing
+== From Peppol BIS Billing
 
 * EndpointIDs are mandatory
 ** This can be achiecved by an automatic rule

@@ -1,16 +1,16 @@
 //description and subheading text
-:description: The PEPPOL Business Interoperability Specification, “BIS” from here on after, has been developed by the OpenPEPPOL AISBL Post Award Coordinating Community and is published as part of the PEPPOL specifications.
-:author: OpenPEPPOL AISBL, Post-Award Coordinating Community
+:description: The Peppol Business Interoperability Specification, “BIS” from here on after, has been developed by the OpenPeppol AISBL Post Award Coordinating Community and is published as part of the Peppol specifications.
+:author: OpenPeppol AISBL, Post-Award Coordinating Community
 :version: 3.0.3
 :ord_version: 3.1.0
-//PEPPOL
-:peppol: https://peppol.eu/?rel=undefined[PEPPOL]
-:common: https://joinup.ec.europa.eu/svn/peppol/PEPPOL%20BIS%20Common%20text%20and%20introduction%20-%20ver%201%202014-04-14.pdf[PEPPOL BIS common text and introduction]
-:openpeppol: https://peppol.eu/about-openpeppol/?rel=tab41[OpenPEPPOL]
-:policy8: https://peppol.eu/downloads/the-peppol-edelivery-network-specifications/[PEPPOL Policy for identifiers, policy 8]
-:migration-policy: https://github.com/OpenPEPPOL/documentation/blob/master/LifecycleManagement/ReleaseManagement/Migration%20Policy%20-%20Common%20Document%202014-02-24%20rev%202014-08-27.pdf[OpenPEPPOL Migration Policy]
-:peppol-transport: https://peppol.eu/downloads/the-peppol-edelivery-network-specifications/[PEPPOL eDelivery Network Specifications]
-:peppol-billing: http://docs.peppol.eu/poacc/billing/3.0/[PEPPOL BIS Billing 3.0]
+//Peppol
+:peppol: https://peppol.eu/?rel=undefined[Peppol]
+:common: https://joinup.ec.europa.eu/svn/peppol/PEPPOL%20BIS%20Common%20text%20and%20introduction%20-%20ver%201%202014-04-14.pdf[Peppol BIS common text and introduction]
+:openpeppol: https://peppol.eu/about-openpeppol/?rel=tab41[OpenPeppol]
+:policy8: https://peppol.eu/downloads/the-peppol-edelivery-network-specifications/[Peppol Policy for identifiers, policy 8]
+:migration-policy: https://github.com/OpenPEPPOL/documentation/blob/master/LifecycleManagement/ReleaseManagement/Migration%20Policy%20-%20Common%20Document%202014-02-24%20rev%202014-08-27.pdf[OpenPeppol Migration Policy]
+:peppol-transport: https://peppol.eu/downloads/the-peppol-edelivery-network-specifications/[Peppol eDelivery Network Specifications]
+:peppol-billing: http://docs.peppol.eu/poacc/billing/3.0/[Peppol BIS Billing 3.0]
 :main-site: link:/poacc/upgrade-3/[Main documentation site]
 
 //CEN

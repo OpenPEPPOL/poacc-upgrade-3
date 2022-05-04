@@ -1,5 +1,5 @@
-= Release notes for PEPPOL BIS 3 documents, other than PEPPOL BIS Billing 3.0
-openPEPPOL AISBL <http://www.peppol.eu/>
+= Release notes for Peppol BIS 3 documents, other than Peppol BIS Billing 3.0
+openPeppol AISBL <http://www.peppol.eu/>
 :icons: font
 :source-highlighter: coderay
 :toc: left
@@ -13,6 +13,8 @@ IMPORTANT: Changes in code lists are also reflected by changes in the validation
 ****
 
 :leveloffset: +1
+
+include::v3.0.9.adoc[]
 
 include::v3.0.8.adoc[]
 

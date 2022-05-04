@@ -355,7 +355,7 @@
 				</Element>
 				<Element>
 					<Term>cac:PartyLegalEntity</Term>
-					<Name>Buyer legal party</Name>
+					<Name>Party name</Name>
 					<Element>
 						<Term>cbc:RegistrationName</Term>
 						<Name>Consignee party name</Name>

@@ -1,4 +1,4 @@
-= PEPPOLs use of AsciiDoc
+= Peppols use of AsciiDoc
 
 :leveloffset: +1
 

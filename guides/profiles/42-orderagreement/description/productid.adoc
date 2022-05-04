@@ -9,7 +9,7 @@ Product identification may be done using the identifiers described below:
 The order agreement requires that an item has an identifier. This can be either the sellers identifier or a standard identifier. Which identifier to use depends on what is known at the time of the purchase or what is commonly used in the relevant business sector.
 
 
-.Example of an PEPPOL BIS Order Agreement item using both Sellers ID and Standard ID (GTIN)
+.Example of an Peppol BIS Order Agreement item using both Sellers ID and Standard ID (GTIN)
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/OA full.xml[tags=ItemIdentifiers]
@@ -22,7 +22,7 @@ The Product name is often sent in the order agreement from the buyer to the sell
 
 
 
-.Example in an PEPPOL BIS Order Agreement message
+.Example in an Peppol BIS Order Agreement message
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/OA full.xml[tags=ItemDescription]

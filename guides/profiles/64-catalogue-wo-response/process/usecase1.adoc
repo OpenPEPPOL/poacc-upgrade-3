@@ -43,7 +43,7 @@ c.  Services.
 2.  The ordering process is easy when you have all necessary information in the ERP-system.
 
 _Please note that the ordering process is not part of this BIS.
-For ordering, please see PEPPOL BIS 3A._
+For ordering, please see Peppol BIS 3A._
 
-|*XML example file* |See {examples-zip} for sample Catalogue illustrating Use Case 1.
+|*XML example file* |See Appendix A for a sample file illustrating Use Case 1 in the download section on the main page.
 |====

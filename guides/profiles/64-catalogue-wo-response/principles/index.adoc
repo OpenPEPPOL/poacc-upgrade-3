@@ -4,7 +4,7 @@
 [[business-process-in-scope]]
 == Business Process in scope
 
-This PEPPOL BIS supports a process for suppliers to send a catalogue to buyers.
+This Peppol BIS supports a process for suppliers to send a catalogue to buyers.
 It is intended to support transmission of electronic catalogue-messages for processing in semi-automated processes by the receiver.
 The BIS mandates no procurement related data but supports different ways of referring to products and services.
 By selective use of such references it can be used as basis for automated processing of ordering and invoicing.

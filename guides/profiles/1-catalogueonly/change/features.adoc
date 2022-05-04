@@ -107,7 +107,7 @@ a|
 |*Tax Scheme ID* a|
 BII2 does not allow for en explicit specification of Tax Scheme ID = VAT as VAT is assumed to be the only tax scheme specified.
 
-In the current PEPPOL BIS this is expected to be explicitly stated although the same restriction applies.
+In the current Peppol BIS this is expected to be explicitly stated although the same restriction applies.
 
 |*Contact person for Supplier and Customer* |BII2 only allow for the specification of Contact Person Name and not different elements for First name, Middle name and Family name.
 |*Item property type and value* |This specific field is not recognized in the BII2 requirement model as it does not assume any given syntax implementation.

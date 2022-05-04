@@ -12,9 +12,9 @@ The following rules apply to the implementation and general use of the Punch Out
 |====
 
 [[punch-out-peppol-business-rules]]
-= Punch Out PEPPOL business rules
+= Punch Out Peppol business rules
 
-The following additional rules apply to the implementation and general use of the Punch Out BIS in the PEPPOL environment.
+The following additional rules apply to the implementation and general use of the Punch Out BIS in the Peppol environment.
 
 [cols="1,5",options="header"]
 |====

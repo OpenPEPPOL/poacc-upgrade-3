@@ -1,6 +1,6 @@
 = Introduction
 
-This document in its current version, aims at providing guidelines and methodology on how to use AsciiDoc to document the PEPPOL Business Interoperability Specifications (BIS hereon after), and Asciidoctor to publish the specifications.
+This document in its current version, aims at providing guidelines and methodology on how to use AsciiDoc to document the Peppol Business Interoperability Specifications (BIS hereon after), and Asciidoctor to publish the specifications.
 
 This document is not intended to be a tutorial in the AsciiDoc syntax, for that we point to official AsciiDoc manuals and other relative documents found in the chapter <<suggested-reading>>.
 
