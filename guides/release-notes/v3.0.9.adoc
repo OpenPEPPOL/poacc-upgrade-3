@@ -1,6 +1,6 @@
 = Version 3.0.9
 [horizontal]
-Release date:: 2022-05-15
+Release date:: 2022-05-30
 
 == Changes to code lists and validation artefacts
 
