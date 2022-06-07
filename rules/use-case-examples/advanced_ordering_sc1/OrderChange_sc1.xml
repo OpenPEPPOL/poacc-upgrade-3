@@ -96,7 +96,7 @@
   <cac:OrderLine>
     <cac:LineItem>
       <cbc:ID>1</cbc:ID>
-      <cbc:LineStatusCode>5</cbc:LineStatusCode>
+      <cbc:LineStatusCode>4</cbc:LineStatusCode>
       <cbc:Quantity unitCode="NAR">5</cbc:Quantity>
       <cbc:LineExtensionAmount currencyID="EUR">200</cbc:LineExtensionAmount>
       <cac:Price>
@@ -117,7 +117,7 @@
   <cac:OrderLine>
     <cac:LineItem>
       <cbc:ID>2</cbc:ID>
-      <cbc:LineStatusCode>5</cbc:LineStatusCode>
+      <cbc:LineStatusCode>4</cbc:LineStatusCode>
       <cbc:Quantity unitCode="NAR">50</cbc:Quantity>
       <cbc:LineExtensionAmount currencyID="EUR">300</cbc:LineExtensionAmount>
       <cac:Price>
