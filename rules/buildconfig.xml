@@ -12,11 +12,19 @@
   <testfolder>unit-order-agreement</testfolder>
   <testfolder>unit-order-response</testfolder>
   <testfolder>unit-punch-out</testfolder>
-  
+  <testfolder>unit-order-change</testfolder>
+  <testfolder>unit-order-cancellation</testfolder>
+  <testfolder>unit-order-response-advanced</testfolder>
+
   <!-- example and snippet folders -->
   <testfolder>examples</testfolder>
   <testfolder>use-case-examples/order</testfolder>
   <testfolder>use-case-examples/order-response</testfolder>
+  <testfolder>use-case-examples/advanced-ordering-sc1</testfolder>
+  <testfolder>use-case-examples/advanced-ordering-sc2</testfolder>
+  <testfolder>use-case-examples/advanced-ordering-sc3</testfolder>
+  <testfolder>use-case-examples/advanced-ordering-sc4</testfolder>
+  <testfolder>use-case-examples/advanced-ordering-sc5</testfolder>
   <testfolder>snippets/order</testfolder>
   <testfolder>snippets/order-response</testfolder>
   <testfolder>snippets/order-agreement</testfolder>
@@ -24,7 +32,9 @@
   <testfolder>snippets/punchout</testfolder>
   <testfolder>snippets/despatch</testfolder>
   <testfolder>snippets/mlr</testfolder>
-  
+  <testfolder>snippets/order-change</testfolder>
+  <testfolder>snippets/order-cancellation</testfolder>
+
 <!-- base config -->
   <configuration>
     <identifier>peppolbis-t01-base-3.0</identifier>
@@ -74,15 +84,34 @@
     <inherit>ubl-applicationresponse-2.1</inherit>
     <file source="sch/PEPPOLBIS-T111.sch" path="xsl/PEPPOLBIS-T111.xsl"/>
   </configuration>
-  
+
   <configuration>
   <identifier>peppolbis-t71-base-3.0</identifier>
   <title>PEPPOL MLR 3.0 (T71)</title>
   <inherit>ubl-applicationresponse-2.1</inherit>
   <file source="sch/PEPPOLBIS-T71.sch" path="xsl/PEPPOLBIS-T71.xsl"/>
   </configuration>
-  
-  <!-- profile config -->
+
+  <configuration>
+    <identifier>peppolbis-t114-base-3.0</identifier>
+    <title>PEPPOL Order Change 3.0 (T114)</title>
+    <inherit>ubl-orderchange-2.3</inherit>
+    <file source="sch/PEPPOLBIS-T114.sch" path="xsl/PEPPOLBIS-T114.xsl"/>
+  </configuration>
+  <configuration>
+    <identifier>peppolbis-t115-base-3.0</identifier>
+    <title>PEPPOL Order Cancellation 3.0 (T114)</title>
+    <inherit>ubl-ordercancellation-2.3</inherit>
+    <file source="sch/PEPPOLBIS-T115.sch" path="xsl/PEPPOLBIS-T115.xsl"/>
+  </configuration>
+  <configuration>
+    <identifier>peppolbis-t116-base-3.0</identifier>
+    <title>PEPPOL Order Response Advanced 3.0 (T114)</title>
+    <inherit>ubl-orderresponseadvanced-2.3</inherit>
+    <file source="sch/PEPPOLBIS-T116.sch" path="xsl/PEPPOLBIS-T116.xsl"/>
+  </configuration>
+
+    <!-- profile config -->
   <configuration>
     <identifier>peppolbis-03-order</identifier>
     <title>PEPPOL BIS Order Only 3.0</title>
@@ -90,7 +119,7 @@
     <customizationId>urn:fdc:peppol.eu:poacc:trns:order:3</customizationId>
     <inherit>peppolbis-t01-base-3.0</inherit>
   </configuration>
-  
+
   <configuration>
     <identifier>peppolbis-28-order</identifier>
     <title>PEPPOL BIS Ordering 3.0</title>
@@ -106,7 +135,7 @@
     <customizationId>urn:fdc:peppol.eu:poacc:trns:order_response:3</customizationId>
     <inherit>peppolbis-t76-base-3.0</inherit>
   </configuration>
-  
+
   <configuration>
     <identifier>peppolbis-42</identifier>
     <title>PEPPOL BIS 42 Order agreement 3.0</title>
@@ -114,7 +143,7 @@
     <customizationId>urn:fdc:peppol.eu:poacc:trns:order_agreement:3</customizationId>
     <inherit>peppolbis-t110-base-3.0</inherit>
   </configuration>
-  
+
   <configuration>
     <identifier>peppolbis-1</identifier>
     <title>PEPPOL BIS Catalogue 3.0</title>
@@ -122,7 +151,7 @@
     <customizationId>urn:fdc:peppol.eu:poacc:trns:catalogue:3</customizationId>
     <inherit>peppolbis-t19-base-3.0</inherit>
   </configuration>
-  
+
   <configuration>
     <identifier>peppolbis-1-response</identifier>
     <title>PEPPOL BIS Catalogue Response 3.0</title>
@@ -130,7 +159,7 @@
     <customizationId>urn:fdc:peppol.eu:poacc:trns:catalogue_response:3</customizationId>
     <inherit>peppolbis-t58-base-3.0</inherit>
   </configuration>
-  
+
   <configuration>
     <identifier>peppolbis-1</identifier>
     <title>PEPPOL BIS wo Catalogue  3.0</title>
@@ -138,7 +167,7 @@
     <customizationId>urn:fdc:peppol.eu:poacc:trns:catalogue:3</customizationId>
     <inherit>peppolbis-t19-base-3.0</inherit>
   </configuration>
-    
+
   <configuration>
     <identifier>peppolbis-18</identifier>
     <title>PEPPOL BIS Punch Out 3.0</title>
@@ -146,7 +175,7 @@
     <customizationId>urn:fdc:peppol.eu:poacc:trns:punch_out:3</customizationId>
     <inherit>peppolbis-t77-base-3.0</inherit>
   </configuration>
-  
+
   <configuration>
     <identifier>peppolbis-30</identifier>
     <title>PEPPOL BIS Despatch Advice 3.0</title>
@@ -154,7 +183,7 @@
     <customizationId>urn:fdc:peppol.eu:poacc:trns:despatch_advice:3</customizationId>
     <inherit>peppolbis-t16-base-3.0</inherit>
   </configuration>
-  
+
   <configuration>
     <identifier>peppolbis-63</identifier>
     <title>PEPPOL BIS Invoice response 3.0</title>
@@ -162,7 +191,7 @@
     <customizationId>urn:fdc:peppol.eu:poacc:trns:invoice_response:3</customizationId>
     <inherit>peppolbis-t111-base-3.0</inherit>
   </configuration>
-  
+
   <configuration>
     <identifier>peppolbis-36</identifier>
     <title>PEPPOL BIS Message level response 3.0</title>
@@ -170,6 +199,37 @@
     <customizationId>urn:fdc:peppol.eu:poacc:trns:mlr:3</customizationId>
     <inherit>peppolbis-t71-base-3.0</inherit>
   </configuration>
-</buildConfigurations>
 
+  <configuration>
+    <identifier>peppolbis-65</identifier>
+    <title>PEPPOL BIS Advanced Ordering 3.0</title>
+    <profileId>urn:fdc:peppol.eu:poacc:bis:advanced_ordering:3</profileId>
+    <customizationId>urn:fdc:peppol.eu:poacc:trns:order:3</customizationId>
+    <inherit>peppolbis-t01-base-3.0</inherit>
+  </configuration>
 
+  <configuration>
+    <identifier>peppolbis-65</identifier>
+    <title>PEPPOL BIS Advanced Ordering 3.0</title>
+    <profileId>urn:fdc:peppol.eu:poacc:bis:advanced_ordering:3</profileId>
+    <customizationId>urn:fdc:peppol.eu:poacc:trns:order_change:3</customizationId>
+    <inherit>peppolbis-t114-base-3.0</inherit>
+  </configuration>
+
+  <configuration>
+    <identifier>peppolbis-65</identifier>
+    <title>PEPPOL BIS Advanced Ordering 3.0</title>
+    <profileId>urn:fdc:peppol.eu:poacc:bis:advanced_ordering:3</profileId>
+    <customizationId>urn:fdc:peppol.eu:poacc:trns:order_cancellation:3</customizationId>
+    <inherit>peppolbis-t115-base-3.0</inherit>
+  </configuration>
+
+  <configuration>
+    <identifier>peppolbis-65</identifier>
+    <title>PEPPOL BIS Advanced Ordering 3.0</title>
+    <profileId>urn:fdc:peppol.eu:poacc:bis:advanced_ordering:3</profileId>
+    <customizationId>urn:fdc:peppol.eu:poacc:trns:order_response_advanced:3</customizationId>
+    <inherit>peppolbis-t116-base-3.0</inherit>
+  </configuration>
+
+  </buildConfigurations>
