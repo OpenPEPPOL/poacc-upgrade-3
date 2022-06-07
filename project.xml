@@ -17,6 +17,7 @@
     <Documentation path="profiles/42-orderagreement/">- Peppol BIS Order Agreement 3.0</Documentation>
     <Documentation path="profiles/36-mlr/">- Peppol BIS Message Level Response 3.0</Documentation>
     <Documentation path="profiles/63-invoiceresponse/">- Peppol BIS Invoice Response 3.1</Documentation>
+    <Documentation path="profiles/65-advanced-ordering/">- Peppol BIS Advanced Ordering 3.0</Documentation>
     <!-- <Documentation path="work/">Overview and processing of alignments</Documentation> -->
     <!-- <Documentation path="review/">Review of alignments</Documentation> -->
     <!-- <Documentation path="methodology/schematron/">Schematron guideline</Documentation> -->
@@ -38,6 +39,21 @@
         <Title>Peppol Order Agreement transaction 3.0 (T110)</Title>
     </Resource>
     <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-order-change.xml</Path>
+        <Title>Peppol Order Change transaction 3.0 (T114)</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-order-cancellation.xml</Path>
+        <Title>Peppol Order Cancellation transaction 3.0 (T115)</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-order-response-advanced.xml</Path>
+        <Title>Peppol Order Response Advanced transaction 3.0 (T116)</Title>
+    </Resource>
+        <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-catalogue.xml</Path>
         <Title>Peppol Catalogue transaction 3.1 (T19)</Title>
@@ -116,10 +132,32 @@
         <Path>rules/sch/parts/PEPPOL-M-T111.sch</Path>
         <Title>Business rules for Peppol Invoice Response transaction 3.0</Title>
     </Resource>
+    <Resource>
+        <Identifier>T114</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/parts/Peppol-M-T114.sch</Path>
+        <Title>Business rules for Peppol Order Change transaction 3.0</Title>
+    </Resource>
+    <Resource>
+        <Identifier>T115</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/parts/Peppol-M-T115.sch</Path>
+        <Title>Business rules for Peppol Order Cancellation transaction 3.0</Title>
+    </Resource>
+    <Resource>
+        <Identifier>T116</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/parts/Peppol-M-T116.sch</Path>
+        <Title>Business rules for Peppol Order Response Advanced transaction 3.0</Title>
+    </Resource>
     <!-- Code lists -->
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL1229.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL1229_CHANGE.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
@@ -272,6 +310,18 @@
     <Resource>
         <Type>Namespace-1</Type>
         <Path>structure/namespace/ubl-order-response.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/ubl-order-change.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/ubl-order-cancellation.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/ubl-order-response-advanced.xml</Path>
     </Resource>
     <Resource>
         <Type>Namespace-1</Type>

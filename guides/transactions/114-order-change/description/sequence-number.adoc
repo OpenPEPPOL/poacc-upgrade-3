@@ -1,0 +1,11 @@
+[[sequence-number]]
+= Sequence number
+
+The Order Change Sequence number assigned by the Buyer to ensure the proper sequencing of changes.
+Sequence number is mandatory in Order Change.
+
+.Example of an Peppol BIS Order Change with Sequence number:
+[source, xml, indent=0]
+----
+include::{snippet-change-dir}/snippet-advanced.xml[tags=sequence-number]
+----

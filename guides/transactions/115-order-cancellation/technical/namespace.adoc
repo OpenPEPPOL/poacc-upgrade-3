@@ -1,0 +1,3 @@
+//test
+* The target namespace for the {ubl23} Order Cancellation is: +
+`urn:oasis:names:specification:ubl:schema:xsd:OrderCancellation-2`

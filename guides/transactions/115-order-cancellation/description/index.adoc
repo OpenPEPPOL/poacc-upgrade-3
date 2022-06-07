@@ -1,0 +1,8 @@
+[[order-cancellation-message]]
+= Description of selected parts of the order cancellation message
+
+:leveloffset: +1
+
+include::orderref.adoc[]
+
+:leveloffset: -1
