@@ -961,7 +961,6 @@
 					<Name>Document level allowance or charge TAX category code</Name>
 					<Description>A coded identification of what TAX category applies to the document level allowance or charge.</Description>
 					<DataType>Code</DataType>
-					<Reference type="CODE_LIST">UNCL5305</Reference>
 					<Value type="EXAMPLE">S</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -1054,7 +1053,6 @@
 						<Description>Coded identification of a TAX category.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">OP-110-005</Reference>
-						<Reference type="CODE_LIST">UNCL5305</Reference>
 						<Value type="EXAMPLE">S</Value>
 					</Element>
 					<Element cardinality="0..1">
@@ -1637,7 +1635,6 @@
 							<Description>The TAX category code for the item.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir110-106</Reference>
-							<Reference type="CODE_LIST">UNCL5305</Reference>
 							<Value type="EXAMPLE">S</Value>
 						</Element>
 						<Element cardinality="0..1">

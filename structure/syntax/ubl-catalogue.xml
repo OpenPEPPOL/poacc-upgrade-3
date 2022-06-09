@@ -1661,7 +1661,6 @@
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-094</Reference>
 
-						<Reference type="CODE_LIST">UNCL5305</Reference>
 						<Value type="EXAMPLE">S</Value>
 					</Element>
 					<Element cardinality="0..1">

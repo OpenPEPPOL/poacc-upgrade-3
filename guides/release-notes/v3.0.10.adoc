@@ -1,0 +1,12 @@
+= Version 3.0.10
+[horizontal]
+Release date:: 2022-11-
+
+== Changes to code lists and validation artefacts
+
+* Validation of code values for Tax Category codes are removed to allow for non-EU categories. In previous release (3.0.4), the TaxScheme/ID was generalized to allow for other schemes than VAT but also that category code should have been generalized. This release addresses this shortcoming (with a consequence that category code isn't validated). The change affects the following transactions:
+** Order transaction (T01)
+** Order Response transaction (T76)
+** Catalogue transaction (T19)
+** Order Agreement transaction (T110)
+** Punch Out transaction (T77)
