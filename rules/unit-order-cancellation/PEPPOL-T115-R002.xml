@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-T115-base-3.0">
+	configuration="peppolbis-t115-base-3.0">
 	<assert>
 		<description>Verify that the seller party official name or a seller party identifier</description>
 		<scope>PEPPOL-T115-R002</scope>
