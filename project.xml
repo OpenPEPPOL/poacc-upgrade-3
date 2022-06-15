@@ -135,19 +135,19 @@
     <Resource>
         <Identifier>T114</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/parts/Peppol-M-T114.sch</Path>
+        <Path>rules/sch/parts/PEPPOL-M-T114.sch</Path>
         <Title>Business rules for Peppol Order Change transaction 3.0</Title>
     </Resource>
     <Resource>
         <Identifier>T115</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/parts/Peppol-M-T115.sch</Path>
+        <Path>rules/sch/parts/PEPPOL-M-T115.sch</Path>
         <Title>Business rules for Peppol Order Cancellation transaction 3.0</Title>
     </Resource>
     <Resource>
         <Identifier>T116</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/parts/Peppol-M-T116.sch</Path>
+        <Path>rules/sch/parts/PEPPOL-M-T116.sch</Path>
         <Title>Business rules for Peppol Order Response Advanced transaction 3.0</Title>
     </Resource>
     <!-- Code lists -->
@@ -319,10 +319,10 @@
         <Type>Namespace-1</Type>
         <Path>structure/namespace/ubl-order-cancellation.xml</Path>
     </Resource>
-    <Resource>
+    <!--Resource>
         <Type>Namespace-1</Type>
         <Path>structure/namespace/ubl-order-response-advanced.xml</Path>
-    </Resource>
+    </Resource-->
     <Resource>
         <Type>Namespace-1</Type>
         <Path>structure/namespace/ubl-cac.xml</Path>

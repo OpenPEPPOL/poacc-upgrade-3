@@ -3,7 +3,7 @@
 	configuration="peppolbis-T116-base-3.0">
 	<assert>
 		<description>Verify currencyID has same value as DocumentCurrencyCode.</description>
-		<scope>PEPPOL-T116-R005</scope>
+		<scope>PEPPOL-t116-R005</scope>
 	</assert>
 
 	<test>

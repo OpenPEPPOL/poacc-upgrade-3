@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-T114-base-3.0">
+	configuration="peppolbis-t114-base-3.0">
 	<assert>
 		<description>Verify that order line net amount equal (Ordered quantity * (Item net price/item price base quantity) + Order line charge amount - Order line allowance amount.</description>
 		<scope>PEPPOL-T114-R024</scope>
