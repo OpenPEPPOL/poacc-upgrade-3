@@ -100,7 +100,7 @@
 			<Reference type="BUSINESS_TERM">tir110-044</Reference>
 			<Value type="EXAMPLE">abc123</Value>
 		</Element>
-		<Element>
+		<Element cardinality="1..1">
 			<Term>cac:OrderReference</Term>
 			<Name>Order reference</Name>
 			<Element>
