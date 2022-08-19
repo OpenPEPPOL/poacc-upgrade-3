@@ -1055,6 +1055,16 @@
 					<Description>To uniquely identify the line of the order that is being
 						despatched.</Description>
 					<Reference type="BUSINESS_TERM">tir16-051</Reference>
+					<Value type="EXAMPLE">1</Value>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:SalesOrderLineID</Term>
+					<Name>Sales Order Line number. </Name>
+					<Description>To uniquely identify the line of the sales order that is being
+						despatched.
+					</Description>
+					<Reference type="BUSINESS_TERM">tir16-p047</Reference>
+					<Value type="EXAMPLE">10</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:OrderReference</Term>

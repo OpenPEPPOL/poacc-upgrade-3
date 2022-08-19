@@ -137,6 +137,7 @@
 		<cbc:DeliveredQuantity unitCode="EA">23</cbc:DeliveredQuantity>
 		<cac:OrderLineReference>
 			<cbc:LineID>1</cbc:LineID>
+			<cbc:SalesOrderLineID>10</cbc:SalesOrderLineID>
 			<cac:OrderReference>
 				<cbc:ID>4321</cbc:ID>
 			</cac:OrderReference>
