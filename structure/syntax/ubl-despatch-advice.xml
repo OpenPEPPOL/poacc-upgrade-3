@@ -1155,6 +1155,44 @@
 					</Element>
 				</Element>
 				<Element cardinality="0..n">
+					<Term>cac:CommodityClassification</Term>
+					<Name>Commodity classification information</Name>
+					<Element cardinality="0..1">
+						<Term>cbc:ItemClassificationCode</Term>
+						<Name>Item classification code</Name>
+						<Description>A code for classifying the item by its type or nature.
+							Classification codes are used to allow grouping of similar items for
+							a various purposes e.g. public procurement (CPV), e-Commerce
+							(UNSPSC) etc.</Description>
+						<DataType>Code</DataType>
+						<Reference type="BUSINESS_TERM">tir16-p048</Reference>
+						<Attribute>
+							<Term>listID</Term>
+							<Name>Item classification identifier identification scheme
+								identifier</Name>
+							<Description>The identification scheme identifier of the Item
+								classification identifier</Description>
+							<Reference type="CODE_LIST">UNCL7143</Reference>
+							<Value type="EXAMPLE">STI</Value>
+						</Attribute>
+						<Attribute usage="Optional">
+							<Term>listVersionID</Term>
+							<Name>Item classification identifier version identification scheme
+								identifier</Name>
+							<Description>The identification scheme version identifier of the
+								Item classification identifier</Description>
+							<Value type="EXAMPLE">20.0602</Value>
+						</Attribute>
+						<Attribute usage="Optional">
+							<Term>name</Term>
+							<Name>Clear text name equivalent of classification code</Name>
+							<Description>The textual equivalent of the code value</Description>
+							<Value type="EXAMPLE">Office furniture</Value>	
+						</Attribute>
+						<Value type="EXAMPLE">9873242</Value>
+					</Element>
+				</Element>				
+				<Element cardinality="0..n">
 					<Term>cac:HazardousItem</Term>
 					<Name>Hazardous item information</Name>
 					<Element cardinality="0..1">
