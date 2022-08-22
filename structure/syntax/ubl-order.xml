@@ -1148,12 +1148,28 @@
 					<Reference type="BUSINESS_TERM">tir01-099</Reference>
 				</Element>
 				<Element cardinality="0..1">
+					<Term>cbc:StartTime</Term>
+					<Name>Period start time</Name>
+					<Description>The time at which this period begins. Format = "hh:mm:ss"</Description>
+					<DataType>Date</DataType>
+					<Reference type="BUSINESS_TERM">tir01-p042</Reference>
+					<Value type="EXAMPLE">12:30:00</Value>
+				</Element>
+				<Element cardinality="0..1">
 					<Term>cbc:EndDate</Term>
 					<Name>Period end date</Name>
 					<Description>The date on which the period ends. The end date counts as part of
 						the period.Format ="YYYY-MM-DD"</Description>
 					<DataType>Date</DataType>
 					<Reference type="BUSINESS_TERM">tir01-100</Reference>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:EndTime</Term>
+					<Name>Period end time</Name>
+					<Description>The time at which this period end. Format = "hh:mm:ss"</Description>
+					<DataType>Date</DataType>
+					<Reference type="BUSINESS_TERM">tir01-p043</Reference>
+					<Value type="EXAMPLE">18:00:00</Value>
 				</Element>
 			</Element>
 			<Element cardinality="0..1">

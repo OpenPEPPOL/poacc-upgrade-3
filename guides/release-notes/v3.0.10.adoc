@@ -8,6 +8,9 @@ Release date:: 2022-11-
 ** Commodity Classification code added as an optional business term on Despatch advice line.
 ** Optional additional Document reference (incl business terms for attachments) added on header level. Optional business terms for Document references (no attachments) also added on line level.
 ** Optional business term for Carrier Party Identification added to the Carrier Party information.
+* Order transaction (T01) 
+** New business terms for RequestedDeliveryPeriod, Start time (tir01-p042) and End time (tir01-p043). Example updated.
+** New business terms for PromisedDeliveryPeriod, Start time (tir01-p042) and End time (tir01-p043). Added to example.
 
 == Changes to code lists and validation artefacts
 
