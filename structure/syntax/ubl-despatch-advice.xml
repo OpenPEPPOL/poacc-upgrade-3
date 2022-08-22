@@ -73,6 +73,66 @@
 				<Reference type="BUSINESS_TERM">tir16-006</Reference>
 			</Element>
 		</Element>
+		<Element cardinality="0..n">
+			<Term>cac:AdditionalDocumentReference</Term>
+			<Name>Additional documents</Name>
+			<Element>
+				<Term>cbc:ID</Term>
+				<Name>Document identifier</Name>
+				<Description>An identifier for the referenced document.</Description>
+				<Reference type="BUSINESS_TERM">tir16-p049</Reference>
+				<Value type="EXAMPLE">doc-34</Value>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cbc:DocumentType</Term>
+				<Name>Document description</Name>
+				<Description>Textual description of the document.</Description>
+				<DataType>Text</DataType>
+				<Reference type="BUSINESS_TERM">tir16-p050</Reference>
+				<Value type="EXAMPLE">Timesheet</Value>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:Attachment</Term>
+				<Name>Attachment(s)</Name>
+				<Element cardinality="0..1">
+					<Term>cbc:EmbeddedDocumentBinaryObject</Term>
+					<Name>Attached document</Name>
+					<Description>The attached document embeded as binary object, coded as Base64.
+					The binary object has two supplementary components: a Mime Code, which specifies the Mime type of the attachment and a Filename that is provided by (or on behalf of) the sender of the document</Description>
+					<DataType>Binary object</DataType>
+					<Reference type="BUSINESS_TERM">tir16-p051</Reference>
+					<Attribute>
+						<Term>mimeCode</Term>
+						<Name>Attached document Mime code</Name>
+						<Description>The mime code of the attached document.</Description>
+						<Reference type="CODE_LIST">MimeCode</Reference>
+						<Value type="EXAMPLE">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</Value>
+					</Attribute>
+					<Attribute>
+						<Term>filename</Term>
+						<Name>Attached document filename</Name>
+						<Description>The file name of the attached document</Description>
+						<Value type="EXAMPLE">Hours-spent.xlsx</Value>
+					</Attribute>
+					<Value type="EXAMPLE">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</Value>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:ExternalReference</Term>
+					<Name>External reference</Name>
+					<Description>Reference to external document </Description>
+					<Element>
+						<Term>cbc:URI</Term>
+						<Name>External document URI</Name>
+						<Description>The Uniform Resource Identifier (URI) that identifies where the
+							external document is located.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir16-p052</Reference>
+						<Value type="EXAMPLE">http://www.example.com/image.jpg</Value>
+					</Element>
+				</Element>
+			</Element>
+		</Element>
+		
 		<Element>
 			<Term>cac:DespatchSupplierParty</Term>
 			<Name>Despatching party information</Name>
@@ -1078,6 +1138,25 @@
 						<Reference type="RULE">PEPPOL-T16-R002</Reference>
 					</Element>
 				</Element>
+			</Element>
+			<Element cardinality="0..n">
+				<Term>cac:DocumentReference</Term>
+				<Name>Document reference</Name>
+				<Element>
+					<Term>cbc:ID</Term>
+					<Name>Document identifier</Name>
+					<Description>An identifier for the referenced document.</Description>
+					<Reference type="BUSINESS_TERM">tir16-p053</Reference>
+					<Value type="EXAMPLE">doc-30</Value>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:DocumentType</Term>
+					<Name>Document description</Name>
+					<Description>Textual description of the document.</Description>
+					<DataType>Text</DataType>
+					<Reference type="BUSINESS_TERM">tir16-p054</Reference>
+					<Value type="EXAMPLE">Weight statement</Value>
+				</Element>			
 			</Element>
 			<Element>
 				<Term>cac:Item</Term>
