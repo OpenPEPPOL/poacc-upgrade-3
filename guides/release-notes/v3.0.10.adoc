@@ -2,6 +2,10 @@
 [horizontal]
 Release date:: 2022-11-
 
+== BIS documentation
+* Invoice Response
+** Definition of status codes in section Status Codes corrected to be in line with rule OP-BR111-R012 so that Accepted is not a final status and Paid is a final status.
+
 == Changes to syntax
 * Despatch Advice transaction (T16) 
 ** Reference to Sales Order Line number is added as an optional business term on Despatch advice line.
