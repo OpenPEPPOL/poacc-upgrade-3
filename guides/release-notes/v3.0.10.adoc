@@ -14,3 +14,4 @@ Release date:: 2022-11-
 ** Catalogue transaction (T19)
 ** Order Agreement transaction (T110)
 ** Punch Out transaction (T77)
+* Added DocumentType codes for Order transactions (T01) to allow for blanket orders (code 221) and Call-off (code 226). Applies in BIS specifications Order Only and Ordering.
