@@ -4,6 +4,7 @@ Release date:: 2022-11-
 
 == Changes to syntax
 * Despatch Advice transaction (T16) - Reference to Sales Order Line number is added as an optional business term on Despatch advice line.
+* Despatch Advice transaction (T16) - CommodityClassification code added as an optional business term on Despatch advice line.
 
 == Changes to code lists and validation artefacts
 
