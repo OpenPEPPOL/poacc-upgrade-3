@@ -880,6 +880,25 @@
 					<Term>cac:CarrierParty</Term>
 					<Name>Carrier party</Name>
 					<Element cardinality="0..1">
+						<Term>cac:PartyIdentification</Term>
+						<Name>Party identification</Name>
+						<Element>
+							<Term>cbc:ID</Term>
+							<Name>Carrier party identifier</Name>
+							<Description>The carrier party identifier.</Description>
+							<DataType>Identifier</DataType>
+							<Reference type="BUSINESS_TERM">tir16-p055</Reference>
+							<Attribute usage="optional">
+								<Term>schemeID</Term>
+								<Name>Scheme identifier</Name>
+								<Description>Scheme identifier for party identification</Description>
+								<Reference type="CODE_LIST">ICD</Reference>
+								<Value type="EXAMPLE">0007</Value>
+							</Attribute>
+							<Value type="EXAMPLE">5533221100</Value>
+						</Element>
+					</Element>
+					<Element cardinality="0..1">
 						<Term>cac:PartyName</Term>
 						<Name>Party name</Name>
 						<Element>
