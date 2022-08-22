@@ -3,10 +3,8 @@
 Release date:: 2022-11-
 
 == Changes to syntax
-* Despatch Advice transaction (T16) 
-** Reference to Sales Order Line number is added as an optional business term on Despatch advice line.
-** Commodity Classification code added as an optional business term on Despatch advice line.
-** Additional Document reference (incl business terms for attachments) added on header level. Business terms for Document references (no attachments) also added on line level.
+* Despatch Advice transaction (T16) - Reference to Sales Order Line number is added as an optional business term on Despatch advice line.
+* Despatch Advice transaction (T16) - CommodityClassification code added as an optional business term on Despatch advice line.
 
 == Changes to code lists and validation artefacts
 
@@ -16,3 +14,4 @@ Release date:: 2022-11-
 ** Catalogue transaction (T19)
 ** Order Agreement transaction (T110)
 ** Punch Out transaction (T77)
+* Added DocumentType codes for Order transactions (T01) to allow for blanket orders (code 221) and Call-off (code 226). Applies in BIS specifications Order Only and Ordering.
