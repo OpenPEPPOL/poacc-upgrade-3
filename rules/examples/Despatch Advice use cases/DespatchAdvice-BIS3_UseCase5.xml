@@ -13,7 +13,7 @@
     <cbc:ID>doc-34</cbc:ID>
     <cbc:DocumentType>Timesheet</cbc:DocumentType>
     <cac:Attachment>
-      <cbc:EmbeddedDocumentBinaryObject mimeCode="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</cbc:EmbeddedDocumentBinaryObject>
+      <cbc:EmbeddedDocumentBinaryObject filename="timesheet.xlsx" mimeCode="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</cbc:EmbeddedDocumentBinaryObject>
       <cac:ExternalReference>
         <cbc:URI>http://www.example.com/image.jpg</cbc:URI>
       </cac:ExternalReference>
