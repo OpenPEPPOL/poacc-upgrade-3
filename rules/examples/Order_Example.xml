@@ -46,6 +46,9 @@
 	<cac:Contract>
 		<cbc:ID>34322</cbc:ID>
 	</cac:Contract>
+	<cac:ProjectReference>
+		<cbc:ID>PID33</cbc:ID>
+	</cac:ProjectReference>
 	<cac:BuyerCustomerParty>
 		<cac:Party>
 			<cbc:EndpointID schemeID="0192">987654325</cbc:EndpointID>

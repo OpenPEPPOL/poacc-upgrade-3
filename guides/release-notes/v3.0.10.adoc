@@ -14,9 +14,11 @@ Release date:: 2022-11-
 ** Optional business term for Carrier Party Identification added to the Carrier Party information.
 ** Optional TransportModeCode added on header level with codes from UN/ECE Rec 19.
 ** Examples updated
-* Order transaction (T01) 
+* Order transaction (T01)
 ** New business terms for RequestedDeliveryPeriod, Start time (tir01-p042) and End time (tir01-p043). Example updated.
-** New business terms for PromisedDeliveryPeriod, Start time (tir01-p042) and End time (tir01-p043). Added to example.
+** New business term for Project reference/ID (tir01-p044). Example updated.
+* Order Response transaction (T76)
+** New business terms for PromisedDeliveryPeriod, Start time (tir76-p010) and End time (tir76-p011). Added to example.
 
 == Changes to code lists and validation artefacts
 

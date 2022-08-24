@@ -238,6 +238,21 @@
 				<Reference type="BUSINESS_TERM">tir01-019</Reference>
 			</Element>
 		</Element>
+
+		<Element cardinality="0..1">
+            <Term>cac:ProjectReference</Term>
+            <Name>PROJECT REFERENCE</Name>
+
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Project reference</Name>
+                <Description>The identification of the project the order refers to.</Description>
+                <DataType>Document Reference</DataType>
+                <Reference type="BUSINESS_TERM"> tir01-p044</Reference>
+                <Value type="EXAMPLE">PID33</Value>
+            </Element>
+        </Element>
+
 		<Element>
 			<Term>cac:BuyerCustomerParty</Term>
 			<Name>Buyer information</Name>
