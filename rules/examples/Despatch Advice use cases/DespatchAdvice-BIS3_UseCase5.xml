@@ -128,6 +128,9 @@
         </cac:PartyName>
       </cac:CarrierParty>
     </cac:Consignment>
+	<cac:ShipmentStage>
+		<cbc:TransportModeCode>2</cbc:TransportModeCode>
+	</cac:ShipmentStage>
     <cac:Delivery>
       <cbc:TrackingID>1178298510DK</cbc:TrackingID>
       <cac:EstimatedDeliveryPeriod>

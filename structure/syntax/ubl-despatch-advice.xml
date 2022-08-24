@@ -933,6 +933,17 @@
 				</Element>
 			</Element>
 			<Element cardinality="0..1">
+				<Term>cac:ShipmentStage</Term>
+				<Name>Shipment stage information</Name>
+				<Element cardinality="1..1">
+					<Term>cbc:TransportModeCode</Term>
+					<Name>Mode of transport</Name>
+					<Description>The mode of transport with which the goods were delivered.</Description>
+					<Reference type="BUSINESS_TERM">tir16-p056</Reference>
+					<Reference type="CODE_LIST">UNECERec19</Reference>
+				</Element>
+			</Element>
+			<Element cardinality="0..1">
 				<Term>cac:Delivery</Term>
 				<Name>Delivery information</Name>
 				<Element cardinality="0..1">
