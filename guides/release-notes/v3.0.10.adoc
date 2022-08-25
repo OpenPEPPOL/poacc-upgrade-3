@@ -21,8 +21,8 @@ Release date:: 2022-11-
 * Order Response transaction (T76)
 ** New business terms for PromisedDeliveryPeriod, Start time (tir76-p010) and End time (tir76-p011). Added to example.
 * Order Agreement transaction (T110)
-** Optional element DocumentTypeCode(tir110-p008) added on ItemSpecificationDocumentReference level. Example updated.
-** Optional element CompanyID added for PartyLegalEntity in both Buyer(tir110-p009) and Seller(tir110-p010). Example updated.
+** Optional element DocumentTypeCode (tir110-p008) added on ItemSpecificationDocumentReference level. Example updated.
+** Optional element CompanyID added for PartyLegalEntity in both Buyer (tir110-p009) and Seller (tir110-p010). Example updated.
 
 == Changes to code lists and validation artefacts
 
