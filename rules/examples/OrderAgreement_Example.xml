@@ -63,6 +63,7 @@
 			</cac:PostalAddress>
 			<cac:PartyLegalEntity>
 				<cbc:RegistrationName>The Supplier AB</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0082">123456789</cbc:CompanyID>
 			</cac:PartyLegalEntity>
 			<cac:Contact>
 				<cbc:Name>John Doe</cbc:Name>
@@ -92,6 +93,7 @@
 			</cac:PostalAddress>
 			<cac:PartyLegalEntity>
 				<cbc:RegistrationName>City Hospital</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0082">931186755</cbc:CompanyID>
 			</cac:PartyLegalEntity>
 		</cac:Party>
 		<cac:DeliveryContact>
