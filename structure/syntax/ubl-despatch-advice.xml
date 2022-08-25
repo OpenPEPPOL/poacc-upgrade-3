@@ -1095,7 +1095,7 @@
 					information that is not contained explicitly in another structure.</Description>
 				<Reference type="BUSINESS_TERM">tir16-047</Reference>
 			</Element>
-			<Element cardinality="0..1">
+			<Element>
 				<Term>cbc:DeliveredQuantity</Term>
 				<Name>Delivererd quantity</Name>
 				<Description>The quantity that is despatched in the line.</Description>

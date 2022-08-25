@@ -13,6 +13,7 @@ Release date:: 2022-11-
 ** Optional additional Document reference (incl business terms for attachments) added on header level. Optional business terms for Document references (no attachments) also added on line level.
 ** Optional business term for Carrier Party Identification added to the Carrier Party information.
 ** Optional TransportModeCode added on header level with codes from UN/ECE Rec 19.
+** Cardinality of DeliveredQuantity on Despatch line changed to mandatory in syntax to correctly reflect the intention of the BIS. 
 ** Examples updated
 * Order transaction (T01)
 ** New business terms for RequestedDeliveryPeriod, Start time (tir01-p042) and End time (tir01-p043). Example updated.
