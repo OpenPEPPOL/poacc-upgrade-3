@@ -1530,6 +1530,15 @@
 							<Value type="EXAMPLE">docid7687</Value>
 						</Element>
 						<Element cardinality="0..1">
+							<Term>cbc:DocumentTypeCode</Term>
+							<Name>External Item Specifications Type</Name>
+							<Description>A functional description of the attachment/image expressed as code</Description>
+							<DataType>Code</DataType>
+							<Reference type="CODE_LIST">UNCL1001</Reference>
+							<Reference type="CODE_LIST">Image</Reference>
+							<Reference type="BUSINESS_TERM">tir110-p008</Reference>
+						</Element>
+						<Element cardinality="0..1">
 							<Term>cbc:DocumentType</Term>
 							<Name>Document description</Name>
 							<Description>Textual description of the document.</Description>
