@@ -5,6 +5,7 @@ Release date:: 2022-11-
 == BIS documentation
 * Invoice Response
 ** Definition of status codes in section Status Codes corrected to be in line with rule OP-BR111-R012 so that Accepted is not a final status and Paid is a final status.
+** Correction of examples in chapter 6.3  
 
 == Changes to syntax
 * Despatch Advice transaction (T16) 
