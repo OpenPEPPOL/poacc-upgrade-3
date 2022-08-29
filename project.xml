@@ -16,7 +16,7 @@
     <Documentation path="profiles/18-punchout/">- Peppol BIS Punch Out 3.1</Documentation>
     <Documentation path="profiles/42-orderagreement/">- Peppol BIS Order Agreement 3.0</Documentation>
     <Documentation path="profiles/36-mlr/">- Peppol BIS Message Level Response 3.0</Documentation>
-    <Documentation path="profiles/63-invoiceresponse/">- Peppol BIS Invoice Response 3.1</Documentation>
+    <Documentation path="profiles/63-invoiceresponse/">- Peppol BIS Invoice Response 3.2</Documentation>
     <!-- <Documentation path="work/">Overview and processing of alignments</Documentation> -->
     <!-- <Documentation path="review/">Review of alignments</Documentation> -->
     <!-- <Documentation path="methodology/schematron/">Schematron guideline</Documentation> -->
@@ -25,22 +25,22 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-order.xml</Path>
-        <Title>Peppol Order transaction 3.2 (T01)</Title>
+        <Title>Peppol Order transaction 3.3 (T01)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-order-response.xml</Path>
-        <Title>Peppol Order Response transaction 3.0 (T76)</Title>
+        <Title>Peppol Order Response transaction 3.1 (T76)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-orderagreement.xml</Path>
-        <Title>Peppol Order Agreement transaction 3.0 (T110)</Title>
+        <Title>Peppol Order Agreement transaction 3.1 (T110)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-catalogue.xml</Path>
-        <Title>Peppol Catalogue transaction 3.1 (T19)</Title>
+        <Title>Peppol Catalogue transaction 3.2 (T19)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
@@ -50,12 +50,12 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-despatch-advice.xml</Path>
-        <Title>Peppol Despatch Advice transaction 3.1 (T16)</Title>
+        <Title>Peppol Despatch Advice transaction 3.2 (T16)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-shoppingcart.xml</Path>
-        <Title>Peppol Punch Out transaction 3.1 (T77)</Title>
+        <Title>Peppol Punch Out transaction 3.2 (T77)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
