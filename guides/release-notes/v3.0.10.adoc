@@ -34,3 +34,4 @@ Release date:: 2022-11-
 ** Order Agreement transaction (T110)
 ** Punch Out transaction (T77)
 * Added DocumentType codes for Order transactions (T01) to allow for blanket orders (code 221) and Call-off (code 226). Applies in BIS specifications Order Only and Ordering.
+* Rule PEPPOL-COMMON-R049 (ICD 0007 - Swedish organization number) changed from severity warning to fatal (as announced in the may 2022 release)
