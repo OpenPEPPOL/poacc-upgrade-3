@@ -26,13 +26,6 @@
 			<Reference type="BUSINESS_TERM">tir114-002</Reference>
 			<Value type="FIXED">urn:fdc:peppol.eu:poacc:bis:advanced_ordering:3</Value>
 		</Element>
-		<Element cardinality="0..1">
-			<Term>cbc:UUID</Term>
-			<Name>Unique identifier</Name>
-			<Description>Unique identifier of the instance document.</Description>
-			<DataType>Identifier</DataType>
-			<Value type="EXAMPLE">ee3eefc8-597b-4615-baff-f9890f4a94b9</Value>
-		</Element>
 		<Element>
 			<Term>cbc:ID</Term>
 			<Name>Order identifier</Name>
@@ -376,7 +369,7 @@
 					<Description>Buyer tax information </Description>
 					<Element>
 						<Term>cbc:CompanyID</Term>
-						<Name>Buyer VAT identifier</Name>
+						<Name>Buyer TAX identifier</Name>
 						<Description>The buyers registered Value Added Tax identifier. To be stated
 							in case reverse charge is to apply to the purchase.</Description>
 						<DataType>Identifier</DataType>
@@ -388,10 +381,10 @@
 						<Name>Tax scheme</Name>
 						<Element>
 							<Term>cbc:ID</Term>
-							<Description>Mandatory element. Use = "VAT"</Description>
+							<Description>Mandatory element. E.g. "VAT",  "GST" or "TAX"</Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir114-p004</Reference>
-							<Value type="FIXED">VAT</Value>
+							<Value type="EXAMPLE">GST</Value>
 						</Element>
 					</Element>
 				</Element>
@@ -918,8 +911,8 @@
 					<Description>Tax information of the invoicee party</Description>
 					<Element>
 						<Term>cbc:CompanyID</Term>
-						<Name>Invoicee VAT identifier</Name>
-						<Description>The invoicees registered Value Added Tax
+						<Name>Invoicee TAX identifier</Name>
+						<Description>The invoicees registered Tax
 							identifier</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir114-p018</Reference>
@@ -930,10 +923,10 @@
 						<Name>Tax scheme</Name>
 						<Element>
 							<Term>cbc:ID</Term>
-							<Description>Tax scheme identifier. Use = "VAT"</Description>
+							<Description>Tax scheme identifier.</Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir114-p003</Reference>
-							<Value type="FIXED">VAT</Value>
+							<Value type="EXAMPLE">VAT</Value>
 						</Element>
 					</Element>
 				</Element>
@@ -1149,6 +1142,14 @@
 					<Reference type="BUSINESS_TERM">tir114-099</Reference>
 				</Element>
 				<Element cardinality="0..1">
+					<Term>cbc:StartTime</Term>
+					<Name>Period start time</Name>
+					<Description>The time on which the period starts.The start time counts as
+						part of the period. Format ="HH:MM:SS"</Description>
+					<DataType>Time</DataType>
+					<Reference type="BUSINESS_TERM">tir114-140</Reference>
+				</Element>				
+				<Element cardinality="0..1">
 					<Term>cbc:EndDate</Term>
 					<Name>Period end date</Name>
 					<Description>The date on which the period ends. The end date counts as part of
@@ -1156,6 +1157,14 @@
 					<DataType>Date</DataType>
 					<Reference type="BUSINESS_TERM">tir114-100</Reference>
 				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:EndTime</Term>
+					<Name>Period end time</Name>
+					<Description>The time on which the period ends.The end time counts as
+						part of the period. Format ="HH:MM:SS"</Description>
+					<DataType>Time</DataType>
+					<Reference type="BUSINESS_TERM">tir114-141</Reference>
+				</Element>			
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:DeliveryParty</Term>
@@ -1303,25 +1312,25 @@
 					</Element>
 				</Element>
 			</Element>
-		</Element>
-		<Element cardinality="0..1">
-			<Term>cac:Shipment</Term>
-			<Name>Shipment</Name>
-			<Element>
-				<Term>cbc:ID</Term>
-				<Name>Shipment identifier</Name>
-				<Description>Element is mandated by syntax structure use value NA</Description>
-			</Element>
 			<Element cardinality="0..1">
-				<Term>cac:TransportHandlingUnit</Term>
-				<Name>Transport handling unit</Name>
+				<Term>cac:Shipment</Term>
+				<Name>Shipment</Name>
+				<Element>
+					<Term>cbc:ID</Term>
+					<Name>Shipment identifier</Name>
+					<Description>Element is mandated by syntax structure use value NA</Description>
+				</Element>
 				<Element cardinality="0..1">
-					<Term>cbc:ShippingMarks</Term>
-					<Name>Packing label</Name>
-					<Description>A text that the buyer requests to be printed on the packing labels.</Description>
-					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">tir114-p036</Reference>
-					<Value type="EXAMPLE">Receiving instructions.</Value>
+					<Term>cac:TransportHandlingUnit</Term>
+					<Name>Transport handling unit</Name>
+					<Element cardinality="0..1">
+						<Term>cbc:ShippingMarks</Term>
+						<Name>Packing label</Name>
+						<Description>A text that the buyer requests to be printed on the packing labels.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir114-p036</Reference>
+						<Value type="EXAMPLE">Receiving instructions.</Value>
+					</Element>
 				</Element>
 			</Element>
 		</Element>
@@ -1423,7 +1432,7 @@
 				<Term>cbc:Amount</Term>
 				<Name>Allowance and charge amount</Name>
 				<Description>The net amount of the allowance or the charge exluding
-					VAT.</Description>
+					TAX.</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir114-113</Reference>
 				<Reference type="RULE">PEPPOL-T114-R022</Reference>
@@ -1464,8 +1473,8 @@
 				<Name>Tax category</Name>
 				<Element>
 					<Term>cbc:ID</Term>
-					<Name>VAT category code</Name>
-					<Description>The VAT category code that applies to the document level allowance
+					<Name>TAX category code</Name>
+					<Description>The TAX category code that applies to the document level allowance
 						or charge.</Description>
 					<DataType>Code</DataType>
 					<Reference type="CODE_LIST">UNCL5305</Reference>
@@ -1474,8 +1483,8 @@
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:Percent</Term>
-					<Name>VAT rate</Name>
-					<Description>The VAT rate, represented as percentage that applies to the
+					<Name>TAX rate</Name>
+					<Description>The TAX rate, represented as percentage that applies to the
 						document level allowance or charge. As this element is of data type
 						percentage, please note that no %-sign should be used. To state 25 %, use
 						value 25.00</Description>
@@ -1490,10 +1499,10 @@
 					<Name>Tax scheme information</Name>
 					<Element>
 						<Term>cbc:ID</Term>
-						<Description>Tax scheme identifier. Use “VAT”</Description>
+						<Description>Tax scheme identifier.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="BUSINESS_TERM">tir114-p013</Reference>
-						<Value type="FIXED">VAT</Value>
+						<Value type="EXAMPLE">GST</Value>
 					</Element>
 				</Element>
 			</Element>
@@ -1504,9 +1513,9 @@
 			<Description>Specification of expected tax amount</Description>
 			<Element>
 				<Term>cbc:TaxAmount</Term>
-				<Name>VAT total amount</Name>
-				<Description>The total VAT amount that is "added to the document total w/o VAT".
-					This is the sum of all VAT subcategory amounts. The expected Tax Total in the
+				<Name>TAX total amount</Name>
+				<Description>The total TAX amount that is "added to the document total w/o TAX".
+					This is the sum of all TAX subcategory amounts. The expected Tax Total in the
 					corresponding invoice.</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir114-114</Reference>
@@ -1549,7 +1558,7 @@
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cbc:TaxExclusiveAmount</Term>
-				<Name>Document total without VAT</Name>
+				<Name>Document total without TAX</Name>
 				<Description>The "Sum of line amounts" plus "sum of allowances on document level"
 					plus "sum of charges on document level". Must be rounded to maximum 2
 					decimals.</Description>
@@ -1569,8 +1578,8 @@
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cbc:TaxInclusiveAmount</Term>
-				<Name>Document total including VAT</Name>
-				<Description>The total value including VAT. Must be rounded to maximum 2
+				<Name>Document total including TAX</Name>
+				<Description>The total value including TAX. Must be rounded to maximum 2
 					decimals.</Description>
 				<DataType>Amount</DataType>
 				<Reference type="BUSINESS_TERM">tir114-147</Reference>
@@ -1741,7 +1750,7 @@
 					<Term>cbc:LineExtensionAmount</Term>
 					<Name>Order line amount</Name>
 					<Description>The total amount for the Line Item, including Allowance Charges but
-						net of taxes. The expected line amount excluding VAT but inclusive of other
+						net of taxes. The expected line amount excluding TAX but inclusive of other
 						charges, allowances and taxes.</Description>
 					<DataType>Amount</DataType>
 					<Reference type="BUSINESS_TERM">tir114-128</Reference>
@@ -1794,7 +1803,7 @@
 						</Attribute>
 						<Value type="EXAMPLE">7300010000001</Value>
 					</Element>
-					<Element>
+					<Element cardinality="0..1">
 						<Term>cac:RequestedDeliveryPeriod</Term>
 						<Name>Order line requested delivery period </Name>
 						<Description>Requested delivery period for the order line</Description>
@@ -1808,6 +1817,15 @@
 							<Value type="EXAMPLE">2022-02-15</Value>
 						</Element>
 						<Element cardinality="0..1">
+							<Term>cbc:StartTime</Term>
+							<Name>Period start time</Name>
+							<Description>The time on which the period starts.The start time counts as
+								part of the period. Format ="HH:MM:SS"</Description>
+							<DataType>Time</DataType>
+							<Reference type="BUSINESS_TERM">tir114-142</Reference>
+							<Value type="EXAMPLE">00:00:00</Value>
+						</Element>			
+						<Element cardinality="0..1">
 							<Term>cbc:EndDate</Term>
 							<Name>Period end date</Name>
 							<Description>The date on which the period ends. The end date counts as
@@ -1816,6 +1834,15 @@
 							<Reference type="BUSINESS_TERM">tir114-127</Reference>
 							<Value type="EXAMPLE">2022-03-01</Value>
 						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:EndTime</Term>
+							<Name>Period end time</Name>
+							<Description>The time on which the period ends.The end time counts as
+								part of the period. Format ="HH:MM:SS"</Description>
+							<DataType>Time</DataType>
+							<Reference type="BUSINESS_TERM">tir114-143</Reference>
+							<Value type="EXAMPLE">22:00:00</Value>
+						</Element>			
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
@@ -1908,7 +1935,7 @@
 					<Element>
 						<Term>cbc:Amount</Term>
 						<Name>Line level allowance or charge amount</Name>
-						<Description>The amount of an allowance or a charge, without VAT. Must be
+						<Description>The amount of an allowance or a charge, without TAX. Must be
 							rounded to maximum 2 decimals</Description>
 						<DataType>Amount</DataType>
 						<Reference type="RULE">PEPPOL-T114-R022</Reference>
@@ -1952,7 +1979,7 @@
 						<Term>cbc:PriceAmount</Term>
 						<Name>Item price</Name>
 						<Description>The net price of the item including all allowances, charges and
-							taxes but exluding VAT. Although price is an optional element in an
+							taxes but exluding TAX. Although price is an optional element in an
 							order it recommended as best practice to either state the price or
 							provide reference to an appropriate source from which the price can be
 							identified such as a contract, catalogue or a quote.</Description>
@@ -2157,11 +2184,11 @@
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:ClassifiedTaxCategory</Term>
-						<Name>Line VAT information</Name>
+						<Name>Line TAX information</Name>
 						<Element>
 							<Term>cbc:ID</Term>
-							<Name>Item VAT category code</Name>
-							<Description>The VAT category code for the item.</Description>
+							<Name>Item TAX category code</Name>
+							<Description>The TAX category code for the item.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir114-150</Reference>
 							<Reference type="CODE_LIST">UNCL5305</Reference>
@@ -2169,8 +2196,8 @@
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cbc:Percent</Term>
-							<Name>Line VAT rate</Name>
-							<Description>The VAT percentage rate that applies to the line
+							<Name>Line TAX rate</Name>
+							<Description>The TAX percentage rate that applies to the line
 								amount.</Description>
 							<DataType>Percentage</DataType>
 							<Reference type="BUSINESS_TERM">tir114-170</Reference>
@@ -2183,10 +2210,10 @@
 							<Name>Tax scheme information</Name>
 							<Element>
 								<Term>cbc:ID</Term>
-								<Description>Tax scheme. Use “VAT”</Description>
+								<Description>Tax scheme.</Description>
 								<DataType>Identifier</DataType>
 								<Reference type="BUSINESS_TERM">tir114-p021</Reference>
-								<Value type="FIXED">VAT</Value>
+								<Value type="EXAMPLE">VAT</Value>
 							</Element>
 						</Element>
 					</Element>

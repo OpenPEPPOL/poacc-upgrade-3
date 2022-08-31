@@ -1,7 +1,7 @@
 [[interoperability]]
 = Interoperability
 
-This Peppol BIS structure is based on the European Interoperability Framework 2.0 {EIF}. This Peppol BIS applies the Framework as follows:
+This BIS structure is based on the European Interoperability Framework 2.0 {EIF}. This BIS applies the Framework as follows:
 
 Legal Interoperability::
 
@@ -12,14 +12,14 @@ Legal Interoperability::
 Organizational interoperability::
 
 * Organization (Organization/Business):
-** This Peppol BIS supports B2B and B2G.
-** This Peppol BIS supports cross border, regional and domestic ordering in EU and EEA.
-** This Peppol BIS can function as a component in an EDI agreement within a trading community.
-** This Peppol BIS supports linking of business processes within the sending and receiving organization.
+** This BIS supports B2B and B2G.
+** This BIS supports cross border, regional and domestic ordering.
+** This BIS can function as a component in an EDI agreement within a trading community.
+** This BIS supports linking of business processes within the sending and receiving organization.
 The process of order transmission in electronic form can be linked into internal processes of both sender and receiver, which may differ for various reasons.
 
 * Organization (Process):
-** This Peppol BIS supports a set of “common business processes” that is assumed to be supported by most enterprises whether public or private. These are processes that are used widely or understood as being relevant for most companies.
+** This BIS supports a set of “common business processes” that is assumed to be supported by most enterprises whether public or private. These are processes that are used widely or understood as being relevant for most companies.
 
 
 Semantic interoperability::
@@ -37,9 +37,10 @@ These choices are intended to lower the implementation threshold by limiting opt
 
 Technical interoperability::
 * Technical Interaction (Process and semantic implementation):
-** Binding to OASIS UBL 2.3, see {ubl23}
+** Binding to OASIS UBL 2.1, see {ubl21} (for Order transaction)
+** Binding to OASIS UBL 2.3, see {ubl23} (for other transactions)
 ** ISO/IEC 19757-3 Schematron, for automation of document validation, see {schematron}
 
 
 * Technical Interaction (eSignature Validation):
-** Not mandatory in this Peppol BIS. Not supported.
+** Not supported in this BIS.

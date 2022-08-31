@@ -26,7 +26,7 @@ The initial order may or may not have been changed by buyer or seller.
 
 |The flow
 a|The buyer creates an Order Cancellation to cancel the order. +
-The seller receives the Order Cancellation and sends an Order Response to either
+The seller receives the Order Cancellation and sends an Order Response Advanced to either
 
 * Accept the cancellation
 * Reject the cancellation

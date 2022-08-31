@@ -5,7 +5,7 @@ This BIS describes a process comprising a buyer to issue an electronic order, wh
 In his rejection the seller may indicate reasons, so the buyer may issue a new order that may be acceptable.
 The seller may accept the order with changes, only if in a previously concluded contract the scope of such changes was agreed.
 After acceptance the buyer may send an order change to the original order and the seller can either accept or reject the change.
-The seller may also change the order by sending an order response which can be accepted or rejected by the buyer.
+The seller may also change the order by sending a response which can be accepted or rejected by the buyer.
 Both buyer and seller may also cancel the order.
 
 The order that is agreed upon by final acceptance has the commercial and legal status of a contract and is ready for delivery.

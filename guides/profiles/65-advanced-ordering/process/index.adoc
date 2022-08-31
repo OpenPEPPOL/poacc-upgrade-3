@@ -16,9 +16,9 @@ image::images/bpmn-advanced-ordering.png[width=1000]
 ** The order may refer to a framework agreement for its terms and conditions; otherwise the buyer’s terms and conditions apply.
 ** The order may contain items (goods or services) with item identifiers or items with free text description.
 * An order may be changed by the buyer sending one or more order changes until a contract is concluded and the order is confirmed for delivery.
-* The seller may also change the order by sending an order response with proposed changes.
+* The seller may also change the order by sending a response with proposed changes.
 * The buyer may cancel the order by sending an order cancellation which may be accepted or rejected by the seller.
-* The seller may cancel the order by sending a negative order response with rejection of all lines.
+* The seller may cancel the order by sending a negative response with rejection of all lines.
 
 :leveloffset: +1
 

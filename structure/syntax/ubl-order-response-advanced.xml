@@ -34,7 +34,6 @@
                 that are part of the same process.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir116-003</Reference>
-
 			<Value type="EXAMPLE">or0987</Value>
 		</Element>
 		<Element cardinality="0..1">
@@ -51,7 +50,6 @@
 			<Description>The date on which the transaction instance was issued.</Description>
 			<DataType>Date</DataType>
 			<Reference type="BUSINESS_TERM">tir116-004</Reference>
-
 			<Value type="EXAMPLE">2018-05-15</Value>
 		</Element>
 		<Element cardinality="0..1">
@@ -71,7 +69,6 @@
 			<DataType>Code</DataType>
 			<Reference type="BUSINESS_TERM">tir116-200</Reference>
 			<Reference type="CODE_LIST">UNCL4343-T76</Reference>
-
 			<Value type="EXAMPLE">AP</Value>
 		</Element>
 		<Element cardinality="0..1">
@@ -86,7 +83,6 @@
 			<Name>Document currency</Name>
 			<Description>The default currency for the offer.</Description>
 			<Reference type="BUSINESS_TERM">tir116-007</Reference>
-
 			<Reference type="CODE_LIST">ISO4217</Reference>
 			<Value type="EXAMPLE">EUR</Value>
 		</Element>
@@ -263,6 +259,15 @@
 					<Value type="EXAMPLE">2018-06-01</Value>
 				</Element>
 				<Element cardinality="0..1">
+					<Term>cbc:StartTime</Term>
+					<Name>Period start time</Name>
+					<Description>The time on which the period starts. The start time
+						counts as part of the period.</Description>
+					<DataType>Time</DataType>
+					<Reference type="BUSINESS_TERM">tir116-202</Reference>
+					<Value type="EXAMPLE">22:00:00</Value>
+				</Element>
+				<Element cardinality="0..1">
 					<Term>cbc:EndDate</Term>
 					<Name>Period end date</Name>
 					<Description>The date on which the period ends. The end date counts as part of
@@ -271,6 +276,15 @@
 					<Reference type="BUSINESS_TERM">tir116-100</Reference>
 					<Reference type="RULE">PEPPOL-T116-R004</Reference>
 					<Value type="EXAMPLE">2018-06-30</Value>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:EndTime</Term>
+					<Name>Period end time</Name>
+					<Description>The time on which the period ends. The end time
+						counts as part of the period.</Description>
+					<DataType>Time</DataType>
+					<Reference type="BUSINESS_TERM">tir116-203</Reference>
+					<Value type="EXAMPLE">24:00:00</Value>
 				</Element>
 			</Element>
 		</Element>
@@ -306,7 +320,6 @@
                         change.</Description>
 					<Reference type="BUSINESS_TERM">tir116-202</Reference>
 					<Reference type="CODE_LIST">UNCL1229</Reference>
-
 					<Value type="EXAMPLE">3</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -338,7 +351,7 @@
 				<Element cardinality="0..1">
 					<Term>cac:Delivery</Term>
 					<Name>Delivery information</Name>
-					<Element>
+					<Element cardinality="0..1">
 						<Term>cac:PromisedDeliveryPeriod</Term>
 						<Name>Delivery period</Name>
 						<Element cardinality="0..1">
@@ -352,6 +365,15 @@
 							<Value type="EXAMPLE">2018-05-28</Value>
 						</Element>
 						<Element cardinality="0..1">
+							<Term>cbc:StartTime</Term>
+							<Name>Period start time</Name>
+							<Description>The time on which the period starts. The start time
+								counts as part of the period.</Description>
+							<DataType>Time</DataType>
+							<Reference type="BUSINESS_TERM">tir116-204</Reference>
+							<Value type="EXAMPLE">22:00:00</Value>
+						</Element>
+						<Element cardinality="0..1">
 							<Term>cbc:EndDate</Term>
 							<Name>Period end date</Name>
 							<Description>The date on which the period ends. The end date counts as
@@ -360,6 +382,15 @@
 							<Reference type="BUSINESS_TERM">tir116-127</Reference>
 							<Reference type="RULE">PEPPOL-T116-R004</Reference>
 							<Value type="EXAMPLE">2018-05-29</Value>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:EndTime</Term>
+							<Name>Period end time</Name>
+							<Description>The time on which the period ends. The end time
+								counts as part of the period.</Description>
+							<DataType>Time</DataType>
+							<Reference type="BUSINESS_TERM">tir116-205</Reference>
+							<Value type="EXAMPLE">24:00:00</Value>
 						</Element>
 					</Element>
 				</Element>
@@ -592,7 +623,7 @@
 								<Description>Tax scheme. E.g. “VAT” or “GST”</Description>
 								<DataType>Identifier</DataType>
 								<Reference type="BUSINESS_TERM">tir116-p003</Reference>
-								<Value type="EXAMPLE">VAT or GST</Value>
+								<Value type="EXAMPLE">GST</Value>
 							</Element>
 						</Element>
 					</Element>

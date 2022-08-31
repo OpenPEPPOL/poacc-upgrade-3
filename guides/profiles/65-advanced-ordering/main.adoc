@@ -14,9 +14,10 @@ include::../../shared/links.adoc[]
 :order-change: ../../transactions/114-order-change
 :order-cancellation: ../../transactions/115-order-cancellation
 :snippet-dir: ../../../../rules/snippets/order
-:snippet-response-dir: ../../../../rules/snippets/order-response
+:snippet-response-dir: ../../../../rules/snippets/order-response-advanced
 :snippet-change-dir: ../../../../rules/snippets/order-change
 :snippet-cancellation-dir: ../../../../rules/snippets/order-cancellation
+:ubl21: http://docs.oasis-open.org/ubl/UBL-2.1.html[UBL 2.1]
 :ubl23: http://docs.oasis-open.org/ubl/UBL-2.3.html[UBL 2.3]
 :advanced_ordering_sc1: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/2022-fall-advanced-ordering/rules/use-case-examples/advanced-ordering-sc1[Example files scenario 1]
 :advanced_ordering_sc2: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/2022-fall-advanced-ordering/rules/use-case-examples/advanced-ordering-sc2[Example files scenario 2]

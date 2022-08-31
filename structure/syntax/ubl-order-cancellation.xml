@@ -26,13 +26,6 @@
 			<Reference type="BUSINESS_TERM">tir01-002</Reference>
 			<Value type="FIXED">urn:fdc:peppol.eu:poacc:bis:advanced_ordering:3</Value>
 		</Element>
-		<Element cardinality="0..1">
-			<Term>cbc:UUID</Term>
-			<Name>Unique identifier</Name>
-			<Description>Unique identifier of the instance document.</Description>
-			<DataType>Identifier</DataType>
-			<Value type="EXAMPLE">ee3eefc8-597b-4615-baff-f9890f4a94b9</Value>
-		</Element>
 		<Element>
 			<Term>cbc:ID</Term>
 			<Name>Order identifier</Name>
@@ -309,7 +302,7 @@
 					<Description>Buyer tax information </Description>
 					<Element>
 						<Term>cbc:CompanyID</Term>
-						<Name>Buyer VAT identifier</Name>
+						<Name>Buyer TAX identifier</Name>
 						<Description>The buyers registered Value Added Tax identifier. To be stated
 							in case reverse charge is to apply to the purchase.</Description>
 						<DataType>Identifier</DataType>
@@ -321,10 +314,10 @@
 						<Name>Tax scheme</Name>
 						<Element>
 							<Term>cbc:ID</Term>
-							<Description>Mandatory element. Use = "VAT"</Description>
+							<Description>Mandatory element.</Description>
 							<DataType>Identifier</DataType>
 							<Reference type="BUSINESS_TERM">tir01-p004</Reference>
-							<Value type="FIXED">VAT</Value>
+							<Value type="EXAMPLE">GST</Value>
 						</Element>
 					</Element>
 				</Element>

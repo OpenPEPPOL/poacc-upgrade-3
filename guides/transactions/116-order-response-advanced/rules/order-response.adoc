@@ -1,5 +1,5 @@
 
-= Order response rules
+= Order Response Advanced rules
 
 [cols="1s,4,1",options="header"]
 |====
@@ -7,42 +7,42 @@
 |Rule
 |Error level
 |BII2-T116-R001
-|A order response MUST have a customization identifier
+|A Order Response Advanced MUST have a customization identifier
 |fatal
 
 |BII2-T116-R002
-|A order response MUST have a profile identifier
+|A Order Response Advanced MUST have a profile identifier
 |fatal
 
 |BII2-T116-R003
-|Each order response line MUST have a document line identifier that is unique within the order response
+|Each Order Response Advanced line MUST have a document line identifier that is unique within the Order Response Advanced
 |fatal
 
 |BII2-T116-R004
-|A order response MUST have a document issue date
+|A Order Response Advanced MUST have a document issue date
 |fatal
 
 |BII2-T116-R006
-|A order response MUST have a document identifier
+|A Order Response Advanced MUST have a document identifier
 |fatal
 |BII2-T116-R021
-|A order response MUST have the buyer party name or a buyer party identifier
+|A Order Response Advanced MUST have the buyer party name or a buyer party identifier
 |fatal
 
 |BII2-T116-R022
-|A order response MUST have the seller party name or a seller party identifier
+|A Order Response Advanced MUST have the seller party name or a seller party identifier
 |fatal
 
 |BII2-T116-R032
-|A order response MUST have a reference to an order
+|A Order Response Advanced MUST have a reference to an order
 |fatal
 
 |BII2-T116-R033
-|A order response MUST have a response code
+|A Order Response Advanced MUST have a response code
 |fatal
 
 |BII2-T116-R034
-|An order response line MUST contain a reference to its corresponding order line.
+|An Order Response Advanced line MUST contain a reference to its corresponding order line.
 |fatal
 
 |EUGEN-T116-R001

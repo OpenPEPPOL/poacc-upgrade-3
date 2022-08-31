@@ -24,7 +24,7 @@ a|
 * The Order has been received.
 * The Order has not yet been processed.
 * No lines should be sent.
-* An additional order response should be sent after processing, to accept, reject or accept with changes
+* An additional Order Response Advanced should be sent after processing, to accept, reject or accept with changes
 
 |RE
 a|
@@ -43,13 +43,13 @@ a|
 |====
 
 
-.UBL example of Response code on Header level in an Order Response message
+.UBL example of Response code on Header level in an Order Response Advanced message:
 [source, xml, indent=0]
 ----
 include::{snippet-response-dir}/snippet-1.xml[tags=response-header]
 ----
 
-.UBL example of an order response using response code "AB" (order is received
+.UBL example of an Order Response Advanced using response code "AB" (order is received:
 [source, xml, indent=0]
 ----
 include::{snippet-response-dir}/snippet-2.xml[tags=received]
@@ -83,7 +83,7 @@ include::{snippet-response-dir}/snippet-2.xml[tags=received]
 |====
 
 
-.Example of Response code on Line level in an Order Response message:
+.Example of Response code on Line level in an Order Response Advanced message:
 [source, xml, indent=0]
 ----
 include::{snippet-response-dir}/snippet-1.xml[tags=response-line]

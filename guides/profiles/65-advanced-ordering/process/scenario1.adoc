@@ -27,7 +27,7 @@ They may also have exchanged a catalogue with product information and pricing.
 
 |The flow
 a|The buyer creates an Order with one or more lines. +
-The seller receives the Order and send an Order Response and either
+The seller receives the Order and send an Order Response Advanced and either
 
 * Accepts to deliver the order without changes
 * Accepts to deliver the order partially or with changes

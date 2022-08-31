@@ -1,15 +1,15 @@
 
-= Introduction to openPeppol and BIS
+= Introduction to OpenPeppol and BIS
 
 This BIS is a result of work within {openPeppol} and is published as part of the {Peppol} specifications.
 
-This Peppol BIS provides a set of specifications for implementing a {Peppol} business process.
+This BIS provides a set of specifications for implementing a {Peppol} business process.
 The document is concerned with clarifying requirements for ensuring interoperability of pan-European Public eProcurement and provides guidelines for supporting these requirements and how to implement them.
 
-This Peppol BIS is based on the CEN WS/BII Profile {bii-ordering} and is extended to include order change and order cancellation.
-This BIS is also aligned on a business process level with the ongoing work in CEN TC 440/WG6.
+This BIS is based on the CEN WS/BII Profile {bii-ordering} and is extended to include order change and order cancellation.
+This business processes in this BIS are specified in collaboration with CEN TC-440/WG6.
 
-*The purpose* of this document is to describe formats for the order, order change, order cancellation and order response message, and to facilitate an efficient implementation and increased use of electronic collaboration regarding the advanced ordering process based on these formats.
+*The purpose* of this document is to describe formats for the Order, Order Change, Order Cancellation and Order Response Advanced message, and to facilitate an efficient implementation and increased use of electronic collaboration regarding the advanced ordering process based on these formats.
 
 //.Relationship between BII profiles and Peppol BIS
 //image::../../shared/images/BII_relationship.png[]

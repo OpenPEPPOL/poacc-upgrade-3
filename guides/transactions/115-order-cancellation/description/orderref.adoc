@@ -1,7 +1,7 @@
 [[order-reference]]
 = Order reference
 
-The element `cac:OrderReference/cbc:ID`is used to give a reference to the order that is to be cancelled.
+The order reference is used to give a reference to the order that is to be cancelled.
 
 .UBL example of order reference
 [source, xml, indent=0]

@@ -1,5 +1,5 @@
 [[order-change-message]]
-= Description of selected parts of the order change message
+= Description of selected parts of the Order Change message
 
 :leveloffset: +1
 

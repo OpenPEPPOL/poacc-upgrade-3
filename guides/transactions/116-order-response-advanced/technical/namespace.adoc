@@ -1,2 +1,2 @@
-* The target namespace for the {ubl23} Order Response is: +
+* The target namespace for the {ubl23} Order Response Advanced is: +
 `urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2`

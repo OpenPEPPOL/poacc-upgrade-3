@@ -1,9 +1,9 @@
 [[order-response-with-changes-adding-delivering]]
-= Order response replacing items and delivering over time.
+= Order Response Advanced replacing items and delivering over time.
 
-An order response may replace items in two ways. If the full quantity of an item is replaced that information can be provided by using the Seller substituted line item element in the invoice response as shown in the following example.
+An Order Response Advanced may replace items in two ways. If the full quantity of an item is replaced that information can be provided by using the Seller substituted line item element as shown in the following example.
 
-.Example of Replacement item in an Order Response message:
+.Example of Replacement item in an Order Response Advanced message:
 [source, xml, indent=0]
 ----
 include::{snippet-response-dir}/snippet-1.xml[tags=line-change4]
