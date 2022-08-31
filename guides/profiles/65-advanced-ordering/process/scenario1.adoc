@@ -3,7 +3,7 @@
 
 The following diagram shows the business process and choreography for Scenario 1.
 
-image::images/bpmn-scenario1.png[width=1000]
+image::images/bpmn-scenario1.png[width=999]
 
 [cols="1s,5",options="header"]
 |====
