@@ -24,12 +24,14 @@
 	<xi:include href="parts/function/checkPIVA.xml"/>
 	<xi:include href="parts/function/checkPIVAseIT.xml"/>
 	<xi:include href="parts/function/mod97-0208.xml"/>
-	  <xi:include href="parts/function/abn.xml"/>
+	<xi:include href="parts/function/abn.xml"/>
     <!-- Rules -->
 
     <include href="parts/common/empty-elements.sch"/>
     <include href="parts/common/rules.sch"/>
     <include href="../../target/generated/T116-basic.sch"/>
+
+
     <include href="parts/PEPPOL-M-T116.sch"/>
 
 </schema>

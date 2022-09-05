@@ -17,7 +17,7 @@
 	</cac:OrderReference>
 	<cac:OrderChangeDocumentReference>
     <cbc:ID>c1-11233</cbc:ID>
-  </cac:OrderChangeDocumentReference>
+    </cac:OrderChangeDocumentReference>
 	<cac:SellerSupplierParty>
 		<cac:Party>
 			<cbc:EndpointID schemeID="0088">7598000000128</cbc:EndpointID>
@@ -40,12 +40,6 @@
 			</cac:PartyLegalEntity>
 		</cac:Party>
 	</cac:BuyerCustomerParty>
-	<cac:Delivery>
-		<cac:PromisedDeliveryPeriod>
-			<cbc:StartDate>2022-05-15</cbc:StartDate>
-			<cbc:EndDate>2022-05-16</cbc:EndDate>
-		</cac:PromisedDeliveryPeriod>
-	</cac:Delivery>
 	<cac:OrderLine>
 		<cac:LineItem>
 			<cbc:ID>1</cbc:ID>
@@ -112,6 +106,12 @@
 		<cac:LineItem>
 			<cbc:ID>2</cbc:ID>
 			<cbc:LineStatusCode>5</cbc:LineStatusCode>
+			<cac:Delivery>
+				<cac:PromisedDeliveryPeriod>
+					<cbc:StartDate>2022-05-10</cbc:StartDate>
+					<cbc:EndDate>2022-05-25</cbc:EndDate>
+				</cac:PromisedDeliveryPeriod>
+			</cac:Delivery>			
 			<cac:Item>
 				<cbc:Name>White sauce</cbc:Name>
 				<cac:SellersItemIdentification>
