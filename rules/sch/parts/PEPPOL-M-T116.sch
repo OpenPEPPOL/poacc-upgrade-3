@@ -4,7 +4,7 @@
     <let name="documentCurrencyCode" value="/ubl:OrderResponse/cbc:DocumentCurrencyCode"/>
     <let name="promisedStartDateDocumentlevel" value="/ubl:OrderResponse/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:StartDate"/>
     <let name="promisedStartDateLinelevel" value="/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:StartDate"/>
-   
+
 
   <!-- CustomzationID -->
 	<rule context="cbc:CustomizationID">
@@ -35,21 +35,14 @@
                 flag="fatal">An order response MUST have the seller party official name or a seller party identifier</assert>
     </rule>
  
-    <!--  Delivery period 
-    <rule context="cac:Delivery/cac:PromisedDeliveryPeriod">
-        <assert  id="PEPPOL-T116-R007"
-            test="(exists(cbc:StartDate) and not(exists($promisedStartDateLinelevel))) or (exists($promisedStartDateLinelevel) and not(exists($promisedStartDateDocumentlevel)))"
-            flag="fatal">Promised Delivery Period MUST only be stated on document or on line level. </assert> 
-    </rule>
-    -->
     <!-- Delivery date -->
     <rule context="cac:PromisedDeliveryPeriod | cac:OrderLine/cac:LineItem/cac:PromisedDeliveryPeriod">
         <assert  id="PEPPOL-T116-R004"
                 test="(exists(cbc:EndDate) and exists(cbc:StartDate) and (cbc:EndDate) &gt;= (cbc:StartDate)) or not(exists(cbc:StartDate)) or not(exists(cbc:EndDate)) "
                 flag="fatal">If both delivery period start date and delivery period end date are given then the end date MUST be later or equal to the start date.</assert>
-        <assert  id="PEPPOL-T116-R007"
+  <!--      <assert  id="PEPPOL-T116-R007"
             test="(exists(cbc:StartDate) and not(exists($promisedStartDateLinelevel))) or (exists($promisedStartDateLinelevel) and not(exists($promisedStartDateDocumentlevel)))"
-            flag="fatal">Promised Delivery Period MUST only be stated on document or on line level. </assert> 
+            flag="fatal">Promised Delivery Period MUST only be stated on document or on line level. </assert> -->
     </rule>
 
    <!-- Line level -->
