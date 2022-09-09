@@ -10,7 +10,7 @@
     <Code>
         <Id>0</Id>
         <Name>Transport mode not specified</Name>
-		
+		<Description>Transport mode has not been specified</Description>
     </Code>
     <Code>
         <Id>1</Id>
