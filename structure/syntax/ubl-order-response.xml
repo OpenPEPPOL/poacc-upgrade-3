@@ -261,7 +261,7 @@
 					<Term>cbc:StartTime</Term>
 					<Name>Period start time</Name>
 					<Description>The time at which this period begins. Format = "hh:mm:ss"</Description>
-					<DataType>Date</DataType>
+					<DataType>Time</DataType>
 					<Reference type="BUSINESS_TERM">tir76-p010</Reference>
 					<Value type="EXAMPLE">12:30:00</Value>
 				</Element>
@@ -279,7 +279,7 @@
 					<Term>cbc:EndTime</Term>
 					<Name>Period end time</Name>
 					<Description>The time at which this period end. Format = "hh:mm:ss"</Description>
-					<DataType>Date</DataType>
+					<DataType>Time</DataType>
 					<Reference type="BUSINESS_TERM">tir76-p011</Reference>
 					<Value type="EXAMPLE">18:00:00</Value>
 				</Element>
