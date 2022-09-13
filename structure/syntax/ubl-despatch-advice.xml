@@ -73,6 +73,66 @@
 				<Reference type="BUSINESS_TERM">tir16-006</Reference>
 			</Element>
 		</Element>
+		<Element cardinality="0..n">
+			<Term>cac:AdditionalDocumentReference</Term>
+			<Name>Additional documents</Name>
+			<Element>
+				<Term>cbc:ID</Term>
+				<Name>Document identifier</Name>
+				<Description>An identifier for the referenced document.</Description>
+				<Reference type="BUSINESS_TERM">tir16-p049</Reference>
+				<Value type="EXAMPLE">doc-34</Value>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cbc:DocumentType</Term>
+				<Name>Document description</Name>
+				<Description>Textual description of the document.</Description>
+				<DataType>Text</DataType>
+				<Reference type="BUSINESS_TERM">tir16-p050</Reference>
+				<Value type="EXAMPLE">Timesheet</Value>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:Attachment</Term>
+				<Name>Attachment(s)</Name>
+				<Element cardinality="0..1">
+					<Term>cbc:EmbeddedDocumentBinaryObject</Term>
+					<Name>Attached document</Name>
+					<Description>The attached document embeded as binary object, coded as Base64.
+					The binary object has two supplementary components: a Mime Code, which specifies the Mime type of the attachment and a Filename that is provided by (or on behalf of) the sender of the document</Description>
+					<DataType>Binary object</DataType>
+					<Reference type="BUSINESS_TERM">tir16-p051</Reference>
+					<Attribute>
+						<Term>mimeCode</Term>
+						<Name>Attached document Mime code</Name>
+						<Description>The mime code of the attached document.</Description>
+						<Reference type="CODE_LIST">MimeCode</Reference>
+						<Value type="EXAMPLE">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</Value>
+					</Attribute>
+					<Attribute>
+						<Term>filename</Term>
+						<Name>Attached document filename</Name>
+						<Description>The file name of the attached document</Description>
+						<Value type="EXAMPLE">Hours-spent.xlsx</Value>
+					</Attribute>
+					<Value type="EXAMPLE">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</Value>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:ExternalReference</Term>
+					<Name>External reference</Name>
+					<Description>Reference to external document </Description>
+					<Element>
+						<Term>cbc:URI</Term>
+						<Name>External document URI</Name>
+						<Description>The Uniform Resource Identifier (URI) that identifies where the
+							external document is located.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir16-p052</Reference>
+						<Value type="EXAMPLE">http://www.example.com/image.jpg</Value>
+					</Element>
+				</Element>
+			</Element>
+		</Element>
+		
 		<Element>
 			<Term>cac:DespatchSupplierParty</Term>
 			<Name>Despatching party information</Name>
@@ -820,6 +880,25 @@
 					<Term>cac:CarrierParty</Term>
 					<Name>Carrier party</Name>
 					<Element cardinality="0..1">
+						<Term>cac:PartyIdentification</Term>
+						<Name>Party identification</Name>
+						<Element>
+							<Term>cbc:ID</Term>
+							<Name>Carrier party identifier</Name>
+							<Description>The carrier party identifier.</Description>
+							<DataType>Identifier</DataType>
+							<Reference type="BUSINESS_TERM">tir16-p055</Reference>
+							<Attribute usage="optional">
+								<Term>schemeID</Term>
+								<Name>Scheme identifier</Name>
+								<Description>Scheme identifier for party identification</Description>
+								<Reference type="CODE_LIST">ICD</Reference>
+								<Value type="EXAMPLE">0007</Value>
+							</Attribute>
+							<Value type="EXAMPLE">5533221100</Value>
+						</Element>
+					</Element>
+					<Element cardinality="0..1">
 						<Term>cac:PartyName</Term>
 						<Name>Party name</Name>
 						<Element>
@@ -851,6 +930,17 @@
 							</Element>
 						</Element>
 					</Element>
+				</Element>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:ShipmentStage</Term>
+				<Name>Shipment stage information</Name>
+				<Element cardinality="1..1">
+					<Term>cbc:TransportModeCode</Term>
+					<Name>Mode of transport</Name>
+					<Description>The mode of transport with which the goods were delivered.</Description>
+					<Reference type="BUSINESS_TERM">tir16-p056</Reference>
+					<Reference type="CODE_LIST">UNECERec19</Reference>
 				</Element>
 			</Element>
 			<Element cardinality="0..1">
@@ -1005,7 +1095,7 @@
 					information that is not contained explicitly in another structure.</Description>
 				<Reference type="BUSINESS_TERM">tir16-047</Reference>
 			</Element>
-			<Element cardinality="0..1">
+			<Element>
 				<Term>cbc:DeliveredQuantity</Term>
 				<Name>Delivererd quantity</Name>
 				<Description>The quantity that is despatched in the line.</Description>
@@ -1055,6 +1145,16 @@
 					<Description>To uniquely identify the line of the order that is being
 						despatched.</Description>
 					<Reference type="BUSINESS_TERM">tir16-051</Reference>
+					<Value type="EXAMPLE">1</Value>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:SalesOrderLineID</Term>
+					<Name>Sales Order Line number. </Name>
+					<Description>To uniquely identify the line of the sales order that is being
+						despatched.
+					</Description>
+					<Reference type="BUSINESS_TERM">tir16-p047</Reference>
+					<Value type="EXAMPLE">10</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:OrderReference</Term>
@@ -1068,6 +1168,25 @@
 						<Reference type="RULE">PEPPOL-T16-R002</Reference>
 					</Element>
 				</Element>
+			</Element>
+			<Element cardinality="0..n">
+				<Term>cac:DocumentReference</Term>
+				<Name>Document reference</Name>
+				<Element>
+					<Term>cbc:ID</Term>
+					<Name>Document identifier</Name>
+					<Description>An identifier for the referenced document.</Description>
+					<Reference type="BUSINESS_TERM">tir16-p053</Reference>
+					<Value type="EXAMPLE">doc-30</Value>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:DocumentType</Term>
+					<Name>Document description</Name>
+					<Description>Textual description of the document.</Description>
+					<DataType>Text</DataType>
+					<Reference type="BUSINESS_TERM">tir16-p054</Reference>
+					<Value type="EXAMPLE">Weight statement</Value>
+				</Element>			
 			</Element>
 			<Element>
 				<Term>cac:Item</Term>
@@ -1144,6 +1263,44 @@
 						<Reference type="BUSINESS_TERM">tir16-056</Reference>
 					</Element>
 				</Element>
+				<Element cardinality="0..n">
+					<Term>cac:CommodityClassification</Term>
+					<Name>Commodity classification information</Name>
+					<Element cardinality="0..1">
+						<Term>cbc:ItemClassificationCode</Term>
+						<Name>Item classification code</Name>
+						<Description>A code for classifying the item by its type or nature.
+							Classification codes are used to allow grouping of similar items for
+							a various purposes e.g. public procurement (CPV), e-Commerce
+							(UNSPSC) etc.</Description>
+						<DataType>Code</DataType>
+						<Reference type="BUSINESS_TERM">tir16-p048</Reference>
+						<Attribute>
+							<Term>listID</Term>
+							<Name>Item classification identifier identification scheme
+								identifier</Name>
+							<Description>The identification scheme identifier of the Item
+								classification identifier</Description>
+							<Reference type="CODE_LIST">UNCL7143</Reference>
+							<Value type="EXAMPLE">STI</Value>
+						</Attribute>
+						<Attribute usage="Optional">
+							<Term>listVersionID</Term>
+							<Name>Item classification identifier version identification scheme
+								identifier</Name>
+							<Description>The identification scheme version identifier of the
+								Item classification identifier</Description>
+							<Value type="EXAMPLE">20.0602</Value>
+						</Attribute>
+						<Attribute usage="Optional">
+							<Term>name</Term>
+							<Name>Clear text name equivalent of classification code</Name>
+							<Description>The textual equivalent of the code value</Description>
+							<Value type="EXAMPLE">Office furniture</Value>	
+						</Attribute>
+						<Value type="EXAMPLE">9873242</Value>
+					</Element>
+				</Element>				
 				<Element cardinality="0..n">
 					<Term>cac:HazardousItem</Term>
 					<Name>Hazardous item information</Name>

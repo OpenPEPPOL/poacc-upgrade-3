@@ -25,9 +25,9 @@ This should not be general company email and phone unless the sender has in plac
   <cac:PartyIdentification>
     <cbc:ID schemeID="0088">senderif12345</cbc:ID>
   </cac:PartyIdentification>
-  <cac:PartyName>
-    <cbc:Name>Buyer organization</cbc:Name>
-  </cac:PartyName>
+  <cac:PartyLegalEntity>
+	<cbc:RegistrationName>Buyer organization</cbc:RegistrationName>
+  </cac:PartyLegalEntity>  
   <cac:Contact>
     <cbc:Name>Invoice processing department</cbc:Name>
     <cbc:Telephone>012312312345</cbc:Telephone>
@@ -52,9 +52,9 @@ If this is a service provider, then the actual Seller may be identified as part 
   <cac:PartyIdentification>
     <cbc:ID schemeID="0088">receiver12345</cbc:ID>
   </cac:PartyIdentification>
-  <cac:PartyName>
-    <cbc:Name>Seller company</cbc:Name>
-  </cac:PartyName>
+  <cac:PartyLegalEntity>
+	<cbc:RegistrationName>Seller company</cbc:RegistrationName>
+  </cac:PartyLegalEntity>  
 </cac:ReceiverParty>
 ----
 
