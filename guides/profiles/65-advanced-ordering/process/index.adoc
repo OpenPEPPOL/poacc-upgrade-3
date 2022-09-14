@@ -15,7 +15,8 @@ image::images/bpmn-advanced-ordering.png[width=1000]
 * A buyer submits an initial order to the seller requesting for delivery of goods or services.
 ** The order may refer to a framework agreement for its terms and conditions; otherwise the buyer’s terms and conditions apply.
 ** The order may contain items (goods or services) with item identifiers or items with free text description.
-* An order may be changed by the buyer sending one or more order changes until a contract is concluded and the order is confirmed for delivery.
+* The initial order may be confirmed for delivery without any more changes or it may be cancelled by buyer or seller
+* The order may be changed by the buyer sending one or more order changes until a contract is concluded and the order is confirmed for delivery.
 * The seller may also change the order by sending a response with proposed changes.
 * The buyer may cancel the order by sending an order cancellation which may be accepted or rejected by the seller.
 * The seller may cancel the order by sending a negative response with rejection of all lines.
