@@ -7,6 +7,7 @@ openPeppol AISBL <http://www.peppol.eu/>
 :sourcedir: .
 :imagesdir: images
 :title-logo-image: peppol.png
+:last-update-label!:
 
 This section provides an overview of rules that receivers and/or senders of documents must fulfil to be compliant to a BIS. This is not a complete or normative listing of applicable rules.
 
