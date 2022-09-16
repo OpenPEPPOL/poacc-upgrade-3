@@ -111,6 +111,13 @@
         <Title>Business rules for Peppol Order Agreement transaction 3.0</Title>
     </Resource>
     <Resource>
+        <Identifier>T71</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/parts/PEPPOL-M-T71.sch</Path>
+        <Title>Business rules for Peppol Message Level Response transaction 3.0</Title>
+    </Resource>
+	
+    <Resource>
         <Identifier>T111</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T111.sch</Path>
