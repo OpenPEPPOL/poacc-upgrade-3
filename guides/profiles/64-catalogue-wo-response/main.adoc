@@ -11,6 +11,7 @@ include::../../shared/links.adoc[]
 :source-language: xml
 :sectanchors:
 :sectnums:
+:last-update-label!:
 :snippet-dir: ../../../../rules/snippets/catalogue
 :catalogue-path: ../../transactions/19-catalogue
 

@@ -8,6 +8,7 @@
 :source-language: xml
 :sectanchors:
 :sectnums:
+:last-update-label!:
 
 This document gives a guidance in how to develop schematron artefacts in openPeppol Post Award Coordinating Community.
 

@@ -8,6 +8,7 @@ include::../../shared/links.adoc[]
 :source-language: xml
 :sectanchors:
 :sectnums:
+:last-update-label!:
 :transaction-path: ../../transactions/01-order
 :snippet-dir: ../../../../rules/snippets/order
 
