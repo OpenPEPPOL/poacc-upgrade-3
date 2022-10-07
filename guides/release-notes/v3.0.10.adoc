@@ -12,6 +12,7 @@ Release date:: 2022-11-
 ** Removed broken link to example files in section 6.8 and pointed out the main page Appendix A instead.
 * Catalogue without response
 ** Removed broken link to example files in section 6.8 and pointed out the main page Appendix A instead.
+* Correction of a bullet point explaining the example in section "Line TAX Category" in all BISes that uses it. 
 
 == Changes to syntax
 * Despatch Advice transaction (T16) 
