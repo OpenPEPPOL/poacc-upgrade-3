@@ -8,8 +8,8 @@
     <Documentation path="changes/">- Overview of alignments</Documentation>
     <!-- BIS documents -->
     <Documentation path="">BIS DOCUMENTS</Documentation>
-    <Documentation path="profiles/3-order-only/">- Peppol BIS Order only 3.2</Documentation>
-    <Documentation path="profiles/28-ordering/">- Peppol BIS Ordering 3.2</Documentation>
+    <Documentation path="profiles/3-order-only/">- Peppol BIS Order only 3.3</Documentation>
+    <Documentation path="profiles/28-ordering/">- Peppol BIS Ordering 3.3</Documentation>
     <Documentation path="profiles/1-catalogueonly/">- Peppol BIS Catalogue with response 3.1</Documentation>
     <Documentation path="profiles/64-catalogue-wo-response/">- Peppol BIS Catalogue without response 3.1</Documentation>
     <Documentation path="profiles/30-despatchadvice/">- Peppol BIS Despatch Advice 3.1</Documentation>
