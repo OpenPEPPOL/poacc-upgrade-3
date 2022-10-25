@@ -11,7 +11,7 @@
 		<assert>
 			<success>PEPPOL-T114-R014</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -26,14 +26,14 @@
 				</cac:Party>
 			</cac:OriginatorCustomerParty>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test id="2">
 		<assert>
 			<success>PEPPOL-T114-R014</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -45,14 +45,14 @@
 				</cac:Party>
 			</cac:OriginatorCustomerParty>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test id="3">
 		<assert>
 			<success>PEPPOL-T114-R014</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -64,21 +64,21 @@
 				</cac:Party>
 			</cac:OriginatorCustomerParty>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test id="4">
 		<assert>
 			<error>PEPPOL-T114-R014</error>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 				xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 				xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
 			<cac:OriginatorCustomerParty>
 			</cac:OriginatorCustomerParty>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 </testSet>

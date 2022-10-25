@@ -8,7 +8,7 @@
 		<assert>
 			<success number="3">PEPPOL-T114-CL002</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -20,13 +20,13 @@
 				<cbc:AllowanceChargeReasonCode>AAA</cbc:AllowanceChargeReasonCode>
 			</cac:AllowanceCharge>
 
-		</Order>
+		</OrderChange>
 	</test>
 	<test>
 		<assert>
 			<error number="3">PEPPOL-T114-CL002</error>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -38,6 +38,6 @@
 				<cbc:AllowanceChargeReasonCode>TOS</cbc:AllowanceChargeReasonCode>
 			</cac:AllowanceCharge>
 
-		</Order>
+		</OrderChange>
 	</test>
 </testSet>

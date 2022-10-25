@@ -9,7 +9,7 @@
 		<assert>
 			<success>PEPPOL-T01-R002</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
 
@@ -17,34 +17,34 @@
 				<cbc:EndDate/>
 			</cac:ValidityPeriod>
 
-		</Order>
+		</OrderChange>
 	</test>
 	<test>
 		<assert>
 			<warning>PEPPOL-T01-R002</warning>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
-			
+
 			<cac:ValidityPeriod>
 			<!--	<cbc:EndDate/>-->
 			</cac:ValidityPeriod>
-			
-		</Order>
+
+		</OrderChange>
 	</test>
 	<test>
 		<assert>
 			<warning>PEPPOL-T01-R002</warning>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
-			
+
 		<!--	<cac:ValidityPeriod>
 					<cbc:EndDate/>
 			</cac:ValidityPeriod>-->
-			
-		</Order>
-	</test>	
+
+		</OrderChange>
+	</test>
 </testSet>

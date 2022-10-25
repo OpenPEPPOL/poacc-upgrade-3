@@ -9,7 +9,7 @@
 		<assert>
 			<success>PEPPOL-T114-R016</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -19,14 +19,14 @@
 				<cbc:PayableAmount>8071.2</cbc:PayableAmount>
 			</cac:AnticipatedMonetaryTotal>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test>
 		<assert>
 			<success>PEPPOL-T114-R016</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -39,14 +39,14 @@
 				<cbc:PayableAmount>8072</cbc:PayableAmount>
 			</cac:AnticipatedMonetaryTotal>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test>
 		<assert>
 			<success>PEPPOL-T114-R016</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -57,13 +57,13 @@
 				<cbc:PayableAmount>8081.2</cbc:PayableAmount>
 			</cac:AnticipatedMonetaryTotal>
 
-		</Order>
+		</OrderChange>
 	</test>
 	<test>
 		<assert>
 			<success>PEPPOL-T114-R016</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -74,14 +74,14 @@
 				<cbc:PayableAmount>8072</cbc:PayableAmount>
 			</cac:AnticipatedMonetaryTotal>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test>
 		<assert>
 			<success>PEPPOL-T114-R016</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -92,13 +92,13 @@
 				<cbc:PayableAmount>8081.2</cbc:PayableAmount>
 			</cac:AnticipatedMonetaryTotal>
 
-		</Order>
+		</OrderChange>
 	</test>
 	<test>
 		<assert>
 			<error>PEPPOL-T114-R016</error>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -111,7 +111,7 @@
 				<cbc:PayableAmount>8072</cbc:PayableAmount>
 			</cac:AnticipatedMonetaryTotal>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 </testSet>

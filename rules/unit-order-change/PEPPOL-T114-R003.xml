@@ -10,7 +10,7 @@
 		<assert>
 			<success>PEPPOL-T114-R003</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -20,14 +20,14 @@
 				<cbc:TaxAmount currencyID="NOK"/>
 			</cac:TaxTotal>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test>
 		<assert>
 			<error>PEPPOL-T114-R003</error>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChangew-2">
 
@@ -37,14 +37,14 @@
 				<cbc:TaxAmount currencyID="EUR"/>
 			</cac:TaxTotal>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test>
 		<assert>
 			<error>PEPPOL-T114-R003</error>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -56,14 +56,14 @@
 				</cac:LineItem>
 			</cac:OrderLine>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test>
 		<assert>
 			<error>PEPPOL-T114-R003</error>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -77,14 +77,14 @@
 				</cac:LineItem>
 			</cac:OrderLine>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test>
 		<assert>
 			<error>PEPPOL-T114-R003</error>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -95,7 +95,7 @@
 				<cbc:TaxExclusiveAmount currencyID="EUR">2456.30</cbc:TaxExclusiveAmount>
 			</cac:AnticipatedMonetaryTotal>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 

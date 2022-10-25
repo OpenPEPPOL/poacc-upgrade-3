@@ -10,7 +10,7 @@
 		<assert>
 			<success>PEPPOL-T114-R024</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -37,7 +37,7 @@
 				</cac:LineItem>
 			</cac:OrderLine>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 
@@ -45,7 +45,7 @@
 		<assert>
 			<success>PEPPOL-T114-R024</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -72,14 +72,14 @@
 				</cac:LineItem>
 			</cac:OrderLine>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test id="3">
 		<assert>
 			<success>PEPPOL-T114-R024</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -106,14 +106,14 @@
 				</cac:LineItem>
 			</cac:OrderLine>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test id="4">
 		<assert>
 			<success>PEPPOL-T114-R024</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -140,14 +140,14 @@
 				</cac:LineItem>
 			</cac:OrderLine>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test id="5">
 		<assert>
 			<success>PEPPOL-T114-R024</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -174,14 +174,14 @@
 				</cac:LineItem>
 			</cac:OrderLine>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test id="6">
 		<assert>
 			<success>PEPPOL-T114-R024</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -198,14 +198,14 @@
 				</cac:LineItem>
 			</cac:OrderLine>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test id="7">
 		<assert>
 			<success>PEPPOL-T114-R024</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -222,14 +222,14 @@
 				</cac:LineItem>
 			</cac:OrderLine>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test id="8">
 		<assert>
 			<error>PEPPOL-T114-R024</error>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -256,14 +256,14 @@
 				</cac:LineItem>
 			</cac:OrderLine>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test id="9">
 		<assert>
 			<error>PEPPOL-T114-R024</error>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -290,7 +290,7 @@
 				</cac:LineItem>
 			</cac:OrderLine>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 </testSet>

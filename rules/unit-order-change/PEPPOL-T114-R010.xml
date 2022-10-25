@@ -10,7 +10,7 @@
 		<assert>
 			<success>PEPPOL-T114-R010</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -28,14 +28,14 @@
 				<cbc:ChargeTotalAmount>100</cbc:ChargeTotalAmount>
 			</cac:AnticipatedMonetaryTotal>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test>
 		<assert>
 			<success>PEPPOL-T114-R010</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -53,14 +53,14 @@
 				<cbc:ChargeTotalAmount>500</cbc:ChargeTotalAmount>
 			</cac:AnticipatedMonetaryTotal>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test>
 		<assert>
 			<success>PEPPOL-T114-R010</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -75,7 +75,7 @@
 				<cbc:ChargeTotalAmount>0</cbc:ChargeTotalAmount>
 			</cac:AnticipatedMonetaryTotal>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test>
@@ -83,7 +83,7 @@
 			<error>PEPPOL-T114-R010</error>
 		</assert>
 
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -100,7 +100,7 @@
 				<cbc:ChargeTotalAmount>400</cbc:ChargeTotalAmount>
 			</cac:AnticipatedMonetaryTotal>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 </testSet>

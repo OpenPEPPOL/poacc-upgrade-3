@@ -8,7 +8,7 @@
 		<assert>
 			<success>PEPPOL-T114-R028</success>
 		</assert>
-		<Order
+		<OrderChange
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
@@ -53,14 +53,14 @@
 				</cac:LineItem>
 			</cac:OrderLine>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test id="2">
 		<assert>
 			<error number="12">PEPPOL-T114-R028</error>
 		</assert>
-		<Order
+		<OrderChange
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
@@ -105,7 +105,7 @@
 				</cac:LineItem>
 			</cac:OrderLine>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 

@@ -9,7 +9,7 @@
 		<assert>
 			<success>PEPPOL-T114-R021</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -25,13 +25,13 @@
 				<cbc:BaseAmount>1000</cbc:BaseAmount>
 			</cac:AllowanceCharge>
 
-		</Order>
+		</OrderChange>
 	</test>
 	<test>
 		<assert>
 			<success>PEPPOL-T114-R021</success>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -51,14 +51,14 @@
 				</cac:LineItem>
 			</cac:OrderLine>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 	<test>
 		<assert>
 			<error number="2">PEPPOL-T114-R021</error>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -74,13 +74,13 @@
 				<cbc:BaseAmount>1000</cbc:BaseAmount>
 			</cac:AllowanceCharge>
 
-		</Order>
+		</OrderChange>
 	</test>
 	<test>
 		<assert>
 			<error number="2">PEPPOL-T114-R021</error>
 		</assert>
-		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
@@ -100,7 +100,7 @@
 				</cac:LineItem>
 			</cac:OrderLine>
 
-		</Order>
+		</OrderChange>
 	</test>
 
 </testSet>
