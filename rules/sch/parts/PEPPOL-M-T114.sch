@@ -174,7 +174,7 @@
                     flag="fatal">Allowance or charge amounts MUST NOT be negative.</assert>
     </rule>
 
-        <rule context="cac:AllowanceCharge[cbc:ChargeIndicator = 'false']/cbc:AllowanceChargeReasonCode">
+  <!--       <rule context="cac:AllowanceCharge[cbc:ChargeIndicator = 'false']/cbc:AllowanceChargeReasonCode">
                 <assert id="PEPPOL-T114-CL001"
                         test="
                         some $code in $clUNCL5189
@@ -188,6 +188,6 @@
                         some $code in $clUNCL7161
                         satisfies normalize-space(text()) = $code"
                         flag="fatal">Reason code MUST be according to UNCL 7161 D.16B.</assert>
-        </rule>
+        </rule> -->
 
 </pattern>
