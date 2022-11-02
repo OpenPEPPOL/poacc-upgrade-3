@@ -1,6 +1,6 @@
 = Version 3.0.10
 [horizontal]
-Release date:: 2022-11-01
+Release date:: 2022-11-03
 
 == BIS documentation
 * Invoice Response
