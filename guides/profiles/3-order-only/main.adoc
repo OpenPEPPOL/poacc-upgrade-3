@@ -8,10 +8,11 @@ include::../../shared/links.adoc[]
 :source-language: xml
 :sectanchors:
 :sectnums:
+:last-update-label!:
 :transaction-path: ../../transactions/01-order
 :snippet-dir: ../../../../rules/snippets/order
 
-= image:../../shared/images/peppol.png[float="right"]BIS Order only 3.2
+= image:../../shared/images/peppol.png[float="right"]BIS Order only 3.3
 {author}
 
 {description}

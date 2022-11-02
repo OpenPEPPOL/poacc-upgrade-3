@@ -8,8 +8,8 @@
     <Documentation path="changes/">- Overview of alignments</Documentation>
     <!-- BIS documents -->
     <Documentation path="">BIS DOCUMENTS</Documentation>
-    <Documentation path="profiles/3-order-only/">- Peppol BIS Order only 3.2</Documentation>
-    <Documentation path="profiles/28-ordering/">- Peppol BIS Ordering 3.2</Documentation>
+    <Documentation path="profiles/3-order-only/">- Peppol BIS Order only 3.3</Documentation>
+    <Documentation path="profiles/28-ordering/">- Peppol BIS Ordering 3.3</Documentation>
     <Documentation path="profiles/1-catalogueonly/">- Peppol BIS Catalogue with response 3.1</Documentation>
     <Documentation path="profiles/64-catalogue-wo-response/">- Peppol BIS Catalogue without response 3.1</Documentation>
     <Documentation path="profiles/30-despatchadvice/">- Peppol BIS Despatch Advice 3.1</Documentation>
@@ -110,6 +110,13 @@
         <Path>rules/sch/parts/PEPPOL-M-T110.sch</Path>
         <Title>Business rules for Peppol Order Agreement transaction 3.0</Title>
     </Resource>
+    <Resource>
+        <Identifier>T71</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/parts/PEPPOL-M-T71.sch</Path>
+        <Title>Business rules for Peppol Message Level Response transaction 3.0</Title>
+    </Resource>
+	
     <Resource>
         <Identifier>T111</Identifier>
         <Type>native:Schematron</Type>

@@ -2,7 +2,7 @@
 == Quantities and units
 
 The table below lists quantities and units in the catalogue transaction. All quantities must be based on a Unit Of Measure (UOM) according UNECE Recommendation 20 and Recommendation 21 for UOM.
-For xml-examples for quantities and units, we refer to {examples-zip}.
+For xml-examples for quantities and units, we refer to Appendix A on the main page.
 
 Following are two examples showing the use of different elements.
 

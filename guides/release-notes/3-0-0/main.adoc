@@ -6,7 +6,7 @@
 :source-highlighter: coderay
 :source-language: xml
 :sectanchors:
-
+:last-update-label!:
 
 This release is a new non-backwards compatible major upgrade of all OpenPeppol BIS specifications, other than the BIS Billing 3.0.
 

@@ -61,7 +61,7 @@
 :order-UC: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/master/rules/use-case-examples/order[Use case example files]
 :order-response-UC: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/master/rules/use-case-examples/order-response[Use case example files]
 :imr-UC: https://docs.peppol.eu/poacc/upgrade-3/files/PEPPOLBIS-Examples.zip[Use case example files]
-:examples-zip: http://test-docs.peppol.eu/poacc/upgrade-3/files/PEPPOLBIS-Examples.zip[Example files (ZIP)]
+:examples-zip: http://docs.peppol.eu/poacc/upgrade-3/files/PEPPOLBIS-Examples.zip[Example files (ZIP)]
 
 //internal
 :link-codelist: link:/poacc/upgrade-3/codelist/[Code list section]
