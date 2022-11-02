@@ -14,6 +14,7 @@ include::../../shared/links.adoc[]
 :snippet-dir: ../../../../rules/snippets/catalogue
 :catalogue-path: ../../transactions/19-catalogue
 :response-path: ../../transactions/58-catalogue-response
+:last-update-label!:
 
 {description}
 

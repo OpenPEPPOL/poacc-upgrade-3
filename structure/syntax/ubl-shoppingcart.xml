@@ -684,7 +684,6 @@
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir77-034</Reference>
 
-						<Reference type="CODE_LIST">UNCL5305</Reference>
 						<Value type="EXAMPLE">Z</Value>
 					</Element>
 					<Element>

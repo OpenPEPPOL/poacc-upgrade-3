@@ -63,6 +63,7 @@
 			</cac:PostalAddress>
 			<cac:PartyLegalEntity>
 				<cbc:RegistrationName>The Supplier AB</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0082">123456789</cbc:CompanyID>
 			</cac:PartyLegalEntity>
 			<cac:Contact>
 				<cbc:Name>John Doe</cbc:Name>
@@ -92,6 +93,7 @@
 			</cac:PostalAddress>
 			<cac:PartyLegalEntity>
 				<cbc:RegistrationName>City Hospital</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0082">931186755</cbc:CompanyID>
 			</cac:PartyLegalEntity>
 		</cac:Party>
 		<cac:DeliveryContact>
@@ -213,6 +215,7 @@
 				</cac:StandardItemIdentification>
 				<cac:ItemSpecificationDocumentReference>
 					<cbc:ID>147852</cbc:ID>
+					<cbc:DocumentTypeCode>TRADE_ITEM_DESCRIPTION</cbc:DocumentTypeCode>
 					<cbc:DocumentType>Timesheet</cbc:DocumentType>
 					<cac:Attachment>
 						<cbc:EmbeddedDocumentBinaryObject mimeCode="image/tiff" filename="hours-spend.csv">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>

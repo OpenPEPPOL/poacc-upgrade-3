@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Recommandation 19 (UN/ECE)</Title>
+    <Identifier>UNECERec19</Identifier>
+    <Version>TRADE/CEFACT/2001/19</Version>
+    <Agency>UN/ECE</Agency>
+
+
+    <Code>
+        <Id>0</Id>
+        <Name>Transport mode not specified</Name>
+		<Description>Transport mode has not been specified</Description>
+    </Code>
+    <Code>
+        <Id>1</Id>
+        <Name>Maritime transport</Name>
+		<Description>Transport of goods and/or persons is by sea</Description>
+    </Code>
+    <Code>
+        <Id>2</Id>
+        <Name>Rail transport</Name>
+		<Description>Transport of goods and/or persons is by rail</Description>
+    </Code>
+    <Code>
+        <Id>3</Id>
+        <Name>Road transport</Name>
+		<Description>Transport of goods and/or persons is by road</Description>
+    </Code>
+    <Code>
+        <Id>4</Id>
+        <Name>Air transport</Name>
+		<Description>Transport of goods and/or persons is by air</Description>
+    </Code>
+    <Code>
+        <Id>5</Id>
+        <Name>Mail</Name>
+		<Description>Method to convey goods is by mail</Description>
+    </Code>
+    <Code>
+        <Id>6</Id>
+        <Name>Multimodal transport</Name>
+		<Description>Method to convey goods and/or persons is by multimodal transport</Description>
+    </Code>
+    <Code>
+        <Id>7</Id>
+        <Name>Fixed transport installation</Name>
+		<Description>Transport of item is via a fixed transport installation</Description>
+    </Code>
+    <Code>
+        <Id>8</Id>
+        <Name>Inland water transport</Name>
+		<Description>Transport of goods and/or persons is by inland water</Description>
+    </Code>
+    <Code>
+        <Id>9</Id>
+        <Name>Transport mode not applicable</Name>
+		<Description>The mode of transport is not applicable</Description>
+    </Code>
+   
+</CodeList>

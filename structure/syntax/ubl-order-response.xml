@@ -258,6 +258,14 @@
 					<Value type="EXAMPLE">2018-06-01</Value>
 				</Element>
 				<Element cardinality="0..1">
+					<Term>cbc:StartTime</Term>
+					<Name>Period start time</Name>
+					<Description>The time at which this period begins. Format = "hh:mm:ss"</Description>
+					<DataType>Time</DataType>
+					<Reference type="BUSINESS_TERM">tir76-p010</Reference>
+					<Value type="EXAMPLE">12:30:00</Value>
+				</Element>
+				<Element cardinality="0..1">
 					<Term>cbc:EndDate</Term>
 					<Name>Period end date</Name>
 					<Description>The date on which the period ends. The end date counts as part of
@@ -266,6 +274,14 @@
 					<Reference type="BUSINESS_TERM">tir76-100</Reference>
 					<Reference type="RULE">PEPPOL-T76-R004</Reference>
 					<Value type="EXAMPLE">2018-06-30</Value>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:EndTime</Term>
+					<Name>Period end time</Name>
+					<Description>The time at which this period end. Format = "hh:mm:ss"</Description>
+					<DataType>Time</DataType>
+					<Reference type="BUSINESS_TERM">tir76-p011</Reference>
+					<Value type="EXAMPLE">18:00:00</Value>
 				</Element>
 			</Element>
 		</Element>
@@ -567,7 +583,6 @@
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir76-150</Reference>
 
-							<Reference type="CODE_LIST">UNCL5305</Reference>
 							<Value type="EXAMPLE">S</Value>
 						</Element>
 						<Element cardinality="0..1">

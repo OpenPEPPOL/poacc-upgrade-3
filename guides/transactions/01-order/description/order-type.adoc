@@ -1,0 +1,48 @@
+= Order Type Code
+Following values may be uses as order type code but shall be treated as synonyms with 220 and process in the same way, unless bi-laterally agreed differently.
+
+
+[cols="1,4"]
+|===
+h| Document location
+| `cbc:OrderTypeCode`
+h| Source codelist
+|
+ link:http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred1001.htm[UN/CEFACT code list 1001, D.16B]
+|===
+
+
+[cols="1h,2s,4a,1,1m", options="header"]
+.Code list
+|===
+| Code
+| Name
+| Description
+| Synonym with
+| UBL Message type
+
+| 220
+| Order
+| Document/message by means of which a buyer initiates a transaction with a seller involving the supply of goods or services as specified, according to conditions set out in an offer, or otherwise known to the buyer. 
+| 
+| Order
+
+| 221
+| Blanket order
+| Usage of document/message for general order purposes with later split into quantities and delivery dates and maybe delivery locations.
+| 220
+| Order
+
+| 226
+| Call off order
+| Document/message to provide split quantities and delivery dates referring to a previous blanket order.
+| 220
+| Order
+
+| 227
+| Consignment order
+| Order to deliver goods into stock with agreement on payment when goods are sold out of this stock. 
+| 220
+| Order
+
+|===

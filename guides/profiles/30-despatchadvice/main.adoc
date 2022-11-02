@@ -8,6 +8,7 @@ include::../../shared/links.adoc[]
 :source-language: xml
 :sectanchors:
 :sectnums:
+:last-update-label!:
 :title-logo-image: ../images/peppol.jpg
 :snippet-dir: ../../../../rules/snippets/despatch
 = image:../../shared/images/peppol.png[float="right"]Peppol BIS Despatch Advice 3.1

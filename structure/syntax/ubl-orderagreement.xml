@@ -325,6 +325,23 @@
 						<Reference type="BUSINESS_TERM">tir110-013</Reference>
 						<Value type="EXAMPLE">Seller company Ltd.</Value>
 					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:CompanyID</Term>
+						<Name>Seller legal registration identifier</Name>
+						<Description>Identifies a company as registered with the company
+							registration scheme.</Description>
+						<DataType>Identifier</DataType>
+						<Reference type="BUSINESS_TERM">tir110-p010</Reference>
+						<Attribute usage="Optional">
+							<Term>schemeID</Term>
+							<Name>Scheme identifier</Name>
+							<Description>The identification scheme identifier of the buyer legal
+								registration identifier.</Description>
+							<Reference type="CODE_LIST">ICD</Reference>
+							<Value type="EXAMPLE">0002</Value>
+						</Attribute>
+						<Value type="EXAMPLE">987654321</Value>
+					</Element>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:Contact</Term>
@@ -487,6 +504,23 @@
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir110-010</Reference>
 						<Value type="EXAMPLE">Customer AS</Value>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:CompanyID</Term>
+						<Name>Buyers legal registration identifier</Name>
+						<Description>Identifies a company as registered with the company
+							registration scheme.</Description>
+						<DataType>Identifier</DataType>
+						<Reference type="BUSINESS_TERM">tir110-p009</Reference>
+						<Attribute usage="Optional">
+							<Term>schemeID</Term>
+							<Name>Scheme identifier</Name>
+							<Description>The identification scheme identifier of the buyer legal
+								registration identifier.</Description>
+							<Reference type="CODE_LIST">ICD</Reference>
+							<Value type="EXAMPLE">0002</Value>
+						</Attribute>
+						<Value type="EXAMPLE">987654321</Value>
 					</Element>
 				</Element>
 			</Element>
@@ -961,7 +995,6 @@
 					<Name>Document level allowance or charge TAX category code</Name>
 					<Description>A coded identification of what TAX category applies to the document level allowance or charge.</Description>
 					<DataType>Code</DataType>
-					<Reference type="CODE_LIST">UNCL5305</Reference>
 					<Value type="EXAMPLE">S</Value>
 				</Element>
 				<Element cardinality="0..1">
@@ -1054,7 +1087,6 @@
 						<Description>Coded identification of a TAX category.</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">OP-110-005</Reference>
-						<Reference type="CODE_LIST">UNCL5305</Reference>
 						<Value type="EXAMPLE">S</Value>
 					</Element>
 					<Element cardinality="0..1">
@@ -1532,6 +1564,15 @@
 							<Value type="EXAMPLE">docid7687</Value>
 						</Element>
 						<Element cardinality="0..1">
+							<Term>cbc:DocumentTypeCode</Term>
+							<Name>External Item Specifications Type</Name>
+							<Description>A functional description of the attachment/image expressed as code</Description>
+							<DataType>Code</DataType>
+							<Reference type="CODE_LIST">UNCL1001</Reference>
+							<Reference type="CODE_LIST">Image</Reference>
+							<Reference type="BUSINESS_TERM">tir110-p008</Reference>
+						</Element>
+						<Element cardinality="0..1">
 							<Term>cbc:DocumentType</Term>
 							<Name>Document description</Name>
 							<Description>Textual description of the document.</Description>
@@ -1637,7 +1678,6 @@
 							<Description>The TAX category code for the item.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir110-106</Reference>
-							<Reference type="CODE_LIST">UNCL5305</Reference>
 							<Value type="EXAMPLE">S</Value>
 						</Element>
 						<Element cardinality="0..1">
