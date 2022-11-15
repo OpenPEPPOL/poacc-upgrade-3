@@ -22,7 +22,7 @@
 
 		</OrderChange>
 	</test>
-	<test>
+	<!--	<test>
 		<assert>
 			<error number="3">PEPPOL-T114-CL001</error>
 		</assert>
@@ -39,5 +39,5 @@
 			</cac:AllowanceCharge>
 
 		</OrderChange>
-	</test>
+	</test>-->
 </testSet>

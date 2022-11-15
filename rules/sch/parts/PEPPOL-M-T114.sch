@@ -5,7 +5,7 @@
     <let name="sumLineExtensionAmount" value="if (/ubl:OrderChange/cac:OrderLine/cac:LineItem/cbc:LineExtensionAmount) then round(sum(/ubl:OrderChange/cac:OrderLine/cac:LineItem/cbc:LineExtensionAmount/xs:decimal(.)) * 10 * 10) div 100 else 0"/>
     <let name="sumAllowance" value="if (/ubl:OrderChange/cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']) then round(sum(/ubl:OrderChange/cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']/cbc:Amount/xs:decimal(.)) * 10 * 10) div 100 else 0"/>
     <let name="sumCharge" value="if (/ubl:OrderChange/cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']) then round(sum(/ubl:OrderChange/cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']/cbc:Amount/xs:decimal(.)) * 10 * 10) div 100 else 0"/>
-    <let name="TAXamount" value="if(/ubl:OrderChange/cac:TaxTotal/cbc:TaxAmount) then xs:decimal(/ubl:Order/cac:TaxTotal/cbc:TaxAmount) else 0"/>
+    <let name="TAXamount" value="if(/ubl:OrderChange/cac:TaxTotal/cbc:TaxAmount) then xs:decimal(/ubl:OrderChange/cac:TaxTotal/cbc:TaxAmount) else 0"/>
 
         <rule context="cbc:ProfileID">
                 <assert id="PEPPOL-T114-R031"
@@ -174,7 +174,7 @@
                     flag="fatal">Allowance or charge amounts MUST NOT be negative.</assert>
     </rule>
 
-  <!--       <rule context="cac:AllowanceCharge[cbc:ChargeIndicator = 'false']/cbc:AllowanceChargeReasonCode">
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator = 'false']/cbc:AllowanceChargeReasonCode">
                 <assert id="PEPPOL-T114-CL001"
                         test="
                         some $code in $clUNCL5189
@@ -188,6 +188,5 @@
                         some $code in $clUNCL7161
                         satisfies normalize-space(text()) = $code"
                         flag="fatal">Reason code MUST be according to UNCL 7161 D.16B.</assert>
-        </rule> -->
-
+        </rule> 
 </pattern>

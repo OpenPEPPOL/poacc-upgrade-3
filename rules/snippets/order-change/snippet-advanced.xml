@@ -203,7 +203,7 @@
       <!-- tag::quantity[] -->
       <cbc:Quantity unitCode="LTR">120</cbc:Quantity>
       <!-- end::quantity[] -->
-      <cbc:LineExtensionAmount currencyID="EUR">725</cbc:LineExtensionAmount>
+      <cbc:LineExtensionAmount currencyID="EUR">720</cbc:LineExtensionAmount>
       <cbc:AccountingCost>MAFO-1</cbc:AccountingCost>
       <!-- tag::quantity[] -->
 

@@ -6,7 +6,7 @@
 		<scope>PEPPOL-T114-R003</scope>
 	</assert>
 
-	<!--	
+	
 	<test>
 		<assert>
 			<success>PEPPOL-T114-R003</success>
@@ -23,7 +23,6 @@
 
 		</OrderChange>
 	</test>  
-	-->
 
 	<test>
 		<assert>
@@ -82,7 +81,7 @@
 		</OrderChange>
 	</test>
 
-	<!--	
+	
 	<test>
 		<assert>
 			<error>PEPPOL-T114-R003</error>
@@ -100,7 +99,6 @@
 
 		</OrderChange>
 	</test>
-	-->
 
 
 </testSet>
