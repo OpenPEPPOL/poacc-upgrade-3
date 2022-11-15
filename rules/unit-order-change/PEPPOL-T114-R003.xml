@@ -6,6 +6,7 @@
 		<scope>PEPPOL-T114-R003</scope>
 	</assert>
 
+	<!--	
 	<test>
 		<assert>
 			<success>PEPPOL-T114-R003</success>
@@ -21,7 +22,8 @@
 			</cac:TaxTotal>
 
 		</OrderChange>
-	</test>
+	</test>  
+	-->
 
 	<test>
 		<assert>
@@ -29,7 +31,7 @@
 		</assert>
 		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChangew-2">
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
 			<cbc:DocumentCurrencyCode>NOK</cbc:DocumentCurrencyCode>
 
@@ -80,6 +82,7 @@
 		</OrderChange>
 	</test>
 
+	<!--	
 	<test>
 		<assert>
 			<error>PEPPOL-T114-R003</error>
@@ -97,7 +100,7 @@
 
 		</OrderChange>
 	</test>
-
+	-->
 
 
 </testSet>

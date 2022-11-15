@@ -63,7 +63,7 @@
 			</cac:AnticipatedMonetaryTotal>
 		</OrderChange>
 	</test>
-
+	<!--
 	<test id="4">
 		<assert>
 			<error>PEPPOL-T114-R017</error>
@@ -112,11 +112,11 @@
 
 			<cac:AnticipatedMonetaryTotal>
 				<cbc:LineExtensionAmount>6300.0</cbc:LineExtensionAmount>
-				<!--<cbc:TaxExclusiveAmount>6000</cbc:TaxExclusiveAmount>-->
 				<cbc:TaxInclusiveAmount>6500</cbc:TaxInclusiveAmount>
 				<cbc:AllowanceTotalAmount>200</cbc:AllowanceTotalAmount>
 				<cbc:ChargeTotalAmount>600</cbc:ChargeTotalAmount>
 			</cac:AnticipatedMonetaryTotal>
 		</OrderChange>
 	</test>
+	-->
 </testSet>

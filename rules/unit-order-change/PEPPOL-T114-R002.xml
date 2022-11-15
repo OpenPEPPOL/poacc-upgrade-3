@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-		 configuration="peppolbis-t01-base-3.0">
+		 configuration="peppolbis-t114-base-3.0">
 	<assert>
 		<description>Verify information about validity end date.</description>
-		<scope>PEPPOL-T01-R002</scope>
+		<scope>PEPPOL-T114-R002</scope>
 	</assert>
 	<test>
 		<assert>
-			<success>PEPPOL-T01-R002</success>
+			<success>PEPPOL-T114-R002</success>
 		</assert>
 		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
 			<cac:ValidityPeriod>
 				<cbc:EndDate/>
@@ -21,11 +21,11 @@
 	</test>
 	<test>
 		<assert>
-			<warning>PEPPOL-T01-R002</warning>
+			<warning>PEPPOL-T114-R002</warning>
 		</assert>
 		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
 			<cac:ValidityPeriod>
 			<!--	<cbc:EndDate/>-->
@@ -35,11 +35,11 @@
 	</test>
 	<test>
 		<assert>
-			<warning>PEPPOL-T01-R002</warning>
+			<warning>PEPPOL-T114-R002</warning>
 		</assert>
 		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
 
 		<!--	<cac:ValidityPeriod>
 					<cbc:EndDate/>

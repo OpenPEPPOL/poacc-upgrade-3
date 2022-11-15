@@ -53,7 +53,7 @@
 
 		</OrderChange>
 	</test>
-
+	<!--
 	<test>
 		<assert>
 			<error number="2">PEPPOL-T114-R021</error>
@@ -64,13 +64,11 @@
 
 			<cac:AllowanceCharge>
 				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
-<!--				<cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>-->
 				<cbc:BaseAmount>1000</cbc:BaseAmount>
 			</cac:AllowanceCharge>
 
 			<cac:AllowanceCharge>
 				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-<!--				<cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>-->
 				<cbc:BaseAmount>1000</cbc:BaseAmount>
 			</cac:AllowanceCharge>
 
@@ -88,13 +86,11 @@
 				<cac:LineItem>
 					<cac:AllowanceCharge>
 						<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
-<!--						<cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>-->
 						<cbc:BaseAmount>1000</cbc:BaseAmount>
 					</cac:AllowanceCharge>
 
 					<cac:AllowanceCharge>
 						<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-<!--						<cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>-->
 						<cbc:BaseAmount>1000</cbc:BaseAmount>
 					</cac:AllowanceCharge>
 				</cac:LineItem>
@@ -102,5 +98,5 @@
 
 		</OrderChange>
 	</test>
-
+	-->
 </testSet>

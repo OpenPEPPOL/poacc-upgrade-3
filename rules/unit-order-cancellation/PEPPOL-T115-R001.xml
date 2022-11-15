@@ -2,7 +2,7 @@
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
 	configuration="peppolbis-t115-base-3.0">
 	<assert>
-		<description>Verify that the buyer party official name or a buyer party identifier</description>
+		<description>Verify that the buyer party official name or a buyer party identifier exists</description>
 		<scope>PEPPOL-T115-R001</scope>
 	</assert>
 	<test>
@@ -70,7 +70,7 @@
 
 		</OrderCancellation>
 	</test>
-
+	<!--
 	<test>
 		<assert>
 			<error>PEPPOL-T115-R001</error>
@@ -83,10 +83,8 @@
 			<cac:BuyerCustomerParty>
 				<cac:Party>
 					<cac:PartyIdentification>
-						<!--<cbc:ID>7080000374200</cbc:ID>-->
 					</cac:PartyIdentification>
 					<cac:PartyLegalEntity>
-						<!--<cbc:RegistrationName>Medical</cbc:RegistrationName>-->
 					</cac:PartyLegalEntity>
 				</cac:Party>
 			</cac:BuyerCustomerParty>
@@ -105,16 +103,10 @@
 
 			<cac:BuyerCustomerParty>
 				<cac:Party>
-			<!--		<cac:PartyIdentification>
-						<cbc:ID>7080000374200</cbc:ID>
-					</cac:PartyIdentification>
-					<cac:PartyLegalEntity>
-						<cbc:RegistrationName>Medical</cbc:RegistrationName>
-					</cac:PartyLegalEntity>-->
-				</cac:Party>
+			</cac:Party>
 			</cac:BuyerCustomerParty>
 
 		</OrderCancellation>
 	</test>
-
+	-->
 </testSet>

@@ -89,6 +89,7 @@
 
 		</OrderChange>
 	</test>
+	<!--
 	<test>
 		<assert>
 			<error>PEPPOL-T114-R023</error>
@@ -99,8 +100,6 @@
 
 			<cac:AllowanceCharge>
 				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-			<!--	<cbc:AllowanceChargeReason>Total order value discount</cbc:AllowanceChargeReason>
-				<cbc:AllowanceChargeReasonCode>97</cbc:AllowanceChargeReasonCode>-->
 			</cac:AllowanceCharge>
 
 		</OrderChange>
@@ -118,8 +117,6 @@
 
 					<cac:AllowanceCharge>
 						<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-<!--						<cbc:AllowanceChargeReason>Total order value discount</cbc:AllowanceChargeReason>
-						<cbc:AllowanceChargeReasonCode>97</cbc:AllowanceChargeReasonCode>-->
 					</cac:AllowanceCharge>
 
 				</cac:LineItem>
@@ -127,7 +124,7 @@
 
 		</OrderChange>
 	</test>
-
+	-->
 
 
 </testSet>

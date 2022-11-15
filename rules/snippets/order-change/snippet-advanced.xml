@@ -18,7 +18,7 @@
   </cac:ValidityPeriod>
   <!-- tag::attachment[] -->
   <cac:OrderReference>
-    <cbc:ID></cbc:ID>
+    <cbc:ID>1</cbc:ID>
   </cac:OrderReference>
   <cac:AdditionalDocumentReference>
     <cbc:ID>100</cbc:ID>
@@ -203,7 +203,7 @@
       <!-- tag::quantity[] -->
       <cbc:Quantity unitCode="LTR">120</cbc:Quantity>
       <!-- end::quantity[] -->
-      <cbc:LineExtensionAmount currencyID="EUR">720</cbc:LineExtensionAmount>
+      <cbc:LineExtensionAmount currencyID="EUR">725</cbc:LineExtensionAmount>
       <cbc:AccountingCost>MAFO-1</cbc:AccountingCost>
       <!-- tag::quantity[] -->
 
