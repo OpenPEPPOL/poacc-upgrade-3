@@ -5,7 +5,7 @@
 		<description>Verify that total sum of line amounts equal the sum of the order line amounts at order line level</description>
 		<scope>PEPPOL-T114-R008</scope>
 	</assert>
-<!--
+
 	<test>
 		<assert>
 			<success>PEPPOL-T114-R008</success>
@@ -59,7 +59,6 @@
 
 		</OrderChange>
 	</test>
--->
 	<test>
 		<assert>
 			<success>PEPPOL-T114-R008</success>
@@ -86,7 +85,7 @@
 
 		</OrderChange>
 	</test>
-<!--
+
 	<test>
 		<assert>
 			<success>PEPPOL-T114-R008</success>
@@ -113,7 +112,6 @@
 
 		</OrderChange>
 	</test>
--->
 	<test>
 		<assert>
 			<error>PEPPOL-T114-R008</error>
@@ -167,7 +165,7 @@
 
 		</OrderChange>
 	</test>
-	<!--
+	
 	<test>
 		<assert>
 			<success>PEPPOL-T114-R008</success>
@@ -324,5 +322,4 @@
 
 		</OrderChange>
 	</test>
-	-->
 </testSet>

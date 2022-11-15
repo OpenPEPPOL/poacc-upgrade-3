@@ -89,7 +89,7 @@
 
 		</OrderChange>
 	</test>
-	<!--
+	
 	<test>
 		<assert>
 			<error>PEPPOL-T114-R023</error>
@@ -124,7 +124,6 @@
 
 		</OrderChange>
 	</test>
-	-->
 
 
 </testSet>

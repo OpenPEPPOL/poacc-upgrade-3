@@ -63,7 +63,7 @@
 			</cac:AnticipatedMonetaryTotal>
 		</OrderChange>
 	</test>
-	<!--
+	
 	<test id="4">
 		<assert>
 			<error>PEPPOL-T114-R017</error>
@@ -118,5 +118,4 @@
 			</cac:AnticipatedMonetaryTotal>
 		</OrderChange>
 	</test>
-	-->
 </testSet>
