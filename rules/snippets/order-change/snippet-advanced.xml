@@ -17,6 +17,9 @@
     <cbc:EndDate>2022-03-01</cbc:EndDate>
   </cac:ValidityPeriod>
   <!-- tag::attachment[] -->
+  <cac:OrderReference>
+    <cbc:ID></cbc:ID>
+  </cac:OrderReference>
   <cac:AdditionalDocumentReference>
     <cbc:ID>100</cbc:ID>
     <cbc:DocumentType>Drawing</cbc:DocumentType><!--1-->
@@ -65,13 +68,6 @@
       </cac:PartyIdentification>
       <cac:PostalAddress>
         <cbc:StreetName>Harbour street</cbc:StreetName>
-        <cbc:AdditionalStreetName>Dock 45</cbc:AdditionalStreetName>
-        <cbc:CityName>Bergen</cbc:CityName>
-        <cbc:PostalZone>5005</cbc:PostalZone>
-        <cbc:CountrySubentity>Region West</cbc:CountrySubentity>
-        <cac:AddressLine>
-			<cbc:Line>Gate 34</cbc:Line>
-        </cac:AddressLine>
         <cac:Country>
           <cbc:IdentificationCode>NO</cbc:IdentificationCode>
         </cac:Country>
@@ -164,6 +160,7 @@
   <cac:OrderLine>
     <cac:LineItem>
       <cbc:ID>1</cbc:ID>
+      <cbc:LineStatusCode>3</cbc:LineStatusCode>
       <cbc:Quantity unitCode="NAR">10</cbc:Quantity>
       <cbc:LineExtensionAmount currencyID="EUR">400</cbc:LineExtensionAmount>
       <cbc:AccountingCost>MAFO-1</cbc:AccountingCost>
@@ -202,6 +199,7 @@
   <cac:OrderLine>
     <cac:LineItem>
       <cbc:ID>2</cbc:ID>
+      <cbc:LineStatusCode>3</cbc:LineStatusCode>
       <!-- tag::quantity[] -->
       <cbc:Quantity unitCode="LTR">120</cbc:Quantity>
       <!-- end::quantity[] -->
@@ -241,6 +239,7 @@
   <cac:OrderLine>
     <cac:LineItem>
       <cbc:ID>3</cbc:ID>
+      <cbc:LineStatusCode>3</cbc:LineStatusCode>
       <cbc:Quantity unitCode="NAR">15</cbc:Quantity>
       <cbc:LineExtensionAmount currencyID="EUR">225</cbc:LineExtensionAmount>
       <cbc:AccountingCost>MAFO-1</cbc:AccountingCost>
