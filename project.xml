@@ -319,10 +319,10 @@
         <Type>Namespace-1</Type>
         <Path>structure/namespace/ubl-order-cancellation.xml</Path>
     </Resource>
-    <Resource>
+    <!-- <Resource>
         <Type>Namespace-1</Type>
         <Path>structure/namespace/ubl-order-response-advanced.xml</Path>
-    </Resource>
+    </Resource>-->
     <Resource>
         <Type>Namespace-1</Type>
         <Path>structure/namespace/ubl-cac.xml</Path>
