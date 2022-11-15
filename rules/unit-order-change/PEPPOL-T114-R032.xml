@@ -46,7 +46,7 @@
 			</cac:OrderLine>
 		</OrderChange>
 	</test>
-	<!--
+	
 	<test>
 		<assert>
 			<error number="2">PEPPOL-T114-R032</error>
@@ -68,5 +68,4 @@
 			</cac:OrderLine>
 		</OrderChange>
 	</test>
--->
 </testSet>
