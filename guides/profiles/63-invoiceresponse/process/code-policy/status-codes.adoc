@@ -58,9 +58,9 @@ The Seller may still respond externally if he has comments or objections to the 
 |RE |Rejected |Indication that the referenced offer or transaction (e.g., cargo booking or quotation request) is not accepted. |Status is used only when the Buyer will not process the referenced Invoice any further. +
 Buyer is rejecting this invoice but not necessarily the commercial transaction.
 Although it can be used also for rejection for commercial reasons (invoice not corresponding to delivery). |YES |YES |YES |YES
-|AP |Accepted |Indication that the referenced offer or transaction (e.g., cargo booking or quotation request) has been accepted. |Status is used only when the Buyer has given a final approval of the invoice and the next step is payment |NO |NO |YES |YES
+|AP |Accepted |Indication that the referenced offer or transaction (e.g., cargo booking or quotation request) has been accepted. |Status is used only when the Buyer has given a final approval of the invoice and the next step is payment |NO |NO |YES |NO
 |PD with PPD (1) |Partially Paid |Indicates that the referenced document or transaction has been partially paid. |Status is used together with Clarification Reason code PPD, only when the Buyer has initiated the payment of the invoice without having paid the accepted amount in full. |NO |NO |NO |NO
-|PD |Fully Paid |Indicates that the referenced document or transaction has been paid. |Status is used only when the Buyer has initiated the payment of the invoice. |NO |NO |NO |NO
+|PD |Fully Paid |Indicates that the referenced document or transaction has been paid. |Status is used only when the Buyer has initiated the payment of the invoice. |NO |NO |NO |YES
 
 |====
 

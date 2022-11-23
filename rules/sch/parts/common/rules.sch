@@ -44,9 +44,9 @@
       <assert id="PEPPOL-COMMON-R048" test="u:checkPIVAseIT(normalize-space())" flag="warning">Italian VAT Code (Partita Iva) must be stated in the correct format</assert>
     </rule>
     <rule context="cbc:EndpointID[@schemeID = '0007'] | cac:PartyIdentification/cbc:ID[@schemeID = '0007'] | cbc:CompanyID[@schemeID = '0007']">
-      <assert id="PEPPOL-COMMON-R049" test="string-length(normalize-space()) = 10 and string(number(normalize-space())) != 'NaN'" flag="warning">Swedish organization number MUST be stated in the correct format.</assert>     
+      <assert id="PEPPOL-COMMON-R049" test="string-length(normalize-space()) = 10 and string(number(normalize-space())) != 'NaN'" flag="fatal">Swedish organization number MUST be stated in the correct format.</assert>     
     </rule> 
     <rule context="cbc:EndpointID[@schemeID = '0151'] | cac:PartyIdentification/cbc:ID[@schemeID = '0151'] | cbc:CompanyID[@schemeID = '0151']">
-      <assert id="PEPPOL-COMMON-R050" test="u:abn(normalize-space())" flag="warning">Australian Business Number (ABN) MUST be stated in the correct format.</assert>
+      <assert id="PEPPOL-COMMON-R050" test="matches(normalize-space(), '^[0-9]{11}$') and u:abn(normalize-space())" flag="warning">Australian Business Number (ABN) MUST be stated in the correct format.</assert>
     </rule> 
 </pattern>

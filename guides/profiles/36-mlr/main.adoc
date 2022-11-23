@@ -8,6 +8,7 @@ include::../../shared/links.adoc[]
 :source-language: xml
 :sectanchors:
 :sectnums:
+:last-update-label!:
 :title-logo-image: ../../shared/images/peppol.png
 :snippet-dir: ../../../../rules/snippets/mlr
 = image:../../shared/images/peppol.png[float="right"]BIS Message Level Response 3.0

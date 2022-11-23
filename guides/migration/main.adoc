@@ -13,7 +13,7 @@ Draft, OpenPeppol AISBL, Post-Award Coordinating Community
 :sectnums:
 :CIUS: Core Invoice Usage Specification (CIUS)
 :title-logo-image: ../images/peppol.jpg
-
+:last-update-label!:
 
 This document specifies the migration plan for transition from the current versions of Peppol BIS specifications, as listed below, to the updated Peppol BIS specifications (BIS version 3), as well as the phase out of the current Peppol BIS version 2 specifications. This plan is based on the {migration-policy}.
 

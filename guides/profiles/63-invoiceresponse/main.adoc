@@ -8,10 +8,11 @@ include::../../shared/links.adoc[]
 :source-language: xml
 :sectanchors:
 :sectnums:
+:last-update-label!:
 :title-logo-image: ../../shared/images/peppol.png
 :snippet-dir: ../../../../rules/snippets/imr
 
-= image:../../shared/images/peppol.png[float="right"]BIS Invoice Response 3.1
+= image:../../shared/images/peppol.png[float="right"]BIS Invoice Response 3.2
 {author}
 
 {description}

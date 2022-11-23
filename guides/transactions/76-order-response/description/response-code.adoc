@@ -49,7 +49,7 @@ a|
 include::{snippet-response-dir}/snippet-1.xml[tags=response-header]
 ----
 
-.UBL example of an order response using response code "AB" (order is received
+.UBL example of an order response using response code "AB" (order is received)
 [source, xml, indent=0]
 ----
 include::{snippet-response-dir}/snippet-2.xml[tags=received]

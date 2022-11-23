@@ -8,13 +8,14 @@ include::../../shared/links.adoc[]
 :source-language: xml
 :sectanchors:
 :sectnums:
+:last-update-label!:
 :title-logo-image: ../../shared/images/peppol.png
 :order: ../../transactions/01-order
 :order-resp: ../../transactions/76-order-response
 :snippet-dir: ../../../../rules/snippets/order
 :snippet-response-dir: ../../../../rules/snippets/order-response
 
-= image:../../shared/images/peppol.png[float="right"]BIS Ordering 3.2
+= image:../../shared/images/peppol.png[float="right"]BIS Ordering 3.3
 {author}
 
 

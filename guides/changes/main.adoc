@@ -8,6 +8,7 @@
 :source-language: xml
 :sectanchors:
 :sectnums:
+:last-update-label!:
 
 The following list give a general overview of the changes made to the specifications as part of the alignment with the EN 16931 invoice. This list does not address the additional RFC that were approved and adopted.
 

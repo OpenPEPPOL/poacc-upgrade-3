@@ -7,8 +7,7 @@
     <Agency>UN/CEFACT</Agency>
     <Subset>openPEPPOL</Subset>
 
- 
-    <Code>
+     <Code>
         <Id>220</Id>
         <Name>Order</Name>
         <Description>Document/message by means of which a buyer initiates a
@@ -17,12 +16,25 @@
             out in an offer, or otherwise known to the buyer.
         </Description>
     </Code>
-  
+
+    <Code>
+        <Id>221</Id>
+        <Name>Blanket order</Name>
+        <Description>Usage of document/message for general order purposes with later split into quantities and delivery dates and maybe delivery locations. 
+        </Description>
+    </Code>
+
+    <Code>
+        <Id>226</Id>
+        <Name>Call off order</Name>
+        <Description>Document/message to provide split quantities and delivery dates referring to a previous blanket order.
+        </Description>
+    </Code>
+
     <Code>
         <Id>227</Id>
         <Name>Consignment order</Name>
-        <Description>Order to deliver goods into stock with agreement on
-            payment when goods are sold out of this stock.
+        <Description>Order to deliver goods into stock with agreement on payment when goods are sold out of this stock.
         </Description>
     </Code>
    

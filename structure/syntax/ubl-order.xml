@@ -238,6 +238,21 @@
 				<Reference type="BUSINESS_TERM">tir01-019</Reference>
 			</Element>
 		</Element>
+
+		<Element cardinality="0..1">
+            <Term>cac:ProjectReference</Term>
+            <Name>PROJECT REFERENCE</Name>
+
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Project reference</Name>
+                <Description>The identification of the project the order refers to.</Description>
+                <DataType>Document Reference</DataType>
+                <Reference type="BUSINESS_TERM"> tir01-p044</Reference>
+                <Value type="EXAMPLE">PID33</Value>
+            </Element>
+        </Element>
+
 		<Element>
 			<Term>cac:BuyerCustomerParty</Term>
 			<Name>Buyer information</Name>
@@ -1148,12 +1163,28 @@
 					<Reference type="BUSINESS_TERM">tir01-099</Reference>
 				</Element>
 				<Element cardinality="0..1">
+					<Term>cbc:StartTime</Term>
+					<Name>Period start time</Name>
+					<Description>The time at which this period begins. Format = "hh:mm:ss"</Description>
+					<DataType>Time</DataType>
+					<Reference type="BUSINESS_TERM">tir01-p042</Reference>
+					<Value type="EXAMPLE">12:30:00</Value>
+				</Element>
+				<Element cardinality="0..1">
 					<Term>cbc:EndDate</Term>
 					<Name>Period end date</Name>
 					<Description>The date on which the period ends. The end date counts as part of
 						the period.Format ="YYYY-MM-DD"</Description>
 					<DataType>Date</DataType>
 					<Reference type="BUSINESS_TERM">tir01-100</Reference>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:EndTime</Term>
+					<Name>Period end time</Name>
+					<Description>The time at which this period end. Format = "hh:mm:ss"</Description>
+					<DataType>Time</DataType>
+					<Reference type="BUSINESS_TERM">tir01-p043</Reference>
+					<Value type="EXAMPLE">18:00:00</Value>
 				</Element>
 			</Element>
 			<Element cardinality="0..1">
@@ -1465,7 +1496,6 @@
 					<Description>The TAX category code that applies to the document level allowance
 						or charge.</Description>
 					<DataType>Code</DataType>
-					<Reference type="CODE_LIST">UNCL5305</Reference>
 					<Reference type="BUSINESS_TERM">tir01-p011</Reference>
 					<Value type="EXAMPLE">S</Value>
 				</Element>
@@ -2155,7 +2185,6 @@
 							<Description>The TAX category code for the item.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir01-150</Reference>
-							<Reference type="CODE_LIST">UNCL5305</Reference>
 							<Value type="EXAMPLE">S</Value>
 						</Element>
 						<Element cardinality="0..1">

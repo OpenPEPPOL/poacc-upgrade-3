@@ -8,6 +8,7 @@
 :source-language: xml
 :sectanchors:
 :sectnums:
+:last-update-label!:
 
 :leveloffset: +1
 
