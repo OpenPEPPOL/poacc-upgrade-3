@@ -37,5 +37,5 @@ a|
 . The order will be cancelled
 
 |XML example file
-|{advanced_ordering_sc3}
+|See Appendix A for examples files for scenario 3
 |====

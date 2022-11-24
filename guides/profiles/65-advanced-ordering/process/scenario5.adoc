@@ -32,5 +32,5 @@ The buyer receives the message and confirms the cancellation by sending an Order
 |The order will be cancelled.
 
 |XML example file
-|{advanced_ordering_sc5}
+|See Appendix A for examples files for scenario 5
 |====

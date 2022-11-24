@@ -37,5 +37,5 @@ a|
 . The buyer and seller have confirmed the agreement on delivery of the order
 
 |XML example file
-|{advanced_ordering_sc4}
+|See Appendix A for examples files for scenario 4
 |====

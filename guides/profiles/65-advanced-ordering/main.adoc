@@ -19,12 +19,6 @@ include::../../shared/links.adoc[]
 :snippet-cancellation-dir: ../../../../rules/snippets/order-cancellation
 :ubl21: http://docs.oasis-open.org/ubl/UBL-2.1.html[UBL 2.1]
 :ubl23: http://docs.oasis-open.org/ubl/UBL-2.3.html[UBL 2.3]
-:advanced_ordering_sc1: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/2022-fall-advanced-ordering/rules/use-case-examples/advanced-ordering-sc1[Example files scenario 1]
-:advanced_ordering_sc2: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/2022-fall-advanced-ordering/rules/use-case-examples/advanced-ordering-sc2[Example files scenario 2]
-:advanced_ordering_sc3: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/2022-fall-advanced-ordering/rules/use-case-examples/advanced-ordering-sc3[Example files scenario 3]
-:advanced_ordering_sc4: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/2022-fall-advanced-ordering/rules/use-case-examples/advanced-ordering-sc4[Example files scenario 4]
-:advanced_ordering_sc5: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/2022-fall-advanced-ordering/rules/use-case-examples/advanced-ordering-sc5[Example files scenario 5]
-:advanced_ordering_main_site: https://test-docs.peppol.eu/poacc/upgrade-3/2022-fall-advanced-ordering/[Main documentation site]
 
 = image:../../shared/images/peppol.png[float="right"]BIS Advanced Ordering 3.0
 {author}
@@ -37,7 +31,7 @@ include::../../shared/copyright.adoc[]
 
 = Link to main site of documentation
 
-{advanced_ordering_main_site}
+{main-site}
 
 
 :leveloffset: +1
