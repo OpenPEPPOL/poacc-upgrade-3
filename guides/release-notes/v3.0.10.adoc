@@ -2,6 +2,18 @@
 [horizontal]
 Release date:: 2022-11-03
 
+== New BIS documents
+* Added new document  - BIS Advanced Ordering 3.0 with the following transactions:
+** New transaction - Peppol Order Change transaction 3.0 (T114)
+** New transaction - Peppol Order Cancellation transaction 3.0 (T115)
+** New transaction - Peppol Order Response Advanced transaction 3.0 (T116)
+** Existing transaction - Peppol Order transaction 3.3 (T01)
+
+== New transactions
+* Peppol Order Change transaction 3.0 (T114)
+* Peppol Order Cancellation transaction 3.0 (T115)
+* Peppol Order Response Advanced transaction 3.0 (T116)
+
 == BIS documentation
 * Invoice Response
 ** Definition of status codes in section Status Codes corrected to be in line with rule OP-BR111-R012 so that Accepted is not a final status and Paid is a final status.
@@ -45,3 +57,4 @@ Release date:: 2022-11-03
 * Correction in Rule PEPPOL-COMMON-R050 (validation of Australian Business Number (ABN)) corrected
 * Added eas codes 9959. Removed 9906 and 9907.
 * Added icd codes 0217, 0218, 0219, 0220
+* Added Action code (UNCL1229) for Order Change
