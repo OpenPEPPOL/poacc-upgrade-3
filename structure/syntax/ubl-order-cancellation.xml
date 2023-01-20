@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+	<Term>adv-order-cancellation-3.0</Term>
+	<Property key="sch:prefix">PEPPOL-T115</Property>
+	<Property key="sch:identifier">T115-basic</Property>
+	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:OrderCancellation-2</Namespace>
+	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
+	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+	<Document>
+		<Term>ubl:OrderCancellation</Term>
+		<Element>
+			<Term>cbc:CustomizationID</Term>
+			<Name>Specification identification</Name>
+			<Description>Identifies the specification of content and rules that apply to the
+				transaction.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="BUSINESS_TERM">tir01-001</Reference>
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:trns:order_cancellation:3</Value>
+		</Element>
+		<Element>
+			<Term>cbc:ProfileID</Term>
+			<Name>Business process type identifier</Name>
+			<Description>Identifies the BII profile or business process context in which the
+				transaction appears.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="BUSINESS_TERM">tir01-002</Reference>
+			<Value type="FIXED">urn:fdc:peppol.eu:poacc:bis:advanced_ordering:3</Value>
+		</Element>
+		<Element>
+			<Term>cbc:ID</Term>
+			<Name>Order identifier</Name>
+			<Description>A transaction instance must have an identifier. The identifier enables
+				referencing the transaction for various purposes such as from other transactions
+				that are part of the same process.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="BUSINESS_TERM">tir01-003</Reference>
+			<Value type="EXAMPLE">0-123</Value>
+		</Element>
+		<Element>
+			<Term>cbc:IssueDate</Term>
+			<Name>Issue date</Name>
+			<Description>The date on which the transaction instance was issued.</Description>
+			<DataType>Date</DataType>
+			<Reference type="BUSINESS_TERM">tir01-004</Reference>
+			<Value type="EXAMPLE">2022-02-01</Value>
+		</Element>
+		<Element cardinality="0..1">
+			<Term>cbc:IssueTime</Term>
+			<Name>Issue time</Name>
+			<Description>The time assigned by the buyer on which the order was issued.</Description>
+			<DataType>Time</DataType>
+			<Reference type="BUSINESS_TERM">tir01-005</Reference>
+			<Value type="EXAMPLE">14:12:32</Value>
+		</Element>
+		<Element cardinality="0..1">
+			<Term>cbc:Note</Term>
+			<Name>Document level textual note</Name>
+			<Description>Free form text applying to the Order. This element may contain notes or any
+				other similar information that is not contained explicitly in another
+				structure.</Description>
+			<DataType>Text</DataType>
+			<Reference type="BUSINESS_TERM">tir01-006</Reference>
+			<Value type="EXAMPLE">Packages of other sizes are OK</Value>
+		</Element>
+		<Element>
+			<Term>cbc:CancellationNote</Term>
+			<Name>Document level textual note</Name>
+			<Description>The general reason for cancellation of the referenced order.</Description>
+			<DataType>Text</DataType>
+			<Value type="EXAMPLE">The substituted items does not fit our usage.</Value>
+		</Element>
+		<Element cardinality="1..1">
+			<Term>cac:OrderReference</Term>
+			<Name>Order reference</Name>
+			<Element>
+				<Term>cbc:ID</Term>
+				<Name>Order document reference</Name>
+				<Description>Used to reference the initial order.</Description>
+				<DataType>Document reference</DataType>
+				<Value type="EXAMPLE">4832423</Value>
+			</Element>
+		</Element>
+		<Element cardinality="0..1">
+			<Term>cac:OriginatorDocumentReference</Term>
+			<Name>Originator document </Name>
+			<Element>
+				<Term>cbc:ID</Term>
+				<Name>Originator document reference</Name>
+				<Description>A reference to Originator Document. To be able to give a reference to
+					the internal requisition on the buyer site on which the order is
+					based.</Description>
+				<DataType>Document reference</DataType>
+				<Reference type="BUSINESS_TERM">tir01-012</Reference>
+				<Value type="EXAMPLE">5435235</Value>
+			</Element>
+		</Element>
+		<Element cardinality="0..n">
+			<Term>cac:AdditionalDocumentReference</Term>
+			<Name>Additional documents</Name>
+			<Element>
+				<Term>cbc:ID</Term>
+				<Name>Document identifier</Name>
+				<Description>An identifier for the referenced document.</Description>
+				<Reference type="BUSINESS_TERM">tir01-154</Reference>
+				<Value type="EXAMPLE">doc-34</Value>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cbc:DocumentType</Term>
+				<Name>Document description</Name>
+				<Description>Textual description of the document.</Description>
+				<DataType>Text</DataType>
+				<Reference type="BUSINESS_TERM">tir01-016</Reference>
+				<Value type="EXAMPLE">Timesheet</Value>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:Attachment</Term>
+				<Name>Attachment(s)</Name>
+				<Element cardinality="0..1">
+					<Term>cbc:EmbeddedDocumentBinaryObject</Term>
+					<Name>Attached document</Name>
+					<Description>The attached document embeded as binary object, coded as Base64.
+					The binary object has two supplementary components: a Mime Code, which specifies the Mime type of the attachment and a Filename
+					that is provided by (or on behalf of) the sender of the document</Description>
+					<DataType>Binary object</DataType>
+					<Reference type="BUSINESS_TERM">tir01-017</Reference>
+					<Attribute>
+						<Term>mimeCode</Term>
+						<Name>Attached document Mime code</Name>
+						<Description>The mime code of the attached document.</Description>
+						<Reference type="CODE_LIST">MimeCode</Reference>
+						<Value type="EXAMPLE">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</Value>
+					</Attribute>
+					<Attribute>
+						<Term>filename</Term>
+						<Name>Attached document filename</Name>
+						<Description>The file name of the attached document</Description>
+						<Value type="EXAMPLE">Hours-spent.xsl</Value>
+					</Attribute>
+					<Value type="EXAMPLE">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</Value>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:ExternalReference</Term>
+					<Name>External reference</Name>
+					<Description>Reference to external document </Description>
+					<Element>
+						<Term>cbc:URI</Term>
+						<Name>External document URI</Name>
+						<Description>The Uniform Resource Identifier (URI) that identifies where the
+							external document is located.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-018</Reference>
+						<Value type="EXAMPLE">http://www.test.eu/image.jpg</Value>
+					</Element>
+				</Element>
+			</Element>
+		</Element>
+		<Element cardinality="0..1">
+			<Term>cac:Contract</Term>
+			<Name>Contract information</Name>
+			<Description>Reference to contract </Description>
+			<Element>
+				<Term>cbc:ID</Term>
+				<Name>Reference identifier</Name>
+				<Description>Positive identification of the reference such as a unique
+					identifier.</Description>
+				<DataType>Document reference</DataType>
+				<Reference type="BUSINESS_TERM">tir01-019</Reference>
+			</Element>
+		</Element>
+		<Element>
+			<Term>cac:BuyerCustomerParty</Term>
+			<Name>Buyer information</Name>
+			<Description>Description of buyer </Description>
+			<Element>
+				<Term>cac:Party</Term>
+				<Name>Party information</Name>
+				<Element>
+					<Term>cbc:EndpointID</Term>
+					<Name>Buyer party electronic address</Name>
+					<Description>Identifies the buyer party's electronic address</Description>
+					<DataType>Identifier</DataType>
+					<Reference type="BUSINESS_TERM">tir01-021</Reference>
+					<Attribute>
+						<Term>schemeID</Term>
+						<Name>Scheme identifier</Name>
+						<Description>Scheme identifier for the electronic address</Description>
+						<Reference type="CODE_LIST">eas</Reference>
+						<Value type="EXAMPLE">0192</Value>
+					</Attribute>
+					<Value type="EXAMPLE">987654325</Value>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:PartyIdentification</Term>
+					<Name>Party identification </Name>
+					<Element>
+						<Term>cbc:ID</Term>
+						<Name>Buyer party identification</Name>
+						<Description>An identification for the buyer party.</Description>
+						<Reference type="BUSINESS_TERM">tir01-022</Reference>
+						<Attribute usage="optional">
+							<Term>schemeID</Term>
+							<Name>Scheme identifier</Name>
+							<Description>Scheme identifier for party identification</Description>
+							<Reference type="CODE_LIST">ICD</Reference>
+							<Value type="EXAMPLE">0192</Value>
+						</Attribute>
+						<Value type="EXAMPLE">123456785</Value>
+					</Element>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:PartyName</Term>
+					<Name>Party name</Name>
+					<Element>
+						<Term>cbc:Name</Term>
+						<Name>Buyer name</Name>
+						<Description>Name of buyer The name of the party who orders the listed
+							items.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-023</Reference>
+						<Value type="EXAMPLE">Buyer name</Value>
+					</Element>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:PostalAddress</Term>
+					<Name>Postal address </Name>
+					<Description>Postal address of the buyer</Description>
+					<Element cardinality="0..1">
+						<Term>cbc:StreetName</Term>
+						<Name>Address line 1</Name>
+						<Description>The main address line in a postal address usually the street
+							name and number.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-032</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:AdditionalStreetName</Term>
+						<Name>Address line 2</Name>
+						<Description>An additional address line in a postal address that can be used
+							to give further details supplementing the main line. Common use are
+							secondary house number in a complex or in a building.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-027</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:CityName</Term>
+						<Name>City</Name>
+						<Description>The common name of the city where the postal address is. The
+							name is written in full rather than as a code.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-031</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:PostalZone</Term>
+						<Name>Post code</Name>
+						<Description>The identifier for an addressable group of properties according
+							to the relevant national postal service, such as a ZIP code or Post
+							Code.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-024</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:CountrySubentity</Term>
+						<Name>Country subdivision</Name>
+						<Description>For specifying a region, county, state, province etc. within a
+							country by using text.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-141</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cac:AddressLine</Term>
+						<Name>Address line</Name>
+						<Element cardinality="0..1">
+							<Term>cbc:Line</Term>
+							<Name>Address line 3</Name>
+							<Description>An additional address line in an address that can be used
+								to give further details supplementing the main line.</Description>
+							<DataType>Text</DataType>
+							<Reference type="BUSINESS_TERM">tir01-p003</Reference>
+							<Value type="EXAMPLE">Gate 34</Value>
+						</Element>
+					</Element>
+					<Element>
+						<Term>cac:Country</Term>
+						<Name>Country</Name>
+						<Element>
+							<Term>cbc:IdentificationCode</Term>
+							<Name>Country code</Name>
+							<Description>A code that identifies the country.The lists of valid
+								countries are registered with the ISO 3166-1 Maintenance agency,
+								"Codes for the representation of names of countries and their
+								subdivisions". Codes must be according to the alpha-2
+								representation.</Description>
+							<DataType>Code</DataType>
+							<Reference type="BUSINESS_TERM">tir01-033</Reference>
+							<Reference type="CODE_LIST">ISO3166</Reference>
+							<Value type="EXAMPLE">NL</Value>
+						</Element>
+					</Element>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:PartyTaxScheme</Term>
+					<Description>Buyer tax information </Description>
+					<Element>
+						<Term>cbc:CompanyID</Term>
+						<Name>Buyer TAX identifier</Name>
+						<Description>The buyers registered Value Added Tax identifier. To be stated
+							in case reverse charge is to apply to the purchase.</Description>
+						<DataType>Identifier</DataType>
+						<Reference type="BUSINESS_TERM">tir01-034</Reference>
+						<Reference type="RULE">PEPPOL-T01-R026</Reference>
+					</Element>
+					<Element>
+						<Term>cac:TaxScheme</Term>
+						<Name>Tax scheme</Name>
+						<Element>
+							<Term>cbc:ID</Term>
+							<Description>Mandatory element.</Description>
+							<DataType>Identifier</DataType>
+							<Reference type="BUSINESS_TERM">tir01-p004</Reference>
+							<Value type="EXAMPLE">GST</Value>
+						</Element>
+					</Element>
+				</Element>
+				<Element>
+					<Term>cac:PartyLegalEntity</Term>
+					<Name>Buyer legal information</Name>
+					<Element>
+						<Term>cbc:RegistrationName</Term>
+						<Name>Buyers legal registration name</Name>
+						<Description>The official name of the party as registered with the relevant
+							fiscal authority.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-044</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:CompanyID</Term>
+						<Name>Buyers legal registration identifier</Name>
+						<Description>Identifies a company as registered with the company
+							registration scheme.</Description>
+						<DataType>Identifier</DataType>
+						<Reference type="BUSINESS_TERM">tir01-043</Reference>
+						<Attribute usage="Optional">
+							<Term>schemeID</Term>
+							<Name>Scheme identifier</Name>
+							<Description>The identification scheme identifier of the buyer legal
+								registration identifier.</Description>
+							<Reference type="CODE_LIST">ICD</Reference>
+							<Value type="EXAMPLE">0192</Value>
+						</Attribute>
+						<Value type="EXAMPLE">987654325</Value>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cac:RegistrationAddress</Term>
+						<Name>Legal address </Name>
+						<Element cardinality="0..1">
+							<Term>cbc:CityName</Term>
+							<Name>Buyers legal registration address city name</Name>
+							<Description>Associates with the registered address of the party within
+								a Corporate Registration Scheme. The name of a city, town, or
+								village.</Description>
+							<DataType>Text</DataType>
+							<Reference type="BUSINESS_TERM">tir01-045</Reference>
+						</Element>
+						<Element>
+							<Term>cac:Country</Term>
+							<Name>Country</Name>
+							<Element>
+								<Term>cbc:IdentificationCode</Term>
+								<Name>Country code</Name>
+								<Description>A code that identifies the country.The lists of valid
+									countries are registered with the ISO 3166-1 Maintenance agency,
+									"Codes for the representation of names of countries and their
+									subdivisions". Codes must be according to the alpha-2
+									representation.</Description>
+								<DataType>Code</DataType>
+								<Reference type="BUSINESS_TERM">tir01-046</Reference>
+								<Reference type="CODE_LIST">ISO3166</Reference>
+								<Value type="EXAMPLE">NL</Value>
+							</Element>
+						</Element>
+					</Element>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:Contact</Term>
+					<Name>Contact information</Name>
+					<Description>Buyer contact information </Description>
+					<Element cardinality="0..1">
+						<Term>cbc:Name</Term>
+						<Name>Contact person name</Name>
+						<Description>The name of the contact person.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-050</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:Telephone</Term>
+						<Name>Contact telephone number</Name>
+						<Description>A phone number for the contact person. If the person has a
+							direct number, this is that number.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-047</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:ElectronicMail</Term>
+						<Name>Contact email address</Name>
+						<Description>The e-mail address for the contact person. If the person has a
+							direct e-mail this is that email.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-049</Reference>
+					</Element>
+				</Element>
+			</Element>
+		</Element>
+		<Element>
+			<Term>cac:SellerSupplierParty</Term>
+			<Name>Seller information</Name>
+			<Description>Description of seller</Description>
+			<Element>
+				<Term>cac:Party</Term>
+				<Name>Party information</Name>
+				<Element>
+					<Term>cbc:EndpointID</Term>
+					<Name>Seller party electronic address</Name>
+					<Description>Identifies the seller party's electronic address</Description>
+					<DataType>Identifier</DataType>
+					<Reference type="BUSINESS_TERM">tir01-058</Reference>
+					<Attribute>
+						<Term>schemeID</Term>
+						<Name>Scheme identifier</Name>
+						<Description>Scheme identifier for the electronic address</Description>
+						<Value type="EXAMPLE">0192</Value>
+					</Attribute>
+					<Value type="EXAMPLE">987654325</Value>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:PartyIdentification</Term>
+					<Name>Party identification</Name>
+					<Element>
+						<Term>cbc:ID</Term>
+						<Name>Seller party identification</Name>
+						<Description>Identifies a party.</Description>
+						<DataType>Identifier</DataType>
+						<Reference type="BUSINESS_TERM">tir01-059</Reference>
+						<Attribute usage="optional">
+							<Term>schemeID</Term>
+							<Name>Scheme identifier</Name>
+							<Description>Scheme identifier for party identification</Description>
+							<Reference type="CODE_LIST">ICD</Reference>
+							<Value type="EXAMPLE">0192</Value>
+						</Attribute>
+						<Value type="EXAMPLE">123456785</Value>
+					</Element>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:PartyName</Term>
+					<Name>Party name</Name>
+					<Description>Name of seller</Description>
+					<Reference type="BUSINESS_TERM">tir01-060</Reference>
+					<Element>
+						<Term>cbc:Name</Term>
+						<Name>Seller party trading name</Name>
+						<Description>The trading name of the party.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-060</Reference>
+						<Value type="EXAMPLE">Seller name</Value>
+					</Element>
+				</Element>
+				<Element>
+					<Term>cac:PostalAddress</Term>
+					<Name>Postal address </Name>
+					<Description>Postal address of the Seller</Description>
+					<Element cardinality="0..1">
+						<Term>cbc:StreetName</Term>
+						<Name>Address line 1</Name>
+						<Description>The main address line in a postal address usually the street
+							name and number.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-063</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:AdditionalStreetName</Term>
+						<Name>Address line 2</Name>
+						<Description>An additional address line in a postal address that can be used
+							to give further details supplementing the main line. Common use are
+							secondary house number in a complex or in a building.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-064</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:CityName</Term>
+						<Name>City</Name>
+						<Description>The common name of the city where the postal address is. The
+							name is written in full rather than as a code.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-065</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:PostalZone</Term>
+						<Name>Post code</Name>
+						<Description>The identifier for an addressable group of properties according
+							to the relevant national postal service, such as a ZIP code or Post
+							Code.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-068</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:CountrySubentity</Term>
+						<Name>Country subdivision</Name>
+						<Description>For specifying a region, county, state, province etc. within a
+							country by using text.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-142</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cac:AddressLine</Term>
+						<Name>Address line</Name>
+						<Element cardinality="0..1">
+							<Term>cbc:Line</Term>
+							<Name>Address line 3</Name>
+							<Description>An additional address line in an address that can be used
+								to give further details supplementing the main line.</Description>
+							<DataType>Text</DataType>
+							<Reference type="BUSINESS_TERM">tir01-p005</Reference>
+							<Value type="EXAMPLE">Gate 34</Value>
+						</Element>
+					</Element>
+					<Element>
+						<Term>cac:Country</Term>
+						<Name>Country</Name>
+						<Element>
+							<Term>cbc:IdentificationCode</Term>
+							<Name>Country code</Name>
+							<Description>A code that identifies the country.The lists of valid
+								countries are registered with the ISO 3166-1 Maintenance agency,
+								"Codes for the representation of names of countries and their
+								subdivisions". Codes must be according to the alpha-2
+								representation.</Description>
+							<DataType>Code</DataType>
+							<Reference type="BUSINESS_TERM">tir01-069</Reference>
+							<Reference type="CODE_LIST">ISO3166</Reference>
+							<Value type="EXAMPLE">NL</Value>
+						</Element>
+					</Element>
+				</Element>
+				<Element>
+					<Term>cac:PartyLegalEntity</Term>
+					<Name>Seller legal information</Name>
+					<Element>
+						<Term>cbc:RegistrationName</Term>
+						<Name>Seller legal registration name</Name>
+						<Description>The official name of the party as registered with the relevant
+							fiscal authority.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-044</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:CompanyID</Term>
+						<Name>Seller legal registration identifier</Name>
+						<Description>Identifies a company as registered with the company
+							registration scheme.</Description>
+						<DataType>Identifier</DataType>
+						<Reference type="BUSINESS_TERM">tir01-043</Reference>
+						<Attribute usage="Optional">
+							<Term>schemeID</Term>
+							<Name>Scheme identifier</Name>
+							<Description>The identification scheme identifier of the buyer legal
+								registration identifier.</Description>
+							<Reference type="CODE_LIST">ICD</Reference>
+							<Value type="EXAMPLE">0192</Value>
+						</Attribute>
+						<Value type="EXAMPLE">987654325</Value>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cac:RegistrationAddress</Term>
+						<Name>Legal address </Name>
+						<Element cardinality="0..1">
+							<Term>cbc:CityName</Term>
+							<Name>Sellers legal registration address city name</Name>
+							<Description>Associates with the registered address of the party within
+								a Corporate Registration Scheme. The name of a city, town, or
+								village.</Description>
+							<DataType>Text</DataType>
+							<Reference type="BUSINESS_TERM">tir01-045</Reference>
+						</Element>
+						<Element>
+							<Term>cac:Country</Term>
+							<Name>Country</Name>
+							<Element>
+								<Term>cbc:IdentificationCode</Term>
+								<Name>Country code</Name>
+								<Description>A code that identifies the country.The lists of valid
+									countries are registered with the ISO 3166-1 Maintenance agency,
+									"Codes for the representation of names of countries and their
+									subdivisions". Codes must be according to the alpha-2
+									representation.</Description>
+								<DataType>Code</DataType>
+								<Reference type="BUSINESS_TERM">tir01-046</Reference>
+								<Reference type="CODE_LIST">ISO3166</Reference>
+								<Value type="EXAMPLE">NL</Value>
+							</Element>
+						</Element>
+					</Element>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:Contact</Term>
+					<Name>Contact</Name>
+					<Description>Seller contact information </Description>
+					<Element cardinality="0..1">
+						<Term>cbc:Name</Term>
+						<Name>Contact person name</Name>
+						<Description>The name of the contact person.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-074</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:Telephone</Term>
+						<Name>Contact telephone number</Name>
+						<Description>A phone number for the contact person. If the person has a
+							direct number, this is that number.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-077</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:ElectronicMail</Term>
+						<Name>Contact email address</Name>
+						<Description>The e-mail address for the contact person. If the person has a
+							direct e-mail this is that email.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-076</Reference>
+					</Element>
+				</Element>
+			</Element>
+		</Element>
+		<Element cardinality="0..1">
+			<Term>cac:OriginatorCustomerParty</Term>
+			<Name>Originator party</Name>
+			<Description>Information regarding the originator of the order </Description>
+			<Element>
+				<Term>cac:Party</Term>
+				<Name>Party information</Name>
+				<Description>Description of the originator party </Description>
+
+				<Element cardinality="0..1">
+					<Term>cac:PartyIdentification</Term>
+					<Name>Party identification</Name>
+					<Description>Identification of the originator </Description>
+					<Reference type="RULE">PEPPOL-T01-R014</Reference>
+					<Element>
+						<Term>cbc:ID</Term>
+						<Name>Originator identifier</Name>
+						<Description>Identifies a party.</Description>
+						<DataType>Identifier</DataType>
+						<Reference type="BUSINESS_TERM">tir01-081</Reference>
+
+						<Attribute usage="optional">
+							<Term>schemeID</Term>
+							<Name>Scheme identifier</Name>
+							<Description>Scheme identifier for party identification</Description>
+							<Reference type="CODE_LIST">ICD</Reference>
+							<Value type="EXAMPLE">0192</Value>
+						</Attribute>
+						<Value type="EXAMPLE">123456785</Value>
+					</Element>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:PartyName</Term>
+					<Name>Party name</Name>
+					<Description>Name of the originator </Description>
+					<Reference type="RULE">PEPPOL-T01-R014</Reference>
+					<Element>
+						<Term>cbc:Name</Term>
+						<Name>Originator name</Name>
+						<Description>The name of the party.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-082</Reference>
+						<Value type="EXAMPLE">Originator name</Value>
+					</Element>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:Contact</Term>
+					<Name>Contact</Name>
+					<Description>The originators contact information </Description>
+					<Element cardinality="0..1">
+						<Term>cbc:Name</Term>
+						<Name>Contact person name</Name>
+						<Description>The name of the contact person.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-086</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:Telephone</Term>
+						<Name>Contact telephone number</Name>
+						<Description>A phone number for the contact person. If the person has a
+							direct number, this is that number.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-083</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:ElectronicMail</Term>
+						<Name>Contact email address</Name>
+						<Description>The e-mail address for the contact person. If the person has a
+							direct e-mail this is that email.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir01-085</Reference>
+					</Element>
+				</Element>
+			</Element>
+		</Element>
+	</Document>
+</Structure>

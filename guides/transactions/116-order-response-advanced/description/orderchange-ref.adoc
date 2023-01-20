@@ -1,0 +1,10 @@
+[[orderchange-reference]]
+= Order change reference
+
+Reference to an order change must be done on Header level.
+
+.Example of order change reference on header level in an Order Response Advanced:
+[source, xml, indent=0]
+----
+include::{snippet-response-dir}/snippet-advanced.xml[tags=orderchange-ref]
+----

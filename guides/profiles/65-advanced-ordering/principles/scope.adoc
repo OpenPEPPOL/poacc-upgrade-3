@@ -1,0 +1,33 @@
+[[scope]]
+= Scope
+
+This BIS describes a process comprising a buyer to issue an electronic order, whereby the seller may accept or reject the order.
+In his rejection the seller may indicate reasons, so the buyer may issue a new order that may be acceptable.
+The seller may accept the order with changes, only if in a previously concluded contract the scope of such changes was agreed.
+After acceptance the buyer may send an order change to the original order and the seller can either accept or reject the change.
+The seller may also change the order by sending a response which can be accepted or rejected by the buyer.
+Both buyer and seller may also cancel the order.
+
+The order that is agreed upon by final acceptance has the commercial and legal status of a contract and is ready for delivery.
+
+The main activities supported by this profile are
+
+Initial order from buyer::
+The initial Order transaction should support the structured ordering of goods or services, using free text or use of identifiers.
+The information source of the ordered products may be a (paper or electronic) catalogue.
+
+Change of order from buyer::
+The buyer may change the order based on new requirements or other reasons. Changes must be done before the order is prepared for delivery.
+The seller can either accept or reject the changes.
+
+Change of order from seller::
+The seller may change the previously accepted order due to e.g. changes in delivery dates or replacements.
+The buyer can either accept or reject the changes.
+
+Cancellation of order from buyer::
+The buyer may cancel the order if this is done before the order is prepared for delivery. The buyer and seller may have agreed upon deadlines
+for cancellation. The seller can either accept or reject the cancellation.
+
+Cancellation of order from seller::
+The seller may cancel the order because of lack of delivery capacity or other reasons. As stated above the buyer and seller may have agreed
+upon deadlines for cancellation. The buyer must confirm the reception of the cancellation.

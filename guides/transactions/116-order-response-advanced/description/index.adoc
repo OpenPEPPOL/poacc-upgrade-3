@@ -1,0 +1,38 @@
+[[order-response-message]]
+= Description of selected parts of the Order Response Advanced message
+
+Order Response Advanced is used in this profile because the order change reference is not present in Order Response. The rest of the message is unchanged.
+The Order Response Advanced message is sent from the seller to the buyer stating the sellers ability to fulfill the order.
+The following rules applies to the Order Response Advanced:
+
+* The Order Response Advanced must refer to an Order.
+* The Order Response Advanced may refer to an Order Change.
+* Seller may accept or reject the entire Order.
+* If the order or any order line is rejected the Order Response Advanced should contain a reason for rejection.
+* Seller may accept or reject the separate order lines.
+* If Seller accepts or rejects order lines, *_all_* order lines must be sent in the Order Response Advanced. This applies even for order lines that has been delivered completely or partially.
+* The following information may be changed in the Order Response Advanced:
+** Quantity
+** Delivery period
+** Replacement item
+** Price
+* If the Order is rejected or changed, the Order Response Advanced may contain contact information to seller.
+
+
+:leveloffset: +1
+
+include::response-code.adoc[]
+
+include::order-ref.adoc[]
+
+include::orderchange-ref.adoc[]
+
+include::change.adoc[]
+
+include::changeanddeliver.adoc[]
+
+include::backorder.adoc[]
+
+include::../../../shared/files/vat-cat-line.adoc[]
+
+:leveloffset: -1

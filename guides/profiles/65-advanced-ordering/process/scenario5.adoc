@@ -1,0 +1,36 @@
+[[use-case-1-ordering-of-numbered-itemsarticles]]
+= Scenario 5 – Cancellation of order from seller
+
+The following diagram shows the business process and choreography for Scenario 5.
+
+image::images/bpmn-scenario5.png[width=1000]
+
+[cols="1s,5",options="header"]
+|====
+|Scenario number
+|5
+
+|Name
+|Cancellation of order from seller
+
+|Description
+a|
+* A cancellation of an initial order of numbered articles or services.
+|Parties involved
+|Buyer +
+Seller
+
+|Assumptions
+|Buyer has sent an initial order which is accepted by seller and the order is confirmed. +
+The initial order may or may not have been changed by buyer or seller.
+
+|The flow
+a|The seller creates an Order Response Advanced with rejection of all lines in an order. +
+The buyer receives the message and confirms the cancellation by sending an Order Cancellation.
+
+|Result
+|The order will be cancelled.
+
+|XML example file
+|See Appendix A for example files for scenario 5
+|====

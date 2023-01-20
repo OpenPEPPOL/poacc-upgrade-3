@@ -1,0 +1,10 @@
+[[order-reference]]
+= Order reference
+
+The order reference is used to give a reference to the order that is to be cancelled.
+
+.UBL example of order reference
+[source, xml, indent=0]
+----
+include::{snippet-cancellation-dir}/snippet-advanced.xml[tags=orderref]
+----

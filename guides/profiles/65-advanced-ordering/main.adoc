@@ -1,0 +1,62 @@
+include::../../shared/links.adoc[]
+:doctype: book
+:icons: font
+:stem:
+:toc: left
+:toclevels: 2
+:source-highlighter: coderay
+:source-language: xml
+:sectanchors:
+:sectnums:
+:title-logo-image: ../../shared/images/peppol.png
+:order: ../../transactions/01-order
+:order-resp: ../../transactions/116-order-response-advanced
+:order-change: ../../transactions/114-order-change
+:order-cancellation: ../../transactions/115-order-cancellation
+:snippet-dir: ../../../../rules/snippets/order
+:snippet-response-dir: ../../../../rules/snippets/order-response-advanced
+:snippet-change-dir: ../../../../rules/snippets/order-change
+:snippet-cancellation-dir: ../../../../rules/snippets/order-cancellation
+:ubl21: http://docs.oasis-open.org/ubl/UBL-2.1.html[UBL 2.1]
+:ubl23: http://docs.oasis-open.org/ubl/UBL-2.3.html[UBL 2.3]
+
+= image:../../shared/images/peppol.png[float="right"]BIS Advanced Ordering 3.0
+{author}
+
+
+{description}
+
+include::../../shared/copyright.adoc[]
+
+
+= Link to main site of documentation
+
+{main-site}
+
+
+:leveloffset: +1
+
+include::introduction/index.adoc[]
+
+include::principles/index.adoc[]
+
+include::process/index.adoc[]
+
+//include::requirements/index.adoc[]
+
+include::../../shared/datatypes/index.adoc[]
+
+include::../../shared/codes/index.adoc[]
+
+include::{order}/description/index.adoc[]
+
+include::{order-resp}/description/index.adoc[]
+
+include::{order-change}/description/index.adoc[]
+
+include::{order-cancellation}/description/index.adoc[]
+
+include::profile/index.adoc[]
+
+
+:leveloffset: -1

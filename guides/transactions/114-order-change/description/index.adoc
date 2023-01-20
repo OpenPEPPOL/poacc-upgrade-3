@@ -1,0 +1,8 @@
+[[order-change-message]]
+= Description of selected parts of the Order Change message
+
+:leveloffset: +1
+
+include::sequence-number.adoc[]
+
+:leveloffset: -1

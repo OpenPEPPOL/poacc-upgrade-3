@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+	configuration="peppolbis-t114-base-3.0">
+	<assert>
+		<description>Verify line identifier is unique within the order change</description>
+		<scope>PEPPOL-T114-R001</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>PEPPOL-T114-R001</success>
+		</assert>
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
+
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cbc:ID>6</cbc:ID>
+				</cac:LineItem>
+			</cac:OrderLine>
+
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cbc:ID>7</cbc:ID>
+				</cac:LineItem>
+			</cac:OrderLine>
+
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cbc:ID>8</cbc:ID>
+				</cac:LineItem>
+			</cac:OrderLine>
+
+		</OrderChange>
+	</test>
+
+	<test>
+		<assert>
+			<success>PEPPOL-T114-R001</success>
+		</assert>
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
+
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cbc:ID>6</cbc:ID>
+				</cac:LineItem>
+			</cac:OrderLine>
+
+		</OrderChange>
+	</test>
+
+	<test>
+		<assert>
+			<error number="2">PEPPOL-T114-R001</error>
+		</assert>
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
+
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cbc:ID>6</cbc:ID>
+				</cac:LineItem>
+			</cac:OrderLine>
+
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cbc:ID>6</cbc:ID>
+				</cac:LineItem>
+			</cac:OrderLine>
+
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cbc:ID>8</cbc:ID>
+				</cac:LineItem>
+			</cac:OrderLine>
+
+		</OrderChange>
+	</test>
+
+</testSet>

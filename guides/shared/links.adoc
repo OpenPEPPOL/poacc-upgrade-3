@@ -26,6 +26,9 @@
 :ubl-catalogue: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Catalogue-2.1.xsd[UBL Catalogue 2.1]
 :ubl-order: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Order-2.1.xsd[UBL Order 2.1]
 :ubl-order-response: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-OrderResponse-2.1.xsd[UBL Order Response 2.1]
+:ubl-order-response-advanced: http://docs.oasis-open.org/ubl/os-UBL-2.3/xsd/maindoc/UBL-OrderResponse-2.3.xsd[UBL Order Response 2.3]
+:ubl-order-change: http://docs.oasis-open.org/ubl/os-UBL-2.3/xsd/maindoc/UBL-OrderChange-2.3.xsd[UBL Order Change 2.3]
+:ubl-order-cancellation: http://docs.oasis-open.org/ubl/os-UBL-2.3/xsd/maindoc/UBL-OrderCancellation-2.3.xsd[UBL Order Cancellation 2.3]
 :ubl-appl-resp: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-ApplicationResponse-2.1.xsd[UBL Application Response 2.1]
 :ubl-despatch-advice: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-DespatchAdvice-2.1.xsd[UBL Despatch Advice 2.1]
 

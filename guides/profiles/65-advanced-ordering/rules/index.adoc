@@ -1,0 +1,25 @@
+= Business rules
+
+:leveloffset: +1
+
+include::../{order}/rules/order.adoc[]
+
+include::../{order-resp}/rules/order-response.adoc[]
+
+include::../{order-change}/rules/order.adoc[]
+
+include::../{order-cancellation}/rules/order.adoc[]
+
+= Codelist rules
+
+:leveloffset: +1
+
+include::../{order}/rules/codelist.adoc[]
+
+include::../{order-resp}/rules/codelist.adoc[]
+
+include::../{order-change}/rules/codelist.adoc[]
+
+include::../{order-cancellation}/rules/codelist.adoc[]
+
+:leveloffset: -2

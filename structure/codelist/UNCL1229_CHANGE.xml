@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Action code (UNCL1229) for Order Change</Title>
+    <Identifier>UNCL1229_CHANGE</Identifier>
+    <Version>D.17A</Version>
+    <Agency>UN/CEFACT</Agency>
+    <Subset>openPEPPOL</Subset>
+
+    <Code>
+        <Id>1</Id>
+        <Name>Order line is added</Name>
+        <Description>The information is to be or has been added.</Description>
+    </Code>
+    <Code>
+        <Id>2</Id>
+        <Name>Deleted</Name>
+        <Description>The Order line is to be or has been deleted.</Description>
+    </Code>
+    <Code>
+        <Id>3</Id>
+        <Name>Changed</Name>
+        <Description>The Order line is changed.</Description>
+    </Code>
+    <Code>
+        <Id>4</Id>
+        <Name>No action</Name>
+        <Description>The line item is not affected by the actual message.</Description>
+    </Code>
+    <Code>
+        <Id>74</Id>
+        <Name>Reopened</Name>
+        <Description>Opened again</Description>
+    </Code>
+
+</CodeList>

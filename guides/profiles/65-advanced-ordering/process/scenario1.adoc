@@ -1,0 +1,48 @@
+[[use-case-1-ordering-of-numbered-itemsarticles]]
+= Scenario 1 – Initial order from buyer
+
+The following diagram shows the business process and choreography for Scenario 1.
+
+image::images/bpmn-scenario1.png[width=1100]
+
+[cols="1s,5",options="header"]
+|====
+|Scenario number
+|1
+
+|Name
+|Initial order from buyer
+
+|Description
+a|
+* An order of numbered articles or services.
+* The order instructs the seller of the delivery address.
+|Parties involved
+|Buyer +
+Seller
+
+|Assumptions
+|Buyer and seller have a commercial agreement with general conditions for ordering of goods or services. +
+They may also have exchanged a catalogue with product information and pricing.
+
+|The flow
+a|The buyer creates an Order with one or more lines. +
+The seller receives the Order and send an Order Response Advanced and either
+
+* Accepts to deliver the order without changes
+* Accepts to deliver the order partially or with changes
+* Rejects the order
+
+If the seller accepts the order partially or with changes the buyer may either
+
+* Accept the changes by sending an Order Change confirming the changes proposed by seller
+* Reject the changes and cancel the order by sending an Order Cancellation
+
+|Alternative results
+a|
+. The buyer and seller have reached an agreement on delivery of the order
+. The order will be cancelled
+
+|XML example file
+|See Appendix A for example files for scenario 1 
+|====

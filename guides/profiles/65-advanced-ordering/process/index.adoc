@@ -1,0 +1,36 @@
+
+[[process-and-typical-use-cases]]
+= Business process and scenarios
+
+The Advanced ordering process includes the sending of an intial order from buyer and subsequent changes to the order from both buyer and seller.
+The process also allows for cancellation of the order.
+
+[[process-flow]]
+== Process flow
+
+The Ordering process flow is shown in the below figure. Each task comprise a scenario that is described in detail in the following chapters.
+
+image::images/bpmn-advanced-ordering.png[width=1000]
+
+* A buyer submits an initial order to the seller requesting for delivery of goods or services.
+** The order may refer to a framework agreement for its terms and conditions; otherwise the buyer’s terms and conditions apply.
+** The order may contain items (goods or services) with item identifiers or items with free text description.
+* The initial order may be confirmed for delivery without any more changes or it may be cancelled by buyer or seller
+* The order may be changed by the buyer sending one or more order changes until a contract is concluded and the order is confirmed for delivery.
+* The seller may also change the order by sending a response with proposed changes.
+* The buyer may cancel the order by sending an order cancellation which may be accepted or rejected by the seller.
+* The seller may cancel the order by sending a negative response with rejection of all lines.
+
+:leveloffset: +1
+
+include::scenario1.adoc[]
+
+include::scenario2.adoc[]
+
+include::scenario3.adoc[]
+
+include::scenario4.adoc[]
+
+include::scenario5.adoc[]
+
+:leveloffset: -1

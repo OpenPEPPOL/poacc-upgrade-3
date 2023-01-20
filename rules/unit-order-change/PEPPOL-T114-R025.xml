@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+	configuration="peppolbis-t114-base-3.0">
+	<assert>
+		<description>Verify that base quantity is be a positive number above zero.</description>
+		<scope>PEPPOL-T114-R025</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>PEPPOL-T114-R025</success>
+		</assert>
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
+
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cac:Price>
+						<cbc:BaseQuantity>1</cbc:BaseQuantity>
+					</cac:Price>
+				</cac:LineItem>
+			</cac:OrderLine>
+
+		</OrderChange>
+	</test>
+
+	<test>
+		<assert>
+			<success>PEPPOL-T114-R025</success>
+		</assert>
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
+
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cac:Price>
+						<cbc:BaseQuantity>0.01</cbc:BaseQuantity>
+					</cac:Price>
+				</cac:LineItem>
+			</cac:OrderLine>
+
+		</OrderChange>
+	</test>
+
+	<test>
+		<assert>
+			<error>PEPPOL-T114-R025</error>
+		</assert>
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
+
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cac:Price>
+						<cbc:BaseQuantity>0.00</cbc:BaseQuantity>
+					</cac:Price>
+				</cac:LineItem>
+			</cac:OrderLine>
+
+		</OrderChange>
+	</test>
+
+	<test>
+		<assert>
+			<error>PEPPOL-T114-R025</error>
+		</assert>
+		<OrderChange xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2">
+
+			<cac:OrderLine>
+				<cac:LineItem>
+					<cac:Price>
+						<cbc:BaseQuantity>-1</cbc:BaseQuantity>
+					</cac:Price>
+				</cac:LineItem>
+			</cac:OrderLine>
+
+		</OrderChange>
+	</test>
+</testSet>

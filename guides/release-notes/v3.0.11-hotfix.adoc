@@ -1,0 +1,19 @@
+= Version 3.0.11 - hotfix
+[horizontal]
+Release date:: 2022-12-30
+
+== New BIS document
+* Added new document  - BIS Advanced Ordering 3.0 with the following transactions:
+** New transaction - Peppol Order Change transaction 3.0 (T114)
+** New transaction - Peppol Order Cancellation transaction 3.0 (T115)
+** New transaction - Peppol Order Response Advanced transaction 3.0 (T116)
+** Existing transaction - Peppol Order transaction 3.3 (T01)
+
+== New transactions
+* Peppol Order Change transaction 3.0 (T114)
+* Peppol Order Cancellation transaction 3.0 (T115)
+* Peppol Order Response Advanced transaction 3.0 (T116)
+
+== Changes to code lists
+
+* Added Action code (UNCL1229) for Order Change
