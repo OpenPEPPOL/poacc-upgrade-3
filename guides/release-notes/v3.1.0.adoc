@@ -1,0 +1,21 @@
+= Version 3.0.10
+[horizontal]
+Release date:: 2022-11-03
+
+== BIS documentation
+* Invoice Response
+* Catalogue with response
+* Catalogue without response
+
+== Changes to syntax
+* Despatch Advice transaction (T16) 
+* Order transaction (T01)
+** Editorial fix to remove exemple values from profileID definition 
+* Order Response transaction (T76)
+* Order Agreement transaction (T110)
+* Catalogue transaction (T19)
+** Editorial fix to remove exemple values from profileID definition 
+
+== Changes to code lists and validation artefacts
+
+

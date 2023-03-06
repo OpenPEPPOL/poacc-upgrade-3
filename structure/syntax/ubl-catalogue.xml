@@ -23,8 +23,7 @@
 			<Term>cbc:ProfileID</Term>
 			<Name>Business process type identifier</Name>
 			<Description>Identifies the BII profile or business process context in which the
-				transaction appears. Values to be used are either urn:fdc:peppol.eu:poacc:bis:catalogue_only:3
-				or urn:fdc:peppol.eu:poacc:bis:catalogue_wo_response:3</Description>
+				transaction appears.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir19-001</Reference>
 			<Reference type="RULE">PEPPOL-T19-R017</Reference>
