@@ -1,8 +1,0 @@
-= Version 3.0.11
-[horizontal]
-Release date:: 2023-05-01
-
-== Changes to syntax
-* Order transaction (T01)
-** New optional business term for Catalogue reference (tir01-p45)
-
