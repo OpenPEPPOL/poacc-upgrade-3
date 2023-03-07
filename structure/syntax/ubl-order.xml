@@ -1831,7 +1831,7 @@
 							<Name>Period start time</Name>
 							<Description>The time at which this period begins. Format = "hh:mm:ss"</Description>
 							<DataType>Time</DataType>
-							<Reference type="BUSINESS_TERM">tir01-p49</Reference>
+							<Reference type="BUSINESS_TERM">tir01-p48</Reference>
 							<Value type="EXAMPLE">12:30:00</Value>
 						</Element>
 						<Element cardinality="0..1">
@@ -1848,7 +1848,7 @@
 							<Name>Period end time</Name>
 							<Description>The time at which this period end. Format = "hh:mm:ss"</Description>
 							<DataType>Time</DataType>
-							<Reference type="BUSINESS_TERM">tir01-p50</Reference>
+							<Reference type="BUSINESS_TERM">tir01-p49</Reference>
 							<Value type="EXAMPLE">18:00:00</Value>
 						</Element>
 					</Element>

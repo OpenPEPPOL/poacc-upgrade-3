@@ -11,7 +11,7 @@ Release date:: 2023-05-01
 * Despatch Advice transaction (T16) 
 * Order transaction (T01)
 ** Editorial fix to remove exemple values from profileID definition
-** New optional business terms for start (tir01-p49) and end (tir01-p50) times in requested delivery period on line.
+** New optional business terms for start (tir01-p48) and end (tir01-p49) times in requested delivery period on line.
 * Order Response transaction (T76)
 ** New optional business terms for start (tir76-p012) and end (tir76-p013) times in requested delivery period on line.
 * Order Agreement transaction (T110)
