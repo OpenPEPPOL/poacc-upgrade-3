@@ -1,6 +1,6 @@
-= Version 3.0.10
+= Version 3.1.0
 [horizontal]
-Release date:: 2022-11-03
+Release date:: 2023-05-01
 
 == BIS documentation
 * Invoice Response
@@ -10,11 +10,13 @@ Release date:: 2022-11-03
 == Changes to syntax
 * Despatch Advice transaction (T16) 
 * Order transaction (T01)
-** Editorial fix to remove exemple values from profileID definition 
+** Editorial fix to remove exemple values from profileID definition
+** New optional business terms for start (tir01-p49) and end (tir01-p50) times in requested delivery period on line.
 * Order Response transaction (T76)
+** New optional business terms for start (tir76-p012) and end (tir76-p013) times in requested delivery period on line.
 * Order Agreement transaction (T110)
 * Catalogue transaction (T19)
-** Editorial fix to remove exemple values from profileID definition 
+** Editorial fix to remove exemple values from profileID definition.
 
 == Changes to code lists and validation artefacts
 
