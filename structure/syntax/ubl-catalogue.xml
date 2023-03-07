@@ -27,7 +27,7 @@
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir19-001</Reference>
 			<Reference type="RULE">PEPPOL-T19-R017</Reference>
-			<Value type="EXAMPLE">urn:fdc:peppol.eu:poacc:bis:catalogue_only:3</Value>
+			<Value type="EXAMPLE">urn:fdc:peppol.eu:poacc:bis:catalogue_wo_response:3</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>
