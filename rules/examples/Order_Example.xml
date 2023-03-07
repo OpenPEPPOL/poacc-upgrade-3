@@ -287,7 +287,9 @@
 			<cac:Delivery>
 				<cac:RequestedDeliveryPeriod>
 					<cbc:StartDate>2010-02-10</cbc:StartDate>
+					<cbc:StartTime>12:30:00</cbc:StartTime>
 					<cbc:EndDate>2010-02-25</cbc:EndDate>
+					<cbc:EndTime>18:00:00</cbc:EndTime>
 				</cac:RequestedDeliveryPeriod>
 			</cac:Delivery>
 			<cac:OriginatorParty>
