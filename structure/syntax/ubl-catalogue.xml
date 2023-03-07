@@ -1158,7 +1158,7 @@
 				<Element cardinality="0..1">
 					<Term>cbc:LeadTimeMeasure</Term>
 					<Name>Price lead time</Name>
-					<Description>The lead time from when the order is placed until it is available for delivery at the sellers' premises or at a stated address.</Description>
+					<Description>The time from when the order is placed until the item is available for delivery from the sellers' premises or at the applicable address specified for the price.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-053</Reference>
 					<Attribute>
