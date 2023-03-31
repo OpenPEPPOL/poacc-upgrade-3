@@ -333,6 +333,9 @@
 				<cac:SellersItemIdentification>
 					<cbc:ID>121212</cbc:ID>
 				</cac:SellersItemIdentification>
+				<cac:ManufacturersItemIdentification>
+					<cbc:ID>manid659</cbc:ID>
+				</cac:ManufacturersItemIdentification>
 				<cac:StandardItemIdentification>
 					<cbc:ID schemeID="0160">7560000012345</cbc:ID>
 				</cac:StandardItemIdentification>
