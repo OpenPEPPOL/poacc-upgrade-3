@@ -164,6 +164,20 @@
 				<Value type="EXAMPLE">5435235</Value>
 			</Element>
 		</Element>
+
+		<Element cardinality="0..1">
+			<Term>cac:CatalogueReference</Term>
+			<Name>Catalogue reference</Name>
+			<Element>
+				<Term>cbc:ID</Term>
+				<Name>Catalogue reference</Name>
+				<Description>A reference to the Catalogue on which this Order is based.</Description>
+				<DataType>Document reference</DataType>
+				<Reference type="BUSINESS_TERM">tir01-p45</Reference>
+				<Value type="EXAMPLE">Cat2023-03-07</Value>
+			</Element>
+		</Element>
+
 		<Element cardinality="0..n">
 			<Term>cac:AdditionalDocumentReference</Term>
 			<Name>Additional documents</Name>

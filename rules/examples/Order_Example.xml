@@ -26,6 +26,9 @@
 	<cac:OriginatorDocumentReference>
 		<cbc:ID>MAFO</cbc:ID>
 	</cac:OriginatorDocumentReference>
+	<cac:CatalogueReference>
+		<cbc:ID>Cat2023-03-07</cbc:ID>
+	</cac:CatalogueReference>
 	<cac:AdditionalDocumentReference>
 		<cbc:ID>Doc1</cbc:ID>
 		<cbc:DocumentType>Timesheet</cbc:DocumentType>
