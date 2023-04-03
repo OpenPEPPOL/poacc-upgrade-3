@@ -1,0 +1,28 @@
+= Version 3.1.0
+[horizontal]
+Release date:: 2023-05-01
+
+== BIS documentation
+* Invoice Response
+* Catalogue with response
+* Catalogue without response
+
+== Changes to syntax
+* Despatch Advice transaction (T16) 
+* Order transaction (T01)
+** Editorial fix to remove exemple values from profileID definition
+** New optional business term for requesting priority level for delivery (tir01-p47). Example updated.
+** New optional business terms for start (tir01-p48) and end (tir01-p49) times in requested delivery period on line.
+** New optional business term for Catalogue reference (tir01-p45)
+** New optional business term for Manufacturers item identification (tir01-p46). Example updated.
+* Order Response transaction (T76)
+** New optional business terms for start (tir76-p012) and end (tir76-p013) times in requested delivery period on line.
+* Order Agreement transaction (T110)
+* Catalogue transaction (T19)
+** Editorial fix to remove exemple values from profileID definition.
+
+
+== Changes to code lists and validation artefacts
+** Added code list 4219 for Requested shipping priority
+
+

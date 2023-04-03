@@ -26,6 +26,9 @@
 	<cac:OriginatorDocumentReference>
 		<cbc:ID>MAFO</cbc:ID>
 	</cac:OriginatorDocumentReference>
+	<cac:CatalogueReference>
+		<cbc:ID>Cat2023-03-07</cbc:ID>
+	</cac:CatalogueReference>
 	<cac:AdditionalDocumentReference>
 		<cbc:ID>Doc1</cbc:ID>
 		<cbc:DocumentType>Timesheet</cbc:DocumentType>
@@ -224,6 +227,10 @@
 				<cbc:ElectronicMail>ole@helseforetak.no</cbc:ElectronicMail>
 			</cac:Contact>
 		</cac:DeliveryParty>
+		<cac:Shipment>
+			<cbc:ID>NA</cbc:ID>
+			<cbc:ShippingPriorityLevelCode>1</cbc:ShippingPriorityLevelCode>
+		</cac:Shipment>
 	</cac:Delivery>
 	<cac:DeliveryTerms>
 		<cbc:ID>FOB</cbc:ID>
@@ -287,7 +294,9 @@
 			<cac:Delivery>
 				<cac:RequestedDeliveryPeriod>
 					<cbc:StartDate>2010-02-10</cbc:StartDate>
+					<cbc:StartTime>12:30:00</cbc:StartTime>
 					<cbc:EndDate>2010-02-25</cbc:EndDate>
+					<cbc:EndTime>18:00:00</cbc:EndTime>
 				</cac:RequestedDeliveryPeriod>
 			</cac:Delivery>
 			<cac:OriginatorParty>
@@ -330,6 +339,9 @@
 				<cac:SellersItemIdentification>
 					<cbc:ID>121212</cbc:ID>
 				</cac:SellersItemIdentification>
+				<cac:ManufacturersItemIdentification>
+					<cbc:ID>manid659</cbc:ID>
+				</cac:ManufacturersItemIdentification>
 				<cac:StandardItemIdentification>
 					<cbc:ID schemeID="0160">7560000012345</cbc:ID>
 				</cac:StandardItemIdentification>
