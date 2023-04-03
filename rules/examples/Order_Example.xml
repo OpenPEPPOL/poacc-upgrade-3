@@ -227,6 +227,10 @@
 				<cbc:ElectronicMail>ole@helseforetak.no</cbc:ElectronicMail>
 			</cac:Contact>
 		</cac:DeliveryParty>
+		<cac:Shipment>
+			<cbc:ID>NA</cbc:ID>
+			<cbc:ShippingPriorityLevelCode>1</cbc:ShippingPriorityLevelCode>
+		</cac:Shipment>
 	</cac:Delivery>
 	<cac:DeliveryTerms>
 		<cbc:ID>FOB</cbc:ID>
