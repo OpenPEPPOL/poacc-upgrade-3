@@ -1841,6 +1841,14 @@
 							<Value type="EXAMPLE">2018-09-03</Value>
 						</Element>
 						<Element cardinality="0..1">
+							<Term>cbc:StartTime</Term>
+							<Name>Period start time</Name>
+							<Description>The time at which this period begins. Format = "hh:mm:ss"</Description>
+							<DataType>Time</DataType>
+							<Reference type="BUSINESS_TERM">tir01-p48</Reference>
+							<Value type="EXAMPLE">12:30:00</Value>
+						</Element>
+						<Element cardinality="0..1">
 							<Term>cbc:EndDate</Term>
 							<Name>Period end date</Name>
 							<Description>The date on which the period ends. The end date counts as
@@ -1848,6 +1856,14 @@
 							<DataType>Date</DataType>
 							<Reference type="BUSINESS_TERM">tir01-127</Reference>
 							<Value type="EXAMPLE">2018-09-15</Value>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:EndTime</Term>
+							<Name>Period end time</Name>
+							<Description>The time at which this period end. Format = "hh:mm:ss"</Description>
+							<DataType>Time</DataType>
+							<Reference type="BUSINESS_TERM">tir01-p49</Reference>
+							<Value type="EXAMPLE">18:00:00</Value>
 						</Element>
 					</Element>
 				</Element>
