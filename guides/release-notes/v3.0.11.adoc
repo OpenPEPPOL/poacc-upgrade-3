@@ -1,28 +1,28 @@
-= Version 3.1.0
+= Version 3.0.11
 [horizontal]
 Release date:: 2023-05-01
 
 == BIS documentation
-* Invoice Response
-* Catalogue with response
-* Catalogue without response
 
 == Changes to syntax
-* Despatch Advice transaction (T16) 
 * Order transaction (T01)
-** Editorial fix to remove exemple values from profileID definition
+** Editorial fix to remove example values from profileID definition
 ** New optional business term for requesting priority level for delivery (tir01-p47). Example updated.
 ** New optional business terms for start (tir01-p48) and end (tir01-p49) times in requested delivery period on line.
 ** New optional business term for Catalogue reference (tir01-p45)
 ** New optional business term for Manufacturers item identification (tir01-p46). Example updated.
 * Order Response transaction (T76)
 ** New optional business terms for start (tir76-p012) and end (tir76-p013) times in requested delivery period on line.
-* Order Agreement transaction (T110)
 * Catalogue transaction (T19)
-** Editorial fix to remove exemple values from profileID definition.
+** Editorial fix to remove example values from profileID definition.
+** Adjusted definition of "PriceLeadTime" to reflect intendend use.
 
 
 == Changes to code lists and validation artefacts
-** Added code list 4219 for Requested shipping priority
-
-
+* Added code list 4219 for Requested shipping priority
+* Rule PEPPOL-COMMON-R050 (validation of Australian Business Number (ABN)) is changed to fatal.
+* Alignment with EN 16931 validation artefacts release 1.3.10
+** Added EAS codes 0221, 0230
+** Removed EAS codes 9955
+** Added ICD codes 0221, 0222, 0223, 0224, 0225, 0226, 0227, 0228, 0229, 0230
+** Added Item type identification code (CL7143) EMD (EMDN (European Medical Device Nomenclature))
