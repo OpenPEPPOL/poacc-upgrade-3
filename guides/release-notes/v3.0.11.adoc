@@ -26,3 +26,6 @@ Release date:: 2023-05-01
 ** Removed EAS codes 9955
 ** Added ICD codes 0221, 0222, 0223, 0224, 0225, 0226, 0227, 0228, 0229, 0230
 ** Added Item type identification code (CL7143) EMD (EMDN (European Medical Device Nomenclature))
+
+== Other
+* Editorial correction of version numbers on links to business rules (on main documentation page).
