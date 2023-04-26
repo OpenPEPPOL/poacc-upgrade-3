@@ -1355,11 +1355,11 @@
 				<Element cardinality="0..1">
 					<Term>cbc:ShippingPriorityLevelCode</Term>
 					<Name>Requested shipping priority</Name>
-					<Description>The priority level requested by the buyer for the shipping of the order. Example value: 1 (Express or urgent) or 3 (Normal speed)</Description>
+					<Description>The priority level requested by the buyer for the shipping of the order. Example value: "1" for Express/urgent/rush</Description>
 					<DataType>code</DataType>
 					<Reference type="BUSINESS_TERM">tir01-p47</Reference>
 					<Reference type="CODE_LIST">UNCL4219</Reference>
-					<Value type="EXAMPLE">1 (Express or urgent) or 3 (Normal speed)</Value>
+					<Value type="EXAMPLE">1</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:TransportHandlingUnit</Term>
