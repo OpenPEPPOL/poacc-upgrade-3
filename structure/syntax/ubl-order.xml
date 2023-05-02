@@ -2144,7 +2144,7 @@
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:ManufacturersItemIdentification</Term>
-						<Name>Sellers item identification</Name>
+						<Name>Manufacturers Item Identifier</Name>
 						<Element>
 							<Term>cbc:ID</Term>
 							<Name>Manufacturers Item Identifier</Name>
