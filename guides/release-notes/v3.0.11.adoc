@@ -12,7 +12,7 @@ Release date:: 2023-05-01
 ** New optional business term for Catalogue reference (tir01-p45)
 ** New optional business term for Manufacturers item identification (tir01-p46). Example updated.
 * Order Response transaction (T76)
-** New optional business terms for start (tir76-p012) and end (tir76-p013) times in requested delivery period on line.
+** New optional business terms for start (tir76-p012) and end (tir76-p013) times in promised delivery period on line.
 * Catalogue transaction (T19)
 ** Editorial fix to remove example values from profileID definition.
 ** Adjusted definition of "PriceLeadTime" to reflect intendend use.
