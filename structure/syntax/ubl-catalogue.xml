@@ -23,12 +23,11 @@
 			<Term>cbc:ProfileID</Term>
 			<Name>Business process type identifier</Name>
 			<Description>Identifies the BII profile or business process context in which the
-				transaction appears. Values to be used are either urn:fdc:peppol.eu:poacc:bis:catalogue_only:3
-				or urn:fdc:peppol.eu:poacc:bis:catalogue_wo_response:3</Description>
+				transaction appears.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="BUSINESS_TERM">tir19-001</Reference>
 			<Reference type="RULE">PEPPOL-T19-R017</Reference>
-			<Value type="EXAMPLE">urn:fdc:peppol.eu:poacc:bis:catalogue_only:3</Value>
+			<Value type="EXAMPLE">urn:fdc:peppol.eu:poacc:bis:catalogue_wo_response:3</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>
@@ -1159,7 +1158,7 @@
 				<Element cardinality="0..1">
 					<Term>cbc:LeadTimeMeasure</Term>
 					<Name>Price lead time</Name>
-					<Description>The order lead time for the particular location.</Description>
+					<Description>The time from when the order is placed until the item is available for delivery from the sellers' premises or at the applicable address specified for the price.</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">tir19-053</Reference>
 					<Attribute>

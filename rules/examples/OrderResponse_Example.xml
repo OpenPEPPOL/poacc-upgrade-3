@@ -56,7 +56,9 @@
 			<cac:Delivery>
 				<cac:PromisedDeliveryPeriod>
 					<cbc:StartDate>2018-08-10</cbc:StartDate>
+					<cbc:StartTime>12:30:00</cbc:StartTime>
 					<cbc:EndDate>2018-08-12</cbc:EndDate>
+					<cbc:EndTime>18:00:00</cbc:EndTime>
 				</cac:PromisedDeliveryPeriod>
 			</cac:Delivery>
 			<cac:Price>

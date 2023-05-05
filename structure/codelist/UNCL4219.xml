@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Transport service priority code (UNCL4219)</Title>
+    <Identifier>UNCL4219</Identifier>
+    <Version>D.17A</Version>
+    <Agency>UN/CEFACT</Agency>
+    <Subset>openPEPPOL</Subset>
+
+    <Code>
+        <Id>1</Id>
+        <Name>Express</Name>
+        <Description>Express</Description>
+    </Code>
+    <Code>
+        <Id>2</Id>
+        <Name>High speed</Name>
+        <Description>High speed</Description>
+    </Code>
+    <Code>
+        <Id>3</Id>
+        <Name>Normal speed</Name>
+        <Description>Normal speed</Description>
+    </Code>
+    <Code>
+        <Id>4</Id>
+        <Name>Post service</Name>
+        <Description>Post service</Description>
+    </Code>
+
+</CodeList>

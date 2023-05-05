@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
-    <Name>Peppol BIS version 3</Name>
+    <Name>Peppol BIS version 3 - May 2023 Release</Name>
     <!-- Introduction -->
     <Documentation path="">INTRODUCTION</Documentation>
     <Documentation path="compliance/">BIS compliance</Documentation>
@@ -26,12 +26,12 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-order.xml</Path>
-        <Title>Peppol Order transaction 3.3 (T01)</Title>
+        <Title>Peppol Order transaction 3.4 (T01)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-order-response.xml</Path>
-        <Title>Peppol Order Response transaction 3.1 (T76)</Title>
+        <Title>Peppol Order Response transaction 3.2 (T76)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
@@ -94,38 +94,46 @@
         <Identifier>T01</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T01.sch</Path>
-        <Title>Business rules for Peppol Order transaction 3.0 </Title>
+        <Title>Business rules for Peppol Order transaction 3.4 </Title>
+    </Resource>
+	<Resource>
+        <Identifier>T76</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/parts/PEPPOL-M-T76.sch</Path>
+        <Title>Business rules for Peppol Order Response transaction 3.2</Title>
+    </Resource>
+	<Resource>
+        <Identifier>T110</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/parts/PEPPOL-M-T110.sch</Path>
+        <Title>Business rules for Peppol Order Agreement transaction 3.1</Title>
+    </Resource>
+	<Resource>
+        <Identifier>T19</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/parts/PEPPOL-M-T19.sch</Path>
+        <Title>Business rules for Peppol Catalogue transaction 3.2</Title>
+    </Resource>
+	<Resource>
+        <Identifier>T58</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/parts/PEPPOL-M-T58.sch</Path>
+        <Title>Business rules for Peppol Catalogue Response transaction 3.0</Title>
     </Resource>
     <Resource>
         <Identifier>T16</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T16.sch</Path>
-        <Title>Business rules for Peppol Despatch Advice transaction 3.0</Title>
+        <Title>Business rules for Peppol Despatch Advice transaction 3.2</Title>
     </Resource>
-    <Resource>
-        <Identifier>T19</Identifier>
-        <Type>native:Schematron</Type>
-        <Path>rules/sch/parts/PEPPOL-M-T19.sch</Path>
-        <Title>Business rules for Peppol Catalogue transaction 3.0</Title>
-    </Resource>
-    <Resource>
-        <Identifier>T76</Identifier>
-        <Type>native:Schematron</Type>
-        <Path>rules/sch/parts/PEPPOL-M-T76.sch</Path>
-        <Title>Business rules for Peppol Order Response transaction 3.0</Title>
-    </Resource>
+ 
     <Resource>
         <Identifier>T77</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T77.sch</Path>
-        <Title>Business rules for Peppol Punch Out transaction 3.0</Title>
+        <Title>Business rules for Peppol Punch Out transaction 3.2</Title>
     </Resource>
-    <Resource>
-        <Identifier>T110</Identifier>
-        <Type>native:Schematron</Type>
-        <Path>rules/sch/parts/PEPPOL-M-T110.sch</Path>
-        <Title>Business rules for Peppol Order Agreement transaction 3.0</Title>
-    </Resource>
+  
     <Resource>
         <Identifier>T71</Identifier>
         <Type>native:Schematron</Type>
@@ -137,7 +145,7 @@
         <Identifier>T111</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T111.sch</Path>
-        <Title>Business rules for Peppol Invoice Response transaction 3.0</Title>
+        <Title>Business rules for Peppol Invoice Response transaction 3.1</Title>
     </Resource>
     <Resource>
         <Identifier>T114</Identifier>
@@ -261,6 +269,10 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL5387.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL4219.xml</Path>
     </Resource>
 	<Resource>
         <Type>CodeList-1</Type>
