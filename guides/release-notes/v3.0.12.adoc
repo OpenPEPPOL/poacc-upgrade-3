@@ -1,0 +1,16 @@
+= Version 3.0.12
+[horizontal]
+Release date:: 2023-11-01
+
+== BIS documentation
+
+== Changes to syntax
+* Order transaction (T01)
+
+* Order Response transaction (T76)
+
+
+== Changes to code lists and validation artefacts
+
+
+== Other
