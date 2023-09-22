@@ -33,7 +33,7 @@
 	</cac:ReceiverParty>
 	<cac:DocumentResponse>
 		<cac:Response>
-			<cbc:ResponseCode listID="UNCL4343OpSubset">IP</cbc:ResponseCode>
+			<cbc:ResponseCode>IP</cbc:ResponseCode>
 			<cbc:EffectiveDate>2017-12-01</cbc:EffectiveDate>
 			<cac:Status>
 				<cbc:StatusReasonCode listID="OPStatusAction">NOA</cbc:StatusReasonCode>
@@ -45,7 +45,7 @@
 		</cac:Response>
 		<cac:DocumentReference>
 			<cbc:ID>inv021</cbc:ID>
-			<cbc:DocumentTypeCode listID="UNCL1001">380</cbc:DocumentTypeCode>
+			<cbc:DocumentTypeCode>380</cbc:DocumentTypeCode>
 		</cac:DocumentReference>
 	</cac:DocumentResponse>
 </ApplicationResponse>
