@@ -4,6 +4,8 @@ Release date:: 2023-11-01
 
 == BIS documentation
 
+* Fixed an error in the documentation of semantic datatypes. It previously stated that a Boolean is based on the primitive datatype String, this has been corrected to Boolean. This fix is purely editoriol.
+
 == Changes to syntax
 * Order transaction (T01)
 

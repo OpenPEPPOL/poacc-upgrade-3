@@ -14,6 +14,6 @@ Boolean indicators are used to specify the two allowed values, _true_ or _false_
 
 |Content
 |Mandatory
-|String
+|Boolean
 |true
 |===
