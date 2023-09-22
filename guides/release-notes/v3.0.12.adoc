@@ -9,6 +9,8 @@ Release date:: 2023-11-01
 == Changes to syntax
 * Order transaction (T01)
 
+** Added business terms for all Order Type Codes. Renamed the element cbc:OrderTypeCode from "Consignment Order" to "Order Type" to avoid confusion, as Consignment Order is just one of several types. This change is purely editorial.
+
 * Order Response transaction (T76)
 
 
