@@ -16,5 +16,7 @@ Release date:: 2023-11-01
 
 == Changes to code lists and validation artefacts
 
+* Added Order type codes 105 (Purchase order) and 402 "Intermediate handling cross docking order" as synonyms for 220 (Order)
+
 
 == Other
