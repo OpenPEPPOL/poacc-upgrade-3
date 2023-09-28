@@ -32,16 +32,12 @@
 	</cac:ReceiverParty>
 	<cac:DocumentResponse>
 		<cac:Response>
-			<cbc:ResponseCode listID="UNCL4343OpSubset">PD</cbc:ResponseCode>
+			<cbc:ResponseCode>PD</cbc:ResponseCode>
 			<cbc:EffectiveDate>2017-12-30</cbc:EffectiveDate>
 		</cac:Response>
 		<cac:DocumentReference>
 			<cbc:ID>inv021</cbc:ID>
-			<cbc:DocumentTypeCode listID="UNCL1001">380</cbc:DocumentTypeCode>
-		</cac:DocumentReference>
-		<cac:DocumentReference>
-			<cbc:ID>PaymentReference</cbc:ID>
-			<cbc:DocumentTypeCode listID="UNCL1001">481</cbc:DocumentTypeCode>
+			<cbc:DocumentTypeCode>380</cbc:DocumentTypeCode>
 		</cac:DocumentReference>
 	</cac:DocumentResponse>
 	

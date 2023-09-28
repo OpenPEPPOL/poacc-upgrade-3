@@ -30,7 +30,7 @@
 	</cac:ReceiverParty>
 	<cac:DocumentResponse>
 		<cac:Response>
-			<cbc:ResponseCode listID="UNCL4343OpSubset">RE</cbc:ResponseCode>
+			<cbc:ResponseCode>RE</cbc:ResponseCode>
 			<cac:Status>
 				<cbc:StatusReasonCode listID="OPStatusReason">REF</cbc:StatusReasonCode>
 				<cbc:StatusReason>A textual explanation for why the invoice is being rejected. E.g. PO reference is missing.</cbc:StatusReason>
@@ -38,7 +38,7 @@
 		</cac:Response>
 		<cac:DocumentReference>
 			<cbc:ID>inv021</cbc:ID>
-			<cbc:DocumentTypeCode listID="UNCL1001">380</cbc:DocumentTypeCode>
+			<cbc:DocumentTypeCode>380</cbc:DocumentTypeCode>
 		</cac:DocumentReference>
 	</cac:DocumentResponse>
 </ApplicationResponse>
