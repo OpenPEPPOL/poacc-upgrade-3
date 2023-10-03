@@ -18,5 +18,6 @@ Release date:: 2023-11-01
 
 * Added Order type codes 105 (Purchase order) and 402 "Intermediate handling cross docking order" as synonyms for 220 (Order)
 
+* Example file cleanup: Removed listId from <DocumentTypeCode> and ResponseCode> in example files for Invoice Response. Deleted reference to payment in example file 7 in Invoice Response Examples
 
 == Other
