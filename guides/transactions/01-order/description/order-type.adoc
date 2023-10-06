@@ -27,6 +27,12 @@ h| Source codelist
 | 
 | Order
 
+| 105
+| Purchase Order
+| Document/message issued within an enterprise to initiate the purchase of articles, materials or services required for the production or manufacture of goods to be offered for sale or otherwise supplied to customers. 
+| 220
+| Order
+
 | 221
 | Blanket order
 | Usage of document/message for general order purposes with later split into quantities and delivery dates and maybe delivery locations.
@@ -42,6 +48,12 @@ h| Source codelist
 | 227
 | Consignment order
 | Order to deliver goods into stock with agreement on payment when goods are sold out of this stock. 
+| 220
+| Order
+
+| 402
+| Intermediate handling cross docking order
+| An order requesting the supply of products which will be moved across a dock, de-consolidated and re-consolidated according to the final delivery location requirements. 
 | 220
 | Order
 

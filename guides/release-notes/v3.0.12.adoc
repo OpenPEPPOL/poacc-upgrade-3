@@ -1,0 +1,23 @@
+= Version 3.0.12
+[horizontal]
+Release date:: 2023-11-01
+
+== BIS documentation
+
+* Fixed an error in the documentation of semantic datatypes. It previously stated that a Boolean is based on the primitive datatype String, this has been corrected to Boolean. This fix is purely editoriol.
+
+== Changes to syntax
+* Order transaction (T01)
+
+** Added business terms for all Order Type Codes. Renamed the element cbc:OrderTypeCode from "Consignment Order" to "Order Type" to avoid confusion, as Consignment Order is just one of several types. This change is purely editorial.
+
+* Order Response transaction (T76)
+
+
+== Changes to code lists and validation artefacts
+
+* Added Order type codes 105 (Purchase order) and 402 "Intermediate handling cross docking order" as synonyms for 220 (Order)
+
+* Example file cleanup: Removed listId from <DocumentTypeCode> and ResponseCode> in example files for Invoice Response. Deleted reference to payment in example file 7 in Invoice Response Examples
+
+== Other
