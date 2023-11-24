@@ -20,6 +20,6 @@ Release date:: 2023-11-01
 
 * Example file cleanup: Removed listId from <DocumentTypeCode> and ResponseCode> in example files for Invoice Response. Deleted reference to payment in example file 7 in Invoice Response Examples
 
-* Added EAS code 02018 Latvia
+* Added EAS code 0218 Latvia
 
 == Other
