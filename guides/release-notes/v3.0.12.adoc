@@ -1,6 +1,6 @@
 = Version 3.0.12
 [horizontal]
-Release date:: 2023-11-01
+Release date:: November 2023
 
 == BIS documentation
 
