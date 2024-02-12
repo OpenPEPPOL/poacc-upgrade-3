@@ -45,6 +45,13 @@
             flag="fatal">Promised Delivery Period MUST only be stated on document or on line level. </assert> -->
     </rule>
 
+	<rule context="cbc:OrderResponseCode">
+		<assert id="PEPPOL-T116-R007"
+			 test="(normalize-space(.) = 'CA' and count(../cac:OrderLine) > 0) or normalize-space(.) != 'CA'"
+			 flag="warning">An order response with code CA (Conditionally accepted) must provide order lines.</assert>
+	</rule>
+
+
    <!-- Line level -->
    <rule context="cac:OrderLine/cac:LineItem">
         <assert id="PEPPOL-T116-R003"
