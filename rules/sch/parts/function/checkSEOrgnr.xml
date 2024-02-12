@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-   <!-- Function for Swedish organisation numbers (0007) -->
-  <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:checkSEOrgnr" as="xs:boolean">
-    <param name="number" as="xs:string"/>
+<function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:checkSEOrgnr" as="xs:boolean">
+	<!-- Function for Swedish organisation numbers (0007) -->
+	<param name="number" as="xs:string"/>
 	<choose>
 		<!-- Check if input is numeric -->
 		<when test="not(matches($number, '^\d+$'))">
@@ -24,4 +23,4 @@
 			<sequence select="$calculatedCheckDigit = number($checkDigit)"/>
 		</otherwise>
 	</choose>
-  </function>
+</function>
