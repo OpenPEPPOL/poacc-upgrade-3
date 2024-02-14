@@ -17,5 +17,6 @@ Release date:: May 2024
 
 * Update of PEPPOL-COMMON-R049 which validates identifiers using ICD/EAS 0007. The change is adding validation of the check number of a Swedish Organization number.
 
+* Added rule to check that an OrderResponse with ResponseTypeCode CA (accepted with amendment on line level) actually has order response lines. The rule is introduced with severity warning and will be changed to severity fatal in next release. The rule is added to both T76 (Order Responseand) and T116 (Order Response Advanced).
 
 == Other

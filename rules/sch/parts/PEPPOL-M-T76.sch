@@ -46,5 +46,10 @@
                 flag="fatal">Each order response line SHALL have a document line identifier that is unique within the order.</assert>
     </rule>
 
+	<rule context="cbc:OrderResponseCode">
+		<assert id="PEPPOL-T76-R007"
+			 test="(normalize-space(.) = 'CA' and count(../cac:OrderLine) > 0) or normalize-space(.) != 'CA'"
+			 flag="warning">An order response with code CA (Conditionally accepted) must provide order lines.</assert>
+	</rule>
  
 </pattern>
