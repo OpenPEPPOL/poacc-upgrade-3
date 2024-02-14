@@ -25,6 +25,7 @@
 	<xi:include href="parts/function/checkPIVAseIT.xml"/>
 	<xi:include href="parts/function/mod97-0208.xml"/>
     <xi:include href="parts/function/abn.xml"/>	
+	<xi:include href="parts/function/checkSEOrgnr.xml"/>		
 	
     <!-- Rules -->
 
