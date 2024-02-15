@@ -9,8 +9,6 @@ Item identification must be sent using the identifiers described below.
 * Buyers item identification
 
 Either Sellers item identification or Standard item identification must be sent.
-Manufacturer’s item identification shall be sent if available.
-Buyers item identification can be used if known.
 Which identifier to use depends on what is known at the time of catalogue exchange or what is commonly used in the relevant business sector.
 
 .Example 1, Seller item identification
