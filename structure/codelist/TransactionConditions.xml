@@ -7,21 +7,13 @@
     <Agency>OpenPEPPOL</Agency>
     <Subset>OpenPEPPOL</Subset>
 
-    <Code>
-        <Id>VQ</Id>
-        <Name>Variable measure indicator</Name>
+	<Code>
+        <Id>CT</Id>
+        <Name>Contracted item</Name>
     </Code>
     <Code>
-        <Id>RC</Id>
-        <Name>Returnable unit, indicator</Name>
-    </Code>
-    <Code>
-        <Id>SER</Id>
-        <Name>Trade item is a service</Name>
-    </Code>
-    <Code>
-        <Id>MTO</Id>
-        <Name>Trade item is produced after it has been ordered</Name>
+        <Id>NON_RETURNABLE</Id>
+        <Name>Non returnable item</Name>
     </Code>
 
 </CodeList>
