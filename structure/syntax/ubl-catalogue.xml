@@ -1612,16 +1612,18 @@
 
 					</Element>
 				</Element>
-				<Element cardinality="0..1">
+				<Element cardinality="0..n">
 					<Term>cac:TransactionConditions</Term>
-					<Name>Contracted item</Name>
+					<Name>Transaction condition</Name>
 					<Element>
 						<Term>cbc:ActionCode</Term>
-						<Name>Contracted item indicator</Name>
-						<Description>The code CT indicates that the item is offered in accordance to the referenced contract.</Description>
+						<Name>Contracted item indicator, Non-returnable item indicator</Name>
+						<Description>The code CT indicates that the item is offered in accordance to the referenced contract (tir19-p027). The code NON_RETURNABLE indicates that the item cannot be returned (tir19-p049).</Description>
 						<DataType>Code</DataType>
 						<Reference type="BUSINESS_TERM">tir19-p027</Reference>
-						<Value type="FIXED">CT</Value>
+						<Reference type="BUSINESS_TERM">tir19-p049</Reference>
+						<Reference type="CODE_LIST">TransactionCondition</Reference>
+						
 					</Element>
 				</Element>
 				<Element cardinality="0..n">
