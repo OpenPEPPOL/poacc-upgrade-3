@@ -4,6 +4,9 @@ Release date:: May 2024
 
 == BIS documentation
 
+* BIS Catalogue
+** Clarified the use of item identifiers. Previusly unclear in the description if "either one of" or "at least one of" Sellers Identifier or Standard Identifier must be stated. It is now clear that it is "at least one of". This change is in line with existing validation rules of the existence of the identifiers.
+** Statement that Manufacturers item identifier must be stated if it exists is deleted since it was unclear how to interpret the statement and to impossible to verify.
 
 == Changes to syntax
 * Order transaction (T01)
@@ -12,8 +15,6 @@ Release date:: May 2024
 
 
 == Changes to code lists and validation artefacts
-
-* Added new Swedish rule SE-R-013 for validation of the check number of a Swedish Organization number. The rule is introduced as severity warning. All rules which verifies the format of Organization numbers (SE-R-003, SE-R-004 and SE-R-013) will be changed to severity fatal in next release.
 
 * Update of PEPPOL-COMMON-R049 which validates identifiers using ICD/EAS 0007. The change is adding validation of the check number of a Swedish Organization number.
 
