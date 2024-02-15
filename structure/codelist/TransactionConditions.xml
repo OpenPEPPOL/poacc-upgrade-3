@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
-    <Title>Transaction condition code</Title>
+    <Title>Transaction condition code (OpenPEPPOL)</Title>
     <Identifier>TransactionCondition</Identifier>
     <Version>1.0</Version>
     <Agency>OpenPEPPOL</Agency>
