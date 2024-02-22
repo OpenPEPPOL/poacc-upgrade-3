@@ -219,6 +219,9 @@
 			<cac:TransactionConditions>
 				<cbc:ActionCode>CT</cbc:ActionCode>
 			</cac:TransactionConditions>
+			<cac:TransactionConditions>
+				<cbc:ActionCode>NON_RETURNABLE</cbc:ActionCode>
+			</cac:TransactionConditions>
 			<cac:HazardousItem>
 				<cbc:UNDGCode>ADR</cbc:UNDGCode>
 				<cbc:HazardClassID>Code</cbc:HazardClassID>
@@ -299,6 +302,43 @@
 				<cbc:Name>Paper weight in grams</cbc:Name>
 				<cbc:Value>18</cbc:Value>
 			</cac:AdditionalItemProperty>
+		</cac:Item>
+	</cac:CatalogueLine>
+	<cac:CatalogueLine><!-- This line handles an item with a deposit -->
+		<cbc:ID>3</cbc:ID>
+		<cac:RequiredRelatedItem> 
+			<cbc:ID>1234</cbc:ID>
+			<cbc:Quantity unitCode="EA">1</cbc:Quantity>
+		</cac:RequiredRelatedItem>
+		<cac:RequiredItemLocationQuantity>
+			<cac:Price>
+				<cbc:PriceAmount currencyID="EUR">2.00</cbc:PriceAmount>
+				<cbc:BaseQuantity unitCode="XBO">1</cbc:BaseQuantity>
+			</cac:Price>
+		</cac:RequiredItemLocationQuantity>
+		<cac:Item>
+			<cbc:Description>A bottle of soda</cbc:Description>
+			<cbc:Name>SodaBottle</cbc:Name>
+			<cac:SellersItemIdentification>
+				<cbc:ID>4321</cbc:ID>
+			</cac:SellersItemIdentification>
+		</cac:Item>
+	</cac:CatalogueLine>
+	<cac:CatalogueLine> <!-- This line handles the deposit for the item in the previuous line-->
+		<cbc:ID>4</cbc:ID>
+		<cbc:OrderableIndicator>false</cbc:OrderableIndicator>
+		<cac:RequiredItemLocationQuantity>
+			<cac:Price>
+				<cbc:PriceAmount currencyID="EUR">0.10</cbc:PriceAmount>
+				<cbc:BaseQuantity unitCode="EA">1</cbc:BaseQuantity>
+			</cac:Price>
+		</cac:RequiredItemLocationQuantity>
+		<cac:Item>
+			<cbc:Description>Deposit of a bottle of soda</cbc:Description>
+			<cbc:Name>BottleDeposit</cbc:Name>
+			<cac:SellersItemIdentification>
+				<cbc:ID>1234</cbc:ID>
+			</cac:SellersItemIdentification>
 		</cac:Item>
 	</cac:CatalogueLine>
 </Catalogue>
