@@ -22,6 +22,7 @@ Customer/Buyer.
 |*Assumptions* a|
 1.  The Seller has previously sent a catalogue to the Buyer which has been accepted.
 2.  The Seller needs to send a new article to update the previous catalogue.
+3. 	One of the rows handle deposit.
 
 |*The flow* a|
 1.  The Seller identifies the article to be added.
