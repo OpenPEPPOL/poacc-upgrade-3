@@ -16,7 +16,7 @@ Release date:: May 2024
 
 * Catalogue transaction (T19)
 ** Added possibility (by use of a code) to indicate if an item is non-returnable after purchase. The element cac:TransactionConditions/cbc:ActionCode on item-level is used and the code is added to the codelist "Transaction condition code (OpenPeppol)", together with the previous code to indicate if an item is contracted (CT). The element cbc:ActionCode was previously fixed to the value 'CT' since it was the only allowed code, but with this change, it can be used for both purposes.
-
+** Time may be given with time zone information.
 
 == Changes to code lists and validation artefacts
 
