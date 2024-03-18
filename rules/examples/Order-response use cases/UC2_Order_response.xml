@@ -8,7 +8,7 @@
   <cbc:ID>101</cbc:ID>
   <cbc:IssueDate>2013-07-01</cbc:IssueDate>
   <cbc:IssueTime>14:23:26</cbc:IssueTime>
-  <cbc:OrderResponseCode>AP</cbc:OrderResponseCode>
+  <cbc:OrderResponseCode>CA</cbc:OrderResponseCode>
   <cbc:Note>Response message with item identifiers</cbc:Note>
   <cbc:DocumentCurrencyCode listID="ISO4217">EUR</cbc:DocumentCurrencyCode>
   <cbc:CustomerReference>92487ksdhfj</cbc:CustomerReference>

@@ -13,6 +13,7 @@ Release date:: May 2024
 * Order transaction (T01)
 
 * Order Response transaction (T76)
+* Order Response transaction Advanced (T116)
 
 * Catalogue transaction (T19)
 ** Added possibility (by use of a code) to indicate if an item is non-returnable after purchase. The element cac:TransactionConditions/cbc:ActionCode on item-level is used and the code is added to the codelist "Transaction condition code (OpenPeppol)", together with the previous code to indicate if an item is contracted (CT). The element cbc:ActionCode was previously fixed to the value 'CT' since it was the only allowed code, but with this change, it can be used for both purposes.
@@ -23,5 +24,9 @@ Release date:: May 2024
 * Update of PEPPOL-COMMON-R049 which validates identifiers using ICD/EAS 0007. The change is adding validation of the check number of a Swedish Organization number.
 
 * Added rule to check that an OrderResponse with ResponseTypeCode CA (accepted with amendment on line level) actually has order response lines. The rule is introduced with severity warning and will be changed to severity fatal in next release. The rule is added to both T76 (Order Responseand) and T116 (Order Response Advanced).
+
+* Added rule to check that an OrderResponse with ResponseTypeCode AP or RE should not have order response lines. The rule is introduced with severity warning and will be changed to severity fatal in next release. The rule is added to both T76 (Order Responseand) and T116 (Order Response Advanced).
+
+* Added rule to check that an OrderResponse with ResponseTypeCode AB must not have order response lines. The rule is introduced with severity error. The rule is added to both T76 (Order Responseand) and T116 (Order Response Advanced).
 
 == Other
