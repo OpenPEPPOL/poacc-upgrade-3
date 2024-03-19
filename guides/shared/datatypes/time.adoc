@@ -1,11 +1,14 @@
 
 = Time
 
-Time shall be in accordance to the “Extended time format” as specified by {ISO8601}, format [hh]:[mm]:[ss].
-
+Time shall be in accordance to the “Extended time format” as specified by {ISO8601}, +
+  - format without time zone [hh]:[mm]:[ss] +
+  - format with UTC timezone [hh]:[mm]:[ss]Z +
+  - format for other zones   [hh]:[mm]:[ss]±[hh:mm] with zone is given as difference from UTC.
 
 ====
-IMPORTANT: Time shall *not* include timezone information. Decimal fraction on seconds SHALL not be used.
+IMPORTANT: Time may include timezone information. +
+Decimal fraction on seconds SHALL not be used.
 ====
 
 
