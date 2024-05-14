@@ -78,6 +78,9 @@
 			<Reference type="BUSINESS_TERM">tir76-200</Reference>
 			<Reference type="CODE_LIST">UNCL4343-T76</Reference>
 			<Reference type="RULE">PEPPOL-T76-R007</Reference>
+			<Reference type="RULE">PEPPOL-T76-R008</Reference>
+			<Reference type="RULE">PEPPOL-T76-R009</Reference>
+			<Reference type="RULE">PEPPOL-T76-R010</Reference>
 			<Value type="EXAMPLE">AP</Value>
 		</Element>
 		<Element cardinality="0..1">
