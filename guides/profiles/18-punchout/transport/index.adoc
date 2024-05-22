@@ -7,19 +7,22 @@ The Peppol BIS BIS is specified independent of a transport network but it is des
 [[the-peppol-network]]
 == The Peppol network
 
-The Peppol transport network is a four corner transport network that allows senders end receivers to exchange messages from one service provider to another by using a single identifier for the parties.
+The Peppol transport network is a four corner transport network that allows senders and receivers to exchange messages from one service provider to another by using a single identifier for the parties.
+
+There are some challenges related to the delay of message transfer when using an asynchronous exchange model like the Peppol network. The user who created the shopping cart will have to wait for the message to be received in the purchasing system and there is no specified maximum time limit set for this. When the message is received, it will need to be directed to an identified user or user session. There is no business term in the shopping cart for this purpose other than the Buyer reference identifier (tir77-045). Before using this BIS together with an asynchronous transfer model, the parties should agree on time limits  and reference mechanisms.
+
 Details about the Peppol network can be found at [PeppolTransp]
 
 [[synchronous-message-transfer]]
 == Synchronous message transfer
 
-It is recognized that the use of Punch Out often requires synchronous methods for retrieving that data directly from the sellers shopping cart into the buyers purchasing system.
+It is recognized that the use of Punch Out often requires synchronous methods for retrieving that data directly from the sellers shopping cart into the buyers purchasing system. 
 Several methods are available including the following:
 
 * Direct database connections with HTTP using database interface specifications.
 * File download using Wget, HTTP, FTP or similar technology.
 
-The following clauses only briefly introduce these transfer mechanism.
+The following clauses only briefly introduce examples of transfer mechanisms.
 Analysis of what is the most suitable methods and technical specification are not in scope for this BIS and are not provided by Peppol.
 
 [[direct-http-database-connections]]

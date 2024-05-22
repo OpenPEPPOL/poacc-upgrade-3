@@ -30,14 +30,14 @@
   <cac:BuyerCustomerParty>
     <cac:Party>
       <cac:PartyIdentification>
-        <cbc:ID schemeID="SE:ORGNR">5541277711</cbc:ID>
+        <cbc:ID schemeID="SE:ORGNR">5541277710</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyName>
         <cbc:Name>City Hospital</cbc:Name>
       </cac:PartyName>
       <cac:PartyLegalEntity>
         <cbc:RegistrationName>City Hospital 345433</cbc:RegistrationName>
-        <cbc:CompanyID schemeID="SE:ORGNR">5541277711</cbc:CompanyID>
+        <cbc:CompanyID schemeID="SE:ORGNR">5541277710</cbc:CompanyID>
         <cac:RegistrationAddress>
           <cbc:CityName>Eurocity</cbc:CityName>
           <cac:Country>
@@ -108,9 +108,9 @@
   <!-- tag::invoicee[] -->
   <cac:AccountingCustomerParty>
     <cac:Party>
-      <cbc:EndpointID schemeID="SE:ORGNR">5544332211</cbc:EndpointID>
+      <cbc:EndpointID schemeID="SE:ORGNR">5544332215</cbc:EndpointID>
       <cac:PartyIdentification>
-        <cbc:ID schemeID="SE:ORGNR">5544332211</cbc:ID>
+        <cbc:ID schemeID="SE:ORGNR">5544332215</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyName>
         <cbc:Name>Swedish Hospitals</cbc:Name>
@@ -130,7 +130,7 @@
       </cac:PostalAddress>
       <cac:PartyLegalEntity>
         <cbc:RegistrationName>Swedish Hospitals AB</cbc:RegistrationName>
-        <cbc:CompanyID>5544332211</cbc:CompanyID>
+        <cbc:CompanyID>5544332215</cbc:CompanyID>
         <cac:RegistrationAddress>
           <cbc:CityName>Stockholm</cbc:CityName>
           <cac:Country>

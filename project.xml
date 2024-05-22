@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
-    <Name>Peppol BIS version 3 - November 2023 Release</Name>
+    <Name>Peppol BIS version 3 - May 2024 Release</Name>
     <!-- Introduction -->
     <Documentation path="">INTRODUCTION</Documentation>
     <Documentation path="compliance/">BIS compliance</Documentation>
@@ -270,6 +270,10 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL5387.xml</Path>
     </Resource>
+	<Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/TransactionConditions.xml</Path>
+    </Resource>	
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL4219.xml</Path>
@@ -278,7 +282,6 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNECERec19.xml</Path>
     </Resource>
-
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNECERec20-11e.xml</Path>

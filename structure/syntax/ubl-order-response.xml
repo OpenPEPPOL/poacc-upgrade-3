@@ -72,12 +72,12 @@
 			<Term>cbc:OrderResponseCode</Term>
 			<Name>Response code</Name>
 			<Description>A code that indicates whether the referenced order has been received and not yet processed,
-				or is Accepted or Rejected as whole, alternatively, Accepted with change or already delivered.If response code is Accept or
+				or is Accepted or Rejected as whole, alternatively, Accepted with change or already delivered. If response code is Accept or
                 Reject there may not be any response lines.</Description>
 			<DataType>Code</DataType>
 			<Reference type="BUSINESS_TERM">tir76-200</Reference>
 			<Reference type="CODE_LIST">UNCL4343-T76</Reference>
-
+			<Reference type="RULE">PEPPOL-T76-R007</Reference>
 			<Value type="EXAMPLE">AP</Value>
 		</Element>
 		<Element cardinality="0..1">
