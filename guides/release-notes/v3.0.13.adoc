@@ -5,7 +5,7 @@ Release date:: May 2024
 == BIS documentation
 
 * BIS Catalogue
-** Clarified the use of item identifiers. Previusly unclear in the description if "either one of" or "at least one of" Sellers Identifier or Standard Identifier must be stated. It is now clear that it is "at least one of". This change is in line with existing validation rules of the existence of the identifiers.
+** Clarified the use of item identifiers. Previously unclear in the description if "either one of" or "at least one of" Sellers Identifier or Standard Identifier must be stated. It is now clear that it is "at least one of". This change is in line with existing validation rules of the existence of the identifiers.
 ** Statement that Manufacturers item identifier must be stated if it exists is deleted since it was unclear how to interpret the statement and to impossible to verify.
 ** Updated use case 5 to describe the use of deposits using RequiredRelatedItem 
 
