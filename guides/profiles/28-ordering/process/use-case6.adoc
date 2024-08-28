@@ -2,7 +2,7 @@
 = Use case 6 – Vendor-managed inventory with consignment ordering
 
 This use case describes a scenario where the buyer has an on-premise inventory that is regularly refilled and managed by the seller. When items are withdrawn from the inventory, a consignment order is automatically sent to the seller.
-
+ 
 [cols="1s,5",options="header"]
 |====
 |Use Case number
