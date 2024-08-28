@@ -4,7 +4,7 @@ Release date:: 2019-05-15
 
 [NOTE]
 ====
-This release is a backward compatible minor upgrade, version 3.0.1 replacing the previous version 3.0.0 of OpenPEPPOL BIS document, other than the BIS Billing 3.0. The release includes changes to the BIS documents as well as the validation artifacts (VA's).
+This release is a backward compatible minor upgrade, version 3.0.1 replacing the previous version 3.0.0 of OpenPeppol BIS document, other than the BIS Billing 3.0. The release includes changes to the BIS documents as well as the validation artifacts (VA's).
 ====
 
 == Changes to BIS documents and validation artifacts

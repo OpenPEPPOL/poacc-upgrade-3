@@ -5,7 +5,7 @@
     <Identifier>UNCL4343-T76</Identifier>
     <Version>D.17A</Version>
     <Agency>UN/CEFACT</Agency>
-    <Subset>openPEPPOL</Subset>
+    <Subset>OpenPeppol</Subset>
 
     <Code>
         <Id>AB</Id>

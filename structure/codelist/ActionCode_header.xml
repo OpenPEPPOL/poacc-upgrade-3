@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
-    <Title>Catalogue Action code, header level (openPEPPOL)</Title>
+    <Title>Catalogue Action code, header level (OpenPeppol)</Title>
     <Identifier>ActionCode_header</Identifier>
     <Version>1.0</Version>
-    <Agency>OpenPEPPOL</Agency>
-    <Subset>OpenPEPPOL</Subset>
+    <Agency>OpenPeppol</Agency>
+    <Subset>OpenPeppol</Subset>
 
     <Code>
         <Id>Add</Id>

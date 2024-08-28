@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
-    <Title>Clarification list identifier (openPEPPOL)</Title>
+    <Title>Clarification list identifier (OpenPeppol)</Title>
     <Identifier>ClarificationListID</Identifier>
     <Version>1.0</Version>
-    <Agency>OpenPEPPOL</Agency>
-    <Subset>OpenPEPPOL</Subset>
+    <Agency>OpenPeppol</Agency>
+    <Subset>OpenPeppol</Subset>
 
     <Code>
         <Id>OPStatusAction</Id>

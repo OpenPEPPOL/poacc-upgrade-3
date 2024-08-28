@@ -10,7 +10,7 @@
 :sectnums:
 :last-update-label!:
 
-This document gives a guidance in how to develop schematron artefacts in openPeppol Post Award Coordinating Community.
+This document gives a guidance in how to develop schematron artefacts in OpenPeppol Post Award Community.
 
 NOTE: This document is work in progress and will be further developed. If you have any feedback, please provide them as an issue in https://github.com/OpenPEPPOL/poacc-upgrade-3/issues[GitHub].
 

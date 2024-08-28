@@ -1,5 +1,5 @@
 [[specific-openpeppol-requirements]]
-= Specific OpenPEPPOL requirements
+= Specific OpenPeppol requirements
 
 [cols="1,1,4",options="header"]
 |====
@@ -37,5 +37,5 @@ Swedish requirement.
 |OP-T01-013
 |AdditionalItemProperty: +
 Value quantity and value qualifier 
-|Value quantity and value qualifier has been added to the AdditionalItemProperty element to harmonise with PEPPOL BIS Catalogue.
+|Value quantity and value qualifier has been added to the AdditionalItemProperty element to harmonise with Peppol BIS Catalogue.
 |====

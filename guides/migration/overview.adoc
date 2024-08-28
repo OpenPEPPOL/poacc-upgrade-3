@@ -15,7 +15,7 @@ This migration plan addresses the migration of the Peppol BIS specifications fro
 * BIS 63A Invoice Response
 
 A - Phase In::
-* “Phase in” is defined as the start date for the optional use of Peppol BIS version 3.0 specifications corresponding to the publication date when the new Peppol BIS specifications become available for download at www.peppol.eu.
+* “Phase in” is defined as the start date for the optional use of Peppol BIS version 3.0 specifications corresponding to the publication date when the new Peppol BIS specifications become available for download at peppol.org.
 * The date is set to *{phase-in}*
 
 B - Transition::

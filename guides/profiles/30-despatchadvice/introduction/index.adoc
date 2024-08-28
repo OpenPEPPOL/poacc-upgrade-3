@@ -1,5 +1,5 @@
 [[introduction-to-openpeppol-and-bis]]
-= Introduction to openPeppol and BIS
+= Introduction to OpenPeppol and BIS
 
 This BIS is a result of work within Peppol project and is published as part of Peppol specifications.
 

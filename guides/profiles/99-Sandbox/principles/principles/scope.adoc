@@ -14,4 +14,4 @@ In this BIS, synchronization of shopping cart transaction information covers the
 In case of an update/change, the buyer will simply generate a new product- or service list by repeating the process.
 
 The information sourced with the Punch Out BIS may be used in following business process, such as ordering.
-The order transaction is outside scope of this BIS, we then refer to BISs PEPPOL BIS 3A Order Only or PEPPOL BIS 28A Ordering.
+The order transaction is outside scope of this BIS, we then refer to BISs Peppol BIS 3A Order Only or Peppol BIS 28A Ordering.
