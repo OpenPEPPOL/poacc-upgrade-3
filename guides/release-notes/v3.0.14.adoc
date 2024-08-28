@@ -1,0 +1,20 @@
+= Version 3.0.14
+[horizontal]
+Release date:: November 2024
+
+== BIS documentation
+
+* BIS Catalogue
+** Added and sample file and use case which describes consignment orders and vendor-managed inventory for Order Only and Ordering BIS.
+
+
+== Changes to syntax
+* Order transaction (T01)
+* Order Response transaction (T76)
+* Order Response transaction Advanced (T116)
+* Catalogue transaction (T19)
+
+== Changes to code lists and validation artefacts
+
+
+== Other
