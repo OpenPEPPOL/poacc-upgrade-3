@@ -13,6 +13,7 @@ Release date:: November 2024
 * Order Response transaction (T76)
 * Order Response transaction Advanced (T116)
 * Catalogue transaction (T19)
+* Punchout transaction (T77)
 
 == Changes to code lists and validation artefacts
 
