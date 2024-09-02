@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Transport Handling Unit ID scheme(openPEPPOL)</Title>
+    <Identifier>TransportHandlingUnitIDschemID</Identifier>
+    <Version>1.0</Version>
+    <Agency>OpenPEPPOL</Agency>
+    <Subset>OpenPEPPOL</Subset>
+
+    <Code>
+        <Id>SSCC</Id>
+        <Name>Serial Shipping Container Code</Name>
+        <Description>Code used to identify a logistic unit</Description>
+    </Code>
+    <Code>
+        <Id>ZZZ</Id>
+        <Name>Mutually defined</Name>
+        <Description>Identifier scheme which is mutually defined by the trading partners</Description>
+    </Code>
+
+</CodeList>
