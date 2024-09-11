@@ -14,6 +14,8 @@ Release date:: November 2024
 * Order transaction (T01)
 * Order Response transaction (T76)
 * Order Response transaction Advanced (T116)
+* Despatch Advice (T16)
+** Optional attribute added to indicate the scheme of the Transport Handling Unit identifier. 
 * Catalogue transaction (T19)
 
 == Changes to code lists and validation artefacts
