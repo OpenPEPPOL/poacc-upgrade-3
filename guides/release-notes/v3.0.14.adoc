@@ -7,7 +7,7 @@ Release date:: November 2024
 * BIS Catalogue
 
 * BIS Ordering and Order Only
-** Added and sample file and use case which describes consignment orders and vendor-managed inventory
+** Added sample file and use case which describes consignment orders and vendor-managed inventory
 
 
 == Changes to syntax
