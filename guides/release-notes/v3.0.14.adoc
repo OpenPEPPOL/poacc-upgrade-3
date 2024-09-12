@@ -1,0 +1,34 @@
+= Version 3.0.14
+[horizontal]
+Release date:: November 2024
+
+== BIS documentation
+
+* BIS Catalogue
+
+* BIS Ordering and Order Only
+** Added sample file and use case which describes consignment orders and vendor-managed inventory
+
+
+== Changes to syntax
+* Order transaction (T01)
+** Added optional element ID to AdditionalItemProperty with corresponding update in Use Case 4.
+* Order Change(T114)
+** Added optional element ID to AdditionalItemProperty.
+* Order Agreement(T110) 
+** Added optional element ID to AdditionalItemProperty with corresponding update in Use Case in Appendix A.
+* Order Response transaction (T76)
+* Punch Out(T77)
+** Added optional element ID to AdditionalItemProperty with corresponding update in Use Case in Appendix A.
+* Order Response transaction Advanced (T116)
+* Despatch Advice (T16)
+** Optional attribute added to indicate the scheme of the Transport Handling Unit identifier. 
+** Added optional element ID to AdditionalItemProperty .
+* Catalogue transaction (T19)
+** Added optional element ID to AdditionalItemProperty with corresponding update in Use Case 5.
+
+== Changes to code lists and validation artefacts
+* Added new codelist with code values SSCC (Serial Shipping Container Code) and ZZZ (Mutually defined) to the optional attribute that indicates the type/scheme for Transport handling unit identifier (in Despatch Advice)
+
+== Other
+

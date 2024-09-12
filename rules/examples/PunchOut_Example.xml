@@ -161,6 +161,7 @@
 				</cac:TaxScheme>
 			</cac:ClassifiedTaxCategory>
 			<cac:AdditionalItemProperty>
+				<cbc:ID schemeDataURI="sdfdf" schemeID="ISO22057" schemeVersionID="2022">77e416eb-a363-4258-a04e-171d843a6460</cbc:ID>
 				<cbc:Name>Paper weight in grams</cbc:Name>
 				<cbc:Value>18</cbc:Value>
 			</cac:AdditionalItemProperty>
