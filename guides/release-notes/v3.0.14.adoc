@@ -9,16 +9,14 @@ Release date:: November 2024
 * BIS Ordering and Order Only
 ** Added sample file and use case which describes consignment orders and vendor-managed inventory
 
-* BIS Despatch Advice
-** Optional party Delivery Party added to align with Order.
-
 == Changes to syntax
 * Order transaction (T01)
 * Order Response transaction (T76)
 * Order Response transaction Advanced (T116)
 * Despatch Advice (T16)
 ** Optional attribute added to indicate the scheme of the Transport Handling Unit identifier. 
-** Optional element group Delivery Party added.
+** Optional party Delivery Party added to align with Order.
+
 * Catalogue transaction (T19)
 
 == Changes to code lists and validation artefacts

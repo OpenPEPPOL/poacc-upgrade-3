@@ -1591,6 +1591,15 @@
 						<Name>Handling unit identifier</Name>
 						<Description>Identifies the transport handling unit.</Description>
 						<Reference type="BUSINESS_TERM">tir16-061</Reference>
+						<Value type="EXAMPLE">173500538500000016</Value>
+						<Attribute usage="optional">
+							<Term>schemeID</Term>
+							<Name>Scheme identifier</Name>
+							<Description>Scheme identifier for the handling unit identifier</Description>
+							<Reference type="CODE_LIST">TransportHandlingUnitIDschemID</Reference>
+							<Value type="EXAMPLE">SSCC</Value>
+						</Attribute>
+
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:TransportHandlingUnitTypeCode</Term>

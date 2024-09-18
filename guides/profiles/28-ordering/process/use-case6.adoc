@@ -1,0 +1,39 @@
+[[use-case-6-consignment-order]]
+= Use case 6 – Vendor-managed inventory with consignment ordering
+
+This use case describes a scenario where the buyer has an on-premise inventory that is regularly refilled and managed by the seller. When items are withdrawn from the inventory, a consignment order is automatically sent to the seller.
+ 
+[cols="1s,5",options="header"]
+|====
+|Use Case number
+|6
+
+|Use Case Name
+|Vendor-managed inventory with consignment ordering
+
+|Use Case Description
+|A hospital is using a vendor-managed inventory. A consigment order is issued by they buyer when items are withdrawn.
+
+|Parties involved
+|Buyer +
+Seller +
+
+
+|Assumptions
+|The buyer has an inventory which is managed by the seller. The seller keeps track on available quantity and replenish when necessary. +
+
+|The flow
+|The buyer withdraws 10 boxes of surgical gloves from the inventory. +
+The buyer registers the purchase by scanning the barcodes of the boxes. +
+A consignment order is automatically issued (with type code 227) and is sent to the seller. +
+The seller receives the order and sends an order response with an acknowledgment. +
+The seller updates the record of available quantity. 
+
+|Result
+|The buyer uses the withdrawn items. +
+The seller has an updated record of available quantity. +
+If the invoice has an order reference, the invoice can be matched automatically.
+
+|XML example file
+|See Appendix A for a sample file illustrating Use Case 6 in the download section on the main page.
+|====
