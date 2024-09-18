@@ -12,13 +12,20 @@ Release date:: November 2024
 
 == Changes to syntax
 * Order transaction (T01)
+** Added optional element ID to AdditionalItemProperty with corresponding update in Use Case 4.
+* Order Change(T114)
+** Added optional element ID to AdditionalItemProperty.
+* Order Agreement(T110) 
+** Added optional element ID to AdditionalItemProperty with corresponding update in Use Case in Appendix A.
 * Order Response transaction (T76)
+* Punch Out(T77)
+** Added optional element ID to AdditionalItemProperty with corresponding update in Use Case in Appendix A.
 * Order Response transaction Advanced (T116)
 * Despatch Advice (T16)
 ** Optional attribute added to indicate the scheme of the Transport Handling Unit identifier. 
-** Optional party Delivery Party added to align with Order.
-
+** Added optional element ID to AdditionalItemProperty .
 * Catalogue transaction (T19)
+** Added optional element ID to AdditionalItemProperty with corresponding update in Use Case 5.
 * Punchout transaction (T77)
     Add ”cac:DocumentReference” to Certificate.
     this may contain vital information regarding the label and has a simular function as in Catalogue.
