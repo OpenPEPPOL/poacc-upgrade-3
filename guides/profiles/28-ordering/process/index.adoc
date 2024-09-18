@@ -59,4 +59,6 @@ include::use-case4.adoc[]
 
 include::use-case5.adoc[]
 
+include::use-case6.adoc[]
+
 :leveloffset: -1
