@@ -2,7 +2,7 @@
 = Specific OpenPeppol requirements
 
 [cols="1,2,3",options="header"]
-.Specific openPeppol requirements
+.Specific OpenPeppol requirements
 |====
 |ID:
 |Business term:

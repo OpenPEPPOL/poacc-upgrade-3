@@ -5,7 +5,7 @@
     <Identifier>UNCL4343-T111</Identifier>
     <Version>D.17A</Version>
     <Agency>UN/CEFACT</Agency>
-    <Subset>openPEPPOL-InvoiceResponse</Subset>
+    <Subset>OpenPeppol-InvoiceResponse</Subset>
     
     <Code>
         <Id>AB</Id>

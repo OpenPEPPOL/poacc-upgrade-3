@@ -5,7 +5,7 @@
     <Identifier>GS17009</Identifier>
     <Version>1.0</Version>
     <Agency>GS1</Agency>
-    <Subset>OpenPEPPOL</Subset>
+    <Subset>OpenPeppol</Subset>
 
     <Code>
         <Id>CU</Id>

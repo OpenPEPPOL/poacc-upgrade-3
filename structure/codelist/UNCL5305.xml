@@ -5,7 +5,7 @@
     <Identifier>UNCL5305</Identifier>
     <Version>D.17A</Version>
     <Agency>UN/CEFACT</Agency>
-    <Subset>OpenPEPPOL</Subset>
+    <Subset>OpenPeppol</Subset>
 
     <Code>
         <Id>AE</Id>

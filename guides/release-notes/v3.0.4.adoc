@@ -4,8 +4,8 @@ Release date:: 2020-05-01
 
 == Changes to BIS document
 * The code example in section 6.6 (Classification) is updated from the temporary code ”MC” to the code “TST” (The UNSPSC commodity classification system) from code list UCL7143. [POACC-274]
-** for PEPPOL BIS Catalogue without response 3
-** for PEPPOL BIS Catalogue only 3
+** for Peppol BIS Catalogue without response 3
+** for Peppol BIS Catalogue only 3
 * Following BIS generalized so that they use term TAX instead of VAT. Enables using them for other similar taxes like GST. Catalogue, Catalogue only, Order, Ordering, Order Agreement, Punch Out, Invoice Response. [POACC-265]
 ** Text in guidelines generalized from VAT to GST
 ** Element names and descriptions that had VAT in them generalized as TAX

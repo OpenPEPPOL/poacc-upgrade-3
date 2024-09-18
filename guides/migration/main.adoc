@@ -2,7 +2,7 @@ include::../shared/links.adoc[]
 include::settings.adoc[]
 
 = Migration plan
-Draft, OpenPeppol AISBL, Post-Award Coordinating Community
+Draft, OpenPeppol AISBL, Post-Award Community
 :doctype: book
 :icons: font
 :toc: left

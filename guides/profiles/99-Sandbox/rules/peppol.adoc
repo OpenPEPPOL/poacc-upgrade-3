@@ -1,5 +1,5 @@
 [[peppol-specific-rules]]
-== PEPPOL Specific rules
+== Peppol Specific rules
 
 [cols="1s,4,1",options="header"]
 |====
