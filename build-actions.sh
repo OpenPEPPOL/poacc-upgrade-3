@@ -30,7 +30,6 @@ rm -rf $PROJECT/target/site/files/PEPPOLBIS-Examples.zip
 cd $PROJECT/target
 zip -r site/files/PEPPOLBIS-Upgrade-Schematron.zip schematron/
 
-# Example files
 cd $PROJECT
 zip -r target/site/files/PEPPOLBIS-Examples.zip rules/examples 
 
