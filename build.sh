@@ -25,11 +25,11 @@ done
 docker run --rm -i -v $PROJECT:/src alpine:3.6 chown -R $(id -g $USER).$(id -g $USER) /src/target
 
 sudo rm -rf $PROJECT/target/site/files/PEPPOLBIS-Upgrade-Schematron.zip
-zip -r $PROJECT/target/site/files/PEPPOLBIS-Upgrade-Schematron.zip target/schematron
+sudo zip -r $PROJECT/target/site/files/PEPPOLBIS-Upgrade-Schematron.zip target/schematron
 
 # Example files
-rm -rf $PROJECT/target/site/files/PEPPOLBIS-Examples.zip
-zip -r $PROJECT/target/site/files/PEPPOLBIS-Examples.zip $PROJECT/rules/examples 
+sudo rm -rf $PROJECT/target/site/files/PEPPOLBIS-Examples.zip
+sudo zip -r $PROJECT/target/site/files/PEPPOLBIS-Examples.zip $PROJECT/rules/examples 
 
 # Guides
 docker run --rm -i -v $PROJECT:/documents -v $PROJECT/target:/target difi/asciidoctor
