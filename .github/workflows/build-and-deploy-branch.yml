@@ -10,6 +10,9 @@ jobs:
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
+      
+      - name: Install zip
+        run: apt install -y zip
 
       - name: Build Spec
         run: bash ./build.sh
