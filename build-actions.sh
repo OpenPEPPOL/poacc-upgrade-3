@@ -24,14 +24,14 @@ done
 # Fix ownership
 docker run --rm -i -v $PROJECT:/src alpine:3.6 chown -R $(id -g $USER).$(id -g $USER) /src/target
 
-rm -rf $PROJECT/target/site/files/PEPPOLBIS-Upgrade-Schematron.zip
-rm -rf $PROJECT/target/site/files/PEPPOLBIS-Examples.zip
+sudo rm -rf $PROJECT/target/site/files/PEPPOLBIS-Upgrade-Schematron.zip
+sudo rm -rf $PROJECT/target/site/files/PEPPOLBIS-Examples.zip
 
 cd $PROJECT/target
-zip -r site/files/PEPPOLBIS-Upgrade-Schematron.zip schematron/
+sudo zip -r site/files/PEPPOLBIS-Upgrade-Schematron.zip schematron/
 
 cd $PROJECT
-zip -r target/site/files/PEPPOLBIS-Examples.zip rules/examples 
+sudo zip -r target/site/files/PEPPOLBIS-Examples.zip rules/examples 
 
 # Guides
 docker run --rm -i -v $PROJECT:/documents -v $PROJECT/target:/target difi/asciidoctor
