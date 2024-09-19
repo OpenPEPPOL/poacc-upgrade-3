@@ -10,9 +10,9 @@ jobs:
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
-
+      
       - name: Build Spec
-        run: bash ./build.sh
+        run: bash ./build-actions.sh
 
       - name: Deploy on S3
         env:
