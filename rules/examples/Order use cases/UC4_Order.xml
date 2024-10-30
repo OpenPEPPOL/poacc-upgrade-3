@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Order xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2"
-    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+  xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2"
+  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+  xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
   <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:order:3</cbc:CustomizationID>
   <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:order_only:3</cbc:ProfileID>
   <cbc:ID>5</cbc:ID>
   <cbc:IssueDate>2013-07-01</cbc:IssueDate>
   <cbc:IssueTime>05:10:10</cbc:IssueTime>
   <cbc:Note>Notes regarding the order</cbc:Note>
-  <cbc:DocumentCurrencyCode  listID="ISO4217">EUR</cbc:DocumentCurrencyCode>
+  <cbc:DocumentCurrencyCode listID="ISO4217">EUR</cbc:DocumentCurrencyCode>
   <cbc:AccountingCost>MAFO</cbc:AccountingCost>
   <cac:ValidityPeriod>
     <cbc:EndDate>2013-07-30</cbc:EndDate>
@@ -27,7 +27,7 @@
     <cbc:ID>100</cbc:ID>
     <cbc:DocumentType>Blueprint</cbc:DocumentType>
     <cac:Attachment>
-          <cac:ExternalReference>
+      <cac:ExternalReference>
         <cbc:URI>http://upload.wikimedia.org/wikipedia/commons/1/10/LaBelle_Blueprint.jpg</cbc:URI>
       </cac:ExternalReference>
     </cac:Attachment>
@@ -45,7 +45,7 @@
         <cbc:Name>City Hospital</cbc:Name>
       </cac:PartyName>
       <cac:PostalAddress>
-		<cbc:StreetName>Main street 4</cbc:StreetName>
+        <cbc:StreetName>Main street 4</cbc:StreetName>
         <cbc:AdditionalStreetName>Back door</cbc:AdditionalStreetName>
         <cbc:CityName>Eurocity</cbc:CityName>
         <cbc:PostalZone>11155</cbc:PostalZone>
@@ -96,7 +96,7 @@
       <cac:PartyLegalEntity>
         <cbc:RegistrationName>Cod Liver Oil Limited</cbc:RegistrationName>
       </cac:PartyLegalEntity>
-       <cac:Contact>
+      <cac:Contact>
         <cbc:Name>Öystein</cbc:Name>
         <cbc:Telephone>+47555444333</cbc:Telephone>
         <cbc:ElectronicMail>oystein@codliveroil.no</cbc:ElectronicMail>
@@ -196,7 +196,7 @@
     <cbc:AllowanceChargeReason>Agreed discount</cbc:AllowanceChargeReason>
     <cbc:Amount currencyID="EUR">10</cbc:Amount>
   </cac:AllowanceCharge>
-    <cac:TaxTotal>
+  <cac:TaxTotal>
     <cbc:TaxAmount currencyID="EUR">5</cbc:TaxAmount>
   </cac:TaxTotal>
   <cac:AnticipatedMonetaryTotal>
@@ -223,8 +223,8 @@
         </cac:RequestedDeliveryPeriod>
       </cac:Delivery>
       <cac:OriginatorParty>
-       <cac:PartyIdentification>
-         <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+        <cac:PartyIdentification>
+          <cbc:ID schemeID="0088">7300010000001</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
           <cbc:Name>Martin</cbc:Name>
@@ -252,7 +252,7 @@
           <cbc:ItemClassificationCode listID="MP">76455</cbc:ItemClassificationCode>
         </cac:CommodityClassification>
         <cac:ClassifiedTaxCategory>
-          <cbc:ID  schemeID="UNCL5305">S</cbc:ID>
+          <cbc:ID schemeID="UNCL5305">S</cbc:ID>
           <cbc:Percent>10</cbc:Percent>
           <cac:TaxScheme>
             <cbc:ID>VAT</cbc:ID>
@@ -263,7 +263,9 @@
           <cbc:Value>Left-handed</cbc:Value>
         </cac:AdditionalItemProperty>
         <cac:AdditionalItemProperty>
-		<cbc:ID schemeDataURI="sdfdf" schemeID="ISO22057" schemeVersionID="2022">77e416eb-a363-4258-a04e-171d843a6460</cbc:ID>
+          <cbc:ID
+            schemeDataURI="https://define.cobuilder.no/77e416eb-a363-4258-a04e-171d843a6460/2022/"
+            schemeID="ISO22057" schemeVersionID="2022">77e416eb-a363-4258-a04e-171d843a6460</cbc:ID>
           <cbc:Name>Purpose</cbc:Name>
           <cbc:Value>Snow</cbc:Value>
         </cac:AdditionalItemProperty>
