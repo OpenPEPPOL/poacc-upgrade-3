@@ -7,10 +7,8 @@ Release date:: November 2024
 * BIS Ordering and Order Only
 ** Added sample file and use case which describes consignment orders and vendor-managed inventory
 
-== Changes to Compliance BIS document
-* Added new compliance on SBDH and BIS3 payload
-** The value of the SBDH element "Sender/Identifier" MUST be equivalent to the value in the sender party’s "Party/EndpointID" element and its "schemeID" attribute.
-** The value of the SBDH element "Receiver/Identifier" MUST be equivalent to the value in the receiver’s party "Party/EndpointID" element and its "schemeID" attribute
+== Changes to "BIS compliance" document
+* Added new compliance rules on how to use sender/receiver identifiers when enveloping a BIS3 message in Peppol Business Message Envelope (SBDH) nd its "schemeID" attribute
 
 == Changes to syntax
 * Order transaction (T01)
