@@ -8,7 +8,7 @@ Release date:: November 2024
 ** Added sample file and use case which describes consignment orders and vendor-managed inventory
 
 == Changes to "BIS compliance" document
-* Added new compliance rules on how to use sender/receiver identifiers when enveloping a BIS3 message in Peppol Business Message Envelope (SBDH) nd its "schemeID" attribute
+* Added new compliance rules on how to use sender/receiver identifiers when enveloping a BIS3 message in Peppol Business Message Envelope (SBDH) 
 
 == Changes to syntax
 * Order transaction (T01)
