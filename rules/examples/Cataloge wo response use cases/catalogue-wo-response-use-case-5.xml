@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-		   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-		   xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+	xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:catalogue:3</cbc:CustomizationID>
 	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:catalogue_wo_response:3</cbc:ProfileID>
 	<cbc:ID>1387</cbc:ID>
@@ -204,7 +204,8 @@
 			<cac:ItemSpecificationDocumentReference>
 				<cbc:ID>12345</cbc:ID>
 				<cac:Attachment>
-					<cbc:EmbeddedDocumentBinaryObject mimeCode="image/png" filename="image1.png">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
+					<cbc:EmbeddedDocumentBinaryObject mimeCode="image/png" filename="image1.png">
+						UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
 					<cac:ExternalReference>
 						<cbc:URI>http://www.supplier.com/image1.png</cbc:URI>
 					</cac:ExternalReference>
@@ -214,7 +215,8 @@
 				<cbc:IdentificationCode>NO</cbc:IdentificationCode>
 			</cac:OriginCountry>
 			<cac:CommodityClassification>
-				<cbc:ItemClassificationCode listID="MP" listVersionID="19.0501" name="Office furniture">20101601</cbc:ItemClassificationCode>
+				<cbc:ItemClassificationCode listID="MP" listVersionID="19.0501"
+					name="Office furniture">20101601</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
 			<cac:TransactionConditions>
 				<cbc:ActionCode>CT</cbc:ActionCode>
@@ -299,7 +301,9 @@
 				</cac:TaxScheme>
 			</cac:ClassifiedTaxCategory>
 			<cac:AdditionalItemProperty>
-				<cbc:ID schemeDataURI="sdfdf" schemeID="ISO22057" schemeVersionID="2022">77e416eb-a363-4258-a04e-171d843a6460</cbc:ID>
+				<cbc:ID
+					schemeDataURI="https://define.cobuilder.no/77e416eb-a363-4258-a04e-171d843a6460/2022/"
+					schemeID="ISO22057" schemeVersionID="2022">77e416eb-a363-4258-a04e-171d843a6460</cbc:ID>
 				<cbc:Name>Paper weight in grams</cbc:Name>
 				<cbc:Value>18</cbc:Value>
 			</cac:AdditionalItemProperty>
@@ -307,7 +311,7 @@
 	</cac:CatalogueLine>
 	<cac:CatalogueLine><!-- This line handles an item with a deposit -->
 		<cbc:ID>3</cbc:ID>
-		<cac:RequiredRelatedItem> 
+		<cac:RequiredRelatedItem>
 			<cbc:ID>1234</cbc:ID>
 			<cbc:Quantity unitCode="EA">1</cbc:Quantity>
 		</cac:RequiredRelatedItem>

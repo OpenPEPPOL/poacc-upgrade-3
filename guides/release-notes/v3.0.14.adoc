@@ -7,10 +7,8 @@ Release date:: November 2024
 * BIS Ordering and Order Only
 ** Added sample file and use case which describes consignment orders and vendor-managed inventory
 
-== Changes to Compliance BIS document
-* Added new compliance on SBDH and BIS3 payload
-** The value of the SBDH element "Sender/Identifier" MUST be equivalent to the value in the sender party’s "Party/EndpointID" element and its "schemeID" attribute.
-** The value of the SBDH element "Receiver/Identifier" MUST be equivalent to the value in the receiver’s party "Party/EndpointID" element and its "schemeID" attribute
+== Changes to "BIS compliance" document
+* Added new compliance rules on how to use sender/receiver identifiers when enveloping a BIS3 message in Peppol Business Message Envelope (SBDH) 
 
 == Changes to syntax
 * Order transaction (T01)
@@ -36,5 +34,6 @@ Release date:: November 2024
 
 == Changes to code lists and validation artefacts
 * Added new codelist with code values SSCC (Serial Shipping Container Code) to the optional attribute that indicates the type/scheme for Transport handling unit identifier (in Despatch Advice)
+* Changes to codelists 7143, 8273 and UNECERec20-11e
 
 == Other
