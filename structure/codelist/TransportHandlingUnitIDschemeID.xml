@@ -12,10 +12,4 @@
         <Name>Serial Shipping Container Code</Name>
         <Description>Code used to identify a logistic unit</Description>
     </Code>
-    <Code>
-        <Id>ZZZ</Id>
-        <Name>Mutually defined</Name>
-        <Description>Identifier scheme which is mutually defined by the trading partners</Description>
-    </Code>
-
 </CodeList>

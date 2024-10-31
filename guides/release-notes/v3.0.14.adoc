@@ -33,7 +33,7 @@ Release date:: November 2024
 *** this may contain vital information regarding the label and has a similar function as in Catalogue.
 
 == Changes to code lists and validation artefacts
-* Added new codelist with code values SSCC (Serial Shipping Container Code) and ZZZ (Mutually defined) to the optional attribute that indicates the type/scheme for Transport handling unit identifier (in Despatch Advice)
+* Added new codelist with code values SSCC (Serial Shipping Container Code) to the optional attribute that indicates the type/scheme for Transport handling unit identifier (in Despatch Advice)
 * Changes to codelists 7143, 8273 and UNECERec20-11e
 
 == Other
