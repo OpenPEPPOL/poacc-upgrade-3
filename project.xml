@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
-    <Name>Peppol BIS version 3 - May 2024 Release</Name>
+    <Name>Peppol BIS version 3 - November 2024 Release - Member Review</Name>
     <!-- Introduction -->
     <Documentation path="">INTRODUCTION</Documentation>
     <Documentation path="compliance/">BIS compliance</Documentation>
@@ -26,7 +26,7 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-order.xml</Path>
-        <Title>Peppol Order transaction 3.4 (T01)</Title>
+        <Title>Peppol Order transaction 3.5 (T01)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
@@ -36,12 +36,12 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-orderagreement.xml</Path>
-        <Title>Peppol Order Agreement transaction 3.1 (T110)</Title>
+        <Title>Peppol Order Agreement transaction 3.2 (T110)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-order-change.xml</Path>
-        <Title>Peppol Order Change transaction 3.0 (T114)</Title>
+        <Title>Peppol Order Change transaction 3.1 (T114)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
@@ -56,7 +56,7 @@
         <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-catalogue.xml</Path>
-        <Title>Peppol Catalogue transaction 3.2 (T19)</Title>
+        <Title>Peppol Catalogue transaction 3.3 (T19)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
@@ -66,12 +66,12 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-despatch-advice.xml</Path>
-        <Title>Peppol Despatch Advice transaction 3.2 (T16)</Title>
+        <Title>Peppol Despatch Advice transaction 3.3 (T16)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-shoppingcart.xml</Path>
-        <Title>Peppol Punch Out transaction 3.2 (T77)</Title>
+        <Title>Peppol Punch Out transaction 3.3 (T77)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
@@ -94,7 +94,7 @@
         <Identifier>T01</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T01.sch</Path>
-        <Title>Business rules for Peppol Order transaction 3.4 </Title>
+        <Title>Business rules for Peppol Order transaction 3.5 </Title>
     </Resource>
 	<Resource>
         <Identifier>T76</Identifier>
@@ -106,13 +106,13 @@
         <Identifier>T110</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T110.sch</Path>
-        <Title>Business rules for Peppol Order Agreement transaction 3.1</Title>
+        <Title>Business rules for Peppol Order Agreement transaction 3.2</Title>
     </Resource>
 	<Resource>
         <Identifier>T19</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T19.sch</Path>
-        <Title>Business rules for Peppol Catalogue transaction 3.2</Title>
+        <Title>Business rules for Peppol Catalogue transaction 3.3</Title>
     </Resource>
 	<Resource>
         <Identifier>T58</Identifier>
@@ -124,14 +124,14 @@
         <Identifier>T16</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T16.sch</Path>
-        <Title>Business rules for Peppol Despatch Advice transaction 3.2</Title>
+        <Title>Business rules for Peppol Despatch Advice transaction 3.3</Title>
     </Resource>
  
     <Resource>
         <Identifier>T77</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T77.sch</Path>
-        <Title>Business rules for Peppol Punch Out transaction 3.2</Title>
+        <Title>Business rules for Peppol Punch Out transaction 3.3</Title>
     </Resource>
   
     <Resource>
@@ -151,7 +151,7 @@
         <Identifier>T114</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/PEPPOL-M-T114.sch</Path>
-        <Title>Business rules for Peppol Order Change transaction 3.0</Title>
+        <Title>Business rules for Peppol Order Change transaction 3.1</Title>
     </Resource>
     <Resource>
         <Identifier>T115</Identifier>
@@ -302,6 +302,12 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/StatusReason.xml</Path>
     </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/TransportHandlingUnitIDschemeID.xml</Path>
+    </Resource>
+	
+
     <!-- Files -->
     <Resource>
         <Type>native:File</Type>

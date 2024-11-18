@@ -982,6 +982,150 @@
 					</Element>
 				</Element>
 				<Element cardinality="0..1">
+					<Term>cac:DeliveryParty</Term>
+					<Name>Delivery party </Name>
+					<Element cardinality="0..1">
+						<Term>cac:PartyIdentification</Term>
+						<Name>Party identification</Name>
+						<Description>Identification of the delivery party. The party to whom the goods are delivered</Description>
+						<Element>
+							<Term>cbc:ID</Term>
+							<Name>Delivery party identifier</Name>
+							<Description>In this BIS: The identifier of the party that should receive the
+								ordered items</Description>
+							<Reference type="BUSINESS_TERM">tir01-101</Reference>
+							<Attribute usage="Optional">
+								<Term>schemeID</Term>
+								<Name>Deliver party registration identifier identification scheme
+									identifier</Name>
+								<Description>The identification scheme identifier of the deliverparty
+									identifier.</Description>
+								<Reference type="CODE_LIST">ICD</Reference>
+								<Value type="EXAMPLE">0002</Value>
+							</Attribute>
+							<Value type="EXAMPLE">987654321</Value>
+						</Element>
+					</Element>
+					<Element>
+						<Term>cac:PartyName</Term>
+						<Name>Party name</Name>
+						<Element>
+							<Term>cbc:Name</Term>
+							<Name>Delivery party name</Name>
+							<Description>In this
+								BIS: The name of the party that should receive the delivery</Description>
+							<DataType>Text</DataType>
+							<Reference type="BUSINESS_TERM">tir01-102</Reference>
+							<Value type="EXAMPLE">Surgery department</Value>
+						</Element>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cac:PostalAddress</Term>
+						<Name>Final Delivery address</Name>
+						<Description>The final address for the delivery</Description>
+						<Element cardinality="0..1">
+							<Term>cbc:StreetName</Term>
+							<Name>Address line 1</Name>
+							<Description>The main address line in a postal address usually the street
+									name and number.</Description>
+							<DataType>Text</DataType>
+							<Reference type="BUSINESS_TERM">tir01-p029</Reference>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:AdditionalStreetName</Term>
+							<Name>Address line 2</Name>
+							<Description>An additional address line in a postal address that can be used
+									to give further details supplementing the main line. Common use are
+									secondary house number in a complex or in a building.</Description>
+							<DataType>Text</DataType>
+							<Reference type="BUSINESS_TERM">tir01-p030</Reference>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:CityName</Term>
+							<Name>City</Name>
+							<Description>The common name of the city where the postal address is. The
+									name is written in full rather than as a code.</Description>
+							<DataType>Text</DataType>
+							<Reference type="BUSINESS_TERM">tir01-p031</Reference>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:PostalZone</Term>
+							<Name>Post code</Name>
+							<Description>The identifier for an addressable group of properties according
+									to the relevant national postal service, such as a ZIP code or Post
+									Code.</Description>
+							<DataType>Text</DataType>
+							<Reference type="BUSINESS_TERM">tir01-p032</Reference>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:CountrySubentity</Term>
+							<Name>Country subdivision</Name>
+							<Description>For specifying a region, county, state, province etc. within a
+									country by using text.</Description>
+							<DataType>Text</DataType>
+							<Reference type="BUSINESS_TERM">tir01-p033</Reference>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cac:AddressLine</Term>
+							<Name>Address line</Name>
+							<Element>
+								<Term>cbc:Line</Term>
+								<Name>Address line 3</Name>
+								<Description>An additional address line in an address that can be used
+										to give further details supplementing the main line.</Description>
+								<DataType>Text</DataType>
+								<Reference type="BUSINESS_TERM">tir01-p034</Reference>
+								<Value type="EXAMPLE">Gate 34</Value>
+							</Element>
+						</Element>
+						<Element>
+							<Term>cac:Country</Term>
+							<Name>Country</Name>
+							<Element>
+								<Term>cbc:IdentificationCode</Term>
+								<Name>Country code</Name>
+								<Description>A code that identifies the country.The lists of valid
+										countries are registered with the ISO 3166-1 Maintenance agency,
+										"Codes for the representation of names of countries and their
+										subdivisions". Codes must be according to the alpha-2
+										representation.</Description>
+								<DataType>Code</DataType>
+								<Reference type="BUSINESS_TERM">tir01-p035</Reference>
+								<Reference type="CODE_LIST">ISO3166</Reference>
+								<Value type="EXAMPLE">NL</Value>
+							</Element>
+						</Element>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cac:Contact</Term>
+						<Name>Contact information</Name>
+						<Description>Contact information for the delivery party </Description>
+						<Element cardinality="0..1">
+							<Term>cbc:Name</Term>
+							<Name>Contact person name</Name>
+							<Description>The name of the contact person.</Description>
+							<DataType>Text</DataType>
+							<Reference type="BUSINESS_TERM">tir01-103</Reference>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:Telephone</Term>
+							<Name>Contact telephone number</Name>
+							<Description>A phone number for the contact person. If the person has a
+								direct number, this is that number.</Description>
+							<DataType>Text</DataType>
+							<Reference type="BUSINESS_TERM">tir01-104</Reference>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:ElectronicMail</Term>
+							<Name>Contact email address</Name>
+							<Description>The e-mail address for the contact person. If the person has a
+							direct e-mail this is that email.</Description>
+							<DataType>Text</DataType>
+							<Reference type="BUSINESS_TERM">tir01-106</Reference>
+						</Element>
+					</Element>				
+				</Element>
+				<Element cardinality="0..1">
 					<Term>cac:Despatch</Term>
 					<Name>Actual or expected despatch period</Name>
 					<Element cardinality="0..1">
@@ -1327,6 +1471,30 @@
 					<Name>Additional item property information</Name>
 					<Description>A group of business terms providing information about properties of
 						the goods and services invoiced.</Description>
+					<Element cardinality="0..1">
+							<Term>cbc:ID</Term>
+							<Name>ID</Name>
+							<Description>ID of the property if assigned by an Agency</Description>
+							<Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
+							<Element cardinality="O">
+								<Term>@schemeDataURI</Term>
+								<Name>Scheme Data URI</Name>
+								<Description>Scheme Data URI</Description>
+								<Value type="EXAMPLE">sdfdf</Value>
+							</Element>
+							<Element cardinality="O">
+								<Term>@schemeID</Term>
+								<Name>Scheme identifier</Name>
+								<Description>Scheme identifier</Description>
+								<Value type="EXAMPLE">ISO22057</Value>
+							</Element>
+							<Element cardinality="O">
+								<Term>@schemeVersionID</Term>
+								<Name>Scheme version identifier</Name>
+								<Description>Scheme version identifier</Description>
+								<Value type="EXAMPLE">2022</Value>
+							</Element>
+					</Element>
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Item property name</Name>
@@ -1447,6 +1615,15 @@
 						<Name>Handling unit identifier</Name>
 						<Description>Identifies the transport handling unit.</Description>
 						<Reference type="BUSINESS_TERM">tir16-061</Reference>
+						<Value type="EXAMPLE">173500538500000016</Value>
+						<Attribute usage="optional">
+							<Term>schemeID</Term>
+							<Name>Scheme identifier</Name>
+							<Description>Scheme identifier for the handling unit identifier</Description>
+							<Reference type="CODE_LIST">TransportHandlingUnitIDschemID</Reference>
+							<Value type="EXAMPLE">SSCC</Value>
+						</Attribute>
+
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:TransportHandlingUnitTypeCode</Term>

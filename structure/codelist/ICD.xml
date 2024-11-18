@@ -1044,40 +1044,37 @@ Classes moyennes et Energie</Description>
         <Name>GS1 identification keys</Name>
         <Description>Intended Purpose/App. Area: GS1 identification keys and key qualifiers may be used by an information system to refer unambiguously to an entity such as a trade item, logistics unit, physical location, document, or service relationship. Issuing agency: GS1, a global organization.</Description>
     </Code>
-		<Code>
+	<Code>
         <Id>0210</Id>
         <Name>CODICE FISCALE</Name>
         <Description>Intended Purpose/App. Area: Electronic Invoicing and e-procurement. Issuing agency: Agenzia delle Entrate, Italy.</Description>
     </Code>
-		<Code>
+	<Code>
         <Id>0211</Id>
         <Name>PARTITA IVA</Name>
         <Description>Intended Purpose/App. Area: Electronic Invoicing and e-procurement. Issuing agency: Agenzia delle Entrate, Italy.</Description>
     </Code>
-		<Code>
+	<Code>
         <Id>0212</Id>
         <Name>Finnish Organization Identifier</Name>
         <Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: State Treasury of Finland / Valtiokonttor.</Description>
     </Code>
-		<Code>
+	<Code>
         <Id>0213</Id>
         <Name>Finnish Organization Value Add Tax Identifier</Name>
         <Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: State Treasury of Finland / Valtiokonttor.</Description>
     </Code>
-       
-		<Code>
+	<Code>
         <Id>0214</Id>
         <Name>Tradeplace TradePI Standard</Name>
         <Description>Intended Purpose/App. Area: Tradeplace is an independent company, set up as a joint venture of several Home Appliance- and Consumer Electronics manufacturers. Tradeplace has launched their TradePI (Product Information) initiative for home appliances, consumer electronics, DIY and affiliated industries that are connected to Tradeplace. The initiative introduces an enhanced standard structure for product information. The TradePI Standard helps retailers to take full advantage of electronic communication and data processing, as the Internet and ICT are fundamentally changing how products and services are offered, bought, and sold. Issuing agency: Tradeplace B.V., The Netherlands.</Description>
     </Code>
-    
-		<Code>
+	<Code>
         <Id>0215</Id>
         <Name>Net service ID</Name>
         <Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: Tieto Finland Oy, FINLAND.</Description>
     </Code>
-    
-		<Code>
+	<Code>
         <Id>0216</Id>
         <Name>OVTcode</Name>
         <Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: TIEKE- Tietoyhteiskunnan kehittamiskeskus, FINLAND.</Description>
@@ -1101,7 +1098,7 @@ Classes moyennes et Energie</Description>
         <Id>0220</Id>
         <Name>The Register of Natural Persons (Latvia)</Name>
         <Description>Intended Purpose/App. Area: The Register combines the functionality of the current information system of the Population Register and Civil Register. The Register is a uniform state registration and recording system of information and natural persons that provides identification of natural persons, data processing and accumulation, and includes and updates information about civil entries. The data included in the Register is used for statistical surveys, tax forecasting and calculation, organizing of elections and other processes of national importance. When entering information regarding a person in the Register, the Office of Citizenship and Migration Affairs of the Republic of Latvia shall assign an automatically generated individual personal identity number thereto. Issuing agency: Office of Citizenship and Migration Affairs of the Republic of Latvia.</Description>
-    </Code>
+    </Code>  
 	<Code>
         <Id>0221</Id>
         <Name>The registered number of the qualified invoice issuer</Name>
@@ -1151,6 +1148,45 @@ Classes moyennes et Energie</Description>
         <Id>0230</Id>
         <Name>National e-Invoicing Framework</Name>
         <Description>Intended Purpose/App. Area: Identifier for  organizations. Issuing agency: Malaysia Digital Economy Corporation Sdn Bhd (MDEC)</Description>
+    </Code> 
+	<Code>
+        <Id>0231</Id>
+        <Name>Single taxable company (France)</Name>
+        <Description>'Intended Purpose/App. Area: Provide identifiers to companies in a single taxable company regime. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)'</Description>
+    </Code> 	
+	<Code>
+        <Id>0232</Id>
+        <Name>NOBB product number</Name>
+        <Description>Intended Purpose/App. Area:  . Issuing agency:  '</Description>
     </Code>
-    
+	<Code>
+        <Id>0233</Id>
+        <Name>Name not known</Name>
+        <Description>Description not known</Description>
+    </Code>
+	<Code>
+        <Id>0234</Id>
+        <Name>Toimitusosoite ID</Name>
+        <Description>'Intended Purpose/App. Area: Identification scheme is used to identify delivery locations of the Finnish government accounting units. Issuing agency: Toimitusosoite ID'</Description>
+    </Code>
+	<Code>
+        <Id>0235</Id>
+        <Name>UAE Tax Identification Number (TIN)</Name>
+        <Description>'Intended Purpose/App. Area: A unique number issued to a range of persons required to be identified for tax purposes. Issuing agency: UAE Federal Tax Authority'</Description>
+    </Code>
+	<Code>
+        <Id>0236</Id>
+        <Name>Name not known</Name>
+        <Description>Description not known</Description>
+    </Code>
+	<Code>
+        <Id>0237</Id>
+        <Name>CPR (Danish person civil registration number)</Name>
+        <Description>'Intended Purpose/App. Area:  . Issuing agency:  '</Description>
+    </Code>
+	<Code>
+        <Id>0238</Id>
+        <Name>Plateforme.s agréée.s à la facturation électronique (PPF/PDP)</Name>
+        <Description>'Intended Purpose/App. Area: To provide identifiers for E-invoicing Public Platform and Partner Dematerialisation Platform. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)'</Description>
+    </Code>
 </CodeList>

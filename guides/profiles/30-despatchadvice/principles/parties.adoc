@@ -55,7 +55,12 @@ a|
 
 *(UBL:OriginatorCustomerParty)*
 
- |The party who will eventually receive and consume the goods and on whose behalf the buyer makes the purchase.
+ |The party who will eventually receive and consume the goods and on whose behalf the buyer makes the purchase.|
+ 
+*Delivery party*
+
+*(UBL:Delivery/UBL:DeliveryParty)*	
+ |A unit to where the consignee forwards the goods. A final delivery point.|
 |====
 
 The diagram below shows the roles in the fulfillment process.
