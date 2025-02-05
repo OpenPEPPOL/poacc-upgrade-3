@@ -741,31 +741,32 @@
 				<Element cardinality="0..n">
 					<Term>cac:AdditionalItemProperty</Term>
 					<Name>Additional item property information</Name>
-					<Description>Used to for item properties and also configured product identifier and item is service indicator</Description>
+					<Description>Used to for item properties and also configured product identifier
+						and item is service indicator</Description>
 					<Element cardinality="0..1">
-							<Term>cbc:ID</Term>
-							<Name>ID</Name>
-							<Description>ID of the property if assigned by an Agency</Description>
-							<Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
-							<Element cardinality="O">
-								<Term>@schemeDataURI</Term>
-								<Name>Scheme Data URI</Name>
-								<Description>Scheme Data URI</Description>
-								<Value type="EXAMPLE">sdfdf</Value>
-							</Element>
-							<Element cardinality="O">
-								<Term>@schemeID</Term>
-								<Name>Scheme identifier</Name>
-								<Description>Scheme identifier</Description>
-								<Value type="EXAMPLE">ISO22057</Value>
-							</Element>
-							<Element cardinality="O">
-								<Term>@schemeVersionID</Term>
-								<Name>Scheme version identifier</Name>
-								<Description>Scheme version identifier</Description>
-								<Value type="EXAMPLE">2022</Value>
-							</Element>
-						</Element>
+						<Term>cbc:ID</Term>
+						<Name>ID</Name>
+						<Description>ID of the property if assigned by an Agency</Description>
+						<Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
+						<Attribute usage="Optional">
+							<Term>schemeDataURI</Term>
+							<Name>Scheme Data URI</Name>
+							<Description>Scheme Data URI</Description>
+							<Value type="EXAMPLE">sdfdf</Value>
+						</Attribute>
+						<Attribute usage="Optional">
+							<Term>schemeID</Term>
+							<Name>Scheme identifier</Name>
+							<Description>Scheme identifier</Description>
+							<Value type="EXAMPLE">ISO22057</Value>
+						</Attribute>
+						<Attribute usage="Optional">
+							<Term>schemeVersionID</Term>
+							<Name>Scheme version identifier</Name>
+							<Description>Scheme version identifier</Description>
+							<Value type="EXAMPLE">2022</Value>
+						</Attribute>
+					</Element>
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Item property name</Name>
