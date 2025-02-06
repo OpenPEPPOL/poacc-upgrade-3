@@ -203,7 +203,7 @@
 					<Name>Attached document</Name>
 					<Description>The attached document embeded as binary object, coded as Base64.
 					The binary object has two supplementary components: a Mime Code, which specifies the Mime type of the attachment and a Filename
-					that is provided by (or on behalf of) the sender of the document</Description>
+						that is provided by (or on behalf of) the sender of the document</Description>
 					<DataType>Binary object</DataType>
 					<Reference type="BUSINESS_TERM">tir01-017</Reference>
 					<Attribute>
@@ -252,18 +252,18 @@
 		</Element>
 
 		<Element cardinality="0..1">
-            <Term>cac:ProjectReference</Term>
-            <Name>PROJECT REFERENCE</Name>
+			<Term>cac:ProjectReference</Term>
+			<Name>PROJECT REFERENCE</Name>
 
-            <Element>
-                <Term>cbc:ID</Term>
-                <Name>Project reference</Name>
-                <Description>The identification of the project the order refers to.</Description>
-                <DataType>Document Reference</DataType>
-                <Reference type="BUSINESS_TERM"> tir01-p044</Reference>
-                <Value type="EXAMPLE">PID33</Value>
-            </Element>
-        </Element>
+			<Element>
+				<Term>cbc:ID</Term>
+				<Name>Project reference</Name>
+				<Description>The identification of the project the order refers to.</Description>
+				<DataType>Document Reference</DataType>
+				<Reference type="BUSINESS_TERM"> tir01-p044</Reference>
+				<Value type="EXAMPLE">PID33</Value>
+			</Element>
+		</Element>
 
 		<Element>
 			<Term>cac:BuyerCustomerParty</Term>
@@ -1245,7 +1245,7 @@
 						<Term>cbc:StreetName</Term>
 						<Name>Address line 1</Name>
 						<Description>The main address line in a postal address usually the street
-								name and number.</Description>
+							name and number.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p029</Reference>
 					</Element>
@@ -1253,8 +1253,8 @@
 						<Term>cbc:AdditionalStreetName</Term>
 						<Name>Address line 2</Name>
 						<Description>An additional address line in a postal address that can be used
-								to give further details supplementing the main line. Common use are
-								secondary house number in a complex or in a building.</Description>
+							to give further details supplementing the main line. Common use are
+							secondary house number in a complex or in a building.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p030</Reference>
 					</Element>
@@ -1262,7 +1262,7 @@
 						<Term>cbc:CityName</Term>
 						<Name>City</Name>
 						<Description>The common name of the city where the postal address is. The
-								name is written in full rather than as a code.</Description>
+							name is written in full rather than as a code.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p031</Reference>
 					</Element>
@@ -1270,8 +1270,8 @@
 						<Term>cbc:PostalZone</Term>
 						<Name>Post code</Name>
 						<Description>The identifier for an addressable group of properties according
-								to the relevant national postal service, such as a ZIP code or Post
-								Code.</Description>
+							to the relevant national postal service, such as a ZIP code or Post
+							Code.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p032</Reference>
 					</Element>
@@ -1279,7 +1279,7 @@
 						<Term>cbc:CountrySubentity</Term>
 						<Name>Country subdivision</Name>
 						<Description>For specifying a region, county, state, province etc. within a
-								country by using text.</Description>
+							country by using text.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-p033</Reference>
 					</Element>
@@ -1290,7 +1290,7 @@
 							<Term>cbc:Line</Term>
 							<Name>Address line 3</Name>
 							<Description>An additional address line in an address that can be used
-									to give further details supplementing the main line.</Description>
+								to give further details supplementing the main line.</Description>
 							<DataType>Text</DataType>
 							<Reference type="BUSINESS_TERM">tir01-p034</Reference>
 							<Value type="EXAMPLE">Gate 34</Value>
@@ -1303,10 +1303,10 @@
 							<Term>cbc:IdentificationCode</Term>
 							<Name>Country code</Name>
 							<Description>A code that identifies the country.The lists of valid
-									countries are registered with the ISO 3166-1 Maintenance agency,
-									"Codes for the representation of names of countries and their
-									subdivisions". Codes must be according to the alpha-2
-									representation.</Description>
+								countries are registered with the ISO 3166-1 Maintenance agency,
+								"Codes for the representation of names of countries and their
+								subdivisions". Codes must be according to the alpha-2
+								representation.</Description>
 							<DataType>Code</DataType>
 							<Reference type="BUSINESS_TERM">tir01-p035</Reference>
 							<Reference type="CODE_LIST">ISO3166</Reference>
@@ -1341,7 +1341,7 @@
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir01-106</Reference>
 					</Element>
-				</Element>				
+				</Element>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:Shipment</Term>
@@ -2220,7 +2220,7 @@
 								<Term>name</Term>
 								<Name>Clear text name equivalent of classification code</Name>
 								<Description>The textual equivalent of the code value</Description>
-								<Value type="EXAMPLE">Office furniture</Value>	
+								<Value type="EXAMPLE">Office furniture</Value>
 							</Attribute>
 							<Value type="EXAMPLE">9873242</Value>
 						</Element>
@@ -2268,24 +2268,24 @@
 							<Name>ID</Name>
 							<Description>ID of the property if assigned by an Agency</Description>
 							<Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
-							<Element cardinality="O">
-								<Term>@schemeDataURI</Term>
+							<Attribute usage="Optional">
+								<Term>schemeDataURI</Term>
 								<Name>Scheme Data URI</Name>
 								<Description>Scheme Data URI</Description>
 								<Value type="EXAMPLE">sdfdf</Value>
-							</Element>
-							<Element cardinality="O">
-								<Term>@schemeID</Term>
+							</Attribute>
+							<Attribute usage="Optional">
+								<Term>schemeID</Term>
 								<Name>Scheme identifier</Name>
 								<Description>Scheme identifier</Description>
 								<Value type="EXAMPLE">ISO22057</Value>
-							</Element>
-							<Element cardinality="O">
-								<Term>@schemeVersionID</Term>
+							</Attribute>
+							<Attribute usage="Optional">
+								<Term>schemeVersionID</Term>
 								<Name>Scheme version identifier</Name>
 								<Description>Scheme version identifier</Description>
 								<Value type="EXAMPLE">2022</Value>
-							</Element>
+							</Attribute>
 						</Element>
 						<Element>
 							<Term>cbc:Name</Term>

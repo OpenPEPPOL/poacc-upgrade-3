@@ -1710,24 +1710,24 @@
 							<Name>ID</Name>
 							<Description>ID of the property if assigned by an Agency</Description>
 							<Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
-							<Element cardinality="O">
-								<Term>@schemeDataURI</Term>
+							<Attribute usage="Optional">
+								<Term>schemeDataURI</Term>
 								<Name>Scheme Data URI</Name>
 								<Description>Scheme Data URI</Description>
 								<Value type="EXAMPLE">sdfdf</Value>
-							</Element>
-							<Element cardinality="O">
-								<Term>@schemeID</Term>
+							</Attribute>
+							<Attribute usage="Optional">
+								<Term>schemeID</Term>
 								<Name>Scheme identifier</Name>
 								<Description>Scheme identifier</Description>
 								<Value type="EXAMPLE">ISO22057</Value>
-							</Element>
-							<Element cardinality="O">
-								<Term>@schemeVersionID</Term>
+							</Attribute>
+							<Attribute usage="Optional">
+								<Term>schemeVersionID</Term>
 								<Name>Scheme version identifier</Name>
 								<Description>Scheme version identifier</Description>
 								<Value type="EXAMPLE">2022</Value>
-							</Element>
+							</Attribute>
 						</Element>
 						<Element>
 							<Term>cbc:Name</Term>
