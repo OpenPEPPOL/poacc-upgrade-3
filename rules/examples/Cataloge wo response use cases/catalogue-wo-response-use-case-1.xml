@@ -455,8 +455,8 @@
 			</cac:ClassifiedTaxCategory>
 			<cac:Certificate>
 				<cbc:ID>Z04</cbc:ID>
-				<cbc:CertificateTypeCode>NA</cbc:CertificateTypeCode>
-				<cbc:CertificateType>Miljï¿½mï¿½rkning</cbc:CertificateType>
+				<cbc:CertificateTypeCode>KRAV_MARK</cbc:CertificateTypeCode>
+				<cbc:CertificateType>Miljömärkning</cbc:CertificateType>
 				<cbc:Remarks>KRAV</cbc:Remarks>
 				<cac:IssuerParty>
 					<cac:PartyName>
