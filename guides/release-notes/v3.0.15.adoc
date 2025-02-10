@@ -9,7 +9,7 @@ Release date:: May 2025
 
 == Changes to syntax
 * Order transaction (T01)
-** RELEASE NOTES
+** Added new codelist to Item CertificateTypeCode (PackagingMarkedLabelAccrediationCode from GS1 GDSN) which can be used in addition to the current NA value. The element was previously fixed to NA as the element was mandatory in UBL.
 * Order Change(T114)
 ** RELEASE NOTES
 * Order Agreement(T110) 
@@ -26,6 +26,6 @@ Release date:: May 2025
 ** RELEASE NOTES
 
 == Changes to code lists and validation artefacts
-* RELEASE NOTES
+* New codelist for PackagingMarkedLabelAccrediationCode from GS1 GDSN
 
 == Other
