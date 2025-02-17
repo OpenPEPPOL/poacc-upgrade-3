@@ -49,7 +49,7 @@
 	<rule context="cbc:OrderResponseCode">
 		<assert id="PEPPOL-T76-R007"
         test="(normalize-space(.) = 'CA' and count(../cac:OrderLine) > 0) or normalize-space(.) != 'CA'"
-        flag="warning">An order response with code CA (Conditionally accepted) must provide order lines.</assert>
+        flag="fatal">An order response with code CA (Conditionally accepted) must provide order lines.</assert>
         <assert id="PEPPOL-T76-R008"
         test="(normalize-space(.) = 'AP' and count(../cac:OrderLine) = 0) or normalize-space(.) != 'AP'"
         flag="warning">An order response with code AP (Accepted) should NOT provide order lines.</assert>

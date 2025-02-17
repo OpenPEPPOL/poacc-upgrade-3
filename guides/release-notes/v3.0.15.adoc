@@ -14,11 +14,11 @@ Release date:: May 2025
 * Order Change(T114)
 ** RELEASE NOTES
 * Order Agreement(T110) 
-** RELEASE NOTES
-* Order Response transaction (T76)
-** RELEASE NOTES
-* Order Response transaction Advanced (T116)
-** RELEASE NOTES
+** RELEASE NOTES 
+* Order Response transaction (T76) [MINOR CHANGE TO TRANSACTION VERSION NUMBER]
+** Rule PEPPOL-T76-R007 that checks that order responses with code CA (conditional changes) has lines, is changed from warning to fatal in line with previous release notes.
+* Order Response transaction Advanced (T116) [MINOR CHANGE TO TRANSACTION VERSION NUMBER]
+** Rule PEPPOL-T116-R007 that checks that order responses with code CA (conditional changes) has lines, is changed from warning to fatal in line with previous release notes.
 * Despatch Advice (T16) [MINOR CHANGE TO TRANSACTION VERSION NUMBER]
 ** New code values for net weight and net volume used for Despatch Advice (T16) line level measurement dimensions. Description of the elements updated accordingly (cbc:AttributeID and cbc:Measure).
 ** Added ProductTraceID to Despatch Advise for the implementation of UDI (Unique Device Identifier) information for Medical Devices

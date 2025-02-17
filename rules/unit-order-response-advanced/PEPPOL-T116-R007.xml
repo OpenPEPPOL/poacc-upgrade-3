@@ -56,7 +56,7 @@
 	
 	<test>
 		<assert>		
-			<warning>PEPPOL-T116-R007</warning>
+			<error>PEPPOL-T116-R007</error>
 		</assert>
 		<OrderResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"

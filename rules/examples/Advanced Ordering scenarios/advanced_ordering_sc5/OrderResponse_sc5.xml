@@ -36,37 +36,4 @@
       </cac:PartyLegalEntity>
     </cac:Party>
   </cac:BuyerCustomerParty>
-  <cac:OrderLine>
-    <cac:LineItem>
-      <cbc:ID>1</cbc:ID>
-      <cbc:Note>Deletion of line</cbc:Note>
-      <cbc:LineStatusCode>7</cbc:LineStatusCode>
-      <cbc:Quantity unitCode="NAR">5</cbc:Quantity>
-      <cac:Item>
-        <cbc:Name>Item 1</cbc:Name>
-        <cac:SellersItemIdentification>
-          <cbc:ID>SN-1</cbc:ID>
-        </cac:SellersItemIdentification>
-      </cac:Item>
-    </cac:LineItem>
-    <cac:OrderLineReference>
-      <cbc:LineID>1</cbc:LineID>
-    </cac:OrderLineReference>
-  </cac:OrderLine>
-  <cac:OrderLine>
-    <cac:LineItem>
-      <cbc:ID>2</cbc:ID>
-      <cbc:Note>Deletion of line</cbc:Note>
-      <cbc:LineStatusCode>7</cbc:LineStatusCode>
-      <cbc:Quantity unitCode="NAR">50</cbc:Quantity>
-      <cac:Item>
-        <cbc:Name>Item 2</cbc:Name>
-        <cac:SellersItemIdentification>
-          <cbc:ID>SN-2</cbc:ID>
-        </cac:SellersItemIdentification>
-      </cac:Item>
-    </cac:LineItem>
-    <cac:OrderLineReference>
-      <cbc:LineID>2</cbc:LineID>
-    </cac:OrderLineReference>
-  </cac:OrderLine></OrderResponse>
+  </OrderResponse>
