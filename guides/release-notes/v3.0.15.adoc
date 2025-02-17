@@ -8,7 +8,7 @@ Release date:: May 2025
 ** RELEASE NOTES
 
 == Changes to syntax
-* Order transaction (T01)
+* Order transaction (T01) [MINOR CHANGE TO TRANSACTION VERSION NUMBER]
 ** Added new codelist to Item CertificateTypeCode (PackagingMarkedLabelAccrediationCode from GS1 GDSN) which can be used in addition to the current NA value. The element was previously fixed to NA as the element was mandatory in UBL.
 * Order Change(T114)
 ** RELEASE NOTES
@@ -18,8 +18,8 @@ Release date:: May 2025
 ** RELEASE NOTES
 * Order Response transaction Advanced (T116)
 ** RELEASE NOTES
-* Despatch Advice (T16)
-** RELEASE NOTES
+* Despatch Advice (T16) [MINOR CHANGE TO TRANSACTION VERSION NUMBER]
+** New code values for net weight and net volume used for Despatch Advice (T16) line level measurement dimensions. Description of the elements updated accordingly (cbc:AttributeID and cbc:Measure).
 * Catalogue transaction (T19)
 ** RELEASE NOTES
 * Punchout transaction (T77)
@@ -27,5 +27,6 @@ Release date:: May 2025
 
 == Changes to code lists and validation artefacts
 * New codelist for PackagingMarkedLabelAccrediationCode from GS1 GDSN
+* Codelist 66313 (measurement dimensions) updated. Used in Despatch Advice (T16).
 
 == Other

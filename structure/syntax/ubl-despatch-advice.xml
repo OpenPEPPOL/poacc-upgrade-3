@@ -1653,23 +1653,24 @@
 						<Element>
 							<Term>cbc:AttributeID</Term>
 							<Name>Attribute identifier</Name>
-							<Description>Code to indicate if the measure is gross weight or gross
+							<Description>Code to indicate if the measure is net/gross weight or net/gross
 								volume</Description>
 							<Reference type="CODE_LIST">UNCL6313-T16</Reference>
 							<Value type="EXAMPLE">AAW</Value>
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cbc:Measure</Term>
-							<Name>Handling unit gross weight or handling unit gross volume</Name>
-							<Description>Handling gross weight, including packaging as dispatched by
-								dispatching party.Handling gross volume, including packaging as
-								dispatched by dispatching party.</Description>
-							<Reference type="BUSINESS_TERM">tir16-086tir16-087</Reference>
+							<Name>Handling unit net/gross weight or handling unit net/gross volume</Name>
+							<Description>Handling net or gross weight and net or gross volume being despatched in this transport handling unit.</Description>
+							<Reference type="BUSINESS_TERM">tir16-086 (Gross weight)</Reference>
+							<Reference type="BUSINESS_TERM">tir16-087 (Gross volume)</Reference>
+							<Reference type="BUSINESS_TERM">tir16-p057 (Net weight)</Reference>
+							<Reference type="BUSINESS_TERM">tir16-p058 (Net volume)</Reference>							
 							<Attribute>
 								<Term>unitCode</Term>
-								<Name>Handling unit gross weight or volume unit of measure</Name>
+								<Name>Handling unit net/gross weight or net/volume unit of measure</Name>
 								<Description>The unit of measure that applies to the handling unit
-									gross weight or to the handling unit gross volume.</Description>
+									net/gross weight or to the handling unit net/gross volume.</Description>
 								<DataType>Code</DataType>
 								<Reference type="CODE_LIST">UNECERec20</Reference>
 								<Value type="EXAMPLE">CTN</Value>
