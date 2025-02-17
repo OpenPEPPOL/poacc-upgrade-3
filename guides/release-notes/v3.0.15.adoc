@@ -20,6 +20,7 @@ Release date:: May 2025
 ** RELEASE NOTES
 * Despatch Advice (T16) [MINOR CHANGE TO TRANSACTION VERSION NUMBER]
 ** New code values for net weight and net volume used for Despatch Advice (T16) line level measurement dimensions. Description of the elements updated accordingly (cbc:AttributeID and cbc:Measure).
+** Added ProductTraceID to Despatch Advise for the implementation of UDI (Unique Device Identifier) information for Medical Devices
 * Catalogue transaction (T19)
 ** RELEASE NOTES
 * Punchout transaction (T77)
@@ -28,5 +29,6 @@ Release date:: May 2025
 == Changes to code lists and validation artefacts
 * New codelist for PackagingMarkedLabelAccrediationCode from GS1 GDSN
 * Codelist 66313 (measurement dimensions) updated. Used in Despatch Advice (T16).
+* New codelist for ProductTraceID
 
 == Other

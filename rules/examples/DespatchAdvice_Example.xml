@@ -227,6 +227,7 @@
 				<cbc:Value>Blue</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:ItemInstance>
+				<cbc:ProductTraceID schemeID="UDI">(01)47964367965424(11)173434(17)226565(10)A379B3(21)1237</cbc:ProductTraceID>
 				<cbc:ManufactureDate>2018-01-01</cbc:ManufactureDate>
 				<cbc:BestBeforeDate>2018-12-01</cbc:BestBeforeDate>
 				<cbc:SerialID>4558784</cbc:SerialID>
