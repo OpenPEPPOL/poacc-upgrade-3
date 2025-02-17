@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+    <Title>ProductTraceIDschemeID</Title>
+    <Identifier>ProductTraceIDschemeIDCode</Identifier>
+    <Version>1</Version>
+    <Agency>OpenPeppol</Agency>
+    <Subset>OpenPeppol</Subset>
+
+    <Code>
+        <Id>UDI</Id>
+        <Name>Unique Device Identifier</Name>
+        <Description>UDI (Unique Device Identifier) information for Medical Devices, 
+        whose registration and storage is mandatory for the Healthcare Institutions following the Regulation (EU) 2017/745, 
+        article 27, paragraph 9.</Description>
+    </Code>
+</CodeList>

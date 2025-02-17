@@ -32,4 +32,6 @@ include::batchnumber.adoc[]
 
 include::transporthandlingunit.adoc[]
 
+include::producttraceid.adoc[]
+
 :leveloffset: -1

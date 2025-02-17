@@ -1309,7 +1309,7 @@
 						<Description>Identifies the order that the reference order line belongs
 							to.</Description>
 						<Reference type="BUSINESS_TERM">tir16-p010</Reference>
-						<Reference type="RULE">PEPPOL-T16-R002</Reference>
+						<!--Reference type="RULE">PEPPOL-T16-R002</Reference-->
 					</Element>
 				</Element>
 			</Element>
@@ -1557,6 +1557,20 @@
 				<Element cardinality="0..n">
 					<Term>cac:ItemInstance</Term>
 					<Name>Item instance information</Name>
+					<Element cardinality="0..1">
+						<Term>cbc:ProductTraceID</Term>
+						<Name>Product traceable identifier.</Name>
+						<Description>An identifier used for tracing this item instance, such as the EPC number used in RFID.</Description>
+						<Reference type="BUSINESS_TERM">tir16-p057</Reference>
+						<Attribute usage="Optional">
+							<Term>schemeID</Term>
+							<Name>Scheme identifier</Name>
+							<Description>Scheme identifier for the ProductTraceID</Description>
+							<Reference type="CODE_LIST">ProductTraceIDschemeIDCode</Reference>
+							<Value type="EXAMPLE">UDI</Value>
+						</Attribute>
+						<Value type="EXAMPLE">(01)47964367965424(11)173434(17)226565(10)A379B3(21)1237</Value>
+					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:ManufactureDate</Term>
 						<Name>Item manufactured date</Name>
