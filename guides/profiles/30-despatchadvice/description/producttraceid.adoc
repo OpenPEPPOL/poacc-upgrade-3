@@ -1,0 +1,11 @@
+[[product-trace-id]]
+= Product trace ID
+
+An identifier used for tracing this item instance, such as the EPC number used in RFID.
+With the use of a Peppol registered scheme id, such as UDI, different types can be specified.
+By not providing a scheme id, the value is mutual agreed upon.
+
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-30-4.xml[tags=producttraceid]
+----

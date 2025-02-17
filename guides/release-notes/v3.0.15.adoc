@@ -19,7 +19,7 @@ Release date:: May 2025
 * Order Response transaction Advanced (T116)
 ** RELEASE NOTES
 * Despatch Advice (T16)
-** RELEASE NOTES
+** Added ProductTraceID to Despatch Advise for the implementation of UDI (Unique Device Identifier) information for Medical Devices
 * Catalogue transaction (T19)
 ** RELEASE NOTES
 * Punchout transaction (T77)
@@ -27,5 +27,6 @@ Release date:: May 2025
 
 == Changes to code lists and validation artefacts
 * New codelist for PackagingMarkedLabelAccrediationCode from GS1 GDSN
+* New codelist for ProductTraceID
 
 == Other
