@@ -10,6 +10,7 @@ Release date:: May 2025
 == Changes to syntax
 * Order transaction (T01) [MINOR CHANGE TO TRANSACTION VERSION NUMBER]
 ** Added new codelist to Item CertificateTypeCode (PackagingMarkedLabelAccrediationCode from GS1 GDSN) which can be used in addition to the current NA value. The element was previously fixed to NA as the element was mandatory in UBL.
+** Added business terms and elements for the requested despatch date and time (The date/time on which the buyer requests the ordered goods be ready for pickup at the seller’s warehouse or an agreed-upon pickup location.)
 * Order Change(T114)
 ** RELEASE NOTES
 * Order Agreement(T110) 
