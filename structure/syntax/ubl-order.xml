@@ -1344,6 +1344,26 @@
 				</Element>
 			</Element>
 			<Element cardinality="0..1">
+				<Term>cac:Despatch</Term>
+				<Name>Despatch information</Name>			
+				<Element>
+					<Term>cbc:RequestedDespatchDate</Term>
+					<Name>Requested despatch date</Name>
+					<Description>The date on which the buyer requests the ordered goods be ready for pickup at the seller’s warehouse or an agreed-upon pickup location.</Description>
+					<DataType>Date</DataType>
+					<Reference type="BUSINESS_TERM">tir01-p053</Reference>
+					<Value type="EXAMPLE">2025-02-17</Value>
+				</Element>	
+				<Element cardinality="0..1">
+					<Term>cbc:RequestedDespatchTime</Term>
+					<Name>Requested despatch time</Name>
+					<Description>The time (in addition to the date) on which the buyer requests the ordered goods be ready for pickup at the seller’s warehouse or an agreed-upon pickup location.</Description>
+					<DataType>Time</DataType>
+					<Reference type="BUSINESS_TERM">tir01-p054</Reference>
+					<Value type="EXAMPLE">10:30:00</Value>
+				</Element>	
+			</Element>
+			<Element cardinality="0..1">
 				<Term>cac:Shipment</Term>
 				<Name>Shipment</Name>
 				<Element>

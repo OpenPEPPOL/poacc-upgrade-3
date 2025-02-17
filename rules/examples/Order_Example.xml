@@ -227,6 +227,10 @@
 				<cbc:ElectronicMail>ole@helseforetak.no</cbc:ElectronicMail>
 			</cac:Contact>
 		</cac:DeliveryParty>
+		<cac:Despatch>
+			<cbc:RequestedDespatchDate>2025-02-17</cbc:RequestedDespatchDate>
+			<cbc:RequestedDespatchTime>11:25:00</cbc:RequestedDespatchTime>
+		</cac:Despatch>
 		<cac:Shipment>
 			<cbc:ID>NA</cbc:ID>
 			<cbc:ShippingPriorityLevelCode>1</cbc:ShippingPriorityLevelCode>
