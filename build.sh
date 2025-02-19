@@ -14,7 +14,7 @@ docker run --rm -i \
     difi/vefa-structure:0.6.1
 
 # Testing validation rules
-docker run --rm -i -v $PROJECT:/src anskaffelser/validator:2.1.0 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
+docker run --rm -i -v $PROJECT:/src phelger/vefa-validator:2.3.1 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
 
 # Schematron
 for sch in $PROJECT/rules/sch/*.sch; do
