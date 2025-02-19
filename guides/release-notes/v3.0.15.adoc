@@ -4,29 +4,28 @@ Release date:: May 2025
 
 == BIS documentation
 
-* BIS Ordering and Order Only
-** RELEASE NOTES
+//* BIS Ordering and Order Only
+//** RELEASE NOTES
 
 == Changes to syntax
-* Order transaction (T01) [MINOR CHANGE TO TRANSACTION VERSION NUMBER]
-** Added new codelist to Item CertificateTypeCode (PackagingMarkedLabelAccrediationCode from GS1 GDSN) which can be used in addition to the current NA value. The element was previously fixed to NA as the element was mandatory in UBL.
+* Order transaction (T01)
 ** Added business terms and elements for the requested despatch date and time (The date/time on which the buyer requests the ordered goods be ready for pickup at the seller’s warehouse or an agreed-upon pickup location.)
 ** Added Physical delivery location on order line level
-* Order Change(T114)
-** RELEASE NOTES
-* Order Agreement(T110) 
-** RELEASE NOTES 
-* Order Response transaction (T76) [MINOR CHANGE TO TRANSACTION VERSION NUMBER]
+//* Order Change(T114)
+//** RELEASE NOTES
+//* Order Agreement(T110) 
+//** RELEASE NOTES 
+* Order Response transaction (T76)
 ** Rule PEPPOL-T76-R007 that checks that order responses with code CA (conditional changes) has lines, is changed from warning to fatal in line with previous release notes.
-* Order Response transaction Advanced (T116) [MINOR CHANGE TO TRANSACTION VERSION NUMBER]
+* Order Response transaction Advanced (T116) 
 ** Rule PEPPOL-T116-R007 that checks that order responses with code CA (conditional changes) has lines, is changed from warning to fatal in line with previous release notes.
-* Despatch Advice (T16) [MINOR CHANGE TO TRANSACTION VERSION NUMBER]
+* Catalogue transaction (T19)
+** Added new codelist to Item CertificateTypeCode (PackagingMarkedLabelAccrediationCode from GS1 GDSN) which can be used in addition to the current NA value. The element was previously fixed to NA as the element was mandatory in UBL.
+* Despatch Advice (T16) 
 ** New code values for net weight and net volume used for Despatch Advice (T16) line level measurement dimensions. Description of the elements updated accordingly (cbc:AttributeID and cbc:Measure).
 ** Added ProductTraceID to Despatch Advise for the implementation of UDI (Unique Device Identifier) information for Medical Devices
-* Catalogue transaction (T19)
-** RELEASE NOTES
-* Punchout transaction (T77)
-** RELEASE NOTES
+//* Punchout transaction (T77)
+//** RELEASE NOTES
 
 == Changes to code lists and validation artefacts
 * New codelist for PackagingMarkedLabelAccrediationCode from GS1 GDSN
