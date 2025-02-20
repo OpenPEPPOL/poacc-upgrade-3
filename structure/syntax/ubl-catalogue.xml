@@ -1666,7 +1666,7 @@
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:Percent</Term>
-						<Name>Item TAX precentage</Name>
+						<Name>Item TAX percentage</Name>
 						<Description>The TAX percentage rate that applies to the item unless
                             specific trade reasons apply such as exemptions.</Description>
 						<DataType>Percentage</DataType>
