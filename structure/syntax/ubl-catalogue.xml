@@ -153,7 +153,7 @@
 					<Reference type="CODE_LIST">eas</Reference>
 					<Value type="EXAMPLE">0088</Value>
 				</Attribute>
-				<Value type="EXAMPLE">7300010000001</Value>
+				<Value type="EXAMPLE">7350053850019</Value>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:PartyIdentification</Term>
@@ -336,7 +336,7 @@
 					<Reference type="CODE_LIST">eas</Reference>
 					<Value type="EXAMPLE">0088</Value>
 				</Attribute>
-				<Value type="EXAMPLE">7300010000001</Value>
+				<Value type="EXAMPLE">7350053850019</Value>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:PartyIdentification</Term>
@@ -521,7 +521,7 @@
 						<Reference type="CODE_LIST">eas</Reference>
 						<Value type="EXAMPLE">0088</Value>
 					</Attribute>
-					<Value type="EXAMPLE">7300010000001</Value>
+					<Value type="EXAMPLE">7350053850019</Value>
 				</Element>
 
 				<Element cardinality="0..1">
@@ -691,7 +691,7 @@
 						<Reference type="CODE_LIST">eas</Reference>
 						<Value type="EXAMPLE">0088</Value>
 					</Attribute>
-					<Value type="EXAMPLE">7300010000001</Value>
+					<Value type="EXAMPLE">7350053850019</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
