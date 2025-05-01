@@ -35,7 +35,7 @@ cac:SellerSupplierParty/cbc:EndpointID and cac:ContractorCustomerParty/EndpointI
 
 == Changes to code lists and validation artefacts
 * New codelist for PackagingMarkedLabelAccrediationCode from GS1 GDSN
-* Codelist 66313 (measurement dimensions) updated. Used in Despatch Advice (T16).
+* Codelist 6313 (measurement dimensions) updated. Used in Despatch Advice (T16).
 * New codelist for ProductTraceID
 * Changes to codelists
 [cols="1,1,1"]
