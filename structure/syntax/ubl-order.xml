@@ -1855,45 +1855,6 @@
 						</Attribute>
 						<Value type="EXAMPLE">7300010000001</Value>
 					</Element>
-					<Element>
-						<Term>cac:RequestedDeliveryPeriod</Term>
-						<Name>Order line requested delivery period </Name>
-						<Description>Requested delivery period for the order line</Description>
-						<Element cardinality="0..1">
-							<Term>cbc:StartDate</Term>
-							<Name>Period start date</Name>
-							<Description>The date on which the period starts. The start dates counts
-								as part of the period. Format ="YYYY-MM-DD"</Description>
-							<DataType>Date</DataType>
-							<Reference type="BUSINESS_TERM">tir01-126</Reference>
-							<Value type="EXAMPLE">2018-09-03</Value>
-						</Element>
-						<Element cardinality="0..1">
-							<Term>cbc:StartTime</Term>
-							<Name>Period start time</Name>
-							<Description>The time at which this period begins. Format = "hh:mm:ss"</Description>
-							<DataType>Time</DataType>
-							<Reference type="BUSINESS_TERM">tir01-p48</Reference>
-							<Value type="EXAMPLE">12:30:00</Value>
-						</Element>
-						<Element cardinality="0..1">
-							<Term>cbc:EndDate</Term>
-							<Name>Period end date</Name>
-							<Description>The date on which the period ends. The end date counts as
-								part of the period.Format ="YYYY-MM-DD"</Description>
-							<DataType>Date</DataType>
-							<Reference type="BUSINESS_TERM">tir01-127</Reference>
-							<Value type="EXAMPLE">2018-09-15</Value>
-						</Element>
-						<Element cardinality="0..1">
-							<Term>cbc:EndTime</Term>
-							<Name>Period end time</Name>
-							<Description>The time at which this period end. Format = "hh:mm:ss"</Description>
-							<DataType>Time</DataType>
-							<Reference type="BUSINESS_TERM">tir01-p49</Reference>
-							<Value type="EXAMPLE">18:00:00</Value>
-						</Element>
-					</Element>
 					<Element cardinality="0..1">
 						<Term>cac:DeliveryLocation</Term>
 						<Name>Delivery location </Name>
@@ -1998,6 +1959,45 @@
 									<Value type="EXAMPLE">NL</Value>
 								</Element>
 							</Element>
+						</Element>
+					</Element>
+					<Element>
+						<Term>cac:RequestedDeliveryPeriod</Term>
+						<Name>Order line requested delivery period </Name>
+						<Description>Requested delivery period for the order line</Description>
+						<Element cardinality="0..1">
+							<Term>cbc:StartDate</Term>
+							<Name>Period start date</Name>
+							<Description>The date on which the period starts. The start dates counts
+								as part of the period. Format ="YYYY-MM-DD"</Description>
+							<DataType>Date</DataType>
+							<Reference type="BUSINESS_TERM">tir01-126</Reference>
+							<Value type="EXAMPLE">2018-09-03</Value>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:StartTime</Term>
+							<Name>Period start time</Name>
+							<Description>The time at which this period begins. Format = "hh:mm:ss"</Description>
+							<DataType>Time</DataType>
+							<Reference type="BUSINESS_TERM">tir01-p48</Reference>
+							<Value type="EXAMPLE">12:30:00</Value>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:EndDate</Term>
+							<Name>Period end date</Name>
+							<Description>The date on which the period ends. The end date counts as
+								part of the period.Format ="YYYY-MM-DD"</Description>
+							<DataType>Date</DataType>
+							<Reference type="BUSINESS_TERM">tir01-127</Reference>
+							<Value type="EXAMPLE">2018-09-15</Value>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:EndTime</Term>
+							<Name>Period end time</Name>
+							<Description>The time at which this period end. Format = "hh:mm:ss"</Description>
+							<DataType>Time</DataType>
+							<Reference type="BUSINESS_TERM">tir01-p49</Reference>
+							<Value type="EXAMPLE">18:00:00</Value>
 						</Element>
 					</Element>
 				</Element>
