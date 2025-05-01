@@ -14,6 +14,7 @@ Release date:: May 2025
 * Order transaction (T01)
 ** Added business terms and elements for the requested despatch date and time (The date/time on which the buyer requests the ordered goods be ready for pickup at the seller’s warehouse or an agreed-upon pickup location.)
 ** Added Physical delivery location on order line level
+** Patched schematron version to 3.6
 //* Order Change(T114)
 //** RELEASE NOTES
 //* Order Agreement(T110) 
@@ -36,5 +37,16 @@ cac:SellerSupplierParty/cbc:EndpointID and cac:ContractorCustomerParty/EndpointI
 * New codelist for PackagingMarkedLabelAccrediationCode from GS1 GDSN
 * Codelist 66313 (measurement dimensions) updated. Used in Despatch Advice (T16).
 * New codelist for ProductTraceID
+* Changes to codelists
+[cols="1,1,1"]
+|===
+|codelist|removed|added
+
+|eas |7 [0037,0177,0202,0212,0213,0215,9901] |3 [0205,0225,0240]
+|icd |0 [] |2 [0239,0240]
+|ISO4217 |2 [CUC,ZWL] |1 [XXX]]
+|UNCL5305 |1 [B] |0 []
+|UNCL7143 |0 [] |1 [PPI]
+|===
 
 == Other
