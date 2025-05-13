@@ -45,7 +45,6 @@ cac:SellerSupplierParty/cbc:EndpointID and cac:ContractorCustomerParty/EndpointI
 |eas |1 [9901] |10 [0147,0154,0158,0170,0194,0203,0205,0217,0225,0240]
 |icd |0 [] |2 [0239,0240]
 |ISO4217 |2 [CUC,ZWL] |1 [XXX]]
-|UNCL5305 |1 [B] |0 []
 |UNCL7143 |0 [] |1 [PPI]
 |===
 
