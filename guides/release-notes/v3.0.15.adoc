@@ -21,8 +21,12 @@ Release date:: May 2025
 //** RELEASE NOTES 
 * Order Response transaction (T76)
 ** Rule PEPPOL-T76-R007 that checks that order responses with code CA (conditional changes) has lines, is changed from warning to fatal in line with previous release notes.
+** Rule PEPPOL-T76-R008 that checks that order response with code AP (Accepted) should NOT provide order lines, is changed from warning to fatal in line with previous release notes.
+** Rule PEPPOL-T76-R009 that checks that order response with code RE (Rejected) should NOT provide order lines, is changed from warning to fatal in line with previous release notes.
 * Order Response transaction Advanced (T116) 
 ** Rule PEPPOL-T116-R007 that checks that order responses with code CA (conditional changes) has lines, is changed from warning to fatal in line with previous release notes.
+** Rule PEPPOL-T116-R008 that checks that order response with code AP (Accepted) should NOT provide order lines, is changed from warning to fatal in line with previous release notes.
+** Rule PEPPOL-T116-R009 that checks that order response with code RE (Rejected) should NOT provide order lines, is changed from warning to fatal in line with previous release notes.
 * Catalogue transaction (T19)
 ** Added new codelist to Item CertificateTypeCode (PackagingMarkedLabelAccrediationCode from GS1 GDSN) which can be used in addition to the current NA value. The element was previously fixed to NA as the element was mandatory in UBL.
 ** Changed example values on cac:ProviderParty/cbc:EndpointID, cac:ReceiverParty/cbc:EndpointID,
