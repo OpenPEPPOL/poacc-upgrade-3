@@ -2,8 +2,8 @@
 [horizontal]
 Release date:: May 2025
 * Date of member review: 2024-03-07
-* Date of publication: 2025-05-19
-* Mandatory to use from: 2025-08-21
+* Date of publication: 2025-05-21
+* Mandatory to use from: 2025-08-23
 
 == BIS documentation
 
@@ -13,7 +13,6 @@ Release date:: May 2025
 == Changes to syntax
 * Order transaction (T01)
 ** Added business terms and elements for the requested despatch date and time (The date/time on which the buyer requests the ordered goods be ready for pickup at the seller’s warehouse or an agreed-upon pickup location.)
-** Added Physical delivery location on order line level
 ** Patched schematron version to 3.6
 //* Order Change(T114)
 //** RELEASE NOTES
