@@ -153,7 +153,7 @@
 					<Reference type="CODE_LIST">eas</Reference>
 					<Value type="EXAMPLE">0088</Value>
 				</Attribute>
-				<Value type="EXAMPLE">7300010000001</Value>
+				<Value type="EXAMPLE">7350053850019</Value>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:PartyIdentification</Term>
@@ -336,7 +336,7 @@
 					<Reference type="CODE_LIST">eas</Reference>
 					<Value type="EXAMPLE">0088</Value>
 				</Attribute>
-				<Value type="EXAMPLE">7300010000001</Value>
+				<Value type="EXAMPLE">7350053850019</Value>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:PartyIdentification</Term>
@@ -521,7 +521,7 @@
 						<Reference type="CODE_LIST">eas</Reference>
 						<Value type="EXAMPLE">0088</Value>
 					</Attribute>
-					<Value type="EXAMPLE">7300010000001</Value>
+					<Value type="EXAMPLE">7350053850019</Value>
 				</Element>
 
 				<Element cardinality="0..1">
@@ -691,7 +691,7 @@
 						<Reference type="CODE_LIST">eas</Reference>
 						<Value type="EXAMPLE">0088</Value>
 					</Attribute>
-					<Value type="EXAMPLE">7300010000001</Value>
+					<Value type="EXAMPLE">7350053850019</Value>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:PartyIdentification</Term>
@@ -1666,7 +1666,7 @@
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:Percent</Term>
-						<Name>Item TAX precentage</Name>
+						<Name>Item TAX percentage</Name>
 						<Description>The TAX percentage rate that applies to the item unless
                             specific trade reasons apply such as exemptions.</Description>
 						<DataType>Percentage</DataType>
@@ -1829,9 +1829,12 @@
 						<Term>cbc:CertificateTypeCode</Term>
 						<Name>Certificate type code</Name>
 						<Description>The UBL structure used for item labeling requires this elements,
-							use the value NA.</Description>
+							use the value NA if not other applicable package label code.</Description>
 						<DataType>Code</DataType>
-						<Value type="FIXED">NA</Value>
+						<Reference type="CODE_LIST">NA</Reference>
+						<Reference type="CODE_LIST">PackagingMarkedLabelAccreditationCode</Reference>
+						<Value type="EXAMPLE">NA</Value>
+						
 					</Element>
 					<Element>
 						<Term>cbc:CertificateType</Term>

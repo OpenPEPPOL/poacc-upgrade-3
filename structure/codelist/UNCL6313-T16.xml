@@ -20,6 +20,20 @@
         <Description> The volume unadjusted for factors such as temperature or
             gravity.</Description>
     </Code>
-
+    <Code>
+        <Id>AAX</Id>
+        <Name>Net volume</Name>
+        <Description>
+            The volume after adjustment for factors such as
+            temperature or gravity.
+        </Description>
+    </Code>
+    <Code>
+        <Id>AAL</Id>
+        <Name>Net Weight</Name>
+        <Description>
+            Weight (mass) of goods including any packing normally going with them to a buyer in a retail sale.
+        </Description>
+    </Code>	
 
 </CodeList>

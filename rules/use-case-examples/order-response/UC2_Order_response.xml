@@ -40,40 +40,5 @@
       <cbc:EndDate>2013-07-16</cbc:EndDate>
     </cac:PromisedDeliveryPeriod>
   </cac:Delivery>
-  <cac:OrderLine>
-    <cac:LineItem>
-      <cbc:ID>1</cbc:ID>
-      <cbc:LineStatusCode>5</cbc:LineStatusCode>
-	  <cac:Item>
-			<cbc:Name>Item 1, color red, size 43</cbc:Name>
-			<cac:SellersItemIdentification>
-			  <cbc:ID>4545423</cbc:ID>
-			</cac:SellersItemIdentification>
-			<cac:StandardItemIdentification>
-			  <cbc:ID schemeID="0160">05432167890984</cbc:ID>
-			</cac:StandardItemIdentification>
-		</cac:Item>
-      </cac:LineItem>
-      <cac:OrderLineReference>
-		  <cbc:LineID>1</cbc:LineID>
-      </cac:OrderLineReference>
-  </cac:OrderLine>
-  <cac:OrderLine>
-    <cac:LineItem>
-      <cbc:ID>2</cbc:ID>
-      <cbc:LineStatusCode>5</cbc:LineStatusCode>
-      <cac:Item>
-			<cbc:Name>Item 2, color yellow, size 36</cbc:Name>
-			<cac:SellersItemIdentification>
-			  <cbc:ID>64534543</cbc:ID>
-			</cac:SellersItemIdentification>
-			<cac:StandardItemIdentification>
-			  <cbc:ID schemeID="0160">05476154389097</cbc:ID>
-			</cac:StandardItemIdentification>
-		</cac:Item>
-      </cac:LineItem>
-      <cac:OrderLineReference>
-		  <cbc:LineID>2</cbc:LineID>
-      </cac:OrderLineReference>
-  </cac:OrderLine>
+  
   </OrderResponse>

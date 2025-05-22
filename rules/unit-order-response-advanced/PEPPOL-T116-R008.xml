@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-t76-base-3.0">
+	configuration="peppolbis-t116-base-3.0">
 	<assert>
 		<description>An order response with code AP (Accepted) should NOT provide order lines.</description>
 		<scope>PEPPOL-T116-R008</scope>
@@ -31,7 +31,7 @@
 
 	<test>
 		<assert>		
-			<warning>PEPPOL-T116-R008</warning>
+			<error>PEPPOL-T116-R008</error>
 		</assert>
 		
 		<OrderResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"

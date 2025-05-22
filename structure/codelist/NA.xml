@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+    <Title>NA codes</Title>
+    <Identifier>NA</Identifier>
+    <Agency>DFØ</Agency>
+
+    <Code>
+        <Id>NA</Id>
+        <Name>Not applicable</Name>
+    </Code>
+</CodeList>

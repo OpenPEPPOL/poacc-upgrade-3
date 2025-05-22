@@ -1309,7 +1309,7 @@
 						<Description>Identifies the order that the reference order line belongs
 							to.</Description>
 						<Reference type="BUSINESS_TERM">tir16-p010</Reference>
-						<Reference type="RULE">PEPPOL-T16-R002</Reference>
+						<!--Reference type="RULE">PEPPOL-T16-R002</Reference-->
 					</Element>
 				</Element>
 			</Element>
@@ -1558,6 +1558,20 @@
 					<Term>cac:ItemInstance</Term>
 					<Name>Item instance information</Name>
 					<Element cardinality="0..1">
+						<Term>cbc:ProductTraceID</Term>
+						<Name>Product traceable identifier.</Name>
+						<Description>An identifier used for tracing this item instance, such as the EPC number used in RFID.</Description>
+						<Reference type="BUSINESS_TERM">tir16-p057</Reference>
+						<Attribute usage="Optional">
+							<Term>schemeID</Term>
+							<Name>Scheme identifier</Name>
+							<Description>Scheme identifier for the ProductTraceID</Description>
+							<Reference type="CODE_LIST">ProductTraceIDschemeIDCode</Reference>
+							<Value type="EXAMPLE">UDI</Value>
+						</Attribute>
+						<Value type="EXAMPLE">(01)47964367965424(11)173434(17)226565(10)A379B3(21)1237</Value>
+					</Element>
+					<Element cardinality="0..1">
 						<Term>cbc:ManufactureDate</Term>
 						<Name>Item manufactured date</Name>
 						<Description>The manufacturing date of all items listed in this dispatch
@@ -1653,23 +1667,24 @@
 						<Element>
 							<Term>cbc:AttributeID</Term>
 							<Name>Attribute identifier</Name>
-							<Description>Code to indicate if the measure is gross weight or gross
+							<Description>Code to indicate if the measure is net/gross weight or net/gross
 								volume</Description>
 							<Reference type="CODE_LIST">UNCL6313-T16</Reference>
 							<Value type="EXAMPLE">AAW</Value>
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cbc:Measure</Term>
-							<Name>Handling unit gross weight or handling unit gross volume</Name>
-							<Description>Handling gross weight, including packaging as dispatched by
-								dispatching party.Handling gross volume, including packaging as
-								dispatched by dispatching party.</Description>
-							<Reference type="BUSINESS_TERM">tir16-086tir16-087</Reference>
+							<Name>Handling unit net/gross weight or handling unit net/gross volume</Name>
+							<Description>Handling net or gross weight and net or gross volume being despatched in this transport handling unit.</Description>
+							<Reference type="BUSINESS_TERM">tir16-086 (Gross weight)</Reference>
+							<Reference type="BUSINESS_TERM">tir16-087 (Gross volume)</Reference>
+							<Reference type="BUSINESS_TERM">tir16-p057 (Net weight)</Reference>
+							<Reference type="BUSINESS_TERM">tir16-p058 (Net volume)</Reference>							
 							<Attribute>
 								<Term>unitCode</Term>
-								<Name>Handling unit gross weight or volume unit of measure</Name>
+								<Name>Handling unit net/gross weight or net/volume unit of measure</Name>
 								<Description>The unit of measure that applies to the handling unit
-									gross weight or to the handling unit gross volume.</Description>
+									net/gross weight or to the handling unit net/gross volume.</Description>
 								<DataType>Code</DataType>
 								<Reference type="CODE_LIST">UNECERec20</Reference>
 								<Value type="EXAMPLE">CTN</Value>

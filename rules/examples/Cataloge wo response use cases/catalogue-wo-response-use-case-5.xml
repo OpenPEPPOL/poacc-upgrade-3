@@ -255,9 +255,9 @@
 			</cac:ItemInstance>
 			<cac:Certificate>
 				<cbc:ID>123450</cbc:ID>
-				<cbc:CertificateTypeCode>NA</cbc:CertificateTypeCode>
+				<cbc:CertificateTypeCode>SVANEN</cbc:CertificateTypeCode>
 				<cbc:CertificateType>Environmental</cbc:CertificateType>
-				<cbc:Remarks>tekst</cbc:Remarks>
+				<cbc:Remarks>Svanen</cbc:Remarks>
 				<cac:IssuerParty>
 					<cac:PartyName>
 						<cbc:Name>NA</cbc:Name>

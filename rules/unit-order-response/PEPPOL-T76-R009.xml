@@ -31,7 +31,7 @@
 	
 	<test>
 		<assert>		
-			<warning>PEPPOL-T76-R009</warning>
+			<error>PEPPOL-T76-R009</error>
 		</assert>
 		
 		<OrderResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
