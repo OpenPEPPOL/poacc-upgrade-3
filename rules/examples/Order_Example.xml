@@ -391,22 +391,6 @@
 					<cbc:StartDate>2012-10-15</cbc:StartDate>
 					<cbc:EndDate>2012-10-31</cbc:EndDate>
 				</cac:RequestedDeliveryPeriod>
-				<cac:DeliveryLocation>
-					<cbc:ID schemeID="0088">7300010000002</cbc:ID>
-					<cac:Address>
-						<cbc:StreetName>Solheimsveien 15</cbc:StreetName>
-						<cbc:AdditionalStreetName>Add</cbc:AdditionalStreetName>
-						<cbc:CityName>Lørenskog</cbc:CityName>
-						<cbc:PostalZone>1473</cbc:PostalZone>
-						<cbc:CountrySubentity>Region</cbc:CountrySubentity>
-						<cac:AddressLine>
-							<cbc:Line>3rd Address line</cbc:Line>
-						</cac:AddressLine>
-						<cac:Country>
-							<cbc:IdentificationCode>NO</cbc:IdentificationCode>
-						</cac:Country>
-					</cac:Address>
-				</cac:DeliveryLocation>
 			</cac:Delivery>
 			<cac:OriginatorParty>
 				<cac:PartyIdentification>
